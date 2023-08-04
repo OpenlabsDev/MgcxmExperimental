@@ -363,3 +363,16 @@ MigrationBackup/
 FodyWeavers.xsd
 /Openlabs.Mgcxm.Tests/Openlabs.Mgcxm.Tests.csproj
 /Openlabs.Mgcxm.Tests/Openlabs.Mgcxm.Tests.csproj
+/Openlabs.Mgcxm.Tests/Program.cs
+/Openlabs.Mgcxm.Tests/TestServer.cs
+/Openlabs.Mgcxm.Tests/TestWsServer.cs
+/Openlabs.Mgcxm.Tests/Assets/Responses/AvatarJsonFileAsset.cs
+/Openlabs.Mgcxm.Tests/Assets/Responses/SettingsJsonFileAsset.cs
+/Openlabs.Mgcxm.Tests/Assets/Responses/DTO/SettingDTO.cs
+/Openlabs.Mgcxm.Tests/Assets/Responses/DTO/RecRoomConfigDTO.cs
+/Openlabs.Mgcxm.Tests/Assets/Responses/DTO/ProfileDTO.cs
+/Openlabs.Mgcxm.Tests/Assets/Responses/DTO/ObjectiveDTO.cs
+/Openlabs.Mgcxm.Tests/Assets/Responses/DTO/MessageDTO.cs
+/Openlabs.Mgcxm.Tests/Assets/Responses/DTO/LoginResponseDTO.cs
+/Openlabs.Mgcxm.Tests/Assets/Responses/DTO/AvatarDTO.cs
+/~Documentation
