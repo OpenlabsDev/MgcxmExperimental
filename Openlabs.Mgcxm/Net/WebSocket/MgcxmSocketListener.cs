@@ -8,7 +8,7 @@ using System.Transactions;
 using Openlabs.Mgcxm.Internal;
 using Openlabs.Mgcxm.Internal.SystemObjects;
 using Openlabs.Mgcxm.Net.Polling;
-using Random = Openlabs.Mgcxm.Internal.Random;
+using Random = Openlabs.Mgcxm.Common.Random;
 
 namespace Openlabs.Mgcxm.Net;
 
@@ -19,13 +19,26 @@ namespace Openlabs.Mgcxm.Net;
     }
 }*/
 
+/// <summary>
+/// Represents a socket listener for handling WebSocket and HTTP requests.
+/// </summary>
 public class MgcxmSocketListener : IMgcxmSystemObject
 {
+    private MgcxmHttpListener _listener;
+    private List<MgcxmSocketRoute> _routes = new();
+    private PollingReceiver _pollingReceiver = new();
+    private Thread _listenThread;
+    private Dictionary<MgcxmString, SocketThread> _socketThreads = new();
+
+    /// <summary>
+    /// Initializes a new instance of the MgcxmSocketListener class with the specified IP address to host on.
+    /// </summary>
+    /// <param name="addressToHostOn">The IP address to host the socket listener on.</param>
     public MgcxmSocketListener(IpAddress addressToHostOn)
     {
         _listener = new MgcxmHttpListener(addressToHostOn);
         _pollingReceiver.OnPollReceived.AddAction((pollRequest) => { });
-        
+
         AllocatedId = GetHashCode();
         MgcxmObjectManager.Register(AllocatedId, this); // register object
         AttributeResolver.ResolveAllMethod<SocketRouteAttribute>(
@@ -33,7 +46,7 @@ public class MgcxmSocketListener : IMgcxmSystemObject
             typeof(SocketRouteAttribute),
             (method, attr) =>
             {
-                _routes.Add(new MgcxmSocketRoute(AllocatedId, attr.Route, false, 
+                _routes.Add(new MgcxmSocketRoute(AllocatedId, attr.Route, false,
                     (socket) =>
                     {
                         var parameters = method.GetParameters();
@@ -42,18 +55,28 @@ public class MgcxmSocketListener : IMgcxmSystemObject
                         if (isInvalidSig) return; // cannot add endpoints with invalid signatures
                         method.Invoke(this, new object[] { socket });
                     }, method));
-                
+
                 Logger.Trace(string.Format("Added '0x{0:x8}' to '0x{1:x8}'", attr.Route.GetHashCode(),
                     AllocatedId.Id));
             });
     }
+
+    /// <summary>
+    /// Finalizer (destructor) for the MgcxmSocketListener class.
+    /// </summary>
     ~MgcxmSocketListener() => Trash();
 
+    /// <summary>
+    /// Starts the socket listener.
+    /// </summary>
     public void Start()
     {
         _listener.StartInternal(HttpServerListenTask);
     }
 
+    /// <summary>
+    /// Stops the socket listener.
+    /// </summary>
     public void Stop()
     {
         _listener.Stop();
@@ -215,25 +238,32 @@ public class MgcxmSocketListener : IMgcxmSystemObject
         
         listener.Stop();
     }
-    
-    public virtual void OnWebRequest(MgcxmHttpRequest request, MgcxmHttpResponse response) {}
+
+    /// <summary>
+    /// Invoked when a WebSocket request is received.
+    /// </summary>
+    /// <param name="request">The HTTP request data.</param>
+    /// <param name="response">The HTTP response data.</param>
+    public virtual void OnWebRequest(MgcxmHttpRequest request, MgcxmHttpResponse response) { }
 
     #region IMgcxmSystemObject
 
+    /// <summary>
+    /// Gets the unique identifier (object ID) of the MgcxmSocketListener.
+    /// </summary>
     public MgcxmId AllocatedId { get; }
 
+    /// <summary>
+    /// Disposes of the MgcxmSocketListener and deregisters it from the object manager.
+    /// </summary>
     public void Trash() => MgcxmObjectManager.Deregister(AllocatedId);
 
     #endregion
-    
+
+    /// <summary>
+    /// Gets the underlying MgcxmHttpListener used by the MgcxmSocketListener.
+    /// </summary>
     public MgcxmHttpListener Listener => _listener;
-
-    private MgcxmHttpListener _listener;
-    private List<MgcxmSocketRoute> _routes = new();
-    private PollingReceiver _pollingReceiver = new();
-
-    private Thread _listenThread;
-    private Dictionary<MgcxmString, SocketThread> _socketThreads = new();
 
     private class SocketThread
     {

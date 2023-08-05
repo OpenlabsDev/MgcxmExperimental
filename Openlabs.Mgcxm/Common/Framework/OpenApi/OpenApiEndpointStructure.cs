@@ -2,7 +2,7 @@
 
 using Openlabs.Mgcxm.Internal;
 using Openlabs.Mgcxm.Net;
-using Random = Openlabs.Mgcxm.Internal.Random;
+using Random = Openlabs.Mgcxm.Common.Random;
 
 namespace Openlabs.Mgcxm.Common.Framework;
 

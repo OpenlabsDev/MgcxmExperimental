@@ -98,16 +98,23 @@ public enum HttpContentTypes
     MultipartForm
 }
 
+/// <summary>
+/// A helper class to resolve HTTP content type values.
+/// </summary>
 public static class HttpContentTypeHelper
 {
+    /// <summary>
+    /// Resolves the MIME type associated with the specified <see cref="HttpContentTypes"/>.
+    /// </summary>
+    /// <param name="contentType">The <see cref="HttpContentTypes"/> value.</param>
+    /// <returns>The resolved MIME type.</returns>
     public static string ResolveValue(HttpContentTypes contentType)
     {
         try
         {
             var type = typeof(HttpContentTypes);
             var values = type.GetMember(contentType.ToString());
-            var enumValueMemberInfo = values.FirstOrDefault(m =>
-                m.DeclaringType == type);
+            var enumValueMemberInfo = values.FirstOrDefault(m => m.DeclaringType == type);
 
             CommonMimeTypeAttribute mimeTypeAttribute;
             if ((mimeTypeAttribute = enumValueMemberInfo.GetCustomAttribute<CommonMimeTypeAttribute>()) == null)
@@ -115,9 +122,17 @@ public static class HttpContentTypeHelper
 
             return mimeTypeAttribute.MimeType;
         }
-        catch { return ResolveValue(HttpContentTypes.Invalid); }
+        catch
+        {
+            return ResolveValue(HttpContentTypes.Invalid);
+        }
     }
-    
+
+    /// <summary>
+    /// Resolves the <see cref="HttpContentTypes"/> value associated with the given MIME type.
+    /// </summary>
+    /// <param name="contentType">The MIME type to resolve.</param>
+    /// <returns>The <see cref="HttpContentTypes"/> value.</returns>
     public static HttpContentTypes ResolveValue(string contentType)
     {
         var type = typeof(HttpContentTypes);

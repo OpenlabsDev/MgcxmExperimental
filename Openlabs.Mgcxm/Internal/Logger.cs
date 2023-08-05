@@ -2,6 +2,7 @@
 
 using System.Diagnostics;
 using System.Runtime.CompilerServices;
+using Openlabs.Mgcxm.Common;
 
 namespace Openlabs.Mgcxm.Internal;
 

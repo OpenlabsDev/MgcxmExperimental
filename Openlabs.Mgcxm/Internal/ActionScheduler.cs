@@ -1,5 +1,6 @@
 // Copr. (c) Nexus 2023. All rights reserved.
 
+using Openlabs.Mgcxm.Common;
 using Openlabs.Mgcxm.Internal.SystemObjects;
 
 namespace Openlabs.Mgcxm.Internal;

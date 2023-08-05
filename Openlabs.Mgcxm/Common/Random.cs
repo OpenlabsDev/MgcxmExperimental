@@ -3,18 +3,18 @@
 
 using Openlabs.Mgcxm.Internal.SystemObjects;
 
-namespace Openlabs.Mgcxm.Internal;
+namespace Openlabs.Mgcxm.Common;
 
 public static class Random
 {
-    #if (!USE_SYSTEM_RANDOM)
+#if (!USE_SYSTEM_RANDOM)
     private static int PcgHash(long input)
     {
         var state = (int)input * 747796405 + 2891336453;
         var word = ((int)state >> (((int)state >> 28) + 4)) * 277803737;
         return (word >> 22) ^ word;
     }
-    #endif
+#endif
 
     public static void Init(long state)
     {
@@ -45,7 +45,7 @@ public static class Random
         for (uint size = 0; size < buffer.Length; size++)
             buffer[size] = (byte)Range(byte.MinValue, byte.MaxValue);
     }
-    
+
 #if (!USE_SYSTEM_RANDOM)
     private static MgcxmLong _state;
 #elif (USE_SYSTEM_RANDOM)

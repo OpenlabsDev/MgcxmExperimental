@@ -9,6 +9,9 @@ namespace Openlabs.Mgcxm.Net;
 /// </summary>
 public class IpAddress : IIpAddress
 {
+    /// <summary>
+    /// The actual System object IP address.
+    /// </summary>
     public IPAddress ActualIpAddress => IPAddress.Parse(ToString());
 
     /// <summary>
@@ -57,7 +60,14 @@ public class IpAddress : IIpAddress
         return formedIp;
     }
 
+    /// <summary>
+    /// The host of the IP address. (localhost / 1.1.1.1)
+    /// </summary>
     public string Origin => _origin;
+
+    /// <summary>
+    /// The port of the IP address. (80 / 443)
+    /// </summary>
     public ushort Port => _port;
 
     private string _origin;

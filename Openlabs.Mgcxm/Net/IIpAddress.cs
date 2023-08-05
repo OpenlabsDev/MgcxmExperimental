@@ -6,9 +6,18 @@ namespace Openlabs.Mgcxm.Net;
 
 public interface IIpAddress
 {
-    
+    /// <summary>
+    /// The actual System object IP address.
+    /// </summary>
     IPAddress ActualIpAddress { get; }
-    
+
+    /// <summary>
+    /// The host of the IP address. (localhost / 1.1.1.1)
+    /// </summary>
     string Origin { get; }
+
+    /// <summary>
+    /// The port of the IP address. (80 / 443)
+    /// </summary>
     ushort Port { get; }
 }

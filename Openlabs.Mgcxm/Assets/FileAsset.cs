@@ -2,7 +2,7 @@
 
 using System.Text;
 using System.Text.RegularExpressions;
-using Openlabs.Mgcxm.Internal;
+using Openlabs.Mgcxm.Common;
 
 namespace Openlabs.Mgcxm.Assets;
 

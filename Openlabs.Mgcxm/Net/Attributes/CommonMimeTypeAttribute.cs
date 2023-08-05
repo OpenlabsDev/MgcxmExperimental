@@ -3,7 +3,7 @@
 namespace Openlabs.Mgcxm.Net;
 
 [AttributeUsage(AttributeTargets.Field)]
-public class CommonMimeTypeAttribute : Attribute
+internal class CommonMimeTypeAttribute : Attribute
 {
     public CommonMimeTypeAttribute(string mimeType, params string[] identifiers)
     {
