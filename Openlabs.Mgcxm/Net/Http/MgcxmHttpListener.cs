@@ -124,6 +124,179 @@ public class MgcxmHttpListener
             }));
     }
 
+    private async Task StartListening()
+    {
+        this.PrintDebugInfo();
+
+        _listener.Start();
+        _listenToRequests = true;
+
+        while (_listenToRequests)
+        {
+            var httpContext = await _listener.GetContextAsync();
+
+            var httpRequest = httpContext.Request;
+            var httpResponse = httpContext.Response;
+
+            // build needed data
+            string query = "";
+            string url = httpRequest.Url!.PathAndQuery;
+
+            Uri baseAddress = new Uri($"{httpRequest.Url.Scheme}://{httpRequest.Url.Host}:{httpRequest.Url.Port}");
+            HttpMethods method = HttpMethods.UNKNOWN;
+            Dictionary<string, string> requestHeaders = new Dictionary<string, string>();
+            Dictionary<string, string> queryData = new Dictionary<string, string>();
+            Dictionary<string, string> formData = new Dictionary<string, string>();
+            List<byte> bodyData = new List<byte>();
+
+            Dictionary<MgcxmString, MgcxmString> responseHeaders = new Dictionary<MgcxmString, MgcxmString>();
+
+            // build can parse flag and method
+            bool canParseMethod = Enum.TryParse(typeof(HttpMethods), httpRequest.HttpMethod, out object? methodObj);
+            if (canParseMethod && methodObj != null)
+                method = (HttpMethods)methodObj;
+
+            // build headers
+            for (int i = 0; i < httpRequest.Headers.Count; i++)
+                requestHeaders.Add(
+                    httpRequest.Headers.GetKey(i) ?? "Unknown",
+                    httpRequest.Headers.GetValues(i)?[0] ?? "Unknown");
+
+            // build query
+            if (url.Contains("?"))
+            {
+                var urlParts = url.Split("?");
+
+                url = WebUtility.UrlDecode(urlParts[0]);
+                query = urlParts[1] ?? "";
+
+                foreach (var queryPart in query.Split("&"))
+                {
+                    var kvp = queryPart.Split("=");
+                    if (kvp.Length > 1)
+                        queryData.Add(kvp[0], kvp[1]);
+                }
+            }
+
+            // build content type
+            var contentType = HttpContentTypeHelper.ResolveValue(httpRequest.ContentType!);
+
+            // build body
+            int ibyte;
+            while ((ibyte = httpRequest.InputStream.ReadByte()) != -1)
+                bodyData.Add((byte)ibyte);
+
+            if (contentType == HttpContentTypes.UrlencodedForm)
+            {
+                foreach (var formPart in Encoding.UTF8.GetString(bodyData.ToArray()).Split("&"))
+                {
+                    var kvp = formPart.Split("=");
+                    if (kvp.Length > 1)
+                        formData.Add(kvp[0], kvp[1]);
+                }
+            }
+
+            // format url
+            if (url.EndsWith("/"))
+                url = url.Remove(url.Length - 1, 1);
+
+            // construct data
+            var requestData = MgcxmHttpRequest.New(
+                method,
+                baseAddress,
+                url,
+                contentType,
+                bodyData.ToArray(),
+                formData,
+                requestHeaders,
+                queryData,
+                _allocatedId);
+
+            var responseData = MgcxmHttpResponse.New(
+                (HttpStatusCodes)httpResponse.StatusCode,
+                "",
+                responseHeaders,
+                Array.Empty<byte>(),
+                _allocatedId);
+
+            //Logger.Info($"=========== Ws Request ===========");
+            //Logger.Info($"==================================");
+
+            // log request
+            Logger.Info($"||==----------- Http Request -----------==||");
+            Logger.Info($"Server Id = 0x{_allocatedId.Id:x8}");
+            Logger.Info($"Requested Url = {requestData.Uri}");
+            Logger.Info($"Http Method = {requestData.HttpMethod}");
+            if (requestData.HttpMethod == HttpMethods.POST || requestData.HttpMethod == HttpMethods.PUT)
+            {
+                Logger.Info($"Content Type = {requestData.ContentType}");
+                Logger.Info($"Content Length = {requestData.RawBodyData.Length}");
+                Logger.Info($"Content = {requestData.Body.Truncate(50, "...")}");
+            }
+
+            // add required headers
+            responseData.Header("X-Powered-By", "Mgcxm.Net");
+            responseData.Header("Vary", "Accept-Encoding");
+            responseData.Header("Request-Context", $"appId=cid-v1:{Guid.NewGuid().ToString()}");
+            responseData.Header("Pragma", "no-cache");
+            responseData.Header("Cache-Control", "no-cache");
+            responseData.Header("Expires", "-1");
+
+            httpResponse.KeepAlive = true;
+            responseData.Header("Connection", "keep-alive");
+
+            // write to response
+            if (_framework == null)
+            {
+                var endpoint = _endpoints.Find(x =>
+                    x.Url == requestData.Uri && x.RequiredMethod == Enum.Parse<HttpMethods>(httpRequest.HttpMethod));
+                if (endpoint != null)
+                {
+                    endpoint.OnEndpointRequested(requestData, responseData);
+                    await responseData.Transfer(httpResponse);
+                }
+                else
+                {
+                    // try using the Matches method
+                    foreach (var vEndpoint in _endpoints)
+                    {
+                        try
+                        {
+                            if (MgcxmHttpEndpoint.Matches(requestData.Uri, vEndpoint, requestData))
+                            {
+                                // Logger.Trace($"0x{vEndpoint.EndpointId.Id:x8} meets dynamic criterion");
+                                vEndpoint.OnEndpointRequested(requestData, responseData);
+                                await responseData.Transfer(httpResponse);
+                            }
+                            else
+                            {
+                                // Logger.Trace($"0x{vEndpoint.EndpointId.Id:x8} does not meet dynamic criterion");
+                            }
+                        }
+                        catch (Exception exception)
+                        {
+                            // Logger.Trace($"0x{vEndpoint.EndpointId.Id:x8} does not meet dynamic criterion");
+                            Logger.Exception("Cannot parse Dynamic Url", exception);
+                        }
+                    }
+                }
+            }
+            else
+            {
+                try
+                {
+                    await _framework.ResolveRequest(httpRequest, httpResponse, requestData, responseData);
+                }
+                catch (Exception exception)
+                {
+                    Logger.Exception("Cannot resolve Framework endpoint", exception);
+                }
+            }
+        }
+
+        _listener.Stop();
+    }
+
     /// <summary>
     /// Starts the HTTP listener to listen for incoming requests.
     /// </summary>

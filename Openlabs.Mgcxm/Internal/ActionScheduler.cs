@@ -3,6 +3,8 @@
 using Openlabs.Mgcxm.Common;
 using Openlabs.Mgcxm.Internal.SystemObjects;
 
+using Random = Openlabs.Mgcxm.Common.Random;
+
 namespace Openlabs.Mgcxm.Internal;
 
 public sealed class ActionScheduler

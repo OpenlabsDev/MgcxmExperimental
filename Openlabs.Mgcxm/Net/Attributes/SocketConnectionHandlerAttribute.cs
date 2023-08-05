@@ -7,7 +7,7 @@ namespace Openlabs.Mgcxm.Net;
 /// <summary>
 /// Represents an attribute used to specify the type of socket connection handler for a socket.
 /// </summary>
-[AttributeUsage(AttributeTargets.Class)]
+[AttributeUsage(AttributeTargets.Method)]
 public class SocketConnectionHandlerAttribute : Attribute
 {
     /// <summary>
