@@ -1,0 +1,52 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="__bootstrap_8cs" xml:lang="en-US">
+<title>C:/Users/adenf/RiderProjects/Openlabs.Mgcxm/Openlabs.Mgcxm/Startup/Bootstrap.cs File Reference</title>
+<indexterm><primary>C:/Users/adenf/RiderProjects/Openlabs.Mgcxm/Openlabs.Mgcxm/Startup/Bootstrap.cs</primary></indexterm>
+<simplesect>
+    <title>Classes    </title>
+        <itemizedlist>
+            <listitem><para>class <emphasis role="strong">Openlabs.Mgcxm.Startup.Bootstrap</emphasis></para>
+
+<para>A static class responsible for bootstrapping the Mgcxm application. </para>
+</listitem>
+            <listitem><para>class <link linkend="_class_openlabs_1_1_mgcxm_1_1_startup_1_1_mgcxm_initialization_exception">Openlabs.Mgcxm.Startup.MgcxmInitializationException</link></para>
+
+<para>Exception thrown when there&apos;s an error during Mgcxm initialization. </para>
+</listitem>
+            <listitem><para>class <link linkend="_class_openlabs_1_1_mgcxm_1_1_startup_1_1_bootstrap_options">Openlabs.Mgcxm.Startup.BootstrapOptions</link></para>
+
+<para>Options for configuring the Mgcxm bootstrap process. </para>
+</listitem>
+            <listitem><para>class <link linkend="_class_openlabs_1_1_mgcxm_1_1_startup_1_1_scaling_options">Openlabs.Mgcxm.Startup.ScalingOptions</link></para>
+
+<para>Options for scaling Mgcxm application. </para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Namespaces    </title>
+        <itemizedlist>
+            <listitem><para>namespace <link linkend="_namespace_openlabs">Openlabs</link></para>
+</listitem>
+            <listitem><para>namespace <link linkend="_namespace_openlabs_1_1_mgcxm">Openlabs.Mgcxm</link></para>
+</listitem>
+            <listitem><para>namespace <link linkend="_namespace_openlabs_1_1_mgcxm_1_1_startup">Openlabs.Mgcxm.Startup</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Typedefs    </title>
+        <itemizedlist>
+            <listitem><para>using <link linkend="__bootstrap_8cs_1a885d2472e770f94c2baca8bbbf0e1b9a">Random</link> = Openlabs.Mgcxm.Common.Random</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Typedef Documentation</title>
+<anchor xml:id="__bootstrap_8cs_1a885d2472e770f94c2baca8bbbf0e1b9a"/><section>
+    <title>Random</title>
+<indexterm><primary>Random</primary><secondary>Bootstrap.cs</secondary></indexterm>
+<indexterm><primary>Bootstrap.cs</primary><secondary>Random</secondary></indexterm>
+<para><computeroutput>using <link linkend="__open_api_endpoint_resolver_8cs_1a885d2472e770f94c2baca8bbbf0e1b9a">Random</link> =  Openlabs.Mgcxm.Common.Random</computeroutput></para></section>
+</section>
+</section>

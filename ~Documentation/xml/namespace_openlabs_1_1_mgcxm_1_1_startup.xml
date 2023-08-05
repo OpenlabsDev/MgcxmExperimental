@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.7" xml:lang="en-US">
+  <compounddef id="namespace_openlabs_1_1_mgcxm_1_1_startup" kind="namespace" language="C#">
+    <compoundname>Openlabs::Mgcxm::Startup</compoundname>
+    <innerclass refid="class_openlabs_1_1_mgcxm_1_1_startup_1_1_bootstrap" prot="public">Openlabs::Mgcxm::Startup::Bootstrap</innerclass>
+    <innerclass refid="class_openlabs_1_1_mgcxm_1_1_startup_1_1_bootstrap_options" prot="public">Openlabs::Mgcxm::Startup::BootstrapOptions</innerclass>
+    <innerclass refid="class_openlabs_1_1_mgcxm_1_1_startup_1_1_bootstrap_started_event_args" prot="public">Openlabs::Mgcxm::Startup::BootstrapStartedEventArgs</innerclass>
+    <innerclass refid="class_openlabs_1_1_mgcxm_1_1_startup_1_1_mgcxm_initialization_exception" prot="public">Openlabs::Mgcxm::Startup::MgcxmInitializationException</innerclass>
+    <innerclass refid="class_openlabs_1_1_mgcxm_1_1_startup_1_1_scaling_options" prot="public">Openlabs::Mgcxm::Startup::ScalingOptions</innerclass>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/Users/adenf/RiderProjects/Openlabs.Mgcxm/Openlabs.Mgcxm/Startup/Bootstrap.cs" line="6" column="1"/>
+  </compounddef>
+</doxygen>

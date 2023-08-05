@@ -1,0 +1,111 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.7" xml:lang="en-US">
+  <compounddef id="class_openlabs_1_1_mgcxm_1_1_assets_1_1_object_d_t_o" kind="class" language="C#" prot="public">
+    <compoundname>Openlabs::Mgcxm::Assets::ObjectDTO</compoundname>
+    <derivedcompoundref refid="class_openlabs_1_1_mgcxm_1_1_tests_1_1_assets_1_1_responses_1_1_d_t_o_1_1_avatar_d_t_o" prot="public" virt="non-virtual">Openlabs.Mgcxm.Tests.Assets.Responses.DTO.AvatarDTO</derivedcompoundref>
+    <derivedcompoundref refid="class_openlabs_1_1_mgcxm_1_1_tests_1_1_assets_1_1_responses_1_1_d_t_o_1_1_level_progression_index_d_t_o" prot="public" virt="non-virtual">Openlabs.Mgcxm.Tests.Assets.Responses.DTO.LevelProgressionIndexDTO</derivedcompoundref>
+    <derivedcompoundref refid="class_openlabs_1_1_mgcxm_1_1_tests_1_1_assets_1_1_responses_1_1_d_t_o_1_1_login_response_d_t_o" prot="public" virt="non-virtual">Openlabs.Mgcxm.Tests.Assets.Responses.DTO.LoginResponseDTO</derivedcompoundref>
+    <derivedcompoundref refid="class_openlabs_1_1_mgcxm_1_1_tests_1_1_assets_1_1_responses_1_1_d_t_o_1_1_matchmaking_params_d_t_o" prot="public" virt="non-virtual">Openlabs.Mgcxm.Tests.Assets.Responses.DTO.MatchmakingParamsDTO</derivedcompoundref>
+    <derivedcompoundref refid="class_openlabs_1_1_mgcxm_1_1_tests_1_1_assets_1_1_responses_1_1_d_t_o_1_1_objective_d_t_o" prot="public" virt="non-virtual">Openlabs.Mgcxm.Tests.Assets.Responses.DTO.ObjectiveDTO</derivedcompoundref>
+    <derivedcompoundref refid="class_openlabs_1_1_mgcxm_1_1_tests_1_1_assets_1_1_responses_1_1_d_t_o_1_1_photon_config_d_t_o" prot="public" virt="non-virtual">Openlabs.Mgcxm.Tests.Assets.Responses.DTO.PhotonConfigDTO</derivedcompoundref>
+    <derivedcompoundref refid="class_openlabs_1_1_mgcxm_1_1_tests_1_1_assets_1_1_responses_1_1_d_t_o_1_1_rec_room_config_d_t_o" prot="public" virt="non-virtual">Openlabs.Mgcxm.Tests.Assets.Responses.DTO.RecRoomConfigDTO</derivedcompoundref>
+    <derivedcompoundref refid="class_openlabs_1_1_mgcxm_1_1_tests_1_1_assets_1_1_responses_1_1_d_t_o_1_1_setting_d_t_o" prot="public" virt="non-virtual">Openlabs.Mgcxm.Tests.Assets.Responses.DTO.SettingDTO</derivedcompoundref>
+      <sectiondef kind="private-static-attrib">
+      <memberdef kind="variable" id="class_openlabs_1_1_mgcxm_1_1_assets_1_1_object_d_t_o_1ae16d169fa9dc038d0b8ecfbaa79ba65f" prot="private" static="yes" mutable="no">
+        <type><ref refid="class_openlabs_1_1_mgcxm_1_1_internal_1_1_logger_sink" kindref="compound">LoggerSink</ref></type>
+        <definition>LoggerSink Openlabs.Mgcxm.Assets.ObjectDTO.DtoSink</definition>
+        <argsstring></argsstring>
+        <name>DtoSink</name>
+        <qualifiedname>Openlabs.Mgcxm.Assets.ObjectDTO.DtoSink</qualifiedname>
+        <initializer>= new(&quot;Dto&quot;)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/adenf/RiderProjects/Openlabs.Mgcxm/Openlabs.Mgcxm/Assets/ObjectDTO.cs" line="25" column="31" bodyfile="C:/Users/adenf/RiderProjects/Openlabs.Mgcxm/Openlabs.Mgcxm/Assets/ObjectDTO.cs" bodystart="25" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_openlabs_1_1_mgcxm_1_1_assets_1_1_object_d_t_o_1ae614d674a342e92fb9c5b2c8052f7433" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>string</type>
+        <definition>string Openlabs.Mgcxm.Assets.ObjectDTO.GetDtoId</definition>
+        <argsstring>()</argsstring>
+        <name>GetDtoId</name>
+        <qualifiedname>Openlabs.Mgcxm.Assets.ObjectDTO.GetDtoId</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/adenf/RiderProjects/Openlabs.Mgcxm/Openlabs.Mgcxm/Assets/ObjectDTO.cs" line="10" column="19" bodyfile="C:/Users/adenf/RiderProjects/Openlabs.Mgcxm/Openlabs.Mgcxm/Assets/ObjectDTO.cs" bodystart="10" bodyend="23"/>
+        <references refid="class_openlabs_1_1_mgcxm_1_1_internal_1_1_logger_sink_1a184cab05d3e176b9325bdf43b2856f2c">Openlabs.Mgcxm.Internal.LoggerSink.Trace</references>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>Openlabs.Mgcxm.Assets.ObjectDTO</label>
+        <link refid="class_openlabs_1_1_mgcxm_1_1_assets_1_1_object_d_t_o"/>
+      </node>
+      <node id="2">
+        <label>Openlabs.Mgcxm.Tests.Assets.Responses.DTO.AvatarDTO</label>
+        <link refid="class_openlabs_1_1_mgcxm_1_1_tests_1_1_assets_1_1_responses_1_1_d_t_o_1_1_avatar_d_t_o"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>Openlabs.Mgcxm.Tests.Assets.Responses.DTO.LevelProgressionIndexDTO</label>
+        <link refid="class_openlabs_1_1_mgcxm_1_1_tests_1_1_assets_1_1_responses_1_1_d_t_o_1_1_level_progression_index_d_t_o"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>Openlabs.Mgcxm.Tests.Assets.Responses.DTO.LoginResponseDTO</label>
+        <link refid="class_openlabs_1_1_mgcxm_1_1_tests_1_1_assets_1_1_responses_1_1_d_t_o_1_1_login_response_d_t_o"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>Openlabs.Mgcxm.Tests.Assets.Responses.DTO.MatchmakingParamsDTO</label>
+        <link refid="class_openlabs_1_1_mgcxm_1_1_tests_1_1_assets_1_1_responses_1_1_d_t_o_1_1_matchmaking_params_d_t_o"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>Openlabs.Mgcxm.Tests.Assets.Responses.DTO.ObjectiveDTO</label>
+        <link refid="class_openlabs_1_1_mgcxm_1_1_tests_1_1_assets_1_1_responses_1_1_d_t_o_1_1_objective_d_t_o"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="7">
+        <label>Openlabs.Mgcxm.Tests.Assets.Responses.DTO.PhotonConfigDTO</label>
+        <link refid="class_openlabs_1_1_mgcxm_1_1_tests_1_1_assets_1_1_responses_1_1_d_t_o_1_1_photon_config_d_t_o"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="8">
+        <label>Openlabs.Mgcxm.Tests.Assets.Responses.DTO.RecRoomConfigDTO</label>
+        <link refid="class_openlabs_1_1_mgcxm_1_1_tests_1_1_assets_1_1_responses_1_1_d_t_o_1_1_rec_room_config_d_t_o"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="9">
+        <label>Openlabs.Mgcxm.Tests.Assets.Responses.DTO.SettingDTO</label>
+        <link refid="class_openlabs_1_1_mgcxm_1_1_tests_1_1_assets_1_1_responses_1_1_d_t_o_1_1_setting_d_t_o"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <location file="C:/Users/adenf/RiderProjects/Openlabs.Mgcxm/Openlabs.Mgcxm/Assets/ObjectDTO.cs" line="8" column="17" bodyfile="C:/Users/adenf/RiderProjects/Openlabs.Mgcxm/Openlabs.Mgcxm/Assets/ObjectDTO.cs" bodystart="9" bodyend="26"/>
+    <listofallmembers>
+      <member refid="class_openlabs_1_1_mgcxm_1_1_assets_1_1_object_d_t_o_1ae16d169fa9dc038d0b8ecfbaa79ba65f" prot="private" virt="non-virtual"><scope>Openlabs::Mgcxm::Assets::ObjectDTO</scope><name>DtoSink</name></member>
+      <member refid="class_openlabs_1_1_mgcxm_1_1_assets_1_1_object_d_t_o_1ae614d674a342e92fb9c5b2c8052f7433" prot="public" virt="non-virtual"><scope>Openlabs::Mgcxm::Assets::ObjectDTO</scope><name>GetDtoId</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

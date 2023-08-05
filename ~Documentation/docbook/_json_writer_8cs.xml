@@ -1,0 +1,25 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="__json_writer_8cs" xml:lang="en-US">
+<title>C:/Users/adenf/RiderProjects/Openlabs.Mgcxm/Openlabs.Mgcxm/Common/JsonMapping/JsonWriter.cs File Reference</title>
+<indexterm><primary>C:/Users/adenf/RiderProjects/Openlabs.Mgcxm/Openlabs.Mgcxm/Common/JsonMapping/JsonWriter.cs</primary></indexterm>
+<simplesect>
+    <title>Classes    </title>
+        <itemizedlist>
+            <listitem><para>class <emphasis role="strong">Openlabs.Mgcxm.Common.JsonMapping.Json</emphasis></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Namespaces    </title>
+        <itemizedlist>
+            <listitem><para>namespace <link linkend="_namespace_openlabs">Openlabs</link></para>
+</listitem>
+            <listitem><para>namespace <link linkend="_namespace_openlabs_1_1_mgcxm">Openlabs.Mgcxm</link></para>
+</listitem>
+            <listitem><para>namespace <link linkend="_namespace_openlabs_1_1_mgcxm_1_1_common">Openlabs.Mgcxm.Common</link></para>
+</listitem>
+            <listitem><para>namespace <link linkend="_namespace_openlabs_1_1_mgcxm_1_1_common_1_1_json_mapping">Openlabs.Mgcxm.Common.JsonMapping</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+</section>

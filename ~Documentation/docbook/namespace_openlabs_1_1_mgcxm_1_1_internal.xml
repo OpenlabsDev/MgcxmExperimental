@@ -1,0 +1,143 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_namespace_openlabs_1_1_mgcxm_1_1_internal" xml:lang="en-US">
+<title>Openlabs.Mgcxm.Internal Namespace Reference</title>
+<indexterm><primary>Openlabs.Mgcxm.Internal</primary></indexterm>
+<simplesect>
+    <title>Namespaces    </title>
+        <itemizedlist>
+            <listitem><para>namespace <link linkend="_namespace_openlabs_1_1_mgcxm_1_1_internal_1_1_system_objects">SystemObjects</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Classes    </title>
+        <itemizedlist>
+            <listitem><para>class <link linkend="_class_openlabs_1_1_mgcxm_1_1_internal_1_1_action_event">ActionEvent</link></para>
+</listitem>
+            <listitem><para>class <link linkend="_class_openlabs_1_1_mgcxm_1_1_internal_1_1_action_event_connector_exception">ActionEventConnectorException</link></para>
+</listitem>
+            <listitem><para>class <link linkend="_class_openlabs_1_1_mgcxm_1_1_internal_1_1_action_scheduler">ActionScheduler</link></para>
+</listitem>
+            <listitem><para>class <emphasis role="strong">AttributeResolver</emphasis></para>
+</listitem>
+            <listitem><para>class <emphasis role="strong">Constants</emphasis></para>
+</listitem>
+            <listitem><para>class <link linkend="_class_openlabs_1_1_mgcxm_1_1_internal_1_1_debug_handler_attribute">DebugHandlerAttribute</link></para>
+</listitem>
+            <listitem><para>class <link linkend="_class_openlabs_1_1_mgcxm_1_1_internal_1_1_debug_info_handler">DebugInfoHandler</link></para>
+</listitem>
+            <listitem><para>class <emphasis role="strong">DebugInfoHandlerExtensions</emphasis></para>
+</listitem>
+            <listitem><para>class <link linkend="_class_openlabs_1_1_mgcxm_1_1_internal_1_1_generic_listed_action">GenericListedAction</link></para>
+</listitem>
+            <listitem><para>interface <link linkend="_interface_openlabs_1_1_mgcxm_1_1_internal_1_1_i_generic_listed_action">IGenericListedAction</link></para>
+</listitem>
+            <listitem><para>interface <link linkend="_interface_openlabs_1_1_mgcxm_1_1_internal_1_1_i_listed_action">IListedAction</link></para>
+</listitem>
+            <listitem><para>interface <link linkend="_interface_openlabs_1_1_mgcxm_1_1_internal_1_1_i_nongeneric_listed_action">INongenericListedAction</link></para>
+</listitem>
+            <listitem><para>class <link linkend="_class_openlabs_1_1_mgcxm_1_1_internal_1_1_internal_reference_attribute">InternalReferenceAttribute</link></para>
+</listitem>
+            <listitem><para>class <emphasis role="strong">Logger</emphasis></para>
+
+<para>Static class to log messages. </para>
+</listitem>
+            <listitem><para>class <link linkend="_class_openlabs_1_1_mgcxm_1_1_internal_1_1_logger_sink">LoggerSink</link></para>
+</listitem>
+            <listitem><para>class <link linkend="_class_openlabs_1_1_mgcxm_1_1_internal_1_1_log_message">LogMessage</link></para>
+</listitem>
+            <listitem><para>class <emphasis role="strong">MgcxmConfiguration</emphasis></para>
+</listitem>
+            <listitem><para>struct <link linkend="_struct_openlabs_1_1_mgcxm_1_1_internal_1_1_mgcxm_id">MgcxmId</link></para>
+
+<para>A simple way to identify an object allocated in Mgcxm space. </para>
+</listitem>
+            <listitem><para>class <emphasis role="strong">MgcxmObjectManager</emphasis></para>
+
+<para>Manages all objects with MgcxmId present. </para>
+</listitem>
+            <listitem><para>class <link linkend="_class_openlabs_1_1_mgcxm_1_1_internal_1_1_nongeneric_listed_action">NongenericListedAction</link></para>
+</listitem>
+            <listitem><para>class <emphasis role="strong">SafeInvocation</emphasis></para>
+
+<para>Static class that handles the safe invocation of an Action. </para>
+</listitem>
+            <listitem><para>class <link linkend="_class_openlabs_1_1_mgcxm_1_1_internal_1_1_safe_invocation_exception">SafeInvocationException</link></para>
+</listitem>
+            <listitem><para>class <emphasis role="strong">StringExtensions</emphasis></para>
+</listitem>
+            <listitem><para>class <emphasis role="strong">TypeExtensions</emphasis></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Enumerations    </title>
+        <itemizedlist>
+            <listitem><para>enum <link linkend="_namespace_openlabs_1_1_mgcxm_1_1_internal_1ad2ef54d1161dd1cbb1948a60ce7bfe51">ConnectorAggregateType</link> { <link linkend="_namespace_openlabs_1_1_mgcxm_1_1_internal_1ad2ef54d1161dd1cbb1948a60ce7bfe51aec211f7c20af43e742bf2570c3cb84f9">Add</link>
+, <link linkend="_namespace_openlabs_1_1_mgcxm_1_1_internal_1ad2ef54d1161dd1cbb1948a60ce7bfe51a1063e38cb53d94d386f21227fcd84717">Remove</link>
+ }</para>
+</listitem>
+            <listitem><para>enum <link linkend="_namespace_openlabs_1_1_mgcxm_1_1_internal_1a25582aed8bd08a2f6803962cbe3d27fe">LogLevel</link> { <?linebreak?><link linkend="_namespace_openlabs_1_1_mgcxm_1_1_internal_1a25582aed8bd08a2f6803962cbe3d27fea2d3e4144aa384b18849ab9a8abad74d6">TRACE</link>
+, <link linkend="_namespace_openlabs_1_1_mgcxm_1_1_internal_1a25582aed8bd08a2f6803962cbe3d27feadc30ec20708ef7b0f641ef78b7880a15">DEBUG</link>
+, <link linkend="_namespace_openlabs_1_1_mgcxm_1_1_internal_1a25582aed8bd08a2f6803962cbe3d27fea551b723eafd6a31d444fcb2f5920fbd3">INFO</link>
+, <link linkend="_namespace_openlabs_1_1_mgcxm_1_1_internal_1a25582aed8bd08a2f6803962cbe3d27fea059e9861e0400dfbe05c98a841f3f96b">WARNING</link>
+, <?linebreak?><link linkend="_namespace_openlabs_1_1_mgcxm_1_1_internal_1a25582aed8bd08a2f6803962cbe3d27feabb1ca97ec761fc37101737ba0aa2e7c5">ERROR</link>
+, <link linkend="_namespace_openlabs_1_1_mgcxm_1_1_internal_1a25582aed8bd08a2f6803962cbe3d27fea19da7170bea36556dde582519795f3fc">FATAL</link>
+ }</para>
+
+<para>An enumeration of all the possible log level types. </para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Enumeration Type Documentation</title>
+<anchor xml:id="_namespace_openlabs_1_1_mgcxm_1_1_internal_1ad2ef54d1161dd1cbb1948a60ce7bfe51"/><section>
+    <title>ConnectorAggregateType</title>
+<indexterm><primary>ConnectorAggregateType</primary><secondary>Openlabs.Mgcxm.Internal</secondary></indexterm>
+<indexterm><primary>Openlabs.Mgcxm.Internal</primary><secondary>ConnectorAggregateType</secondary></indexterm>
+<para><computeroutput>enum <link linkend="_namespace_openlabs_1_1_mgcxm_1_1_internal_1ad2ef54d1161dd1cbb1948a60ce7bfe51">Openlabs.Mgcxm.Internal.ConnectorAggregateType</link></computeroutput></para><informaltable frame="all">
+<title>Enumerator</title>
+    <tgroup cols="2" align="left" colsep="1" rowsep="1">
+      <colspec colname='c1'/>
+      <colspec colname='c2'/>
+<tbody>
+<row><entry><indexterm><primary>Add</primary><secondary>Openlabs.Mgcxm.Internal</secondary></indexterm>
+<indexterm><primary>Openlabs.Mgcxm.Internal</primary><secondary>Add</secondary></indexterm>
+<anchor xml:id="_namespace_openlabs_1_1_mgcxm_1_1_internal_1ad2ef54d1161dd1cbb1948a60ce7bfe51aec211f7c20af43e742bf2570c3cb84f9"/>Add</entry><entry></entry></row><row><entry><indexterm><primary>Remove</primary><secondary>Openlabs.Mgcxm.Internal</secondary></indexterm>
+<indexterm><primary>Openlabs.Mgcxm.Internal</primary><secondary>Remove</secondary></indexterm>
+<anchor xml:id="_namespace_openlabs_1_1_mgcxm_1_1_internal_1ad2ef54d1161dd1cbb1948a60ce7bfe51a1063e38cb53d94d386f21227fcd84717"/>Remove</entry><entry></entry></row>    </tbody>
+    </tgroup>
+</informaltable>
+</section>
+<anchor xml:id="_namespace_openlabs_1_1_mgcxm_1_1_internal_1a25582aed8bd08a2f6803962cbe3d27fe"/><section>
+    <title>LogLevel</title>
+<indexterm><primary>LogLevel</primary><secondary>Openlabs.Mgcxm.Internal</secondary></indexterm>
+<indexterm><primary>Openlabs.Mgcxm.Internal</primary><secondary>LogLevel</secondary></indexterm>
+<para><computeroutput>enum <link linkend="_namespace_openlabs_1_1_mgcxm_1_1_internal_1a25582aed8bd08a2f6803962cbe3d27fe">Openlabs.Mgcxm.Internal.LogLevel</link></computeroutput></para><para>
+
+<para>An enumeration of all the possible log level types. </para>
+</para>
+<informaltable frame="all">
+<title>Enumerator</title>
+    <tgroup cols="2" align="left" colsep="1" rowsep="1">
+      <colspec colname='c1'/>
+      <colspec colname='c2'/>
+<tbody>
+<row><entry><indexterm><primary>TRACE</primary><secondary>Openlabs.Mgcxm.Internal</secondary></indexterm>
+<indexterm><primary>Openlabs.Mgcxm.Internal</primary><secondary>TRACE</secondary></indexterm>
+<anchor xml:id="_namespace_openlabs_1_1_mgcxm_1_1_internal_1a25582aed8bd08a2f6803962cbe3d27fea2d3e4144aa384b18849ab9a8abad74d6"/>TRACE</entry><entry></entry></row><row><entry><indexterm><primary>DEBUG</primary><secondary>Openlabs.Mgcxm.Internal</secondary></indexterm>
+<indexterm><primary>Openlabs.Mgcxm.Internal</primary><secondary>DEBUG</secondary></indexterm>
+<anchor xml:id="_namespace_openlabs_1_1_mgcxm_1_1_internal_1a25582aed8bd08a2f6803962cbe3d27feadc30ec20708ef7b0f641ef78b7880a15"/>DEBUG</entry><entry></entry></row><row><entry><indexterm><primary>INFO</primary><secondary>Openlabs.Mgcxm.Internal</secondary></indexterm>
+<indexterm><primary>Openlabs.Mgcxm.Internal</primary><secondary>INFO</secondary></indexterm>
+<anchor xml:id="_namespace_openlabs_1_1_mgcxm_1_1_internal_1a25582aed8bd08a2f6803962cbe3d27fea551b723eafd6a31d444fcb2f5920fbd3"/>INFO</entry><entry></entry></row><row><entry><indexterm><primary>WARNING</primary><secondary>Openlabs.Mgcxm.Internal</secondary></indexterm>
+<indexterm><primary>Openlabs.Mgcxm.Internal</primary><secondary>WARNING</secondary></indexterm>
+<anchor xml:id="_namespace_openlabs_1_1_mgcxm_1_1_internal_1a25582aed8bd08a2f6803962cbe3d27fea059e9861e0400dfbe05c98a841f3f96b"/>WARNING</entry><entry></entry></row><row><entry><indexterm><primary>ERROR</primary><secondary>Openlabs.Mgcxm.Internal</secondary></indexterm>
+<indexterm><primary>Openlabs.Mgcxm.Internal</primary><secondary>ERROR</secondary></indexterm>
+<anchor xml:id="_namespace_openlabs_1_1_mgcxm_1_1_internal_1a25582aed8bd08a2f6803962cbe3d27feabb1ca97ec761fc37101737ba0aa2e7c5"/>ERROR</entry><entry></entry></row><row><entry><indexterm><primary>FATAL</primary><secondary>Openlabs.Mgcxm.Internal</secondary></indexterm>
+<indexterm><primary>Openlabs.Mgcxm.Internal</primary><secondary>FATAL</secondary></indexterm>
+<anchor xml:id="_namespace_openlabs_1_1_mgcxm_1_1_internal_1a25582aed8bd08a2f6803962cbe3d27fea19da7170bea36556dde582519795f3fc"/>FATAL</entry><entry></entry></row>    </tbody>
+    </tgroup>
+</informaltable>
+</section>
+</section>
+</section>

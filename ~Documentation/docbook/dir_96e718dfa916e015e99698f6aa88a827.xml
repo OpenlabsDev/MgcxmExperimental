@@ -1,0 +1,33 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_dir_96e718dfa916e015e99698f6aa88a827" xml:lang="en-US">
+<title>C:/Users/adenf/RiderProjects/Openlabs.Mgcxm/Openlabs.Mgcxm.Tests/Assets/Responses/DTO Directory Reference</title>
+<indexterm><primary>C:/Users/adenf/RiderProjects/Openlabs.Mgcxm/Openlabs.Mgcxm.Tests/Assets/Responses/DTO Directory Reference</primary></indexterm>
+Directory dependency graph for DTO:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="dir_96e718dfa916e015e99698f6aa88a827_dep.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+<simplesect>
+    <title>Files    </title>
+        <itemizedlist>
+            <listitem><para>file <link linkend="__avatar_d_t_o_8cs">AvatarDTO.cs</link></para>
+</listitem>
+            <listitem><para>file <link linkend="__login_response_d_t_o_8cs">LoginResponseDTO.cs</link></para>
+</listitem>
+            <listitem><para>file <link linkend="__message_d_t_o_8cs">MessageDTO.cs</link></para>
+</listitem>
+            <listitem><para>file <link linkend="__objective_d_t_o_8cs">ObjectiveDTO.cs</link></para>
+</listitem>
+            <listitem><para>file <link linkend="__profile_d_t_o_8cs">ProfileDTO.cs</link></para>
+</listitem>
+            <listitem><para>file <link linkend="__rec_room_config_d_t_o_8cs">RecRoomConfigDTO.cs</link></para>
+</listitem>
+            <listitem><para>file <link linkend="__setting_d_t_o_8cs">SettingDTO.cs</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+</section>

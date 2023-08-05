@@ -1,0 +1,209 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_class_j_w_t_1_1_jwt_encoder" xml:lang="en-US">
+<title>JWT.JwtEncoder Class Reference</title>
+<indexterm><primary>JWT.JwtEncoder</primary></indexterm>
+<para>
+
+<para>Encodes Jwt. </para>
+ 
+</para>
+Inheritance diagram for JWT.JwtEncoder:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="class_j_w_t_1_1_jwt_encoder__inherit__graph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+Collaboration diagram for JWT.JwtEncoder:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="class_j_w_t_1_1_jwt_encoder__coll__graph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+<simplesect>
+    <title>Public Member Functions    </title>
+        <itemizedlist>
+            <listitem><para><link linkend="_class_j_w_t_1_1_jwt_encoder_1a6c4bea34741c348384a37b7158343e21">JwtEncoder</link> (<link linkend="_interface_j_w_t_1_1_algorithms_1_1_i_algorithm_factory">IAlgorithmFactory</link> algFactory, <link linkend="_interface_j_w_t_1_1_i_json_serializer">IJsonSerializer</link> jsonSerializer, <link linkend="_interface_j_w_t_1_1_i_base64_url_encoder">IBase64UrlEncoder</link> urlEncoder)</para>
+
+<para>Creates an instance of JwtEncoder </para>
+</listitem>
+            <listitem><para><link linkend="_class_j_w_t_1_1_jwt_encoder_1ab518a5980c668cfab9053592b2e0dbdd">JwtEncoder</link> (<link linkend="_interface_j_w_t_1_1_algorithms_1_1_i_jwt_algorithm">IJwtAlgorithm</link> algorithm, <link linkend="_interface_j_w_t_1_1_i_json_serializer">IJsonSerializer</link> jsonSerializer, <link linkend="_interface_j_w_t_1_1_i_base64_url_encoder">IBase64UrlEncoder</link> urlEncoder)</para>
+
+<para>Creates an instance of JwtEncoder </para>
+</listitem>
+            <listitem><para>string <link linkend="_class_j_w_t_1_1_jwt_encoder_1ae5504a30e85727b208f832f1bac010d1">Encode</link> (IDictionary&lt; string, object &gt; extraHeaders, object payload, byte[] key)</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+        <itemizedlist>
+            <listitem><para>string <link linkend="_interface_j_w_t_1_1_i_jwt_encoder_1a0ece85ed8dae5fc53da5ba8d850a8171">Encode</link> (IDictionary&lt; string, object &gt; extraHeaders, object payload, byte[] key)</para>
+
+<para>Creates a <link linkend="_namespace_j_w_t">JWT</link> given a header, a payload, the signing key, and the algorithm to use. </para>
+</listitem>
+        </itemizedlist>
+<section>
+<title>Detailed Description</title>
+
+<para>Encodes Jwt. </para>
+</section>
+<section>
+<title>Constructor &amp; Destructor Documentation</title>
+<anchor xml:id="_class_j_w_t_1_1_jwt_encoder_1a6c4bea34741c348384a37b7158343e21"/><section>
+    <title>JwtEncoder()<computeroutput>[1/2]</computeroutput></title>
+<indexterm><primary>JwtEncoder</primary><secondary>JWT.JwtEncoder</secondary></indexterm>
+<indexterm><primary>JWT.JwtEncoder</primary><secondary>JwtEncoder</secondary></indexterm>
+<para><computeroutput>JWT.JwtEncoder.JwtEncoder (<link linkend="_interface_j_w_t_1_1_algorithms_1_1_i_algorithm_factory">IAlgorithmFactory</link> algFactory, <link linkend="_interface_j_w_t_1_1_i_json_serializer">IJsonSerializer</link> jsonSerializer, <link linkend="_interface_j_w_t_1_1_i_base64_url_encoder">IBase64UrlEncoder</link> urlEncoder)</computeroutput></para><para>
+
+<para>Creates an instance of JwtEncoder </para>
+</para>
+
+<para>
+                <formalpara>
+                    <title>
+Parameters</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>algFactory</entry><entry>
+<para>The <link linkend="_namespace_j_w_t">JWT</link> algorithm factory</para>
+</entry>
+                            </row>
+                            <row>
+<entry>jsonSerializer</entry><entry>
+<para>The JSON serializer</para>
+</entry>
+                            </row>
+                            <row>
+<entry>urlEncoder</entry><entry>
+<para>The base64 URL encoder</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                </para>
+</section>
+<anchor xml:id="_class_j_w_t_1_1_jwt_encoder_1ab518a5980c668cfab9053592b2e0dbdd"/><section>
+    <title>JwtEncoder()<computeroutput>[2/2]</computeroutput></title>
+<indexterm><primary>JwtEncoder</primary><secondary>JWT.JwtEncoder</secondary></indexterm>
+<indexterm><primary>JWT.JwtEncoder</primary><secondary>JwtEncoder</secondary></indexterm>
+<para><computeroutput>JWT.JwtEncoder.JwtEncoder (<link linkend="_interface_j_w_t_1_1_algorithms_1_1_i_jwt_algorithm">IJwtAlgorithm</link> algorithm, <link linkend="_interface_j_w_t_1_1_i_json_serializer">IJsonSerializer</link> jsonSerializer, <link linkend="_interface_j_w_t_1_1_i_base64_url_encoder">IBase64UrlEncoder</link> urlEncoder)</computeroutput></para><para>
+
+<para>Creates an instance of JwtEncoder </para>
+</para>
+
+<para>
+                <formalpara>
+                    <title>
+Parameters</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>algorithm</entry><entry>
+<para>The <link linkend="_namespace_j_w_t">JWT</link> algorithm</para>
+</entry>
+                            </row>
+                            <row>
+<entry>jsonSerializer</entry><entry>
+<para>The JSON serializer</para>
+</entry>
+                            </row>
+                            <row>
+<entry>urlEncoder</entry><entry>
+<para>The base64 URL encoder</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                </para>
+</section>
+</section>
+<section>
+<title>Member Function Documentation</title>
+<anchor xml:id="_class_j_w_t_1_1_jwt_encoder_1ae5504a30e85727b208f832f1bac010d1"/><section>
+    <title>Encode()</title>
+<indexterm><primary>Encode</primary><secondary>JWT.JwtEncoder</secondary></indexterm>
+<indexterm><primary>JWT.JwtEncoder</primary><secondary>Encode</secondary></indexterm>
+<para><computeroutput>string JWT.JwtEncoder.Encode (IDictionary&lt; string, object &gt; extraHeaders, object payload, byte[] key)</computeroutput></para>
+<para>
+<para>Creates a <link linkend="_namespace_j_w_t">JWT</link> given a header, a payload, the signing key, and the algorithm to use.</para>
+
+<para>
+                <formalpara>
+                    <title>
+Parameters</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>extraHeaders</entry><entry>
+<para>An arbitrary set of extra headers. Will be augmented with the standard &quot;typ&quot; and &quot;alg&quot; headers</para>
+</entry>
+                            </row>
+                            <row>
+<entry>payload</entry><entry>
+<para>An arbitrary payload (must be serializable to JSON)</para>
+</entry>
+                            </row>
+                            <row>
+<entry>key</entry><entry>
+<para>The key bytes used to sign the token</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                <formalpara><title>Returns</title>
+
+<para>The generated <link linkend="_namespace_j_w_t">JWT</link></para>
+</formalpara>
+</para>
+ 
+                <formalpara>
+                    <title>
+Exceptions</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>ArgumentNullException</entry><entry></entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                </para>
+<para>
+Implements <link linkend="_interface_j_w_t_1_1_i_jwt_encoder_1a0ece85ed8dae5fc53da5ba8d850a8171">JWT.IJwtEncoder</link>.</para>
+</section>
+<para>
+The documentation for this class was generated from the following file:</para>
+C:/Users/adenf/RiderProjects/Openlabs.Mgcxm/Openlabs.Mgcxm/JWT/<link linkend="__jwt_encoder_8cs">JwtEncoder.cs</link></section>
+</section>

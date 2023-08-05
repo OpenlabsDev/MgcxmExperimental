@@ -1,0 +1,55 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_class_openlabs_1_1_mgcxm_1_1_tests_1_1_test_ws_server_1_1_client_connect_message" xml:lang="en-US">
+<title>Openlabs.Mgcxm.Tests.TestWsServer.ClientConnectMessage Class Reference</title>
+<indexterm><primary>Openlabs.Mgcxm.Tests.TestWsServer.ClientConnectMessage</primary></indexterm>
+<simplesect>
+    <title>Properties    </title>
+        <itemizedlist>
+            <listitem><para>string <link linkend="_class_openlabs_1_1_mgcxm_1_1_tests_1_1_test_ws_server_1_1_client_connect_message_1ab481bdd63a45795dc8f4650ba1be75ad">PlayerId</link><computeroutput> [get, set]</computeroutput>
+</para>
+</listitem>
+            <listitem><para>string <link linkend="_class_openlabs_1_1_mgcxm_1_1_tests_1_1_test_ws_server_1_1_client_connect_message_1a85083b6b3986ffae0ff0430622b73391">AppVersion</link><computeroutput> [get, set]</computeroutput>
+</para>
+</listitem>
+            <listitem><para>string <link linkend="_class_openlabs_1_1_mgcxm_1_1_tests_1_1_test_ws_server_1_1_client_connect_message_1af627e5375716377136dd1c95197c71db">IpAddress</link><computeroutput> [get, set]</computeroutput>
+</para>
+</listitem>
+            <listitem><para>string <link linkend="_class_openlabs_1_1_mgcxm_1_1_tests_1_1_test_ws_server_1_1_client_connect_message_1a3c1fb65fb454ab561b841a39f2cf3d98">VRDevice</link><computeroutput> [get, set]</computeroutput>
+</para>
+</listitem>
+            <listitem><para>string <link linkend="_class_openlabs_1_1_mgcxm_1_1_tests_1_1_test_ws_server_1_1_client_connect_message_1a91e3c77b14463a9393d2ad562a07897a">IsDevelopment</link><computeroutput> [get, set]</computeroutput>
+</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Property Documentation</title>
+<anchor xml:id="_class_openlabs_1_1_mgcxm_1_1_tests_1_1_test_ws_server_1_1_client_connect_message_1a85083b6b3986ffae0ff0430622b73391"/><section>
+    <title>AppVersion</title>
+<indexterm><primary>AppVersion</primary><secondary>Openlabs.Mgcxm.Tests.TestWsServer.ClientConnectMessage</secondary></indexterm>
+<indexterm><primary>Openlabs.Mgcxm.Tests.TestWsServer.ClientConnectMessage</primary><secondary>AppVersion</secondary></indexterm>
+<para><computeroutput>string Openlabs.Mgcxm.Tests.TestWsServer.ClientConnectMessage.AppVersion<computeroutput>[get]</computeroutput>, <computeroutput>[set]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_class_openlabs_1_1_mgcxm_1_1_tests_1_1_test_ws_server_1_1_client_connect_message_1af627e5375716377136dd1c95197c71db"/><section>
+    <title>IpAddress</title>
+<indexterm><primary>IpAddress</primary><secondary>Openlabs.Mgcxm.Tests.TestWsServer.ClientConnectMessage</secondary></indexterm>
+<indexterm><primary>Openlabs.Mgcxm.Tests.TestWsServer.ClientConnectMessage</primary><secondary>IpAddress</secondary></indexterm>
+<para><computeroutput>string Openlabs.Mgcxm.Tests.TestWsServer.ClientConnectMessage.IpAddress<computeroutput>[get]</computeroutput>, <computeroutput>[set]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_class_openlabs_1_1_mgcxm_1_1_tests_1_1_test_ws_server_1_1_client_connect_message_1a91e3c77b14463a9393d2ad562a07897a"/><section>
+    <title>IsDevelopment</title>
+<indexterm><primary>IsDevelopment</primary><secondary>Openlabs.Mgcxm.Tests.TestWsServer.ClientConnectMessage</secondary></indexterm>
+<indexterm><primary>Openlabs.Mgcxm.Tests.TestWsServer.ClientConnectMessage</primary><secondary>IsDevelopment</secondary></indexterm>
+<para><computeroutput>string Openlabs.Mgcxm.Tests.TestWsServer.ClientConnectMessage.IsDevelopment<computeroutput>[get]</computeroutput>, <computeroutput>[set]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_class_openlabs_1_1_mgcxm_1_1_tests_1_1_test_ws_server_1_1_client_connect_message_1ab481bdd63a45795dc8f4650ba1be75ad"/><section>
+    <title>PlayerId</title>
+<indexterm><primary>PlayerId</primary><secondary>Openlabs.Mgcxm.Tests.TestWsServer.ClientConnectMessage</secondary></indexterm>
+<indexterm><primary>Openlabs.Mgcxm.Tests.TestWsServer.ClientConnectMessage</primary><secondary>PlayerId</secondary></indexterm>
+<para><computeroutput>string Openlabs.Mgcxm.Tests.TestWsServer.ClientConnectMessage.PlayerId<computeroutput>[get]</computeroutput>, <computeroutput>[set]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_class_openlabs_1_1_mgcxm_1_1_tests_1_1_test_ws_server_1_1_client_connect_message_1a3c1fb65fb454ab561b841a39f2cf3d98"/><section>
+    <title>VRDevice</title>
+<indexterm><primary>VRDevice</primary><secondary>Openlabs.Mgcxm.Tests.TestWsServer.ClientConnectMessage</secondary></indexterm>
+<indexterm><primary>Openlabs.Mgcxm.Tests.TestWsServer.ClientConnectMessage</primary><secondary>VRDevice</secondary></indexterm>
+<para><computeroutput>string Openlabs.Mgcxm.Tests.TestWsServer.ClientConnectMessage.VRDevice<computeroutput>[get]</computeroutput>, <computeroutput>[set]</computeroutput></computeroutput></para></section>
+<para>
+The documentation for this class was generated from the following file:</para>
+C:/Users/adenf/RiderProjects/Openlabs.Mgcxm/Openlabs.Mgcxm.Tests/<link linkend="__test_ws_server_8cs">TestWsServer.cs</link></section>
+</section>

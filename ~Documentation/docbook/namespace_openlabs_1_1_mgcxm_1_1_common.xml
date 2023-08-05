@@ -1,0 +1,125 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_namespace_openlabs_1_1_mgcxm_1_1_common" xml:lang="en-US">
+<title>Openlabs.Mgcxm.Common Namespace Reference</title>
+<indexterm><primary>Openlabs.Mgcxm.Common</primary></indexterm>
+<simplesect>
+    <title>Namespaces    </title>
+        <itemizedlist>
+            <listitem><para>namespace <link linkend="_namespace_openlabs_1_1_mgcxm_1_1_common_1_1_framework">Framework</link></para>
+</listitem>
+            <listitem><para>namespace <link linkend="_namespace_openlabs_1_1_mgcxm_1_1_common_1_1_json_mapping">JsonMapping</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Classes    </title>
+        <itemizedlist>
+            <listitem><para>class <link linkend="_class_openlabs_1_1_mgcxm_1_1_common_1_1_duration">Duration</link></para>
+</listitem>
+            <listitem><para>class <emphasis role="strong">Hashing</emphasis></para>
+</listitem>
+            <listitem><para>class <emphasis role="strong">ListTools</emphasis></para>
+</listitem>
+            <listitem><para>class <emphasis role="strong">Random</emphasis></para>
+</listitem>
+            <listitem><para>class <link linkend="_class_openlabs_1_1_mgcxm_1_1_common_1_1_ratio">Ratio</link></para>
+</listitem>
+            <listitem><para>class <link linkend="_class_openlabs_1_1_mgcxm_1_1_common_1_1_server_database_reader">ServerDatabaseReader</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Enumerations    </title>
+        <itemizedlist>
+            <listitem><para>enum <link linkend="_namespace_openlabs_1_1_mgcxm_1_1_common_1ad3f9789a8091aac8ec3493129402a252">DurationType</link> { <?linebreak?><link linkend="_namespace_openlabs_1_1_mgcxm_1_1_common_1ad3f9789a8091aac8ec3493129402a252a6a7e73161603d87b26a8eac49dab0a9c">Hours</link>
+, <link linkend="_namespace_openlabs_1_1_mgcxm_1_1_common_1ad3f9789a8091aac8ec3493129402a252af670ea66cfb0e90bd6090472ad692694">Minutes</link>
+, <link linkend="_namespace_openlabs_1_1_mgcxm_1_1_common_1ad3f9789a8091aac8ec3493129402a252a8f19a8c7566af54ea8981029730e5465">Seconds</link>
+, <link linkend="_namespace_openlabs_1_1_mgcxm_1_1_common_1ad3f9789a8091aac8ec3493129402a252a38f246763036ccaeba7db6d563c4d821">Milliseconds</link>
+, <?linebreak?><link linkend="_namespace_openlabs_1_1_mgcxm_1_1_common_1ad3f9789a8091aac8ec3493129402a252a64068ed47d979c5efa036f027d656433">Microseconds</link>
+, <link linkend="_namespace_openlabs_1_1_mgcxm_1_1_common_1ad3f9789a8091aac8ec3493129402a252afba00bdab687ce01136a86bac8bac578">Nanoseconds</link>
+ }</para>
+</listitem>
+            <listitem><para>enum <link linkend="_namespace_openlabs_1_1_mgcxm_1_1_common_1a0f42a1d988756fee538c2f5ebdea5bd6">ServerDatabaseFileType</link> { <link linkend="_namespace_openlabs_1_1_mgcxm_1_1_common_1a0f42a1d988756fee538c2f5ebdea5bd6a1686a6c336b71b36d77354cea19a8b52">Int</link>
+, <link linkend="_namespace_openlabs_1_1_mgcxm_1_1_common_1a0f42a1d988756fee538c2f5ebdea5bd6a27118326006d3829667a400ad23d5d98">String</link>
+, <link linkend="_namespace_openlabs_1_1_mgcxm_1_1_common_1a0f42a1d988756fee538c2f5ebdea5bd6a8045a0a6c688b0635e3caccc408a1446">Generic</link>
+ }</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Functions    </title>
+        <itemizedlist>
+            <listitem><para>delegate void <link linkend="_namespace_openlabs_1_1_mgcxm_1_1_common_1a138ff59abeebc5e8f7da8dd4a4b152fd">CreateElementDelegate&lt; T &gt;</link> (List&lt; T &gt; list, int index)</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Enumeration Type Documentation</title>
+<anchor xml:id="_namespace_openlabs_1_1_mgcxm_1_1_common_1ad3f9789a8091aac8ec3493129402a252"/><section>
+    <title>DurationType</title>
+<indexterm><primary>DurationType</primary><secondary>Openlabs.Mgcxm.Common</secondary></indexterm>
+<indexterm><primary>Openlabs.Mgcxm.Common</primary><secondary>DurationType</secondary></indexterm>
+<para><computeroutput>enum <link linkend="_namespace_openlabs_1_1_mgcxm_1_1_common_1ad3f9789a8091aac8ec3493129402a252">Openlabs.Mgcxm.Common.DurationType</link></computeroutput></para><informaltable frame="all">
+<title>Enumerator</title>
+    <tgroup cols="2" align="left" colsep="1" rowsep="1">
+      <colspec colname='c1'/>
+      <colspec colname='c2'/>
+<tbody>
+<row><entry><indexterm><primary>Hours</primary><secondary>Openlabs.Mgcxm.Common</secondary></indexterm>
+<indexterm><primary>Openlabs.Mgcxm.Common</primary><secondary>Hours</secondary></indexterm>
+<anchor xml:id="_namespace_openlabs_1_1_mgcxm_1_1_common_1ad3f9789a8091aac8ec3493129402a252a6a7e73161603d87b26a8eac49dab0a9c"/>Hours</entry><entry>
+<para>3600/1 </para>
+</entry></row><row><entry><indexterm><primary>Minutes</primary><secondary>Openlabs.Mgcxm.Common</secondary></indexterm>
+<indexterm><primary>Openlabs.Mgcxm.Common</primary><secondary>Minutes</secondary></indexterm>
+<anchor xml:id="_namespace_openlabs_1_1_mgcxm_1_1_common_1ad3f9789a8091aac8ec3493129402a252af670ea66cfb0e90bd6090472ad692694"/>Minutes</entry><entry>
+<para>60/1 </para>
+</entry></row><row><entry><indexterm><primary>Seconds</primary><secondary>Openlabs.Mgcxm.Common</secondary></indexterm>
+<indexterm><primary>Openlabs.Mgcxm.Common</primary><secondary>Seconds</secondary></indexterm>
+<anchor xml:id="_namespace_openlabs_1_1_mgcxm_1_1_common_1ad3f9789a8091aac8ec3493129402a252a8f19a8c7566af54ea8981029730e5465"/>Seconds</entry><entry>
+<para>1/1 </para>
+</entry></row><row><entry><indexterm><primary>Milliseconds</primary><secondary>Openlabs.Mgcxm.Common</secondary></indexterm>
+<indexterm><primary>Openlabs.Mgcxm.Common</primary><secondary>Milliseconds</secondary></indexterm>
+<anchor xml:id="_namespace_openlabs_1_1_mgcxm_1_1_common_1ad3f9789a8091aac8ec3493129402a252a38f246763036ccaeba7db6d563c4d821"/>Milliseconds</entry><entry>
+<para>1/1000 </para>
+</entry></row><row><entry><indexterm><primary>Microseconds</primary><secondary>Openlabs.Mgcxm.Common</secondary></indexterm>
+<indexterm><primary>Openlabs.Mgcxm.Common</primary><secondary>Microseconds</secondary></indexterm>
+<anchor xml:id="_namespace_openlabs_1_1_mgcxm_1_1_common_1ad3f9789a8091aac8ec3493129402a252a64068ed47d979c5efa036f027d656433"/>Microseconds</entry><entry>
+<para>1/1000000 </para>
+</entry></row><row><entry><indexterm><primary>Nanoseconds</primary><secondary>Openlabs.Mgcxm.Common</secondary></indexterm>
+<indexterm><primary>Openlabs.Mgcxm.Common</primary><secondary>Nanoseconds</secondary></indexterm>
+<anchor xml:id="_namespace_openlabs_1_1_mgcxm_1_1_common_1ad3f9789a8091aac8ec3493129402a252afba00bdab687ce01136a86bac8bac578"/>Nanoseconds</entry><entry>
+<para>1/1000000000 </para>
+</entry></row>    </tbody>
+    </tgroup>
+</informaltable>
+</section>
+<anchor xml:id="_namespace_openlabs_1_1_mgcxm_1_1_common_1a0f42a1d988756fee538c2f5ebdea5bd6"/><section>
+    <title>ServerDatabaseFileType</title>
+<indexterm><primary>ServerDatabaseFileType</primary><secondary>Openlabs.Mgcxm.Common</secondary></indexterm>
+<indexterm><primary>Openlabs.Mgcxm.Common</primary><secondary>ServerDatabaseFileType</secondary></indexterm>
+<para><computeroutput>enum <link linkend="_namespace_openlabs_1_1_mgcxm_1_1_common_1a0f42a1d988756fee538c2f5ebdea5bd6">Openlabs.Mgcxm.Common.ServerDatabaseFileType</link></computeroutput></para><informaltable frame="all">
+<title>Enumerator</title>
+    <tgroup cols="2" align="left" colsep="1" rowsep="1">
+      <colspec colname='c1'/>
+      <colspec colname='c2'/>
+<tbody>
+<row><entry><indexterm><primary>Int</primary><secondary>Openlabs.Mgcxm.Common</secondary></indexterm>
+<indexterm><primary>Openlabs.Mgcxm.Common</primary><secondary>Int</secondary></indexterm>
+<anchor xml:id="_namespace_openlabs_1_1_mgcxm_1_1_common_1a0f42a1d988756fee538c2f5ebdea5bd6a1686a6c336b71b36d77354cea19a8b52"/>Int</entry><entry></entry></row><row><entry><indexterm><primary>String</primary><secondary>Openlabs.Mgcxm.Common</secondary></indexterm>
+<indexterm><primary>Openlabs.Mgcxm.Common</primary><secondary>String</secondary></indexterm>
+<anchor xml:id="_namespace_openlabs_1_1_mgcxm_1_1_common_1a0f42a1d988756fee538c2f5ebdea5bd6a27118326006d3829667a400ad23d5d98"/>String</entry><entry></entry></row><row><entry><indexterm><primary>Generic</primary><secondary>Openlabs.Mgcxm.Common</secondary></indexterm>
+<indexterm><primary>Openlabs.Mgcxm.Common</primary><secondary>Generic</secondary></indexterm>
+<anchor xml:id="_namespace_openlabs_1_1_mgcxm_1_1_common_1a0f42a1d988756fee538c2f5ebdea5bd6a8045a0a6c688b0635e3caccc408a1446"/>Generic</entry><entry></entry></row>    </tbody>
+    </tgroup>
+</informaltable>
+</section>
+</section>
+<section>
+<title>Function Documentation</title>
+<anchor xml:id="_namespace_openlabs_1_1_mgcxm_1_1_common_1a138ff59abeebc5e8f7da8dd4a4b152fd"/><section>
+    <title>CreateElementDelegate&lt; T &gt;()</title>
+<indexterm><primary>CreateElementDelegate&lt; T &gt;</primary><secondary>Openlabs.Mgcxm.Common</secondary></indexterm>
+<indexterm><primary>Openlabs.Mgcxm.Common</primary><secondary>CreateElementDelegate&lt; T &gt;</secondary></indexterm>
+<para><computeroutput>delegate void Openlabs.Mgcxm.Common.CreateElementDelegate&lt; T &gt; (List&lt; T &gt; list, int index)</computeroutput></para></section>
+</section>
+</section>

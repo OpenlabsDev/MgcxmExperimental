@@ -1,0 +1,29 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="__mgcxm_id_8cs" xml:lang="en-US">
+<title>C:/Users/adenf/RiderProjects/Openlabs.Mgcxm/Openlabs.Mgcxm/Internal/MgcxmId.cs File Reference</title>
+<indexterm><primary>C:/Users/adenf/RiderProjects/Openlabs.Mgcxm/Openlabs.Mgcxm/Internal/MgcxmId.cs</primary></indexterm>
+<simplesect>
+    <title>Classes    </title>
+        <itemizedlist>
+            <listitem><para>struct <link linkend="_struct_openlabs_1_1_mgcxm_1_1_internal_1_1_mgcxm_id">Openlabs.Mgcxm.Internal.MgcxmId</link></para>
+
+<para>A simple way to identify an object allocated in Mgcxm space. </para>
+</listitem>
+            <listitem><para>class <emphasis role="strong">Openlabs.Mgcxm.Internal.MgcxmObjectManager</emphasis></para>
+
+<para>Manages all objects with MgcxmId present. </para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Namespaces    </title>
+        <itemizedlist>
+            <listitem><para>namespace <link linkend="_namespace_openlabs">Openlabs</link></para>
+</listitem>
+            <listitem><para>namespace <link linkend="_namespace_openlabs_1_1_mgcxm">Openlabs.Mgcxm</link></para>
+</listitem>
+            <listitem><para>namespace <link linkend="_namespace_openlabs_1_1_mgcxm_1_1_internal">Openlabs.Mgcxm.Internal</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+</section>

@@ -1,0 +1,54 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_class_openlabs_1_1_mgcxm_1_1_common_1_1_framework_1_1_open_api_endpoint_search_exception" xml:lang="en-US">
+<title>Openlabs.Mgcxm.Common.Framework.OpenApiEndpointSearchException Class Reference</title>
+<indexterm><primary>Openlabs.Mgcxm.Common.Framework.OpenApiEndpointSearchException</primary></indexterm>
+Inheritance diagram for Openlabs.Mgcxm.Common.Framework.OpenApiEndpointSearchException:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="class_openlabs_1_1_mgcxm_1_1_common_1_1_framework_1_1_open_api_endpoint_search_exception__inherit__graph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+Collaboration diagram for Openlabs.Mgcxm.Common.Framework.OpenApiEndpointSearchException:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="class_openlabs_1_1_mgcxm_1_1_common_1_1_framework_1_1_open_api_endpoint_search_exception__coll__graph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+<simplesect>
+    <title>Public Member Functions    </title>
+        <itemizedlist>
+            <listitem><para><link linkend="_class_openlabs_1_1_mgcxm_1_1_common_1_1_framework_1_1_open_api_endpoint_search_exception_1a2623b9f5103d0d2217327888e13391d9">OpenApiEndpointSearchException</link> ()</para>
+</listitem>
+            <listitem><para><link linkend="_class_openlabs_1_1_mgcxm_1_1_common_1_1_framework_1_1_open_api_endpoint_search_exception_1a81141c473d266fb5af895c1a47ed3a80">OpenApiEndpointSearchException</link> (string message)</para>
+</listitem>
+            <listitem><para><link linkend="_class_openlabs_1_1_mgcxm_1_1_common_1_1_framework_1_1_open_api_endpoint_search_exception_1aba9ee2088c8025468a4c1ba4206ebcc2">OpenApiEndpointSearchException</link> (string message, Exception inner)</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Constructor &amp; Destructor Documentation</title>
+<anchor xml:id="_class_openlabs_1_1_mgcxm_1_1_common_1_1_framework_1_1_open_api_endpoint_search_exception_1a2623b9f5103d0d2217327888e13391d9"/><section>
+    <title>OpenApiEndpointSearchException()<computeroutput>[1/3]</computeroutput></title>
+<indexterm><primary>OpenApiEndpointSearchException</primary><secondary>Openlabs.Mgcxm.Common.Framework.OpenApiEndpointSearchException</secondary></indexterm>
+<indexterm><primary>Openlabs.Mgcxm.Common.Framework.OpenApiEndpointSearchException</primary><secondary>OpenApiEndpointSearchException</secondary></indexterm>
+<para><computeroutput>Openlabs.Mgcxm.Common.Framework.OpenApiEndpointSearchException.OpenApiEndpointSearchException ( )</computeroutput></para></section>
+<anchor xml:id="_class_openlabs_1_1_mgcxm_1_1_common_1_1_framework_1_1_open_api_endpoint_search_exception_1a81141c473d266fb5af895c1a47ed3a80"/><section>
+    <title>OpenApiEndpointSearchException()<computeroutput>[2/3]</computeroutput></title>
+<indexterm><primary>OpenApiEndpointSearchException</primary><secondary>Openlabs.Mgcxm.Common.Framework.OpenApiEndpointSearchException</secondary></indexterm>
+<indexterm><primary>Openlabs.Mgcxm.Common.Framework.OpenApiEndpointSearchException</primary><secondary>OpenApiEndpointSearchException</secondary></indexterm>
+<para><computeroutput>Openlabs.Mgcxm.Common.Framework.OpenApiEndpointSearchException.OpenApiEndpointSearchException (string message)</computeroutput></para></section>
+<anchor xml:id="_class_openlabs_1_1_mgcxm_1_1_common_1_1_framework_1_1_open_api_endpoint_search_exception_1aba9ee2088c8025468a4c1ba4206ebcc2"/><section>
+    <title>OpenApiEndpointSearchException()<computeroutput>[3/3]</computeroutput></title>
+<indexterm><primary>OpenApiEndpointSearchException</primary><secondary>Openlabs.Mgcxm.Common.Framework.OpenApiEndpointSearchException</secondary></indexterm>
+<indexterm><primary>Openlabs.Mgcxm.Common.Framework.OpenApiEndpointSearchException</primary><secondary>OpenApiEndpointSearchException</secondary></indexterm>
+<para><computeroutput>Openlabs.Mgcxm.Common.Framework.OpenApiEndpointSearchException.OpenApiEndpointSearchException (string message, Exception inner)</computeroutput></para></section>
+<para>
+The documentation for this class was generated from the following file:</para>
+C:/Users/adenf/RiderProjects/Openlabs.Mgcxm/Openlabs.Mgcxm/Common/Framework/OpenApi/<link linkend="__open_api_endpoint_structure_8cs">OpenApiEndpointStructure.cs</link></section>
+</section>

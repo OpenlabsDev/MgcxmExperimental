@@ -1,0 +1,25 @@
+digraph "Graphical Class Hierarchy"
+{
+ // LATEX_PDF_SIZE
+  bgcolor="transparent";
+  edge [fontname=Helvetica,fontsize=10,labelfontname=Helvetica,labelfontsize=10];
+  node [fontname=Helvetica,fontsize=10,shape=box,height=0.2,width=0.4];
+  rankdir="LR";
+  Node0 [id="Node000000",label="Attribute",height=0.2,width=0.4,color="grey60", fillcolor="#E0E0E0", style="filled",tooltip=" "];
+  Node0 -> Node1 [id="edge2_Node000000_Node000001",dir="back",color="steelblue1",style="solid",tooltip=" "];
+  Node1 [id="Node000001",label="Openlabs.Mgcxm.Internal.\lDebugHandlerAttribute",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$class_openlabs_1_1_mgcxm_1_1_internal_1_1_debug_handler_attribute.html",tooltip=" "];
+  Node0 -> Node2 [id="edge3_Node000000_Node000002",dir="back",color="steelblue1",style="solid",tooltip=" "];
+  Node2 [id="Node000002",label="Openlabs.Mgcxm.Internal.\lInternalReferenceAttribute",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$class_openlabs_1_1_mgcxm_1_1_internal_1_1_internal_reference_attribute.html",tooltip=" "];
+  Node0 -> Node3 [id="edge4_Node000000_Node000003",dir="back",color="steelblue1",style="solid",tooltip=" "];
+  Node3 [id="Node000003",label="Openlabs.Mgcxm.Net.HttpDynamic\lUseAttribute",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$class_openlabs_1_1_mgcxm_1_1_net_1_1_http_dynamic_use_attribute.html",tooltip="Represents an attribute used to specify dynamic identifiers for a method handling an HTTP endpoint."];
+  Node0 -> Node4 [id="edge5_Node000000_Node000004",dir="back",color="steelblue1",style="solid",tooltip=" "];
+  Node4 [id="Node000004",label="Openlabs.Mgcxm.Net.HttpEndpoint\lAttribute",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$class_openlabs_1_1_mgcxm_1_1_net_1_1_http_endpoint_attribute.html",tooltip="Represents an attribute used to define an HTTP endpoint."];
+  Node0 -> Node5 [id="edge6_Node000000_Node000005",dir="back",color="steelblue1",style="solid",tooltip=" "];
+  Node5 [id="Node000005",label="Openlabs.Mgcxm.Net.HttpRequires\lAttribute",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$class_openlabs_1_1_mgcxm_1_1_net_1_1_http_requires_attribute.html",tooltip="Represents an attribute used to specify additional requirements for an HTTP endpoint method."];
+  Node0 -> Node6 [id="edge7_Node000000_Node000006",dir="back",color="steelblue1",style="solid",tooltip=" "];
+  Node6 [id="Node000006",label="Openlabs.Mgcxm.Net.HttpUse\lAuthorizationAttribute",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$class_openlabs_1_1_mgcxm_1_1_net_1_1_http_use_authorization_attribute.html",tooltip="Represents an attribute used to specify the authorization scheme required for an HTTP endpoint method..."];
+  Node0 -> Node7 [id="edge8_Node000000_Node000007",dir="back",color="steelblue1",style="solid",tooltip=" "];
+  Node7 [id="Node000007",label="Openlabs.Mgcxm.Net.Socket\lConnectionHandlerAttribute",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$class_openlabs_1_1_mgcxm_1_1_net_1_1_socket_connection_handler_attribute.html",tooltip="Represents an attribute used to specify the type of socket connection handler for a socket."];
+  Node0 -> Node8 [id="edge9_Node000000_Node000008",dir="back",color="steelblue1",style="solid",tooltip=" "];
+  Node8 [id="Node000008",label="Openlabs.Mgcxm.Net.Socket\lRouteAttribute",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$class_openlabs_1_1_mgcxm_1_1_net_1_1_socket_route_attribute.html",tooltip="Represents an attribute used to specify the route for a socket connection."];
+}

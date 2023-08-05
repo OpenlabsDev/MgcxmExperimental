@@ -1,0 +1,54 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_class_openlabs_1_1_mgcxm_1_1_internal_1_1_safe_invocation_exception" xml:lang="en-US">
+<title>Openlabs.Mgcxm.Internal.SafeInvocationException Class Reference</title>
+<indexterm><primary>Openlabs.Mgcxm.Internal.SafeInvocationException</primary></indexterm>
+Inheritance diagram for Openlabs.Mgcxm.Internal.SafeInvocationException:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="class_openlabs_1_1_mgcxm_1_1_internal_1_1_safe_invocation_exception__inherit__graph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+Collaboration diagram for Openlabs.Mgcxm.Internal.SafeInvocationException:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="class_openlabs_1_1_mgcxm_1_1_internal_1_1_safe_invocation_exception__coll__graph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+<simplesect>
+    <title>Public Member Functions    </title>
+        <itemizedlist>
+            <listitem><para><link linkend="_class_openlabs_1_1_mgcxm_1_1_internal_1_1_safe_invocation_exception_1a758f91933ecfeefc262e35f00e1fd55a">SafeInvocationException</link> ()</para>
+</listitem>
+            <listitem><para><link linkend="_class_openlabs_1_1_mgcxm_1_1_internal_1_1_safe_invocation_exception_1a13e94bc813e0196c1f0f05916c503e28">SafeInvocationException</link> (string message)</para>
+</listitem>
+            <listitem><para><link linkend="_class_openlabs_1_1_mgcxm_1_1_internal_1_1_safe_invocation_exception_1aee79b2303e4f9e48f784506bc295b238">SafeInvocationException</link> (string message, Exception inner)</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Constructor &amp; Destructor Documentation</title>
+<anchor xml:id="_class_openlabs_1_1_mgcxm_1_1_internal_1_1_safe_invocation_exception_1a758f91933ecfeefc262e35f00e1fd55a"/><section>
+    <title>SafeInvocationException()<computeroutput>[1/3]</computeroutput></title>
+<indexterm><primary>SafeInvocationException</primary><secondary>Openlabs.Mgcxm.Internal.SafeInvocationException</secondary></indexterm>
+<indexterm><primary>Openlabs.Mgcxm.Internal.SafeInvocationException</primary><secondary>SafeInvocationException</secondary></indexterm>
+<para><computeroutput>Openlabs.Mgcxm.Internal.SafeInvocationException.SafeInvocationException ( )</computeroutput></para></section>
+<anchor xml:id="_class_openlabs_1_1_mgcxm_1_1_internal_1_1_safe_invocation_exception_1a13e94bc813e0196c1f0f05916c503e28"/><section>
+    <title>SafeInvocationException()<computeroutput>[2/3]</computeroutput></title>
+<indexterm><primary>SafeInvocationException</primary><secondary>Openlabs.Mgcxm.Internal.SafeInvocationException</secondary></indexterm>
+<indexterm><primary>Openlabs.Mgcxm.Internal.SafeInvocationException</primary><secondary>SafeInvocationException</secondary></indexterm>
+<para><computeroutput>Openlabs.Mgcxm.Internal.SafeInvocationException.SafeInvocationException (string message)</computeroutput></para></section>
+<anchor xml:id="_class_openlabs_1_1_mgcxm_1_1_internal_1_1_safe_invocation_exception_1aee79b2303e4f9e48f784506bc295b238"/><section>
+    <title>SafeInvocationException()<computeroutput>[3/3]</computeroutput></title>
+<indexterm><primary>SafeInvocationException</primary><secondary>Openlabs.Mgcxm.Internal.SafeInvocationException</secondary></indexterm>
+<indexterm><primary>Openlabs.Mgcxm.Internal.SafeInvocationException</primary><secondary>SafeInvocationException</secondary></indexterm>
+<para><computeroutput>Openlabs.Mgcxm.Internal.SafeInvocationException.SafeInvocationException (string message, Exception inner)</computeroutput></para></section>
+<para>
+The documentation for this class was generated from the following file:</para>
+C:/Users/adenf/RiderProjects/Openlabs.Mgcxm/Openlabs.Mgcxm/Internal/<link linkend="__safe_invocation_8cs">SafeInvocation.cs</link></section>
+</section>

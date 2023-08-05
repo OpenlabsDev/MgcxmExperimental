@@ -1,0 +1,26 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_namespace_j_w_t_1_1_exceptions" xml:lang="en-US">
+<title>JWT.Exceptions Namespace Reference</title>
+<indexterm><primary>JWT.Exceptions</primary></indexterm>
+<simplesect>
+    <title>Classes    </title>
+        <itemizedlist>
+            <listitem><para>class <link linkend="_class_j_w_t_1_1_exceptions_1_1_invalid_token_parts_exception">InvalidTokenPartsException</link></para>
+
+<para>Represents an exception thrown when a token doesn&apos;t consist of 3 delimited by dot parts. </para>
+</listitem>
+            <listitem><para>class <link linkend="_class_j_w_t_1_1_exceptions_1_1_signature_verification_exception">SignatureVerificationException</link></para>
+
+<para>Represents an exception thrown when a signature validation fails. </para>
+</listitem>
+            <listitem><para>class <link linkend="_class_j_w_t_1_1_exceptions_1_1_token_expired_exception">TokenExpiredException</link></para>
+
+<para>Represents an exception thrown when when a token is expired. </para>
+</listitem>
+            <listitem><para>class <link linkend="_class_j_w_t_1_1_exceptions_1_1_token_not_yet_valid_exception">TokenNotYetValidException</link></para>
+
+<para>Represents an exception thrown when a token is not yet valid. </para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+</section>

@@ -1,0 +1,75 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_class_openlabs_1_1_mgcxm_1_1_common_1_1_framework_1_1_endpoint_url" xml:lang="en-US">
+<title>Openlabs.Mgcxm.Common.Framework.EndpointUrl Class Reference</title>
+<indexterm><primary>Openlabs.Mgcxm.Common.Framework.EndpointUrl</primary></indexterm>
+Inheritance diagram for Openlabs.Mgcxm.Common.Framework.EndpointUrl:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="class_openlabs_1_1_mgcxm_1_1_common_1_1_framework_1_1_endpoint_url__inherit__graph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+<simplesect>
+    <title>Public Member Functions    </title>
+        <itemizedlist>
+            <listitem><para>abstract new string <link linkend="_class_openlabs_1_1_mgcxm_1_1_common_1_1_framework_1_1_endpoint_url_1ab4a0d5c2ae6655023f0c126c777bf133">ToString</link> ()</para>
+</listitem>
+            <listitem><para>abstract void <link linkend="_class_openlabs_1_1_mgcxm_1_1_common_1_1_framework_1_1_endpoint_url_1a8e6d4f8f24addba1c8cebbbe7014532e">FromString</link> (string url)</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Static Public Member Functions    </title>
+        <itemizedlist>
+            <listitem><para>static TEndpointUrl <link linkend="_class_openlabs_1_1_mgcxm_1_1_common_1_1_framework_1_1_endpoint_url_1a730c6300912736e1239920e640608ad9">FromString&lt; TEndpointUrl &gt;</link> (string url)</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Member Function Documentation</title>
+<anchor xml:id="_class_openlabs_1_1_mgcxm_1_1_common_1_1_framework_1_1_endpoint_url_1a8e6d4f8f24addba1c8cebbbe7014532e"/><section>
+    <title>FromString()</title>
+<indexterm><primary>FromString</primary><secondary>Openlabs.Mgcxm.Common.Framework.EndpointUrl</secondary></indexterm>
+<indexterm><primary>Openlabs.Mgcxm.Common.Framework.EndpointUrl</primary><secondary>FromString</secondary></indexterm>
+<para><computeroutput>abstract void Openlabs.Mgcxm.Common.Framework.EndpointUrl.FromString (string url)<computeroutput>[pure virtual]</computeroutput></computeroutput></para><para>
+Implemented in <link linkend="_class_openlabs_1_1_mgcxm_1_1_common_1_1_framework_1_1_open_api_url_1ad0d34398a1a9a71ed86402b1ab3f34cb">Openlabs.Mgcxm.Common.Framework.OpenApiUrl</link>.</para>
+Here is the caller graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="class_openlabs_1_1_mgcxm_1_1_common_1_1_framework_1_1_endpoint_url_a8e6d4f8f24addba1c8cebbbe7014532e_icgraph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+</section>
+<anchor xml:id="_class_openlabs_1_1_mgcxm_1_1_common_1_1_framework_1_1_endpoint_url_1a730c6300912736e1239920e640608ad9"/><section>
+    <title>FromString&lt; TEndpointUrl &gt;()</title>
+<indexterm><primary>FromString&lt; TEndpointUrl &gt;</primary><secondary>Openlabs.Mgcxm.Common.Framework.EndpointUrl</secondary></indexterm>
+<indexterm><primary>Openlabs.Mgcxm.Common.Framework.EndpointUrl</primary><secondary>FromString&lt; TEndpointUrl &gt;</secondary></indexterm>
+<para><computeroutput>static TEndpointUrl <link linkend="_class_openlabs_1_1_mgcxm_1_1_common_1_1_framework_1_1_endpoint_url_1a8e6d4f8f24addba1c8cebbbe7014532e">Openlabs.Mgcxm.Common.Framework.EndpointUrl.FromString</link>&lt; TEndpointUrl &gt; (string url)<computeroutput>[static]</computeroutput></computeroutput></para><simplesect><title>Type Constraints</title>
+<para><emphasis role="strong">TEndpointUrl:EndpointUrl</emphasis></para>
+</simplesect>
+Here is the call graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="class_openlabs_1_1_mgcxm_1_1_common_1_1_framework_1_1_endpoint_url_a730c6300912736e1239920e640608ad9_cgraph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+</section>
+<anchor xml:id="_class_openlabs_1_1_mgcxm_1_1_common_1_1_framework_1_1_endpoint_url_1ab4a0d5c2ae6655023f0c126c777bf133"/><section>
+    <title>ToString()</title>
+<indexterm><primary>ToString</primary><secondary>Openlabs.Mgcxm.Common.Framework.EndpointUrl</secondary></indexterm>
+<indexterm><primary>Openlabs.Mgcxm.Common.Framework.EndpointUrl</primary><secondary>ToString</secondary></indexterm>
+<para><computeroutput>abstract new string Openlabs.Mgcxm.Common.Framework.EndpointUrl.ToString ( )<computeroutput>[pure virtual]</computeroutput></computeroutput></para><para>
+Implemented in <link linkend="_class_openlabs_1_1_mgcxm_1_1_common_1_1_framework_1_1_open_api_url_1a74aeeeae5da27746e75bff47bd7b4494">Openlabs.Mgcxm.Common.Framework.OpenApiUrl</link>.</para>
+</section>
+<para>
+The documentation for this class was generated from the following file:</para>
+C:/Users/adenf/RiderProjects/Openlabs.Mgcxm/Openlabs.Mgcxm/Common/Framework/Base/<link linkend="__endpoint_url_8cs">EndpointUrl.cs</link></section>
+</section>

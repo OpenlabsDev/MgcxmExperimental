@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.7" xml:lang="en-US">
+  <compounddef id="dir_dbef6a030a7febbf386e59e910d33d46" kind="dir">
+    <compoundname>C:/Users/adenf/RiderProjects/Openlabs.Mgcxm/Openlabs.Mgcxm/Startup</compoundname>
+    <innerfile refid="_bootstrap_8cs">Bootstrap.cs</innerfile>
+    <innerfile refid="_bootstrap_started_event_args_8cs">BootstrapStartedEventArgs.cs</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/Users/adenf/RiderProjects/Openlabs.Mgcxm/Openlabs.Mgcxm/Startup/"/>
+  </compounddef>
+</doxygen>

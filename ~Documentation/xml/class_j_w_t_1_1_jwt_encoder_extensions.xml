@@ -1,0 +1,222 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.7" xml:lang="en-US">
+  <compounddef id="class_j_w_t_1_1_jwt_encoder_extensions" kind="class" language="C#" prot="public">
+    <compoundname>JWT::JwtEncoderExtensions</compoundname>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="class_j_w_t_1_1_jwt_encoder_extensions_1a098cbced738e8b70e61763119114d7a0" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>string</type>
+        <definition>static string JWT.JwtEncoderExtensions.Encode</definition>
+        <argsstring>(this IJwtEncoder encoder, object payload, string key)</argsstring>
+        <name>Encode</name>
+        <qualifiedname>JWT.JwtEncoderExtensions.Encode</qualifiedname>
+        <param>
+          <type>this <ref refid="interface_j_w_t_1_1_i_jwt_encoder" kindref="compound">IJwtEncoder</ref></type>
+          <declname>encoder</declname>
+        </param>
+        <param>
+          <type>object</type>
+          <declname>payload</declname>
+        </param>
+        <param>
+          <type>string</type>
+          <declname>key</declname>
+        </param>
+        <briefdescription>
+<para>Creates a <ref refid="namespace_j_w_t" kindref="compound">JWT</ref> given a payload, the signing key, and the algorithm to use. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>encoder</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The encoder instance</para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>payload</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>An arbitrary payload (must be serializable to JSON)</para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>key</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The key used to sign the token</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The generated <ref refid="namespace_j_w_t" kindref="compound">JWT</ref></para>
+</simplesect>
+<parameterlist kind="exception"><parameteritem>
+<parameternamelist>
+<parametername>ArgumentNullException</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/adenf/RiderProjects/Openlabs.Mgcxm/Openlabs.Mgcxm/JWT/IJwtEncoder.cs" line="36" column="30"/>
+      </memberdef>
+      <memberdef kind="function" id="class_j_w_t_1_1_jwt_encoder_extensions_1aee4c4502f52fc5924f92107705d7b45f" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>string</type>
+        <definition>static string JWT.JwtEncoderExtensions.Encode</definition>
+        <argsstring>(this IJwtEncoder encoder, object payload, byte[] key)</argsstring>
+        <name>Encode</name>
+        <qualifiedname>JWT.JwtEncoderExtensions.Encode</qualifiedname>
+        <param>
+          <type>this <ref refid="interface_j_w_t_1_1_i_jwt_encoder" kindref="compound">IJwtEncoder</ref></type>
+          <declname>encoder</declname>
+        </param>
+        <param>
+          <type>object</type>
+          <declname>payload</declname>
+        </param>
+        <param>
+          <type>byte[]</type>
+          <declname>key</declname>
+        </param>
+        <briefdescription>
+<para>Creates a <ref refid="namespace_j_w_t" kindref="compound">JWT</ref> given a payload, the signing key, and the algorithm to use. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>encoder</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The encoder instance</para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>payload</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>An arbitrary payload (must be serializable to JSON)</para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>key</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The key used to sign the token</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The generated <ref refid="namespace_j_w_t" kindref="compound">JWT</ref></para>
+</simplesect>
+<parameterlist kind="exception"><parameteritem>
+<parameternamelist>
+<parametername>ArgumentNullException</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/adenf/RiderProjects/Openlabs.Mgcxm/Openlabs.Mgcxm/JWT/IJwtEncoder.cs" line="47" column="30"/>
+      </memberdef>
+      <memberdef kind="function" id="class_j_w_t_1_1_jwt_encoder_extensions_1a346ec32d468058c74faf228c84d14973" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>string</type>
+        <definition>static string JWT.JwtEncoderExtensions.Encode</definition>
+        <argsstring>(this IJwtEncoder encoder, IDictionary&lt; string, object &gt; extraHeaders, object payload, string key)</argsstring>
+        <name>Encode</name>
+        <qualifiedname>JWT.JwtEncoderExtensions.Encode</qualifiedname>
+        <param>
+          <type>this <ref refid="interface_j_w_t_1_1_i_jwt_encoder" kindref="compound">IJwtEncoder</ref></type>
+          <declname>encoder</declname>
+        </param>
+        <param>
+          <type>IDictionary&lt; string, object &gt;</type>
+          <declname>extraHeaders</declname>
+        </param>
+        <param>
+          <type>object</type>
+          <declname>payload</declname>
+        </param>
+        <param>
+          <type>string</type>
+          <declname>key</declname>
+        </param>
+        <briefdescription>
+<para>Creates a <ref refid="namespace_j_w_t" kindref="compound">JWT</ref> given a set of arbitrary extra headers, a payload, the signing key, and the algorithm to use. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>encoder</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The encoder instance</para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>extraHeaders</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>An arbitrary set of extra headers. Will be augmented with the standard &quot;typ&quot; and &quot;alg&quot; headers</para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>payload</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>An arbitrary payload (must be serializable to JSON)</para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>key</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The key bytes used to sign the token</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The generated <ref refid="namespace_j_w_t" kindref="compound">JWT</ref></para>
+</simplesect>
+<parameterlist kind="exception"><parameteritem>
+<parameternamelist>
+<parametername>ArgumentNullException</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/adenf/RiderProjects/Openlabs.Mgcxm/Openlabs.Mgcxm/JWT/IJwtEncoder.cs" line="59" column="30"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Extension methods for <simplesect kind="see"><para>IJwtEncoder</para>
+</simplesect>
+/summary&gt; </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/Users/adenf/RiderProjects/Openlabs.Mgcxm/Openlabs.Mgcxm/JWT/IJwtEncoder.cs" line="26" column="19" bodyfile="C:/Users/adenf/RiderProjects/Openlabs.Mgcxm/Openlabs.Mgcxm/JWT/IJwtEncoder.cs" bodystart="27" bodyend="61"/>
+    <listofallmembers>
+      <member refid="class_j_w_t_1_1_jwt_encoder_extensions_1a098cbced738e8b70e61763119114d7a0" prot="public" virt="non-virtual"><scope>JWT::JwtEncoderExtensions</scope><name>Encode</name></member>
+      <member refid="class_j_w_t_1_1_jwt_encoder_extensions_1aee4c4502f52fc5924f92107705d7b45f" prot="public" virt="non-virtual"><scope>JWT::JwtEncoderExtensions</scope><name>Encode</name></member>
+      <member refid="class_j_w_t_1_1_jwt_encoder_extensions_1a346ec32d468058c74faf228c84d14973" prot="public" virt="non-virtual"><scope>JWT::JwtEncoderExtensions</scope><name>Encode</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

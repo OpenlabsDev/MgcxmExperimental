@@ -1,0 +1,78 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="__program_8cs" xml:lang="en-US">
+<title>C:/Users/adenf/RiderProjects/Openlabs.Mgcxm/Openlabs.Mgcxm.Tests/Program.cs File Reference</title>
+<indexterm><primary>C:/Users/adenf/RiderProjects/Openlabs.Mgcxm/Openlabs.Mgcxm.Tests/Program.cs</primary></indexterm>
+<simplesect>
+    <title>Functions    </title>
+        <itemizedlist>
+            <listitem><para>await Bootstrap. <link linkend="__program_8cs_1ace3c6970f2d3660fa98d69ddb8bdd18b">LoadMgcxm</link> (new <link linkend="_class_openlabs_1_1_mgcxm_1_1_startup_1_1_bootstrap_options">BootstrapOptions</link>() { useExperimentalOptions=true, minimumLogLevel=LogLevel.TRACE, scalingOptions=new <link linkend="_class_openlabs_1_1_mgcxm_1_1_startup_1_1_scaling_options">ScalingOptions</link>() { maxThreads=10, maxNodes=30, useRandomPrefixes=true, runProcessesInBackground=true } })</para>
+</listitem>
+            <listitem><para>server. <link linkend="__program_8cs_1aa3b03ca6203f6f6a8ee395b5dbc2676d">Start</link> ()</para>
+</listitem>
+            <listitem><para><link linkend="__program_8cs_1aa42b148603fa31e853bd5122bce692ca">while</link> (true)</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Variables    </title>
+        <itemizedlist>
+            <listitem><para>AppDomain.CurrentDomain. <link linkend="__program_8cs_1a7f3759064279dcd09aa82e9b91280c9b">ProcessExit</link></para>
+</listitem>
+            <listitem><para>AppDomain.CurrentDomain. <link linkend="__program_8cs_1a22fa3917f3c6859b28796429da2ee3df">UnhandledException</link></para>
+</listitem>
+            <listitem><para><link linkend="_class_openlabs_1_1_mgcxm_1_1_tests_1_1_test_server">TestServer</link> <link linkend="__program_8cs_1adaf951a74e7e2c8804480d14f4142eaf">server</link> = new <link linkend="_class_openlabs_1_1_mgcxm_1_1_tests_1_1_test_server">TestServer</link>()</para>
+</listitem>
+            <listitem><para><link linkend="_class_openlabs_1_1_mgcxm_1_1_tests_1_1_test_ws_server">TestWsServer</link> <link linkend="__program_8cs_1aa22070b4090c14a73ce9d0c5fc0c3a29">wsServer</link> = new <link linkend="_class_openlabs_1_1_mgcxm_1_1_tests_1_1_test_ws_server">TestWsServer</link>()</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Function Documentation</title>
+<anchor xml:id="__program_8cs_1ace3c6970f2d3660fa98d69ddb8bdd18b"/><section>
+    <title>LoadMgcxm()</title>
+<indexterm><primary>LoadMgcxm</primary><secondary>Program.cs</secondary></indexterm>
+<indexterm><primary>Program.cs</primary><secondary>LoadMgcxm</secondary></indexterm>
+<para><computeroutput>await Bootstrap. LoadMgcxm (new <link linkend="_class_openlabs_1_1_mgcxm_1_1_startup_1_1_bootstrap_options">BootstrapOptions</link>() { useExperimentalOptions=true, minimumLogLevel=LogLevel.TRACE, scalingOptions=new <link linkend="_class_openlabs_1_1_mgcxm_1_1_startup_1_1_scaling_options">ScalingOptions</link>() { maxThreads=10, maxNodes=30, useRandomPrefixes=true, runProcessesInBackground=true } } )</computeroutput></para></section>
+<anchor xml:id="__program_8cs_1aa3b03ca6203f6f6a8ee395b5dbc2676d"/><section>
+    <title>Start()</title>
+<indexterm><primary>Start</primary><secondary>Program.cs</secondary></indexterm>
+<indexterm><primary>Program.cs</primary><secondary>Start</secondary></indexterm>
+<para><computeroutput><link linkend="__program_8cs_1aa22070b4090c14a73ce9d0c5fc0c3a29">wsServer</link> Start ( )</computeroutput></para></section>
+<anchor xml:id="__program_8cs_1aa42b148603fa31e853bd5122bce692ca"/><section>
+    <title>while()</title>
+<indexterm><primary>while</primary><secondary>Program.cs</secondary></indexterm>
+<indexterm><primary>Program.cs</primary><secondary>while</secondary></indexterm>
+<para><computeroutput>while (true )</computeroutput></para></section>
+</section>
+<section>
+<title>Variable Documentation</title>
+<anchor xml:id="__program_8cs_1a7f3759064279dcd09aa82e9b91280c9b"/><section>
+    <title>ProcessExit</title>
+<indexterm><primary>ProcessExit</primary><secondary>Program.cs</secondary></indexterm>
+<indexterm><primary>Program.cs</primary><secondary>ProcessExit</secondary></indexterm>
+<para><computeroutput>AppDomain.CurrentDomain. ProcessExit</computeroutput></para><emphasis role="strong">Initial value:</emphasis><programlisting linenumbering="unnumbered">=&#32;(sender,&#32;eventArgs)&#32;=&gt;
+{
+&#32;&#32;&#32;&#32;Logger.SaveLog(<emphasis role="stringliteral">&quot;latest-log&quot;</emphasis>);
+}
+</programlisting></section>
+<anchor xml:id="__program_8cs_1adaf951a74e7e2c8804480d14f4142eaf"/><section>
+    <title>server</title>
+<indexterm><primary>server</primary><secondary>Program.cs</secondary></indexterm>
+<indexterm><primary>Program.cs</primary><secondary>server</secondary></indexterm>
+<para><computeroutput><link linkend="_class_openlabs_1_1_mgcxm_1_1_tests_1_1_test_server">TestServer</link> server = new <link linkend="_class_openlabs_1_1_mgcxm_1_1_tests_1_1_test_server">TestServer</link>()</computeroutput></para></section>
+<anchor xml:id="__program_8cs_1a22fa3917f3c6859b28796429da2ee3df"/><section>
+    <title>UnhandledException</title>
+<indexterm><primary>UnhandledException</primary><secondary>Program.cs</secondary></indexterm>
+<indexterm><primary>Program.cs</primary><secondary>UnhandledException</secondary></indexterm>
+<para><computeroutput>AppDomain.CurrentDomain. UnhandledException</computeroutput></para><emphasis role="strong">Initial value:</emphasis><programlisting linenumbering="unnumbered">=&#32;(sender,&#32;eventArgs)&#32;=&gt;
+{
+&#32;&#32;&#32;&#32;Logger.SaveLog(<emphasis role="stringliteral">&quot;error-log&quot;</emphasis>);
+}
+</programlisting></section>
+<anchor xml:id="__program_8cs_1aa22070b4090c14a73ce9d0c5fc0c3a29"/><section>
+    <title>wsServer</title>
+<indexterm><primary>wsServer</primary><secondary>Program.cs</secondary></indexterm>
+<indexterm><primary>Program.cs</primary><secondary>wsServer</secondary></indexterm>
+<para><computeroutput><link linkend="_class_openlabs_1_1_mgcxm_1_1_tests_1_1_test_ws_server">TestWsServer</link> wsServer = new <link linkend="_class_openlabs_1_1_mgcxm_1_1_tests_1_1_test_ws_server">TestWsServer</link>()</computeroutput></para></section>
+</section>
+</section>

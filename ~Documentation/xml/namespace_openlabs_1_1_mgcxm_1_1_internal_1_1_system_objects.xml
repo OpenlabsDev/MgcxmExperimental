@@ -1,0 +1,23 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.7" xml:lang="en-US">
+  <compounddef id="namespace_openlabs_1_1_mgcxm_1_1_internal_1_1_system_objects" kind="namespace" language="C#">
+    <compoundname>Openlabs::Mgcxm::Internal::SystemObjects</compoundname>
+    <innerclass refid="interface_openlabs_1_1_mgcxm_1_1_internal_1_1_system_objects_1_1_i_mgcxm_system_object" prot="public">Openlabs::Mgcxm::Internal::SystemObjects::IMgcxmSystemObject</innerclass>
+    <innerclass refid="class_openlabs_1_1_mgcxm_1_1_internal_1_1_system_objects_1_1_mgcxm_array" prot="public">Openlabs::Mgcxm::Internal::SystemObjects::MgcxmArray</innerclass>
+    <innerclass refid="class_openlabs_1_1_mgcxm_1_1_internal_1_1_system_objects_1_1_mgcxm_char" prot="public">Openlabs::Mgcxm::Internal::SystemObjects::MgcxmChar</innerclass>
+    <innerclass refid="class_openlabs_1_1_mgcxm_1_1_internal_1_1_system_objects_1_1_mgcxm_int" prot="public">Openlabs::Mgcxm::Internal::SystemObjects::MgcxmInt</innerclass>
+    <innerclass refid="class_openlabs_1_1_mgcxm_1_1_internal_1_1_system_objects_1_1_mgcxm_long" prot="public">Openlabs::Mgcxm::Internal::SystemObjects::MgcxmLong</innerclass>
+    <innerclass refid="class_openlabs_1_1_mgcxm_1_1_internal_1_1_system_objects_1_1_mgcxm_object" prot="public">Openlabs::Mgcxm::Internal::SystemObjects::MgcxmObject</innerclass>
+    <innerclass refid="class_openlabs_1_1_mgcxm_1_1_internal_1_1_system_objects_1_1_mgcxm_object_base" prot="public">Openlabs::Mgcxm::Internal::SystemObjects::MgcxmObjectBase</innerclass>
+    <innerclass refid="class_openlabs_1_1_mgcxm_1_1_internal_1_1_system_objects_1_1_mgcxm_short" prot="public">Openlabs::Mgcxm::Internal::SystemObjects::MgcxmShort</innerclass>
+    <innerclass refid="class_openlabs_1_1_mgcxm_1_1_internal_1_1_system_objects_1_1_mgcxm_string" prot="public">Openlabs::Mgcxm::Internal::SystemObjects::MgcxmString</innerclass>
+    <innerclass refid="class_openlabs_1_1_mgcxm_1_1_internal_1_1_system_objects_1_1_mgcxm_uint" prot="public">Openlabs::Mgcxm::Internal::SystemObjects::MgcxmUint</innerclass>
+    <innerclass refid="class_openlabs_1_1_mgcxm_1_1_internal_1_1_system_objects_1_1_mgcxm_ulong" prot="public">Openlabs::Mgcxm::Internal::SystemObjects::MgcxmUlong</innerclass>
+    <innerclass refid="class_openlabs_1_1_mgcxm_1_1_internal_1_1_system_objects_1_1_mgcxm_ushort" prot="public">Openlabs::Mgcxm::Internal::SystemObjects::MgcxmUshort</innerclass>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/Users/adenf/RiderProjects/Openlabs.Mgcxm/Openlabs.Mgcxm/Internal/SystemObjects/IMgcxmSystemObject.cs" line="3" column="1"/>
+  </compounddef>
+</doxygen>

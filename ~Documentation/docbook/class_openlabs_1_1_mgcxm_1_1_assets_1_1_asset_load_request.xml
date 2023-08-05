@@ -1,0 +1,44 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_class_openlabs_1_1_mgcxm_1_1_assets_1_1_asset_load_request" xml:lang="en-US">
+<title>Openlabs.Mgcxm.Assets.AssetLoadRequest Class Reference</title>
+<indexterm><primary>Openlabs.Mgcxm.Assets.AssetLoadRequest</primary></indexterm>
+<simplesect>
+    <title>Static Public Member Functions    </title>
+        <itemizedlist>
+            <listitem><para>static implicit <link linkend="_class_openlabs_1_1_mgcxm_1_1_assets_1_1_asset_load_request_1a3ee7abaf20dc644c65833a4f66085e79">operator AssetLoadRequest</link> ((Type t, object[] a) valueTuple)</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Public Attributes    </title>
+        <itemizedlist>
+            <listitem><para>Type <link linkend="_class_openlabs_1_1_mgcxm_1_1_assets_1_1_asset_load_request_1aa53b0d80ae0b4121e3a133a55746cde3">type</link></para>
+</listitem>
+            <listitem><para>object[] <link linkend="_class_openlabs_1_1_mgcxm_1_1_assets_1_1_asset_load_request_1a180ffe4fb7d9687e5512532f65011f19">args</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Member Function Documentation</title>
+<anchor xml:id="_class_openlabs_1_1_mgcxm_1_1_assets_1_1_asset_load_request_1a3ee7abaf20dc644c65833a4f66085e79"/><section>
+    <title>operator AssetLoadRequest()</title>
+<indexterm><primary>operator AssetLoadRequest</primary><secondary>Openlabs.Mgcxm.Assets.AssetLoadRequest</secondary></indexterm>
+<indexterm><primary>Openlabs.Mgcxm.Assets.AssetLoadRequest</primary><secondary>operator AssetLoadRequest</secondary></indexterm>
+<para><computeroutput>static implicit Openlabs.Mgcxm.Assets.AssetLoadRequest.operator <link linkend="_class_openlabs_1_1_mgcxm_1_1_assets_1_1_asset_load_request">AssetLoadRequest</link> ((Type t, object[] a) valueTuple)<computeroutput>[static]</computeroutput></computeroutput></para></section>
+</section>
+<section>
+<title>Member Data Documentation</title>
+<anchor xml:id="_class_openlabs_1_1_mgcxm_1_1_assets_1_1_asset_load_request_1a180ffe4fb7d9687e5512532f65011f19"/><section>
+    <title>args</title>
+<indexterm><primary>args</primary><secondary>Openlabs.Mgcxm.Assets.AssetLoadRequest</secondary></indexterm>
+<indexterm><primary>Openlabs.Mgcxm.Assets.AssetLoadRequest</primary><secondary>args</secondary></indexterm>
+<para><computeroutput>object [] Openlabs.Mgcxm.Assets.AssetLoadRequest.args</computeroutput></para></section>
+<anchor xml:id="_class_openlabs_1_1_mgcxm_1_1_assets_1_1_asset_load_request_1aa53b0d80ae0b4121e3a133a55746cde3"/><section>
+    <title>type</title>
+<indexterm><primary>type</primary><secondary>Openlabs.Mgcxm.Assets.AssetLoadRequest</secondary></indexterm>
+<indexterm><primary>Openlabs.Mgcxm.Assets.AssetLoadRequest</primary><secondary>type</secondary></indexterm>
+<para><computeroutput>Type Openlabs.Mgcxm.Assets.AssetLoadRequest.type</computeroutput></para></section>
+<para>
+The documentation for this class was generated from the following file:</para>
+C:/Users/adenf/RiderProjects/Openlabs.Mgcxm/Openlabs.Mgcxm/Assets/<link linkend="__asset_manager_8cs">AssetManager.cs</link></section>
+</section>

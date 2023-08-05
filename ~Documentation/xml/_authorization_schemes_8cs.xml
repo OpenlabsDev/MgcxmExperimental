@@ -1,0 +1,28 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.7" xml:lang="en-US">
+  <compounddef id="_authorization_schemes_8cs" kind="file" language="C#">
+    <compoundname>AuthorizationSchemes.cs</compoundname>
+    <innernamespace refid="namespace_openlabs">Openlabs</innernamespace>
+    <innernamespace refid="namespace_openlabs_1_1_mgcxm">Openlabs::Mgcxm</innernamespace>
+    <innernamespace refid="namespace_openlabs_1_1_mgcxm_1_1_net">Openlabs::Mgcxm::Net</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">//<sp/>Copr.<sp/>(c)<sp/>Nexus<sp/>2023.<sp/>All<sp/>rights<sp/>reserved.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="namespace_openlabs_1_1_mgcxm_1_1_net" kindref="compound">Openlabs.Mgcxm.Net</ref>;</highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight></codeline>
+<codeline lineno="8" refid="namespace_openlabs_1_1_mgcxm_1_1_net_1a1cf0ff6088d262006cd028b076749e13" refkind="member"><highlight class="keyword">public</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/><ref refid="namespace_openlabs_1_1_mgcxm_1_1_net_1a1cf0ff6088d262006cd028b076749e13" kindref="member">AuthorizationSchemes</ref></highlight></codeline>
+<codeline lineno="9"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="namespace_openlabs_1_1_mgcxm_1_1_net_1a1cf0ff6088d262006cd028b076749e13a83dedad0728baaef3ad3f50bd05ed030" kindref="member">Bearer</ref>,</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="namespace_openlabs_1_1_mgcxm_1_1_net_1a1cf0ff6088d262006cd028b076749e13ae5cfc515f312c9e85f367e9854d9963e" kindref="member">Digest</ref>,</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="namespace_openlabs_1_1_mgcxm_1_1_net_1a1cf0ff6088d262006cd028b076749e13a972e73b7a882d0802a4e3a16946a2f94" kindref="member">Basic</ref></highlight></codeline>
+<codeline lineno="24"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="C:/Users/adenf/RiderProjects/Openlabs.Mgcxm/Openlabs.Mgcxm/Net/AuthorizationSchemes.cs"/>
+  </compounddef>
+</doxygen>

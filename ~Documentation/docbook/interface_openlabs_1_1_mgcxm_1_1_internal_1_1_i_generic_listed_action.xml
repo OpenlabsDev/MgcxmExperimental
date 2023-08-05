@@ -1,0 +1,181 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_interface_openlabs_1_1_mgcxm_1_1_internal_1_1_i_generic_listed_action" xml:lang="en-US">
+<title>Openlabs.Mgcxm.Internal.IGenericListedAction&lt; T, T1, T2, T3, T4 &gt; Interface Template Reference</title>
+<indexterm><primary>Openlabs.Mgcxm.Internal.IGenericListedAction&lt; T, T1, T2, T3, T4 &gt;</primary></indexterm>
+Inheritance diagram for Openlabs.Mgcxm.Internal.IGenericListedAction&lt; T, T1, T2, T3, T4 &gt;:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="interface_openlabs_1_1_mgcxm_1_1_internal_1_1_i_generic_listed_action__inherit__graph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+Collaboration diagram for Openlabs.Mgcxm.Internal.IGenericListedAction&lt; T, T1, T2, T3, T4 &gt;:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="interface_openlabs_1_1_mgcxm_1_1_internal_1_1_i_generic_listed_action__coll__graph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+<simplesect>
+    <title>Public Member Functions    </title>
+        <itemizedlist>
+            <listitem><para>void <link linkend="_interface_openlabs_1_1_mgcxm_1_1_internal_1_1_i_generic_listed_action_1a4a1fdad345c7b46e58c8928c147e72d5">AddAction</link> (Action&lt; T &gt; action)</para>
+</listitem>
+            <listitem><para>void <link linkend="_interface_openlabs_1_1_mgcxm_1_1_internal_1_1_i_generic_listed_action_1ae641cddb24ee95b6c0f3a57c47003a31">RemoveAction</link> (Action&lt; T &gt; action)</para>
+</listitem>
+            <listitem><para>void <link linkend="_interface_openlabs_1_1_mgcxm_1_1_internal_1_1_i_generic_listed_action_1a2f5409519c1e17f4eee689ce4a120826">AddAction</link> (Action&lt; T, T1 &gt; action)</para>
+</listitem>
+            <listitem><para>void <link linkend="_interface_openlabs_1_1_mgcxm_1_1_internal_1_1_i_generic_listed_action_1a32d5b950213db5b610cc7162d0ba6ad9">RemoveAction</link> (Action&lt; T, T1 &gt; action)</para>
+</listitem>
+            <listitem><para>void <link linkend="_interface_openlabs_1_1_mgcxm_1_1_internal_1_1_i_generic_listed_action_1aa5a24766a1a3e98e568555917344a5ff">AddAction</link> (Action&lt; T, T1, T2 &gt; action)</para>
+</listitem>
+            <listitem><para>void <link linkend="_interface_openlabs_1_1_mgcxm_1_1_internal_1_1_i_generic_listed_action_1a103691da0f18cdef2be218d36cd3eca9">RemoveAction</link> (Action&lt; T, T1, T2 &gt; action)</para>
+</listitem>
+            <listitem><para>void <link linkend="_interface_openlabs_1_1_mgcxm_1_1_internal_1_1_i_generic_listed_action_1a3e54a821a496a69d5ea3d8424eaf0a81">AddAction</link> (Action&lt; T, T1, T2, T3 &gt; action)</para>
+</listitem>
+            <listitem><para>void <link linkend="_interface_openlabs_1_1_mgcxm_1_1_internal_1_1_i_generic_listed_action_1aa36c94b3e9f7de947c42f1e101a9ff88">RemoveAction</link> (Action&lt; T, T1, T2, T3 &gt; action)</para>
+</listitem>
+            <listitem><para>void <link linkend="_interface_openlabs_1_1_mgcxm_1_1_internal_1_1_i_generic_listed_action_1ac3930a603c15e3b8e8defb2c028a4fad">AddAction</link> (Action&lt; T, T1, T2, T3, T4 &gt; action)</para>
+</listitem>
+            <listitem><para>void <link linkend="_interface_openlabs_1_1_mgcxm_1_1_internal_1_1_i_generic_listed_action_1a088c0dc7375d8bad511e96cdf318b48d">RemoveAction</link> (Action&lt; T, T1, T2, T3, T4 &gt; action)</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Properties    </title>
+        <itemizedlist>
+            <listitem><para>List&lt; Action&lt; T &gt; &gt; <link linkend="_interface_openlabs_1_1_mgcxm_1_1_internal_1_1_i_generic_listed_action_1a41ed4861c92c5670964c352b96637d31">ActionList</link><computeroutput> [get]</computeroutput>
+</para>
+</listitem>
+            <listitem><para>List&lt; Action&lt; T, T1 &gt; &gt; <link linkend="_interface_openlabs_1_1_mgcxm_1_1_internal_1_1_i_generic_listed_action_1acb1b11a8fdf845b1a53ddb7a8bc32784">ActionList</link><computeroutput> [get]</computeroutput>
+</para>
+</listitem>
+            <listitem><para>List&lt; Action&lt; T, T1, T2 &gt; &gt; <link linkend="_interface_openlabs_1_1_mgcxm_1_1_internal_1_1_i_generic_listed_action_1a58633143ed785767c56e293863bfaa2a">ActionList</link><computeroutput> [get]</computeroutput>
+</para>
+</listitem>
+            <listitem><para>List&lt; Action&lt; T, T1, T2, T3 &gt; &gt; <link linkend="_interface_openlabs_1_1_mgcxm_1_1_internal_1_1_i_generic_listed_action_1ab5b4a1f8c3c09d212bc8ec1bb65a2a06">ActionList</link><computeroutput> [get]</computeroutput>
+</para>
+</listitem>
+            <listitem><para>List&lt; Action&lt; T, T1, T2, T3, T4 &gt; &gt; <link linkend="_interface_openlabs_1_1_mgcxm_1_1_internal_1_1_i_generic_listed_action_1a0c9672c36230cec6aa270e466db68233">ActionList</link><computeroutput> [get]</computeroutput>
+</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Member Function Documentation</title>
+<anchor xml:id="_interface_openlabs_1_1_mgcxm_1_1_internal_1_1_i_generic_listed_action_1a4a1fdad345c7b46e58c8928c147e72d5"/><section>
+    <title>AddAction()<computeroutput>[1/5]</computeroutput></title>
+<indexterm><primary>AddAction</primary><secondary>Openlabs.Mgcxm.Internal.IGenericListedAction&lt; T, T1, T2, T3, T4 &gt;</secondary></indexterm>
+<indexterm><primary>Openlabs.Mgcxm.Internal.IGenericListedAction&lt; T, T1, T2, T3, T4 &gt;</primary><secondary>AddAction</secondary></indexterm>
+<para><computeroutput>void <link linkend="_interface_openlabs_1_1_mgcxm_1_1_internal_1_1_i_generic_listed_action">Openlabs.Mgcxm.Internal.IGenericListedAction</link>&lt; T, T1, T2, T3, T4 &gt;.AddAction (Action&lt; T &gt; action)</computeroutput></para><para>
+Implemented in <link linkend="_class_openlabs_1_1_mgcxm_1_1_internal_1_1_generic_listed_action_1af00d656d1b7807449ca77f88f1ba249b">Openlabs.Mgcxm.Internal.GenericListedAction&lt; T, T1, T2, T3, T4 &gt;</link>.</para>
+</section>
+<anchor xml:id="_interface_openlabs_1_1_mgcxm_1_1_internal_1_1_i_generic_listed_action_1a2f5409519c1e17f4eee689ce4a120826"/><section>
+    <title>AddAction()<computeroutput>[2/5]</computeroutput></title>
+<indexterm><primary>AddAction</primary><secondary>Openlabs.Mgcxm.Internal.IGenericListedAction&lt; T, T1, T2, T3, T4 &gt;</secondary></indexterm>
+<indexterm><primary>Openlabs.Mgcxm.Internal.IGenericListedAction&lt; T, T1, T2, T3, T4 &gt;</primary><secondary>AddAction</secondary></indexterm>
+<para><computeroutput>void <link linkend="_interface_openlabs_1_1_mgcxm_1_1_internal_1_1_i_generic_listed_action">Openlabs.Mgcxm.Internal.IGenericListedAction</link>&lt; T, T1, T2, T3, T4 &gt;.AddAction (Action&lt; T, T1 &gt; action)</computeroutput></para><para>
+Implemented in <link linkend="_class_openlabs_1_1_mgcxm_1_1_internal_1_1_generic_listed_action_1a659bff807d0e1a99f44ca83cfefeeba2">Openlabs.Mgcxm.Internal.GenericListedAction&lt; T, T1, T2, T3, T4 &gt;</link>.</para>
+</section>
+<anchor xml:id="_interface_openlabs_1_1_mgcxm_1_1_internal_1_1_i_generic_listed_action_1aa5a24766a1a3e98e568555917344a5ff"/><section>
+    <title>AddAction()<computeroutput>[3/5]</computeroutput></title>
+<indexterm><primary>AddAction</primary><secondary>Openlabs.Mgcxm.Internal.IGenericListedAction&lt; T, T1, T2, T3, T4 &gt;</secondary></indexterm>
+<indexterm><primary>Openlabs.Mgcxm.Internal.IGenericListedAction&lt; T, T1, T2, T3, T4 &gt;</primary><secondary>AddAction</secondary></indexterm>
+<para><computeroutput>void <link linkend="_interface_openlabs_1_1_mgcxm_1_1_internal_1_1_i_generic_listed_action">Openlabs.Mgcxm.Internal.IGenericListedAction</link>&lt; T, T1, T2, T3, T4 &gt;.AddAction (Action&lt; T, T1, T2 &gt; action)</computeroutput></para><para>
+Implemented in <link linkend="_class_openlabs_1_1_mgcxm_1_1_internal_1_1_generic_listed_action_1aa69387ab55ed299c6a025f7813625ae9">Openlabs.Mgcxm.Internal.GenericListedAction&lt; T, T1, T2, T3, T4 &gt;</link>.</para>
+</section>
+<anchor xml:id="_interface_openlabs_1_1_mgcxm_1_1_internal_1_1_i_generic_listed_action_1a3e54a821a496a69d5ea3d8424eaf0a81"/><section>
+    <title>AddAction()<computeroutput>[4/5]</computeroutput></title>
+<indexterm><primary>AddAction</primary><secondary>Openlabs.Mgcxm.Internal.IGenericListedAction&lt; T, T1, T2, T3, T4 &gt;</secondary></indexterm>
+<indexterm><primary>Openlabs.Mgcxm.Internal.IGenericListedAction&lt; T, T1, T2, T3, T4 &gt;</primary><secondary>AddAction</secondary></indexterm>
+<para><computeroutput>void <link linkend="_interface_openlabs_1_1_mgcxm_1_1_internal_1_1_i_generic_listed_action">Openlabs.Mgcxm.Internal.IGenericListedAction</link>&lt; T, T1, T2, T3, T4 &gt;.AddAction (Action&lt; T, T1, T2, T3 &gt; action)</computeroutput></para><para>
+Implemented in <link linkend="_class_openlabs_1_1_mgcxm_1_1_internal_1_1_generic_listed_action_1a13a995e42cdeae8380a907daceec9b66">Openlabs.Mgcxm.Internal.GenericListedAction&lt; T, T1, T2, T3, T4 &gt;</link>.</para>
+</section>
+<anchor xml:id="_interface_openlabs_1_1_mgcxm_1_1_internal_1_1_i_generic_listed_action_1ac3930a603c15e3b8e8defb2c028a4fad"/><section>
+    <title>AddAction()<computeroutput>[5/5]</computeroutput></title>
+<indexterm><primary>AddAction</primary><secondary>Openlabs.Mgcxm.Internal.IGenericListedAction&lt; T, T1, T2, T3, T4 &gt;</secondary></indexterm>
+<indexterm><primary>Openlabs.Mgcxm.Internal.IGenericListedAction&lt; T, T1, T2, T3, T4 &gt;</primary><secondary>AddAction</secondary></indexterm>
+<para><computeroutput>void <link linkend="_interface_openlabs_1_1_mgcxm_1_1_internal_1_1_i_generic_listed_action">Openlabs.Mgcxm.Internal.IGenericListedAction</link>&lt; T, T1, T2, T3, T4 &gt;.AddAction (Action&lt; T, T1, T2, T3, T4 &gt; action)</computeroutput></para><para>
+Implemented in <link linkend="_class_openlabs_1_1_mgcxm_1_1_internal_1_1_generic_listed_action_1ad8e4e1795f52bf109d212bc49245b66b">Openlabs.Mgcxm.Internal.GenericListedAction&lt; T, T1, T2, T3, T4 &gt;</link>.</para>
+</section>
+<anchor xml:id="_interface_openlabs_1_1_mgcxm_1_1_internal_1_1_i_generic_listed_action_1ae641cddb24ee95b6c0f3a57c47003a31"/><section>
+    <title>RemoveAction()<computeroutput>[1/5]</computeroutput></title>
+<indexterm><primary>RemoveAction</primary><secondary>Openlabs.Mgcxm.Internal.IGenericListedAction&lt; T, T1, T2, T3, T4 &gt;</secondary></indexterm>
+<indexterm><primary>Openlabs.Mgcxm.Internal.IGenericListedAction&lt; T, T1, T2, T3, T4 &gt;</primary><secondary>RemoveAction</secondary></indexterm>
+<para><computeroutput>void <link linkend="_interface_openlabs_1_1_mgcxm_1_1_internal_1_1_i_generic_listed_action">Openlabs.Mgcxm.Internal.IGenericListedAction</link>&lt; T, T1, T2, T3, T4 &gt;.RemoveAction (Action&lt; T &gt; action)</computeroutput></para><para>
+Implemented in <link linkend="_class_openlabs_1_1_mgcxm_1_1_internal_1_1_generic_listed_action_1af9cf921f4f69ec066c03bf75137d56e5">Openlabs.Mgcxm.Internal.GenericListedAction&lt; T, T1, T2, T3, T4 &gt;</link>.</para>
+</section>
+<anchor xml:id="_interface_openlabs_1_1_mgcxm_1_1_internal_1_1_i_generic_listed_action_1a32d5b950213db5b610cc7162d0ba6ad9"/><section>
+    <title>RemoveAction()<computeroutput>[2/5]</computeroutput></title>
+<indexterm><primary>RemoveAction</primary><secondary>Openlabs.Mgcxm.Internal.IGenericListedAction&lt; T, T1, T2, T3, T4 &gt;</secondary></indexterm>
+<indexterm><primary>Openlabs.Mgcxm.Internal.IGenericListedAction&lt; T, T1, T2, T3, T4 &gt;</primary><secondary>RemoveAction</secondary></indexterm>
+<para><computeroutput>void <link linkend="_interface_openlabs_1_1_mgcxm_1_1_internal_1_1_i_generic_listed_action">Openlabs.Mgcxm.Internal.IGenericListedAction</link>&lt; T, T1, T2, T3, T4 &gt;.RemoveAction (Action&lt; T, T1 &gt; action)</computeroutput></para><para>
+Implemented in <link linkend="_class_openlabs_1_1_mgcxm_1_1_internal_1_1_generic_listed_action_1a5a1f1aeb18480f4b764905e37993b4f1">Openlabs.Mgcxm.Internal.GenericListedAction&lt; T, T1, T2, T3, T4 &gt;</link>.</para>
+</section>
+<anchor xml:id="_interface_openlabs_1_1_mgcxm_1_1_internal_1_1_i_generic_listed_action_1a103691da0f18cdef2be218d36cd3eca9"/><section>
+    <title>RemoveAction()<computeroutput>[3/5]</computeroutput></title>
+<indexterm><primary>RemoveAction</primary><secondary>Openlabs.Mgcxm.Internal.IGenericListedAction&lt; T, T1, T2, T3, T4 &gt;</secondary></indexterm>
+<indexterm><primary>Openlabs.Mgcxm.Internal.IGenericListedAction&lt; T, T1, T2, T3, T4 &gt;</primary><secondary>RemoveAction</secondary></indexterm>
+<para><computeroutput>void <link linkend="_interface_openlabs_1_1_mgcxm_1_1_internal_1_1_i_generic_listed_action">Openlabs.Mgcxm.Internal.IGenericListedAction</link>&lt; T, T1, T2, T3, T4 &gt;.RemoveAction (Action&lt; T, T1, T2 &gt; action)</computeroutput></para><para>
+Implemented in <link linkend="_class_openlabs_1_1_mgcxm_1_1_internal_1_1_generic_listed_action_1aa5f68797ecf4eef0854defc6377a3d37">Openlabs.Mgcxm.Internal.GenericListedAction&lt; T, T1, T2, T3, T4 &gt;</link>.</para>
+</section>
+<anchor xml:id="_interface_openlabs_1_1_mgcxm_1_1_internal_1_1_i_generic_listed_action_1aa36c94b3e9f7de947c42f1e101a9ff88"/><section>
+    <title>RemoveAction()<computeroutput>[4/5]</computeroutput></title>
+<indexterm><primary>RemoveAction</primary><secondary>Openlabs.Mgcxm.Internal.IGenericListedAction&lt; T, T1, T2, T3, T4 &gt;</secondary></indexterm>
+<indexterm><primary>Openlabs.Mgcxm.Internal.IGenericListedAction&lt; T, T1, T2, T3, T4 &gt;</primary><secondary>RemoveAction</secondary></indexterm>
+<para><computeroutput>void <link linkend="_interface_openlabs_1_1_mgcxm_1_1_internal_1_1_i_generic_listed_action">Openlabs.Mgcxm.Internal.IGenericListedAction</link>&lt; T, T1, T2, T3, T4 &gt;.RemoveAction (Action&lt; T, T1, T2, T3 &gt; action)</computeroutput></para><para>
+Implemented in <link linkend="_class_openlabs_1_1_mgcxm_1_1_internal_1_1_generic_listed_action_1a92e757dcd2735577d50aa4082a6623fb">Openlabs.Mgcxm.Internal.GenericListedAction&lt; T, T1, T2, T3, T4 &gt;</link>.</para>
+</section>
+<anchor xml:id="_interface_openlabs_1_1_mgcxm_1_1_internal_1_1_i_generic_listed_action_1a088c0dc7375d8bad511e96cdf318b48d"/><section>
+    <title>RemoveAction()<computeroutput>[5/5]</computeroutput></title>
+<indexterm><primary>RemoveAction</primary><secondary>Openlabs.Mgcxm.Internal.IGenericListedAction&lt; T, T1, T2, T3, T4 &gt;</secondary></indexterm>
+<indexterm><primary>Openlabs.Mgcxm.Internal.IGenericListedAction&lt; T, T1, T2, T3, T4 &gt;</primary><secondary>RemoveAction</secondary></indexterm>
+<para><computeroutput>void <link linkend="_interface_openlabs_1_1_mgcxm_1_1_internal_1_1_i_generic_listed_action">Openlabs.Mgcxm.Internal.IGenericListedAction</link>&lt; T, T1, T2, T3, T4 &gt;.RemoveAction (Action&lt; T, T1, T2, T3, T4 &gt; action)</computeroutput></para><para>
+Implemented in <link linkend="_class_openlabs_1_1_mgcxm_1_1_internal_1_1_generic_listed_action_1a841da38d5967bae919fc91296b483275">Openlabs.Mgcxm.Internal.GenericListedAction&lt; T, T1, T2, T3, T4 &gt;</link>.</para>
+</section>
+</section>
+<section>
+<title>Property Documentation</title>
+<anchor xml:id="_interface_openlabs_1_1_mgcxm_1_1_internal_1_1_i_generic_listed_action_1a41ed4861c92c5670964c352b96637d31"/><section>
+    <title>ActionList<computeroutput>[1/5]</computeroutput></title>
+<indexterm><primary>ActionList</primary><secondary>Openlabs.Mgcxm.Internal.IGenericListedAction&lt; T, T1, T2, T3, T4 &gt;</secondary></indexterm>
+<indexterm><primary>Openlabs.Mgcxm.Internal.IGenericListedAction&lt; T, T1, T2, T3, T4 &gt;</primary><secondary>ActionList</secondary></indexterm>
+<para><computeroutput>List&lt;Action&lt;T&gt; &gt; <link linkend="_interface_openlabs_1_1_mgcxm_1_1_internal_1_1_i_generic_listed_action">Openlabs.Mgcxm.Internal.IGenericListedAction</link>&lt; T, T1, T2, T3, T4 &gt;.ActionList<computeroutput>[get]</computeroutput></computeroutput></para><para>
+Implemented in <link linkend="_class_openlabs_1_1_mgcxm_1_1_internal_1_1_generic_listed_action_1aa3d358ac65c58b3cc8d9f34caec1e848">Openlabs.Mgcxm.Internal.GenericListedAction&lt; T, T1, T2, T3, T4 &gt;</link>, <link linkend="_class_openlabs_1_1_mgcxm_1_1_internal_1_1_generic_listed_action_1a84c061506cd8a3c1eec11da08f876647">Openlabs.Mgcxm.Internal.GenericListedAction&lt; T, T1, T2, T3, T4 &gt;</link>, <link linkend="_class_openlabs_1_1_mgcxm_1_1_internal_1_1_generic_listed_action_1a947084198e1c5e4e4145b0d070fac10a">Openlabs.Mgcxm.Internal.GenericListedAction&lt; T, T1, T2, T3, T4 &gt;</link>, <link linkend="_class_openlabs_1_1_mgcxm_1_1_internal_1_1_generic_listed_action_1acafefa6ddee8997ae0bf3022565d609f">Openlabs.Mgcxm.Internal.GenericListedAction&lt; T, T1, T2, T3, T4 &gt;</link>, and <link linkend="_class_openlabs_1_1_mgcxm_1_1_internal_1_1_generic_listed_action_1ac4b514d84272b6ba445bfec6a0c0c4d7">Openlabs.Mgcxm.Internal.GenericListedAction&lt; T, T1, T2, T3, T4 &gt;</link>.</para>
+</section>
+<anchor xml:id="_interface_openlabs_1_1_mgcxm_1_1_internal_1_1_i_generic_listed_action_1acb1b11a8fdf845b1a53ddb7a8bc32784"/><section>
+    <title>ActionList<computeroutput>[2/5]</computeroutput></title>
+<indexterm><primary>ActionList</primary><secondary>Openlabs.Mgcxm.Internal.IGenericListedAction&lt; T, T1, T2, T3, T4 &gt;</secondary></indexterm>
+<indexterm><primary>Openlabs.Mgcxm.Internal.IGenericListedAction&lt; T, T1, T2, T3, T4 &gt;</primary><secondary>ActionList</secondary></indexterm>
+<para><computeroutput>List&lt;Action&lt;T, T1&gt; &gt; <link linkend="_interface_openlabs_1_1_mgcxm_1_1_internal_1_1_i_generic_listed_action">Openlabs.Mgcxm.Internal.IGenericListedAction</link>&lt; T, T1, T2, T3, T4 &gt;.ActionList<computeroutput>[get]</computeroutput></computeroutput></para><para>
+Implemented in <link linkend="_class_openlabs_1_1_mgcxm_1_1_internal_1_1_generic_listed_action_1aa3d358ac65c58b3cc8d9f34caec1e848">Openlabs.Mgcxm.Internal.GenericListedAction&lt; T, T1, T2, T3, T4 &gt;</link>, <link linkend="_class_openlabs_1_1_mgcxm_1_1_internal_1_1_generic_listed_action_1a84c061506cd8a3c1eec11da08f876647">Openlabs.Mgcxm.Internal.GenericListedAction&lt; T, T1, T2, T3, T4 &gt;</link>, <link linkend="_class_openlabs_1_1_mgcxm_1_1_internal_1_1_generic_listed_action_1a947084198e1c5e4e4145b0d070fac10a">Openlabs.Mgcxm.Internal.GenericListedAction&lt; T, T1, T2, T3, T4 &gt;</link>, <link linkend="_class_openlabs_1_1_mgcxm_1_1_internal_1_1_generic_listed_action_1acafefa6ddee8997ae0bf3022565d609f">Openlabs.Mgcxm.Internal.GenericListedAction&lt; T, T1, T2, T3, T4 &gt;</link>, and <link linkend="_class_openlabs_1_1_mgcxm_1_1_internal_1_1_generic_listed_action_1ac4b514d84272b6ba445bfec6a0c0c4d7">Openlabs.Mgcxm.Internal.GenericListedAction&lt; T, T1, T2, T3, T4 &gt;</link>.</para>
+</section>
+<anchor xml:id="_interface_openlabs_1_1_mgcxm_1_1_internal_1_1_i_generic_listed_action_1a58633143ed785767c56e293863bfaa2a"/><section>
+    <title>ActionList<computeroutput>[3/5]</computeroutput></title>
+<indexterm><primary>ActionList</primary><secondary>Openlabs.Mgcxm.Internal.IGenericListedAction&lt; T, T1, T2, T3, T4 &gt;</secondary></indexterm>
+<indexterm><primary>Openlabs.Mgcxm.Internal.IGenericListedAction&lt; T, T1, T2, T3, T4 &gt;</primary><secondary>ActionList</secondary></indexterm>
+<para><computeroutput>List&lt;Action&lt;T, T1, T2&gt; &gt; <link linkend="_interface_openlabs_1_1_mgcxm_1_1_internal_1_1_i_generic_listed_action">Openlabs.Mgcxm.Internal.IGenericListedAction</link>&lt; T, T1, T2, T3, T4 &gt;.ActionList<computeroutput>[get]</computeroutput></computeroutput></para><para>
+Implemented in <link linkend="_class_openlabs_1_1_mgcxm_1_1_internal_1_1_generic_listed_action_1aa3d358ac65c58b3cc8d9f34caec1e848">Openlabs.Mgcxm.Internal.GenericListedAction&lt; T, T1, T2, T3, T4 &gt;</link>, <link linkend="_class_openlabs_1_1_mgcxm_1_1_internal_1_1_generic_listed_action_1a84c061506cd8a3c1eec11da08f876647">Openlabs.Mgcxm.Internal.GenericListedAction&lt; T, T1, T2, T3, T4 &gt;</link>, <link linkend="_class_openlabs_1_1_mgcxm_1_1_internal_1_1_generic_listed_action_1a947084198e1c5e4e4145b0d070fac10a">Openlabs.Mgcxm.Internal.GenericListedAction&lt; T, T1, T2, T3, T4 &gt;</link>, <link linkend="_class_openlabs_1_1_mgcxm_1_1_internal_1_1_generic_listed_action_1acafefa6ddee8997ae0bf3022565d609f">Openlabs.Mgcxm.Internal.GenericListedAction&lt; T, T1, T2, T3, T4 &gt;</link>, and <link linkend="_class_openlabs_1_1_mgcxm_1_1_internal_1_1_generic_listed_action_1ac4b514d84272b6ba445bfec6a0c0c4d7">Openlabs.Mgcxm.Internal.GenericListedAction&lt; T, T1, T2, T3, T4 &gt;</link>.</para>
+</section>
+<anchor xml:id="_interface_openlabs_1_1_mgcxm_1_1_internal_1_1_i_generic_listed_action_1ab5b4a1f8c3c09d212bc8ec1bb65a2a06"/><section>
+    <title>ActionList<computeroutput>[4/5]</computeroutput></title>
+<indexterm><primary>ActionList</primary><secondary>Openlabs.Mgcxm.Internal.IGenericListedAction&lt; T, T1, T2, T3, T4 &gt;</secondary></indexterm>
+<indexterm><primary>Openlabs.Mgcxm.Internal.IGenericListedAction&lt; T, T1, T2, T3, T4 &gt;</primary><secondary>ActionList</secondary></indexterm>
+<para><computeroutput>List&lt;Action&lt;T, T1, T2, T3&gt; &gt; <link linkend="_interface_openlabs_1_1_mgcxm_1_1_internal_1_1_i_generic_listed_action">Openlabs.Mgcxm.Internal.IGenericListedAction</link>&lt; T, T1, T2, T3, T4 &gt;.ActionList<computeroutput>[get]</computeroutput></computeroutput></para><para>
+Implemented in <link linkend="_class_openlabs_1_1_mgcxm_1_1_internal_1_1_generic_listed_action_1aa3d358ac65c58b3cc8d9f34caec1e848">Openlabs.Mgcxm.Internal.GenericListedAction&lt; T, T1, T2, T3, T4 &gt;</link>, <link linkend="_class_openlabs_1_1_mgcxm_1_1_internal_1_1_generic_listed_action_1a84c061506cd8a3c1eec11da08f876647">Openlabs.Mgcxm.Internal.GenericListedAction&lt; T, T1, T2, T3, T4 &gt;</link>, <link linkend="_class_openlabs_1_1_mgcxm_1_1_internal_1_1_generic_listed_action_1a947084198e1c5e4e4145b0d070fac10a">Openlabs.Mgcxm.Internal.GenericListedAction&lt; T, T1, T2, T3, T4 &gt;</link>, <link linkend="_class_openlabs_1_1_mgcxm_1_1_internal_1_1_generic_listed_action_1acafefa6ddee8997ae0bf3022565d609f">Openlabs.Mgcxm.Internal.GenericListedAction&lt; T, T1, T2, T3, T4 &gt;</link>, and <link linkend="_class_openlabs_1_1_mgcxm_1_1_internal_1_1_generic_listed_action_1ac4b514d84272b6ba445bfec6a0c0c4d7">Openlabs.Mgcxm.Internal.GenericListedAction&lt; T, T1, T2, T3, T4 &gt;</link>.</para>
+</section>
+<anchor xml:id="_interface_openlabs_1_1_mgcxm_1_1_internal_1_1_i_generic_listed_action_1a0c9672c36230cec6aa270e466db68233"/><section>
+    <title>ActionList<computeroutput>[5/5]</computeroutput></title>
+<indexterm><primary>ActionList</primary><secondary>Openlabs.Mgcxm.Internal.IGenericListedAction&lt; T, T1, T2, T3, T4 &gt;</secondary></indexterm>
+<indexterm><primary>Openlabs.Mgcxm.Internal.IGenericListedAction&lt; T, T1, T2, T3, T4 &gt;</primary><secondary>ActionList</secondary></indexterm>
+<para><computeroutput>List&lt;Action&lt;T, T1, T2, T3, T4&gt; &gt; <link linkend="_interface_openlabs_1_1_mgcxm_1_1_internal_1_1_i_generic_listed_action">Openlabs.Mgcxm.Internal.IGenericListedAction</link>&lt; T, T1, T2, T3, T4 &gt;.ActionList<computeroutput>[get]</computeroutput></computeroutput></para><para>
+Implemented in <link linkend="_class_openlabs_1_1_mgcxm_1_1_internal_1_1_generic_listed_action_1aa3d358ac65c58b3cc8d9f34caec1e848">Openlabs.Mgcxm.Internal.GenericListedAction&lt; T, T1, T2, T3, T4 &gt;</link>, <link linkend="_class_openlabs_1_1_mgcxm_1_1_internal_1_1_generic_listed_action_1a84c061506cd8a3c1eec11da08f876647">Openlabs.Mgcxm.Internal.GenericListedAction&lt; T, T1, T2, T3, T4 &gt;</link>, <link linkend="_class_openlabs_1_1_mgcxm_1_1_internal_1_1_generic_listed_action_1a947084198e1c5e4e4145b0d070fac10a">Openlabs.Mgcxm.Internal.GenericListedAction&lt; T, T1, T2, T3, T4 &gt;</link>, <link linkend="_class_openlabs_1_1_mgcxm_1_1_internal_1_1_generic_listed_action_1acafefa6ddee8997ae0bf3022565d609f">Openlabs.Mgcxm.Internal.GenericListedAction&lt; T, T1, T2, T3, T4 &gt;</link>, and <link linkend="_class_openlabs_1_1_mgcxm_1_1_internal_1_1_generic_listed_action_1ac4b514d84272b6ba445bfec6a0c0c4d7">Openlabs.Mgcxm.Internal.GenericListedAction&lt; T, T1, T2, T3, T4 &gt;</link>.</para>
+</section>
+<para>
+The documentation for this interface was generated from the following file:</para>
+C:/Users/adenf/RiderProjects/Openlabs.Mgcxm/Openlabs.Mgcxm/Internal/Events/<link linkend="__listed_01_action_01_parts_8cs">Listed Action Parts.cs</link></section>
+</section>

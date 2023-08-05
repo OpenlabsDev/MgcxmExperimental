@@ -1,0 +1,446 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.7" xml:lang="en-US">
+  <compounddef id="class_openlabs_1_1_mgcxm_1_1_net_1_1_mgcxm_http_listener" kind="class" language="C#" prot="public">
+    <compoundname>Openlabs::Mgcxm::Net::MgcxmHttpListener</compoundname>
+    <derivedcompoundref refid="class_openlabs_1_1_mgcxm_1_1_tests_1_1_test_server" prot="public" virt="non-virtual">Openlabs.Mgcxm.Tests.TestServer</derivedcompoundref>
+      <sectiondef kind="property">
+      <memberdef kind="property" id="class_openlabs_1_1_mgcxm_1_1_net_1_1_mgcxm_http_listener_1a8ceea64a86452b7799832d512bf59b05" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="no" privatesettable="no" protectedsettable="no">
+        <type><ref refid="struct_openlabs_1_1_mgcxm_1_1_internal_1_1_mgcxm_id" kindref="compound">MgcxmId</ref></type>
+        <definition>MgcxmId Openlabs.Mgcxm.Net.MgcxmHttpListener.AllocatedId</definition>
+        <argsstring></argsstring>
+        <name>AllocatedId</name>
+        <qualifiedname>Openlabs.Mgcxm.Net.MgcxmHttpListener.AllocatedId</qualifiedname>
+        <briefdescription>
+<para>Gets the allocated ID of the listener. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/adenf/RiderProjects/Openlabs.Mgcxm/Openlabs.Mgcxm/Net/Http/MgcxmHttpListener.cs" line="373" column="20" bodyfile="C:/Users/adenf/RiderProjects/Openlabs.Mgcxm/Openlabs.Mgcxm/Net/Http/MgcxmHttpListener.cs" bodystart="373" bodyend="-1"/>
+        <referencedby refid="class_openlabs_1_1_mgcxm_1_1_common_1_1_framework_1_1_open_api_endpoint_structure_1ae04ebe30a623e85ade422deac607edfe" compoundref="_open_api_endpoint_structure_8cs" startline="33" endline="37">Openlabs.Mgcxm.Common.Framework.OpenApiEndpointStructure.AddEndpoint</referencedby>
+      </memberdef>
+      <memberdef kind="property" id="class_openlabs_1_1_mgcxm_1_1_net_1_1_mgcxm_http_listener_1a04b35b5cc47ebb7a8abe9d51de700f4d" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="no" privatesettable="no" protectedsettable="no">
+        <type>bool</type>
+        <definition>bool Openlabs.Mgcxm.Net.MgcxmHttpListener.ListenToRequests</definition>
+        <argsstring></argsstring>
+        <name>ListenToRequests</name>
+        <qualifiedname>Openlabs.Mgcxm.Net.MgcxmHttpListener.ListenToRequests</qualifiedname>
+        <briefdescription>
+<para>Gets a value indicating whether the listener is listening for requests. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/adenf/RiderProjects/Openlabs.Mgcxm/Openlabs.Mgcxm/Net/Http/MgcxmHttpListener.cs" line="378" column="17" bodyfile="C:/Users/adenf/RiderProjects/Openlabs.Mgcxm/Openlabs.Mgcxm/Net/Http/MgcxmHttpListener.cs" bodystart="378" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="property" id="class_openlabs_1_1_mgcxm_1_1_net_1_1_mgcxm_http_listener_1a62c66d562f2d7163e7fd0c4abb44d20b" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="no" privatesettable="no" protectedsettable="no">
+        <type>HttpListener</type>
+        <definition>HttpListener Openlabs.Mgcxm.Net.MgcxmHttpListener.Listener</definition>
+        <argsstring></argsstring>
+        <name>Listener</name>
+        <qualifiedname>Openlabs.Mgcxm.Net.MgcxmHttpListener.Listener</qualifiedname>
+        <briefdescription>
+<para>Gets the HttpListener instance associated with the listener. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/adenf/RiderProjects/Openlabs.Mgcxm/Openlabs.Mgcxm/Net/Http/MgcxmHttpListener.cs" line="383" column="25" bodyfile="C:/Users/adenf/RiderProjects/Openlabs.Mgcxm/Openlabs.Mgcxm/Net/Http/MgcxmHttpListener.cs" bodystart="383" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="property" id="class_openlabs_1_1_mgcxm_1_1_net_1_1_mgcxm_http_listener_1a48022e396188dc6c132f88863bf69323" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="no" privatesettable="no" protectedsettable="no">
+        <type>IReadOnlyList&lt; <ref refid="class_openlabs_1_1_mgcxm_1_1_net_1_1_mgcxm_http_endpoint" kindref="compound">MgcxmHttpEndpoint</ref> &gt;</type>
+        <definition>IReadOnlyList&lt;MgcxmHttpEndpoint&gt; Openlabs.Mgcxm.Net.MgcxmHttpListener.Endpoints</definition>
+        <argsstring></argsstring>
+        <name>Endpoints</name>
+        <qualifiedname>Openlabs.Mgcxm.Net.MgcxmHttpListener.Endpoints</qualifiedname>
+        <briefdescription>
+<para>Gets a list of all endpoints associated with the listener. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/adenf/RiderProjects/Openlabs.Mgcxm/Openlabs.Mgcxm/Net/Http/MgcxmHttpListener.cs" line="388" column="26" bodyfile="C:/Users/adenf/RiderProjects/Openlabs.Mgcxm/Openlabs.Mgcxm/Net/Http/MgcxmHttpListener.cs" bodystart="388" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="property" id="class_openlabs_1_1_mgcxm_1_1_net_1_1_mgcxm_http_listener_1ab0ef008cf60af7ed3b814650407c2b7a" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="no" privatesettable="no" protectedsettable="no">
+        <type><ref refid="class_openlabs_1_1_mgcxm_1_1_common_1_1_framework_1_1_endpoint_framework_base" kindref="compound">EndpointFrameworkBase</ref></type>
+        <definition>EndpointFrameworkBase Openlabs.Mgcxm.Net.MgcxmHttpListener.Framework</definition>
+        <argsstring></argsstring>
+        <name>Framework</name>
+        <qualifiedname>Openlabs.Mgcxm.Net.MgcxmHttpListener.Framework</qualifiedname>
+        <briefdescription>
+<para>Gets the current framework associated with the listener. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/adenf/RiderProjects/Openlabs.Mgcxm/Openlabs.Mgcxm/Net/Http/MgcxmHttpListener.cs" line="393" column="34" bodyfile="C:/Users/adenf/RiderProjects/Openlabs.Mgcxm/Openlabs.Mgcxm/Net/Http/MgcxmHttpListener.cs" bodystart="393" bodyend="-1"/>
+        <referencedby refid="class_openlabs_1_1_mgcxm_1_1_tests_1_1_test_server_1ae4c2d5aff7a19f2af9ad57762b9bf3a1" compoundref="_test_server_8cs" startline="18" endline="37">Openlabs.Mgcxm.Tests.TestServer.TestServer</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_openlabs_1_1_mgcxm_1_1_net_1_1_mgcxm_http_listener_1a2b27d67e43f2dd755d47b39ddea36faa" prot="private" static="no" mutable="no">
+        <type><ref refid="struct_openlabs_1_1_mgcxm_1_1_internal_1_1_mgcxm_id" kindref="compound">MgcxmId</ref></type>
+        <definition>MgcxmId Openlabs.Mgcxm.Net.MgcxmHttpListener._allocatedId</definition>
+        <argsstring></argsstring>
+        <name>_allocatedId</name>
+        <qualifiedname>Openlabs.Mgcxm.Net.MgcxmHttpListener._allocatedId</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/adenf/RiderProjects/Openlabs.Mgcxm/Openlabs.Mgcxm/Net/Http/MgcxmHttpListener.cs" line="395" column="21" bodyfile="C:/Users/adenf/RiderProjects/Openlabs.Mgcxm/Openlabs.Mgcxm/Net/Http/MgcxmHttpListener.cs" bodystart="395" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_openlabs_1_1_mgcxm_1_1_net_1_1_mgcxm_http_listener_1a21909999a220dc40ca5ded66da7cd280" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool Openlabs.Mgcxm.Net.MgcxmHttpListener._listenToRequests</definition>
+        <argsstring></argsstring>
+        <name>_listenToRequests</name>
+        <qualifiedname>Openlabs.Mgcxm.Net.MgcxmHttpListener._listenToRequests</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/adenf/RiderProjects/Openlabs.Mgcxm/Openlabs.Mgcxm/Net/Http/MgcxmHttpListener.cs" line="396" column="18" bodyfile="C:/Users/adenf/RiderProjects/Openlabs.Mgcxm/Openlabs.Mgcxm/Net/Http/MgcxmHttpListener.cs" bodystart="396" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_openlabs_1_1_mgcxm_1_1_net_1_1_mgcxm_http_listener_1addf81264a967544cd912ff6d955de119" prot="private" static="no" mutable="no">
+        <type>HttpListener</type>
+        <definition>HttpListener Openlabs.Mgcxm.Net.MgcxmHttpListener._listener</definition>
+        <argsstring></argsstring>
+        <name>_listener</name>
+        <qualifiedname>Openlabs.Mgcxm.Net.MgcxmHttpListener._listener</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/adenf/RiderProjects/Openlabs.Mgcxm/Openlabs.Mgcxm/Net/Http/MgcxmHttpListener.cs" line="397" column="26" bodyfile="C:/Users/adenf/RiderProjects/Openlabs.Mgcxm/Openlabs.Mgcxm/Net/Http/MgcxmHttpListener.cs" bodystart="397" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_openlabs_1_1_mgcxm_1_1_net_1_1_mgcxm_http_listener_1a398fc8b0fc23a9fdd8c8140a1173d503" prot="private" static="no" mutable="no">
+        <type>List&lt; <ref refid="class_openlabs_1_1_mgcxm_1_1_net_1_1_mgcxm_http_endpoint" kindref="compound">MgcxmHttpEndpoint</ref> &gt;</type>
+        <definition>List&lt;MgcxmHttpEndpoint&gt; Openlabs.Mgcxm.Net.MgcxmHttpListener._endpoints</definition>
+        <argsstring></argsstring>
+        <name>_endpoints</name>
+        <qualifiedname>Openlabs.Mgcxm.Net.MgcxmHttpListener._endpoints</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/adenf/RiderProjects/Openlabs.Mgcxm/Openlabs.Mgcxm/Net/Http/MgcxmHttpListener.cs" line="398" column="18" bodyfile="C:/Users/adenf/RiderProjects/Openlabs.Mgcxm/Openlabs.Mgcxm/Net/Http/MgcxmHttpListener.cs" bodystart="398" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_openlabs_1_1_mgcxm_1_1_net_1_1_mgcxm_http_listener_1a156fb77dd4ed6a22069ff4d8cab99850" prot="private" static="no" mutable="no">
+        <type><ref refid="class_openlabs_1_1_mgcxm_1_1_common_1_1_framework_1_1_endpoint_framework_base" kindref="compound">EndpointFrameworkBase</ref></type>
+        <definition>EndpointFrameworkBase Openlabs.Mgcxm.Net.MgcxmHttpListener._framework</definition>
+        <argsstring></argsstring>
+        <name>_framework</name>
+        <qualifiedname>Openlabs.Mgcxm.Net.MgcxmHttpListener._framework</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/adenf/RiderProjects/Openlabs.Mgcxm/Openlabs.Mgcxm/Net/Http/MgcxmHttpListener.cs" line="399" column="35" bodyfile="C:/Users/adenf/RiderProjects/Openlabs.Mgcxm/Openlabs.Mgcxm/Net/Http/MgcxmHttpListener.cs" bodystart="399" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_openlabs_1_1_mgcxm_1_1_net_1_1_mgcxm_http_listener_1ad60005875ec3996b8cb77e716b1fef56" prot="private" static="no" mutable="no">
+        <type>Thread</type>
+        <definition>Thread Openlabs.Mgcxm.Net.MgcxmHttpListener._listenThread</definition>
+        <argsstring></argsstring>
+        <name>_listenThread</name>
+        <qualifiedname>Openlabs.Mgcxm.Net.MgcxmHttpListener._listenThread</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/adenf/RiderProjects/Openlabs.Mgcxm/Openlabs.Mgcxm/Net/Http/MgcxmHttpListener.cs" line="400" column="20" bodyfile="C:/Users/adenf/RiderProjects/Openlabs.Mgcxm/Openlabs.Mgcxm/Net/Http/MgcxmHttpListener.cs" bodystart="400" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_openlabs_1_1_mgcxm_1_1_net_1_1_mgcxm_http_listener_1a9f72afe79266697d4ac42833c11b2412" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Openlabs.Mgcxm.Net.MgcxmHttpListener.MgcxmHttpListener</definition>
+        <argsstring>(IpAddress addressToHostOn)</argsstring>
+        <name>MgcxmHttpListener</name>
+        <qualifiedname>Openlabs.Mgcxm.Net.MgcxmHttpListener.MgcxmHttpListener</qualifiedname>
+        <param>
+          <type><ref refid="class_openlabs_1_1_mgcxm_1_1_net_1_1_ip_address" kindref="compound">IpAddress</ref></type>
+          <declname>addressToHostOn</declname>
+        </param>
+        <briefdescription>
+<para>Initializes a new instance of the MgcxmHttpListener class. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>addressToHostOn</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The IP address to host the listener on.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/adenf/RiderProjects/Openlabs.Mgcxm/Openlabs.Mgcxm/Net/Http/MgcxmHttpListener.cs" line="39" column="12" bodyfile="C:/Users/adenf/RiderProjects/Openlabs.Mgcxm/Openlabs.Mgcxm/Net/Http/MgcxmHttpListener.cs" bodystart="39" bodyend="103"/>
+        <references refid="struct_openlabs_1_1_mgcxm_1_1_internal_1_1_mgcxm_id_1a1a0f97f9cbb455396c2605439fc42f76" compoundref="_mgcxm_id_8cs" startline="32">Openlabs.Mgcxm.Internal.MgcxmId.Id</references>
+        <references refid="class_openlabs_1_1_mgcxm_1_1_net_1_1_http_endpoint_attribute_1abeffde806875de7ad58bd7455dbb46a5" compoundref="_http_endpoint_attribute_8cs" startline="35" endline="35">Openlabs.Mgcxm.Net.HttpEndpointAttribute.ReturnType</references>
+      </memberdef>
+      <memberdef kind="function" id="class_openlabs_1_1_mgcxm_1_1_net_1_1_mgcxm_http_listener_1a12292b58f349e2c26d118701feddc862" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Openlabs.Mgcxm.Net.MgcxmHttpListener.Start</definition>
+        <argsstring>()</argsstring>
+        <name>Start</name>
+        <qualifiedname>Openlabs.Mgcxm.Net.MgcxmHttpListener.Start</qualifiedname>
+        <briefdescription>
+<para>Starts the HTTP listener to listen for incoming requests. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/adenf/RiderProjects/Openlabs.Mgcxm/Openlabs.Mgcxm/Net/Http/MgcxmHttpListener.cs" line="303" column="17" bodyfile="C:/Users/adenf/RiderProjects/Openlabs.Mgcxm/Openlabs.Mgcxm/Net/Http/MgcxmHttpListener.cs" bodystart="303" bodyend="313"/>
+      </memberdef>
+      <memberdef kind="function" id="class_openlabs_1_1_mgcxm_1_1_net_1_1_mgcxm_http_listener_1a0cff1c8433b7454c44997956e33ba3f5" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Openlabs.Mgcxm.Net.MgcxmHttpListener.Stop</definition>
+        <argsstring>()</argsstring>
+        <name>Stop</name>
+        <qualifiedname>Openlabs.Mgcxm.Net.MgcxmHttpListener.Stop</qualifiedname>
+        <briefdescription>
+<para>Stops the HTTP listener from listening for incoming requests. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/adenf/RiderProjects/Openlabs.Mgcxm/Openlabs.Mgcxm/Net/Http/MgcxmHttpListener.cs" line="334" column="17" bodyfile="C:/Users/adenf/RiderProjects/Openlabs.Mgcxm/Openlabs.Mgcxm/Net/Http/MgcxmHttpListener.cs" bodystart="334" bodyend="338"/>
+      </memberdef>
+      <memberdef kind="function" id="class_openlabs_1_1_mgcxm_1_1_net_1_1_mgcxm_http_listener_1a687fc4b689ec657e672354b394dee8be" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Openlabs.Mgcxm.Net.MgcxmHttpListener.SetFramework&lt; TEndpointUrl &gt;</definition>
+        <argsstring>(EndpointFramework&lt; TEndpointUrl &gt; endpointFramework)</argsstring>
+        <name>SetFramework&lt; TEndpointUrl &gt;</name>
+        <qualifiedname>Openlabs.Mgcxm.Net.MgcxmHttpListener.SetFramework&lt; TEndpointUrl &gt;</qualifiedname>
+        <param>
+          <type><ref refid="class_openlabs_1_1_mgcxm_1_1_common_1_1_framework_1_1_endpoint_framework" kindref="compound">EndpointFramework</ref>&lt; TEndpointUrl &gt;</type>
+          <declname>endpointFramework</declname>
+        </param>
+        <briefdescription>
+<para>Sets the current framework of the server. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>This will block ALL incoming requests to non-frameworked endpoints and redirect them to the framework.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>endpointFramework</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The framework to use.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="templateparam"><parameteritem>
+<parameternamelist>
+<parametername>TEndpointUrl</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The type of URLs to be used on the framework.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/adenf/RiderProjects/Openlabs.Mgcxm/Openlabs.Mgcxm/Net/Http/MgcxmHttpListener.cs" line="346" column="12" bodyfile="C:/Users/adenf/RiderProjects/Openlabs.Mgcxm/Openlabs.Mgcxm/Net/Http/MgcxmHttpListener.cs" bodystart="346" bodyend="350"/>
+      </memberdef>
+      <memberdef kind="function" id="class_openlabs_1_1_mgcxm_1_1_net_1_1_mgcxm_http_listener_1a0763f648b9f2a6802fbb5b8cebb28e86" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Openlabs.Mgcxm.Net.MgcxmHttpListener.AddFrameworkEndpoint</definition>
+        <argsstring>(EndpointUrl url, HttpMethods method, OnEndpointRequested requestedHandler)</argsstring>
+        <name>AddFrameworkEndpoint</name>
+        <qualifiedname>Openlabs.Mgcxm.Net.MgcxmHttpListener.AddFrameworkEndpoint</qualifiedname>
+        <param>
+          <type><ref refid="class_openlabs_1_1_mgcxm_1_1_common_1_1_framework_1_1_endpoint_url" kindref="compound">EndpointUrl</ref></type>
+          <declname>url</declname>
+        </param>
+        <param>
+          <type><ref refid="namespace_openlabs_1_1_mgcxm_1_1_net_1a63268740291f4b97a3eb53abd380f84e" kindref="member">HttpMethods</ref></type>
+          <declname>method</declname>
+        </param>
+        <param>
+          <type><ref refid="namespace_openlabs_1_1_mgcxm_1_1_net_1affacc6bf2b6a12de7307197182a70877" kindref="member">OnEndpointRequested</ref></type>
+          <declname>requestedHandler</declname>
+        </param>
+        <briefdescription>
+<para>Adds an endpoint to the framework. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>This method does nothing if you haven&apos;t used SetFramework();</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>url</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The URL to point the endpoint to.</para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>method</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The HTTP method used on this endpoint.</para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>requestedHandler</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The handler used to resolve the request and write to the response.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/adenf/RiderProjects/Openlabs.Mgcxm/Openlabs.Mgcxm/Net/Http/MgcxmHttpListener.cs" line="359" column="17" bodyfile="C:/Users/adenf/RiderProjects/Openlabs.Mgcxm/Openlabs.Mgcxm/Net/Http/MgcxmHttpListener.cs" bodystart="359" bodyend="368"/>
+        <referencedby refid="class_openlabs_1_1_mgcxm_1_1_tests_1_1_test_server_1ae4c2d5aff7a19f2af9ad57762b9bf3a1" compoundref="_test_server_8cs" startline="18" endline="37">Openlabs.Mgcxm.Tests.TestServer.TestServer</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="class_openlabs_1_1_mgcxm_1_1_net_1_1_mgcxm_http_listener_1aa474b30b6cea48f5f3596a6cda3fd6fd" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Openlabs.Mgcxm.Net.MgcxmHttpListener.~MgcxmHttpListener</definition>
+        <argsstring>()</argsstring>
+        <name>~MgcxmHttpListener</name>
+        <qualifiedname>Openlabs.Mgcxm.Net.MgcxmHttpListener.~MgcxmHttpListener</qualifiedname>
+        <briefdescription>
+<para>Finalizes an instance of the MgcxmHttpListener class. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/adenf/RiderProjects/Openlabs.Mgcxm/Openlabs.Mgcxm/Net/Http/MgcxmHttpListener.cs" line="108" column="5"/>
+      </memberdef>
+      <memberdef kind="function" id="class_openlabs_1_1_mgcxm_1_1_net_1_1_mgcxm_http_listener_1a3a138be878e8a7f1fd1f808f61672154" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Openlabs.Mgcxm.Net.MgcxmHttpListener.InitializeCore</definition>
+        <argsstring>()</argsstring>
+        <name>InitializeCore</name>
+        <qualifiedname>Openlabs.Mgcxm.Net.MgcxmHttpListener.InitializeCore</qualifiedname>
+        <briefdescription>
+<para>Initializes core endpoints, e.g., /favicon.ico and other systems. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/adenf/RiderProjects/Openlabs.Mgcxm/Openlabs.Mgcxm/Net/Http/MgcxmHttpListener.cs" line="113" column="18" bodyfile="C:/Users/adenf/RiderProjects/Openlabs.Mgcxm/Openlabs.Mgcxm/Net/Http/MgcxmHttpListener.cs" bodystart="113" bodyend="125"/>
+      </memberdef>
+      <memberdef kind="function" id="class_openlabs_1_1_mgcxm_1_1_net_1_1_mgcxm_http_listener_1a6700f6a62ff8b4af2b90abe45631647d" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>async Task</type>
+        <definition>async Task Openlabs.Mgcxm.Net.MgcxmHttpListener.StartListening</definition>
+        <argsstring>()</argsstring>
+        <name>StartListening</name>
+        <qualifiedname>Openlabs.Mgcxm.Net.MgcxmHttpListener.StartListening</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/adenf/RiderProjects/Openlabs.Mgcxm/Openlabs.Mgcxm/Net/Http/MgcxmHttpListener.cs" line="127" column="24" bodyfile="C:/Users/adenf/RiderProjects/Openlabs.Mgcxm/Openlabs.Mgcxm/Net/Http/MgcxmHttpListener.cs" bodystart="127" bodyend="298"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="package-func">
+      <memberdef kind="function" id="class_openlabs_1_1_mgcxm_1_1_net_1_1_mgcxm_http_listener_1adda681dfcb5f8b0d7acffd3e39d4aaaa" prot="package" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Openlabs.Mgcxm.Net.MgcxmHttpListener.StartInternal</definition>
+        <argsstring>(AsyncListenTask listentask)</argsstring>
+        <name>StartInternal</name>
+        <qualifiedname>Openlabs.Mgcxm.Net.MgcxmHttpListener.StartInternal</qualifiedname>
+        <param>
+          <type><ref refid="namespace_openlabs_1_1_mgcxm_1_1_net_1ae932ef589bc25b872380eab138472bfa" kindref="member">AsyncListenTask</ref></type>
+          <declname>listentask</declname>
+        </param>
+        <briefdescription>
+<para>Starts the HTTP listener internally with a specified listen task. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>listentask</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The listen task to start the listener.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/adenf/RiderProjects/Openlabs.Mgcxm/Openlabs.Mgcxm/Net/Http/MgcxmHttpListener.cs" line="319" column="19" bodyfile="C:/Users/adenf/RiderProjects/Openlabs.Mgcxm/Openlabs.Mgcxm/Net/Http/MgcxmHttpListener.cs" bodystart="319" bodyend="329"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Represents an HTTP listener for MgcxmSocketListener. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>Openlabs.Mgcxm.Net.MgcxmHttpListener</label>
+        <link refid="class_openlabs_1_1_mgcxm_1_1_net_1_1_mgcxm_http_listener"/>
+      </node>
+      <node id="2">
+        <label>Openlabs.Mgcxm.Tests.TestServer</label>
+        <link refid="class_openlabs_1_1_mgcxm_1_1_tests_1_1_test_server"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <location file="C:/Users/adenf/RiderProjects/Openlabs.Mgcxm/Openlabs.Mgcxm/Net/Http/MgcxmHttpListener.cs" line="33" column="7" bodyfile="C:/Users/adenf/RiderProjects/Openlabs.Mgcxm/Openlabs.Mgcxm/Net/Http/MgcxmHttpListener.cs" bodystart="34" bodyend="401"/>
+    <listofallmembers>
+      <member refid="class_openlabs_1_1_mgcxm_1_1_net_1_1_mgcxm_http_listener_1a2b27d67e43f2dd755d47b39ddea36faa" prot="private" virt="non-virtual"><scope>Openlabs::Mgcxm::Net::MgcxmHttpListener</scope><name>_allocatedId</name></member>
+      <member refid="class_openlabs_1_1_mgcxm_1_1_net_1_1_mgcxm_http_listener_1a398fc8b0fc23a9fdd8c8140a1173d503" prot="private" virt="non-virtual"><scope>Openlabs::Mgcxm::Net::MgcxmHttpListener</scope><name>_endpoints</name></member>
+      <member refid="class_openlabs_1_1_mgcxm_1_1_net_1_1_mgcxm_http_listener_1a156fb77dd4ed6a22069ff4d8cab99850" prot="private" virt="non-virtual"><scope>Openlabs::Mgcxm::Net::MgcxmHttpListener</scope><name>_framework</name></member>
+      <member refid="class_openlabs_1_1_mgcxm_1_1_net_1_1_mgcxm_http_listener_1addf81264a967544cd912ff6d955de119" prot="private" virt="non-virtual"><scope>Openlabs::Mgcxm::Net::MgcxmHttpListener</scope><name>_listener</name></member>
+      <member refid="class_openlabs_1_1_mgcxm_1_1_net_1_1_mgcxm_http_listener_1ad60005875ec3996b8cb77e716b1fef56" prot="private" virt="non-virtual"><scope>Openlabs::Mgcxm::Net::MgcxmHttpListener</scope><name>_listenThread</name></member>
+      <member refid="class_openlabs_1_1_mgcxm_1_1_net_1_1_mgcxm_http_listener_1a21909999a220dc40ca5ded66da7cd280" prot="private" virt="non-virtual"><scope>Openlabs::Mgcxm::Net::MgcxmHttpListener</scope><name>_listenToRequests</name></member>
+      <member refid="class_openlabs_1_1_mgcxm_1_1_net_1_1_mgcxm_http_listener_1a0763f648b9f2a6802fbb5b8cebb28e86" prot="public" virt="non-virtual"><scope>Openlabs::Mgcxm::Net::MgcxmHttpListener</scope><name>AddFrameworkEndpoint</name></member>
+      <member refid="class_openlabs_1_1_mgcxm_1_1_net_1_1_mgcxm_http_listener_1a8ceea64a86452b7799832d512bf59b05" prot="public" virt="non-virtual"><scope>Openlabs::Mgcxm::Net::MgcxmHttpListener</scope><name>AllocatedId</name></member>
+      <member refid="class_openlabs_1_1_mgcxm_1_1_net_1_1_mgcxm_http_listener_1a48022e396188dc6c132f88863bf69323" prot="public" virt="non-virtual"><scope>Openlabs::Mgcxm::Net::MgcxmHttpListener</scope><name>Endpoints</name></member>
+      <member refid="class_openlabs_1_1_mgcxm_1_1_net_1_1_mgcxm_http_listener_1ab0ef008cf60af7ed3b814650407c2b7a" prot="public" virt="non-virtual"><scope>Openlabs::Mgcxm::Net::MgcxmHttpListener</scope><name>Framework</name></member>
+      <member refid="class_openlabs_1_1_mgcxm_1_1_net_1_1_mgcxm_http_listener_1a3a138be878e8a7f1fd1f808f61672154" prot="private" virt="non-virtual"><scope>Openlabs::Mgcxm::Net::MgcxmHttpListener</scope><name>InitializeCore</name></member>
+      <member refid="class_openlabs_1_1_mgcxm_1_1_net_1_1_mgcxm_http_listener_1a62c66d562f2d7163e7fd0c4abb44d20b" prot="public" virt="non-virtual"><scope>Openlabs::Mgcxm::Net::MgcxmHttpListener</scope><name>Listener</name></member>
+      <member refid="class_openlabs_1_1_mgcxm_1_1_net_1_1_mgcxm_http_listener_1a04b35b5cc47ebb7a8abe9d51de700f4d" prot="public" virt="non-virtual"><scope>Openlabs::Mgcxm::Net::MgcxmHttpListener</scope><name>ListenToRequests</name></member>
+      <member refid="class_openlabs_1_1_mgcxm_1_1_net_1_1_mgcxm_http_listener_1a9f72afe79266697d4ac42833c11b2412" prot="public" virt="non-virtual"><scope>Openlabs::Mgcxm::Net::MgcxmHttpListener</scope><name>MgcxmHttpListener</name></member>
+      <member refid="class_openlabs_1_1_mgcxm_1_1_net_1_1_mgcxm_http_listener_1a687fc4b689ec657e672354b394dee8be" prot="public" virt="non-virtual"><scope>Openlabs::Mgcxm::Net::MgcxmHttpListener</scope><name>SetFramework&lt; TEndpointUrl &gt;</name></member>
+      <member refid="class_openlabs_1_1_mgcxm_1_1_net_1_1_mgcxm_http_listener_1a12292b58f349e2c26d118701feddc862" prot="public" virt="non-virtual"><scope>Openlabs::Mgcxm::Net::MgcxmHttpListener</scope><name>Start</name></member>
+      <member refid="class_openlabs_1_1_mgcxm_1_1_net_1_1_mgcxm_http_listener_1adda681dfcb5f8b0d7acffd3e39d4aaaa" prot="package" virt="non-virtual"><scope>Openlabs::Mgcxm::Net::MgcxmHttpListener</scope><name>StartInternal</name></member>
+      <member refid="class_openlabs_1_1_mgcxm_1_1_net_1_1_mgcxm_http_listener_1a6700f6a62ff8b4af2b90abe45631647d" prot="private" virt="non-virtual"><scope>Openlabs::Mgcxm::Net::MgcxmHttpListener</scope><name>StartListening</name></member>
+      <member refid="class_openlabs_1_1_mgcxm_1_1_net_1_1_mgcxm_http_listener_1a0cff1c8433b7454c44997956e33ba3f5" prot="public" virt="non-virtual"><scope>Openlabs::Mgcxm::Net::MgcxmHttpListener</scope><name>Stop</name></member>
+      <member refid="class_openlabs_1_1_mgcxm_1_1_net_1_1_mgcxm_http_listener_1aa474b30b6cea48f5f3596a6cda3fd6fd" prot="private" virt="non-virtual"><scope>Openlabs::Mgcxm::Net::MgcxmHttpListener</scope><name>~MgcxmHttpListener</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

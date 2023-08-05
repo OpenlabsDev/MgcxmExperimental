@@ -1,0 +1,36 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.7" xml:lang="en-US">
+  <compounddef id="_jwt_decoder_context_8cs" kind="file" language="C#">
+    <compoundname>JwtDecoderContext.cs</compoundname>
+    <innerclass refid="class_j_w_t_1_1_jwt_decoder_context" prot="public">JWT::JwtDecoderContext</innerclass>
+    <innernamespace refid="namespace_j_w_t">JWT</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="keyword">using<sp/></highlight><highlight class="normal"><ref refid="namespace_j_w_t_1_1_builder" kindref="compound">JWT.Builder</ref>;</highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="namespace_j_w_t" kindref="compound">JWT</ref></highlight></codeline>
+<codeline lineno="4"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="5" refid="class_j_w_t_1_1_jwt_decoder_context" refkind="compound"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="class_j_w_t_1_1_jwt_decoder_context" kindref="compound">JwtDecoderContext</ref></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="10" refid="class_j_w_t_1_1_jwt_decoder_context_1aea6485cf7c6eb40692a5fe3662627060" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="class_j_w_t_1_1_jwt_parts" kindref="compound">JwtParts</ref><sp/><ref refid="class_j_w_t_1_1_jwt_decoder_context_1aea6485cf7c6eb40692a5fe3662627060" kindref="member">Token</ref><sp/>{<sp/></highlight><highlight class="keyword">get</highlight><highlight class="normal">;<sp/></highlight><highlight class="keyword">set</highlight><highlight class="normal">;<sp/>}</highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight></codeline>
+<codeline lineno="15" refid="class_j_w_t_1_1_jwt_decoder_context_1aad1d99c795395fbea376ba3e8ad46aed" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="class_j_w_t_1_1_builder_1_1_jwt_header" kindref="compound">JwtHeader</ref><sp/><ref refid="class_j_w_t_1_1_jwt_decoder_context_1aad1d99c795395fbea376ba3e8ad46aed" kindref="member">Header</ref><sp/>{<sp/></highlight><highlight class="keyword">get</highlight><highlight class="normal">;<sp/></highlight><highlight class="keyword">set</highlight><highlight class="normal">;<sp/>}</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight></codeline>
+<codeline lineno="20" refid="class_j_w_t_1_1_jwt_decoder_context_1a130305c3deb783257c34a189864366fe" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/><ref refid="class_j_w_t_1_1_jwt_decoder_context_1a130305c3deb783257c34a189864366fe" kindref="member">Payload</ref><sp/>{<sp/></highlight><highlight class="keyword">get</highlight><highlight class="normal">;<sp/></highlight><highlight class="keyword">set</highlight><highlight class="normal">;<sp/>}</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight></codeline>
+<codeline lineno="22" refid="class_j_w_t_1_1_jwt_decoder_context_1ac42b128e3f1a39a6ab6da27738ad7c65" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/><ref refid="class_j_w_t_1_1_jwt_decoder_context" kindref="compound">JwtDecoderContext</ref><sp/><ref refid="class_j_w_t_1_1_jwt_decoder_context_1ac42b128e3f1a39a6ab6da27738ad7c65" kindref="member">Create</ref>(<ref refid="class_j_w_t_1_1_builder_1_1_jwt_header" kindref="compound">JwtHeader</ref><sp/>header,<sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>decodedPayload,<sp/><ref refid="class_j_w_t_1_1_jwt_parts" kindref="compound">JwtParts</ref><sp/>jwt)<sp/>=&gt;</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/><ref refid="class_j_w_t_1_1_jwt_decoder_context" kindref="compound">JwtDecoderContext</ref></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_j_w_t_1_1_jwt_decoder_context_1aea6485cf7c6eb40692a5fe3662627060" kindref="member">Token</ref><sp/>=<sp/>jwt,</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_j_w_t_1_1_jwt_decoder_context_1aad1d99c795395fbea376ba3e8ad46aed" kindref="member">Header</ref><sp/>=<sp/>header,</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_j_w_t_1_1_jwt_decoder_context_1a130305c3deb783257c34a189864366fe" kindref="member">Payload</ref><sp/>=<sp/>decodedPayload</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="30"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="C:/Users/adenf/RiderProjects/Openlabs.Mgcxm/Openlabs.Mgcxm/JWT/JwtDecoderContext.cs"/>
+  </compounddef>
+</doxygen>

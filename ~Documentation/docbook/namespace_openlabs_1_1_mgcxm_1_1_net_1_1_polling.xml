@@ -1,0 +1,61 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_namespace_openlabs_1_1_mgcxm_1_1_net_1_1_polling" xml:lang="en-US">
+<title>Openlabs.Mgcxm.Net.Polling Namespace Reference</title>
+<indexterm><primary>Openlabs.Mgcxm.Net.Polling</primary></indexterm>
+<simplesect>
+    <title>Classes    </title>
+        <itemizedlist>
+            <listitem><para>class <link linkend="_class_openlabs_1_1_mgcxm_1_1_net_1_1_polling_1_1_polling_receiver">PollingReceiver</link></para>
+
+<para>Represents a polling receiver that can send poll requests and handle poll responses. </para>
+</listitem>
+            <listitem><para>class <link linkend="_class_openlabs_1_1_mgcxm_1_1_net_1_1_polling_1_1_poll_request">PollRequest</link></para>
+
+<para>Represents a poll request that can be sent to a PollingReceiver. </para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Functions    </title>
+        <itemizedlist>
+            <listitem><para>delegate void <link linkend="_namespace_openlabs_1_1_mgcxm_1_1_net_1_1_polling_1a021c8fd0a263d6965d9c89fa9528920e">OnPollAccepted</link> (int status)</para>
+
+<para>Represents a delegate for the callback function used when a poll is accepted. </para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Function Documentation</title>
+<anchor xml:id="_namespace_openlabs_1_1_mgcxm_1_1_net_1_1_polling_1a021c8fd0a263d6965d9c89fa9528920e"/><section>
+    <title>OnPollAccepted()</title>
+<indexterm><primary>OnPollAccepted</primary><secondary>Openlabs.Mgcxm.Net.Polling</secondary></indexterm>
+<indexterm><primary>Openlabs.Mgcxm.Net.Polling</primary><secondary>OnPollAccepted</secondary></indexterm>
+<para><computeroutput>delegate void Openlabs.Mgcxm.Net.Polling.OnPollAccepted (int status)</computeroutput></para><para>
+
+<para>Represents a delegate for the callback function used when a poll is accepted. </para>
+</para>
+
+<para>
+                <formalpara>
+                    <title>
+Parameters</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>status</entry><entry>
+<para>The status code representing the acceptance of the poll request.</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                </para>
+</section>
+</section>
+</section>

@@ -1,0 +1,21 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_namespace_openlabs_1_1_mgcxm_1_1_tests" xml:lang="en-US">
+<title>Openlabs.Mgcxm.Tests Namespace Reference</title>
+<indexterm><primary>Openlabs.Mgcxm.Tests</primary></indexterm>
+<simplesect>
+    <title>Namespaces    </title>
+        <itemizedlist>
+            <listitem><para>namespace <link linkend="_namespace_openlabs_1_1_mgcxm_1_1_tests_1_1_assets">Assets</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Classes    </title>
+        <itemizedlist>
+            <listitem><para>class <link linkend="_class_openlabs_1_1_mgcxm_1_1_tests_1_1_test_server">TestServer</link></para>
+</listitem>
+            <listitem><para>class <link linkend="_class_openlabs_1_1_mgcxm_1_1_tests_1_1_test_ws_server">TestWsServer</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+</section>

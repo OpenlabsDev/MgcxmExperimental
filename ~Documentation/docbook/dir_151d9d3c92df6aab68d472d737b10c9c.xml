@@ -1,0 +1,30 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_dir_151d9d3c92df6aab68d472d737b10c9c" xml:lang="en-US">
+<title>C:/Users/adenf/RiderProjects/Openlabs.Mgcxm/Openlabs.Mgcxm.Tests/Assets/Responses Directory Reference</title>
+<indexterm><primary>C:/Users/adenf/RiderProjects/Openlabs.Mgcxm/Openlabs.Mgcxm.Tests/Assets/Responses Directory Reference</primary></indexterm>
+Directory dependency graph for Responses:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="dir_151d9d3c92df6aab68d472d737b10c9c_dep.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+<simplesect>
+    <title>Directories    </title>
+        <itemizedlist>
+            <listitem><para>directory <link linkend="_dir_96e718dfa916e015e99698f6aa88a827">DTO</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Files    </title>
+        <itemizedlist>
+            <listitem><para>file <link linkend="__avatar_json_file_asset_8cs">AvatarJsonFileAsset.cs</link></para>
+</listitem>
+            <listitem><para>file <link linkend="__settings_json_file_asset_8cs">SettingsJsonFileAsset.cs</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+</section>

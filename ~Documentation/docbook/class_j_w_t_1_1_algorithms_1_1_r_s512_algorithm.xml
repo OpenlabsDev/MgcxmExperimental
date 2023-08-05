@@ -1,0 +1,248 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_class_j_w_t_1_1_algorithms_1_1_r_s512_algorithm" xml:lang="en-US">
+<title>JWT.Algorithms.RS512Algorithm Class Reference</title>
+<indexterm><primary>JWT.Algorithms.RS512Algorithm</primary></indexterm>
+<para>
+
+<para>RSASSA-PKCS1-v1_5 using SHA-512. </para>
+ 
+</para>
+Inheritance diagram for JWT.Algorithms.RS512Algorithm:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="class_j_w_t_1_1_algorithms_1_1_r_s512_algorithm__inherit__graph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+Collaboration diagram for JWT.Algorithms.RS512Algorithm:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="class_j_w_t_1_1_algorithms_1_1_r_s512_algorithm__coll__graph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+<simplesect>
+    <title>Public Member Functions    </title>
+        <itemizedlist>
+            <listitem><para><link linkend="_class_j_w_t_1_1_algorithms_1_1_r_s512_algorithm_1a426a76cd0fb3921797af211b9ebbf132">RS512Algorithm</link> (RSA publicKey, RSA privateKey)</para>
+
+<para>Creates an instance of RS512Algorithm using the provided pair of public and private keys. </para>
+</listitem>
+            <listitem><para><link linkend="_class_j_w_t_1_1_algorithms_1_1_r_s512_algorithm_1a38b8a256d39c1d88c9f5eb64fd6a9d13">RS512Algorithm</link> (RSA publicKey)</para>
+
+<para>Creates an instance of RS512Algorithm using the provided public key only. </para>
+</listitem>
+            <listitem><para><link linkend="_class_j_w_t_1_1_algorithms_1_1_r_s512_algorithm_1a79bed2b7f4fa3c032a14c76f7e947dc4">RS512Algorithm</link> (X509Certificate2 cert)</para>
+
+<para>Creates an instance using the provided certificate. </para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+Public Member Functions inherited from <link linkend="_class_j_w_t_1_1_algorithms_1_1_certificate_algorithm">JWT.Algorithms.CertificateAlgorithm&lt; RSA &gt;</link>        <itemizedlist>
+            <listitem><para>byte[] <link linkend="_class_j_w_t_1_1_algorithms_1_1_certificate_algorithm_1a1a4d69530d9de76267bd7978599ed4b3">Sign</link> (byte[] key, byte[] bytesToSign)</para>
+</listitem>
+            <listitem><para>byte[] <link linkend="_class_j_w_t_1_1_algorithms_1_1_certificate_algorithm_1a1ee6154637b24b75aacd2fb0d95cd685">Sign</link> (byte[] bytesToSign)</para>
+
+<para>Signs the provided byte array with the private key. </para>
+</listitem>
+            <listitem><para>bool <link linkend="_class_j_w_t_1_1_algorithms_1_1_certificate_algorithm_1a2a9f256e62c57ef7d3c49560de27fe06">Verify</link> (byte[] bytesToSign, byte[] signature)</para>
+</listitem>
+        </itemizedlist>
+<simplesect>
+    <title>Properties    </title>
+        <itemizedlist>
+            <listitem><para>override string <link linkend="_class_j_w_t_1_1_algorithms_1_1_r_s512_algorithm_1a6df1d356f2be4665e13ef65f00137345">Name</link><computeroutput> [get]</computeroutput>
+</para>
+</listitem>
+            <listitem><para>override HashAlgorithmName <link linkend="_class_j_w_t_1_1_algorithms_1_1_r_s512_algorithm_1acf668a2135db2d2f3e535e3df59aa4c0">HashAlgorithmName</link><computeroutput> [get]</computeroutput>
+</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+Properties inherited from <link linkend="_class_j_w_t_1_1_algorithms_1_1_certificate_algorithm">JWT.Algorithms.CertificateAlgorithm&lt; RSA &gt;</link>        <itemizedlist>
+            <listitem><para>abstract string <link linkend="_class_j_w_t_1_1_algorithms_1_1_certificate_algorithm_1a084de64501e51afd80ebc626284e65a6">Name</link><computeroutput> [get]</computeroutput>
+</para>
+</listitem>
+            <listitem><para>abstract HashAlgorithmName <link linkend="_class_j_w_t_1_1_algorithms_1_1_certificate_algorithm_1a0dc44f24b84578049a79ee3e07cd3972">HashAlgorithmName</link><computeroutput> [get]</computeroutput>
+</para>
+</listitem>
+        </itemizedlist>
+<simplesect>
+    <title>Additional Inherited Members    </title>
+Protected Member Functions inherited from <link linkend="_class_j_w_t_1_1_algorithms_1_1_r_s_algorithm">JWT.Algorithms.RSAlgorithm</link>        <itemizedlist>
+            <listitem><para><link linkend="_class_j_w_t_1_1_algorithms_1_1_r_s_algorithm_1a64131a63611025164d8f478496b5b038">RSAlgorithm</link> (RSA publicKey, RSA privateKey)</para>
+
+<para>Creates an instance of RSAlgorithm using the provided pair of public and private keys. </para>
+</listitem>
+            <listitem><para><link linkend="_class_j_w_t_1_1_algorithms_1_1_r_s_algorithm_1ace74eaab60e0f39308f14bb97050d66b">RSAlgorithm</link> (RSA publicKey)</para>
+
+<para>Creates an instance of RSAlgorithm using the provided public key only. </para>
+</listitem>
+            <listitem><para><link linkend="_class_j_w_t_1_1_algorithms_1_1_r_s_algorithm_1ace393f5285e79df9f542be829cf54126">RSAlgorithm</link> (X509Certificate2 cert)</para>
+
+<para>Creates an instance using the provided certificate. </para>
+</listitem>
+            <listitem><para>override RSA <link linkend="_class_j_w_t_1_1_algorithms_1_1_r_s_algorithm_1a26eeb7cd2c4f7b08fafd00651f951bb9">GetPublicKey</link> (X509Certificate2 cert)</para>
+</listitem>
+            <listitem><para>override RSA <link linkend="_class_j_w_t_1_1_algorithms_1_1_r_s_algorithm_1a2365eb987babdec4c1bb3fe69530fd67">GetPrivateKey</link> (X509Certificate2 cert)</para>
+</listitem>
+            <listitem><para>override byte[] <link linkend="_class_j_w_t_1_1_algorithms_1_1_r_s_algorithm_1ae2ea827013bc5a8cf6a9d449a69c4c67">SignData</link> (byte[] bytesToSign)</para>
+</listitem>
+            <listitem><para>override bool <link linkend="_class_j_w_t_1_1_algorithms_1_1_r_s_algorithm_1ac614a310e0d22019492d75994d3a6a8e">VerifyData</link> (byte[] bytesToSign, byte[] signature)</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+Protected Member Functions inherited from <link linkend="_class_j_w_t_1_1_algorithms_1_1_certificate_algorithm">JWT.Algorithms.CertificateAlgorithm&lt; RSA &gt;</link>        <itemizedlist>
+            <listitem><para><link linkend="_class_j_w_t_1_1_algorithms_1_1_certificate_algorithm_1a43e9c1390c0e64c1eaa59f92c4aedc55">CertificateAlgorithm</link> (T publicKey, T privateKey)</para>
+</listitem>
+            <listitem><para><link linkend="_class_j_w_t_1_1_algorithms_1_1_certificate_algorithm_1ac66d69a276443c44662c7f4b496ac8da">CertificateAlgorithm</link> (T publicKey)</para>
+</listitem>
+            <listitem><para><link linkend="_class_j_w_t_1_1_algorithms_1_1_certificate_algorithm_1a1721400370a9a1334622962e86e09a1a">CertificateAlgorithm</link> (X509Certificate2 cert)</para>
+</listitem>
+            <listitem><para>abstract T <link linkend="_class_j_w_t_1_1_algorithms_1_1_certificate_algorithm_1a2b6c5f4fd6429868c256100c1b191939">GetPublicKey</link> (X509Certificate2 cert)</para>
+</listitem>
+            <listitem><para>abstract T <link linkend="_class_j_w_t_1_1_algorithms_1_1_certificate_algorithm_1aaa1a7789483cf5e1437997f88e5a3196">GetPrivateKey</link> (X509Certificate2 cert)</para>
+</listitem>
+            <listitem><para>abstract byte[] <link linkend="_class_j_w_t_1_1_algorithms_1_1_certificate_algorithm_1a870b391063934ea80dfb6b62aca4d800">SignData</link> (byte[] bytesToSign)</para>
+</listitem>
+            <listitem><para>abstract bool <link linkend="_class_j_w_t_1_1_algorithms_1_1_certificate_algorithm_1ae3bb3bc711ce8d8cd1004116c1f91baa">VerifyData</link> (byte[] bytesToSign, byte[] signature)</para>
+</listitem>
+        </itemizedlist>
+Protected Attributes inherited from <link linkend="_class_j_w_t_1_1_algorithms_1_1_certificate_algorithm">JWT.Algorithms.CertificateAlgorithm&lt; RSA &gt;</link>        <itemizedlist>
+            <listitem><para>readonly T <link linkend="_class_j_w_t_1_1_algorithms_1_1_certificate_algorithm_1a2b0420e1c1745786cf469a3a2ed26d34">_publicKey</link></para>
+</listitem>
+            <listitem><para>readonly T <link linkend="_class_j_w_t_1_1_algorithms_1_1_certificate_algorithm_1a998d357ab8379f6a460fda413a4668fc">_privateKey</link></para>
+</listitem>
+        </itemizedlist>
+<section>
+<title>Detailed Description</title>
+
+<para>RSASSA-PKCS1-v1_5 using SHA-512. </para>
+</section>
+<section>
+<title>Constructor &amp; Destructor Documentation</title>
+<anchor xml:id="_class_j_w_t_1_1_algorithms_1_1_r_s512_algorithm_1a426a76cd0fb3921797af211b9ebbf132"/><section>
+    <title>RS512Algorithm()<computeroutput>[1/3]</computeroutput></title>
+<indexterm><primary>RS512Algorithm</primary><secondary>JWT.Algorithms.RS512Algorithm</secondary></indexterm>
+<indexterm><primary>JWT.Algorithms.RS512Algorithm</primary><secondary>RS512Algorithm</secondary></indexterm>
+<para><computeroutput>JWT.Algorithms.RS512Algorithm.RS512Algorithm (RSA publicKey, RSA privateKey)</computeroutput></para><para>
+
+<para>Creates an instance of RS512Algorithm using the provided pair of public and private keys. </para>
+</para>
+
+<para>
+                <formalpara>
+                    <title>
+Parameters</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>publicKey</entry><entry>
+<para>The public key for verifying the data.</para>
+</entry>
+                            </row>
+                            <row>
+<entry>privateKey</entry><entry>
+<para>The private key for signing the data.</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                </para>
+</section>
+<anchor xml:id="_class_j_w_t_1_1_algorithms_1_1_r_s512_algorithm_1a38b8a256d39c1d88c9f5eb64fd6a9d13"/><section>
+    <title>RS512Algorithm()<computeroutput>[2/3]</computeroutput></title>
+<indexterm><primary>RS512Algorithm</primary><secondary>JWT.Algorithms.RS512Algorithm</secondary></indexterm>
+<indexterm><primary>JWT.Algorithms.RS512Algorithm</primary><secondary>RS512Algorithm</secondary></indexterm>
+<para><computeroutput>JWT.Algorithms.RS512Algorithm.RS512Algorithm (RSA publicKey)</computeroutput></para><para>
+
+<para>Creates an instance of RS512Algorithm using the provided public key only. </para>
+</para>
+
+<para>An instance created using this constructor can only be used for verifying the data, not for signing it. </para>
+
+<para>
+                <formalpara>
+                    <title>
+Parameters</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>publicKey</entry><entry>
+<para>The public key for verifying the data.</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                </para>
+</section>
+<anchor xml:id="_class_j_w_t_1_1_algorithms_1_1_r_s512_algorithm_1a79bed2b7f4fa3c032a14c76f7e947dc4"/><section>
+    <title>RS512Algorithm()<computeroutput>[3/3]</computeroutput></title>
+<indexterm><primary>RS512Algorithm</primary><secondary>JWT.Algorithms.RS512Algorithm</secondary></indexterm>
+<indexterm><primary>JWT.Algorithms.RS512Algorithm</primary><secondary>RS512Algorithm</secondary></indexterm>
+<para><computeroutput>JWT.Algorithms.RS512Algorithm.RS512Algorithm (X509Certificate2 cert)</computeroutput></para><para>
+
+<para>Creates an instance using the provided certificate. </para>
+</para>
+
+<para>
+                <formalpara>
+                    <title>
+Parameters</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>cert</entry><entry>
+<para>The certificate having a public key and an optional private key.</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                </para>
+</section>
+</section>
+<section>
+<title>Property Documentation</title>
+<anchor xml:id="_class_j_w_t_1_1_algorithms_1_1_r_s512_algorithm_1acf668a2135db2d2f3e535e3df59aa4c0"/><section>
+    <title>HashAlgorithmName</title>
+<indexterm><primary>HashAlgorithmName</primary><secondary>JWT.Algorithms.RS512Algorithm</secondary></indexterm>
+<indexterm><primary>JWT.Algorithms.RS512Algorithm</primary><secondary>HashAlgorithmName</secondary></indexterm>
+<para><computeroutput>override HashAlgorithmName JWT.Algorithms.RS512Algorithm.HashAlgorithmName<computeroutput>[get]</computeroutput></computeroutput></para><para>
+</para>
+</section>
+<anchor xml:id="_class_j_w_t_1_1_algorithms_1_1_r_s512_algorithm_1a6df1d356f2be4665e13ef65f00137345"/><section>
+    <title>Name</title>
+<indexterm><primary>Name</primary><secondary>JWT.Algorithms.RS512Algorithm</secondary></indexterm>
+<indexterm><primary>JWT.Algorithms.RS512Algorithm</primary><secondary>Name</secondary></indexterm>
+<para><computeroutput>override string JWT.Algorithms.RS512Algorithm.Name<computeroutput>[get]</computeroutput></computeroutput></para><para>
+</para>
+</section>
+<para>
+The documentation for this class was generated from the following file:</para>
+C:/Users/adenf/RiderProjects/Openlabs.Mgcxm/Openlabs.Mgcxm/JWT/Algorithms/<link linkend="__r_s512_algorithm_8cs">RS512Algorithm.cs</link></section>
+</section>

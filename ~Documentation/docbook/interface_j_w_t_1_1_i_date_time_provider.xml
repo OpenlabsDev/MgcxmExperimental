@@ -1,0 +1,49 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_interface_j_w_t_1_1_i_date_time_provider" xml:lang="en-US">
+<title>JWT.IDateTimeProvider Interface Reference</title>
+<indexterm><primary>JWT.IDateTimeProvider</primary></indexterm>
+<para>
+
+<para>Represents a DateTime provider. </para>
+ 
+</para>
+Inheritance diagram for JWT.IDateTimeProvider:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="interface_j_w_t_1_1_i_date_time_provider__inherit__graph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+<simplesect>
+    <title>Public Member Functions    </title>
+        <itemizedlist>
+            <listitem><para>DateTimeOffset <link linkend="_interface_j_w_t_1_1_i_date_time_provider_1a734477fec5bfdb76c6d1135e86c1a415">GetNow</link> ()</para>
+
+<para>Gets the current DateTime. </para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Detailed Description</title>
+
+<para>Represents a DateTime provider. </para>
+</section>
+<section>
+<title>Member Function Documentation</title>
+<anchor xml:id="_interface_j_w_t_1_1_i_date_time_provider_1a734477fec5bfdb76c6d1135e86c1a415"/><section>
+    <title>GetNow()</title>
+<indexterm><primary>GetNow</primary><secondary>JWT.IDateTimeProvider</secondary></indexterm>
+<indexterm><primary>JWT.IDateTimeProvider</primary><secondary>GetNow</secondary></indexterm>
+<para><computeroutput>DateTimeOffset JWT.IDateTimeProvider.GetNow ( )</computeroutput></para><para>
+
+<para>Gets the current DateTime. </para>
+</para>
+<para>
+Implemented in <link linkend="_class_j_w_t_1_1_utc_date_time_provider_1a4230281149273ad781142f49e91be505">JWT.UtcDateTimeProvider</link>.</para>
+</section>
+<para>
+The documentation for this interface was generated from the following file:</para>
+C:/Users/adenf/RiderProjects/Openlabs.Mgcxm/Openlabs.Mgcxm/JWT/<link linkend="__i_date_time_provider_8cs">IDateTimeProvider.cs</link></section>
+</section>

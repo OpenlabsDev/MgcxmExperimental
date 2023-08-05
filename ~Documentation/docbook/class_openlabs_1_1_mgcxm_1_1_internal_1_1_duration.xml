@@ -1,0 +1,134 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_class_openlabs_1_1_mgcxm_1_1_internal_1_1_duration" xml:lang="en-US">
+<title>Openlabs.Mgcxm.Internal.Duration Class Reference</title>
+<indexterm><primary>Openlabs.Mgcxm.Internal.Duration</primary></indexterm>
+<simplesect>
+    <title>Public Member Functions    </title>
+        <itemizedlist>
+            <listitem><para>long <link linkend="_class_openlabs_1_1_mgcxm_1_1_internal_1_1_duration_1acfc88dc86c48ab1bf64220043fac9a54">GetHours</link> ()</para>
+
+<para>Gets the actual value in hours. </para>
+</listitem>
+            <listitem><para>long <link linkend="_class_openlabs_1_1_mgcxm_1_1_internal_1_1_duration_1a7cfee8f93cc868168918b665197b5f4b">GetMinutes</link> ()</para>
+
+<para>Gets the actual value in minutes. </para>
+</listitem>
+            <listitem><para>float <link linkend="_class_openlabs_1_1_mgcxm_1_1_internal_1_1_duration_1ad4ee1886febd4101f73de51d69ca529e">GetSeconds</link> ()</para>
+
+<para>Gets the actual value in seconds. </para>
+</listitem>
+            <listitem><para>long <link linkend="_class_openlabs_1_1_mgcxm_1_1_internal_1_1_duration_1a7dc7f3f0541d83d48ba297c216248886">GetMilliseconds</link> ()</para>
+
+<para>Gets the actual value in milliseconds. </para>
+</listitem>
+            <listitem><para>long <link linkend="_class_openlabs_1_1_mgcxm_1_1_internal_1_1_duration_1a07514a6b33fbba8b58160454bcde6da1">GetMicroseconds</link> ()</para>
+
+<para>Gets the actual value in microseconds. </para>
+</listitem>
+            <listitem><para>long <link linkend="_class_openlabs_1_1_mgcxm_1_1_internal_1_1_duration_1ab780153b15d04d7b3fc97fed765b44ed">GetNanoseconds</link> ()</para>
+
+<para>Gets the actual value in nanoseconds. </para>
+</listitem>
+            <listitem><para>long <link linkend="_class_openlabs_1_1_mgcxm_1_1_internal_1_1_duration_1a17de3e391fcac1b8af9f13646659458f">GetTicks</link> ()</para>
+
+<para>Gets the actual value in TimeSpan ticks. </para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Static Public Member Functions    </title>
+        <itemizedlist>
+            <listitem><para>static <link linkend="_class_openlabs_1_1_mgcxm_1_1_internal_1_1_duration">Duration</link> <link linkend="_class_openlabs_1_1_mgcxm_1_1_internal_1_1_duration_1a54a90557029165dcb74a3fc5c1d447e9">Create</link> (<link linkend="_namespace_openlabs_1_1_mgcxm_1_1_internal_1a55844e50e9a1cfec33e10bc13101669a">DurationType</link> type, int period)</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Properties    </title>
+        <itemizedlist>
+            <listitem><para>TimeSpan <link linkend="_class_openlabs_1_1_mgcxm_1_1_internal_1_1_duration_1a016c73b1d4f88fc38ca2c35bc81388c0">TimeSpan</link><computeroutput> [get]</computeroutput>
+</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Member Function Documentation</title>
+<anchor xml:id="_class_openlabs_1_1_mgcxm_1_1_internal_1_1_duration_1a54a90557029165dcb74a3fc5c1d447e9"/><section>
+    <title>Create()</title>
+<indexterm><primary>Create</primary><secondary>Openlabs.Mgcxm.Internal.Duration</secondary></indexterm>
+<indexterm><primary>Openlabs.Mgcxm.Internal.Duration</primary><secondary>Create</secondary></indexterm>
+<para><computeroutput>static <link linkend="_class_openlabs_1_1_mgcxm_1_1_internal_1_1_duration">Duration</link> Openlabs.Mgcxm.Internal.Duration.Create (<link linkend="_namespace_openlabs_1_1_mgcxm_1_1_internal_1a55844e50e9a1cfec33e10bc13101669a">DurationType</link> type, int period)<computeroutput>[static]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_class_openlabs_1_1_mgcxm_1_1_internal_1_1_duration_1acfc88dc86c48ab1bf64220043fac9a54"/><section>
+    <title>GetHours()</title>
+<indexterm><primary>GetHours</primary><secondary>Openlabs.Mgcxm.Internal.Duration</secondary></indexterm>
+<indexterm><primary>Openlabs.Mgcxm.Internal.Duration</primary><secondary>GetHours</secondary></indexterm>
+<para><computeroutput>long Openlabs.Mgcxm.Internal.Duration.GetHours ( )</computeroutput></para><para>
+
+<para>Gets the actual value in hours. </para>
+</para>
+</section>
+<anchor xml:id="_class_openlabs_1_1_mgcxm_1_1_internal_1_1_duration_1a07514a6b33fbba8b58160454bcde6da1"/><section>
+    <title>GetMicroseconds()</title>
+<indexterm><primary>GetMicroseconds</primary><secondary>Openlabs.Mgcxm.Internal.Duration</secondary></indexterm>
+<indexterm><primary>Openlabs.Mgcxm.Internal.Duration</primary><secondary>GetMicroseconds</secondary></indexterm>
+<para><computeroutput>long Openlabs.Mgcxm.Internal.Duration.GetMicroseconds ( )</computeroutput></para><para>
+
+<para>Gets the actual value in microseconds. </para>
+</para>
+</section>
+<anchor xml:id="_class_openlabs_1_1_mgcxm_1_1_internal_1_1_duration_1a7dc7f3f0541d83d48ba297c216248886"/><section>
+    <title>GetMilliseconds()</title>
+<indexterm><primary>GetMilliseconds</primary><secondary>Openlabs.Mgcxm.Internal.Duration</secondary></indexterm>
+<indexterm><primary>Openlabs.Mgcxm.Internal.Duration</primary><secondary>GetMilliseconds</secondary></indexterm>
+<para><computeroutput>long Openlabs.Mgcxm.Internal.Duration.GetMilliseconds ( )</computeroutput></para><para>
+
+<para>Gets the actual value in milliseconds. </para>
+</para>
+</section>
+<anchor xml:id="_class_openlabs_1_1_mgcxm_1_1_internal_1_1_duration_1a7cfee8f93cc868168918b665197b5f4b"/><section>
+    <title>GetMinutes()</title>
+<indexterm><primary>GetMinutes</primary><secondary>Openlabs.Mgcxm.Internal.Duration</secondary></indexterm>
+<indexterm><primary>Openlabs.Mgcxm.Internal.Duration</primary><secondary>GetMinutes</secondary></indexterm>
+<para><computeroutput>long Openlabs.Mgcxm.Internal.Duration.GetMinutes ( )</computeroutput></para><para>
+
+<para>Gets the actual value in minutes. </para>
+</para>
+</section>
+<anchor xml:id="_class_openlabs_1_1_mgcxm_1_1_internal_1_1_duration_1ab780153b15d04d7b3fc97fed765b44ed"/><section>
+    <title>GetNanoseconds()</title>
+<indexterm><primary>GetNanoseconds</primary><secondary>Openlabs.Mgcxm.Internal.Duration</secondary></indexterm>
+<indexterm><primary>Openlabs.Mgcxm.Internal.Duration</primary><secondary>GetNanoseconds</secondary></indexterm>
+<para><computeroutput>long Openlabs.Mgcxm.Internal.Duration.GetNanoseconds ( )</computeroutput></para><para>
+
+<para>Gets the actual value in nanoseconds. </para>
+</para>
+</section>
+<anchor xml:id="_class_openlabs_1_1_mgcxm_1_1_internal_1_1_duration_1ad4ee1886febd4101f73de51d69ca529e"/><section>
+    <title>GetSeconds()</title>
+<indexterm><primary>GetSeconds</primary><secondary>Openlabs.Mgcxm.Internal.Duration</secondary></indexterm>
+<indexterm><primary>Openlabs.Mgcxm.Internal.Duration</primary><secondary>GetSeconds</secondary></indexterm>
+<para><computeroutput>float Openlabs.Mgcxm.Internal.Duration.GetSeconds ( )</computeroutput></para><para>
+
+<para>Gets the actual value in seconds. </para>
+</para>
+</section>
+<anchor xml:id="_class_openlabs_1_1_mgcxm_1_1_internal_1_1_duration_1a17de3e391fcac1b8af9f13646659458f"/><section>
+    <title>GetTicks()</title>
+<indexterm><primary>GetTicks</primary><secondary>Openlabs.Mgcxm.Internal.Duration</secondary></indexterm>
+<indexterm><primary>Openlabs.Mgcxm.Internal.Duration</primary><secondary>GetTicks</secondary></indexterm>
+<para><computeroutput>long Openlabs.Mgcxm.Internal.Duration.GetTicks ( )</computeroutput></para><para>
+
+<para>Gets the actual value in TimeSpan ticks. </para>
+</para>
+</section>
+</section>
+<section>
+<title>Property Documentation</title>
+<anchor xml:id="_class_openlabs_1_1_mgcxm_1_1_internal_1_1_duration_1a016c73b1d4f88fc38ca2c35bc81388c0"/><section>
+    <title>TimeSpan</title>
+<indexterm><primary>TimeSpan</primary><secondary>Openlabs.Mgcxm.Internal.Duration</secondary></indexterm>
+<indexterm><primary>Openlabs.Mgcxm.Internal.Duration</primary><secondary>TimeSpan</secondary></indexterm>
+<para><computeroutput>TimeSpan Openlabs.Mgcxm.Internal.Duration.TimeSpan<computeroutput>[get]</computeroutput></computeroutput></para></section>
+<para>
+The documentation for this class was generated from the following file:</para>
+C:/Users/adenf/RiderProjects/Openlabs.Mgcxm/Openlabs.Mgcxm/Internal/<link linkend="__chrono_8cs">Chrono.cs</link></section>
+</section>

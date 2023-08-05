@@ -1,0 +1,34 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="__mgcxm_socket_route_8cs" xml:lang="en-US">
+<title>C:/Users/adenf/RiderProjects/Openlabs.Mgcxm/Openlabs.Mgcxm/Net/WebSocket/MgcxmSocketRoute.cs File Reference</title>
+<indexterm><primary>C:/Users/adenf/RiderProjects/Openlabs.Mgcxm/Openlabs.Mgcxm/Net/WebSocket/MgcxmSocketRoute.cs</primary></indexterm>
+<simplesect>
+    <title>Classes    </title>
+        <itemizedlist>
+            <listitem><para>class <link linkend="_class_openlabs_1_1_mgcxm_1_1_net_1_1_mgcxm_socket_route">Openlabs.Mgcxm.Net.MgcxmSocketRoute</link></para>
+
+<para>Represents a route for WebSocket communication in MgcxmSocketListener. </para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Namespaces    </title>
+        <itemizedlist>
+            <listitem><para>namespace <link linkend="_namespace_openlabs">Openlabs</link></para>
+</listitem>
+            <listitem><para>namespace <link linkend="_namespace_openlabs_1_1_mgcxm">Openlabs.Mgcxm</link></para>
+</listitem>
+            <listitem><para>namespace <link linkend="_namespace_openlabs_1_1_mgcxm_1_1_net">Openlabs.Mgcxm.Net</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Functions    </title>
+        <itemizedlist>
+            <listitem><para>delegate void <link linkend="_namespace_openlabs_1_1_mgcxm_1_1_net_1ad2a2bbd4000fbc64e0bfc269bbadd132">Openlabs.Mgcxm.Net.OnSocketUpgraded</link> (<link linkend="_class_openlabs_1_1_mgcxm_1_1_net_1_1_mgcxm_socket">MgcxmSocket</link> socket)</para>
+
+<para>Represents a delegate for the callback function used when a WebSocket is upgraded. </para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+</section>

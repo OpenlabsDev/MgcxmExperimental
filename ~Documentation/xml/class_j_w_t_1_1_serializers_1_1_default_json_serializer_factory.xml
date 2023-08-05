@@ -1,0 +1,88 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.7" xml:lang="en-US">
+  <compounddef id="class_j_w_t_1_1_serializers_1_1_default_json_serializer_factory" kind="class" language="C#" prot="public">
+    <compoundname>JWT::Serializers::DefaultJsonSerializerFactory</compoundname>
+    <basecompoundref refid="interface_j_w_t_1_1_serializers_1_1_i_json_serializer_factory" prot="public" virt="non-virtual">JWT.Serializers.IJsonSerializerFactory</basecompoundref>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_j_w_t_1_1_serializers_1_1_default_json_serializer_factory_1aa33f5b76e4018a1818ed6d60a42e1ead" prot="private" static="no" mutable="no">
+        <type>readonly <ref refid="interface_j_w_t_1_1_i_json_serializer" kindref="compound">IJsonSerializer</ref></type>
+        <definition>readonly IJsonSerializer JWT.Serializers.DefaultJsonSerializerFactory._jsonSerializer</definition>
+        <argsstring></argsstring>
+        <name>_jsonSerializer</name>
+        <qualifiedname>JWT.Serializers.DefaultJsonSerializerFactory._jsonSerializer</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/adenf/RiderProjects/Openlabs.Mgcxm/Openlabs.Mgcxm/JWT/Serializers/DefaultJsonSerializerFactory.cs" line="5" column="42" bodyfile="C:/Users/adenf/RiderProjects/Openlabs.Mgcxm/Openlabs.Mgcxm/JWT/Serializers/DefaultJsonSerializerFactory.cs" bodystart="5" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_j_w_t_1_1_serializers_1_1_default_json_serializer_factory_1aa2d24330c7264d9026b9131892ddfb7e" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>JWT.Serializers.DefaultJsonSerializerFactory.DefaultJsonSerializerFactory</definition>
+        <argsstring>()</argsstring>
+        <name>DefaultJsonSerializerFactory</name>
+        <qualifiedname>JWT.Serializers.DefaultJsonSerializerFactory.DefaultJsonSerializerFactory</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/adenf/RiderProjects/Openlabs.Mgcxm/Openlabs.Mgcxm/JWT/Serializers/DefaultJsonSerializerFactory.cs" line="7" column="16" bodyfile="C:/Users/adenf/RiderProjects/Openlabs.Mgcxm/Openlabs.Mgcxm/JWT/Serializers/DefaultJsonSerializerFactory.cs" bodystart="7" bodyend="14"/>
+      </memberdef>
+      <memberdef kind="function" id="class_j_w_t_1_1_serializers_1_1_default_json_serializer_factory_1a38fa20d50a05d328b60101f7daa63881" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="interface_j_w_t_1_1_i_json_serializer" kindref="compound">IJsonSerializer</ref></type>
+        <definition>IJsonSerializer JWT.Serializers.DefaultJsonSerializerFactory.Create</definition>
+        <argsstring>()</argsstring>
+        <name>Create</name>
+        <qualifiedname>JWT.Serializers.DefaultJsonSerializerFactory.Create</qualifiedname>
+        <reimplements refid="interface_j_w_t_1_1_serializers_1_1_i_json_serializer_factory_1aa332e1cb9f5edb542c7232d22d0a7ede">Create</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/adenf/RiderProjects/Openlabs.Mgcxm/Openlabs.Mgcxm/JWT/Serializers/DefaultJsonSerializerFactory.cs" line="16" column="32"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>IJsonSerializerFactory</label>
+        <link refid="interface_j_w_t_1_1_serializers_1_1_i_json_serializer_factory"/>
+      </node>
+      <node id="1">
+        <label>JWT.Serializers.DefaultJsonSerializerFactory</label>
+        <link refid="class_j_w_t_1_1_serializers_1_1_default_json_serializer_factory"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>IJsonSerializerFactory</label>
+        <link refid="interface_j_w_t_1_1_serializers_1_1_i_json_serializer_factory"/>
+      </node>
+      <node id="1">
+        <label>JWT.Serializers.DefaultJsonSerializerFactory</label>
+        <link refid="class_j_w_t_1_1_serializers_1_1_default_json_serializer_factory"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="C:/Users/adenf/RiderProjects/Openlabs.Mgcxm/Openlabs.Mgcxm/JWT/Serializers/DefaultJsonSerializerFactory.cs" line="3" column="18" bodyfile="C:/Users/adenf/RiderProjects/Openlabs.Mgcxm/Openlabs.Mgcxm/JWT/Serializers/DefaultJsonSerializerFactory.cs" bodystart="4" bodyend="18"/>
+    <listofallmembers>
+      <member refid="class_j_w_t_1_1_serializers_1_1_default_json_serializer_factory_1aa33f5b76e4018a1818ed6d60a42e1ead" prot="private" virt="non-virtual"><scope>JWT::Serializers::DefaultJsonSerializerFactory</scope><name>_jsonSerializer</name></member>
+      <member refid="class_j_w_t_1_1_serializers_1_1_default_json_serializer_factory_1a38fa20d50a05d328b60101f7daa63881" prot="public" virt="non-virtual"><scope>JWT::Serializers::DefaultJsonSerializerFactory</scope><name>Create</name></member>
+      <member refid="class_j_w_t_1_1_serializers_1_1_default_json_serializer_factory_1aa2d24330c7264d9026b9131892ddfb7e" prot="public" virt="non-virtual"><scope>JWT::Serializers::DefaultJsonSerializerFactory</scope><name>DefaultJsonSerializerFactory</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

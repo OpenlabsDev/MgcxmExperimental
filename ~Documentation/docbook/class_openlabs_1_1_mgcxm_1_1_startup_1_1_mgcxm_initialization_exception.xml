@@ -1,0 +1,78 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_class_openlabs_1_1_mgcxm_1_1_startup_1_1_mgcxm_initialization_exception" xml:lang="en-US">
+<title>Openlabs.Mgcxm.Startup.MgcxmInitializationException Class Reference</title>
+<indexterm><primary>Openlabs.Mgcxm.Startup.MgcxmInitializationException</primary></indexterm>
+<para>
+
+<para>Exception thrown when there&apos;s an error during Mgcxm initialization. </para>
+ 
+</para>
+Inheritance diagram for Openlabs.Mgcxm.Startup.MgcxmInitializationException:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="class_openlabs_1_1_mgcxm_1_1_startup_1_1_mgcxm_initialization_exception__inherit__graph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+Collaboration diagram for Openlabs.Mgcxm.Startup.MgcxmInitializationException:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="class_openlabs_1_1_mgcxm_1_1_startup_1_1_mgcxm_initialization_exception__coll__graph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+<simplesect>
+    <title>Public Member Functions    </title>
+        <itemizedlist>
+            <listitem><para><link linkend="_class_openlabs_1_1_mgcxm_1_1_startup_1_1_mgcxm_initialization_exception_1a2ce0d1d08aa67d78ea261d2d624900df">MgcxmInitializationException</link> (string message)</para>
+
+<para>Initializes a new instance of the MgcxmInitializationException class with the specified message. </para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Detailed Description</title>
+
+<para>Exception thrown when there&apos;s an error during Mgcxm initialization. </para>
+</section>
+<section>
+<title>Constructor &amp; Destructor Documentation</title>
+<anchor xml:id="_class_openlabs_1_1_mgcxm_1_1_startup_1_1_mgcxm_initialization_exception_1a2ce0d1d08aa67d78ea261d2d624900df"/><section>
+    <title>MgcxmInitializationException()</title>
+<indexterm><primary>MgcxmInitializationException</primary><secondary>Openlabs.Mgcxm.Startup.MgcxmInitializationException</secondary></indexterm>
+<indexterm><primary>Openlabs.Mgcxm.Startup.MgcxmInitializationException</primary><secondary>MgcxmInitializationException</secondary></indexterm>
+<para><computeroutput>Openlabs.Mgcxm.Startup.MgcxmInitializationException.MgcxmInitializationException (string message)</computeroutput></para><para>
+
+<para>Initializes a new instance of the MgcxmInitializationException class with the specified message. </para>
+</para>
+
+<para>
+                <formalpara>
+                    <title>
+Parameters</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>message</entry><entry>
+<para>The error message.</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                </para>
+</section>
+<para>
+The documentation for this class was generated from the following file:</para>
+C:/Users/adenf/RiderProjects/Openlabs.Mgcxm/Openlabs.Mgcxm/Startup/<link linkend="__bootstrap_8cs">Bootstrap.cs</link></section>
+</section>

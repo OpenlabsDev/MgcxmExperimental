@@ -1,0 +1,23 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_class_openlabs_1_1_mgcxm_1_1_tests_1_1_test_ws_server_1_1_client_connect_ack_message" xml:lang="en-US">
+<title>Openlabs.Mgcxm.Tests.TestWsServer.ClientConnectAckMessage Class Reference</title>
+<indexterm><primary>Openlabs.Mgcxm.Tests.TestWsServer.ClientConnectAckMessage</primary></indexterm>
+<simplesect>
+    <title>Properties    </title>
+        <itemizedlist>
+            <listitem><para>long <link linkend="_class_openlabs_1_1_mgcxm_1_1_tests_1_1_test_ws_server_1_1_client_connect_ack_message_1a54cb3d39391e0bc051e2207f30ff80b0">SessionId</link><computeroutput> [get, set]</computeroutput>
+</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Property Documentation</title>
+<anchor xml:id="_class_openlabs_1_1_mgcxm_1_1_tests_1_1_test_ws_server_1_1_client_connect_ack_message_1a54cb3d39391e0bc051e2207f30ff80b0"/><section>
+    <title>SessionId</title>
+<indexterm><primary>SessionId</primary><secondary>Openlabs.Mgcxm.Tests.TestWsServer.ClientConnectAckMessage</secondary></indexterm>
+<indexterm><primary>Openlabs.Mgcxm.Tests.TestWsServer.ClientConnectAckMessage</primary><secondary>SessionId</secondary></indexterm>
+<para><computeroutput>long Openlabs.Mgcxm.Tests.TestWsServer.ClientConnectAckMessage.SessionId<computeroutput>[get]</computeroutput>, <computeroutput>[set]</computeroutput></computeroutput></para></section>
+<para>
+The documentation for this class was generated from the following file:</para>
+C:/Users/adenf/RiderProjects/Openlabs.Mgcxm/Openlabs.Mgcxm.Tests/<link linkend="__test_ws_server_8cs">TestWsServer.cs</link></section>
+</section>

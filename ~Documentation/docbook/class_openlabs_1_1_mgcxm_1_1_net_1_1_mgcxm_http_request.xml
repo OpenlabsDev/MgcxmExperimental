@@ -1,0 +1,165 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_class_openlabs_1_1_mgcxm_1_1_net_1_1_mgcxm_http_request" xml:lang="en-US">
+<title>Openlabs.Mgcxm.Net.MgcxmHttpRequest Class Reference</title>
+<indexterm><primary>Openlabs.Mgcxm.Net.MgcxmHttpRequest</primary></indexterm>
+<para>
+
+<para>Represents an HTTP request for use in MgcxmSocketListener. </para>
+ 
+</para>
+<simplesect>
+    <title>Properties    </title>
+        <itemizedlist>
+            <listitem><para><link linkend="_namespace_openlabs_1_1_mgcxm_1_1_net_1a63268740291f4b97a3eb53abd380f84e">HttpMethods</link> <link linkend="_class_openlabs_1_1_mgcxm_1_1_net_1_1_mgcxm_http_request_1a958146c2f146cbaa55531fabb02502a1">HttpMethod</link><computeroutput> [get]</computeroutput>
+</para>
+
+<para>Gets the HTTP method of the request. </para>
+</listitem>
+            <listitem><para><link linkend="_class_openlabs_1_1_mgcxm_1_1_net_1_1_mgcxm_http_request_1ae2c2a74881a5c4c767a807d1e84364b6">Uri</link> <link linkend="_class_openlabs_1_1_mgcxm_1_1_net_1_1_mgcxm_http_request_1a387e15823727c9d39b4e4543b535691b">BaseAddress</link><computeroutput> [get]</computeroutput>
+</para>
+
+<para>Gets the base address of the request. </para>
+</listitem>
+            <listitem><para>string <link linkend="_class_openlabs_1_1_mgcxm_1_1_net_1_1_mgcxm_http_request_1ae2c2a74881a5c4c767a807d1e84364b6">Uri</link><computeroutput> [get]</computeroutput>
+</para>
+
+<para>Gets the URI of the request. </para>
+</listitem>
+            <listitem><para><link linkend="_namespace_openlabs_1_1_mgcxm_1_1_net_1a0190ca5d59602d92653be09f01e3fc18">HttpContentTypes</link> <link linkend="_class_openlabs_1_1_mgcxm_1_1_net_1_1_mgcxm_http_request_1af3476b5f900f23f66b944afb3f181c85">ContentType</link><computeroutput> [get]</computeroutput>
+</para>
+
+<para>Gets the content type of the request. </para>
+</listitem>
+            <listitem><para>byte[] <link linkend="_class_openlabs_1_1_mgcxm_1_1_net_1_1_mgcxm_http_request_1af8cb6e8115213fe3d7f5fb93df79a6ed">RawBodyData</link><computeroutput> [get]</computeroutput>
+</para>
+
+<para>Gets the raw body data of the request as a byte array. </para>
+</listitem>
+            <listitem><para>string <link linkend="_class_openlabs_1_1_mgcxm_1_1_net_1_1_mgcxm_http_request_1ad530ca05de94e0be3e757c3ea9f0e6c1">Body</link><computeroutput> [get]</computeroutput>
+</para>
+
+<para>Gets the body data of the request as a string (decoded from UTF-8). </para>
+</listitem>
+            <listitem><para>Dictionary&lt; string, string &gt; <link linkend="_class_openlabs_1_1_mgcxm_1_1_net_1_1_mgcxm_http_request_1ab356b50a3302474b1d4e90a05f87a5f8">Form</link><computeroutput> [get]</computeroutput>
+</para>
+
+<para>Gets the form data of the request as a dictionary of key-value pairs. </para>
+</listitem>
+            <listitem><para>Dictionary&lt; string, string &gt; <link linkend="_class_openlabs_1_1_mgcxm_1_1_net_1_1_mgcxm_http_request_1ada7f497e4be086126478a89e42bb9814">Headers</link><computeroutput> [get]</computeroutput>
+</para>
+
+<para>Gets the headers of the request as a dictionary of key-value pairs. </para>
+</listitem>
+            <listitem><para>Dictionary&lt; string, string &gt; <link linkend="_class_openlabs_1_1_mgcxm_1_1_net_1_1_mgcxm_http_request_1abe3600e105e518fb1b24379a234575be">Query</link><computeroutput> [get]</computeroutput>
+</para>
+
+<para>Gets the query parameters of the request as a dictionary of key-value pairs. </para>
+</listitem>
+            <listitem><para><link linkend="_struct_openlabs_1_1_mgcxm_1_1_internal_1_1_mgcxm_id">MgcxmId</link> <link linkend="_class_openlabs_1_1_mgcxm_1_1_net_1_1_mgcxm_http_request_1a927b7f10f375e8d850977d35f3d878d0">OwnerId</link><computeroutput> [get]</computeroutput>
+</para>
+
+<para>Gets the MgcxmId of the owner of the request. </para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Detailed Description</title>
+
+<para>Represents an HTTP request for use in MgcxmSocketListener. </para>
+</section>
+<section>
+<title>Property Documentation</title>
+<anchor xml:id="_class_openlabs_1_1_mgcxm_1_1_net_1_1_mgcxm_http_request_1a387e15823727c9d39b4e4543b535691b"/><section>
+    <title>BaseAddress</title>
+<indexterm><primary>BaseAddress</primary><secondary>Openlabs.Mgcxm.Net.MgcxmHttpRequest</secondary></indexterm>
+<indexterm><primary>Openlabs.Mgcxm.Net.MgcxmHttpRequest</primary><secondary>BaseAddress</secondary></indexterm>
+<para><computeroutput><link linkend="_class_openlabs_1_1_mgcxm_1_1_net_1_1_mgcxm_http_request_1ae2c2a74881a5c4c767a807d1e84364b6">Uri</link> Openlabs.Mgcxm.Net.MgcxmHttpRequest.BaseAddress<computeroutput>[get]</computeroutput></computeroutput></para><para>
+
+<para>Gets the base address of the request. </para>
+</para>
+</section>
+<anchor xml:id="_class_openlabs_1_1_mgcxm_1_1_net_1_1_mgcxm_http_request_1ad530ca05de94e0be3e757c3ea9f0e6c1"/><section>
+    <title>Body</title>
+<indexterm><primary>Body</primary><secondary>Openlabs.Mgcxm.Net.MgcxmHttpRequest</secondary></indexterm>
+<indexterm><primary>Openlabs.Mgcxm.Net.MgcxmHttpRequest</primary><secondary>Body</secondary></indexterm>
+<para><computeroutput>string Openlabs.Mgcxm.Net.MgcxmHttpRequest.Body<computeroutput>[get]</computeroutput></computeroutput></para><para>
+
+<para>Gets the body data of the request as a string (decoded from UTF-8). </para>
+</para>
+</section>
+<anchor xml:id="_class_openlabs_1_1_mgcxm_1_1_net_1_1_mgcxm_http_request_1af3476b5f900f23f66b944afb3f181c85"/><section>
+    <title>ContentType</title>
+<indexterm><primary>ContentType</primary><secondary>Openlabs.Mgcxm.Net.MgcxmHttpRequest</secondary></indexterm>
+<indexterm><primary>Openlabs.Mgcxm.Net.MgcxmHttpRequest</primary><secondary>ContentType</secondary></indexterm>
+<para><computeroutput><link linkend="_namespace_openlabs_1_1_mgcxm_1_1_net_1a0190ca5d59602d92653be09f01e3fc18">HttpContentTypes</link> Openlabs.Mgcxm.Net.MgcxmHttpRequest.ContentType<computeroutput>[get]</computeroutput></computeroutput></para><para>
+
+<para>Gets the content type of the request. </para>
+</para>
+</section>
+<anchor xml:id="_class_openlabs_1_1_mgcxm_1_1_net_1_1_mgcxm_http_request_1ab356b50a3302474b1d4e90a05f87a5f8"/><section>
+    <title>Form</title>
+<indexterm><primary>Form</primary><secondary>Openlabs.Mgcxm.Net.MgcxmHttpRequest</secondary></indexterm>
+<indexterm><primary>Openlabs.Mgcxm.Net.MgcxmHttpRequest</primary><secondary>Form</secondary></indexterm>
+<para><computeroutput>Dictionary&lt;string, string&gt; Openlabs.Mgcxm.Net.MgcxmHttpRequest.Form<computeroutput>[get]</computeroutput></computeroutput></para><para>
+
+<para>Gets the form data of the request as a dictionary of key-value pairs. </para>
+</para>
+</section>
+<anchor xml:id="_class_openlabs_1_1_mgcxm_1_1_net_1_1_mgcxm_http_request_1ada7f497e4be086126478a89e42bb9814"/><section>
+    <title>Headers</title>
+<indexterm><primary>Headers</primary><secondary>Openlabs.Mgcxm.Net.MgcxmHttpRequest</secondary></indexterm>
+<indexterm><primary>Openlabs.Mgcxm.Net.MgcxmHttpRequest</primary><secondary>Headers</secondary></indexterm>
+<para><computeroutput>Dictionary&lt;string, string&gt; Openlabs.Mgcxm.Net.MgcxmHttpRequest.Headers<computeroutput>[get]</computeroutput></computeroutput></para><para>
+
+<para>Gets the headers of the request as a dictionary of key-value pairs. </para>
+</para>
+</section>
+<anchor xml:id="_class_openlabs_1_1_mgcxm_1_1_net_1_1_mgcxm_http_request_1a958146c2f146cbaa55531fabb02502a1"/><section>
+    <title>HttpMethod</title>
+<indexterm><primary>HttpMethod</primary><secondary>Openlabs.Mgcxm.Net.MgcxmHttpRequest</secondary></indexterm>
+<indexterm><primary>Openlabs.Mgcxm.Net.MgcxmHttpRequest</primary><secondary>HttpMethod</secondary></indexterm>
+<para><computeroutput><link linkend="_namespace_openlabs_1_1_mgcxm_1_1_net_1a63268740291f4b97a3eb53abd380f84e">HttpMethods</link> Openlabs.Mgcxm.Net.MgcxmHttpRequest.HttpMethod<computeroutput>[get]</computeroutput></computeroutput></para><para>
+
+<para>Gets the HTTP method of the request. </para>
+</para>
+</section>
+<anchor xml:id="_class_openlabs_1_1_mgcxm_1_1_net_1_1_mgcxm_http_request_1a927b7f10f375e8d850977d35f3d878d0"/><section>
+    <title>OwnerId</title>
+<indexterm><primary>OwnerId</primary><secondary>Openlabs.Mgcxm.Net.MgcxmHttpRequest</secondary></indexterm>
+<indexterm><primary>Openlabs.Mgcxm.Net.MgcxmHttpRequest</primary><secondary>OwnerId</secondary></indexterm>
+<para><computeroutput><link linkend="_struct_openlabs_1_1_mgcxm_1_1_internal_1_1_mgcxm_id">MgcxmId</link> Openlabs.Mgcxm.Net.MgcxmHttpRequest.OwnerId<computeroutput>[get]</computeroutput></computeroutput></para><para>
+
+<para>Gets the MgcxmId of the owner of the request. </para>
+</para>
+</section>
+<anchor xml:id="_class_openlabs_1_1_mgcxm_1_1_net_1_1_mgcxm_http_request_1abe3600e105e518fb1b24379a234575be"/><section>
+    <title>Query</title>
+<indexterm><primary>Query</primary><secondary>Openlabs.Mgcxm.Net.MgcxmHttpRequest</secondary></indexterm>
+<indexterm><primary>Openlabs.Mgcxm.Net.MgcxmHttpRequest</primary><secondary>Query</secondary></indexterm>
+<para><computeroutput>Dictionary&lt;string, string&gt; Openlabs.Mgcxm.Net.MgcxmHttpRequest.Query<computeroutput>[get]</computeroutput></computeroutput></para><para>
+
+<para>Gets the query parameters of the request as a dictionary of key-value pairs. </para>
+</para>
+</section>
+<anchor xml:id="_class_openlabs_1_1_mgcxm_1_1_net_1_1_mgcxm_http_request_1af8cb6e8115213fe3d7f5fb93df79a6ed"/><section>
+    <title>RawBodyData</title>
+<indexterm><primary>RawBodyData</primary><secondary>Openlabs.Mgcxm.Net.MgcxmHttpRequest</secondary></indexterm>
+<indexterm><primary>Openlabs.Mgcxm.Net.MgcxmHttpRequest</primary><secondary>RawBodyData</secondary></indexterm>
+<para><computeroutput>byte [] Openlabs.Mgcxm.Net.MgcxmHttpRequest.RawBodyData<computeroutput>[get]</computeroutput></computeroutput></para><para>
+
+<para>Gets the raw body data of the request as a byte array. </para>
+</para>
+</section>
+<anchor xml:id="_class_openlabs_1_1_mgcxm_1_1_net_1_1_mgcxm_http_request_1ae2c2a74881a5c4c767a807d1e84364b6"/><section>
+    <title>Uri</title>
+<indexterm><primary>Uri</primary><secondary>Openlabs.Mgcxm.Net.MgcxmHttpRequest</secondary></indexterm>
+<indexterm><primary>Openlabs.Mgcxm.Net.MgcxmHttpRequest</primary><secondary>Uri</secondary></indexterm>
+<para><computeroutput>string Openlabs.Mgcxm.Net.MgcxmHttpRequest.Uri<computeroutput>[get]</computeroutput></computeroutput></para><para>
+
+<para>Gets the URI of the request. </para>
+</para>
+</section>
+<para>
+The documentation for this class was generated from the following file:</para>
+C:/Users/adenf/RiderProjects/Openlabs.Mgcxm/Openlabs.Mgcxm/Net/Http/<link linkend="__mgcxm_http_request_8cs">MgcxmHttpRequest.cs</link></section>
+</section>

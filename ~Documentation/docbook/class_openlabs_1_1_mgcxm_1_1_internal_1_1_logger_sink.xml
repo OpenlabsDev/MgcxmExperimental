@@ -1,0 +1,99 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_class_openlabs_1_1_mgcxm_1_1_internal_1_1_logger_sink" xml:lang="en-US">
+<title>Openlabs.Mgcxm.Internal.LoggerSink Class Reference</title>
+<indexterm><primary>Openlabs.Mgcxm.Internal.LoggerSink</primary></indexterm>
+<simplesect>
+    <title>Public Member Functions    </title>
+        <itemizedlist>
+            <listitem><para><link linkend="_class_openlabs_1_1_mgcxm_1_1_internal_1_1_logger_sink_1ad24db1165173be33e0068b4b58e520f7">LoggerSink</link> (string sinkName)</para>
+</listitem>
+            <listitem><para>void <link linkend="_class_openlabs_1_1_mgcxm_1_1_internal_1_1_logger_sink_1a184cab05d3e176b9325bdf43b2856f2c">Trace</link> (string message, params object[] args)</para>
+</listitem>
+            <listitem><para>void <link linkend="_class_openlabs_1_1_mgcxm_1_1_internal_1_1_logger_sink_1accf232f7cc5f01b0d9f0e89169c95e97">Debug</link> (string message, params object[] args)</para>
+</listitem>
+            <listitem><para>void <link linkend="_class_openlabs_1_1_mgcxm_1_1_internal_1_1_logger_sink_1ad0713225028c2ed8c84927a9e9c9391b">Info</link> (string message, params object[] args)</para>
+</listitem>
+            <listitem><para>void <link linkend="_class_openlabs_1_1_mgcxm_1_1_internal_1_1_logger_sink_1a8c61c9cebd367e4d35f432050beb0ed0">Warning</link> (string message, params object[] args)</para>
+</listitem>
+            <listitem><para>void <link linkend="_class_openlabs_1_1_mgcxm_1_1_internal_1_1_logger_sink_1a2f42c4d9ad4f45c1ab7bbfd8be35e065">Error</link> (string message, params object[] args)</para>
+</listitem>
+            <listitem><para>void <link linkend="_class_openlabs_1_1_mgcxm_1_1_internal_1_1_logger_sink_1ae240ccf774b813b0f90c6bcf3820a4ef">Fatal</link> (string message, params object[] args)</para>
+</listitem>
+            <listitem><para>void <link linkend="_class_openlabs_1_1_mgcxm_1_1_internal_1_1_logger_sink_1aafac38ea5c805b23f5034baecc85dbeb">Exception</link> (string message, Exception ex)</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Properties    </title>
+        <itemizedlist>
+            <listitem><para>string <link linkend="_class_openlabs_1_1_mgcxm_1_1_internal_1_1_logger_sink_1a07b57f6a251e9f4c26e88632f5e46be5">SinkName</link><computeroutput> [get]</computeroutput>
+</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Constructor &amp; Destructor Documentation</title>
+<anchor xml:id="_class_openlabs_1_1_mgcxm_1_1_internal_1_1_logger_sink_1ad24db1165173be33e0068b4b58e520f7"/><section>
+    <title>LoggerSink()</title>
+<indexterm><primary>LoggerSink</primary><secondary>Openlabs.Mgcxm.Internal.LoggerSink</secondary></indexterm>
+<indexterm><primary>Openlabs.Mgcxm.Internal.LoggerSink</primary><secondary>LoggerSink</secondary></indexterm>
+<para><computeroutput>Openlabs.Mgcxm.Internal.LoggerSink.LoggerSink (string sinkName)</computeroutput></para></section>
+</section>
+<section>
+<title>Member Function Documentation</title>
+<anchor xml:id="_class_openlabs_1_1_mgcxm_1_1_internal_1_1_logger_sink_1accf232f7cc5f01b0d9f0e89169c95e97"/><section>
+    <title>Debug()</title>
+<indexterm><primary>Debug</primary><secondary>Openlabs.Mgcxm.Internal.LoggerSink</secondary></indexterm>
+<indexterm><primary>Openlabs.Mgcxm.Internal.LoggerSink</primary><secondary>Debug</secondary></indexterm>
+<para><computeroutput>void Openlabs.Mgcxm.Internal.LoggerSink.Debug (string message, params object[] args)</computeroutput></para></section>
+<anchor xml:id="_class_openlabs_1_1_mgcxm_1_1_internal_1_1_logger_sink_1a2f42c4d9ad4f45c1ab7bbfd8be35e065"/><section>
+    <title>Error()</title>
+<indexterm><primary>Error</primary><secondary>Openlabs.Mgcxm.Internal.LoggerSink</secondary></indexterm>
+<indexterm><primary>Openlabs.Mgcxm.Internal.LoggerSink</primary><secondary>Error</secondary></indexterm>
+<para><computeroutput>void Openlabs.Mgcxm.Internal.LoggerSink.Error (string message, params object[] args)</computeroutput></para></section>
+<anchor xml:id="_class_openlabs_1_1_mgcxm_1_1_internal_1_1_logger_sink_1aafac38ea5c805b23f5034baecc85dbeb"/><section>
+    <title>Exception()</title>
+<indexterm><primary>Exception</primary><secondary>Openlabs.Mgcxm.Internal.LoggerSink</secondary></indexterm>
+<indexterm><primary>Openlabs.Mgcxm.Internal.LoggerSink</primary><secondary>Exception</secondary></indexterm>
+<para><computeroutput>void Openlabs.Mgcxm.Internal.LoggerSink.Exception (string message, Exception ex)</computeroutput></para></section>
+<anchor xml:id="_class_openlabs_1_1_mgcxm_1_1_internal_1_1_logger_sink_1ae240ccf774b813b0f90c6bcf3820a4ef"/><section>
+    <title>Fatal()</title>
+<indexterm><primary>Fatal</primary><secondary>Openlabs.Mgcxm.Internal.LoggerSink</secondary></indexterm>
+<indexterm><primary>Openlabs.Mgcxm.Internal.LoggerSink</primary><secondary>Fatal</secondary></indexterm>
+<para><computeroutput>void Openlabs.Mgcxm.Internal.LoggerSink.Fatal (string message, params object[] args)</computeroutput></para></section>
+<anchor xml:id="_class_openlabs_1_1_mgcxm_1_1_internal_1_1_logger_sink_1ad0713225028c2ed8c84927a9e9c9391b"/><section>
+    <title>Info()</title>
+<indexterm><primary>Info</primary><secondary>Openlabs.Mgcxm.Internal.LoggerSink</secondary></indexterm>
+<indexterm><primary>Openlabs.Mgcxm.Internal.LoggerSink</primary><secondary>Info</secondary></indexterm>
+<para><computeroutput>void Openlabs.Mgcxm.Internal.LoggerSink.Info (string message, params object[] args)</computeroutput></para></section>
+<anchor xml:id="_class_openlabs_1_1_mgcxm_1_1_internal_1_1_logger_sink_1a184cab05d3e176b9325bdf43b2856f2c"/><section>
+    <title>Trace()</title>
+<indexterm><primary>Trace</primary><secondary>Openlabs.Mgcxm.Internal.LoggerSink</secondary></indexterm>
+<indexterm><primary>Openlabs.Mgcxm.Internal.LoggerSink</primary><secondary>Trace</secondary></indexterm>
+<para><computeroutput>void Openlabs.Mgcxm.Internal.LoggerSink.Trace (string message, params object[] args)</computeroutput></para>Here is the caller graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="class_openlabs_1_1_mgcxm_1_1_internal_1_1_logger_sink_a184cab05d3e176b9325bdf43b2856f2c_icgraph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+</section>
+<anchor xml:id="_class_openlabs_1_1_mgcxm_1_1_internal_1_1_logger_sink_1a8c61c9cebd367e4d35f432050beb0ed0"/><section>
+    <title>Warning()</title>
+<indexterm><primary>Warning</primary><secondary>Openlabs.Mgcxm.Internal.LoggerSink</secondary></indexterm>
+<indexterm><primary>Openlabs.Mgcxm.Internal.LoggerSink</primary><secondary>Warning</secondary></indexterm>
+<para><computeroutput>void Openlabs.Mgcxm.Internal.LoggerSink.Warning (string message, params object[] args)</computeroutput></para></section>
+</section>
+<section>
+<title>Property Documentation</title>
+<anchor xml:id="_class_openlabs_1_1_mgcxm_1_1_internal_1_1_logger_sink_1a07b57f6a251e9f4c26e88632f5e46be5"/><section>
+    <title>SinkName</title>
+<indexterm><primary>SinkName</primary><secondary>Openlabs.Mgcxm.Internal.LoggerSink</secondary></indexterm>
+<indexterm><primary>Openlabs.Mgcxm.Internal.LoggerSink</primary><secondary>SinkName</secondary></indexterm>
+<para><computeroutput>string Openlabs.Mgcxm.Internal.LoggerSink.SinkName<computeroutput>[get]</computeroutput></computeroutput></para></section>
+<para>
+The documentation for this class was generated from the following file:</para>
+C:/Users/adenf/RiderProjects/Openlabs.Mgcxm/Openlabs.Mgcxm/Internal/<link linkend="__logger_8cs">Logger.cs</link></section>
+</section>

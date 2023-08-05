@@ -1,0 +1,117 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.7" xml:lang="en-US">
+  <compounddef id="struct_openlabs_1_1_mgcxm_1_1_net_1_1_authorization_1_1_access_token" kind="struct" language="C#" prot="public">
+    <compoundname>Openlabs::Mgcxm::Net::Authorization::AccessToken</compoundname>
+      <sectiondef kind="property">
+      <memberdef kind="property" id="struct_openlabs_1_1_mgcxm_1_1_net_1_1_authorization_1_1_access_token_1a4888d259496a15b8bada0e21d824250e" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="no" privatesettable="no" protectedsettable="no">
+        <type><ref refid="namespace_openlabs_1_1_mgcxm_1_1_net_1a1cf0ff6088d262006cd028b076749e13" kindref="member">AuthorizationSchemes</ref></type>
+        <definition>AuthorizationSchemes Openlabs.Mgcxm.Net.Authorization.AccessToken.AuthorizationScheme</definition>
+        <argsstring></argsstring>
+        <name>AuthorizationScheme</name>
+        <qualifiedname>Openlabs.Mgcxm.Net.Authorization.AccessToken.AuthorizationScheme</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/adenf/RiderProjects/Openlabs.Mgcxm/Openlabs.Mgcxm/Net/Authorization/AccessToken.cs" line="16" column="33" bodyfile="C:/Users/adenf/RiderProjects/Openlabs.Mgcxm/Openlabs.Mgcxm/Net/Authorization/AccessToken.cs" bodystart="16" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="property" id="struct_openlabs_1_1_mgcxm_1_1_net_1_1_authorization_1_1_access_token_1a5edabf8b6057597878021b9453f0817c" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="no" privatesettable="no" protectedsettable="no">
+        <type>string</type>
+        <definition>string Openlabs.Mgcxm.Net.Authorization.AccessToken.PlainText</definition>
+        <argsstring></argsstring>
+        <name>PlainText</name>
+        <qualifiedname>Openlabs.Mgcxm.Net.Authorization.AccessToken.PlainText</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/adenf/RiderProjects/Openlabs.Mgcxm/Openlabs.Mgcxm/Net/Authorization/AccessToken.cs" line="17" column="19" bodyfile="C:/Users/adenf/RiderProjects/Openlabs.Mgcxm/Openlabs.Mgcxm/Net/Authorization/AccessToken.cs" bodystart="17" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="struct_openlabs_1_1_mgcxm_1_1_net_1_1_authorization_1_1_access_token_1a744edbc3f27ed6dbc9f482ef5c05a46d" prot="private" static="no" mutable="no">
+        <type><ref refid="namespace_openlabs_1_1_mgcxm_1_1_net_1a1cf0ff6088d262006cd028b076749e13" kindref="member">AuthorizationSchemes</ref></type>
+        <definition>AuthorizationSchemes Openlabs.Mgcxm.Net.Authorization.AccessToken._authorizationScheme</definition>
+        <argsstring></argsstring>
+        <name>_authorizationScheme</name>
+        <qualifiedname>Openlabs.Mgcxm.Net.Authorization.AccessToken._authorizationScheme</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/adenf/RiderProjects/Openlabs.Mgcxm/Openlabs.Mgcxm/Net/Authorization/AccessToken.cs" line="19" column="34" bodyfile="C:/Users/adenf/RiderProjects/Openlabs.Mgcxm/Openlabs.Mgcxm/Net/Authorization/AccessToken.cs" bodystart="19" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_openlabs_1_1_mgcxm_1_1_net_1_1_authorization_1_1_access_token_1a1c6b808309002e709f47323c33942942" prot="private" static="no" mutable="no">
+        <type>string</type>
+        <definition>string Openlabs.Mgcxm.Net.Authorization.AccessToken._plainText</definition>
+        <argsstring></argsstring>
+        <name>_plainText</name>
+        <qualifiedname>Openlabs.Mgcxm.Net.Authorization.AccessToken._plainText</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/adenf/RiderProjects/Openlabs.Mgcxm/Openlabs.Mgcxm/Net/Authorization/AccessToken.cs" line="20" column="20" bodyfile="C:/Users/adenf/RiderProjects/Openlabs.Mgcxm/Openlabs.Mgcxm/Net/Authorization/AccessToken.cs" bodystart="20" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="struct_openlabs_1_1_mgcxm_1_1_net_1_1_authorization_1_1_access_token_1ae493148fd787278076a8e3482c410e0f" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Openlabs.Mgcxm.Net.Authorization.AccessToken.AccessToken</definition>
+        <argsstring>(AuthorizationSchemes scheme, string plainText)</argsstring>
+        <name>AccessToken</name>
+        <qualifiedname>Openlabs.Mgcxm.Net.Authorization.AccessToken.AccessToken</qualifiedname>
+        <param>
+          <type><ref refid="namespace_openlabs_1_1_mgcxm_1_1_net_1a1cf0ff6088d262006cd028b076749e13" kindref="member">AuthorizationSchemes</ref></type>
+          <declname>scheme</declname>
+        </param>
+        <param>
+          <type>string</type>
+          <declname>plainText</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/adenf/RiderProjects/Openlabs.Mgcxm/Openlabs.Mgcxm/Net/Authorization/AccessToken.cs" line="7" column="12" bodyfile="C:/Users/adenf/RiderProjects/Openlabs.Mgcxm/Openlabs.Mgcxm/Net/Authorization/AccessToken.cs" bodystart="7" bodyend="11"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_openlabs_1_1_mgcxm_1_1_net_1_1_authorization_1_1_access_token_1ac5f6d9e7ec6b28a2efa7b03efe00b218" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>string</type>
+        <definition>string Openlabs.Mgcxm.Net.Authorization.AccessToken.ConstructString</definition>
+        <argsstring>()</argsstring>
+        <name>ConstructString</name>
+        <qualifiedname>Openlabs.Mgcxm.Net.Authorization.AccessToken.ConstructString</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/adenf/RiderProjects/Openlabs.Mgcxm/Openlabs.Mgcxm/Net/Authorization/AccessToken.cs" line="13" column="19"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/Users/adenf/RiderProjects/Openlabs.Mgcxm/Openlabs.Mgcxm/Net/Authorization/AccessToken.cs" line="5" column="7" bodyfile="C:/Users/adenf/RiderProjects/Openlabs.Mgcxm/Openlabs.Mgcxm/Net/Authorization/AccessToken.cs" bodystart="6" bodyend="21"/>
+    <listofallmembers>
+      <member refid="struct_openlabs_1_1_mgcxm_1_1_net_1_1_authorization_1_1_access_token_1a744edbc3f27ed6dbc9f482ef5c05a46d" prot="private" virt="non-virtual"><scope>Openlabs::Mgcxm::Net::Authorization::AccessToken</scope><name>_authorizationScheme</name></member>
+      <member refid="struct_openlabs_1_1_mgcxm_1_1_net_1_1_authorization_1_1_access_token_1a1c6b808309002e709f47323c33942942" prot="private" virt="non-virtual"><scope>Openlabs::Mgcxm::Net::Authorization::AccessToken</scope><name>_plainText</name></member>
+      <member refid="struct_openlabs_1_1_mgcxm_1_1_net_1_1_authorization_1_1_access_token_1ae493148fd787278076a8e3482c410e0f" prot="public" virt="non-virtual"><scope>Openlabs::Mgcxm::Net::Authorization::AccessToken</scope><name>AccessToken</name></member>
+      <member refid="struct_openlabs_1_1_mgcxm_1_1_net_1_1_authorization_1_1_access_token_1a4888d259496a15b8bada0e21d824250e" prot="public" virt="non-virtual"><scope>Openlabs::Mgcxm::Net::Authorization::AccessToken</scope><name>AuthorizationScheme</name></member>
+      <member refid="struct_openlabs_1_1_mgcxm_1_1_net_1_1_authorization_1_1_access_token_1ac5f6d9e7ec6b28a2efa7b03efe00b218" prot="public" virt="non-virtual"><scope>Openlabs::Mgcxm::Net::Authorization::AccessToken</scope><name>ConstructString</name></member>
+      <member refid="struct_openlabs_1_1_mgcxm_1_1_net_1_1_authorization_1_1_access_token_1a5edabf8b6057597878021b9453f0817c" prot="public" virt="non-virtual"><scope>Openlabs::Mgcxm::Net::Authorization::AccessToken</scope><name>PlainText</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,44 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.7" xml:lang="en-US">
+  <compounddef id="namespace_openlabs_1_1_mgcxm_1_1_net_1_1_polling" kind="namespace" language="C#">
+    <compoundname>Openlabs::Mgcxm::Net::Polling</compoundname>
+    <innerclass refid="class_openlabs_1_1_mgcxm_1_1_net_1_1_polling_1_1_polling_receiver" prot="public">Openlabs::Mgcxm::Net::Polling::PollingReceiver</innerclass>
+    <innerclass refid="class_openlabs_1_1_mgcxm_1_1_net_1_1_polling_1_1_poll_request" prot="public">Openlabs::Mgcxm::Net::Polling::PollRequest</innerclass>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="namespace_openlabs_1_1_mgcxm_1_1_net_1_1_polling_1a021c8fd0a263d6965d9c89fa9528920e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>delegate void</type>
+        <definition>delegate void Openlabs.Mgcxm.Net.Polling.OnPollAccepted</definition>
+        <argsstring>(int status)</argsstring>
+        <name>OnPollAccepted</name>
+        <qualifiedname>Openlabs.Mgcxm.Net.Polling.OnPollAccepted</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>status</declname>
+        </param>
+        <briefdescription>
+<para>Represents a delegate for the callback function used when a poll is accepted. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>status</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The status code representing the acceptance of the poll request.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/adenf/RiderProjects/Openlabs.Mgcxm/Openlabs.Mgcxm/Net/WebSocket/Polling/PollingReceiver.cs" line="119" column="22" declfile="C:/Users/adenf/RiderProjects/Openlabs.Mgcxm/Openlabs.Mgcxm/Net/WebSocket/Polling/PollingReceiver.cs" declline="119" declcolumn="22"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/Users/adenf/RiderProjects/Openlabs.Mgcxm/Openlabs.Mgcxm/Net/WebSocket/Polling/PollingReceiver.cs" line="9" column="1"/>
+  </compounddef>
+</doxygen>

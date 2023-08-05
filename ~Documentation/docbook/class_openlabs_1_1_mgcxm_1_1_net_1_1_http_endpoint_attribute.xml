@@ -1,0 +1,133 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_class_openlabs_1_1_mgcxm_1_1_net_1_1_http_endpoint_attribute" xml:lang="en-US">
+<title>Openlabs.Mgcxm.Net.HttpEndpointAttribute Class Reference</title>
+<indexterm><primary>Openlabs.Mgcxm.Net.HttpEndpointAttribute</primary></indexterm>
+<para>
+
+<para>Represents an attribute used to define an HTTP endpoint. </para>
+ 
+</para>
+Inheritance diagram for Openlabs.Mgcxm.Net.HttpEndpointAttribute:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="class_openlabs_1_1_mgcxm_1_1_net_1_1_http_endpoint_attribute__inherit__graph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+Collaboration diagram for Openlabs.Mgcxm.Net.HttpEndpointAttribute:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="class_openlabs_1_1_mgcxm_1_1_net_1_1_http_endpoint_attribute__coll__graph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+<simplesect>
+    <title>Public Member Functions    </title>
+        <itemizedlist>
+            <listitem><para><link linkend="_class_openlabs_1_1_mgcxm_1_1_net_1_1_http_endpoint_attribute_1a371496d3c39f2944687e7ae5cece7bd8">HttpEndpointAttribute</link> (<link linkend="_namespace_openlabs_1_1_mgcxm_1_1_net_1a63268740291f4b97a3eb53abd380f84e">HttpMethods</link> method, string url)</para>
+
+<para>Initializes a new instance of the HttpEndpointAttribute class with the specified HTTP method and URL. </para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Properties    </title>
+        <itemizedlist>
+            <listitem><para><link linkend="_namespace_openlabs_1_1_mgcxm_1_1_net_1a63268740291f4b97a3eb53abd380f84e">HttpMethods</link> <link linkend="_class_openlabs_1_1_mgcxm_1_1_net_1_1_http_endpoint_attribute_1a51ba40c872d69c9e1ad0b808bd03c3aa">HttpMethod</link><computeroutput> [get]</computeroutput>
+</para>
+
+<para>Gets the HTTP method associated with the endpoint. </para>
+</listitem>
+            <listitem><para>string <link linkend="_class_openlabs_1_1_mgcxm_1_1_net_1_1_http_endpoint_attribute_1a1d8b1f734ecea53b041f087f0170476a">Url</link><computeroutput> [get]</computeroutput>
+</para>
+
+<para>Gets the URL pattern associated with the endpoint. </para>
+</listitem>
+            <listitem><para>Type <link linkend="_class_openlabs_1_1_mgcxm_1_1_net_1_1_http_endpoint_attribute_1abeffde806875de7ad58bd7455dbb46a5">ReturnType</link><computeroutput> [get, set]</computeroutput>
+</para>
+
+<para>Gets or sets the type of the return value for the endpoint method. </para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Detailed Description</title>
+
+<para>Represents an attribute used to define an HTTP endpoint. </para>
+</section>
+<section>
+<title>Constructor &amp; Destructor Documentation</title>
+<anchor xml:id="_class_openlabs_1_1_mgcxm_1_1_net_1_1_http_endpoint_attribute_1a371496d3c39f2944687e7ae5cece7bd8"/><section>
+    <title>HttpEndpointAttribute()</title>
+<indexterm><primary>HttpEndpointAttribute</primary><secondary>Openlabs.Mgcxm.Net.HttpEndpointAttribute</secondary></indexterm>
+<indexterm><primary>Openlabs.Mgcxm.Net.HttpEndpointAttribute</primary><secondary>HttpEndpointAttribute</secondary></indexterm>
+<para><computeroutput>Openlabs.Mgcxm.Net.HttpEndpointAttribute.HttpEndpointAttribute (<link linkend="_namespace_openlabs_1_1_mgcxm_1_1_net_1a63268740291f4b97a3eb53abd380f84e">HttpMethods</link> method, string url)</computeroutput></para><para>
+
+<para>Initializes a new instance of the HttpEndpointAttribute class with the specified HTTP method and URL. </para>
+</para>
+
+<para>
+                <formalpara>
+                    <title>
+Parameters</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>method</entry><entry>
+<para>The HTTP method associated with the endpoint.</para>
+</entry>
+                            </row>
+                            <row>
+<entry>url</entry><entry>
+<para>The URL pattern associated with the endpoint.</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                </para>
+</section>
+</section>
+<section>
+<title>Property Documentation</title>
+<anchor xml:id="_class_openlabs_1_1_mgcxm_1_1_net_1_1_http_endpoint_attribute_1a51ba40c872d69c9e1ad0b808bd03c3aa"/><section>
+    <title>HttpMethod</title>
+<indexterm><primary>HttpMethod</primary><secondary>Openlabs.Mgcxm.Net.HttpEndpointAttribute</secondary></indexterm>
+<indexterm><primary>Openlabs.Mgcxm.Net.HttpEndpointAttribute</primary><secondary>HttpMethod</secondary></indexterm>
+<para><computeroutput><link linkend="_namespace_openlabs_1_1_mgcxm_1_1_net_1a63268740291f4b97a3eb53abd380f84e">HttpMethods</link> Openlabs.Mgcxm.Net.HttpEndpointAttribute.HttpMethod<computeroutput>[get]</computeroutput></computeroutput></para><para>
+
+<para>Gets the HTTP method associated with the endpoint. </para>
+</para>
+</section>
+<anchor xml:id="_class_openlabs_1_1_mgcxm_1_1_net_1_1_http_endpoint_attribute_1abeffde806875de7ad58bd7455dbb46a5"/><section>
+    <title>ReturnType</title>
+<indexterm><primary>ReturnType</primary><secondary>Openlabs.Mgcxm.Net.HttpEndpointAttribute</secondary></indexterm>
+<indexterm><primary>Openlabs.Mgcxm.Net.HttpEndpointAttribute</primary><secondary>ReturnType</secondary></indexterm>
+<para><computeroutput>Type Openlabs.Mgcxm.Net.HttpEndpointAttribute.ReturnType<computeroutput>[get]</computeroutput>, <computeroutput>[set]</computeroutput></computeroutput></para><para>
+
+<para>Gets or sets the type of the return value for the endpoint method. </para>
+</para>
+</section>
+<anchor xml:id="_class_openlabs_1_1_mgcxm_1_1_net_1_1_http_endpoint_attribute_1a1d8b1f734ecea53b041f087f0170476a"/><section>
+    <title>Url</title>
+<indexterm><primary>Url</primary><secondary>Openlabs.Mgcxm.Net.HttpEndpointAttribute</secondary></indexterm>
+<indexterm><primary>Openlabs.Mgcxm.Net.HttpEndpointAttribute</primary><secondary>Url</secondary></indexterm>
+<para><computeroutput>string Openlabs.Mgcxm.Net.HttpEndpointAttribute.Url<computeroutput>[get]</computeroutput></computeroutput></para><para>
+
+<para>Gets the URL pattern associated with the endpoint. </para>
+</para>
+</section>
+<para>
+The documentation for this class was generated from the following file:</para>
+C:/Users/adenf/RiderProjects/Openlabs.Mgcxm/Openlabs.Mgcxm/Net/Attributes/<link linkend="__http_endpoint_attribute_8cs">HttpEndpointAttribute.cs</link></section>
+</section>

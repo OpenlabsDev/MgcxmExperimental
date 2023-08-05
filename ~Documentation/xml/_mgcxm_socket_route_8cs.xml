@@ -1,0 +1,68 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.7" xml:lang="en-US">
+  <compounddef id="_mgcxm_socket_route_8cs" kind="file" language="C#">
+    <compoundname>MgcxmSocketRoute.cs</compoundname>
+    <innerclass refid="class_openlabs_1_1_mgcxm_1_1_net_1_1_mgcxm_socket_route" prot="public">Openlabs::Mgcxm::Net::MgcxmSocketRoute</innerclass>
+    <innernamespace refid="namespace_openlabs">Openlabs</innernamespace>
+    <innernamespace refid="namespace_openlabs_1_1_mgcxm">Openlabs::Mgcxm</innernamespace>
+    <innernamespace refid="namespace_openlabs_1_1_mgcxm_1_1_net">Openlabs::Mgcxm::Net</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">//<sp/>Copr.<sp/>(c)<sp/>Nexus<sp/>2023.<sp/>All<sp/>rights<sp/>reserved.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="keyword">using<sp/></highlight><highlight class="normal">System.Reflection;</highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="keyword">using<sp/></highlight><highlight class="normal"><ref refid="namespace_openlabs_1_1_mgcxm_1_1_internal" kindref="compound">Openlabs.Mgcxm.Internal</ref>;</highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="namespace_openlabs_1_1_mgcxm_1_1_net" kindref="compound">Openlabs.Mgcxm.Net</ref>;</highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight></codeline>
+<codeline lineno="11" refid="class_openlabs_1_1_mgcxm_1_1_net_1_1_mgcxm_socket_route" refkind="compound"><highlight class="keyword">public</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="class_openlabs_1_1_mgcxm_1_1_net_1_1_mgcxm_socket_route" kindref="compound">MgcxmSocketRoute</ref></highlight></codeline>
+<codeline lineno="12"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="21" refid="class_openlabs_1_1_mgcxm_1_1_net_1_1_mgcxm_socket_route_1ae624539880f10eb61ff29a99063910e3" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="class_openlabs_1_1_mgcxm_1_1_net_1_1_mgcxm_socket_route_1ae624539880f10eb61ff29a99063910e3" kindref="member">MgcxmSocketRoute</ref>(<ref refid="struct_openlabs_1_1_mgcxm_1_1_internal_1_1_mgcxm_id" kindref="compound">MgcxmId</ref><sp/>mgcxmId,<sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>route,<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>requireAuthorization,<sp/><ref refid="class_openlabs_1_1_mgcxm_1_1_net_1_1_mgcxm_socket_route_1a81d6957d9ab812c1eb17fbcb737b0dcb" kindref="member">OnSocketUpgraded</ref><sp/>onSocketUpgraded,<sp/><ref refid="class_openlabs_1_1_mgcxm_1_1_net_1_1_mgcxm_socket_route_1aa3ef1070fa49ea772066ce339e7ed903" kindref="member">MethodInfo</ref><sp/>methodInfo)</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>_ownerId<sp/>=<sp/>mgcxmId;</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>_routeId<sp/>=<sp/>(int)_ownerId.<ref refid="struct_openlabs_1_1_mgcxm_1_1_internal_1_1_mgcxm_id_1a1a0f97f9cbb455396c2605439fc42f76" kindref="member">Id</ref><sp/>+<sp/>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal">)GetHashCode();</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>_route<sp/>=<sp/>route;</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>_requireAuthorization<sp/>=<sp/>requireAuthorization;</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>_onSocketUpgraded<sp/>=<sp/>onSocketUpgraded;</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_openlabs_1_1_mgcxm_1_1_net_1_1_mgcxm_socket_route_1aa3ef1070fa49ea772066ce339e7ed903" kindref="member">MethodInfo</ref><sp/>=<sp/>methodInfo;</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>MgcxmObjectManager.Register(_routeId,<sp/></highlight><highlight class="keyword">this</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>_ownerId.Latch(_routeId,<sp/></highlight><highlight class="keyword">this</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_openlabs_1_1_mgcxm_1_1_net_1_1_mgcxm_socket_route" kindref="compound">~MgcxmSocketRoute</ref>()</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>_ownerId.<ref refid="struct_openlabs_1_1_mgcxm_1_1_internal_1_1_mgcxm_id_1a718aeacf068b158ac586f9a55cfe8b00" kindref="member">Unlatch</ref>(_routeId);</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>MgcxmObjectManager.Deregister(_routeId);</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"></highlight></codeline>
+<codeline lineno="49" refid="class_openlabs_1_1_mgcxm_1_1_net_1_1_mgcxm_socket_route_1ab01f206fbc269c512245c99caff4fe30" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="struct_openlabs_1_1_mgcxm_1_1_internal_1_1_mgcxm_id" kindref="compound">MgcxmId</ref><sp/><ref refid="class_openlabs_1_1_mgcxm_1_1_net_1_1_mgcxm_socket_route_1ab01f206fbc269c512245c99caff4fe30" kindref="member">OwnerId</ref><sp/>=&gt;<sp/>_ownerId;</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"></highlight></codeline>
+<codeline lineno="54" refid="class_openlabs_1_1_mgcxm_1_1_net_1_1_mgcxm_socket_route_1a876c1f16cfc99d354f8406176f310746" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="struct_openlabs_1_1_mgcxm_1_1_internal_1_1_mgcxm_id" kindref="compound">MgcxmId</ref><sp/><ref refid="class_openlabs_1_1_mgcxm_1_1_net_1_1_mgcxm_socket_route_1a876c1f16cfc99d354f8406176f310746" kindref="member">RouteId</ref><sp/>=&gt;<sp/>_routeId;</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"></highlight></codeline>
+<codeline lineno="59" refid="class_openlabs_1_1_mgcxm_1_1_net_1_1_mgcxm_socket_route_1a8a61bb5b017b0c65b2ae99d20f1549ec" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/><ref refid="class_openlabs_1_1_mgcxm_1_1_net_1_1_mgcxm_socket_route_1a8a61bb5b017b0c65b2ae99d20f1549ec" kindref="member">Route</ref><sp/>=&gt;<sp/>_route;</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"></highlight></codeline>
+<codeline lineno="64" refid="class_openlabs_1_1_mgcxm_1_1_net_1_1_mgcxm_socket_route_1a7249459735a4285ec90f0f24f036216d" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="class_openlabs_1_1_mgcxm_1_1_net_1_1_mgcxm_socket_route_1a7249459735a4285ec90f0f24f036216d" kindref="member">RequireAuthorization</ref><sp/>=&gt;<sp/>_requireAuthorization;</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"></highlight></codeline>
+<codeline lineno="69" refid="class_openlabs_1_1_mgcxm_1_1_net_1_1_mgcxm_socket_route_1a81d6957d9ab812c1eb17fbcb737b0dcb" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="class_openlabs_1_1_mgcxm_1_1_net_1_1_mgcxm_socket_route_1a81d6957d9ab812c1eb17fbcb737b0dcb" kindref="member">OnSocketUpgraded</ref><sp/><ref refid="class_openlabs_1_1_mgcxm_1_1_net_1_1_mgcxm_socket_route_1a81d6957d9ab812c1eb17fbcb737b0dcb" kindref="member">OnSocketUpgraded</ref><sp/>=&gt;<sp/>_onSocketUpgraded;</highlight></codeline>
+<codeline lineno="70"><highlight class="normal"></highlight></codeline>
+<codeline lineno="74" refid="class_openlabs_1_1_mgcxm_1_1_net_1_1_mgcxm_socket_route_1aa3ef1070fa49ea772066ce339e7ed903" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="class_openlabs_1_1_mgcxm_1_1_net_1_1_mgcxm_socket_route_1aa3ef1070fa49ea772066ce339e7ed903" kindref="member">MethodInfo</ref><sp/><ref refid="class_openlabs_1_1_mgcxm_1_1_net_1_1_mgcxm_socket_route_1aa3ef1070fa49ea772066ce339e7ed903" kindref="member">MethodInfo</ref><sp/>{<sp/></highlight><highlight class="keyword">get</highlight><highlight class="normal">;<sp/>}</highlight></codeline>
+<codeline lineno="75"><highlight class="normal"></highlight></codeline>
+<codeline lineno="76"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">private</highlight><highlight class="normal"><sp/><ref refid="struct_openlabs_1_1_mgcxm_1_1_internal_1_1_mgcxm_id" kindref="compound">MgcxmId</ref><sp/>_ownerId;</highlight></codeline>
+<codeline lineno="77"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">private</highlight><highlight class="normal"><sp/><ref refid="struct_openlabs_1_1_mgcxm_1_1_internal_1_1_mgcxm_id" kindref="compound">MgcxmId</ref><sp/>_routeId;</highlight></codeline>
+<codeline lineno="78"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">private</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>_route;</highlight></codeline>
+<codeline lineno="79"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">private</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>_requireAuthorization;</highlight></codeline>
+<codeline lineno="80"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">private</highlight><highlight class="normal"><sp/><ref refid="class_openlabs_1_1_mgcxm_1_1_net_1_1_mgcxm_socket_route_1a81d6957d9ab812c1eb17fbcb737b0dcb" kindref="member">OnSocketUpgraded</ref><sp/>_onSocketUpgraded;</highlight></codeline>
+<codeline lineno="81"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="82"><highlight class="normal"></highlight></codeline>
+<codeline lineno="87" refid="namespace_openlabs_1_1_mgcxm_1_1_net_1ad2a2bbd4000fbc64e0bfc269bbadd132" refkind="member"><highlight class="keyword">public</highlight><highlight class="normal"><sp/>delegate<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="namespace_openlabs_1_1_mgcxm_1_1_net_1ad2a2bbd4000fbc64e0bfc269bbadd132" kindref="member">OnSocketUpgraded</ref>(<ref refid="class_openlabs_1_1_mgcxm_1_1_net_1_1_mgcxm_socket" kindref="compound">MgcxmSocket</ref><sp/>socket);</highlight></codeline>
+    </programlisting>
+    <location file="C:/Users/adenf/RiderProjects/Openlabs.Mgcxm/Openlabs.Mgcxm/Net/WebSocket/MgcxmSocketRoute.cs"/>
+  </compounddef>
+</doxygen>

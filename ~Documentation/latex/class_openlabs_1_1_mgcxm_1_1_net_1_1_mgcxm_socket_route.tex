@@ -1,0 +1,124 @@
+\doxysection{Openlabs.\+Mgcxm.\+Net.\+Mgcxm\+Socket\+Route Class Reference}
+\hypertarget{class_openlabs_1_1_mgcxm_1_1_net_1_1_mgcxm_socket_route}{}\label{class_openlabs_1_1_mgcxm_1_1_net_1_1_mgcxm_socket_route}\index{Openlabs.Mgcxm.Net.MgcxmSocketRoute@{Openlabs.Mgcxm.Net.MgcxmSocketRoute}}
+
+
+Represents a route for Web\+Socket communication in Mgcxm\+Socket\+Listener.  
+
+
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_openlabs_1_1_mgcxm_1_1_net_1_1_mgcxm_socket_route_ae624539880f10eb61ff29a99063910e3}{Mgcxm\+Socket\+Route}} (\mbox{\hyperlink{struct_openlabs_1_1_mgcxm_1_1_internal_1_1_mgcxm_id}{Mgcxm\+Id}} mgcxm\+Id, string route, bool require\+Authorization, \mbox{\hyperlink{class_openlabs_1_1_mgcxm_1_1_net_1_1_mgcxm_socket_route_a81d6957d9ab812c1eb17fbcb737b0dcb}{On\+Socket\+Upgraded}} on\+Socket\+Upgraded, \mbox{\hyperlink{class_openlabs_1_1_mgcxm_1_1_net_1_1_mgcxm_socket_route_aa3ef1070fa49ea772066ce339e7ed903}{Method\+Info}} method\+Info)
+\begin{DoxyCompactList}\small\item\em Initializes a new instance of the Mgcxm\+Socket\+Route class with the specified parameters. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{struct_openlabs_1_1_mgcxm_1_1_internal_1_1_mgcxm_id}{Mgcxm\+Id}} \mbox{\hyperlink{class_openlabs_1_1_mgcxm_1_1_net_1_1_mgcxm_socket_route_ab01f206fbc269c512245c99caff4fe30}{Owner\+Id}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Gets the Mgcxm\+Id of the owner of the route. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{struct_openlabs_1_1_mgcxm_1_1_internal_1_1_mgcxm_id}{Mgcxm\+Id}} \mbox{\hyperlink{class_openlabs_1_1_mgcxm_1_1_net_1_1_mgcxm_socket_route_a876c1f16cfc99d354f8406176f310746}{Route\+Id}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Gets the unique identifier (route ID) of the route. \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{class_openlabs_1_1_mgcxm_1_1_net_1_1_mgcxm_socket_route_a8a61bb5b017b0c65b2ae99d20f1549ec}{Route}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Gets the route URL associated with the Web\+Socket route. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_openlabs_1_1_mgcxm_1_1_net_1_1_mgcxm_socket_route_a7249459735a4285ec90f0f24f036216d}{Require\+Authorization}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Gets a value indicating whether the route requires authorization. \end{DoxyCompactList}\item 
+On\+Socket\+Upgraded \mbox{\hyperlink{class_openlabs_1_1_mgcxm_1_1_net_1_1_mgcxm_socket_route_a81d6957d9ab812c1eb17fbcb737b0dcb}{On\+Socket\+Upgraded}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Gets the delegate to be invoked when a Web\+Socket is upgraded. \end{DoxyCompactList}\item 
+Method\+Info \mbox{\hyperlink{class_openlabs_1_1_mgcxm_1_1_net_1_1_mgcxm_socket_route_aa3ef1070fa49ea772066ce339e7ed903}{Method\+Info}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Gets the Method\+Info representing the method to be invoked for the route. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Represents a route for Web\+Socket communication in Mgcxm\+Socket\+Listener. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_openlabs_1_1_mgcxm_1_1_net_1_1_mgcxm_socket_route_ae624539880f10eb61ff29a99063910e3}\label{class_openlabs_1_1_mgcxm_1_1_net_1_1_mgcxm_socket_route_ae624539880f10eb61ff29a99063910e3} 
+\index{Openlabs.Mgcxm.Net.MgcxmSocketRoute@{Openlabs.Mgcxm.Net.MgcxmSocketRoute}!MgcxmSocketRoute@{MgcxmSocketRoute}}
+\index{MgcxmSocketRoute@{MgcxmSocketRoute}!Openlabs.Mgcxm.Net.MgcxmSocketRoute@{Openlabs.Mgcxm.Net.MgcxmSocketRoute}}
+\doxysubsubsection{\texorpdfstring{MgcxmSocketRoute()}{MgcxmSocketRoute()}}
+{\footnotesize\ttfamily Openlabs.\+Mgcxm.\+Net.\+Mgcxm\+Socket\+Route.\+Mgcxm\+Socket\+Route (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_openlabs_1_1_mgcxm_1_1_internal_1_1_mgcxm_id}{Mgcxm\+Id}}}]{mgcxm\+Id,  }\item[{string}]{route,  }\item[{bool}]{require\+Authorization,  }\item[{\mbox{\hyperlink{class_openlabs_1_1_mgcxm_1_1_net_1_1_mgcxm_socket_route_a81d6957d9ab812c1eb17fbcb737b0dcb}{On\+Socket\+Upgraded}}}]{on\+Socket\+Upgraded,  }\item[{\mbox{\hyperlink{class_openlabs_1_1_mgcxm_1_1_net_1_1_mgcxm_socket_route_aa3ef1070fa49ea772066ce339e7ed903}{Method\+Info}}}]{method\+Info }\end{DoxyParamCaption})}
+
+
+
+Initializes a new instance of the Mgcxm\+Socket\+Route class with the specified parameters. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em mgcxm\+Id} & The Mgcxm\+Id of the owner of the route.\\
+\hline
+{\em route} & The route URL associated with the Web\+Socket route.\\
+\hline
+{\em require\+Authorization} & Indicates if the route requires authorization.\\
+\hline
+{\em on\+Socket\+Upgraded} & The delegate to be invoked when a Web\+Socket is upgraded.\\
+\hline
+{\em method\+Info} & The Method\+Info representing the method to be invoked for the route.\\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Property Documentation}
+\Hypertarget{class_openlabs_1_1_mgcxm_1_1_net_1_1_mgcxm_socket_route_aa3ef1070fa49ea772066ce339e7ed903}\label{class_openlabs_1_1_mgcxm_1_1_net_1_1_mgcxm_socket_route_aa3ef1070fa49ea772066ce339e7ed903} 
+\index{Openlabs.Mgcxm.Net.MgcxmSocketRoute@{Openlabs.Mgcxm.Net.MgcxmSocketRoute}!MethodInfo@{MethodInfo}}
+\index{MethodInfo@{MethodInfo}!Openlabs.Mgcxm.Net.MgcxmSocketRoute@{Openlabs.Mgcxm.Net.MgcxmSocketRoute}}
+\doxysubsubsection{\texorpdfstring{MethodInfo}{MethodInfo}}
+{\footnotesize\ttfamily Method\+Info Openlabs.\+Mgcxm.\+Net.\+Mgcxm\+Socket\+Route.\+Method\+Info\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+Gets the Method\+Info representing the method to be invoked for the route. 
+
+\Hypertarget{class_openlabs_1_1_mgcxm_1_1_net_1_1_mgcxm_socket_route_a81d6957d9ab812c1eb17fbcb737b0dcb}\label{class_openlabs_1_1_mgcxm_1_1_net_1_1_mgcxm_socket_route_a81d6957d9ab812c1eb17fbcb737b0dcb} 
+\index{Openlabs.Mgcxm.Net.MgcxmSocketRoute@{Openlabs.Mgcxm.Net.MgcxmSocketRoute}!OnSocketUpgraded@{OnSocketUpgraded}}
+\index{OnSocketUpgraded@{OnSocketUpgraded}!Openlabs.Mgcxm.Net.MgcxmSocketRoute@{Openlabs.Mgcxm.Net.MgcxmSocketRoute}}
+\doxysubsubsection{\texorpdfstring{OnSocketUpgraded}{OnSocketUpgraded}}
+{\footnotesize\ttfamily On\+Socket\+Upgraded Openlabs.\+Mgcxm.\+Net.\+Mgcxm\+Socket\+Route.\+On\+Socket\+Upgraded\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+Gets the delegate to be invoked when a Web\+Socket is upgraded. 
+
+\Hypertarget{class_openlabs_1_1_mgcxm_1_1_net_1_1_mgcxm_socket_route_ab01f206fbc269c512245c99caff4fe30}\label{class_openlabs_1_1_mgcxm_1_1_net_1_1_mgcxm_socket_route_ab01f206fbc269c512245c99caff4fe30} 
+\index{Openlabs.Mgcxm.Net.MgcxmSocketRoute@{Openlabs.Mgcxm.Net.MgcxmSocketRoute}!OwnerId@{OwnerId}}
+\index{OwnerId@{OwnerId}!Openlabs.Mgcxm.Net.MgcxmSocketRoute@{Openlabs.Mgcxm.Net.MgcxmSocketRoute}}
+\doxysubsubsection{\texorpdfstring{OwnerId}{OwnerId}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_openlabs_1_1_mgcxm_1_1_internal_1_1_mgcxm_id}{Mgcxm\+Id}} Openlabs.\+Mgcxm.\+Net.\+Mgcxm\+Socket\+Route.\+Owner\+Id\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+Gets the Mgcxm\+Id of the owner of the route. 
+
+\Hypertarget{class_openlabs_1_1_mgcxm_1_1_net_1_1_mgcxm_socket_route_a7249459735a4285ec90f0f24f036216d}\label{class_openlabs_1_1_mgcxm_1_1_net_1_1_mgcxm_socket_route_a7249459735a4285ec90f0f24f036216d} 
+\index{Openlabs.Mgcxm.Net.MgcxmSocketRoute@{Openlabs.Mgcxm.Net.MgcxmSocketRoute}!RequireAuthorization@{RequireAuthorization}}
+\index{RequireAuthorization@{RequireAuthorization}!Openlabs.Mgcxm.Net.MgcxmSocketRoute@{Openlabs.Mgcxm.Net.MgcxmSocketRoute}}
+\doxysubsubsection{\texorpdfstring{RequireAuthorization}{RequireAuthorization}}
+{\footnotesize\ttfamily bool Openlabs.\+Mgcxm.\+Net.\+Mgcxm\+Socket\+Route.\+Require\+Authorization\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+Gets a value indicating whether the route requires authorization. 
+
+\Hypertarget{class_openlabs_1_1_mgcxm_1_1_net_1_1_mgcxm_socket_route_a8a61bb5b017b0c65b2ae99d20f1549ec}\label{class_openlabs_1_1_mgcxm_1_1_net_1_1_mgcxm_socket_route_a8a61bb5b017b0c65b2ae99d20f1549ec} 
+\index{Openlabs.Mgcxm.Net.MgcxmSocketRoute@{Openlabs.Mgcxm.Net.MgcxmSocketRoute}!Route@{Route}}
+\index{Route@{Route}!Openlabs.Mgcxm.Net.MgcxmSocketRoute@{Openlabs.Mgcxm.Net.MgcxmSocketRoute}}
+\doxysubsubsection{\texorpdfstring{Route}{Route}}
+{\footnotesize\ttfamily string Openlabs.\+Mgcxm.\+Net.\+Mgcxm\+Socket\+Route.\+Route\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+Gets the route URL associated with the Web\+Socket route. 
+
+\Hypertarget{class_openlabs_1_1_mgcxm_1_1_net_1_1_mgcxm_socket_route_a876c1f16cfc99d354f8406176f310746}\label{class_openlabs_1_1_mgcxm_1_1_net_1_1_mgcxm_socket_route_a876c1f16cfc99d354f8406176f310746} 
+\index{Openlabs.Mgcxm.Net.MgcxmSocketRoute@{Openlabs.Mgcxm.Net.MgcxmSocketRoute}!RouteId@{RouteId}}
+\index{RouteId@{RouteId}!Openlabs.Mgcxm.Net.MgcxmSocketRoute@{Openlabs.Mgcxm.Net.MgcxmSocketRoute}}
+\doxysubsubsection{\texorpdfstring{RouteId}{RouteId}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_openlabs_1_1_mgcxm_1_1_internal_1_1_mgcxm_id}{Mgcxm\+Id}} Openlabs.\+Mgcxm.\+Net.\+Mgcxm\+Socket\+Route.\+Route\+Id\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+Gets the unique identifier (route ID) of the route. 
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/adenf/\+Rider\+Projects/\+Openlabs.\+Mgcxm/\+Openlabs.\+Mgcxm/\+Net/\+Web\+Socket/\mbox{\hyperlink{_mgcxm_socket_route_8cs}{Mgcxm\+Socket\+Route.\+cs}}\end{DoxyCompactItemize}

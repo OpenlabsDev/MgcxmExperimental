@@ -1,0 +1,203 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.7" xml:lang="en-US">
+  <compounddef id="class_j_w_t_1_1_algorithms_1_1_r_s512_algorithm" kind="class" language="C#" prot="public">
+    <compoundname>JWT::Algorithms::RS512Algorithm</compoundname>
+    <basecompoundref refid="class_j_w_t_1_1_algorithms_1_1_r_s_algorithm" prot="public" virt="non-virtual">JWT.Algorithms.RSAlgorithm</basecompoundref>
+      <sectiondef kind="property">
+      <memberdef kind="property" id="class_j_w_t_1_1_algorithms_1_1_r_s512_algorithm_1a6df1d356f2be4665e13ef65f00137345" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="no" privatesettable="no" protectedsettable="no">
+        <type>override string</type>
+        <definition>override string JWT.Algorithms.RS512Algorithm.Name</definition>
+        <argsstring></argsstring>
+        <name>Name</name>
+        <qualifiedname>JWT.Algorithms.RS512Algorithm.Name</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/adenf/RiderProjects/Openlabs.Mgcxm/Openlabs.Mgcxm/JWT/Algorithms/RS512Algorithm.cs" line="43" column="32" bodyfile="C:/Users/adenf/RiderProjects/Openlabs.Mgcxm/Openlabs.Mgcxm/JWT/Algorithms/RS512Algorithm.cs" bodystart="43" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="property" id="class_j_w_t_1_1_algorithms_1_1_r_s512_algorithm_1acf668a2135db2d2f3e535e3df59aa4c0" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="no" privatesettable="no" protectedsettable="no">
+        <type>override HashAlgorithmName</type>
+        <definition>override HashAlgorithmName JWT.Algorithms.RS512Algorithm.HashAlgorithmName</definition>
+        <argsstring></argsstring>
+        <name>HashAlgorithmName</name>
+        <qualifiedname>JWT.Algorithms.RS512Algorithm.HashAlgorithmName</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/adenf/RiderProjects/Openlabs.Mgcxm/Openlabs.Mgcxm/JWT/Algorithms/RS512Algorithm.cs" line="46" column="43" bodyfile="C:/Users/adenf/RiderProjects/Openlabs.Mgcxm/Openlabs.Mgcxm/JWT/Algorithms/RS512Algorithm.cs" bodystart="46" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_j_w_t_1_1_algorithms_1_1_r_s512_algorithm_1a426a76cd0fb3921797af211b9ebbf132" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>JWT.Algorithms.RS512Algorithm.RS512Algorithm</definition>
+        <argsstring>(RSA publicKey, RSA privateKey)</argsstring>
+        <name>RS512Algorithm</name>
+        <qualifiedname>JWT.Algorithms.RS512Algorithm.RS512Algorithm</qualifiedname>
+        <param>
+          <type>RSA</type>
+          <declname>publicKey</declname>
+        </param>
+        <param>
+          <type>RSA</type>
+          <declname>privateKey</declname>
+        </param>
+        <briefdescription>
+<para>Creates an instance of RS512Algorithm using the provided pair of public and private keys. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>publicKey</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The public key for verifying the data.</para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>privateKey</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The private key for signing the data.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/adenf/RiderProjects/Openlabs.Mgcxm/Openlabs.Mgcxm/JWT/Algorithms/RS512Algorithm.cs" line="16" column="16" bodyfile="C:/Users/adenf/RiderProjects/Openlabs.Mgcxm/Openlabs.Mgcxm/JWT/Algorithms/RS512Algorithm.cs" bodystart="16" bodyend="19"/>
+      </memberdef>
+      <memberdef kind="function" id="class_j_w_t_1_1_algorithms_1_1_r_s512_algorithm_1a38b8a256d39c1d88c9f5eb64fd6a9d13" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>JWT.Algorithms.RS512Algorithm.RS512Algorithm</definition>
+        <argsstring>(RSA publicKey)</argsstring>
+        <name>RS512Algorithm</name>
+        <qualifiedname>JWT.Algorithms.RS512Algorithm.RS512Algorithm</qualifiedname>
+        <param>
+          <type>RSA</type>
+          <declname>publicKey</declname>
+        </param>
+        <briefdescription>
+<para>Creates an instance of RS512Algorithm using the provided public key only. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>An instance created using this constructor can only be used for verifying the data, not for signing it. </para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>publicKey</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The public key for verifying the data.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/adenf/RiderProjects/Openlabs.Mgcxm/Openlabs.Mgcxm/JWT/Algorithms/RS512Algorithm.cs" line="28" column="16" bodyfile="C:/Users/adenf/RiderProjects/Openlabs.Mgcxm/Openlabs.Mgcxm/JWT/Algorithms/RS512Algorithm.cs" bodystart="28" bodyend="31"/>
+      </memberdef>
+      <memberdef kind="function" id="class_j_w_t_1_1_algorithms_1_1_r_s512_algorithm_1a79bed2b7f4fa3c032a14c76f7e947dc4" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>JWT.Algorithms.RS512Algorithm.RS512Algorithm</definition>
+        <argsstring>(X509Certificate2 cert)</argsstring>
+        <name>RS512Algorithm</name>
+        <qualifiedname>JWT.Algorithms.RS512Algorithm.RS512Algorithm</qualifiedname>
+        <param>
+          <type>X509Certificate2</type>
+          <declname>cert</declname>
+        </param>
+        <briefdescription>
+<para>Creates an instance using the provided certificate. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>cert</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The certificate having a public key and an optional private key.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/adenf/RiderProjects/Openlabs.Mgcxm/Openlabs.Mgcxm/JWT/Algorithms/RS512Algorithm.cs" line="37" column="16" bodyfile="C:/Users/adenf/RiderProjects/Openlabs.Mgcxm/Openlabs.Mgcxm/JWT/Algorithms/RS512Algorithm.cs" bodystart="37" bodyend="40"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>RSASSA-PKCS1-v1_5 using SHA-512. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="3">
+        <label>CertificateAlgorithm&lt; RSA &gt;</label>
+        <link refid="class_j_w_t_1_1_algorithms_1_1_certificate_algorithm"/>
+      </node>
+      <node id="1">
+        <label>JWT.Algorithms.RS512Algorithm</label>
+        <link refid="class_j_w_t_1_1_algorithms_1_1_r_s512_algorithm"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>RSAlgorithm</label>
+        <link refid="class_j_w_t_1_1_algorithms_1_1_r_s_algorithm"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="3">
+        <label>CertificateAlgorithm&lt; RSA &gt;</label>
+        <link refid="class_j_w_t_1_1_algorithms_1_1_certificate_algorithm"/>
+      </node>
+      <node id="1">
+        <label>JWT.Algorithms.RS512Algorithm</label>
+        <link refid="class_j_w_t_1_1_algorithms_1_1_r_s512_algorithm"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>RSAlgorithm</label>
+        <link refid="class_j_w_t_1_1_algorithms_1_1_r_s_algorithm"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="C:/Users/adenf/RiderProjects/Openlabs.Mgcxm/Openlabs.Mgcxm/JWT/Algorithms/RS512Algorithm.cs" line="9" column="18" bodyfile="C:/Users/adenf/RiderProjects/Openlabs.Mgcxm/Openlabs.Mgcxm/JWT/Algorithms/RS512Algorithm.cs" bodystart="10" bodyend="47"/>
+    <listofallmembers>
+      <member refid="class_j_w_t_1_1_algorithms_1_1_certificate_algorithm_1a998d357ab8379f6a460fda413a4668fc" prot="protected" virt="non-virtual"><scope>JWT::Algorithms::RS512Algorithm</scope><name>_privateKey</name></member>
+      <member refid="class_j_w_t_1_1_algorithms_1_1_certificate_algorithm_1a2b0420e1c1745786cf469a3a2ed26d34" prot="protected" virt="non-virtual"><scope>JWT::Algorithms::RS512Algorithm</scope><name>_publicKey</name></member>
+      <member refid="class_j_w_t_1_1_algorithms_1_1_certificate_algorithm_1a43e9c1390c0e64c1eaa59f92c4aedc55" prot="protected" virt="non-virtual"><scope>JWT::Algorithms::RS512Algorithm</scope><name>CertificateAlgorithm</name></member>
+      <member refid="class_j_w_t_1_1_algorithms_1_1_certificate_algorithm_1ac66d69a276443c44662c7f4b496ac8da" prot="protected" virt="non-virtual"><scope>JWT::Algorithms::RS512Algorithm</scope><name>CertificateAlgorithm</name></member>
+      <member refid="class_j_w_t_1_1_algorithms_1_1_certificate_algorithm_1a1721400370a9a1334622962e86e09a1a" prot="protected" virt="non-virtual"><scope>JWT::Algorithms::RS512Algorithm</scope><name>CertificateAlgorithm</name></member>
+      <member refid="class_j_w_t_1_1_algorithms_1_1_r_s_algorithm_1a2365eb987babdec4c1bb3fe69530fd67" prot="protected" virt="virtual"><scope>JWT::Algorithms::RS512Algorithm</scope><name>GetPrivateKey</name></member>
+      <member refid="class_j_w_t_1_1_algorithms_1_1_r_s_algorithm_1a26eeb7cd2c4f7b08fafd00651f951bb9" prot="protected" virt="virtual"><scope>JWT::Algorithms::RS512Algorithm</scope><name>GetPublicKey</name></member>
+      <member refid="class_j_w_t_1_1_algorithms_1_1_r_s512_algorithm_1acf668a2135db2d2f3e535e3df59aa4c0" prot="public" virt="non-virtual"><scope>JWT::Algorithms::RS512Algorithm</scope><name>HashAlgorithmName</name></member>
+      <member refid="class_j_w_t_1_1_algorithms_1_1_r_s512_algorithm_1a6df1d356f2be4665e13ef65f00137345" prot="public" virt="non-virtual"><scope>JWT::Algorithms::RS512Algorithm</scope><name>Name</name></member>
+      <member refid="class_j_w_t_1_1_algorithms_1_1_r_s512_algorithm_1a426a76cd0fb3921797af211b9ebbf132" prot="public" virt="non-virtual"><scope>JWT::Algorithms::RS512Algorithm</scope><name>RS512Algorithm</name></member>
+      <member refid="class_j_w_t_1_1_algorithms_1_1_r_s512_algorithm_1a38b8a256d39c1d88c9f5eb64fd6a9d13" prot="public" virt="non-virtual"><scope>JWT::Algorithms::RS512Algorithm</scope><name>RS512Algorithm</name></member>
+      <member refid="class_j_w_t_1_1_algorithms_1_1_r_s512_algorithm_1a79bed2b7f4fa3c032a14c76f7e947dc4" prot="public" virt="non-virtual"><scope>JWT::Algorithms::RS512Algorithm</scope><name>RS512Algorithm</name></member>
+      <member refid="class_j_w_t_1_1_algorithms_1_1_r_s_algorithm_1a64131a63611025164d8f478496b5b038" prot="protected" virt="non-virtual"><scope>JWT::Algorithms::RS512Algorithm</scope><name>RSAlgorithm</name></member>
+      <member refid="class_j_w_t_1_1_algorithms_1_1_r_s_algorithm_1ace74eaab60e0f39308f14bb97050d66b" prot="protected" virt="non-virtual"><scope>JWT::Algorithms::RS512Algorithm</scope><name>RSAlgorithm</name></member>
+      <member refid="class_j_w_t_1_1_algorithms_1_1_r_s_algorithm_1ace393f5285e79df9f542be829cf54126" prot="protected" virt="non-virtual"><scope>JWT::Algorithms::RS512Algorithm</scope><name>RSAlgorithm</name></member>
+      <member refid="class_j_w_t_1_1_algorithms_1_1_certificate_algorithm_1a1a4d69530d9de76267bd7978599ed4b3" prot="public" virt="non-virtual"><scope>JWT::Algorithms::RS512Algorithm</scope><name>Sign</name></member>
+      <member refid="class_j_w_t_1_1_algorithms_1_1_certificate_algorithm_1a1ee6154637b24b75aacd2fb0d95cd685" prot="public" virt="non-virtual"><scope>JWT::Algorithms::RS512Algorithm</scope><name>Sign</name></member>
+      <member refid="class_j_w_t_1_1_algorithms_1_1_r_s_algorithm_1ae2ea827013bc5a8cf6a9d449a69c4c67" prot="protected" virt="virtual"><scope>JWT::Algorithms::RS512Algorithm</scope><name>SignData</name></member>
+      <member refid="class_j_w_t_1_1_algorithms_1_1_certificate_algorithm_1a2a9f256e62c57ef7d3c49560de27fe06" prot="public" virt="non-virtual"><scope>JWT::Algorithms::RS512Algorithm</scope><name>Verify</name></member>
+      <member refid="class_j_w_t_1_1_algorithms_1_1_r_s_algorithm_1ac614a310e0d22019492d75994d3a6a8e" prot="protected" virt="virtual"><scope>JWT::Algorithms::RS512Algorithm</scope><name>VerifyData</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

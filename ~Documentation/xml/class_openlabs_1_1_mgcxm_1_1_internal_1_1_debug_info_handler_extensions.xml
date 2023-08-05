@@ -1,0 +1,34 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.7" xml:lang="en-US">
+  <compounddef id="class_openlabs_1_1_mgcxm_1_1_internal_1_1_debug_info_handler_extensions" kind="class" language="C#" prot="public">
+    <compoundname>Openlabs::Mgcxm::Internal::DebugInfoHandlerExtensions</compoundname>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="class_openlabs_1_1_mgcxm_1_1_internal_1_1_debug_info_handler_extensions_1a2e871598b7e3dae869db7a6ad24a18b8" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void Openlabs.Mgcxm.Internal.DebugInfoHandlerExtensions.PrintDebugInfo&lt; TOf &gt;</definition>
+        <argsstring>(this TOf obj)</argsstring>
+        <name>PrintDebugInfo&lt; TOf &gt;</name>
+        <qualifiedname>Openlabs.Mgcxm.Internal.DebugInfoHandlerExtensions.PrintDebugInfo&lt; TOf &gt;</qualifiedname>
+        <param>
+          <type>this TOf</type>
+          <declname>obj</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/adenf/RiderProjects/Openlabs.Mgcxm/Openlabs.Mgcxm/Internal/DebugInfoHandler.cs" line="12" column="19" bodyfile="C:/Users/adenf/RiderProjects/Openlabs.Mgcxm/Openlabs.Mgcxm/Internal/DebugInfoHandler.cs" bodystart="12" bodyend="29"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/Users/adenf/RiderProjects/Openlabs.Mgcxm/Openlabs.Mgcxm/Internal/DebugInfoHandler.cs" line="10" column="15" bodyfile="C:/Users/adenf/RiderProjects/Openlabs.Mgcxm/Openlabs.Mgcxm/Internal/DebugInfoHandler.cs" bodystart="11" bodyend="30"/>
+    <listofallmembers>
+      <member refid="class_openlabs_1_1_mgcxm_1_1_internal_1_1_debug_info_handler_extensions_1a2e871598b7e3dae869db7a6ad24a18b8" prot="public" virt="non-virtual"><scope>Openlabs::Mgcxm::Internal::DebugInfoHandlerExtensions</scope><name>PrintDebugInfo&lt; TOf &gt;</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

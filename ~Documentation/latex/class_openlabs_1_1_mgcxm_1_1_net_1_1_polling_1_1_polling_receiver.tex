@@ -1,0 +1,152 @@
+\doxysection{Openlabs.\+Mgcxm.\+Net.\+Polling.\+Polling\+Receiver Class Reference}
+\hypertarget{class_openlabs_1_1_mgcxm_1_1_net_1_1_polling_1_1_polling_receiver}{}\label{class_openlabs_1_1_mgcxm_1_1_net_1_1_polling_1_1_polling_receiver}\index{Openlabs.Mgcxm.Net.Polling.PollingReceiver@{Openlabs.Mgcxm.Net.Polling.PollingReceiver}}
+
+
+Represents a polling receiver that can send poll requests and handle poll responses.  
+
+
+
+
+Inheritance diagram for Openlabs.\+Mgcxm.\+Net.\+Polling.\+Polling\+Receiver\+:
+% FIG 0
+
+
+Collaboration diagram for Openlabs.\+Mgcxm.\+Net.\+Polling.\+Polling\+Receiver\+:
+% FIG 1
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_openlabs_1_1_mgcxm_1_1_net_1_1_polling_1_1_polling_receiver_af0db027a0c642fb260f36d3f271d2d67}{Polling\+Receiver}} ()
+\begin{DoxyCompactList}\small\item\em Initializes a new instance of the Polling\+Receiver class. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_openlabs_1_1_mgcxm_1_1_net_1_1_polling_1_1_polling_receiver_ae0009c18d42e37b702f1c5215de20125}{Send\+Poll}} (object? sender, \mbox{\hyperlink{namespace_openlabs_1_1_mgcxm_1_1_net_1_1_polling_a021c8fd0a263d6965d9c89fa9528920e}{On\+Poll\+Accepted}} callback)
+\begin{DoxyCompactList}\small\item\em Sends a poll request with the provided callback function. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_openlabs_1_1_mgcxm_1_1_net_1_1_polling_1_1_polling_receiver_a6339d95cc9d06393e474d00fe2a498fb}{Trash}} ()
+\begin{DoxyCompactList}\small\item\em Disposes of the polling receiver and deregisters it from the object manager. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{interface_openlabs_1_1_mgcxm_1_1_internal_1_1_system_objects_1_1_i_mgcxm_system_object_ab14e018c681d09992e11bf3de82c5b45}{Trash}} ()
+\begin{DoxyCompactList}\small\item\em Get rid of this object from memory. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static readonly \mbox{\hyperlink{class_openlabs_1_1_mgcxm_1_1_common_1_1_duration}{Duration}} \mbox{\hyperlink{class_openlabs_1_1_mgcxm_1_1_net_1_1_polling_1_1_polling_receiver_a9ae8219cf87a3c5fec24181cf2a1dc4b}{Max\+Timeout}} = Duration.\+Create(Duration\+Type.\+Seconds, 5)
+\begin{DoxyCompactList}\small\item\em The maximum timeout duration for a poll request. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+Stopwatch \mbox{\hyperlink{class_openlabs_1_1_mgcxm_1_1_net_1_1_polling_1_1_polling_receiver_aadbcd8e98b3907c94e09931531dff04e}{Timeout\+Stopwatch}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Gets the timeout stopwatch associated with the polling receiver. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_openlabs_1_1_mgcxm_1_1_internal_1_1_action_event}{Action\+Event}}$<$ \mbox{\hyperlink{class_openlabs_1_1_mgcxm_1_1_net_1_1_polling_1_1_poll_request}{Poll\+Request}} $>$ \mbox{\hyperlink{class_openlabs_1_1_mgcxm_1_1_net_1_1_polling_1_1_polling_receiver_ae14736a1edd2035b92b3ebfde3f12f22}{On\+Poll\+Received}} = new \mbox{\hyperlink{class_openlabs_1_1_mgcxm_1_1_internal_1_1_action_event}{Action\+Event}}$<$\mbox{\hyperlink{class_openlabs_1_1_mgcxm_1_1_net_1_1_polling_1_1_poll_request}{Poll\+Request}}$>$()\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Event that is raised when a poll request is received. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{struct_openlabs_1_1_mgcxm_1_1_internal_1_1_mgcxm_id}{Mgcxm\+Id}} \mbox{\hyperlink{class_openlabs_1_1_mgcxm_1_1_net_1_1_polling_1_1_polling_receiver_af9b545b92a1a20c93979a30ff4ae5ed1}{Allocated\+Id}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Gets the unique identifier of the polling receiver. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Properties inherited from \mbox{\hyperlink{interface_openlabs_1_1_mgcxm_1_1_internal_1_1_system_objects_1_1_i_mgcxm_system_object}{Openlabs.\+Mgcxm.\+Internal.\+System\+Objects.\+IMgcxm\+System\+Object}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{struct_openlabs_1_1_mgcxm_1_1_internal_1_1_mgcxm_id}{Mgcxm\+Id}} \mbox{\hyperlink{interface_openlabs_1_1_mgcxm_1_1_internal_1_1_system_objects_1_1_i_mgcxm_system_object_afd31aa32e2b847ad283d3c5d5ce90e85}{Allocated\+Id}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Represents a polling receiver that can send poll requests and handle poll responses. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_openlabs_1_1_mgcxm_1_1_net_1_1_polling_1_1_polling_receiver_af0db027a0c642fb260f36d3f271d2d67}\label{class_openlabs_1_1_mgcxm_1_1_net_1_1_polling_1_1_polling_receiver_af0db027a0c642fb260f36d3f271d2d67} 
+\index{Openlabs.Mgcxm.Net.Polling.PollingReceiver@{Openlabs.Mgcxm.Net.Polling.PollingReceiver}!PollingReceiver@{PollingReceiver}}
+\index{PollingReceiver@{PollingReceiver}!Openlabs.Mgcxm.Net.Polling.PollingReceiver@{Openlabs.Mgcxm.Net.Polling.PollingReceiver}}
+\doxysubsubsection{\texorpdfstring{PollingReceiver()}{PollingReceiver()}}
+{\footnotesize\ttfamily Openlabs.\+Mgcxm.\+Net.\+Polling.\+Polling\+Receiver.\+Polling\+Receiver (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Initializes a new instance of the Polling\+Receiver class. 
+
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_openlabs_1_1_mgcxm_1_1_net_1_1_polling_1_1_polling_receiver_ae0009c18d42e37b702f1c5215de20125}\label{class_openlabs_1_1_mgcxm_1_1_net_1_1_polling_1_1_polling_receiver_ae0009c18d42e37b702f1c5215de20125} 
+\index{Openlabs.Mgcxm.Net.Polling.PollingReceiver@{Openlabs.Mgcxm.Net.Polling.PollingReceiver}!SendPoll@{SendPoll}}
+\index{SendPoll@{SendPoll}!Openlabs.Mgcxm.Net.Polling.PollingReceiver@{Openlabs.Mgcxm.Net.Polling.PollingReceiver}}
+\doxysubsubsection{\texorpdfstring{SendPoll()}{SendPoll()}}
+{\footnotesize\ttfamily void Openlabs.\+Mgcxm.\+Net.\+Polling.\+Polling\+Receiver.\+Send\+Poll (\begin{DoxyParamCaption}\item[{object?}]{sender,  }\item[{\mbox{\hyperlink{namespace_openlabs_1_1_mgcxm_1_1_net_1_1_polling_a021c8fd0a263d6965d9c89fa9528920e}{On\+Poll\+Accepted}}}]{callback }\end{DoxyParamCaption})}
+
+
+
+Sends a poll request with the provided callback function. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em sender} & The object that initiated the poll.\\
+\hline
+{\em callback} & The callback function to be invoked when the poll is accepted.\\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_openlabs_1_1_mgcxm_1_1_net_1_1_polling_1_1_polling_receiver_a6339d95cc9d06393e474d00fe2a498fb}\label{class_openlabs_1_1_mgcxm_1_1_net_1_1_polling_1_1_polling_receiver_a6339d95cc9d06393e474d00fe2a498fb} 
+\index{Openlabs.Mgcxm.Net.Polling.PollingReceiver@{Openlabs.Mgcxm.Net.Polling.PollingReceiver}!Trash@{Trash}}
+\index{Trash@{Trash}!Openlabs.Mgcxm.Net.Polling.PollingReceiver@{Openlabs.Mgcxm.Net.Polling.PollingReceiver}}
+\doxysubsubsection{\texorpdfstring{Trash()}{Trash()}}
+{\footnotesize\ttfamily void Openlabs.\+Mgcxm.\+Net.\+Polling.\+Polling\+Receiver.\+Trash (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Disposes of the polling receiver and deregisters it from the object manager. 
+
+
+
+Implements \mbox{\hyperlink{interface_openlabs_1_1_mgcxm_1_1_internal_1_1_system_objects_1_1_i_mgcxm_system_object_ab14e018c681d09992e11bf3de82c5b45}{Openlabs.\+Mgcxm.\+Internal.\+System\+Objects.\+IMgcxm\+System\+Object}}.
+
+
+
+\doxysubsection{Member Data Documentation}
+\Hypertarget{class_openlabs_1_1_mgcxm_1_1_net_1_1_polling_1_1_polling_receiver_a9ae8219cf87a3c5fec24181cf2a1dc4b}\label{class_openlabs_1_1_mgcxm_1_1_net_1_1_polling_1_1_polling_receiver_a9ae8219cf87a3c5fec24181cf2a1dc4b} 
+\index{Openlabs.Mgcxm.Net.Polling.PollingReceiver@{Openlabs.Mgcxm.Net.Polling.PollingReceiver}!MaxTimeout@{MaxTimeout}}
+\index{MaxTimeout@{MaxTimeout}!Openlabs.Mgcxm.Net.Polling.PollingReceiver@{Openlabs.Mgcxm.Net.Polling.PollingReceiver}}
+\doxysubsubsection{\texorpdfstring{MaxTimeout}{MaxTimeout}}
+{\footnotesize\ttfamily readonly \mbox{\hyperlink{class_openlabs_1_1_mgcxm_1_1_common_1_1_duration}{Duration}} Openlabs.\+Mgcxm.\+Net.\+Polling.\+Polling\+Receiver.\+Max\+Timeout = Duration.\+Create(Duration\+Type.\+Seconds, 5)\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+The maximum timeout duration for a poll request. 
+
+
+
+\doxysubsection{Property Documentation}
+\Hypertarget{class_openlabs_1_1_mgcxm_1_1_net_1_1_polling_1_1_polling_receiver_af9b545b92a1a20c93979a30ff4ae5ed1}\label{class_openlabs_1_1_mgcxm_1_1_net_1_1_polling_1_1_polling_receiver_af9b545b92a1a20c93979a30ff4ae5ed1} 
+\index{Openlabs.Mgcxm.Net.Polling.PollingReceiver@{Openlabs.Mgcxm.Net.Polling.PollingReceiver}!AllocatedId@{AllocatedId}}
+\index{AllocatedId@{AllocatedId}!Openlabs.Mgcxm.Net.Polling.PollingReceiver@{Openlabs.Mgcxm.Net.Polling.PollingReceiver}}
+\doxysubsubsection{\texorpdfstring{AllocatedId}{AllocatedId}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_openlabs_1_1_mgcxm_1_1_internal_1_1_mgcxm_id}{Mgcxm\+Id}} Openlabs.\+Mgcxm.\+Net.\+Polling.\+Polling\+Receiver.\+Allocated\+Id\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+Gets the unique identifier of the polling receiver. 
+
+
+
+Implements \mbox{\hyperlink{interface_openlabs_1_1_mgcxm_1_1_internal_1_1_system_objects_1_1_i_mgcxm_system_object_afd31aa32e2b847ad283d3c5d5ce90e85}{Openlabs.\+Mgcxm.\+Internal.\+System\+Objects.\+IMgcxm\+System\+Object}}.
+
+\Hypertarget{class_openlabs_1_1_mgcxm_1_1_net_1_1_polling_1_1_polling_receiver_ae14736a1edd2035b92b3ebfde3f12f22}\label{class_openlabs_1_1_mgcxm_1_1_net_1_1_polling_1_1_polling_receiver_ae14736a1edd2035b92b3ebfde3f12f22} 
+\index{Openlabs.Mgcxm.Net.Polling.PollingReceiver@{Openlabs.Mgcxm.Net.Polling.PollingReceiver}!OnPollReceived@{OnPollReceived}}
+\index{OnPollReceived@{OnPollReceived}!Openlabs.Mgcxm.Net.Polling.PollingReceiver@{Openlabs.Mgcxm.Net.Polling.PollingReceiver}}
+\doxysubsubsection{\texorpdfstring{OnPollReceived}{OnPollReceived}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_openlabs_1_1_mgcxm_1_1_internal_1_1_action_event}{Action\+Event}}$<$\mbox{\hyperlink{class_openlabs_1_1_mgcxm_1_1_net_1_1_polling_1_1_poll_request}{Poll\+Request}}$>$ Openlabs.\+Mgcxm.\+Net.\+Polling.\+Polling\+Receiver.\+On\+Poll\+Received = new \mbox{\hyperlink{class_openlabs_1_1_mgcxm_1_1_internal_1_1_action_event}{Action\+Event}}$<$\mbox{\hyperlink{class_openlabs_1_1_mgcxm_1_1_net_1_1_polling_1_1_poll_request}{Poll\+Request}}$>$()\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+Event that is raised when a poll request is received. 
+
+\Hypertarget{class_openlabs_1_1_mgcxm_1_1_net_1_1_polling_1_1_polling_receiver_aadbcd8e98b3907c94e09931531dff04e}\label{class_openlabs_1_1_mgcxm_1_1_net_1_1_polling_1_1_polling_receiver_aadbcd8e98b3907c94e09931531dff04e} 
+\index{Openlabs.Mgcxm.Net.Polling.PollingReceiver@{Openlabs.Mgcxm.Net.Polling.PollingReceiver}!TimeoutStopwatch@{TimeoutStopwatch}}
+\index{TimeoutStopwatch@{TimeoutStopwatch}!Openlabs.Mgcxm.Net.Polling.PollingReceiver@{Openlabs.Mgcxm.Net.Polling.PollingReceiver}}
+\doxysubsubsection{\texorpdfstring{TimeoutStopwatch}{TimeoutStopwatch}}
+{\footnotesize\ttfamily Stopwatch Openlabs.\+Mgcxm.\+Net.\+Polling.\+Polling\+Receiver.\+Timeout\+Stopwatch\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+Gets the timeout stopwatch associated with the polling receiver. 
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/adenf/\+Rider\+Projects/\+Openlabs.\+Mgcxm/\+Openlabs.\+Mgcxm/\+Net/\+Web\+Socket/\+Polling/\mbox{\hyperlink{_polling_receiver_8cs}{Polling\+Receiver.\+cs}}\end{DoxyCompactItemize}

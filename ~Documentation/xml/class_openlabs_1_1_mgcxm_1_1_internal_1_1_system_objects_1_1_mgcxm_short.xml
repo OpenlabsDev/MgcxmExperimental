@@ -1,0 +1,106 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.7" xml:lang="en-US">
+  <compounddef id="class_openlabs_1_1_mgcxm_1_1_internal_1_1_system_objects_1_1_mgcxm_short" kind="class" language="C#" prot="public">
+    <compoundname>Openlabs::Mgcxm::Internal::SystemObjects::MgcxmShort</compoundname>
+    <basecompoundref refid="class_openlabs_1_1_mgcxm_1_1_internal_1_1_system_objects_1_1_mgcxm_object" prot="public" virt="non-virtual">Openlabs.Mgcxm.Internal.SystemObjects.MgcxmObject&lt; short &gt;</basecompoundref>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_openlabs_1_1_mgcxm_1_1_internal_1_1_system_objects_1_1_mgcxm_short_1a266156ba4c134f797843d8a4d20476b1" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Openlabs.Mgcxm.Internal.SystemObjects.MgcxmShort.MgcxmShort</definition>
+        <argsstring>(short obj)</argsstring>
+        <name>MgcxmShort</name>
+        <qualifiedname>Openlabs.Mgcxm.Internal.SystemObjects.MgcxmShort.MgcxmShort</qualifiedname>
+        <param>
+          <type>short</type>
+          <declname>obj</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/adenf/RiderProjects/Openlabs.Mgcxm/Openlabs.Mgcxm/Internal/SystemObjects/MgcxmObjectParts.cs" line="65" column="12" bodyfile="C:/Users/adenf/RiderProjects/Openlabs.Mgcxm/Openlabs.Mgcxm/Internal/SystemObjects/MgcxmObjectParts.cs" bodystart="65" bodyend="65"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="class_openlabs_1_1_mgcxm_1_1_internal_1_1_system_objects_1_1_mgcxm_short_1a0f13444c8e9c5944e3bd0a5134b7c95c" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>implicit</type>
+        <definition>static implicit Openlabs.Mgcxm.Internal.SystemObjects.MgcxmShort.operator short</definition>
+        <argsstring>(MgcxmShort obj)</argsstring>
+        <name>operator short</name>
+        <qualifiedname>Openlabs.Mgcxm.Internal.SystemObjects.MgcxmShort.operator short</qualifiedname>
+        <param>
+          <type><ref refid="class_openlabs_1_1_mgcxm_1_1_internal_1_1_system_objects_1_1_mgcxm_short" kindref="compound">MgcxmShort</ref></type>
+          <declname>obj</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/adenf/RiderProjects/Openlabs.Mgcxm/Openlabs.Mgcxm/Internal/SystemObjects/MgcxmObjectParts.cs" line="67" column="28"/>
+      </memberdef>
+      <memberdef kind="function" id="class_openlabs_1_1_mgcxm_1_1_internal_1_1_system_objects_1_1_mgcxm_short_1a9f148b3e81cbfe75b85888b72272a08a" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>implicit</type>
+        <definition>static implicit Openlabs.Mgcxm.Internal.SystemObjects.MgcxmShort.operator MgcxmShort</definition>
+        <argsstring>(short obj)</argsstring>
+        <name>operator MgcxmShort</name>
+        <qualifiedname>Openlabs.Mgcxm.Internal.SystemObjects.MgcxmShort.operator MgcxmShort</qualifiedname>
+        <param>
+          <type>short</type>
+          <declname>obj</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/adenf/RiderProjects/Openlabs.Mgcxm/Openlabs.Mgcxm/Internal/SystemObjects/MgcxmObjectParts.cs" line="68" column="28"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>MgcxmObject&lt; short &gt;</label>
+        <link refid="class_openlabs_1_1_mgcxm_1_1_internal_1_1_system_objects_1_1_mgcxm_object"/>
+      </node>
+      <node id="1">
+        <label>Openlabs.Mgcxm.Internal.SystemObjects.MgcxmShort</label>
+        <link refid="class_openlabs_1_1_mgcxm_1_1_internal_1_1_system_objects_1_1_mgcxm_short"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>MgcxmObject&lt; short &gt;</label>
+        <link refid="class_openlabs_1_1_mgcxm_1_1_internal_1_1_system_objects_1_1_mgcxm_object"/>
+      </node>
+      <node id="1">
+        <label>Openlabs.Mgcxm.Internal.SystemObjects.MgcxmShort</label>
+        <link refid="class_openlabs_1_1_mgcxm_1_1_internal_1_1_system_objects_1_1_mgcxm_short"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="C:/Users/adenf/RiderProjects/Openlabs.Mgcxm/Openlabs.Mgcxm/Internal/SystemObjects/MgcxmObjectParts.cs" line="63" column="7" bodyfile="C:/Users/adenf/RiderProjects/Openlabs.Mgcxm/Openlabs.Mgcxm/Internal/SystemObjects/MgcxmObjectParts.cs" bodystart="64" bodyend="69"/>
+    <listofallmembers>
+      <member refid="class_openlabs_1_1_mgcxm_1_1_internal_1_1_system_objects_1_1_mgcxm_object_1adcda4a69c00fd202c0ae1bc494bde6c3" prot="public" virt="non-virtual"><scope>Openlabs::Mgcxm::Internal::SystemObjects::MgcxmShort</scope><name>AllocatedId</name></member>
+      <member refid="class_openlabs_1_1_mgcxm_1_1_internal_1_1_system_objects_1_1_mgcxm_object_1a9d23fbd79659c79e449391acd8bd2480" prot="public" virt="non-virtual"><scope>Openlabs::Mgcxm::Internal::SystemObjects::MgcxmShort</scope><name>MgcxmObject</name></member>
+      <member refid="class_openlabs_1_1_mgcxm_1_1_internal_1_1_system_objects_1_1_mgcxm_short_1a266156ba4c134f797843d8a4d20476b1" prot="public" virt="non-virtual"><scope>Openlabs::Mgcxm::Internal::SystemObjects::MgcxmShort</scope><name>MgcxmShort</name></member>
+      <member refid="class_openlabs_1_1_mgcxm_1_1_internal_1_1_system_objects_1_1_mgcxm_object_1ae48561d0742bb9f4cba2bad2eaf3f519" prot="public" virt="non-virtual"><scope>Openlabs::Mgcxm::Internal::SystemObjects::MgcxmShort</scope><name>operator MgcxmObject</name></member>
+      <member refid="class_openlabs_1_1_mgcxm_1_1_internal_1_1_system_objects_1_1_mgcxm_short_1a9f148b3e81cbfe75b85888b72272a08a" prot="public" virt="non-virtual"><scope>Openlabs::Mgcxm::Internal::SystemObjects::MgcxmShort</scope><name>operator MgcxmShort</name></member>
+      <member refid="class_openlabs_1_1_mgcxm_1_1_internal_1_1_system_objects_1_1_mgcxm_short_1a0f13444c8e9c5944e3bd0a5134b7c95c" prot="public" virt="non-virtual"><scope>Openlabs::Mgcxm::Internal::SystemObjects::MgcxmShort</scope><name>operator short</name></member>
+      <member refid="class_openlabs_1_1_mgcxm_1_1_internal_1_1_system_objects_1_1_mgcxm_object_1a9f6afc5bd98e6a745639a03d6d0167b0" prot="public" virt="non-virtual"><scope>Openlabs::Mgcxm::Internal::SystemObjects::MgcxmShort</scope><name>operator T</name></member>
+      <member refid="class_openlabs_1_1_mgcxm_1_1_internal_1_1_system_objects_1_1_mgcxm_object_1a23f633157f4160455f171f8591a7d973" prot="protected" virt="non-virtual"><scope>Openlabs::Mgcxm::Internal::SystemObjects::MgcxmShort</scope><name>Retrieve</name></member>
+      <member refid="class_openlabs_1_1_mgcxm_1_1_internal_1_1_system_objects_1_1_mgcxm_object_1a18a325de1eb61f905e19d1132e3c5f43" prot="public" virt="non-virtual"><scope>Openlabs::Mgcxm::Internal::SystemObjects::MgcxmShort</scope><name>Trash</name></member>
+      <member refid="class_openlabs_1_1_mgcxm_1_1_internal_1_1_system_objects_1_1_mgcxm_object_1ae685ec17ad6d040c029280d98d37925a" prot="public" virt="non-virtual"><scope>Openlabs::Mgcxm::Internal::SystemObjects::MgcxmShort</scope><name>Value</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,34 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_namespace_openlabs_1_1_mgcxm_1_1_internal_1_1_system_objects" xml:lang="en-US">
+<title>Openlabs.Mgcxm.Internal.SystemObjects Namespace Reference</title>
+<indexterm><primary>Openlabs.Mgcxm.Internal.SystemObjects</primary></indexterm>
+<simplesect>
+    <title>Classes    </title>
+        <itemizedlist>
+            <listitem><para>interface <link linkend="_interface_openlabs_1_1_mgcxm_1_1_internal_1_1_system_objects_1_1_i_mgcxm_system_object">IMgcxmSystemObject</link></para>
+</listitem>
+            <listitem><para>class <link linkend="_class_openlabs_1_1_mgcxm_1_1_internal_1_1_system_objects_1_1_mgcxm_array">MgcxmArray</link></para>
+</listitem>
+            <listitem><para>class <link linkend="_class_openlabs_1_1_mgcxm_1_1_internal_1_1_system_objects_1_1_mgcxm_char">MgcxmChar</link></para>
+</listitem>
+            <listitem><para>class <link linkend="_class_openlabs_1_1_mgcxm_1_1_internal_1_1_system_objects_1_1_mgcxm_int">MgcxmInt</link></para>
+</listitem>
+            <listitem><para>class <link linkend="_class_openlabs_1_1_mgcxm_1_1_internal_1_1_system_objects_1_1_mgcxm_long">MgcxmLong</link></para>
+</listitem>
+            <listitem><para>class <link linkend="_class_openlabs_1_1_mgcxm_1_1_internal_1_1_system_objects_1_1_mgcxm_object">MgcxmObject</link></para>
+</listitem>
+            <listitem><para>class <link linkend="_class_openlabs_1_1_mgcxm_1_1_internal_1_1_system_objects_1_1_mgcxm_object_base">MgcxmObjectBase</link></para>
+</listitem>
+            <listitem><para>class <link linkend="_class_openlabs_1_1_mgcxm_1_1_internal_1_1_system_objects_1_1_mgcxm_short">MgcxmShort</link></para>
+</listitem>
+            <listitem><para>class <link linkend="_class_openlabs_1_1_mgcxm_1_1_internal_1_1_system_objects_1_1_mgcxm_string">MgcxmString</link></para>
+</listitem>
+            <listitem><para>class <link linkend="_class_openlabs_1_1_mgcxm_1_1_internal_1_1_system_objects_1_1_mgcxm_uint">MgcxmUint</link></para>
+</listitem>
+            <listitem><para>class <link linkend="_class_openlabs_1_1_mgcxm_1_1_internal_1_1_system_objects_1_1_mgcxm_ulong">MgcxmUlong</link></para>
+</listitem>
+            <listitem><para>class <link linkend="_class_openlabs_1_1_mgcxm_1_1_internal_1_1_system_objects_1_1_mgcxm_ushort">MgcxmUshort</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+</section>

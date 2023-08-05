@@ -1,0 +1,59 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_class_openlabs_1_1_mgcxm_1_1_internal_1_1_log_message" xml:lang="en-US">
+<title>Openlabs.Mgcxm.Internal.LogMessage Class Reference</title>
+<indexterm><primary>Openlabs.Mgcxm.Internal.LogMessage</primary></indexterm>
+Collaboration diagram for Openlabs.Mgcxm.Internal.LogMessage:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="class_openlabs_1_1_mgcxm_1_1_internal_1_1_log_message__coll__graph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+<simplesect>
+    <title>Public Attributes    </title>
+        <itemizedlist>
+            <listitem><para>DateTime <link linkend="_class_openlabs_1_1_mgcxm_1_1_internal_1_1_log_message_1acbc4a719a67d2a32a78d887956114439">time</link></para>
+</listitem>
+            <listitem><para>ConsoleColor <link linkend="_class_openlabs_1_1_mgcxm_1_1_internal_1_1_log_message_1a1579a1118809d4214da78ec69e4bb2b1">previousColor</link></para>
+</listitem>
+            <listitem><para>ConsoleColor <link linkend="_class_openlabs_1_1_mgcxm_1_1_internal_1_1_log_message_1ab301eca403e9253413aa157e1aa1f131">color</link></para>
+</listitem>
+            <listitem><para>string <link linkend="_class_openlabs_1_1_mgcxm_1_1_internal_1_1_log_message_1adf254cc560d33c5ef16f29fd09ef59b7">message</link></para>
+</listitem>
+            <listitem><para><link linkend="_class_openlabs_1_1_mgcxm_1_1_internal_1_1_logger_sink">LoggerSink</link>? <link linkend="_class_openlabs_1_1_mgcxm_1_1_internal_1_1_log_message_1ae9c2f0463a5578f5ba4e3289c97a3a5c">sink</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Member Data Documentation</title>
+<anchor xml:id="_class_openlabs_1_1_mgcxm_1_1_internal_1_1_log_message_1ab301eca403e9253413aa157e1aa1f131"/><section>
+    <title>color</title>
+<indexterm><primary>color</primary><secondary>Openlabs.Mgcxm.Internal.LogMessage</secondary></indexterm>
+<indexterm><primary>Openlabs.Mgcxm.Internal.LogMessage</primary><secondary>color</secondary></indexterm>
+<para><computeroutput>ConsoleColor Openlabs.Mgcxm.Internal.LogMessage.color</computeroutput></para></section>
+<anchor xml:id="_class_openlabs_1_1_mgcxm_1_1_internal_1_1_log_message_1adf254cc560d33c5ef16f29fd09ef59b7"/><section>
+    <title>message</title>
+<indexterm><primary>message</primary><secondary>Openlabs.Mgcxm.Internal.LogMessage</secondary></indexterm>
+<indexterm><primary>Openlabs.Mgcxm.Internal.LogMessage</primary><secondary>message</secondary></indexterm>
+<para><computeroutput>string Openlabs.Mgcxm.Internal.LogMessage.message</computeroutput></para></section>
+<anchor xml:id="_class_openlabs_1_1_mgcxm_1_1_internal_1_1_log_message_1a1579a1118809d4214da78ec69e4bb2b1"/><section>
+    <title>previousColor</title>
+<indexterm><primary>previousColor</primary><secondary>Openlabs.Mgcxm.Internal.LogMessage</secondary></indexterm>
+<indexterm><primary>Openlabs.Mgcxm.Internal.LogMessage</primary><secondary>previousColor</secondary></indexterm>
+<para><computeroutput>ConsoleColor Openlabs.Mgcxm.Internal.LogMessage.previousColor</computeroutput></para></section>
+<anchor xml:id="_class_openlabs_1_1_mgcxm_1_1_internal_1_1_log_message_1ae9c2f0463a5578f5ba4e3289c97a3a5c"/><section>
+    <title>sink</title>
+<indexterm><primary>sink</primary><secondary>Openlabs.Mgcxm.Internal.LogMessage</secondary></indexterm>
+<indexterm><primary>Openlabs.Mgcxm.Internal.LogMessage</primary><secondary>sink</secondary></indexterm>
+<para><computeroutput><link linkend="_class_openlabs_1_1_mgcxm_1_1_internal_1_1_logger_sink">LoggerSink</link>? Openlabs.Mgcxm.Internal.LogMessage.sink</computeroutput></para></section>
+<anchor xml:id="_class_openlabs_1_1_mgcxm_1_1_internal_1_1_log_message_1acbc4a719a67d2a32a78d887956114439"/><section>
+    <title>time</title>
+<indexterm><primary>time</primary><secondary>Openlabs.Mgcxm.Internal.LogMessage</secondary></indexterm>
+<indexterm><primary>Openlabs.Mgcxm.Internal.LogMessage</primary><secondary>time</secondary></indexterm>
+<para><computeroutput>DateTime Openlabs.Mgcxm.Internal.LogMessage.time</computeroutput></para></section>
+<para>
+The documentation for this class was generated from the following file:</para>
+C:/Users/adenf/RiderProjects/Openlabs.Mgcxm/Openlabs.Mgcxm/Internal/<link linkend="__logger_8cs">Logger.cs</link></section>
+</section>

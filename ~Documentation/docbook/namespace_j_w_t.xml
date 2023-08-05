@@ -1,0 +1,109 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_namespace_j_w_t" xml:lang="en-US">
+<title>JWT Namespace Reference</title>
+<indexterm><primary>JWT</primary></indexterm>
+<simplesect>
+    <title>Namespaces    </title>
+        <itemizedlist>
+            <listitem><para>namespace <link linkend="_namespace_j_w_t_1_1_algorithms">Algorithms</link></para>
+</listitem>
+            <listitem><para>namespace <link linkend="_namespace_j_w_t_1_1_builder">Builder</link></para>
+</listitem>
+            <listitem><para>namespace <link linkend="_namespace_j_w_t_1_1_exceptions">Exceptions</link></para>
+</listitem>
+            <listitem><para>namespace <link linkend="_namespace_j_w_t_1_1_internal">Internal</link></para>
+</listitem>
+            <listitem><para>namespace <link linkend="_namespace_j_w_t_1_1_serializers">Serializers</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Classes    </title>
+        <itemizedlist>
+            <listitem><para>class <emphasis role="strong">AssemblyInfo</emphasis></para>
+</listitem>
+            <listitem><para>interface <link linkend="_interface_j_w_t_1_1_i_base64_url_encoder">IBase64UrlEncoder</link></para>
+
+<para>Represents a base64 encoder/decoder. </para>
+</listitem>
+            <listitem><para>interface <link linkend="_interface_j_w_t_1_1_i_date_time_provider">IDateTimeProvider</link></para>
+
+<para>Represents a DateTime provider. </para>
+</listitem>
+            <listitem><para>interface <link linkend="_interface_j_w_t_1_1_i_json_serializer">IJsonSerializer</link></para>
+
+<para>Provides JSON Serialize and Deserialize. Allows custom serializers used. </para>
+</listitem>
+            <listitem><para>interface <link linkend="_interface_j_w_t_1_1_i_jwt_decoder">IJwtDecoder</link></para>
+
+<para>Represents a <link linkend="_namespace_j_w_t">JWT</link> decoder. </para>
+</listitem>
+            <listitem><para>interface <link linkend="_interface_j_w_t_1_1_i_jwt_encoder">IJwtEncoder</link></para>
+
+<para>Represents a <link linkend="_namespace_j_w_t">JWT</link> encoder. </para>
+</listitem>
+            <listitem><para>interface <link linkend="_interface_j_w_t_1_1_i_jwt_validator">IJwtValidator</link></para>
+
+<para>Represents a <link linkend="_namespace_j_w_t">JWT</link> validator. </para>
+</listitem>
+            <listitem><para>class <emphasis role="strong">JsonSerializerExtensions</emphasis></para>
+
+<para>Extension methods for <formalpara><title>See also</title>
+
+<para>IJsonSerializer</para>
+</formalpara>
+/summary&gt; </para>
+</listitem>
+            <listitem><para>class <link linkend="_class_j_w_t_1_1_jwt_base64_url_encoder">JwtBase64UrlEncoder</link></para>
+
+<para>base64 encoding/decoding implementation according to the <link linkend="_namespace_j_w_t">JWT</link> spec </para>
+</listitem>
+            <listitem><para>class <link linkend="_class_j_w_t_1_1_jwt_decoder">JwtDecoder</link></para>
+
+<para>Decodes <link linkend="_namespace_j_w_t">JWT</link>. </para>
+</listitem>
+            <listitem><para>class <link linkend="_class_j_w_t_1_1_jwt_decoder_context">JwtDecoderContext</link></para>
+</listitem>
+            <listitem><para>class <emphasis role="strong">JwtDecoderExtensions</emphasis></para>
+
+<para>Extension methods for <formalpara><title>See also</title>
+
+<para>IJwtDecoder</para>
+</formalpara>
+&gt; /summary&gt; </para>
+</listitem>
+            <listitem><para>class <link linkend="_class_j_w_t_1_1_jwt_encoder">JwtEncoder</link></para>
+
+<para>Encodes Jwt. </para>
+</listitem>
+            <listitem><para>class <emphasis role="strong">JwtEncoderExtensions</emphasis></para>
+
+<para>Extension methods for <formalpara><title>See also</title>
+
+<para>IJwtEncoder</para>
+</formalpara>
+/summary&gt; </para>
+</listitem>
+            <listitem><para>class <link linkend="_class_j_w_t_1_1_jwt_parts">JwtParts</link></para>
+
+<para>Represent the parts of a <link linkend="_namespace_j_w_t">JWT</link>. </para>
+</listitem>
+            <listitem><para>class <link linkend="_class_j_w_t_1_1_jwt_validator">JwtValidator</link></para>
+
+<para>Jwt validator. </para>
+</listitem>
+            <listitem><para>class <emphasis role="strong">UnixEpoch</emphasis></para>
+</listitem>
+            <listitem><para>class <link linkend="_class_j_w_t_1_1_utc_date_time_provider">UtcDateTimeProvider</link></para>
+
+<para>Provider for UTC DateTime. </para>
+</listitem>
+            <listitem><para>class <link linkend="_class_j_w_t_1_1_validation_parameters">ValidationParameters</link></para>
+
+<para>Contains a set of parameters that are used by a JwtValidator when validating a token. </para>
+</listitem>
+            <listitem><para>class <emphasis role="strong">ValidationParametersExtensions</emphasis></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+</section>

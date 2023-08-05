@@ -1,0 +1,234 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.7" xml:lang="en-US">
+  <compounddef id="class_openlabs_1_1_mgcxm_1_1_internal_1_1_system_objects_1_1_mgcxm_object" kind="class" language="C#" prot="public">
+    <compoundname>Openlabs::Mgcxm::Internal::SystemObjects::MgcxmObject</compoundname>
+    <basecompoundref refid="class_openlabs_1_1_mgcxm_1_1_internal_1_1_system_objects_1_1_mgcxm_object_base" prot="public" virt="non-virtual">Openlabs.Mgcxm.Internal.SystemObjects.MgcxmObjectBase</basecompoundref>
+    <basecompoundref refid="interface_openlabs_1_1_mgcxm_1_1_internal_1_1_system_objects_1_1_i_mgcxm_system_object" prot="public" virt="non-virtual">Openlabs.Mgcxm.Internal.SystemObjects.IMgcxmSystemObject</basecompoundref>
+    <templateparamlist>
+      <param>
+        <type>T</type>
+      </param>
+    </templateparamlist>
+      <sectiondef kind="property">
+      <memberdef kind="property" id="class_openlabs_1_1_mgcxm_1_1_internal_1_1_system_objects_1_1_mgcxm_object_1adcda4a69c00fd202c0ae1bc494bde6c3" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="no" privatesettable="no" protectedsettable="no">
+        <type><ref refid="struct_openlabs_1_1_mgcxm_1_1_internal_1_1_mgcxm_id" kindref="compound">MgcxmId</ref></type>
+        <definition>MgcxmId Openlabs.Mgcxm.Internal.SystemObjects.MgcxmObject&lt; T &gt;.AllocatedId</definition>
+        <argsstring></argsstring>
+        <name>AllocatedId</name>
+        <qualifiedname>Openlabs.Mgcxm.Internal.SystemObjects.MgcxmObject.AllocatedId</qualifiedname>
+        <reimplements refid="interface_openlabs_1_1_mgcxm_1_1_internal_1_1_system_objects_1_1_i_mgcxm_system_object_1afd31aa32e2b847ad283d3c5d5ce90e85">AllocatedId</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/adenf/RiderProjects/Openlabs.Mgcxm/Openlabs.Mgcxm/Internal/SystemObjects/MgcxmObject.cs" line="28" column="20" bodyfile="C:/Users/adenf/RiderProjects/Openlabs.Mgcxm/Openlabs.Mgcxm/Internal/SystemObjects/MgcxmObject.cs" bodystart="28" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="property" id="class_openlabs_1_1_mgcxm_1_1_internal_1_1_system_objects_1_1_mgcxm_object_1ae685ec17ad6d040c029280d98d37925a" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="no" privatesettable="no" protectedsettable="no">
+        <type>T</type>
+        <definition>T Openlabs.Mgcxm.Internal.SystemObjects.MgcxmObject&lt; T &gt;.Value</definition>
+        <argsstring></argsstring>
+        <name>Value</name>
+        <qualifiedname>Openlabs.Mgcxm.Internal.SystemObjects.MgcxmObject.Value</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/adenf/RiderProjects/Openlabs.Mgcxm/Openlabs.Mgcxm/Internal/SystemObjects/MgcxmObject.cs" line="31" column="14" bodyfile="C:/Users/adenf/RiderProjects/Openlabs.Mgcxm/Openlabs.Mgcxm/Internal/SystemObjects/MgcxmObject.cs" bodystart="31" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_openlabs_1_1_mgcxm_1_1_internal_1_1_system_objects_1_1_mgcxm_object_1ab6edb5dbdd09f9d437be2a05a57f0f4f" prot="private" static="no" mutable="no">
+        <type><ref refid="struct_openlabs_1_1_mgcxm_1_1_internal_1_1_mgcxm_id" kindref="compound">MgcxmId</ref></type>
+        <definition>MgcxmId Openlabs.Mgcxm.Internal.SystemObjects.MgcxmObject&lt; T &gt;._id</definition>
+        <argsstring></argsstring>
+        <name>_id</name>
+        <qualifiedname>Openlabs.Mgcxm.Internal.SystemObjects.MgcxmObject._id</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/adenf/RiderProjects/Openlabs.Mgcxm/Openlabs.Mgcxm/Internal/SystemObjects/MgcxmObject.cs" line="29" column="21" bodyfile="C:/Users/adenf/RiderProjects/Openlabs.Mgcxm/Openlabs.Mgcxm/Internal/SystemObjects/MgcxmObject.cs" bodystart="29" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_openlabs_1_1_mgcxm_1_1_internal_1_1_system_objects_1_1_mgcxm_object_1ade45fb36133cf3374e1dc0aea88474ac" prot="private" static="no" mutable="no">
+        <type>T</type>
+        <definition>T Openlabs.Mgcxm.Internal.SystemObjects.MgcxmObject&lt; T &gt;._value</definition>
+        <argsstring></argsstring>
+        <name>_value</name>
+        <qualifiedname>Openlabs.Mgcxm.Internal.SystemObjects.MgcxmObject._value</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/adenf/RiderProjects/Openlabs.Mgcxm/Openlabs.Mgcxm/Internal/SystemObjects/MgcxmObject.cs" line="32" column="15" bodyfile="C:/Users/adenf/RiderProjects/Openlabs.Mgcxm/Openlabs.Mgcxm/Internal/SystemObjects/MgcxmObject.cs" bodystart="32" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_openlabs_1_1_mgcxm_1_1_internal_1_1_system_objects_1_1_mgcxm_object_1a9d23fbd79659c79e449391acd8bd2480" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Openlabs.Mgcxm.Internal.SystemObjects.MgcxmObject&lt; T &gt;.MgcxmObject</definition>
+        <argsstring>(T obj)</argsstring>
+        <name>MgcxmObject</name>
+        <qualifiedname>Openlabs.Mgcxm.Internal.SystemObjects.MgcxmObject.MgcxmObject</qualifiedname>
+        <param>
+          <type>T</type>
+          <declname>obj</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/adenf/RiderProjects/Openlabs.Mgcxm/Openlabs.Mgcxm/Internal/SystemObjects/MgcxmObject.cs" line="10" column="12" bodyfile="C:/Users/adenf/RiderProjects/Openlabs.Mgcxm/Openlabs.Mgcxm/Internal/SystemObjects/MgcxmObject.cs" bodystart="10" bodyend="16"/>
+        <references refid="struct_openlabs_1_1_mgcxm_1_1_internal_1_1_mgcxm_id_1a5f49b3fd10b2095149ede29f3a554b93">Openlabs.Mgcxm.Internal.MgcxmId.GetHashCode</references>
+      </memberdef>
+      <memberdef kind="function" id="class_openlabs_1_1_mgcxm_1_1_internal_1_1_system_objects_1_1_mgcxm_object_1a18a325de1eb61f905e19d1132e3c5f43" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Openlabs.Mgcxm.Internal.SystemObjects.MgcxmObject&lt; T &gt;.Trash</definition>
+        <argsstring>()</argsstring>
+        <name>Trash</name>
+        <qualifiedname>Openlabs.Mgcxm.Internal.SystemObjects.MgcxmObject.Trash</qualifiedname>
+        <reimplements refid="interface_openlabs_1_1_mgcxm_1_1_internal_1_1_system_objects_1_1_i_mgcxm_system_object_1ab14e018c681d09992e11bf3de82c5b45">Trash</reimplements>
+        <briefdescription>
+<para>Get rid of this object from memory. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/adenf/RiderProjects/Openlabs.Mgcxm/Openlabs.Mgcxm/Internal/SystemObjects/MgcxmObject.cs" line="25" column="17"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="class_openlabs_1_1_mgcxm_1_1_internal_1_1_system_objects_1_1_mgcxm_object_1af3d24d091eb7d9a2415af40a688d3dac" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Openlabs.Mgcxm.Internal.SystemObjects.MgcxmObject&lt; T &gt;.~MgcxmObject</definition>
+        <argsstring>()</argsstring>
+        <name>~MgcxmObject</name>
+        <qualifiedname>Openlabs.Mgcxm.Internal.SystemObjects.MgcxmObject.~MgcxmObject</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/adenf/RiderProjects/Openlabs.Mgcxm/Openlabs.Mgcxm/Internal/SystemObjects/MgcxmObject.cs" line="17" column="5"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="class_openlabs_1_1_mgcxm_1_1_internal_1_1_system_objects_1_1_mgcxm_object_1a9f6afc5bd98e6a745639a03d6d0167b0" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>implicit</type>
+        <definition>static implicit Openlabs.Mgcxm.Internal.SystemObjects.MgcxmObject&lt; T &gt;.operator T</definition>
+        <argsstring>(MgcxmObject&lt; T &gt; obj)</argsstring>
+        <name>operator T</name>
+        <qualifiedname>Openlabs.Mgcxm.Internal.SystemObjects.MgcxmObject.operator T</qualifiedname>
+        <param>
+          <type><ref refid="class_openlabs_1_1_mgcxm_1_1_internal_1_1_system_objects_1_1_mgcxm_object" kindref="compound">MgcxmObject</ref>&lt; T &gt;</type>
+          <declname>obj</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/adenf/RiderProjects/Openlabs.Mgcxm/Openlabs.Mgcxm/Internal/SystemObjects/MgcxmObject.cs" line="20" column="28"/>
+      </memberdef>
+      <memberdef kind="function" id="class_openlabs_1_1_mgcxm_1_1_internal_1_1_system_objects_1_1_mgcxm_object_1ae48561d0742bb9f4cba2bad2eaf3f519" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>implicit</type>
+        <definition>static implicit Openlabs.Mgcxm.Internal.SystemObjects.MgcxmObject&lt; T &gt;.operator MgcxmObject</definition>
+        <argsstring>(T obj)</argsstring>
+        <name>operator MgcxmObject</name>
+        <qualifiedname>Openlabs.Mgcxm.Internal.SystemObjects.MgcxmObject.operator MgcxmObject</qualifiedname>
+        <param>
+          <type>T</type>
+          <declname>obj</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/adenf/RiderProjects/Openlabs.Mgcxm/Openlabs.Mgcxm/Internal/SystemObjects/MgcxmObject.cs" line="21" column="28"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-func">
+      <memberdef kind="function" id="class_openlabs_1_1_mgcxm_1_1_internal_1_1_system_objects_1_1_mgcxm_object_1a23f633157f4160455f171f8591a7d973" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>T</type>
+        <definition>T Openlabs.Mgcxm.Internal.SystemObjects.MgcxmObject&lt; T &gt;.Retrieve</definition>
+        <argsstring>()</argsstring>
+        <name>Retrieve</name>
+        <qualifiedname>Openlabs.Mgcxm.Internal.SystemObjects.MgcxmObject.Retrieve</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/adenf/RiderProjects/Openlabs.Mgcxm/Openlabs.Mgcxm/Internal/SystemObjects/MgcxmObject.cs" line="24" column="17"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="3">
+        <label>IMgcxmSystemObject</label>
+        <link refid="interface_openlabs_1_1_mgcxm_1_1_internal_1_1_system_objects_1_1_i_mgcxm_system_object"/>
+      </node>
+      <node id="2">
+        <label>MgcxmObjectBase</label>
+        <link refid="class_openlabs_1_1_mgcxm_1_1_internal_1_1_system_objects_1_1_mgcxm_object_base"/>
+      </node>
+      <node id="1">
+        <label>Openlabs.Mgcxm.Internal.SystemObjects.MgcxmObject&lt; T &gt;</label>
+        <link refid="class_openlabs_1_1_mgcxm_1_1_internal_1_1_system_objects_1_1_mgcxm_object"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="3">
+        <label>IMgcxmSystemObject</label>
+        <link refid="interface_openlabs_1_1_mgcxm_1_1_internal_1_1_system_objects_1_1_i_mgcxm_system_object"/>
+      </node>
+      <node id="2">
+        <label>MgcxmObjectBase</label>
+        <link refid="class_openlabs_1_1_mgcxm_1_1_internal_1_1_system_objects_1_1_mgcxm_object_base"/>
+      </node>
+      <node id="1">
+        <label>Openlabs.Mgcxm.Internal.SystemObjects.MgcxmObject&lt; T &gt;</label>
+        <link refid="class_openlabs_1_1_mgcxm_1_1_internal_1_1_system_objects_1_1_mgcxm_object"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="C:/Users/adenf/RiderProjects/Openlabs.Mgcxm/Openlabs.Mgcxm/Internal/SystemObjects/MgcxmObject.cs" line="7" column="7" bodyfile="C:/Users/adenf/RiderProjects/Openlabs.Mgcxm/Openlabs.Mgcxm/Internal/SystemObjects/MgcxmObject.cs" bodystart="8" bodyend="33"/>
+    <listofallmembers>
+      <member refid="class_openlabs_1_1_mgcxm_1_1_internal_1_1_system_objects_1_1_mgcxm_object_1ab6edb5dbdd09f9d437be2a05a57f0f4f" prot="private" virt="non-virtual"><scope>Openlabs::Mgcxm::Internal::SystemObjects::MgcxmObject</scope><name>_id</name></member>
+      <member refid="class_openlabs_1_1_mgcxm_1_1_internal_1_1_system_objects_1_1_mgcxm_object_1ade45fb36133cf3374e1dc0aea88474ac" prot="private" virt="non-virtual"><scope>Openlabs::Mgcxm::Internal::SystemObjects::MgcxmObject</scope><name>_value</name></member>
+      <member refid="class_openlabs_1_1_mgcxm_1_1_internal_1_1_system_objects_1_1_mgcxm_object_1adcda4a69c00fd202c0ae1bc494bde6c3" prot="public" virt="non-virtual"><scope>Openlabs::Mgcxm::Internal::SystemObjects::MgcxmObject</scope><name>AllocatedId</name></member>
+      <member refid="class_openlabs_1_1_mgcxm_1_1_internal_1_1_system_objects_1_1_mgcxm_object_1a9d23fbd79659c79e449391acd8bd2480" prot="public" virt="non-virtual"><scope>Openlabs::Mgcxm::Internal::SystemObjects::MgcxmObject</scope><name>MgcxmObject</name></member>
+      <member refid="class_openlabs_1_1_mgcxm_1_1_internal_1_1_system_objects_1_1_mgcxm_object_1ae48561d0742bb9f4cba2bad2eaf3f519" prot="public" virt="non-virtual"><scope>Openlabs::Mgcxm::Internal::SystemObjects::MgcxmObject</scope><name>operator MgcxmObject</name></member>
+      <member refid="class_openlabs_1_1_mgcxm_1_1_internal_1_1_system_objects_1_1_mgcxm_object_1a9f6afc5bd98e6a745639a03d6d0167b0" prot="public" virt="non-virtual"><scope>Openlabs::Mgcxm::Internal::SystemObjects::MgcxmObject</scope><name>operator T</name></member>
+      <member refid="class_openlabs_1_1_mgcxm_1_1_internal_1_1_system_objects_1_1_mgcxm_object_1a23f633157f4160455f171f8591a7d973" prot="protected" virt="non-virtual"><scope>Openlabs::Mgcxm::Internal::SystemObjects::MgcxmObject</scope><name>Retrieve</name></member>
+      <member refid="class_openlabs_1_1_mgcxm_1_1_internal_1_1_system_objects_1_1_mgcxm_object_1a18a325de1eb61f905e19d1132e3c5f43" prot="public" virt="non-virtual"><scope>Openlabs::Mgcxm::Internal::SystemObjects::MgcxmObject</scope><name>Trash</name></member>
+      <member refid="class_openlabs_1_1_mgcxm_1_1_internal_1_1_system_objects_1_1_mgcxm_object_1ae685ec17ad6d040c029280d98d37925a" prot="public" virt="non-virtual"><scope>Openlabs::Mgcxm::Internal::SystemObjects::MgcxmObject</scope><name>Value</name></member>
+      <member refid="class_openlabs_1_1_mgcxm_1_1_internal_1_1_system_objects_1_1_mgcxm_object_1af3d24d091eb7d9a2415af40a688d3dac" prot="private" virt="non-virtual"><scope>Openlabs::Mgcxm::Internal::SystemObjects::MgcxmObject</scope><name>~MgcxmObject</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

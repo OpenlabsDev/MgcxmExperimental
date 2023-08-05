@@ -1,0 +1,75 @@
+\doxysection{JWT.\+IJson\+Serializer Interface Reference}
+\hypertarget{interface_j_w_t_1_1_i_json_serializer}{}\label{interface_j_w_t_1_1_i_json_serializer}\index{JWT.IJsonSerializer@{JWT.IJsonSerializer}}
+
+
+Provides JSON Serialize and Deserialize. Allows custom serializers used.  
+
+
+
+
+Inheritance diagram for JWT.\+IJson\+Serializer\+:
+% FIG 0
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+string \mbox{\hyperlink{interface_j_w_t_1_1_i_json_serializer_ade3226cd1e4a49926ed29663dc534d61}{Serialize}} (object obj)
+\begin{DoxyCompactList}\small\item\em Serializes an object to a JSON string. \end{DoxyCompactList}\item 
+object \mbox{\hyperlink{interface_j_w_t_1_1_i_json_serializer_a0b0bcab29cacd6baed58d78f8ceb574f}{Deserialize}} (Type type, string json)
+\begin{DoxyCompactList}\small\item\em Deserializes a JSON string to an object of specified type. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Provides JSON Serialize and Deserialize. Allows custom serializers used. 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{interface_j_w_t_1_1_i_json_serializer_a0b0bcab29cacd6baed58d78f8ceb574f}\label{interface_j_w_t_1_1_i_json_serializer_a0b0bcab29cacd6baed58d78f8ceb574f} 
+\index{JWT.IJsonSerializer@{JWT.IJsonSerializer}!Deserialize@{Deserialize}}
+\index{Deserialize@{Deserialize}!JWT.IJsonSerializer@{JWT.IJsonSerializer}}
+\doxysubsubsection{\texorpdfstring{Deserialize()}{Deserialize()}}
+{\footnotesize\ttfamily object JWT.\+IJson\+Serializer.\+Deserialize (\begin{DoxyParamCaption}\item[{Type}]{type,  }\item[{string}]{json }\end{DoxyParamCaption})}
+
+
+
+Deserializes a JSON string to an object of specified type. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em type} & The type of the object to deserialize to.\\
+\hline
+{\em json} & The JSON string deserialize.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Strongly-\/typed object.
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{class_j_w_t_1_1_serializers_1_1_json_net_serializer_aef6d3a6b1698d37608e512b6cbb86b8b}{JWT.\+Serializers.\+Json\+Net\+Serializer}}.
+
+\Hypertarget{interface_j_w_t_1_1_i_json_serializer_ade3226cd1e4a49926ed29663dc534d61}\label{interface_j_w_t_1_1_i_json_serializer_ade3226cd1e4a49926ed29663dc534d61} 
+\index{JWT.IJsonSerializer@{JWT.IJsonSerializer}!Serialize@{Serialize}}
+\index{Serialize@{Serialize}!JWT.IJsonSerializer@{JWT.IJsonSerializer}}
+\doxysubsubsection{\texorpdfstring{Serialize()}{Serialize()}}
+{\footnotesize\ttfamily string JWT.\+IJson\+Serializer.\+Serialize (\begin{DoxyParamCaption}\item[{object}]{obj }\end{DoxyParamCaption})}
+
+
+
+Serializes an object to a JSON string. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em obj} & The object to serialize.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+JSON string
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{class_j_w_t_1_1_serializers_1_1_json_net_serializer_a1109f00fe0ea5a9b7327c9a3aef8ada0}{JWT.\+Serializers.\+Json\+Net\+Serializer}}.
+
+
+
+The documentation for this interface was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/adenf/\+Rider\+Projects/\+Openlabs.\+Mgcxm/\+Openlabs.\+Mgcxm/\+JWT/\mbox{\hyperlink{_i_json_serializer_8cs}{IJson\+Serializer.\+cs}}\end{DoxyCompactItemize}

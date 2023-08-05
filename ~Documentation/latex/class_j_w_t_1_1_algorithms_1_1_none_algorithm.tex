@@ -1,0 +1,114 @@
+\doxysection{JWT.\+Algorithms.\+None\+Algorithm Class Reference}
+\hypertarget{class_j_w_t_1_1_algorithms_1_1_none_algorithm}{}\label{class_j_w_t_1_1_algorithms_1_1_none_algorithm}\index{JWT.Algorithms.NoneAlgorithm@{JWT.Algorithms.NoneAlgorithm}}
+
+
+Implements the \"{}\+None\"{} algorithm.  
+
+
+
+
+Inheritance diagram for JWT.\+Algorithms.\+None\+Algorithm\+:
+% FIG 0
+
+
+Collaboration diagram for JWT.\+Algorithms.\+None\+Algorithm\+:
+% FIG 1
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+byte\mbox{[}$\,$\mbox{]} \mbox{\hyperlink{class_j_w_t_1_1_algorithms_1_1_none_algorithm_aec567a5415bef88d75fd9ffa7f85a08b}{Sign}} (byte\mbox{[}$\,$\mbox{]} key, byte\mbox{[}$\,$\mbox{]} bytes\+To\+Sign)
+\begin{DoxyCompactList}\small\item\em Signs provided byte array with provided key.
+
+
+\begin{DoxyParams}{Parameters}
+{\em key} & The key used to sign the data\\
+\hline
+{\em bytes\+To\+Sign} & The data to sign\\
+\hline
+\end{DoxyParams}
+ \end{DoxyCompactList}\end{DoxyCompactItemize}
+\begin{DoxyCompactItemize}
+\item 
+byte\mbox{[}$\,$\mbox{]} \mbox{\hyperlink{interface_j_w_t_1_1_algorithms_1_1_i_jwt_algorithm_ad652a42a9eb189006c5a866a556826c0}{Sign}} (byte\mbox{[}$\,$\mbox{]} key, byte\mbox{[}$\,$\mbox{]} bytes\+To\+Sign)
+\begin{DoxyCompactList}\small\item\em Signs provided byte array with provided key. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+string \mbox{\hyperlink{class_j_w_t_1_1_algorithms_1_1_none_algorithm_aa7d65a06a27213ea317d35a264deb366}{Name}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Gets algorithm name. \end{DoxyCompactList}\item 
+Hash\+Algorithm\+Name \mbox{\hyperlink{class_j_w_t_1_1_algorithms_1_1_none_algorithm_aaa387a5acaddafc3325da65dd36dce7a}{Hash\+Algorithm\+Name}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Gets name of the hashing algorithm (e.\+g. SHA-\/256/\+SHA-\/384/\+SHA-\/512). \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Properties inherited from \mbox{\hyperlink{interface_j_w_t_1_1_algorithms_1_1_i_jwt_algorithm}{JWT.\+Algorithms.\+IJwt\+Algorithm}}}
+\begin{DoxyCompactItemize}
+\item 
+string \mbox{\hyperlink{interface_j_w_t_1_1_algorithms_1_1_i_jwt_algorithm_a62da69d146007031e3ce9d0e3e9e75d3}{Name}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Gets algorithm name. \end{DoxyCompactList}\item 
+Hash\+Algorithm\+Name \mbox{\hyperlink{interface_j_w_t_1_1_algorithms_1_1_i_jwt_algorithm_a5d291434247bc99339dc5e3b1dd2b934}{Hash\+Algorithm\+Name}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Gets name of the hashing algorithm (e.\+g. SHA-\/256/\+SHA-\/384/\+SHA-\/512). \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Implements the \"{}\+None\"{} algorithm. 
+
+RFC-\/7519
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_j_w_t_1_1_algorithms_1_1_none_algorithm_aec567a5415bef88d75fd9ffa7f85a08b}\label{class_j_w_t_1_1_algorithms_1_1_none_algorithm_aec567a5415bef88d75fd9ffa7f85a08b} 
+\index{JWT.Algorithms.NoneAlgorithm@{JWT.Algorithms.NoneAlgorithm}!Sign@{Sign}}
+\index{Sign@{Sign}!JWT.Algorithms.NoneAlgorithm@{JWT.Algorithms.NoneAlgorithm}}
+\doxysubsubsection{\texorpdfstring{Sign()}{Sign()}}
+{\footnotesize\ttfamily byte\mbox{[}$\,$\mbox{]} JWT.\+Algorithms.\+None\+Algorithm.\+Sign (\begin{DoxyParamCaption}\item[{byte\mbox{[}$\,$\mbox{]}}]{key,  }\item[{byte\mbox{[}$\,$\mbox{]}}]{bytes\+To\+Sign }\end{DoxyParamCaption})}
+
+
+
+Signs provided byte array with provided key.
+
+
+\begin{DoxyParams}{Parameters}
+{\em key} & The key used to sign the data\\
+\hline
+{\em bytes\+To\+Sign} & The data to sign\\
+\hline
+\end{DoxyParams}
+ 
+
+
+
+Implements \mbox{\hyperlink{interface_j_w_t_1_1_algorithms_1_1_i_jwt_algorithm_ad652a42a9eb189006c5a866a556826c0}{JWT.\+Algorithms.\+IJwt\+Algorithm}}.
+
+
+
+\doxysubsection{Property Documentation}
+\Hypertarget{class_j_w_t_1_1_algorithms_1_1_none_algorithm_aaa387a5acaddafc3325da65dd36dce7a}\label{class_j_w_t_1_1_algorithms_1_1_none_algorithm_aaa387a5acaddafc3325da65dd36dce7a} 
+\index{JWT.Algorithms.NoneAlgorithm@{JWT.Algorithms.NoneAlgorithm}!HashAlgorithmName@{HashAlgorithmName}}
+\index{HashAlgorithmName@{HashAlgorithmName}!JWT.Algorithms.NoneAlgorithm@{JWT.Algorithms.NoneAlgorithm}}
+\doxysubsubsection{\texorpdfstring{HashAlgorithmName}{HashAlgorithmName}}
+{\footnotesize\ttfamily Hash\+Algorithm\+Name JWT.\+Algorithms.\+None\+Algorithm.\+Hash\+Algorithm\+Name\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+Gets name of the hashing algorithm (e.\+g. SHA-\/256/\+SHA-\/384/\+SHA-\/512). 
+
+
+
+Implements \mbox{\hyperlink{interface_j_w_t_1_1_algorithms_1_1_i_jwt_algorithm_a5d291434247bc99339dc5e3b1dd2b934}{JWT.\+Algorithms.\+IJwt\+Algorithm}}.
+
+\Hypertarget{class_j_w_t_1_1_algorithms_1_1_none_algorithm_aa7d65a06a27213ea317d35a264deb366}\label{class_j_w_t_1_1_algorithms_1_1_none_algorithm_aa7d65a06a27213ea317d35a264deb366} 
+\index{JWT.Algorithms.NoneAlgorithm@{JWT.Algorithms.NoneAlgorithm}!Name@{Name}}
+\index{Name@{Name}!JWT.Algorithms.NoneAlgorithm@{JWT.Algorithms.NoneAlgorithm}}
+\doxysubsubsection{\texorpdfstring{Name}{Name}}
+{\footnotesize\ttfamily string JWT.\+Algorithms.\+None\+Algorithm.\+Name\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+Gets algorithm name. 
+
+
+
+Implements \mbox{\hyperlink{interface_j_w_t_1_1_algorithms_1_1_i_jwt_algorithm_a62da69d146007031e3ce9d0e3e9e75d3}{JWT.\+Algorithms.\+IJwt\+Algorithm}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/adenf/\+Rider\+Projects/\+Openlabs.\+Mgcxm/\+Openlabs.\+Mgcxm/\+JWT/\+Algorithms/\mbox{\hyperlink{_none_algorithm_8cs}{None\+Algorithm.\+cs}}\end{DoxyCompactItemize}

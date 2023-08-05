@@ -1,0 +1,137 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_class_openlabs_1_1_mgcxm_1_1_common_1_1_framework_1_1_open_api_url" xml:lang="en-US">
+<title>Openlabs.Mgcxm.Common.Framework.OpenApiUrl Class Reference</title>
+<indexterm><primary>Openlabs.Mgcxm.Common.Framework.OpenApiUrl</primary></indexterm>
+Inheritance diagram for Openlabs.Mgcxm.Common.Framework.OpenApiUrl:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="class_openlabs_1_1_mgcxm_1_1_common_1_1_framework_1_1_open_api_url__inherit__graph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+Collaboration diagram for Openlabs.Mgcxm.Common.Framework.OpenApiUrl:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="class_openlabs_1_1_mgcxm_1_1_common_1_1_framework_1_1_open_api_url__coll__graph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+<simplesect>
+    <title>Public Member Functions    </title>
+        <itemizedlist>
+            <listitem><para><link linkend="_class_openlabs_1_1_mgcxm_1_1_common_1_1_framework_1_1_open_api_url_1a15301761da27c57b66ca5f250f9f561f">OpenApiUrl</link> ()</para>
+</listitem>
+            <listitem><para><link linkend="_class_openlabs_1_1_mgcxm_1_1_common_1_1_framework_1_1_open_api_url_1a57437e87a7ea444680a2e87ee05e838b">OpenApiUrl</link> (string controller, uint version, params string[] subParts)</para>
+</listitem>
+            <listitem><para>override string <link linkend="_class_openlabs_1_1_mgcxm_1_1_common_1_1_framework_1_1_open_api_url_1a74aeeeae5da27746e75bff47bd7b4494">ToString</link> ()</para>
+</listitem>
+            <listitem><para>override void <link linkend="_class_openlabs_1_1_mgcxm_1_1_common_1_1_framework_1_1_open_api_url_1ad0d34398a1a9a71ed86402b1ab3f34cb">FromString</link> (string url)</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+        <itemizedlist>
+            <listitem><para>abstract new string <link linkend="_class_openlabs_1_1_mgcxm_1_1_common_1_1_framework_1_1_endpoint_url_1ab4a0d5c2ae6655023f0c126c777bf133">ToString</link> ()</para>
+</listitem>
+            <listitem><para>abstract void <link linkend="_class_openlabs_1_1_mgcxm_1_1_common_1_1_framework_1_1_endpoint_url_1a8e6d4f8f24addba1c8cebbbe7014532e">FromString</link> (string url)</para>
+</listitem>
+        </itemizedlist>
+<simplesect>
+    <title>Static Public Member Functions    </title>
+        <itemizedlist>
+            <listitem><para>static implicit <link linkend="_class_openlabs_1_1_mgcxm_1_1_common_1_1_framework_1_1_open_api_url_1ae6d8e4cc935ca15afad918cb3bfa5285">operator string</link> (<link linkend="_class_openlabs_1_1_mgcxm_1_1_common_1_1_framework_1_1_open_api_url">OpenApiUrl</link> apiUrl)</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+Static Public Member Functions inherited from <link linkend="_class_openlabs_1_1_mgcxm_1_1_common_1_1_framework_1_1_endpoint_url">Openlabs.Mgcxm.Common.Framework.EndpointUrl</link>        <itemizedlist>
+            <listitem><para>static TEndpointUrl <link linkend="_class_openlabs_1_1_mgcxm_1_1_common_1_1_framework_1_1_endpoint_url_1a730c6300912736e1239920e640608ad9">FromString&lt; TEndpointUrl &gt;</link> (string url)</para>
+</listitem>
+        </itemizedlist>
+<simplesect>
+    <title>Static Public Attributes    </title>
+        <itemizedlist>
+            <listitem><para>static readonly <link linkend="_class_openlabs_1_1_mgcxm_1_1_common_1_1_framework_1_1_open_api_url">OpenApiUrl</link> <link linkend="_class_openlabs_1_1_mgcxm_1_1_common_1_1_framework_1_1_open_api_url_1acbc91fd1f6223985dd5d1f1c99b8f321">Empty</link> = new(&quot;empty&quot;, 0)</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Properties    </title>
+        <itemizedlist>
+            <listitem><para>string <link linkend="_class_openlabs_1_1_mgcxm_1_1_common_1_1_framework_1_1_open_api_url_1a4569b5f994124cd117efcd4c719cb79b">Controller</link><computeroutput> [get]</computeroutput>
+</para>
+</listitem>
+            <listitem><para>uint <link linkend="_class_openlabs_1_1_mgcxm_1_1_common_1_1_framework_1_1_open_api_url_1ab5850b738b5db58e058283419a8ba2cf">Version</link><computeroutput> [get]</computeroutput>
+</para>
+</listitem>
+            <listitem><para>string[] <link linkend="_class_openlabs_1_1_mgcxm_1_1_common_1_1_framework_1_1_open_api_url_1a487cfc735c41ecb79de33f26cb45f7cc">SubParts</link><computeroutput> [get]</computeroutput>
+</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Constructor &amp; Destructor Documentation</title>
+<anchor xml:id="_class_openlabs_1_1_mgcxm_1_1_common_1_1_framework_1_1_open_api_url_1a15301761da27c57b66ca5f250f9f561f"/><section>
+    <title>OpenApiUrl()<computeroutput>[1/2]</computeroutput></title>
+<indexterm><primary>OpenApiUrl</primary><secondary>Openlabs.Mgcxm.Common.Framework.OpenApiUrl</secondary></indexterm>
+<indexterm><primary>Openlabs.Mgcxm.Common.Framework.OpenApiUrl</primary><secondary>OpenApiUrl</secondary></indexterm>
+<para><computeroutput>Openlabs.Mgcxm.Common.Framework.OpenApiUrl.OpenApiUrl ( )</computeroutput></para></section>
+<anchor xml:id="_class_openlabs_1_1_mgcxm_1_1_common_1_1_framework_1_1_open_api_url_1a57437e87a7ea444680a2e87ee05e838b"/><section>
+    <title>OpenApiUrl()<computeroutput>[2/2]</computeroutput></title>
+<indexterm><primary>OpenApiUrl</primary><secondary>Openlabs.Mgcxm.Common.Framework.OpenApiUrl</secondary></indexterm>
+<indexterm><primary>Openlabs.Mgcxm.Common.Framework.OpenApiUrl</primary><secondary>OpenApiUrl</secondary></indexterm>
+<para><computeroutput>Openlabs.Mgcxm.Common.Framework.OpenApiUrl.OpenApiUrl (string controller, uint version, params string[] subParts)</computeroutput></para></section>
+</section>
+<section>
+<title>Member Function Documentation</title>
+<anchor xml:id="_class_openlabs_1_1_mgcxm_1_1_common_1_1_framework_1_1_open_api_url_1ad0d34398a1a9a71ed86402b1ab3f34cb"/><section>
+    <title>FromString()</title>
+<indexterm><primary>FromString</primary><secondary>Openlabs.Mgcxm.Common.Framework.OpenApiUrl</secondary></indexterm>
+<indexterm><primary>Openlabs.Mgcxm.Common.Framework.OpenApiUrl</primary><secondary>FromString</secondary></indexterm>
+<para><computeroutput>override void Openlabs.Mgcxm.Common.Framework.OpenApiUrl.FromString (string url)<computeroutput>[virtual]</computeroutput></computeroutput></para><para>
+Implements <link linkend="_class_openlabs_1_1_mgcxm_1_1_common_1_1_framework_1_1_endpoint_url_1a8e6d4f8f24addba1c8cebbbe7014532e">Openlabs.Mgcxm.Common.Framework.EndpointUrl</link>.</para>
+</section>
+<anchor xml:id="_class_openlabs_1_1_mgcxm_1_1_common_1_1_framework_1_1_open_api_url_1ae6d8e4cc935ca15afad918cb3bfa5285"/><section>
+    <title>operator string()</title>
+<indexterm><primary>operator string</primary><secondary>Openlabs.Mgcxm.Common.Framework.OpenApiUrl</secondary></indexterm>
+<indexterm><primary>Openlabs.Mgcxm.Common.Framework.OpenApiUrl</primary><secondary>operator string</secondary></indexterm>
+<para><computeroutput>static implicit Openlabs.Mgcxm.Common.Framework.OpenApiUrl.operator string (<link linkend="_class_openlabs_1_1_mgcxm_1_1_common_1_1_framework_1_1_open_api_url">OpenApiUrl</link> apiUrl)<computeroutput>[static]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_class_openlabs_1_1_mgcxm_1_1_common_1_1_framework_1_1_open_api_url_1a74aeeeae5da27746e75bff47bd7b4494"/><section>
+    <title>ToString()</title>
+<indexterm><primary>ToString</primary><secondary>Openlabs.Mgcxm.Common.Framework.OpenApiUrl</secondary></indexterm>
+<indexterm><primary>Openlabs.Mgcxm.Common.Framework.OpenApiUrl</primary><secondary>ToString</secondary></indexterm>
+<para><computeroutput>override string Openlabs.Mgcxm.Common.Framework.OpenApiUrl.ToString ( )<computeroutput>[virtual]</computeroutput></computeroutput></para><para>
+Implements <link linkend="_class_openlabs_1_1_mgcxm_1_1_common_1_1_framework_1_1_endpoint_url_1ab4a0d5c2ae6655023f0c126c777bf133">Openlabs.Mgcxm.Common.Framework.EndpointUrl</link>.</para>
+</section>
+</section>
+<section>
+<title>Member Data Documentation</title>
+<anchor xml:id="_class_openlabs_1_1_mgcxm_1_1_common_1_1_framework_1_1_open_api_url_1acbc91fd1f6223985dd5d1f1c99b8f321"/><section>
+    <title>Empty</title>
+<indexterm><primary>Empty</primary><secondary>Openlabs.Mgcxm.Common.Framework.OpenApiUrl</secondary></indexterm>
+<indexterm><primary>Openlabs.Mgcxm.Common.Framework.OpenApiUrl</primary><secondary>Empty</secondary></indexterm>
+<para><computeroutput>readonly <link linkend="_class_openlabs_1_1_mgcxm_1_1_common_1_1_framework_1_1_open_api_url">OpenApiUrl</link> Openlabs.Mgcxm.Common.Framework.OpenApiUrl.Empty = new(&quot;empty&quot;, 0)<computeroutput>[static]</computeroutput></computeroutput></para></section>
+</section>
+<section>
+<title>Property Documentation</title>
+<anchor xml:id="_class_openlabs_1_1_mgcxm_1_1_common_1_1_framework_1_1_open_api_url_1a4569b5f994124cd117efcd4c719cb79b"/><section>
+    <title>Controller</title>
+<indexterm><primary>Controller</primary><secondary>Openlabs.Mgcxm.Common.Framework.OpenApiUrl</secondary></indexterm>
+<indexterm><primary>Openlabs.Mgcxm.Common.Framework.OpenApiUrl</primary><secondary>Controller</secondary></indexterm>
+<para><computeroutput>string Openlabs.Mgcxm.Common.Framework.OpenApiUrl.Controller<computeroutput>[get]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_class_openlabs_1_1_mgcxm_1_1_common_1_1_framework_1_1_open_api_url_1a487cfc735c41ecb79de33f26cb45f7cc"/><section>
+    <title>SubParts</title>
+<indexterm><primary>SubParts</primary><secondary>Openlabs.Mgcxm.Common.Framework.OpenApiUrl</secondary></indexterm>
+<indexterm><primary>Openlabs.Mgcxm.Common.Framework.OpenApiUrl</primary><secondary>SubParts</secondary></indexterm>
+<para><computeroutput>string [] Openlabs.Mgcxm.Common.Framework.OpenApiUrl.SubParts<computeroutput>[get]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_class_openlabs_1_1_mgcxm_1_1_common_1_1_framework_1_1_open_api_url_1ab5850b738b5db58e058283419a8ba2cf"/><section>
+    <title>Version</title>
+<indexterm><primary>Version</primary><secondary>Openlabs.Mgcxm.Common.Framework.OpenApiUrl</secondary></indexterm>
+<indexterm><primary>Openlabs.Mgcxm.Common.Framework.OpenApiUrl</primary><secondary>Version</secondary></indexterm>
+<para><computeroutput>uint Openlabs.Mgcxm.Common.Framework.OpenApiUrl.Version<computeroutput>[get]</computeroutput></computeroutput></para></section>
+<para>
+The documentation for this class was generated from the following file:</para>
+C:/Users/adenf/RiderProjects/Openlabs.Mgcxm/Openlabs.Mgcxm/Common/Framework/OpenApi/<link linkend="__open_api_url_8cs">OpenApiUrl.cs</link></section>
+</section>

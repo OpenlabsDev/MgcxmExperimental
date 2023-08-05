@@ -1,0 +1,89 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.7" xml:lang="en-US">
+  <compounddef id="class_openlabs_1_1_mgcxm_1_1_net_1_1_http_use_authorization_attribute" kind="class" language="C#" prot="public">
+    <compoundname>Openlabs::Mgcxm::Net::HttpUseAuthorizationAttribute</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">Attribute</basecompoundref>
+      <sectiondef kind="property">
+      <memberdef kind="property" id="class_openlabs_1_1_mgcxm_1_1_net_1_1_http_use_authorization_attribute_1aca69f7a46c911546bb1981fbbf6c73ed" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="no" privatesettable="yes" protectedsettable="no">
+        <type><ref refid="namespace_openlabs_1_1_mgcxm_1_1_net_1a1cf0ff6088d262006cd028b076749e13" kindref="member">AuthorizationSchemes</ref></type>
+        <definition>AuthorizationSchemes Openlabs.Mgcxm.Net.HttpUseAuthorizationAttribute.Scheme</definition>
+        <argsstring></argsstring>
+        <name>Scheme</name>
+        <qualifiedname>Openlabs.Mgcxm.Net.HttpUseAuthorizationAttribute.Scheme</qualifiedname>
+        <briefdescription>
+<para>Gets the authorization scheme required for the HTTP endpoint. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/adenf/RiderProjects/Openlabs.Mgcxm/Openlabs.Mgcxm/Net/Attributes/HttpUseAuthorizationAttribute.cs" line="23" column="33" bodyfile="C:/Users/adenf/RiderProjects/Openlabs.Mgcxm/Openlabs.Mgcxm/Net/Attributes/HttpUseAuthorizationAttribute.cs" bodystart="23" bodyend="23"/>
+        <referencedby refid="class_openlabs_1_1_mgcxm_1_1_net_1_1_http_use_authorization_attribute_1a7aca4860e213ca144b21ffefae45f9a8" compoundref="_http_use_authorization_attribute_8cs" startline="15" endline="18">Openlabs.Mgcxm.Net.HttpUseAuthorizationAttribute.HttpUseAuthorizationAttribute</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_openlabs_1_1_mgcxm_1_1_net_1_1_http_use_authorization_attribute_1a7aca4860e213ca144b21ffefae45f9a8" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Openlabs.Mgcxm.Net.HttpUseAuthorizationAttribute.HttpUseAuthorizationAttribute</definition>
+        <argsstring>(AuthorizationSchemes scheme)</argsstring>
+        <name>HttpUseAuthorizationAttribute</name>
+        <qualifiedname>Openlabs.Mgcxm.Net.HttpUseAuthorizationAttribute.HttpUseAuthorizationAttribute</qualifiedname>
+        <param>
+          <type><ref refid="namespace_openlabs_1_1_mgcxm_1_1_net_1a1cf0ff6088d262006cd028b076749e13" kindref="member">AuthorizationSchemes</ref></type>
+          <declname>scheme</declname>
+        </param>
+        <briefdescription>
+<para>Initializes a new instance of the HttpUseAuthorizationAttribute class with the specified authorization scheme. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>scheme</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The authorization scheme required for the HTTP endpoint.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/adenf/RiderProjects/Openlabs.Mgcxm/Openlabs.Mgcxm/Net/Attributes/HttpUseAuthorizationAttribute.cs" line="15" column="12" bodyfile="C:/Users/adenf/RiderProjects/Openlabs.Mgcxm/Openlabs.Mgcxm/Net/Attributes/HttpUseAuthorizationAttribute.cs" bodystart="15" bodyend="18"/>
+        <references refid="class_openlabs_1_1_mgcxm_1_1_net_1_1_http_use_authorization_attribute_1aca69f7a46c911546bb1981fbbf6c73ed" compoundref="_http_use_authorization_attribute_8cs" startline="23" endline="23">Openlabs.Mgcxm.Net.HttpUseAuthorizationAttribute.Scheme</references>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Represents an attribute used to specify the authorization scheme required for an HTTP endpoint method. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>Attribute</label>
+      </node>
+      <node id="1">
+        <label>Openlabs.Mgcxm.Net.HttpUseAuthorizationAttribute</label>
+        <link refid="class_openlabs_1_1_mgcxm_1_1_net_1_1_http_use_authorization_attribute"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>Attribute</label>
+      </node>
+      <node id="1">
+        <label>Openlabs.Mgcxm.Net.HttpUseAuthorizationAttribute</label>
+        <link refid="class_openlabs_1_1_mgcxm_1_1_net_1_1_http_use_authorization_attribute"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="C:/Users/adenf/RiderProjects/Openlabs.Mgcxm/Openlabs.Mgcxm/Net/Attributes/HttpUseAuthorizationAttribute.cs" line="9" column="14" bodyfile="C:/Users/adenf/RiderProjects/Openlabs.Mgcxm/Openlabs.Mgcxm/Net/Attributes/HttpUseAuthorizationAttribute.cs" bodystart="10" bodyend="24"/>
+    <listofallmembers>
+      <member refid="class_openlabs_1_1_mgcxm_1_1_net_1_1_http_use_authorization_attribute_1a7aca4860e213ca144b21ffefae45f9a8" prot="public" virt="non-virtual"><scope>Openlabs::Mgcxm::Net::HttpUseAuthorizationAttribute</scope><name>HttpUseAuthorizationAttribute</name></member>
+      <member refid="class_openlabs_1_1_mgcxm_1_1_net_1_1_http_use_authorization_attribute_1aca69f7a46c911546bb1981fbbf6c73ed" prot="public" virt="non-virtual"><scope>Openlabs::Mgcxm::Net::HttpUseAuthorizationAttribute</scope><name>Scheme</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,791 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_namespace_openlabs_1_1_mgcxm_1_1_net" xml:lang="en-US">
+<title>Openlabs.Mgcxm.Net Namespace Reference</title>
+<indexterm><primary>Openlabs.Mgcxm.Net</primary></indexterm>
+<simplesect>
+    <title>Namespaces    </title>
+        <itemizedlist>
+            <listitem><para>namespace <link linkend="_namespace_openlabs_1_1_mgcxm_1_1_net_1_1_authorization">Authorization</link></para>
+</listitem>
+            <listitem><para>namespace <link linkend="_namespace_openlabs_1_1_mgcxm_1_1_net_1_1_extensions">Extensions</link></para>
+</listitem>
+            <listitem><para>namespace <link linkend="_namespace_openlabs_1_1_mgcxm_1_1_net_1_1_polling">Polling</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Classes    </title>
+        <itemizedlist>
+            <listitem><para>class <emphasis role="strong">AddressUtilities</emphasis></para>
+
+<para>Provides utility methods related to IP addresses. </para>
+</listitem>
+            <listitem><para>class <emphasis role="strong">CommonMimeTypeAttribute</emphasis></para>
+</listitem>
+            <listitem><para>class <emphasis role="strong">HttpContentTypeHelper</emphasis></para>
+
+<para>A helper class to resolve HTTP content type values. </para>
+</listitem>
+            <listitem><para>class <link linkend="_class_openlabs_1_1_mgcxm_1_1_net_1_1_http_dynamic_use_attribute">HttpDynamicUseAttribute</link></para>
+
+<para>Represents an attribute used to specify dynamic identifiers for a method handling an HTTP endpoint. </para>
+</listitem>
+            <listitem><para>class <link linkend="_class_openlabs_1_1_mgcxm_1_1_net_1_1_http_endpoint_attribute">HttpEndpointAttribute</link></para>
+
+<para>Represents an attribute used to define an HTTP endpoint. </para>
+</listitem>
+            <listitem><para>class <emphasis role="strong">HttpEndpointInvocation</emphasis></para>
+</listitem>
+            <listitem><para>class <link linkend="_class_openlabs_1_1_mgcxm_1_1_net_1_1_http_requires_attribute">HttpRequiresAttribute</link></para>
+
+<para>Represents an attribute used to specify additional requirements for an HTTP endpoint method. </para>
+</listitem>
+            <listitem><para>class <link linkend="_class_openlabs_1_1_mgcxm_1_1_net_1_1_http_use_authorization_attribute">HttpUseAuthorizationAttribute</link></para>
+
+<para>Represents an attribute used to specify the authorization scheme required for an HTTP endpoint method. </para>
+</listitem>
+            <listitem><para>interface <link linkend="_interface_openlabs_1_1_mgcxm_1_1_net_1_1_i_ip_address">IIpAddress</link></para>
+</listitem>
+            <listitem><para>interface <link linkend="_interface_openlabs_1_1_mgcxm_1_1_net_1_1_i_mgcxm_http_response_modifiable">IMgcxmHttpResponseModifiable</link></para>
+
+<para>Represents an interface for modifying an HTTP response. </para>
+</listitem>
+            <listitem><para>interface <link linkend="_interface_openlabs_1_1_mgcxm_1_1_net_1_1_i_mgcxm_http_response_transferable">IMgcxmHttpResponseTransferable</link></para>
+
+<para>Represents an interface for transferring an HTTP response to a HttpListenerResponse. </para>
+</listitem>
+            <listitem><para>class <link linkend="_class_openlabs_1_1_mgcxm_1_1_net_1_1_ip_address">IpAddress</link></para>
+
+<para>Defines a <computeroutput>Internet Protocol Address (IP Address)</computeroutput>, which is read-only. </para>
+</listitem>
+            <listitem><para>class <link linkend="_class_openlabs_1_1_mgcxm_1_1_net_1_1_mgcxm_dynamic_identifier">MgcxmDynamicIdentifier</link></para>
+
+<para>Represents a dynamic identifier used for matching dynamic URLs. </para>
+</listitem>
+            <listitem><para>class <link linkend="_class_openlabs_1_1_mgcxm_1_1_net_1_1_mgcxm_http_endpoint">MgcxmHttpEndpoint</link></para>
+
+<para>Represents an HTTP endpoint for MgcxmSocketListener. </para>
+</listitem>
+            <listitem><para>class <link linkend="_class_openlabs_1_1_mgcxm_1_1_net_1_1_mgcxm_http_listener">MgcxmHttpListener</link></para>
+
+<para>Represents an HTTP listener for MgcxmSocketListener. </para>
+</listitem>
+            <listitem><para>class <link linkend="_class_openlabs_1_1_mgcxm_1_1_net_1_1_mgcxm_http_listener_debug_info">MgcxmHttpListenerDebugInfo</link></para>
+
+<para>Represents a debug info handler for MgcxmHttpListener. </para>
+</listitem>
+            <listitem><para>class <link linkend="_class_openlabs_1_1_mgcxm_1_1_net_1_1_mgcxm_http_request">MgcxmHttpRequest</link></para>
+
+<para>Represents an HTTP request for use in MgcxmSocketListener. </para>
+</listitem>
+            <listitem><para>class <link linkend="_class_openlabs_1_1_mgcxm_1_1_net_1_1_mgcxm_http_response">MgcxmHttpResponse</link></para>
+
+<para>Represents an HTTP response for use in MgcxmSocketListener. </para>
+</listitem>
+            <listitem><para>class <link linkend="_class_openlabs_1_1_mgcxm_1_1_net_1_1_mgcxm_socket">MgcxmSocket</link></para>
+
+<para>Represents a managed socket for handling WebSocket communication using HttpListenerWebSocketContext. </para>
+</listitem>
+            <listitem><para>class <link linkend="_class_openlabs_1_1_mgcxm_1_1_net_1_1_mgcxm_socket_connection_handler">MgcxmSocketConnectionHandler</link></para>
+
+<para>Represents an abstract base class for handling WebSocket connections and events. </para>
+</listitem>
+            <listitem><para>class <link linkend="_class_openlabs_1_1_mgcxm_1_1_net_1_1_mgcxm_socket_listener">MgcxmSocketListener</link></para>
+
+<para>Represents a socket listener for handling WebSocket and HTTP requests. </para>
+</listitem>
+            <listitem><para>class <link linkend="_class_openlabs_1_1_mgcxm_1_1_net_1_1_mgcxm_socket_route">MgcxmSocketRoute</link></para>
+
+<para>Represents a route for WebSocket communication in MgcxmSocketListener. </para>
+</listitem>
+            <listitem><para>class <link linkend="_class_openlabs_1_1_mgcxm_1_1_net_1_1_socket_connection_handler_attribute">SocketConnectionHandlerAttribute</link></para>
+
+<para>Represents an attribute used to specify the type of socket connection handler for a socket. </para>
+</listitem>
+            <listitem><para>class <link linkend="_class_openlabs_1_1_mgcxm_1_1_net_1_1_socket_route_attribute">SocketRouteAttribute</link></para>
+
+<para>Represents an attribute used to specify the route for a socket connection. </para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Enumerations    </title>
+        <itemizedlist>
+            <listitem><para>enum <link linkend="_namespace_openlabs_1_1_mgcxm_1_1_net_1ac91eddadee1cf42d551524d032a0d76c">HttpRequireFlag</link> { <link linkend="_namespace_openlabs_1_1_mgcxm_1_1_net_1ac91eddadee1cf42d551524d032a0d76ca5109d53455b5e28d085cafb46fbfe99c">FormBody</link>
+, <link linkend="_namespace_openlabs_1_1_mgcxm_1_1_net_1ac91eddadee1cf42d551524d032a0d76ca720d6b79124c921105436adcb9f99f7f">BinaryData</link>
+, <link linkend="_namespace_openlabs_1_1_mgcxm_1_1_net_1ac91eddadee1cf42d551524d032a0d76cabf50d5e661106d0abe925af3c2e6f7e7">Header</link>
+, <link linkend="_namespace_openlabs_1_1_mgcxm_1_1_net_1ac91eddadee1cf42d551524d032a0d76ca66c1b4c7f3dc385b68a9fa903ccd016d">Query</link>
+ }</para>
+
+<para>An enumeration of flags that represent additional requirements for an HTTP endpoint method. </para>
+</listitem>
+            <listitem><para>enum <link linkend="_namespace_openlabs_1_1_mgcxm_1_1_net_1a1cf0ff6088d262006cd028b076749e13">AuthorizationSchemes</link> { <link linkend="_namespace_openlabs_1_1_mgcxm_1_1_net_1a1cf0ff6088d262006cd028b076749e13a83dedad0728baaef3ad3f50bd05ed030">Bearer</link>
+, <link linkend="_namespace_openlabs_1_1_mgcxm_1_1_net_1a1cf0ff6088d262006cd028b076749e13ae5cfc515f312c9e85f367e9854d9963e">Digest</link>
+, <link linkend="_namespace_openlabs_1_1_mgcxm_1_1_net_1a1cf0ff6088d262006cd028b076749e13a972e73b7a882d0802a4e3a16946a2f94">Basic</link>
+ }</para>
+
+<para>Represents different types of authorization schemes. </para>
+</listitem>
+            <listitem><para>enum <link linkend="_namespace_openlabs_1_1_mgcxm_1_1_net_1a0190ca5d59602d92653be09f01e3fc18">HttpContentTypes</link> { <?linebreak?><link linkend="_namespace_openlabs_1_1_mgcxm_1_1_net_1a0190ca5d59602d92653be09f01e3fc18a4bbb8f967da6d1a610596d7257179c2b">Invalid</link>
+, <link linkend="_namespace_openlabs_1_1_mgcxm_1_1_net_1a0190ca5d59602d92653be09f01e3fc18a580ba9648b4a76ea7acf941c69fde2fb">AacAudio</link>
+, <link linkend="_namespace_openlabs_1_1_mgcxm_1_1_net_1a0190ca5d59602d92653be09f01e3fc18a1d592ea6ac313f794afbabb2da35785d">AbiWord</link>
+, <link linkend="_namespace_openlabs_1_1_mgcxm_1_1_net_1a0190ca5d59602d92653be09f01e3fc18a577a2b5c02e0013c7a318aab458666b4">ArchiveDocument</link>
+, <?linebreak?><link linkend="_namespace_openlabs_1_1_mgcxm_1_1_net_1a0190ca5d59602d92653be09f01e3fc18a2dca2c5bb60b9134564ac0073555b15f">AvifImage</link>
+, <link linkend="_namespace_openlabs_1_1_mgcxm_1_1_net_1a0190ca5d59602d92653be09f01e3fc18a75614c3fca429c06226ca2518abb73aa">Avi</link>
+, <link linkend="_namespace_openlabs_1_1_mgcxm_1_1_net_1a0190ca5d59602d92653be09f01e3fc18a720d6b79124c921105436adcb9f99f7f">BinaryData</link>
+, <link linkend="_namespace_openlabs_1_1_mgcxm_1_1_net_1a0190ca5d59602d92653be09f01e3fc18ac56152fd166d9a9a95d2e77ddac6c2c6">WinOs2Bitmap</link>
+, <?linebreak?><link linkend="_namespace_openlabs_1_1_mgcxm_1_1_net_1a0190ca5d59602d92653be09f01e3fc18a721ef395d92fd468d7b2caabbafefa91">BzipArchive</link>
+, <link linkend="_namespace_openlabs_1_1_mgcxm_1_1_net_1a0190ca5d59602d92653be09f01e3fc18a224a367e2bbe657040890b3ce384d4a9">Bzip2Archive</link>
+, <link linkend="_namespace_openlabs_1_1_mgcxm_1_1_net_1a0190ca5d59602d92653be09f01e3fc18a79e3a446348ee602e54d76926ce313fb">CdAudio</link>
+, <link linkend="_namespace_openlabs_1_1_mgcxm_1_1_net_1a0190ca5d59602d92653be09f01e3fc18a7c7f87a4485e883cd4a4c340b2de9a52">CshellScript</link>
+, <?linebreak?><link linkend="_namespace_openlabs_1_1_mgcxm_1_1_net_1a0190ca5d59602d92653be09f01e3fc18a4ddff390aaf6ec45919094f5a3cf2d79">CssSheet</link>
+, <link linkend="_namespace_openlabs_1_1_mgcxm_1_1_net_1a0190ca5d59602d92653be09f01e3fc18ac670245442b38882ef3c2ab9dc9d26d2">MsWordDocument</link>
+, <link linkend="_namespace_openlabs_1_1_mgcxm_1_1_net_1a0190ca5d59602d92653be09f01e3fc18a6b65cab2394372b872f87f403fff9ed2">MsWordDocumentXml</link>
+, <link linkend="_namespace_openlabs_1_1_mgcxm_1_1_net_1a0190ca5d59602d92653be09f01e3fc18a8b618a6d38d6e2561f0aa5b89a91c201">MsEmbeddedOpenTypeFont</link>
+, <?linebreak?><link linkend="_namespace_openlabs_1_1_mgcxm_1_1_net_1a0190ca5d59602d92653be09f01e3fc18a636da876992c5b7f26866be41a26c57b">ElectronicPublication</link>
+, <link linkend="_namespace_openlabs_1_1_mgcxm_1_1_net_1a0190ca5d59602d92653be09f01e3fc18a1566b01c8d448fc2ddcf1c11d72c0661">GzipCompressArchive</link>
+, <link linkend="_namespace_openlabs_1_1_mgcxm_1_1_net_1a0190ca5d59602d92653be09f01e3fc18a1f458f5d2dad4d0529ed894254d51aa2">GraphicsInterchange</link>
+, <link linkend="_namespace_openlabs_1_1_mgcxm_1_1_net_1a0190ca5d59602d92653be09f01e3fc18a2d310c4f098ed425228b7a47468034ba">HtmlFile</link>
+, <?linebreak?><link linkend="_namespace_openlabs_1_1_mgcxm_1_1_net_1a0190ca5d59602d92653be09f01e3fc18a0c963f094b5c4c9754ddbb52a7fbd7e0">IconFile</link>
+, <link linkend="_namespace_openlabs_1_1_mgcxm_1_1_net_1a0190ca5d59602d92653be09f01e3fc18a29c34bcbf6427baef17773a148b62812">Calender</link>
+, <link linkend="_namespace_openlabs_1_1_mgcxm_1_1_net_1a0190ca5d59602d92653be09f01e3fc18a9a916e21a170ee80bef9fc9700f82896">JavaArchive</link>
+, <link linkend="_namespace_openlabs_1_1_mgcxm_1_1_net_1a0190ca5d59602d92653be09f01e3fc18ae0c9c839003e6b3bc3298e2a411bd53d">JpegImage</link>
+, <?linebreak?><link linkend="_namespace_openlabs_1_1_mgcxm_1_1_net_1a0190ca5d59602d92653be09f01e3fc18a9e13b69d1d2da927102acaaaf7154a37">Javascript</link>
+, <link linkend="_namespace_openlabs_1_1_mgcxm_1_1_net_1a0190ca5d59602d92653be09f01e3fc18aeed8d85b888a6c015834240885ee6333">Json</link>
+, <link linkend="_namespace_openlabs_1_1_mgcxm_1_1_net_1a0190ca5d59602d92653be09f01e3fc18afc376ec6e0da9a99e0c333cd42f958f5">JsonLd</link>
+, <link linkend="_namespace_openlabs_1_1_mgcxm_1_1_net_1a0190ca5d59602d92653be09f01e3fc18acc7d9bcdaa80bb9993f20afa040d256d">Mp3Audio</link>
+, <?linebreak?><link linkend="_namespace_openlabs_1_1_mgcxm_1_1_net_1a0190ca5d59602d92653be09f01e3fc18a3d08e1782a993220dd7cdd36d8b9d5f0">Mp4Video</link>
+, <link linkend="_namespace_openlabs_1_1_mgcxm_1_1_net_1a0190ca5d59602d92653be09f01e3fc18ae911c703b930e14a565b1680c9322f66">MpegVideo</link>
+, <link linkend="_namespace_openlabs_1_1_mgcxm_1_1_net_1a0190ca5d59602d92653be09f01e3fc18aecff09c51e2d83f3a2d80aeca378ef64">OggAudio</link>
+, <link linkend="_namespace_openlabs_1_1_mgcxm_1_1_net_1a0190ca5d59602d92653be09f01e3fc18a74dd024cd634f7690d6cb529fd044ae6">OgvAudio</link>
+, <?linebreak?><link linkend="_namespace_openlabs_1_1_mgcxm_1_1_net_1a0190ca5d59602d92653be09f01e3fc18a1ec8011862f272cf98199dae4568fa03">OpusAudio</link>
+, <link linkend="_namespace_openlabs_1_1_mgcxm_1_1_net_1a0190ca5d59602d92653be09f01e3fc18a43f1c034e10eba58cda3750470366586">OpenTypeFont</link>
+, <link linkend="_namespace_openlabs_1_1_mgcxm_1_1_net_1a0190ca5d59602d92653be09f01e3fc18a020e1d92c28f4478ff1f3477b6a6cdea">PngImage</link>
+, <link linkend="_namespace_openlabs_1_1_mgcxm_1_1_net_1a0190ca5d59602d92653be09f01e3fc18ab7ebbf7f254ef646928dd58f62383a85">PlainText</link>
+, <?linebreak?><link linkend="_namespace_openlabs_1_1_mgcxm_1_1_net_1a0190ca5d59602d92653be09f01e3fc18ab8ee22298c76dc38d7d8545a5a6a2b96">WavAudio</link>
+, <link linkend="_namespace_openlabs_1_1_mgcxm_1_1_net_1a0190ca5d59602d92653be09f01e3fc18acf0efedf426fab8750fd10b9cb7c2c94">WebmAudio</link>
+, <link linkend="_namespace_openlabs_1_1_mgcxm_1_1_net_1a0190ca5d59602d92653be09f01e3fc18afea41e71c0603a4425dbfc4bce1758b7">WebmVideo</link>
+, <link linkend="_namespace_openlabs_1_1_mgcxm_1_1_net_1a0190ca5d59602d92653be09f01e3fc18afb55b74df9472d8cca66dd07672e7f1f">WebpImage</link>
+, <?linebreak?><link linkend="_namespace_openlabs_1_1_mgcxm_1_1_net_1a0190ca5d59602d92653be09f01e3fc18a9ec8e4e3ab4c7eeba097f27d7364d743">Xml</link>
+, <link linkend="_namespace_openlabs_1_1_mgcxm_1_1_net_1a0190ca5d59602d92653be09f01e3fc18aa1bce3344d2d27389dd84f81b74b827b">ZipArchive</link>
+, <link linkend="_namespace_openlabs_1_1_mgcxm_1_1_net_1a0190ca5d59602d92653be09f01e3fc18a5347c60c0d625a8702ead26e3eb58bdb">UrlencodedForm</link>
+, <link linkend="_namespace_openlabs_1_1_mgcxm_1_1_net_1a0190ca5d59602d92653be09f01e3fc18a41c914e8496b12fbd8b8f84886cb3bf0">MultipartForm</link>
+ }</para>
+</listitem>
+            <listitem><para>enum <link linkend="_namespace_openlabs_1_1_mgcxm_1_1_net_1a63268740291f4b97a3eb53abd380f84e">HttpMethods</link> { <?linebreak?><link linkend="_namespace_openlabs_1_1_mgcxm_1_1_net_1a63268740291f4b97a3eb53abd380f84ea696b031073e74bf2cb98e5ef201d4aa3">UNKNOWN</link>
+, <link linkend="_namespace_openlabs_1_1_mgcxm_1_1_net_1a63268740291f4b97a3eb53abd380f84ea7528035a93ee69cedb1dbddb2f0bfcc8">GET</link>
+, <link linkend="_namespace_openlabs_1_1_mgcxm_1_1_net_1a63268740291f4b97a3eb53abd380f84eaa02439ec229d8be0e74b0c1602392310">POST</link>
+, <link linkend="_namespace_openlabs_1_1_mgcxm_1_1_net_1a63268740291f4b97a3eb53abd380f84ea3e75383a5992a6d15fb81e872e46e256">PUT</link>
+, <?linebreak?><link linkend="_namespace_openlabs_1_1_mgcxm_1_1_net_1a63268740291f4b97a3eb53abd380f84eae15e216fc1c639f787b1231ecdfa1bf8">HEAD</link>
+, <link linkend="_namespace_openlabs_1_1_mgcxm_1_1_net_1a63268740291f4b97a3eb53abd380f84ea32f68a60cef40faedbc6af20298c1a1e">DELETE</link>
+ }</para>
+
+<para>An enumeration of all supported HTTP methods. </para>
+</listitem>
+            <listitem><para>enum <link linkend="_namespace_openlabs_1_1_mgcxm_1_1_net_1a3465bc704788a5ead88ca632927a5dfd">HttpStatusCodes</link> { <?linebreak?><link linkend="_namespace_openlabs_1_1_mgcxm_1_1_net_1a3465bc704788a5ead88ca632927a5dfdaa0bfb8e59e6c13fc8d990781f77694fe">Continue</link> = 100
+, <link linkend="_namespace_openlabs_1_1_mgcxm_1_1_net_1a3465bc704788a5ead88ca632927a5dfda548c5a637eddf65132b21411aeafc6a1">SwitchingProtocols</link>
+, <link linkend="_namespace_openlabs_1_1_mgcxm_1_1_net_1a3465bc704788a5ead88ca632927a5dfdae0aa021e21dddbd6d8cecec71e9cf564">OK</link> = 200
+, <link linkend="_namespace_openlabs_1_1_mgcxm_1_1_net_1a3465bc704788a5ead88ca632927a5dfda0eceeb45861f9585dd7a97a3e36f85c6">Created</link>
+, <?linebreak?><link linkend="_namespace_openlabs_1_1_mgcxm_1_1_net_1a3465bc704788a5ead88ca632927a5dfda382ab522931673c11e398ead1b7b1678">Accepted</link>
+, <link linkend="_namespace_openlabs_1_1_mgcxm_1_1_net_1a3465bc704788a5ead88ca632927a5dfda2d0ea43e788b779c0aec92366b711c2f">NonAuthoritativeInformation</link>
+, <link linkend="_namespace_openlabs_1_1_mgcxm_1_1_net_1a3465bc704788a5ead88ca632927a5dfdacd447f1ec89f564ebac583d60087df12">NoContent</link>
+, <link linkend="_namespace_openlabs_1_1_mgcxm_1_1_net_1a3465bc704788a5ead88ca632927a5dfda4e9202c31896211f63be5b7345a897ed">ResetContent</link>
+, <?linebreak?><link linkend="_namespace_openlabs_1_1_mgcxm_1_1_net_1a3465bc704788a5ead88ca632927a5dfda750de7eda10d780b3bbaefb57128c24b">PartialContent</link>
+, <link linkend="_namespace_openlabs_1_1_mgcxm_1_1_net_1a3465bc704788a5ead88ca632927a5dfdaa589749d075c3423333bdc93e3b4e774">MultipleChoices</link> = 300
+, <link linkend="_namespace_openlabs_1_1_mgcxm_1_1_net_1a3465bc704788a5ead88ca632927a5dfda02266588dfd4e565cc42949d0c73f28c">Ambiguous</link> = 300
+, <link linkend="_namespace_openlabs_1_1_mgcxm_1_1_net_1a3465bc704788a5ead88ca632927a5dfda32638c25f4c913fce6214c2c4afff9dc">MovedPermanently</link>
+, <?linebreak?><link linkend="_namespace_openlabs_1_1_mgcxm_1_1_net_1a3465bc704788a5ead88ca632927a5dfda95bfdefaaf01553cbf21ccd942855c69">Moved</link> = 301
+, <link linkend="_namespace_openlabs_1_1_mgcxm_1_1_net_1a3465bc704788a5ead88ca632927a5dfda5d695cc28c6a7ea955162fbdd0ae42b9">Found</link>
+, <link linkend="_namespace_openlabs_1_1_mgcxm_1_1_net_1a3465bc704788a5ead88ca632927a5dfda4202ef115ebede37eb22297113f5fb32">Redirect</link> = 302
+, <link linkend="_namespace_openlabs_1_1_mgcxm_1_1_net_1a3465bc704788a5ead88ca632927a5dfda7843649eb3841f496a79303fd815029e">SeeOther</link>
+, <?linebreak?><link linkend="_namespace_openlabs_1_1_mgcxm_1_1_net_1a3465bc704788a5ead88ca632927a5dfda3d006d7cd9a99992b94bc01e54a067fc">RedirectMethod</link> = 303
+, <link linkend="_namespace_openlabs_1_1_mgcxm_1_1_net_1a3465bc704788a5ead88ca632927a5dfdac169e6d9a1b9442001384de8dcf49ab9">NotModified</link>
+, <link linkend="_namespace_openlabs_1_1_mgcxm_1_1_net_1a3465bc704788a5ead88ca632927a5dfda0a272f25fd5e8a06065ef8ee41a88bea">UseProxy</link>
+, <link linkend="_namespace_openlabs_1_1_mgcxm_1_1_net_1a3465bc704788a5ead88ca632927a5dfda92e592d90b9548016776a6fb68dccded">Unused</link>
+, <?linebreak?><link linkend="_namespace_openlabs_1_1_mgcxm_1_1_net_1a3465bc704788a5ead88ca632927a5dfda1b73a351faf2b550d06fae9cc6e0a894">TemporaryRedirect</link>
+, <link linkend="_namespace_openlabs_1_1_mgcxm_1_1_net_1a3465bc704788a5ead88ca632927a5dfda5642a16c0f0774fec98ad5241b68f531">RedirectKeepVerb</link> = 307
+, <link linkend="_namespace_openlabs_1_1_mgcxm_1_1_net_1a3465bc704788a5ead88ca632927a5dfda9edf8fbf00a57d95a0af4923c9a1ec6f">BadRequest</link> = 400
+, <link linkend="_namespace_openlabs_1_1_mgcxm_1_1_net_1a3465bc704788a5ead88ca632927a5dfdae06d1ba70f1331e9f9a113cc2f887d3f">Unauthorized</link>
+, <?linebreak?><link linkend="_namespace_openlabs_1_1_mgcxm_1_1_net_1a3465bc704788a5ead88ca632927a5dfda4c99006c75b53fe48865cdfa0ac065ba">PaymentRequired</link>
+, <link linkend="_namespace_openlabs_1_1_mgcxm_1_1_net_1a3465bc704788a5ead88ca632927a5dfda722969577a96ca3953e84e3d949dee81">Forbidden</link>
+, <link linkend="_namespace_openlabs_1_1_mgcxm_1_1_net_1a3465bc704788a5ead88ca632927a5dfda38c300f4fc9ce8a77aad4a30de05cad8">NotFound</link>
+, <link linkend="_namespace_openlabs_1_1_mgcxm_1_1_net_1a3465bc704788a5ead88ca632927a5dfda8ba68fee5542f5fd071aed140c39bd8e">MethodNotAllowed</link>
+, <?linebreak?><link linkend="_namespace_openlabs_1_1_mgcxm_1_1_net_1a3465bc704788a5ead88ca632927a5dfdaf83a928e6a3f3b502ffadd2a414ce48c">NotAcceptable</link>
+, <link linkend="_namespace_openlabs_1_1_mgcxm_1_1_net_1a3465bc704788a5ead88ca632927a5dfda59a2898a8bf9da75a5855e76110f06f2">ProxyAuthenticationRequired</link>
+, <link linkend="_namespace_openlabs_1_1_mgcxm_1_1_net_1a3465bc704788a5ead88ca632927a5dfda3632c2e4e6225d4d9fcd2a6fd2c65048">RequestTimeout</link>
+, <link linkend="_namespace_openlabs_1_1_mgcxm_1_1_net_1a3465bc704788a5ead88ca632927a5dfdaf1d4ac54357cc0932f385d56814ba7e4">Conflict</link>
+, <?linebreak?><link linkend="_namespace_openlabs_1_1_mgcxm_1_1_net_1a3465bc704788a5ead88ca632927a5dfda0b497b33b1a05057bc1634e607170bf6">Gone</link>
+, <link linkend="_namespace_openlabs_1_1_mgcxm_1_1_net_1a3465bc704788a5ead88ca632927a5dfda8282fb93cb1cf45b135ea191668ca583">LengthRequired</link>
+, <link linkend="_namespace_openlabs_1_1_mgcxm_1_1_net_1a3465bc704788a5ead88ca632927a5dfda3542a02d18f11f46d53990d91752a6d4">PreconditionFailed</link>
+, <link linkend="_namespace_openlabs_1_1_mgcxm_1_1_net_1a3465bc704788a5ead88ca632927a5dfda1d2dd18ee1a925e5887cbc2f9202e779">RequestEntityTooLarge</link>
+, <?linebreak?><link linkend="_namespace_openlabs_1_1_mgcxm_1_1_net_1a3465bc704788a5ead88ca632927a5dfda08ad854bbc441f4edb6828769f8d3399">RequestUriTooLong</link>
+, <link linkend="_namespace_openlabs_1_1_mgcxm_1_1_net_1a3465bc704788a5ead88ca632927a5dfdaa3219a6843adbb23de79b4df9c307f5d">UnsupportedMediaType</link>
+, <link linkend="_namespace_openlabs_1_1_mgcxm_1_1_net_1a3465bc704788a5ead88ca632927a5dfda7779e53fc887ac0429f4ebde5fc0b59f">RequestedRangeNotSatisfiable</link>
+, <link linkend="_namespace_openlabs_1_1_mgcxm_1_1_net_1a3465bc704788a5ead88ca632927a5dfda6af78095a2be4a230ba87f03dd131830">ExpectationFailed</link>
+, <?linebreak?><link linkend="_namespace_openlabs_1_1_mgcxm_1_1_net_1a3465bc704788a5ead88ca632927a5dfdae0eaea96be1ec038b859e02cc5330827">UpgradeRequired</link> = 426
+, <link linkend="_namespace_openlabs_1_1_mgcxm_1_1_net_1a3465bc704788a5ead88ca632927a5dfdaecbf01325f1c744e9d7bb586ac2eb5ed">InternalServerError</link> = 500
+, <link linkend="_namespace_openlabs_1_1_mgcxm_1_1_net_1a3465bc704788a5ead88ca632927a5dfda997ca4ce119685f40f03a9a8a6c5346e">NotImplemented</link>
+, <link linkend="_namespace_openlabs_1_1_mgcxm_1_1_net_1a3465bc704788a5ead88ca632927a5dfda0e7c9ad08be0653518bf456c9994ace5">BadGateway</link>
+, <?linebreak?><link linkend="_namespace_openlabs_1_1_mgcxm_1_1_net_1a3465bc704788a5ead88ca632927a5dfda2a4581043d849bcb0e4747970ef1489b">ServiceUnavailable</link>
+, <link linkend="_namespace_openlabs_1_1_mgcxm_1_1_net_1a3465bc704788a5ead88ca632927a5dfdada405cbc74723dfdda615e3f679ef2be">GatewayTimeout</link>
+, <link linkend="_namespace_openlabs_1_1_mgcxm_1_1_net_1a3465bc704788a5ead88ca632927a5dfda56a7a02e415f5bf106088218f646c04f">HttpVersionNotSupported</link>
+ }</para>
+
+<para>Contains the values of status codes defined for HTTP. </para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Functions    </title>
+        <itemizedlist>
+            <listitem><para>delegate void <link linkend="_namespace_openlabs_1_1_mgcxm_1_1_net_1affacc6bf2b6a12de7307197182a70877">OnEndpointRequested</link> (<link linkend="_class_openlabs_1_1_mgcxm_1_1_net_1_1_mgcxm_http_request">MgcxmHttpRequest</link> request, <link linkend="_class_openlabs_1_1_mgcxm_1_1_net_1_1_mgcxm_http_response">MgcxmHttpResponse</link> response)</para>
+
+<para>Delegate representing a callback for handling endpoint requests. </para>
+</listitem>
+            <listitem><para>delegate Task <link linkend="_namespace_openlabs_1_1_mgcxm_1_1_net_1ae932ef589bc25b872380eab138472bfa">AsyncListenTask</link> (HttpListener listener)</para>
+
+<para>Delegate representing an asynchronous listen task for the HTTP listener. </para>
+</listitem>
+            <listitem><para>delegate void <link linkend="_namespace_openlabs_1_1_mgcxm_1_1_net_1ad2a2bbd4000fbc64e0bfc269bbadd132">OnSocketUpgraded</link> (<link linkend="_class_openlabs_1_1_mgcxm_1_1_net_1_1_mgcxm_socket">MgcxmSocket</link> socket)</para>
+
+<para>Represents a delegate for the callback function used when a WebSocket is upgraded. </para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Enumeration Type Documentation</title>
+<anchor xml:id="_namespace_openlabs_1_1_mgcxm_1_1_net_1a1cf0ff6088d262006cd028b076749e13"/><section>
+    <title>AuthorizationSchemes</title>
+<indexterm><primary>AuthorizationSchemes</primary><secondary>Openlabs.Mgcxm.Net</secondary></indexterm>
+<indexterm><primary>Openlabs.Mgcxm.Net</primary><secondary>AuthorizationSchemes</secondary></indexterm>
+<para><computeroutput>enum <link linkend="_namespace_openlabs_1_1_mgcxm_1_1_net_1a1cf0ff6088d262006cd028b076749e13">Openlabs.Mgcxm.Net.AuthorizationSchemes</link></computeroutput></para><para>
+
+<para>Represents different types of authorization schemes. </para>
+</para>
+<informaltable frame="all">
+<title>Enumerator</title>
+    <tgroup cols="2" align="left" colsep="1" rowsep="1">
+      <colspec colname='c1'/>
+      <colspec colname='c2'/>
+<tbody>
+<row><entry><indexterm><primary>Bearer</primary><secondary>Openlabs.Mgcxm.Net</secondary></indexterm>
+<indexterm><primary>Openlabs.Mgcxm.Net</primary><secondary>Bearer</secondary></indexterm>
+<anchor xml:id="_namespace_openlabs_1_1_mgcxm_1_1_net_1a1cf0ff6088d262006cd028b076749e13a83dedad0728baaef3ad3f50bd05ed030"/>Bearer</entry><entry>
+<para>Bearer token authorization scheme commonly used in web APIs and OAuth 2.0 authentication. </para>
+</entry></row><row><entry><indexterm><primary>Digest</primary><secondary>Openlabs.Mgcxm.Net</secondary></indexterm>
+<indexterm><primary>Openlabs.Mgcxm.Net</primary><secondary>Digest</secondary></indexterm>
+<anchor xml:id="_namespace_openlabs_1_1_mgcxm_1_1_net_1a1cf0ff6088d262006cd028b076749e13ae5cfc515f312c9e85f367e9854d9963e"/>Digest</entry><entry>
+<para>Digest authorization scheme, an older HTTP authentication method that uses a challenge-response mechanism for authentication. </para>
+</entry></row><row><entry><indexterm><primary>Basic</primary><secondary>Openlabs.Mgcxm.Net</secondary></indexterm>
+<indexterm><primary>Openlabs.Mgcxm.Net</primary><secondary>Basic</secondary></indexterm>
+<anchor xml:id="_namespace_openlabs_1_1_mgcxm_1_1_net_1a1cf0ff6088d262006cd028b076749e13a972e73b7a882d0802a4e3a16946a2f94"/>Basic</entry><entry>
+<para>Basic authorization scheme, an HTTP authentication method where credentials (username and password) are sent in the request headers as base64-encoded. </para>
+</entry></row>    </tbody>
+    </tgroup>
+</informaltable>
+</section>
+<anchor xml:id="_namespace_openlabs_1_1_mgcxm_1_1_net_1a0190ca5d59602d92653be09f01e3fc18"/><section>
+    <title>HttpContentTypes</title>
+<indexterm><primary>HttpContentTypes</primary><secondary>Openlabs.Mgcxm.Net</secondary></indexterm>
+<indexterm><primary>Openlabs.Mgcxm.Net</primary><secondary>HttpContentTypes</secondary></indexterm>
+<para><computeroutput>enum <link linkend="_namespace_openlabs_1_1_mgcxm_1_1_net_1a0190ca5d59602d92653be09f01e3fc18">Openlabs.Mgcxm.Net.HttpContentTypes</link></computeroutput></para><informaltable frame="all">
+<title>Enumerator</title>
+    <tgroup cols="2" align="left" colsep="1" rowsep="1">
+      <colspec colname='c1'/>
+      <colspec colname='c2'/>
+<tbody>
+<row><entry><indexterm><primary>Invalid</primary><secondary>Openlabs.Mgcxm.Net</secondary></indexterm>
+<indexterm><primary>Openlabs.Mgcxm.Net</primary><secondary>Invalid</secondary></indexterm>
+<anchor xml:id="_namespace_openlabs_1_1_mgcxm_1_1_net_1a0190ca5d59602d92653be09f01e3fc18a4bbb8f967da6d1a610596d7257179c2b"/>Invalid</entry><entry></entry></row><row><entry><indexterm><primary>AacAudio</primary><secondary>Openlabs.Mgcxm.Net</secondary></indexterm>
+<indexterm><primary>Openlabs.Mgcxm.Net</primary><secondary>AacAudio</secondary></indexterm>
+<anchor xml:id="_namespace_openlabs_1_1_mgcxm_1_1_net_1a0190ca5d59602d92653be09f01e3fc18a580ba9648b4a76ea7acf941c69fde2fb"/>AacAudio</entry><entry></entry></row><row><entry><indexterm><primary>AbiWord</primary><secondary>Openlabs.Mgcxm.Net</secondary></indexterm>
+<indexterm><primary>Openlabs.Mgcxm.Net</primary><secondary>AbiWord</secondary></indexterm>
+<anchor xml:id="_namespace_openlabs_1_1_mgcxm_1_1_net_1a0190ca5d59602d92653be09f01e3fc18a1d592ea6ac313f794afbabb2da35785d"/>AbiWord</entry><entry></entry></row><row><entry><indexterm><primary>ArchiveDocument</primary><secondary>Openlabs.Mgcxm.Net</secondary></indexterm>
+<indexterm><primary>Openlabs.Mgcxm.Net</primary><secondary>ArchiveDocument</secondary></indexterm>
+<anchor xml:id="_namespace_openlabs_1_1_mgcxm_1_1_net_1a0190ca5d59602d92653be09f01e3fc18a577a2b5c02e0013c7a318aab458666b4"/>ArchiveDocument</entry><entry></entry></row><row><entry><indexterm><primary>AvifImage</primary><secondary>Openlabs.Mgcxm.Net</secondary></indexterm>
+<indexterm><primary>Openlabs.Mgcxm.Net</primary><secondary>AvifImage</secondary></indexterm>
+<anchor xml:id="_namespace_openlabs_1_1_mgcxm_1_1_net_1a0190ca5d59602d92653be09f01e3fc18a2dca2c5bb60b9134564ac0073555b15f"/>AvifImage</entry><entry></entry></row><row><entry><indexterm><primary>Avi</primary><secondary>Openlabs.Mgcxm.Net</secondary></indexterm>
+<indexterm><primary>Openlabs.Mgcxm.Net</primary><secondary>Avi</secondary></indexterm>
+<anchor xml:id="_namespace_openlabs_1_1_mgcxm_1_1_net_1a0190ca5d59602d92653be09f01e3fc18a75614c3fca429c06226ca2518abb73aa"/>Avi</entry><entry></entry></row><row><entry><indexterm><primary>BinaryData</primary><secondary>Openlabs.Mgcxm.Net</secondary></indexterm>
+<indexterm><primary>Openlabs.Mgcxm.Net</primary><secondary>BinaryData</secondary></indexterm>
+<anchor xml:id="_namespace_openlabs_1_1_mgcxm_1_1_net_1a0190ca5d59602d92653be09f01e3fc18a720d6b79124c921105436adcb9f99f7f"/>BinaryData</entry><entry></entry></row><row><entry><indexterm><primary>WinOs2Bitmap</primary><secondary>Openlabs.Mgcxm.Net</secondary></indexterm>
+<indexterm><primary>Openlabs.Mgcxm.Net</primary><secondary>WinOs2Bitmap</secondary></indexterm>
+<anchor xml:id="_namespace_openlabs_1_1_mgcxm_1_1_net_1a0190ca5d59602d92653be09f01e3fc18ac56152fd166d9a9a95d2e77ddac6c2c6"/>WinOs2Bitmap</entry><entry></entry></row><row><entry><indexterm><primary>BzipArchive</primary><secondary>Openlabs.Mgcxm.Net</secondary></indexterm>
+<indexterm><primary>Openlabs.Mgcxm.Net</primary><secondary>BzipArchive</secondary></indexterm>
+<anchor xml:id="_namespace_openlabs_1_1_mgcxm_1_1_net_1a0190ca5d59602d92653be09f01e3fc18a721ef395d92fd468d7b2caabbafefa91"/>BzipArchive</entry><entry></entry></row><row><entry><indexterm><primary>Bzip2Archive</primary><secondary>Openlabs.Mgcxm.Net</secondary></indexterm>
+<indexterm><primary>Openlabs.Mgcxm.Net</primary><secondary>Bzip2Archive</secondary></indexterm>
+<anchor xml:id="_namespace_openlabs_1_1_mgcxm_1_1_net_1a0190ca5d59602d92653be09f01e3fc18a224a367e2bbe657040890b3ce384d4a9"/>Bzip2Archive</entry><entry></entry></row><row><entry><indexterm><primary>CdAudio</primary><secondary>Openlabs.Mgcxm.Net</secondary></indexterm>
+<indexterm><primary>Openlabs.Mgcxm.Net</primary><secondary>CdAudio</secondary></indexterm>
+<anchor xml:id="_namespace_openlabs_1_1_mgcxm_1_1_net_1a0190ca5d59602d92653be09f01e3fc18a79e3a446348ee602e54d76926ce313fb"/>CdAudio</entry><entry></entry></row><row><entry><indexterm><primary>CshellScript</primary><secondary>Openlabs.Mgcxm.Net</secondary></indexterm>
+<indexterm><primary>Openlabs.Mgcxm.Net</primary><secondary>CshellScript</secondary></indexterm>
+<anchor xml:id="_namespace_openlabs_1_1_mgcxm_1_1_net_1a0190ca5d59602d92653be09f01e3fc18a7c7f87a4485e883cd4a4c340b2de9a52"/>CshellScript</entry><entry></entry></row><row><entry><indexterm><primary>CssSheet</primary><secondary>Openlabs.Mgcxm.Net</secondary></indexterm>
+<indexterm><primary>Openlabs.Mgcxm.Net</primary><secondary>CssSheet</secondary></indexterm>
+<anchor xml:id="_namespace_openlabs_1_1_mgcxm_1_1_net_1a0190ca5d59602d92653be09f01e3fc18a4ddff390aaf6ec45919094f5a3cf2d79"/>CssSheet</entry><entry></entry></row><row><entry><indexterm><primary>MsWordDocument</primary><secondary>Openlabs.Mgcxm.Net</secondary></indexterm>
+<indexterm><primary>Openlabs.Mgcxm.Net</primary><secondary>MsWordDocument</secondary></indexterm>
+<anchor xml:id="_namespace_openlabs_1_1_mgcxm_1_1_net_1a0190ca5d59602d92653be09f01e3fc18ac670245442b38882ef3c2ab9dc9d26d2"/>MsWordDocument</entry><entry></entry></row><row><entry><indexterm><primary>MsWordDocumentXml</primary><secondary>Openlabs.Mgcxm.Net</secondary></indexterm>
+<indexterm><primary>Openlabs.Mgcxm.Net</primary><secondary>MsWordDocumentXml</secondary></indexterm>
+<anchor xml:id="_namespace_openlabs_1_1_mgcxm_1_1_net_1a0190ca5d59602d92653be09f01e3fc18a6b65cab2394372b872f87f403fff9ed2"/>MsWordDocumentXml</entry><entry></entry></row><row><entry><indexterm><primary>MsEmbeddedOpenTypeFont</primary><secondary>Openlabs.Mgcxm.Net</secondary></indexterm>
+<indexterm><primary>Openlabs.Mgcxm.Net</primary><secondary>MsEmbeddedOpenTypeFont</secondary></indexterm>
+<anchor xml:id="_namespace_openlabs_1_1_mgcxm_1_1_net_1a0190ca5d59602d92653be09f01e3fc18a8b618a6d38d6e2561f0aa5b89a91c201"/>MsEmbeddedOpenTypeFont</entry><entry></entry></row><row><entry><indexterm><primary>ElectronicPublication</primary><secondary>Openlabs.Mgcxm.Net</secondary></indexterm>
+<indexterm><primary>Openlabs.Mgcxm.Net</primary><secondary>ElectronicPublication</secondary></indexterm>
+<anchor xml:id="_namespace_openlabs_1_1_mgcxm_1_1_net_1a0190ca5d59602d92653be09f01e3fc18a636da876992c5b7f26866be41a26c57b"/>ElectronicPublication</entry><entry></entry></row><row><entry><indexterm><primary>GzipCompressArchive</primary><secondary>Openlabs.Mgcxm.Net</secondary></indexterm>
+<indexterm><primary>Openlabs.Mgcxm.Net</primary><secondary>GzipCompressArchive</secondary></indexterm>
+<anchor xml:id="_namespace_openlabs_1_1_mgcxm_1_1_net_1a0190ca5d59602d92653be09f01e3fc18a1566b01c8d448fc2ddcf1c11d72c0661"/>GzipCompressArchive</entry><entry></entry></row><row><entry><indexterm><primary>GraphicsInterchange</primary><secondary>Openlabs.Mgcxm.Net</secondary></indexterm>
+<indexterm><primary>Openlabs.Mgcxm.Net</primary><secondary>GraphicsInterchange</secondary></indexterm>
+<anchor xml:id="_namespace_openlabs_1_1_mgcxm_1_1_net_1a0190ca5d59602d92653be09f01e3fc18a1f458f5d2dad4d0529ed894254d51aa2"/>GraphicsInterchange</entry><entry></entry></row><row><entry><indexterm><primary>HtmlFile</primary><secondary>Openlabs.Mgcxm.Net</secondary></indexterm>
+<indexterm><primary>Openlabs.Mgcxm.Net</primary><secondary>HtmlFile</secondary></indexterm>
+<anchor xml:id="_namespace_openlabs_1_1_mgcxm_1_1_net_1a0190ca5d59602d92653be09f01e3fc18a2d310c4f098ed425228b7a47468034ba"/>HtmlFile</entry><entry></entry></row><row><entry><indexterm><primary>IconFile</primary><secondary>Openlabs.Mgcxm.Net</secondary></indexterm>
+<indexterm><primary>Openlabs.Mgcxm.Net</primary><secondary>IconFile</secondary></indexterm>
+<anchor xml:id="_namespace_openlabs_1_1_mgcxm_1_1_net_1a0190ca5d59602d92653be09f01e3fc18a0c963f094b5c4c9754ddbb52a7fbd7e0"/>IconFile</entry><entry></entry></row><row><entry><indexterm><primary>Calender</primary><secondary>Openlabs.Mgcxm.Net</secondary></indexterm>
+<indexterm><primary>Openlabs.Mgcxm.Net</primary><secondary>Calender</secondary></indexterm>
+<anchor xml:id="_namespace_openlabs_1_1_mgcxm_1_1_net_1a0190ca5d59602d92653be09f01e3fc18a29c34bcbf6427baef17773a148b62812"/>Calender</entry><entry></entry></row><row><entry><indexterm><primary>JavaArchive</primary><secondary>Openlabs.Mgcxm.Net</secondary></indexterm>
+<indexterm><primary>Openlabs.Mgcxm.Net</primary><secondary>JavaArchive</secondary></indexterm>
+<anchor xml:id="_namespace_openlabs_1_1_mgcxm_1_1_net_1a0190ca5d59602d92653be09f01e3fc18a9a916e21a170ee80bef9fc9700f82896"/>JavaArchive</entry><entry></entry></row><row><entry><indexterm><primary>JpegImage</primary><secondary>Openlabs.Mgcxm.Net</secondary></indexterm>
+<indexterm><primary>Openlabs.Mgcxm.Net</primary><secondary>JpegImage</secondary></indexterm>
+<anchor xml:id="_namespace_openlabs_1_1_mgcxm_1_1_net_1a0190ca5d59602d92653be09f01e3fc18ae0c9c839003e6b3bc3298e2a411bd53d"/>JpegImage</entry><entry></entry></row><row><entry><indexterm><primary>Javascript</primary><secondary>Openlabs.Mgcxm.Net</secondary></indexterm>
+<indexterm><primary>Openlabs.Mgcxm.Net</primary><secondary>Javascript</secondary></indexterm>
+<anchor xml:id="_namespace_openlabs_1_1_mgcxm_1_1_net_1a0190ca5d59602d92653be09f01e3fc18a9e13b69d1d2da927102acaaaf7154a37"/>Javascript</entry><entry></entry></row><row><entry><indexterm><primary>Json</primary><secondary>Openlabs.Mgcxm.Net</secondary></indexterm>
+<indexterm><primary>Openlabs.Mgcxm.Net</primary><secondary>Json</secondary></indexterm>
+<anchor xml:id="_namespace_openlabs_1_1_mgcxm_1_1_net_1a0190ca5d59602d92653be09f01e3fc18aeed8d85b888a6c015834240885ee6333"/>Json</entry><entry></entry></row><row><entry><indexterm><primary>JsonLd</primary><secondary>Openlabs.Mgcxm.Net</secondary></indexterm>
+<indexterm><primary>Openlabs.Mgcxm.Net</primary><secondary>JsonLd</secondary></indexterm>
+<anchor xml:id="_namespace_openlabs_1_1_mgcxm_1_1_net_1a0190ca5d59602d92653be09f01e3fc18afc376ec6e0da9a99e0c333cd42f958f5"/>JsonLd</entry><entry></entry></row><row><entry><indexterm><primary>Mp3Audio</primary><secondary>Openlabs.Mgcxm.Net</secondary></indexterm>
+<indexterm><primary>Openlabs.Mgcxm.Net</primary><secondary>Mp3Audio</secondary></indexterm>
+<anchor xml:id="_namespace_openlabs_1_1_mgcxm_1_1_net_1a0190ca5d59602d92653be09f01e3fc18acc7d9bcdaa80bb9993f20afa040d256d"/>Mp3Audio</entry><entry></entry></row><row><entry><indexterm><primary>Mp4Video</primary><secondary>Openlabs.Mgcxm.Net</secondary></indexterm>
+<indexterm><primary>Openlabs.Mgcxm.Net</primary><secondary>Mp4Video</secondary></indexterm>
+<anchor xml:id="_namespace_openlabs_1_1_mgcxm_1_1_net_1a0190ca5d59602d92653be09f01e3fc18a3d08e1782a993220dd7cdd36d8b9d5f0"/>Mp4Video</entry><entry></entry></row><row><entry><indexterm><primary>MpegVideo</primary><secondary>Openlabs.Mgcxm.Net</secondary></indexterm>
+<indexterm><primary>Openlabs.Mgcxm.Net</primary><secondary>MpegVideo</secondary></indexterm>
+<anchor xml:id="_namespace_openlabs_1_1_mgcxm_1_1_net_1a0190ca5d59602d92653be09f01e3fc18ae911c703b930e14a565b1680c9322f66"/>MpegVideo</entry><entry></entry></row><row><entry><indexterm><primary>OggAudio</primary><secondary>Openlabs.Mgcxm.Net</secondary></indexterm>
+<indexterm><primary>Openlabs.Mgcxm.Net</primary><secondary>OggAudio</secondary></indexterm>
+<anchor xml:id="_namespace_openlabs_1_1_mgcxm_1_1_net_1a0190ca5d59602d92653be09f01e3fc18aecff09c51e2d83f3a2d80aeca378ef64"/>OggAudio</entry><entry></entry></row><row><entry><indexterm><primary>OgvAudio</primary><secondary>Openlabs.Mgcxm.Net</secondary></indexterm>
+<indexterm><primary>Openlabs.Mgcxm.Net</primary><secondary>OgvAudio</secondary></indexterm>
+<anchor xml:id="_namespace_openlabs_1_1_mgcxm_1_1_net_1a0190ca5d59602d92653be09f01e3fc18a74dd024cd634f7690d6cb529fd044ae6"/>OgvAudio</entry><entry></entry></row><row><entry><indexterm><primary>OpusAudio</primary><secondary>Openlabs.Mgcxm.Net</secondary></indexterm>
+<indexterm><primary>Openlabs.Mgcxm.Net</primary><secondary>OpusAudio</secondary></indexterm>
+<anchor xml:id="_namespace_openlabs_1_1_mgcxm_1_1_net_1a0190ca5d59602d92653be09f01e3fc18a1ec8011862f272cf98199dae4568fa03"/>OpusAudio</entry><entry></entry></row><row><entry><indexterm><primary>OpenTypeFont</primary><secondary>Openlabs.Mgcxm.Net</secondary></indexterm>
+<indexterm><primary>Openlabs.Mgcxm.Net</primary><secondary>OpenTypeFont</secondary></indexterm>
+<anchor xml:id="_namespace_openlabs_1_1_mgcxm_1_1_net_1a0190ca5d59602d92653be09f01e3fc18a43f1c034e10eba58cda3750470366586"/>OpenTypeFont</entry><entry></entry></row><row><entry><indexterm><primary>PngImage</primary><secondary>Openlabs.Mgcxm.Net</secondary></indexterm>
+<indexterm><primary>Openlabs.Mgcxm.Net</primary><secondary>PngImage</secondary></indexterm>
+<anchor xml:id="_namespace_openlabs_1_1_mgcxm_1_1_net_1a0190ca5d59602d92653be09f01e3fc18a020e1d92c28f4478ff1f3477b6a6cdea"/>PngImage</entry><entry></entry></row><row><entry><indexterm><primary>PlainText</primary><secondary>Openlabs.Mgcxm.Net</secondary></indexterm>
+<indexterm><primary>Openlabs.Mgcxm.Net</primary><secondary>PlainText</secondary></indexterm>
+<anchor xml:id="_namespace_openlabs_1_1_mgcxm_1_1_net_1a0190ca5d59602d92653be09f01e3fc18ab7ebbf7f254ef646928dd58f62383a85"/>PlainText</entry><entry></entry></row><row><entry><indexterm><primary>WavAudio</primary><secondary>Openlabs.Mgcxm.Net</secondary></indexterm>
+<indexterm><primary>Openlabs.Mgcxm.Net</primary><secondary>WavAudio</secondary></indexterm>
+<anchor xml:id="_namespace_openlabs_1_1_mgcxm_1_1_net_1a0190ca5d59602d92653be09f01e3fc18ab8ee22298c76dc38d7d8545a5a6a2b96"/>WavAudio</entry><entry></entry></row><row><entry><indexterm><primary>WebmAudio</primary><secondary>Openlabs.Mgcxm.Net</secondary></indexterm>
+<indexterm><primary>Openlabs.Mgcxm.Net</primary><secondary>WebmAudio</secondary></indexterm>
+<anchor xml:id="_namespace_openlabs_1_1_mgcxm_1_1_net_1a0190ca5d59602d92653be09f01e3fc18acf0efedf426fab8750fd10b9cb7c2c94"/>WebmAudio</entry><entry></entry></row><row><entry><indexterm><primary>WebmVideo</primary><secondary>Openlabs.Mgcxm.Net</secondary></indexterm>
+<indexterm><primary>Openlabs.Mgcxm.Net</primary><secondary>WebmVideo</secondary></indexterm>
+<anchor xml:id="_namespace_openlabs_1_1_mgcxm_1_1_net_1a0190ca5d59602d92653be09f01e3fc18afea41e71c0603a4425dbfc4bce1758b7"/>WebmVideo</entry><entry></entry></row><row><entry><indexterm><primary>WebpImage</primary><secondary>Openlabs.Mgcxm.Net</secondary></indexterm>
+<indexterm><primary>Openlabs.Mgcxm.Net</primary><secondary>WebpImage</secondary></indexterm>
+<anchor xml:id="_namespace_openlabs_1_1_mgcxm_1_1_net_1a0190ca5d59602d92653be09f01e3fc18afb55b74df9472d8cca66dd07672e7f1f"/>WebpImage</entry><entry></entry></row><row><entry><indexterm><primary>Xml</primary><secondary>Openlabs.Mgcxm.Net</secondary></indexterm>
+<indexterm><primary>Openlabs.Mgcxm.Net</primary><secondary>Xml</secondary></indexterm>
+<anchor xml:id="_namespace_openlabs_1_1_mgcxm_1_1_net_1a0190ca5d59602d92653be09f01e3fc18a9ec8e4e3ab4c7eeba097f27d7364d743"/>Xml</entry><entry></entry></row><row><entry><indexterm><primary>ZipArchive</primary><secondary>Openlabs.Mgcxm.Net</secondary></indexterm>
+<indexterm><primary>Openlabs.Mgcxm.Net</primary><secondary>ZipArchive</secondary></indexterm>
+<anchor xml:id="_namespace_openlabs_1_1_mgcxm_1_1_net_1a0190ca5d59602d92653be09f01e3fc18aa1bce3344d2d27389dd84f81b74b827b"/>ZipArchive</entry><entry></entry></row><row><entry><indexterm><primary>UrlencodedForm</primary><secondary>Openlabs.Mgcxm.Net</secondary></indexterm>
+<indexterm><primary>Openlabs.Mgcxm.Net</primary><secondary>UrlencodedForm</secondary></indexterm>
+<anchor xml:id="_namespace_openlabs_1_1_mgcxm_1_1_net_1a0190ca5d59602d92653be09f01e3fc18a5347c60c0d625a8702ead26e3eb58bdb"/>UrlencodedForm</entry><entry></entry></row><row><entry><indexterm><primary>MultipartForm</primary><secondary>Openlabs.Mgcxm.Net</secondary></indexterm>
+<indexterm><primary>Openlabs.Mgcxm.Net</primary><secondary>MultipartForm</secondary></indexterm>
+<anchor xml:id="_namespace_openlabs_1_1_mgcxm_1_1_net_1a0190ca5d59602d92653be09f01e3fc18a41c914e8496b12fbd8b8f84886cb3bf0"/>MultipartForm</entry><entry></entry></row>    </tbody>
+    </tgroup>
+</informaltable>
+</section>
+<anchor xml:id="_namespace_openlabs_1_1_mgcxm_1_1_net_1a63268740291f4b97a3eb53abd380f84e"/><section>
+    <title>HttpMethods</title>
+<indexterm><primary>HttpMethods</primary><secondary>Openlabs.Mgcxm.Net</secondary></indexterm>
+<indexterm><primary>Openlabs.Mgcxm.Net</primary><secondary>HttpMethods</secondary></indexterm>
+<para><computeroutput>enum <link linkend="_namespace_openlabs_1_1_mgcxm_1_1_net_1a63268740291f4b97a3eb53abd380f84e">Openlabs.Mgcxm.Net.HttpMethods</link></computeroutput></para><para>
+
+<para>An enumeration of all supported HTTP methods. </para>
+</para>
+<informaltable frame="all">
+<title>Enumerator</title>
+    <tgroup cols="2" align="left" colsep="1" rowsep="1">
+      <colspec colname='c1'/>
+      <colspec colname='c2'/>
+<tbody>
+<row><entry><indexterm><primary>UNKNOWN</primary><secondary>Openlabs.Mgcxm.Net</secondary></indexterm>
+<indexterm><primary>Openlabs.Mgcxm.Net</primary><secondary>UNKNOWN</secondary></indexterm>
+<anchor xml:id="_namespace_openlabs_1_1_mgcxm_1_1_net_1a63268740291f4b97a3eb53abd380f84ea696b031073e74bf2cb98e5ef201d4aa3"/>UNKNOWN</entry><entry>
+<para>Represents an unknown or unsupported HTTP method. </para>
+</entry></row><row><entry><indexterm><primary>GET</primary><secondary>Openlabs.Mgcxm.Net</secondary></indexterm>
+<indexterm><primary>Openlabs.Mgcxm.Net</primary><secondary>GET</secondary></indexterm>
+<anchor xml:id="_namespace_openlabs_1_1_mgcxm_1_1_net_1a63268740291f4b97a3eb53abd380f84ea7528035a93ee69cedb1dbddb2f0bfcc8"/>GET</entry><entry>
+<para>Represents an HTTP GET method used to retrieve data from the server. </para>
+</entry></row><row><entry><indexterm><primary>POST</primary><secondary>Openlabs.Mgcxm.Net</secondary></indexterm>
+<indexterm><primary>Openlabs.Mgcxm.Net</primary><secondary>POST</secondary></indexterm>
+<anchor xml:id="_namespace_openlabs_1_1_mgcxm_1_1_net_1a63268740291f4b97a3eb53abd380f84eaa02439ec229d8be0e74b0c1602392310"/>POST</entry><entry>
+<para>Represents an HTTP POST method used to submit data to be processed by the server. </para>
+</entry></row><row><entry><indexterm><primary>PUT</primary><secondary>Openlabs.Mgcxm.Net</secondary></indexterm>
+<indexterm><primary>Openlabs.Mgcxm.Net</primary><secondary>PUT</secondary></indexterm>
+<anchor xml:id="_namespace_openlabs_1_1_mgcxm_1_1_net_1a63268740291f4b97a3eb53abd380f84ea3e75383a5992a6d15fb81e872e46e256"/>PUT</entry><entry>
+<para>Represents an HTTP PUT method used to update existing data on the server. </para>
+</entry></row><row><entry><indexterm><primary>HEAD</primary><secondary>Openlabs.Mgcxm.Net</secondary></indexterm>
+<indexterm><primary>Openlabs.Mgcxm.Net</primary><secondary>HEAD</secondary></indexterm>
+<anchor xml:id="_namespace_openlabs_1_1_mgcxm_1_1_net_1a63268740291f4b97a3eb53abd380f84eae15e216fc1c639f787b1231ecdfa1bf8"/>HEAD</entry><entry>
+<para>Represents an HTTP HEAD method used to request the headers of an HTTP response. </para>
+</entry></row><row><entry><indexterm><primary>DELETE</primary><secondary>Openlabs.Mgcxm.Net</secondary></indexterm>
+<indexterm><primary>Openlabs.Mgcxm.Net</primary><secondary>DELETE</secondary></indexterm>
+<anchor xml:id="_namespace_openlabs_1_1_mgcxm_1_1_net_1a63268740291f4b97a3eb53abd380f84ea32f68a60cef40faedbc6af20298c1a1e"/>DELETE</entry><entry>
+<para>Represents an HTTP DELETE method used to request the deletion of a resource on the server. </para>
+</entry></row>    </tbody>
+    </tgroup>
+</informaltable>
+</section>
+<anchor xml:id="_namespace_openlabs_1_1_mgcxm_1_1_net_1ac91eddadee1cf42d551524d032a0d76c"/><section>
+    <title>HttpRequireFlag</title>
+<indexterm><primary>HttpRequireFlag</primary><secondary>Openlabs.Mgcxm.Net</secondary></indexterm>
+<indexterm><primary>Openlabs.Mgcxm.Net</primary><secondary>HttpRequireFlag</secondary></indexterm>
+<para><computeroutput>enum <link linkend="_namespace_openlabs_1_1_mgcxm_1_1_net_1ac91eddadee1cf42d551524d032a0d76c">Openlabs.Mgcxm.Net.HttpRequireFlag</link></computeroutput></para><para>
+
+<para>An enumeration of flags that represent additional requirements for an HTTP endpoint method. </para>
+</para>
+<informaltable frame="all">
+<title>Enumerator</title>
+    <tgroup cols="2" align="left" colsep="1" rowsep="1">
+      <colspec colname='c1'/>
+      <colspec colname='c2'/>
+<tbody>
+<row><entry><indexterm><primary>FormBody</primary><secondary>Openlabs.Mgcxm.Net</secondary></indexterm>
+<indexterm><primary>Openlabs.Mgcxm.Net</primary><secondary>FormBody</secondary></indexterm>
+<anchor xml:id="_namespace_openlabs_1_1_mgcxm_1_1_net_1ac91eddadee1cf42d551524d032a0d76ca5109d53455b5e28d085cafb46fbfe99c"/>FormBody</entry><entry>
+<para>Indicates that the HTTP endpoint requires form data in the request body. </para>
+</entry></row><row><entry><indexterm><primary>BinaryData</primary><secondary>Openlabs.Mgcxm.Net</secondary></indexterm>
+<indexterm><primary>Openlabs.Mgcxm.Net</primary><secondary>BinaryData</secondary></indexterm>
+<anchor xml:id="_namespace_openlabs_1_1_mgcxm_1_1_net_1ac91eddadee1cf42d551524d032a0d76ca720d6b79124c921105436adcb9f99f7f"/>BinaryData</entry><entry>
+<para>Indicates that the HTTP endpoint requires binary data in the request body. </para>
+</entry></row><row><entry><indexterm><primary>Header</primary><secondary>Openlabs.Mgcxm.Net</secondary></indexterm>
+<indexterm><primary>Openlabs.Mgcxm.Net</primary><secondary>Header</secondary></indexterm>
+<anchor xml:id="_namespace_openlabs_1_1_mgcxm_1_1_net_1ac91eddadee1cf42d551524d032a0d76cabf50d5e661106d0abe925af3c2e6f7e7"/>Header</entry><entry>
+<para>Indicates that the HTTP endpoint requires specific headers in the request. </para>
+</entry></row><row><entry><indexterm><primary>Query</primary><secondary>Openlabs.Mgcxm.Net</secondary></indexterm>
+<indexterm><primary>Openlabs.Mgcxm.Net</primary><secondary>Query</secondary></indexterm>
+<anchor xml:id="_namespace_openlabs_1_1_mgcxm_1_1_net_1ac91eddadee1cf42d551524d032a0d76ca66c1b4c7f3dc385b68a9fa903ccd016d"/>Query</entry><entry>
+<para>Indicates that the HTTP endpoint requires specific query parameters in the request. </para>
+</entry></row>    </tbody>
+    </tgroup>
+</informaltable>
+</section>
+<anchor xml:id="_namespace_openlabs_1_1_mgcxm_1_1_net_1a3465bc704788a5ead88ca632927a5dfd"/><section>
+    <title>HttpStatusCodes</title>
+<indexterm><primary>HttpStatusCodes</primary><secondary>Openlabs.Mgcxm.Net</secondary></indexterm>
+<indexterm><primary>Openlabs.Mgcxm.Net</primary><secondary>HttpStatusCodes</secondary></indexterm>
+<para><computeroutput>enum <link linkend="_namespace_openlabs_1_1_mgcxm_1_1_net_1a3465bc704788a5ead88ca632927a5dfd">Openlabs.Mgcxm.Net.HttpStatusCodes</link></computeroutput></para><para>
+
+<para>Contains the values of status codes defined for HTTP. </para>
+</para>
+<informaltable frame="all">
+<title>Enumerator</title>
+    <tgroup cols="2" align="left" colsep="1" rowsep="1">
+      <colspec colname='c1'/>
+      <colspec colname='c2'/>
+<tbody>
+<row><entry><indexterm><primary>Continue</primary><secondary>Openlabs.Mgcxm.Net</secondary></indexterm>
+<indexterm><primary>Openlabs.Mgcxm.Net</primary><secondary>Continue</secondary></indexterm>
+<anchor xml:id="_namespace_openlabs_1_1_mgcxm_1_1_net_1a3465bc704788a5ead88ca632927a5dfdaa0bfb8e59e6c13fc8d990781f77694fe"/>Continue</entry><entry>
+<para>Equivalent to HTTP status 100. HttpStatusCodes.Continue indicates that the client can continue with its request. </para>
+</entry></row><row><entry><indexterm><primary>SwitchingProtocols</primary><secondary>Openlabs.Mgcxm.Net</secondary></indexterm>
+<indexterm><primary>Openlabs.Mgcxm.Net</primary><secondary>SwitchingProtocols</secondary></indexterm>
+<anchor xml:id="_namespace_openlabs_1_1_mgcxm_1_1_net_1a3465bc704788a5ead88ca632927a5dfda548c5a637eddf65132b21411aeafc6a1"/>SwitchingProtocols</entry><entry>
+<para>Equivalent to HTTP status 101. HttpStatusCodes.SwitchingProtocols indicates that the protocol version or protocol is being changed. </para>
+</entry></row><row><entry><indexterm><primary>OK</primary><secondary>Openlabs.Mgcxm.Net</secondary></indexterm>
+<indexterm><primary>Openlabs.Mgcxm.Net</primary><secondary>OK</secondary></indexterm>
+<anchor xml:id="_namespace_openlabs_1_1_mgcxm_1_1_net_1a3465bc704788a5ead88ca632927a5dfdae0aa021e21dddbd6d8cecec71e9cf564"/>OK</entry><entry>
+<para>Equivalent to HTTP status 200. HttpStatusCodes.OK indicates that the request succeeded and that the requested information is in the response. This is the most common status code to receive. </para>
+</entry></row><row><entry><indexterm><primary>Created</primary><secondary>Openlabs.Mgcxm.Net</secondary></indexterm>
+<indexterm><primary>Openlabs.Mgcxm.Net</primary><secondary>Created</secondary></indexterm>
+<anchor xml:id="_namespace_openlabs_1_1_mgcxm_1_1_net_1a3465bc704788a5ead88ca632927a5dfda0eceeb45861f9585dd7a97a3e36f85c6"/>Created</entry><entry>
+<para>Equivalent to HTTP status 201. HttpStatusCodes.Created indicates that the request resulted in a new resource created before the response was sent. </para>
+</entry></row><row><entry><indexterm><primary>Accepted</primary><secondary>Openlabs.Mgcxm.Net</secondary></indexterm>
+<indexterm><primary>Openlabs.Mgcxm.Net</primary><secondary>Accepted</secondary></indexterm>
+<anchor xml:id="_namespace_openlabs_1_1_mgcxm_1_1_net_1a3465bc704788a5ead88ca632927a5dfda382ab522931673c11e398ead1b7b1678"/>Accepted</entry><entry>
+<para>Equivalent to HTTP status 202. HttpStatusCodes.Accepted indicates that the request has been accepted for further processing. </para>
+</entry></row><row><entry><indexterm><primary>NonAuthoritativeInformation</primary><secondary>Openlabs.Mgcxm.Net</secondary></indexterm>
+<indexterm><primary>Openlabs.Mgcxm.Net</primary><secondary>NonAuthoritativeInformation</secondary></indexterm>
+<anchor xml:id="_namespace_openlabs_1_1_mgcxm_1_1_net_1a3465bc704788a5ead88ca632927a5dfda2d0ea43e788b779c0aec92366b711c2f"/>NonAuthoritativeInformation</entry><entry>
+<para>Equivalent to HTTP status 203. HttpStatusCodes.NonAuthoritativeInformation indicates that the returned metainformation is from a cached copy instead of the origin server and therefore may be incorrect. </para>
+</entry></row><row><entry><indexterm><primary>NoContent</primary><secondary>Openlabs.Mgcxm.Net</secondary></indexterm>
+<indexterm><primary>Openlabs.Mgcxm.Net</primary><secondary>NoContent</secondary></indexterm>
+<anchor xml:id="_namespace_openlabs_1_1_mgcxm_1_1_net_1a3465bc704788a5ead88ca632927a5dfdacd447f1ec89f564ebac583d60087df12"/>NoContent</entry><entry>
+<para>Equivalent to HTTP status 204. HttpStatusCodes.NoContent indicates that the request has been successfully processed and that the response is intentionally blank. </para>
+</entry></row><row><entry><indexterm><primary>ResetContent</primary><secondary>Openlabs.Mgcxm.Net</secondary></indexterm>
+<indexterm><primary>Openlabs.Mgcxm.Net</primary><secondary>ResetContent</secondary></indexterm>
+<anchor xml:id="_namespace_openlabs_1_1_mgcxm_1_1_net_1a3465bc704788a5ead88ca632927a5dfda4e9202c31896211f63be5b7345a897ed"/>ResetContent</entry><entry>
+<para>Equivalent to HTTP status 205. HttpStatusCodes.ResetContent indicates that the client should reset (not reload) the current resource. </para>
+</entry></row><row><entry><indexterm><primary>PartialContent</primary><secondary>Openlabs.Mgcxm.Net</secondary></indexterm>
+<indexterm><primary>Openlabs.Mgcxm.Net</primary><secondary>PartialContent</secondary></indexterm>
+<anchor xml:id="_namespace_openlabs_1_1_mgcxm_1_1_net_1a3465bc704788a5ead88ca632927a5dfda750de7eda10d780b3bbaefb57128c24b"/>PartialContent</entry><entry>
+<para>Equivalent to HTTP status 206. HttpStatusCodes.PartialContent indicates that the response is a partial response as requested by a GET request that includes a byte range. </para>
+</entry></row><row><entry><indexterm><primary>MultipleChoices</primary><secondary>Openlabs.Mgcxm.Net</secondary></indexterm>
+<indexterm><primary>Openlabs.Mgcxm.Net</primary><secondary>MultipleChoices</secondary></indexterm>
+<anchor xml:id="_namespace_openlabs_1_1_mgcxm_1_1_net_1a3465bc704788a5ead88ca632927a5dfdaa589749d075c3423333bdc93e3b4e774"/>MultipleChoices</entry><entry>
+<para>Equivalent to HTTP status 300. HttpStatusCodes.MultipleChoices indicates that the requested information has multiple representations. The default action is to treat this status as a redirect and follow the contents of the Location header associated with this response. </para>
+</entry></row><row><entry><indexterm><primary>Ambiguous</primary><secondary>Openlabs.Mgcxm.Net</secondary></indexterm>
+<indexterm><primary>Openlabs.Mgcxm.Net</primary><secondary>Ambiguous</secondary></indexterm>
+<anchor xml:id="_namespace_openlabs_1_1_mgcxm_1_1_net_1a3465bc704788a5ead88ca632927a5dfda02266588dfd4e565cc42949d0c73f28c"/>Ambiguous</entry><entry>
+<para>Equivalent to HTTP status 300. HttpStatusCodes.Ambiguous indicates that the requested information has multiple representations. The default action is to treat this status as a redirect and follow the contents of the Location header associated with this response. </para>
+</entry></row><row><entry><indexterm><primary>MovedPermanently</primary><secondary>Openlabs.Mgcxm.Net</secondary></indexterm>
+<indexterm><primary>Openlabs.Mgcxm.Net</primary><secondary>MovedPermanently</secondary></indexterm>
+<anchor xml:id="_namespace_openlabs_1_1_mgcxm_1_1_net_1a3465bc704788a5ead88ca632927a5dfda32638c25f4c913fce6214c2c4afff9dc"/>MovedPermanently</entry><entry>
+<para>Equivalent to HTTP status 301. HttpStatusCodes.MovedPermanently indicates that the requested information has been moved to the URI specified in the Location header. The default action when this status is received is to follow the Location header associated with the response. </para>
+</entry></row><row><entry><indexterm><primary>Moved</primary><secondary>Openlabs.Mgcxm.Net</secondary></indexterm>
+<indexterm><primary>Openlabs.Mgcxm.Net</primary><secondary>Moved</secondary></indexterm>
+<anchor xml:id="_namespace_openlabs_1_1_mgcxm_1_1_net_1a3465bc704788a5ead88ca632927a5dfda95bfdefaaf01553cbf21ccd942855c69"/>Moved</entry><entry>
+<para>Equivalent to HTTP status 301. HttpStatusCodes.Moved indicates that the requested information has been moved to the URI specified in the Location header. The default action when this status is received is to follow the Location header associated with the response. When the original request method was POST, the redirected request will use the GET method. </para>
+</entry></row><row><entry><indexterm><primary>Found</primary><secondary>Openlabs.Mgcxm.Net</secondary></indexterm>
+<indexterm><primary>Openlabs.Mgcxm.Net</primary><secondary>Found</secondary></indexterm>
+<anchor xml:id="_namespace_openlabs_1_1_mgcxm_1_1_net_1a3465bc704788a5ead88ca632927a5dfda5d695cc28c6a7ea955162fbdd0ae42b9"/>Found</entry><entry>
+<para>Equivalent to HTTP status 302. HttpStatusCodes.Found indicates that the requested information is located at the URI specified in the Location header. The default action when this status is received is to follow the Location header associated with the response. When the original request method was POST, the redirected request will use the GET method. </para>
+</entry></row><row><entry><indexterm><primary>Redirect</primary><secondary>Openlabs.Mgcxm.Net</secondary></indexterm>
+<indexterm><primary>Openlabs.Mgcxm.Net</primary><secondary>Redirect</secondary></indexterm>
+<anchor xml:id="_namespace_openlabs_1_1_mgcxm_1_1_net_1a3465bc704788a5ead88ca632927a5dfda4202ef115ebede37eb22297113f5fb32"/>Redirect</entry><entry>
+<para>Equivalent to HTTP status 302. HttpStatusCodes.Redirect indicates that the requested information is located at the URI specified in the Location header. The default action when this status is received is to follow the Location header associated with the response. When the original request method was POST, the redirected request will use the GET method. </para>
+</entry></row><row><entry><indexterm><primary>SeeOther</primary><secondary>Openlabs.Mgcxm.Net</secondary></indexterm>
+<indexterm><primary>Openlabs.Mgcxm.Net</primary><secondary>SeeOther</secondary></indexterm>
+<anchor xml:id="_namespace_openlabs_1_1_mgcxm_1_1_net_1a3465bc704788a5ead88ca632927a5dfda7843649eb3841f496a79303fd815029e"/>SeeOther</entry><entry>
+<para>Equivalent to HTTP status 303. HttpStatusCodes.SeeOther automatically redirects the client to the URI specified in the Location header as the result of a POST. The request to the resource specified by the Location header will be made with a GET. </para>
+</entry></row><row><entry><indexterm><primary>RedirectMethod</primary><secondary>Openlabs.Mgcxm.Net</secondary></indexterm>
+<indexterm><primary>Openlabs.Mgcxm.Net</primary><secondary>RedirectMethod</secondary></indexterm>
+<anchor xml:id="_namespace_openlabs_1_1_mgcxm_1_1_net_1a3465bc704788a5ead88ca632927a5dfda3d006d7cd9a99992b94bc01e54a067fc"/>RedirectMethod</entry><entry>
+<para>Equivalent to HTTP status 303. HttpStatusCodes.RedirectMethod automatically redirects the client to the URI specified in the Location header as the result of a POST. The request to the resource specified by the Location header will be made with a GET. </para>
+</entry></row><row><entry><indexterm><primary>NotModified</primary><secondary>Openlabs.Mgcxm.Net</secondary></indexterm>
+<indexterm><primary>Openlabs.Mgcxm.Net</primary><secondary>NotModified</secondary></indexterm>
+<anchor xml:id="_namespace_openlabs_1_1_mgcxm_1_1_net_1a3465bc704788a5ead88ca632927a5dfdac169e6d9a1b9442001384de8dcf49ab9"/>NotModified</entry><entry>
+<para>Equivalent to HTTP status 304. HttpStatusCodes.NotModified indicates that the client&apos;s cached copy is up to date. The contents of the resource are not transferred. </para>
+</entry></row><row><entry><indexterm><primary>UseProxy</primary><secondary>Openlabs.Mgcxm.Net</secondary></indexterm>
+<indexterm><primary>Openlabs.Mgcxm.Net</primary><secondary>UseProxy</secondary></indexterm>
+<anchor xml:id="_namespace_openlabs_1_1_mgcxm_1_1_net_1a3465bc704788a5ead88ca632927a5dfda0a272f25fd5e8a06065ef8ee41a88bea"/>UseProxy</entry><entry>
+<para>Equivalent to HTTP status 305. HttpStatusCodes.UseProxy indicates that the request should use the proxy server at the URI specified in the Location header. </para>
+</entry></row><row><entry><indexterm><primary>Unused</primary><secondary>Openlabs.Mgcxm.Net</secondary></indexterm>
+<indexterm><primary>Openlabs.Mgcxm.Net</primary><secondary>Unused</secondary></indexterm>
+<anchor xml:id="_namespace_openlabs_1_1_mgcxm_1_1_net_1a3465bc704788a5ead88ca632927a5dfda92e592d90b9548016776a6fb68dccded"/>Unused</entry><entry>
+<para>Equivalent to HTTP status 306. HttpStatusCodes.Unused is a proposed extension to the HTTP/1.1 specification that is not fully specified. </para>
+</entry></row><row><entry><indexterm><primary>TemporaryRedirect</primary><secondary>Openlabs.Mgcxm.Net</secondary></indexterm>
+<indexterm><primary>Openlabs.Mgcxm.Net</primary><secondary>TemporaryRedirect</secondary></indexterm>
+<anchor xml:id="_namespace_openlabs_1_1_mgcxm_1_1_net_1a3465bc704788a5ead88ca632927a5dfda1b73a351faf2b550d06fae9cc6e0a894"/>TemporaryRedirect</entry><entry>
+<para>Equivalent to HTTP status 307. HttpStatusCodes.TemporaryRedirect indicates that the request information is located at the URI specified in the Location header. The default action when this status is received is to follow the Location header associated with the response. When the original request method was POST, the redirected request will also use the POST method. </para>
+</entry></row><row><entry><indexterm><primary>RedirectKeepVerb</primary><secondary>Openlabs.Mgcxm.Net</secondary></indexterm>
+<indexterm><primary>Openlabs.Mgcxm.Net</primary><secondary>RedirectKeepVerb</secondary></indexterm>
+<anchor xml:id="_namespace_openlabs_1_1_mgcxm_1_1_net_1a3465bc704788a5ead88ca632927a5dfda5642a16c0f0774fec98ad5241b68f531"/>RedirectKeepVerb</entry><entry>
+<para>Equivalent to HTTP status 307. HttpStatusCodes.RedirectKeepVerb indicates that the request information is located at the URI specified in the Location header. The default action when this status is received is to follow the Location header associated with the response. When the original request method was POST, the redirected request will also use the POST method. </para>
+</entry></row><row><entry><indexterm><primary>BadRequest</primary><secondary>Openlabs.Mgcxm.Net</secondary></indexterm>
+<indexterm><primary>Openlabs.Mgcxm.Net</primary><secondary>BadRequest</secondary></indexterm>
+<anchor xml:id="_namespace_openlabs_1_1_mgcxm_1_1_net_1a3465bc704788a5ead88ca632927a5dfda9edf8fbf00a57d95a0af4923c9a1ec6f"/>BadRequest</entry><entry>
+<para>Equivalent to HTTP status 400. HttpStatusCodes.BadRequest indicates that the request could not be understood by the server. HttpStatusCodes.BadRequest is sent when no other error is applicable, or if the exact error is unknown or does not have its own error code. </para>
+</entry></row><row><entry><indexterm><primary>Unauthorized</primary><secondary>Openlabs.Mgcxm.Net</secondary></indexterm>
+<indexterm><primary>Openlabs.Mgcxm.Net</primary><secondary>Unauthorized</secondary></indexterm>
+<anchor xml:id="_namespace_openlabs_1_1_mgcxm_1_1_net_1a3465bc704788a5ead88ca632927a5dfdae06d1ba70f1331e9f9a113cc2f887d3f"/>Unauthorized</entry><entry>
+<para>Equivalent to HTTP status 401. HttpStatusCodes.Unauthorized indicates that the requested resource requires authentication. The WWW-Authenticate header contains the details of how to perform the authentication. </para>
+</entry></row><row><entry><indexterm><primary>PaymentRequired</primary><secondary>Openlabs.Mgcxm.Net</secondary></indexterm>
+<indexterm><primary>Openlabs.Mgcxm.Net</primary><secondary>PaymentRequired</secondary></indexterm>
+<anchor xml:id="_namespace_openlabs_1_1_mgcxm_1_1_net_1a3465bc704788a5ead88ca632927a5dfda4c99006c75b53fe48865cdfa0ac065ba"/>PaymentRequired</entry><entry>
+<para>Equivalent to HTTP status 402. HttpStatusCodes.PaymentRequired is reserved for future use. </para>
+</entry></row><row><entry><indexterm><primary>Forbidden</primary><secondary>Openlabs.Mgcxm.Net</secondary></indexterm>
+<indexterm><primary>Openlabs.Mgcxm.Net</primary><secondary>Forbidden</secondary></indexterm>
+<anchor xml:id="_namespace_openlabs_1_1_mgcxm_1_1_net_1a3465bc704788a5ead88ca632927a5dfda722969577a96ca3953e84e3d949dee81"/>Forbidden</entry><entry>
+<para>Equivalent to HTTP status 403. HttpStatusCodes.Forbidden indicates that the server refuses to fulfill the request. </para>
+</entry></row><row><entry><indexterm><primary>NotFound</primary><secondary>Openlabs.Mgcxm.Net</secondary></indexterm>
+<indexterm><primary>Openlabs.Mgcxm.Net</primary><secondary>NotFound</secondary></indexterm>
+<anchor xml:id="_namespace_openlabs_1_1_mgcxm_1_1_net_1a3465bc704788a5ead88ca632927a5dfda38c300f4fc9ce8a77aad4a30de05cad8"/>NotFound</entry><entry>
+<para>Equivalent to HTTP status 404. HttpStatusCodes.NotFound indicates that the requested resource does not exist on the server. </para>
+</entry></row><row><entry><indexterm><primary>MethodNotAllowed</primary><secondary>Openlabs.Mgcxm.Net</secondary></indexterm>
+<indexterm><primary>Openlabs.Mgcxm.Net</primary><secondary>MethodNotAllowed</secondary></indexterm>
+<anchor xml:id="_namespace_openlabs_1_1_mgcxm_1_1_net_1a3465bc704788a5ead88ca632927a5dfda8ba68fee5542f5fd071aed140c39bd8e"/>MethodNotAllowed</entry><entry>
+<para>Equivalent to HTTP status 405. HttpStatusCodes.MethodNotAllowed indicates that the request method (POST or GET) is not allowed on the requested resource. </para>
+</entry></row><row><entry><indexterm><primary>NotAcceptable</primary><secondary>Openlabs.Mgcxm.Net</secondary></indexterm>
+<indexterm><primary>Openlabs.Mgcxm.Net</primary><secondary>NotAcceptable</secondary></indexterm>
+<anchor xml:id="_namespace_openlabs_1_1_mgcxm_1_1_net_1a3465bc704788a5ead88ca632927a5dfdaf83a928e6a3f3b502ffadd2a414ce48c"/>NotAcceptable</entry><entry>
+<para>Equivalent to HTTP status 406. HttpStatusCodes.NotAcceptable indicates that the client has indicated with Accept headers that it will not accept any of the available representations of the resource. </para>
+</entry></row><row><entry><indexterm><primary>ProxyAuthenticationRequired</primary><secondary>Openlabs.Mgcxm.Net</secondary></indexterm>
+<indexterm><primary>Openlabs.Mgcxm.Net</primary><secondary>ProxyAuthenticationRequired</secondary></indexterm>
+<anchor xml:id="_namespace_openlabs_1_1_mgcxm_1_1_net_1a3465bc704788a5ead88ca632927a5dfda59a2898a8bf9da75a5855e76110f06f2"/>ProxyAuthenticationRequired</entry><entry>
+<para>Equivalent to HTTP status 407. HttpStatusCodes.ProxyAuthenticationRequired indicates that the requested proxy requires authentication. The Proxy-authenticate header contains the details of how to perform the authentication. </para>
+</entry></row><row><entry><indexterm><primary>RequestTimeout</primary><secondary>Openlabs.Mgcxm.Net</secondary></indexterm>
+<indexterm><primary>Openlabs.Mgcxm.Net</primary><secondary>RequestTimeout</secondary></indexterm>
+<anchor xml:id="_namespace_openlabs_1_1_mgcxm_1_1_net_1a3465bc704788a5ead88ca632927a5dfda3632c2e4e6225d4d9fcd2a6fd2c65048"/>RequestTimeout</entry><entry>
+<para>Equivalent to HTTP status 408. HttpStatusCodes.RequestTimeout indicates that the client did not send a request within the time the server was expecting the request. </para>
+</entry></row><row><entry><indexterm><primary>Conflict</primary><secondary>Openlabs.Mgcxm.Net</secondary></indexterm>
+<indexterm><primary>Openlabs.Mgcxm.Net</primary><secondary>Conflict</secondary></indexterm>
+<anchor xml:id="_namespace_openlabs_1_1_mgcxm_1_1_net_1a3465bc704788a5ead88ca632927a5dfdaf1d4ac54357cc0932f385d56814ba7e4"/>Conflict</entry><entry>
+<para>Equivalent to HTTP status 409. HttpStatusCodes.Conflict indicates that the request could not be carried out because of a conflict on the server. </para>
+</entry></row><row><entry><indexterm><primary>Gone</primary><secondary>Openlabs.Mgcxm.Net</secondary></indexterm>
+<indexterm><primary>Openlabs.Mgcxm.Net</primary><secondary>Gone</secondary></indexterm>
+<anchor xml:id="_namespace_openlabs_1_1_mgcxm_1_1_net_1a3465bc704788a5ead88ca632927a5dfda0b497b33b1a05057bc1634e607170bf6"/>Gone</entry><entry>
+<para>Equivalent to HTTP status 410. HttpStatusCodes.Gone indicates that the requested resource is no longer available. </para>
+</entry></row><row><entry><indexterm><primary>LengthRequired</primary><secondary>Openlabs.Mgcxm.Net</secondary></indexterm>
+<indexterm><primary>Openlabs.Mgcxm.Net</primary><secondary>LengthRequired</secondary></indexterm>
+<anchor xml:id="_namespace_openlabs_1_1_mgcxm_1_1_net_1a3465bc704788a5ead88ca632927a5dfda8282fb93cb1cf45b135ea191668ca583"/>LengthRequired</entry><entry>
+<para>Equivalent to HTTP status 411. HttpStatusCodes.LengthRequired indicates that the required Content-length header is missing. </para>
+</entry></row><row><entry><indexterm><primary>PreconditionFailed</primary><secondary>Openlabs.Mgcxm.Net</secondary></indexterm>
+<indexterm><primary>Openlabs.Mgcxm.Net</primary><secondary>PreconditionFailed</secondary></indexterm>
+<anchor xml:id="_namespace_openlabs_1_1_mgcxm_1_1_net_1a3465bc704788a5ead88ca632927a5dfda3542a02d18f11f46d53990d91752a6d4"/>PreconditionFailed</entry><entry>
+<para>Equivalent to HTTP status 412. HttpStatusCodes.PreconditionFailed indicates that a condition set for this request failed, and the request cannot be carried out. Conditions are set with conditional request headers like If-Match, If-None-Match, or If-Unmodified-Since. </para>
+</entry></row><row><entry><indexterm><primary>RequestEntityTooLarge</primary><secondary>Openlabs.Mgcxm.Net</secondary></indexterm>
+<indexterm><primary>Openlabs.Mgcxm.Net</primary><secondary>RequestEntityTooLarge</secondary></indexterm>
+<anchor xml:id="_namespace_openlabs_1_1_mgcxm_1_1_net_1a3465bc704788a5ead88ca632927a5dfda1d2dd18ee1a925e5887cbc2f9202e779"/>RequestEntityTooLarge</entry><entry>
+<para>Equivalent to HTTP status 413. HttpStatusCodes.RequestEntityTooLarge indicates that the request is too large for the server to process. </para>
+</entry></row><row><entry><indexterm><primary>RequestUriTooLong</primary><secondary>Openlabs.Mgcxm.Net</secondary></indexterm>
+<indexterm><primary>Openlabs.Mgcxm.Net</primary><secondary>RequestUriTooLong</secondary></indexterm>
+<anchor xml:id="_namespace_openlabs_1_1_mgcxm_1_1_net_1a3465bc704788a5ead88ca632927a5dfda08ad854bbc441f4edb6828769f8d3399"/>RequestUriTooLong</entry><entry>
+<para>Equivalent to HTTP status 414. HttpStatusCodes.RequestUriTooLong indicates that the URI is too long. </para>
+</entry></row><row><entry><indexterm><primary>UnsupportedMediaType</primary><secondary>Openlabs.Mgcxm.Net</secondary></indexterm>
+<indexterm><primary>Openlabs.Mgcxm.Net</primary><secondary>UnsupportedMediaType</secondary></indexterm>
+<anchor xml:id="_namespace_openlabs_1_1_mgcxm_1_1_net_1a3465bc704788a5ead88ca632927a5dfdaa3219a6843adbb23de79b4df9c307f5d"/>UnsupportedMediaType</entry><entry>
+<para>Equivalent to HTTP status 415. HttpStatusCodes.UnsupportedMediaType indicates that the request is an unsupported type. </para>
+</entry></row><row><entry><indexterm><primary>RequestedRangeNotSatisfiable</primary><secondary>Openlabs.Mgcxm.Net</secondary></indexterm>
+<indexterm><primary>Openlabs.Mgcxm.Net</primary><secondary>RequestedRangeNotSatisfiable</secondary></indexterm>
+<anchor xml:id="_namespace_openlabs_1_1_mgcxm_1_1_net_1a3465bc704788a5ead88ca632927a5dfda7779e53fc887ac0429f4ebde5fc0b59f"/>RequestedRangeNotSatisfiable</entry><entry>
+<para>Equivalent to HTTP status 416. HttpStatusCodes.RequestedRangeNotSatisfiable indicates that the range of data requested from the resource cannot be returned, either because the beginning of the range is before the beginning of the resource, or the end of the range is after the end of the resource. </para>
+</entry></row><row><entry><indexterm><primary>ExpectationFailed</primary><secondary>Openlabs.Mgcxm.Net</secondary></indexterm>
+<indexterm><primary>Openlabs.Mgcxm.Net</primary><secondary>ExpectationFailed</secondary></indexterm>
+<anchor xml:id="_namespace_openlabs_1_1_mgcxm_1_1_net_1a3465bc704788a5ead88ca632927a5dfda6af78095a2be4a230ba87f03dd131830"/>ExpectationFailed</entry><entry>
+<para>Equivalent to HTTP status 417. HttpStatusCodes.ExpectationFailed indicates that an expectation given in an Expect header could not be met by the server. </para>
+</entry></row><row><entry><indexterm><primary>UpgradeRequired</primary><secondary>Openlabs.Mgcxm.Net</secondary></indexterm>
+<indexterm><primary>Openlabs.Mgcxm.Net</primary><secondary>UpgradeRequired</secondary></indexterm>
+<anchor xml:id="_namespace_openlabs_1_1_mgcxm_1_1_net_1a3465bc704788a5ead88ca632927a5dfdae0eaea96be1ec038b859e02cc5330827"/>UpgradeRequired</entry><entry>
+<para>Equivalent to HTTP status 426. HttpStatusCodes.UpgradeRequired indicates that the client should switch to a different protocol such as TLS/1.0. </para>
+</entry></row><row><entry><indexterm><primary>InternalServerError</primary><secondary>Openlabs.Mgcxm.Net</secondary></indexterm>
+<indexterm><primary>Openlabs.Mgcxm.Net</primary><secondary>InternalServerError</secondary></indexterm>
+<anchor xml:id="_namespace_openlabs_1_1_mgcxm_1_1_net_1a3465bc704788a5ead88ca632927a5dfdaecbf01325f1c744e9d7bb586ac2eb5ed"/>InternalServerError</entry><entry>
+<para>Equivalent to HTTP status 500. HttpStatusCodes.InternalServerError indicates that a generic error has occurred on the server. </para>
+</entry></row><row><entry><indexterm><primary>NotImplemented</primary><secondary>Openlabs.Mgcxm.Net</secondary></indexterm>
+<indexterm><primary>Openlabs.Mgcxm.Net</primary><secondary>NotImplemented</secondary></indexterm>
+<anchor xml:id="_namespace_openlabs_1_1_mgcxm_1_1_net_1a3465bc704788a5ead88ca632927a5dfda997ca4ce119685f40f03a9a8a6c5346e"/>NotImplemented</entry><entry>
+<para>Equivalent to HTTP status 501. HttpStatusCodes.NotImplemented indicates that the server does not support the requested function. </para>
+</entry></row><row><entry><indexterm><primary>BadGateway</primary><secondary>Openlabs.Mgcxm.Net</secondary></indexterm>
+<indexterm><primary>Openlabs.Mgcxm.Net</primary><secondary>BadGateway</secondary></indexterm>
+<anchor xml:id="_namespace_openlabs_1_1_mgcxm_1_1_net_1a3465bc704788a5ead88ca632927a5dfda0e7c9ad08be0653518bf456c9994ace5"/>BadGateway</entry><entry>
+<para>Equivalent to HTTP status 502. HttpStatusCodes.BadGateway indicates that an intermediate proxy server received a bad response from another proxy or the origin server. </para>
+</entry></row><row><entry><indexterm><primary>ServiceUnavailable</primary><secondary>Openlabs.Mgcxm.Net</secondary></indexterm>
+<indexterm><primary>Openlabs.Mgcxm.Net</primary><secondary>ServiceUnavailable</secondary></indexterm>
+<anchor xml:id="_namespace_openlabs_1_1_mgcxm_1_1_net_1a3465bc704788a5ead88ca632927a5dfda2a4581043d849bcb0e4747970ef1489b"/>ServiceUnavailable</entry><entry>
+<para>Equivalent to HTTP status 503. HttpStatusCodes.ServiceUnavailable indicates that the server is temporarily unavailable, usually due to high load or maintenance. </para>
+</entry></row><row><entry><indexterm><primary>GatewayTimeout</primary><secondary>Openlabs.Mgcxm.Net</secondary></indexterm>
+<indexterm><primary>Openlabs.Mgcxm.Net</primary><secondary>GatewayTimeout</secondary></indexterm>
+<anchor xml:id="_namespace_openlabs_1_1_mgcxm_1_1_net_1a3465bc704788a5ead88ca632927a5dfdada405cbc74723dfdda615e3f679ef2be"/>GatewayTimeout</entry><entry>
+<para>Equivalent to HTTP status 504. HttpStatusCodes.GatewayTimeout indicates that an intermediate proxy server timed out while waiting for a response from another proxy or the origin server. </para>
+</entry></row><row><entry><indexterm><primary>HttpVersionNotSupported</primary><secondary>Openlabs.Mgcxm.Net</secondary></indexterm>
+<indexterm><primary>Openlabs.Mgcxm.Net</primary><secondary>HttpVersionNotSupported</secondary></indexterm>
+<anchor xml:id="_namespace_openlabs_1_1_mgcxm_1_1_net_1a3465bc704788a5ead88ca632927a5dfda56a7a02e415f5bf106088218f646c04f"/>HttpVersionNotSupported</entry><entry>
+<para>Equivalent to HTTP status 505. HttpStatusCodes.HttpVersionNotSupported indicates that the requested HTTP version is not supported by the server. </para>
+</entry></row>    </tbody>
+    </tgroup>
+</informaltable>
+</section>
+</section>
+<section>
+<title>Function Documentation</title>
+<anchor xml:id="_namespace_openlabs_1_1_mgcxm_1_1_net_1ae932ef589bc25b872380eab138472bfa"/><section>
+    <title>AsyncListenTask()</title>
+<indexterm><primary>AsyncListenTask</primary><secondary>Openlabs.Mgcxm.Net</secondary></indexterm>
+<indexterm><primary>Openlabs.Mgcxm.Net</primary><secondary>AsyncListenTask</secondary></indexterm>
+<para><computeroutput>delegate Task Openlabs.Mgcxm.Net.AsyncListenTask (HttpListener listener)</computeroutput></para><para>
+
+<para>Delegate representing an asynchronous listen task for the HTTP listener. </para>
+</para>
+
+<para>
+                <formalpara>
+                    <title>
+Parameters</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>listener</entry><entry>
+<para>The HttpListener instance to listen for requests.</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                </para>
+Here is the call graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="namespace_openlabs_1_1_mgcxm_1_1_net_ae932ef589bc25b872380eab138472bfa_cgraph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+Here is the caller graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="namespace_openlabs_1_1_mgcxm_1_1_net_ae932ef589bc25b872380eab138472bfa_icgraph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+</section>
+<anchor xml:id="_namespace_openlabs_1_1_mgcxm_1_1_net_1affacc6bf2b6a12de7307197182a70877"/><section>
+    <title>OnEndpointRequested()</title>
+<indexterm><primary>OnEndpointRequested</primary><secondary>Openlabs.Mgcxm.Net</secondary></indexterm>
+<indexterm><primary>Openlabs.Mgcxm.Net</primary><secondary>OnEndpointRequested</secondary></indexterm>
+<para><computeroutput>delegate void Openlabs.Mgcxm.Net.OnEndpointRequested (<link linkend="_class_openlabs_1_1_mgcxm_1_1_net_1_1_mgcxm_http_request">MgcxmHttpRequest</link> request, <link linkend="_class_openlabs_1_1_mgcxm_1_1_net_1_1_mgcxm_http_response">MgcxmHttpResponse</link> response)</computeroutput></para><para>
+
+<para>Delegate representing a callback for handling endpoint requests. </para>
+</para>
+
+<para>
+                <formalpara>
+                    <title>
+Parameters</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>request</entry><entry>
+<para>The MgcxmHttpRequest object representing the incoming request.</para>
+</entry>
+                            </row>
+                            <row>
+<entry>response</entry><entry>
+<para>The MgcxmHttpResponse object used to construct the response.</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                </para>
+</section>
+<anchor xml:id="_namespace_openlabs_1_1_mgcxm_1_1_net_1ad2a2bbd4000fbc64e0bfc269bbadd132"/><section>
+    <title>OnSocketUpgraded()</title>
+<indexterm><primary>OnSocketUpgraded</primary><secondary>Openlabs.Mgcxm.Net</secondary></indexterm>
+<indexterm><primary>Openlabs.Mgcxm.Net</primary><secondary>OnSocketUpgraded</secondary></indexterm>
+<para><computeroutput>delegate void Openlabs.Mgcxm.Net.OnSocketUpgraded (<link linkend="_class_openlabs_1_1_mgcxm_1_1_net_1_1_mgcxm_socket">MgcxmSocket</link> socket)</computeroutput></para><para>
+
+<para>Represents a delegate for the callback function used when a WebSocket is upgraded. </para>
+</para>
+
+<para>
+                <formalpara>
+                    <title>
+Parameters</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>socket</entry><entry>
+<para>The MgcxmSocket representing the upgraded WebSocket.</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                </para>
+</section>
+</section>
+</section>

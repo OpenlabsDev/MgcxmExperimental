@@ -1,0 +1,48 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.7" xml:lang="en-US">
+  <compounddef id="class_j_w_t_1_1_algorithms_1_1_jwt_algorithm_extensions" kind="class" language="C#" prot="public">
+    <compoundname>JWT::Algorithms::JwtAlgorithmExtensions</compoundname>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="class_j_w_t_1_1_algorithms_1_1_jwt_algorithm_extensions_1ac0062ef160a9bac2055959b5efd8b41e" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>static bool JWT.Algorithms.JwtAlgorithmExtensions.IsAsymmetric</definition>
+        <argsstring>(this IJwtAlgorithm alg)</argsstring>
+        <name>IsAsymmetric</name>
+        <qualifiedname>JWT.Algorithms.JwtAlgorithmExtensions.IsAsymmetric</qualifiedname>
+        <param>
+          <type>this <ref refid="interface_j_w_t_1_1_algorithms_1_1_i_jwt_algorithm" kindref="compound">IJwtAlgorithm</ref></type>
+          <declname>alg</declname>
+        </param>
+        <briefdescription>
+<para>Returns whether or not the algorithm is asymmetric. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>alg</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The algorithm instance.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/adenf/RiderProjects/Openlabs.Mgcxm/Openlabs.Mgcxm/JWT/Algorithms/IJwtAlgorithm.cs" line="37" column="28"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Extension methods for <simplesect kind="see"><para>IJwtAlgorithm</para>
+</simplesect>
+/summary&gt; </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/Users/adenf/RiderProjects/Openlabs.Mgcxm/Openlabs.Mgcxm/JWT/Algorithms/IJwtAlgorithm.cs" line="31" column="19" bodyfile="C:/Users/adenf/RiderProjects/Openlabs.Mgcxm/Openlabs.Mgcxm/JWT/Algorithms/IJwtAlgorithm.cs" bodystart="32" bodyend="39"/>
+    <listofallmembers>
+      <member refid="class_j_w_t_1_1_algorithms_1_1_jwt_algorithm_extensions_1ac0062ef160a9bac2055959b5efd8b41e" prot="public" virt="non-virtual"><scope>JWT::Algorithms::JwtAlgorithmExtensions</scope><name>IsAsymmetric</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

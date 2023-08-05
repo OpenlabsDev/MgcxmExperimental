@@ -1,0 +1,26 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_namespace_openlabs_1_1_mgcxm_1_1_assets" xml:lang="en-US">
+<title>Openlabs.Mgcxm.Assets Namespace Reference</title>
+<indexterm><primary>Openlabs.Mgcxm.Assets</primary></indexterm>
+<simplesect>
+    <title>Classes    </title>
+        <itemizedlist>
+            <listitem><para>class <link linkend="_class_openlabs_1_1_mgcxm_1_1_assets_1_1_asset_load_request">AssetLoadRequest</link></para>
+</listitem>
+            <listitem><para>class <emphasis role="strong">AssetManager</emphasis></para>
+</listitem>
+            <listitem><para>class <link linkend="_class_openlabs_1_1_mgcxm_1_1_assets_1_1_d_t_o_json_file_asset">DTOJsonFileAsset</link></para>
+</listitem>
+            <listitem><para>class <link linkend="_class_openlabs_1_1_mgcxm_1_1_assets_1_1_file_asset">FileAsset</link></para>
+</listitem>
+            <listitem><para>class <link linkend="_class_openlabs_1_1_mgcxm_1_1_assets_1_1_file_flag_asset">FileFlagAsset</link></para>
+</listitem>
+            <listitem><para>class <link linkend="_class_openlabs_1_1_mgcxm_1_1_assets_1_1_json_file_asset">JsonFileAsset</link></para>
+</listitem>
+            <listitem><para>class <link linkend="_class_openlabs_1_1_mgcxm_1_1_assets_1_1_object_asset">ObjectAsset</link></para>
+</listitem>
+            <listitem><para>class <link linkend="_class_openlabs_1_1_mgcxm_1_1_assets_1_1_object_d_t_o">ObjectDTO</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+</section>

@@ -1,0 +1,31 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.7" xml:lang="en-US">
+  <compounddef id="_http_dynamic_use_attribute_8cs" kind="file" language="C#">
+    <compoundname>HttpDynamicUseAttribute.cs</compoundname>
+    <innerclass refid="class_openlabs_1_1_mgcxm_1_1_net_1_1_http_dynamic_use_attribute" prot="public">Openlabs::Mgcxm::Net::HttpDynamicUseAttribute</innerclass>
+    <innernamespace refid="namespace_openlabs">Openlabs</innernamespace>
+    <innernamespace refid="namespace_openlabs_1_1_mgcxm">Openlabs::Mgcxm</innernamespace>
+    <innernamespace refid="namespace_openlabs_1_1_mgcxm_1_1_net">Openlabs::Mgcxm::Net</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">//<sp/>Copr.<sp/>(c)<sp/>Nexus<sp/>2023.<sp/>All<sp/>rights<sp/>reserved.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="namespace_openlabs_1_1_mgcxm_1_1_net" kindref="compound">Openlabs.Mgcxm.Net</ref>;</highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal">[AttributeUsage(AttributeTargets.Method,<sp/>Inherited<sp/>=<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">,<sp/>AllowMultiple<sp/>=<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">)]</highlight></codeline>
+<codeline lineno="9" refid="class_openlabs_1_1_mgcxm_1_1_net_1_1_http_dynamic_use_attribute" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/>sealed<sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="class_openlabs_1_1_mgcxm_1_1_net_1_1_http_dynamic_use_attribute" kindref="compound">HttpDynamicUseAttribute</ref><sp/>:<sp/>Attribute</highlight></codeline>
+<codeline lineno="10"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="15" refid="class_openlabs_1_1_mgcxm_1_1_net_1_1_http_dynamic_use_attribute_1aa835b78d3d208598d7b62219786557e3" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="class_openlabs_1_1_mgcxm_1_1_net_1_1_http_dynamic_use_attribute_1aa835b78d3d208598d7b62219786557e3" kindref="member">HttpDynamicUseAttribute</ref>(params<sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal">[]<sp/>dynamicIdentifiers)</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_openlabs_1_1_mgcxm_1_1_net_1_1_http_dynamic_use_attribute_1ac7eda4d7f0db6b809ff8538dd23a48c7" kindref="member">DynamicIdentifiers</ref><sp/>=<sp/>dynamicIdentifiers;</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight></codeline>
+<codeline lineno="23" refid="class_openlabs_1_1_mgcxm_1_1_net_1_1_http_dynamic_use_attribute_1ac7eda4d7f0db6b809ff8538dd23a48c7" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal">[]<sp/><ref refid="class_openlabs_1_1_mgcxm_1_1_net_1_1_http_dynamic_use_attribute_1ac7eda4d7f0db6b809ff8538dd23a48c7" kindref="member">DynamicIdentifiers</ref><sp/>{<sp/></highlight><highlight class="keyword">get</highlight><highlight class="normal">;<sp/></highlight><highlight class="keyword">private</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">set</highlight><highlight class="normal">;<sp/>}</highlight></codeline>
+<codeline lineno="24"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="C:/Users/adenf/RiderProjects/Openlabs.Mgcxm/Openlabs.Mgcxm/Net/Attributes/HttpDynamicUseAttribute.cs"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,33 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.7" xml:lang="en-US">
+  <compounddef id="dir_cb676df328d34b1ef2c9afe540e7d538" kind="dir">
+    <compoundname>C:/Users/adenf/RiderProjects/Openlabs.Mgcxm/Openlabs.Mgcxm/JWT</compoundname>
+    <innerdir refid="dir_325711a34435a87debffeefe26b959ac">C:/Users/adenf/RiderProjects/Openlabs.Mgcxm/Openlabs.Mgcxm/JWT/Algorithms</innerdir>
+    <innerdir refid="dir_ae26df19305ee0fef5eab7f40b32a9a3">C:/Users/adenf/RiderProjects/Openlabs.Mgcxm/Openlabs.Mgcxm/JWT/Builder</innerdir>
+    <innerdir refid="dir_8698bff08e98054ccc6c25fe3a7d755b">C:/Users/adenf/RiderProjects/Openlabs.Mgcxm/Openlabs.Mgcxm/JWT/Compatibility</innerdir>
+    <innerdir refid="dir_885dceb92dd5384d9d8686c217f11024">C:/Users/adenf/RiderProjects/Openlabs.Mgcxm/Openlabs.Mgcxm/JWT/Exceptions</innerdir>
+    <innerdir refid="dir_88bc6f244d9e9aa33368120e8c7db293">C:/Users/adenf/RiderProjects/Openlabs.Mgcxm/Openlabs.Mgcxm/JWT/Internal</innerdir>
+    <innerdir refid="dir_8be0f64ce914d228af7690dea223114b">C:/Users/adenf/RiderProjects/Openlabs.Mgcxm/Openlabs.Mgcxm/JWT/Properties</innerdir>
+    <innerdir refid="dir_23703096fc4528b1ea6f71bbdbec4e5a">C:/Users/adenf/RiderProjects/Openlabs.Mgcxm/Openlabs.Mgcxm/JWT/Serializers</innerdir>
+    <innerfile refid="_i_base64_url_encoder_8cs">IBase64UrlEncoder.cs</innerfile>
+    <innerfile refid="_i_date_time_provider_8cs">IDateTimeProvider.cs</innerfile>
+    <innerfile refid="_i_json_serializer_8cs">IJsonSerializer.cs</innerfile>
+    <innerfile refid="_i_jwt_decoder_8cs">IJwtDecoder.cs</innerfile>
+    <innerfile refid="_i_jwt_encoder_8cs">IJwtEncoder.cs</innerfile>
+    <innerfile refid="_i_jwt_validator_8cs">IJwtValidator.cs</innerfile>
+    <innerfile refid="_jwt_base64_url_encoder_8cs">JwtBase64UrlEncoder.cs</innerfile>
+    <innerfile refid="_jwt_decoder_8cs">JwtDecoder.cs</innerfile>
+    <innerfile refid="_jwt_decoder_context_8cs">JwtDecoderContext.cs</innerfile>
+    <innerfile refid="_jwt_encoder_8cs">JwtEncoder.cs</innerfile>
+    <innerfile refid="_jwt_parts_8cs">JwtParts.cs</innerfile>
+    <innerfile refid="_jwt_validator_8cs">JwtValidator.cs</innerfile>
+    <innerfile refid="_unix_epoch_8cs">UnixEpoch.cs</innerfile>
+    <innerfile refid="_utc_date_time_provider_8cs">UtcDateTimeProvider.cs</innerfile>
+    <innerfile refid="_validation_parameters_8cs">ValidationParameters.cs</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/Users/adenf/RiderProjects/Openlabs.Mgcxm/Openlabs.Mgcxm/JWT/"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,18 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.7" xml:lang="en-US">
+  <compounddef id="dir_bdaaba038e7d3e184a8abb8246f8d186" kind="dir">
+    <compoundname>C:/Users/adenf/RiderProjects/Openlabs.Mgcxm/Openlabs.Mgcxm/Common/Framework/Base</compoundname>
+    <innerfile refid="_endpoint_framework_8cs">EndpointFramework.cs</innerfile>
+    <innerfile refid="_endpoint_framework_base_8cs">EndpointFrameworkBase.cs</innerfile>
+    <innerfile refid="_endpoint_resolver_8cs">EndpointResolver.cs</innerfile>
+    <innerfile refid="_endpoint_structure_8cs">EndpointStructure.cs</innerfile>
+    <innerfile refid="_endpoint_subpart_controller_8cs">EndpointSubpartController.cs</innerfile>
+    <innerfile refid="_endpoint_url_8cs">EndpointUrl.cs</innerfile>
+    <innerfile refid="_i_endpoint_url_resolver_8cs">IEndpointUrlResolver.cs</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/Users/adenf/RiderProjects/Openlabs.Mgcxm/Openlabs.Mgcxm/Common/Framework/Base/"/>
+  </compounddef>
+</doxygen>

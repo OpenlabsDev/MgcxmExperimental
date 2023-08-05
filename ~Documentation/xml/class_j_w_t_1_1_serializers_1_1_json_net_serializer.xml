@@ -1,0 +1,227 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.7" xml:lang="en-US">
+  <compounddef id="class_j_w_t_1_1_serializers_1_1_json_net_serializer" kind="class" language="C#" prot="public">
+    <compoundname>JWT::Serializers::JsonNetSerializer</compoundname>
+    <basecompoundref refid="interface_j_w_t_1_1_i_json_serializer" prot="public" virt="non-virtual">JWT.IJsonSerializer</basecompoundref>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_j_w_t_1_1_serializers_1_1_json_net_serializer_1ad1fce0024e9cda5c9e62955fa54b7571" prot="private" static="no" mutable="no">
+        <type>readonly JsonSerializer</type>
+        <definition>readonly JsonSerializer JWT.Serializers.JsonNetSerializer._serializer</definition>
+        <argsstring></argsstring>
+        <name>_serializer</name>
+        <qualifiedname>JWT.Serializers.JsonNetSerializer._serializer</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/adenf/RiderProjects/Openlabs.Mgcxm/Openlabs.Mgcxm/JWT/Serializers/JsonNetSerializer.cs" line="13" column="41" bodyfile="C:/Users/adenf/RiderProjects/Openlabs.Mgcxm/Openlabs.Mgcxm/JWT/Serializers/JsonNetSerializer.cs" bodystart="13" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_j_w_t_1_1_serializers_1_1_json_net_serializer_1a554b18d739303e797c36ad04a7ec27c0" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>JWT.Serializers.JsonNetSerializer.JsonNetSerializer</definition>
+        <argsstring>()</argsstring>
+        <name>JsonNetSerializer</name>
+        <qualifiedname>JWT.Serializers.JsonNetSerializer.JsonNetSerializer</qualifiedname>
+        <briefdescription>
+<para>Creates a new instance of JsonNetSerializer </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Uses JsonSerializer.CreateDefault() as internal serializer</para>
+<para><parameterlist kind="exception"><parameteritem>
+<parameternamelist>
+<parametername>ArgumentNullException</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/adenf/RiderProjects/Openlabs.Mgcxm/Openlabs.Mgcxm/JWT/Serializers/JsonNetSerializer.cs" line="20" column="16" bodyfile="C:/Users/adenf/RiderProjects/Openlabs.Mgcxm/Openlabs.Mgcxm/JWT/Serializers/JsonNetSerializer.cs" bodystart="20" bodyend="23"/>
+      </memberdef>
+      <memberdef kind="function" id="class_j_w_t_1_1_serializers_1_1_json_net_serializer_1ac5c322666948b24505e8bb981c4b69c3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>JWT.Serializers.JsonNetSerializer.JsonNetSerializer</definition>
+        <argsstring>(JsonSerializer serializer)</argsstring>
+        <name>JsonNetSerializer</name>
+        <qualifiedname>JWT.Serializers.JsonNetSerializer.JsonNetSerializer</qualifiedname>
+        <param>
+          <type>JsonSerializer</type>
+          <declname>serializer</declname>
+        </param>
+        <briefdescription>
+<para>Creates a new instance of JsonNetSerializer </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>serializer</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Internal JsonSerializer to use for serialization</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="exception"><parameteritem>
+<parameternamelist>
+<parametername>ArgumentNullException</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/adenf/RiderProjects/Openlabs.Mgcxm/Openlabs.Mgcxm/JWT/Serializers/JsonNetSerializer.cs" line="30" column="16"/>
+      </memberdef>
+      <memberdef kind="function" id="class_j_w_t_1_1_serializers_1_1_json_net_serializer_1a1109f00fe0ea5a9b7327c9a3aef8ada0" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>string</type>
+        <definition>string JWT.Serializers.JsonNetSerializer.Serialize</definition>
+        <argsstring>(object obj)</argsstring>
+        <name>Serialize</name>
+        <qualifiedname>JWT.Serializers.JsonNetSerializer.Serialize</qualifiedname>
+        <reimplements refid="interface_j_w_t_1_1_i_json_serializer_1ade3226cd1e4a49926ed29663dc534d61">Serialize</reimplements>
+        <param>
+          <type>object</type>
+          <declname>obj</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><para>Serializes an object to a JSON string.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>obj</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The object to serialize.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>JSON string</para>
+</simplesect>
+</para>
+ <parameterlist kind="exception"><parameteritem>
+<parameternamelist>
+<parametername>ArgumentNullException</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/adenf/RiderProjects/Openlabs.Mgcxm/Openlabs.Mgcxm/JWT/Serializers/JsonNetSerializer.cs" line="35" column="23" bodyfile="C:/Users/adenf/RiderProjects/Openlabs.Mgcxm/Openlabs.Mgcxm/JWT/Serializers/JsonNetSerializer.cs" bodystart="35" bodyend="45"/>
+      </memberdef>
+      <memberdef kind="function" id="class_j_w_t_1_1_serializers_1_1_json_net_serializer_1aef6d3a6b1698d37608e512b6cbb86b8b" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>object</type>
+        <definition>object JWT.Serializers.JsonNetSerializer.Deserialize</definition>
+        <argsstring>(Type type, string json)</argsstring>
+        <name>Deserialize</name>
+        <qualifiedname>JWT.Serializers.JsonNetSerializer.Deserialize</qualifiedname>
+        <reimplements refid="interface_j_w_t_1_1_i_json_serializer_1a0b0bcab29cacd6baed58d78f8ceb574f">Deserialize</reimplements>
+        <param>
+          <type>Type</type>
+          <declname>type</declname>
+        </param>
+        <param>
+          <type>string</type>
+          <declname>json</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><para>Deserializes a JSON string to an object of specified type.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>type</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The type of the object to deserialize to.</para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>json</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The JSON string deserialize.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Strongly-typed object.</para>
+</simplesect>
+</para>
+ <parameterlist kind="exception"><parameteritem>
+<parameternamelist>
+<parametername>ArgumentNullException</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><parameterlist kind="exception"><parameteritem>
+<parameternamelist>
+<parametername>ArgumentException</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/adenf/RiderProjects/Openlabs.Mgcxm/Openlabs.Mgcxm/JWT/Serializers/JsonNetSerializer.cs" line="50" column="23" bodyfile="C:/Users/adenf/RiderProjects/Openlabs.Mgcxm/Openlabs.Mgcxm/JWT/Serializers/JsonNetSerializer.cs" bodystart="50" bodyend="60"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>JSON serializer using Newtonsoft.Json implementation. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>IJsonSerializer</label>
+        <link refid="interface_j_w_t_1_1_i_json_serializer"/>
+      </node>
+      <node id="1">
+        <label>JWT.Serializers.JsonNetSerializer</label>
+        <link refid="class_j_w_t_1_1_serializers_1_1_json_net_serializer"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>IJsonSerializer</label>
+        <link refid="interface_j_w_t_1_1_i_json_serializer"/>
+      </node>
+      <node id="1">
+        <label>JWT.Serializers.JsonNetSerializer</label>
+        <link refid="class_j_w_t_1_1_serializers_1_1_json_net_serializer"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="C:/Users/adenf/RiderProjects/Openlabs.Mgcxm/Openlabs.Mgcxm/JWT/Serializers/JsonNetSerializer.cs" line="11" column="11" bodyfile="C:/Users/adenf/RiderProjects/Openlabs.Mgcxm/Openlabs.Mgcxm/JWT/Serializers/JsonNetSerializer.cs" bodystart="12" bodyend="61"/>
+    <listofallmembers>
+      <member refid="class_j_w_t_1_1_serializers_1_1_json_net_serializer_1ad1fce0024e9cda5c9e62955fa54b7571" prot="private" virt="non-virtual"><scope>JWT::Serializers::JsonNetSerializer</scope><name>_serializer</name></member>
+      <member refid="class_j_w_t_1_1_serializers_1_1_json_net_serializer_1aef6d3a6b1698d37608e512b6cbb86b8b" prot="public" virt="non-virtual"><scope>JWT::Serializers::JsonNetSerializer</scope><name>Deserialize</name></member>
+      <member refid="class_j_w_t_1_1_serializers_1_1_json_net_serializer_1a554b18d739303e797c36ad04a7ec27c0" prot="public" virt="non-virtual"><scope>JWT::Serializers::JsonNetSerializer</scope><name>JsonNetSerializer</name></member>
+      <member refid="class_j_w_t_1_1_serializers_1_1_json_net_serializer_1ac5c322666948b24505e8bb981c4b69c3" prot="public" virt="non-virtual"><scope>JWT::Serializers::JsonNetSerializer</scope><name>JsonNetSerializer</name></member>
+      <member refid="class_j_w_t_1_1_serializers_1_1_json_net_serializer_1a1109f00fe0ea5a9b7327c9a3aef8ada0" prot="public" virt="non-virtual"><scope>JWT::Serializers::JsonNetSerializer</scope><name>Serialize</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

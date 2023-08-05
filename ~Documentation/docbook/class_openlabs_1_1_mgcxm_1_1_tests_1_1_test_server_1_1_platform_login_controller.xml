@@ -1,0 +1,61 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_class_openlabs_1_1_mgcxm_1_1_tests_1_1_test_server_1_1_platform_login_controller" xml:lang="en-US">
+<title>Openlabs.Mgcxm.Tests.TestServer.PlatformLoginController Class Reference</title>
+<indexterm><primary>Openlabs.Mgcxm.Tests.TestServer.PlatformLoginController</primary></indexterm>
+Inheritance diagram for Openlabs.Mgcxm.Tests.TestServer.PlatformLoginController:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="class_openlabs_1_1_mgcxm_1_1_tests_1_1_test_server_1_1_platform_login_controller__inherit__graph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+Collaboration diagram for Openlabs.Mgcxm.Tests.TestServer.PlatformLoginController:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="class_openlabs_1_1_mgcxm_1_1_tests_1_1_test_server_1_1_platform_login_controller__coll__graph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+<simplesect>
+    <title>Public Member Functions    </title>
+        <itemizedlist>
+            <listitem><para>void <link linkend="_class_openlabs_1_1_mgcxm_1_1_tests_1_1_test_server_1_1_platform_login_controller_1a5b3325c3d254528a9b34721d88d40a46">HttpPost_PlatformLoginV2</link> (<link linkend="_class_openlabs_1_1_mgcxm_1_1_net_1_1_mgcxm_http_request">MgcxmHttpRequest</link> request, <link linkend="_class_openlabs_1_1_mgcxm_1_1_net_1_1_mgcxm_http_response">MgcxmHttpResponse</link> response)</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Additional Inherited Members    </title>
+Properties inherited from <link linkend="_class_openlabs_1_1_mgcxm_1_1_common_1_1_framework_1_1_endpoint_subpart_controller">Openlabs.Mgcxm.Common.Framework.EndpointSubpartController</link>        <itemizedlist>
+            <listitem><para>IReadOnlyList&lt; <link linkend="_class_openlabs_1_1_mgcxm_1_1_net_1_1_mgcxm_http_endpoint">MgcxmHttpEndpoint</link> &gt; <link linkend="_class_openlabs_1_1_mgcxm_1_1_common_1_1_framework_1_1_endpoint_subpart_controller_1a62af6228151851968601e7dee8b3d950">AllEndpoints</link><computeroutput> [get]</computeroutput>
+</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+Events inherited from <link linkend="_class_openlabs_1_1_mgcxm_1_1_common_1_1_framework_1_1_endpoint_subpart_controller">Openlabs.Mgcxm.Common.Framework.EndpointSubpartController</link>        <itemizedlist>
+            <listitem><para>Action <link linkend="_class_openlabs_1_1_mgcxm_1_1_common_1_1_framework_1_1_endpoint_subpart_controller_1a4c76afd9d57c42fe6df9574623c7ffd7">OnSubpartUpdated</link></para>
+</listitem>
+        </itemizedlist>
+<section>
+<title>Member Function Documentation</title>
+<anchor xml:id="_class_openlabs_1_1_mgcxm_1_1_tests_1_1_test_server_1_1_platform_login_controller_1a5b3325c3d254528a9b34721d88d40a46"/><section>
+    <title>HttpPost_PlatformLoginV2()</title>
+<indexterm><primary>HttpPost_PlatformLoginV2</primary><secondary>Openlabs.Mgcxm.Tests.TestServer.PlatformLoginController</secondary></indexterm>
+<indexterm><primary>Openlabs.Mgcxm.Tests.TestServer.PlatformLoginController</primary><secondary>HttpPost_PlatformLoginV2</secondary></indexterm>
+<para><computeroutput>void Openlabs.Mgcxm.Tests.TestServer.PlatformLoginController.HttpPost_PlatformLoginV2 (<link linkend="_class_openlabs_1_1_mgcxm_1_1_net_1_1_mgcxm_http_request">MgcxmHttpRequest</link> request, <link linkend="_class_openlabs_1_1_mgcxm_1_1_net_1_1_mgcxm_http_response">MgcxmHttpResponse</link> response)</computeroutput></para>Here is the call graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="class_openlabs_1_1_mgcxm_1_1_tests_1_1_test_server_1_1_platform_login_controller_a5b3325c3d254528a9b34721d88d40a46_cgraph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+</section>
+<para>
+The documentation for this class was generated from the following file:</para>
+C:/Users/adenf/RiderProjects/Openlabs.Mgcxm/Openlabs.Mgcxm.Tests/<link linkend="__test_server_8cs">TestServer.cs</link></section>
+</section>

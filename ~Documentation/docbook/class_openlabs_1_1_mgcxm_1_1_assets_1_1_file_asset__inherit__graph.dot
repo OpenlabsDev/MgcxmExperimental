@@ -1,0 +1,16 @@
+digraph "Openlabs.Mgcxm.Assets.FileAsset"
+{
+ // LATEX_PDF_SIZE
+  bgcolor="transparent";
+  edge [fontname=Helvetica,fontsize=10,labelfontname=Helvetica,labelfontsize=10];
+  node [fontname=Helvetica,fontsize=10,shape=box,height=0.2,width=0.4];
+  Node1 [id="Node000001",label="Openlabs.Mgcxm.Assets.File\lAsset",height=0.2,width=0.4,color="gray40", fillcolor="grey60", style="filled", fontcolor="black",tooltip=" "];
+  Node2 -> Node1 [id="edge9_Node000001_Node000002",dir="back",color="steelblue1",style="solid",tooltip=" "];
+  Node2 [id="Node000002",label="ObjectAsset",height=0.2,width=0.4,color="gray40", fillcolor="white", style="filled",URL="$class_openlabs_1_1_mgcxm_1_1_assets_1_1_object_asset.html",tooltip=" "];
+  Node1 -> Node3 [id="edge10_Node000001_Node000003",dir="back",color="steelblue1",style="solid",tooltip=" "];
+  Node3 [id="Node000003",label="Openlabs.Mgcxm.Assets.File\lFlagAsset",height=0.2,width=0.4,color="gray40", fillcolor="white", style="filled",URL="$class_openlabs_1_1_mgcxm_1_1_assets_1_1_file_flag_asset.html",tooltip=" "];
+  Node1 -> Node4 [id="edge11_Node000001_Node000004",dir="back",color="steelblue1",style="solid",tooltip=" "];
+  Node4 [id="Node000004",label="Openlabs.Mgcxm.Assets.Json\lFileAsset",height=0.2,width=0.4,color="gray40", fillcolor="white", style="filled",URL="$class_openlabs_1_1_mgcxm_1_1_assets_1_1_json_file_asset.html",tooltip=" "];
+  Node4 -> Node5 [id="edge12_Node000004_Node000005",dir="back",color="steelblue1",style="solid",tooltip=" "];
+  Node5 [id="Node000005",label="Openlabs.Mgcxm.Assets.DTOJson\lFileAsset\< TDtoType \>",height=0.2,width=0.4,color="gray40", fillcolor="white", style="filled",URL="$class_openlabs_1_1_mgcxm_1_1_assets_1_1_d_t_o_json_file_asset.html",tooltip=" "];
+}

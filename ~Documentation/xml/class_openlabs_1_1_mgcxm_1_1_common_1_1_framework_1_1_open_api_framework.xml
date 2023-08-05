@@ -1,0 +1,252 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.7" xml:lang="en-US">
+  <compounddef id="class_openlabs_1_1_mgcxm_1_1_common_1_1_framework_1_1_open_api_framework" kind="class" language="C#" prot="public">
+    <compoundname>Openlabs::Mgcxm::Common::Framework::OpenApiFramework</compoundname>
+    <basecompoundref refid="class_openlabs_1_1_mgcxm_1_1_common_1_1_framework_1_1_endpoint_framework" prot="public" virt="non-virtual">Openlabs.Mgcxm.Common.Framework.EndpointFramework&lt; OpenApiUrl &gt;</basecompoundref>
+      <sectiondef kind="property">
+      <memberdef kind="property" id="class_openlabs_1_1_mgcxm_1_1_common_1_1_framework_1_1_open_api_framework_1a20e9214e447f578de23547e80be10172" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="no" privatesettable="no" protectedsettable="no">
+        <type>override <ref refid="struct_openlabs_1_1_mgcxm_1_1_internal_1_1_mgcxm_id" kindref="compound">MgcxmId</ref></type>
+        <definition>override MgcxmId Openlabs.Mgcxm.Common.Framework.OpenApiFramework.AllocatedId</definition>
+        <argsstring></argsstring>
+        <name>AllocatedId</name>
+        <qualifiedname>Openlabs.Mgcxm.Common.Framework.OpenApiFramework.AllocatedId</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/adenf/RiderProjects/Openlabs.Mgcxm/Openlabs.Mgcxm/Common/Framework/OpenApi/OpenApiFramework.cs" line="40" column="29" bodyfile="C:/Users/adenf/RiderProjects/Openlabs.Mgcxm/Openlabs.Mgcxm/Common/Framework/OpenApi/OpenApiFramework.cs" bodystart="40" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="property" id="class_openlabs_1_1_mgcxm_1_1_common_1_1_framework_1_1_open_api_framework_1a853011c29f08ea999bb48dd483ac619b" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="no" privatesettable="no" protectedsettable="no">
+        <type>override IReadOnlyList&lt; <ref refid="class_openlabs_1_1_mgcxm_1_1_net_1_1_mgcxm_http_endpoint" kindref="compound">MgcxmHttpEndpoint</ref> &gt;</type>
+        <definition>override IReadOnlyList&lt;MgcxmHttpEndpoint&gt; Openlabs.Mgcxm.Common.Framework.OpenApiFramework.Endpoints</definition>
+        <argsstring></argsstring>
+        <name>Endpoints</name>
+        <qualifiedname>Openlabs.Mgcxm.Common.Framework.OpenApiFramework.Endpoints</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/adenf/RiderProjects/Openlabs.Mgcxm/Openlabs.Mgcxm/Common/Framework/OpenApi/OpenApiFramework.cs" line="41" column="35" bodyfile="C:/Users/adenf/RiderProjects/Openlabs.Mgcxm/Openlabs.Mgcxm/Common/Framework/OpenApi/OpenApiFramework.cs" bodystart="41" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="property" id="class_openlabs_1_1_mgcxm_1_1_common_1_1_framework_1_1_open_api_framework_1a2f1277e532f58fe1c58f1a73f6df90f9" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="no" privatesettable="no" protectedsettable="no">
+        <type>override <ref refid="class_openlabs_1_1_mgcxm_1_1_common_1_1_framework_1_1_endpoint_structure" kindref="compound">EndpointStructure</ref>&lt; <ref refid="class_openlabs_1_1_mgcxm_1_1_common_1_1_framework_1_1_open_api_url" kindref="compound">OpenApiUrl</ref> &gt;</type>
+        <definition>override EndpointStructure&lt;OpenApiUrl&gt; Openlabs.Mgcxm.Common.Framework.OpenApiFramework.EndpointStructure</definition>
+        <argsstring></argsstring>
+        <name>EndpointStructure</name>
+        <qualifiedname>Openlabs.Mgcxm.Common.Framework.OpenApiFramework.EndpointStructure</qualifiedname>
+        <initializer>= new <ref refid="class_openlabs_1_1_mgcxm_1_1_common_1_1_framework_1_1_open_api_endpoint_structure" kindref="compound">OpenApiEndpointStructure</ref>()</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/adenf/RiderProjects/Openlabs.Mgcxm/Openlabs.Mgcxm/Common/Framework/OpenApi/OpenApiFramework.cs" line="42" column="39" bodyfile="C:/Users/adenf/RiderProjects/Openlabs.Mgcxm/Openlabs.Mgcxm/Common/Framework/OpenApi/OpenApiFramework.cs" bodystart="42" bodyend="42"/>
+      </memberdef>
+      <memberdef kind="property" id="class_openlabs_1_1_mgcxm_1_1_common_1_1_framework_1_1_open_api_framework_1a93e07c938a48e1f63de5c2321e488c53" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="no" privatesettable="no" protectedsettable="no">
+        <type>override <ref refid="class_openlabs_1_1_mgcxm_1_1_common_1_1_framework_1_1_endpoint_resolver" kindref="compound">EndpointResolver</ref></type>
+        <definition>override EndpointResolver Openlabs.Mgcxm.Common.Framework.OpenApiFramework.EndpointResolver</definition>
+        <argsstring></argsstring>
+        <name>EndpointResolver</name>
+        <qualifiedname>Openlabs.Mgcxm.Common.Framework.OpenApiFramework.EndpointResolver</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/adenf/RiderProjects/Openlabs.Mgcxm/Openlabs.Mgcxm/Common/Framework/OpenApi/OpenApiFramework.cs" line="43" column="38" bodyfile="C:/Users/adenf/RiderProjects/Openlabs.Mgcxm/Openlabs.Mgcxm/Common/Framework/OpenApi/OpenApiFramework.cs" bodystart="43" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_openlabs_1_1_mgcxm_1_1_common_1_1_framework_1_1_open_api_framework_1aa08d17e1b4b4b982677e4edd05255f16" prot="private" static="no" mutable="no">
+        <type><ref refid="struct_openlabs_1_1_mgcxm_1_1_internal_1_1_mgcxm_id" kindref="compound">MgcxmId</ref></type>
+        <definition>MgcxmId Openlabs.Mgcxm.Common.Framework.OpenApiFramework._allocatedId</definition>
+        <argsstring></argsstring>
+        <name>_allocatedId</name>
+        <qualifiedname>Openlabs.Mgcxm.Common.Framework.OpenApiFramework._allocatedId</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/adenf/RiderProjects/Openlabs.Mgcxm/Openlabs.Mgcxm/Common/Framework/OpenApi/OpenApiFramework.cs" line="45" column="21" bodyfile="C:/Users/adenf/RiderProjects/Openlabs.Mgcxm/Openlabs.Mgcxm/Common/Framework/OpenApi/OpenApiFramework.cs" bodystart="45" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_openlabs_1_1_mgcxm_1_1_common_1_1_framework_1_1_open_api_framework_1a59f942e539fd66d2edc7afdd4a15e81f" prot="private" static="no" mutable="no">
+        <type><ref refid="class_openlabs_1_1_mgcxm_1_1_common_1_1_framework_1_1_open_api_endpoint_resolver" kindref="compound">OpenApiEndpointResolver</ref></type>
+        <definition>OpenApiEndpointResolver Openlabs.Mgcxm.Common.Framework.OpenApiFramework._endpointResolver</definition>
+        <argsstring></argsstring>
+        <name>_endpointResolver</name>
+        <qualifiedname>Openlabs.Mgcxm.Common.Framework.OpenApiFramework._endpointResolver</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/adenf/RiderProjects/Openlabs.Mgcxm/Openlabs.Mgcxm/Common/Framework/OpenApi/OpenApiFramework.cs" line="46" column="37" bodyfile="C:/Users/adenf/RiderProjects/Openlabs.Mgcxm/Openlabs.Mgcxm/Common/Framework/OpenApi/OpenApiFramework.cs" bodystart="46" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_openlabs_1_1_mgcxm_1_1_common_1_1_framework_1_1_open_api_framework_1a490e1e3984931eb13d308b884483960e" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Openlabs.Mgcxm.Common.Framework.OpenApiFramework.OpenApiFramework</definition>
+        <argsstring>(MgcxmHttpListener listener)</argsstring>
+        <name>OpenApiFramework</name>
+        <qualifiedname>Openlabs.Mgcxm.Common.Framework.OpenApiFramework.OpenApiFramework</qualifiedname>
+        <param>
+          <type><ref refid="class_openlabs_1_1_mgcxm_1_1_net_1_1_mgcxm_http_listener" kindref="compound">MgcxmHttpListener</ref></type>
+          <declname>listener</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/adenf/RiderProjects/Openlabs.Mgcxm/Openlabs.Mgcxm/Common/Framework/OpenApi/OpenApiFramework.cs" line="13" column="12" bodyfile="C:/Users/adenf/RiderProjects/Openlabs.Mgcxm/Openlabs.Mgcxm/Common/Framework/OpenApi/OpenApiFramework.cs" bodystart="13" bodyend="19"/>
+      </memberdef>
+      <memberdef kind="function" id="class_openlabs_1_1_mgcxm_1_1_common_1_1_framework_1_1_open_api_framework_1afeb966d592064e539348e827ab923e2d" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>override async Task</type>
+        <definition>override async Task Openlabs.Mgcxm.Common.Framework.OpenApiFramework.ResolveRequest</definition>
+        <argsstring>(HttpListenerRequest listenerRequest, HttpListenerResponse listenerResponse, MgcxmHttpRequest mgcxmRequest, MgcxmHttpResponse mgcxmResponse)</argsstring>
+        <name>ResolveRequest</name>
+        <qualifiedname>Openlabs.Mgcxm.Common.Framework.OpenApiFramework.ResolveRequest</qualifiedname>
+        <param>
+          <type>HttpListenerRequest</type>
+          <declname>listenerRequest</declname>
+        </param>
+        <param>
+          <type>HttpListenerResponse</type>
+          <declname>listenerResponse</declname>
+        </param>
+        <param>
+          <type><ref refid="class_openlabs_1_1_mgcxm_1_1_net_1_1_mgcxm_http_request" kindref="compound">MgcxmHttpRequest</ref></type>
+          <declname>mgcxmRequest</declname>
+        </param>
+        <param>
+          <type><ref refid="class_openlabs_1_1_mgcxm_1_1_net_1_1_mgcxm_http_response" kindref="compound">MgcxmHttpResponse</ref></type>
+          <declname>mgcxmResponse</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/adenf/RiderProjects/Openlabs.Mgcxm/Openlabs.Mgcxm/Common/Framework/OpenApi/OpenApiFramework.cs" line="23" column="32" bodyfile="C:/Users/adenf/RiderProjects/Openlabs.Mgcxm/Openlabs.Mgcxm/Common/Framework/OpenApi/OpenApiFramework.cs" bodystart="23" bodyend="33"/>
+        <references refid="class_openlabs_1_1_mgcxm_1_1_net_1_1_mgcxm_http_endpoint_1a67aa6bf33dfc3e2cd1655b4a0e74bad0" compoundref="_mgcxm_http_endpoint_8cs" startline="112">Openlabs.Mgcxm.Net.MgcxmHttpEndpoint.OnEndpointRequested</references>
+        <references refid="class_openlabs_1_1_mgcxm_1_1_common_1_1_framework_1_1_endpoint_resolver_1a6e262cab3c50f9aa89ddcfd132a5078d">Openlabs.Mgcxm.Common.Framework.EndpointResolver.ResolveUrl</references>
+        <references refid="class_openlabs_1_1_mgcxm_1_1_net_1_1_mgcxm_http_response_1a3ccff1afcf096a4c541ccf6587e065f5" compoundref="_mgcxm_http_response_8cs" startline="92" endline="104">Openlabs.Mgcxm.Net.MgcxmHttpResponse.Transfer</references>
+        <references refid="class_openlabs_1_1_mgcxm_1_1_net_1_1_mgcxm_http_request_1ae2c2a74881a5c4c767a807d1e84364b6" compoundref="_mgcxm_http_request_8cs" startline="55">Openlabs.Mgcxm.Net.MgcxmHttpRequest.Uri</references>
+      </memberdef>
+      <memberdef kind="function" id="class_openlabs_1_1_mgcxm_1_1_common_1_1_framework_1_1_open_api_framework_1acb4682fca30c8ff58b8ebe10732c3d87" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>override void</type>
+        <definition>override void Openlabs.Mgcxm.Common.Framework.OpenApiFramework.AddEndpoint</definition>
+        <argsstring>(EndpointUrl url, HttpMethods method, OnEndpointRequested requestedHandler, MgcxmHttpListener listener)</argsstring>
+        <name>AddEndpoint</name>
+        <qualifiedname>Openlabs.Mgcxm.Common.Framework.OpenApiFramework.AddEndpoint</qualifiedname>
+        <param>
+          <type><ref refid="class_openlabs_1_1_mgcxm_1_1_common_1_1_framework_1_1_endpoint_url" kindref="compound">EndpointUrl</ref></type>
+          <declname>url</declname>
+        </param>
+        <param>
+          <type><ref refid="namespace_openlabs_1_1_mgcxm_1_1_net_1a63268740291f4b97a3eb53abd380f84e" kindref="member">HttpMethods</ref></type>
+          <declname>method</declname>
+        </param>
+        <param>
+          <type>OnEndpointRequested</type>
+          <declname>requestedHandler</declname>
+        </param>
+        <param>
+          <type><ref refid="class_openlabs_1_1_mgcxm_1_1_net_1_1_mgcxm_http_listener" kindref="compound">MgcxmHttpListener</ref></type>
+          <declname>listener</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/adenf/RiderProjects/Openlabs.Mgcxm/Openlabs.Mgcxm/Common/Framework/OpenApi/OpenApiFramework.cs" line="35" column="26"/>
+      </memberdef>
+      <memberdef kind="function" id="class_openlabs_1_1_mgcxm_1_1_common_1_1_framework_1_1_open_api_framework_1a673d2ece03d9e399e5cdeed2b733760c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>override void</type>
+        <definition>override void Openlabs.Mgcxm.Common.Framework.OpenApiFramework.Trash</definition>
+        <argsstring>()</argsstring>
+        <name>Trash</name>
+        <qualifiedname>Openlabs.Mgcxm.Common.Framework.OpenApiFramework.Trash</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/adenf/RiderProjects/Openlabs.Mgcxm/Openlabs.Mgcxm/Common/Framework/OpenApi/OpenApiFramework.cs" line="38" column="26"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="class_openlabs_1_1_mgcxm_1_1_common_1_1_framework_1_1_open_api_framework_1ad69175a52fb5046bb3ec9f555f8838f7" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Openlabs.Mgcxm.Common.Framework.OpenApiFramework.~OpenApiFramework</definition>
+        <argsstring>()</argsstring>
+        <name>~OpenApiFramework</name>
+        <qualifiedname>Openlabs.Mgcxm.Common.Framework.OpenApiFramework.~OpenApiFramework</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/adenf/RiderProjects/Openlabs.Mgcxm/Openlabs.Mgcxm/Common/Framework/OpenApi/OpenApiFramework.cs" line="21" column="5"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>EndpointFramework&lt; OpenApiUrl &gt;</label>
+        <link refid="class_openlabs_1_1_mgcxm_1_1_common_1_1_framework_1_1_endpoint_framework"/>
+      </node>
+      <node id="1">
+        <label>Openlabs.Mgcxm.Common.Framework.OpenApiFramework</label>
+        <link refid="class_openlabs_1_1_mgcxm_1_1_common_1_1_framework_1_1_open_api_framework"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>EndpointFramework&lt; OpenApiUrl &gt;</label>
+        <link refid="class_openlabs_1_1_mgcxm_1_1_common_1_1_framework_1_1_endpoint_framework"/>
+      </node>
+      <node id="1">
+        <label>Openlabs.Mgcxm.Common.Framework.OpenApiFramework</label>
+        <link refid="class_openlabs_1_1_mgcxm_1_1_common_1_1_framework_1_1_open_api_framework"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="C:/Users/adenf/RiderProjects/Openlabs.Mgcxm/Openlabs.Mgcxm/Common/Framework/OpenApi/OpenApiFramework.cs" line="11" column="7" bodyfile="C:/Users/adenf/RiderProjects/Openlabs.Mgcxm/Openlabs.Mgcxm/Common/Framework/OpenApi/OpenApiFramework.cs" bodystart="12" bodyend="47"/>
+    <listofallmembers>
+      <member refid="class_openlabs_1_1_mgcxm_1_1_common_1_1_framework_1_1_open_api_framework_1aa08d17e1b4b4b982677e4edd05255f16" prot="private" virt="non-virtual"><scope>Openlabs::Mgcxm::Common::Framework::OpenApiFramework</scope><name>_allocatedId</name></member>
+      <member refid="class_openlabs_1_1_mgcxm_1_1_common_1_1_framework_1_1_open_api_framework_1a59f942e539fd66d2edc7afdd4a15e81f" prot="private" virt="non-virtual"><scope>Openlabs::Mgcxm::Common::Framework::OpenApiFramework</scope><name>_endpointResolver</name></member>
+      <member refid="class_openlabs_1_1_mgcxm_1_1_common_1_1_framework_1_1_open_api_framework_1acb4682fca30c8ff58b8ebe10732c3d87" prot="public" virt="non-virtual"><scope>Openlabs::Mgcxm::Common::Framework::OpenApiFramework</scope><name>AddEndpoint</name></member>
+      <member refid="class_openlabs_1_1_mgcxm_1_1_common_1_1_framework_1_1_open_api_framework_1a20e9214e447f578de23547e80be10172" prot="public" virt="non-virtual"><scope>Openlabs::Mgcxm::Common::Framework::OpenApiFramework</scope><name>AllocatedId</name></member>
+      <member refid="class_openlabs_1_1_mgcxm_1_1_common_1_1_framework_1_1_open_api_framework_1a93e07c938a48e1f63de5c2321e488c53" prot="public" virt="non-virtual"><scope>Openlabs::Mgcxm::Common::Framework::OpenApiFramework</scope><name>EndpointResolver</name></member>
+      <member refid="class_openlabs_1_1_mgcxm_1_1_common_1_1_framework_1_1_open_api_framework_1a853011c29f08ea999bb48dd483ac619b" prot="public" virt="non-virtual"><scope>Openlabs::Mgcxm::Common::Framework::OpenApiFramework</scope><name>Endpoints</name></member>
+      <member refid="class_openlabs_1_1_mgcxm_1_1_common_1_1_framework_1_1_open_api_framework_1a2f1277e532f58fe1c58f1a73f6df90f9" prot="public" virt="non-virtual"><scope>Openlabs::Mgcxm::Common::Framework::OpenApiFramework</scope><name>EndpointStructure</name></member>
+      <member refid="class_openlabs_1_1_mgcxm_1_1_common_1_1_framework_1_1_open_api_framework_1a490e1e3984931eb13d308b884483960e" prot="public" virt="non-virtual"><scope>Openlabs::Mgcxm::Common::Framework::OpenApiFramework</scope><name>OpenApiFramework</name></member>
+      <member refid="class_openlabs_1_1_mgcxm_1_1_common_1_1_framework_1_1_open_api_framework_1afeb966d592064e539348e827ab923e2d" prot="public" virt="non-virtual"><scope>Openlabs::Mgcxm::Common::Framework::OpenApiFramework</scope><name>ResolveRequest</name></member>
+      <member refid="class_openlabs_1_1_mgcxm_1_1_common_1_1_framework_1_1_open_api_framework_1a673d2ece03d9e399e5cdeed2b733760c" prot="public" virt="non-virtual"><scope>Openlabs::Mgcxm::Common::Framework::OpenApiFramework</scope><name>Trash</name></member>
+      <member refid="class_openlabs_1_1_mgcxm_1_1_common_1_1_framework_1_1_open_api_framework_1ad69175a52fb5046bb3ec9f555f8838f7" prot="private" virt="non-virtual"><scope>Openlabs::Mgcxm::Common::Framework::OpenApiFramework</scope><name>~OpenApiFramework</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,72 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_interface_openlabs_1_1_mgcxm_1_1_net_1_1_i_ip_address" xml:lang="en-US">
+<title>Openlabs.Mgcxm.Net.IIpAddress Interface Reference</title>
+<indexterm><primary>Openlabs.Mgcxm.Net.IIpAddress</primary></indexterm>
+Inheritance diagram for Openlabs.Mgcxm.Net.IIpAddress:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="interface_openlabs_1_1_mgcxm_1_1_net_1_1_i_ip_address__inherit__graph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+<simplesect>
+    <title>Properties    </title>
+        <itemizedlist>
+            <listitem><para>IPAddress <link linkend="_interface_openlabs_1_1_mgcxm_1_1_net_1_1_i_ip_address_1a796f5834e89706c954dfe3b0b8265a33">ActualIpAddress</link><computeroutput> [get]</computeroutput>
+</para>
+
+<para>The actual System object IP address. </para>
+</listitem>
+            <listitem><para>string <link linkend="_interface_openlabs_1_1_mgcxm_1_1_net_1_1_i_ip_address_1ae315274c2344bfb559aa2e38fa6352f6">Origin</link><computeroutput> [get]</computeroutput>
+</para>
+
+<para>The host of the IP address. (localhost / 1.1.1.1) </para>
+</listitem>
+            <listitem><para>ushort <link linkend="_interface_openlabs_1_1_mgcxm_1_1_net_1_1_i_ip_address_1aa261bfcf48963c8f4501b3c3f8201451">Port</link><computeroutput> [get]</computeroutput>
+</para>
+
+<para>The port of the IP address. (80 / 443) </para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Property Documentation</title>
+<anchor xml:id="_interface_openlabs_1_1_mgcxm_1_1_net_1_1_i_ip_address_1a796f5834e89706c954dfe3b0b8265a33"/><section>
+    <title>ActualIpAddress</title>
+<indexterm><primary>ActualIpAddress</primary><secondary>Openlabs.Mgcxm.Net.IIpAddress</secondary></indexterm>
+<indexterm><primary>Openlabs.Mgcxm.Net.IIpAddress</primary><secondary>ActualIpAddress</secondary></indexterm>
+<para><computeroutput>IPAddress Openlabs.Mgcxm.Net.IIpAddress.ActualIpAddress<computeroutput>[get]</computeroutput></computeroutput></para><para>
+
+<para>The actual System object IP address. </para>
+</para>
+<para>
+Implemented in <link linkend="_class_openlabs_1_1_mgcxm_1_1_net_1_1_ip_address_1a59ff9aaf387ad2074d0d9356162727c1">Openlabs.Mgcxm.Net.IpAddress</link>.</para>
+</section>
+<anchor xml:id="_interface_openlabs_1_1_mgcxm_1_1_net_1_1_i_ip_address_1ae315274c2344bfb559aa2e38fa6352f6"/><section>
+    <title>Origin</title>
+<indexterm><primary>Origin</primary><secondary>Openlabs.Mgcxm.Net.IIpAddress</secondary></indexterm>
+<indexterm><primary>Openlabs.Mgcxm.Net.IIpAddress</primary><secondary>Origin</secondary></indexterm>
+<para><computeroutput>string Openlabs.Mgcxm.Net.IIpAddress.Origin<computeroutput>[get]</computeroutput></computeroutput></para><para>
+
+<para>The host of the IP address. (localhost / 1.1.1.1) </para>
+</para>
+<para>
+Implemented in <link linkend="_class_openlabs_1_1_mgcxm_1_1_net_1_1_ip_address_1ac8e80630b5e898053525d92e02b56d41">Openlabs.Mgcxm.Net.IpAddress</link>.</para>
+</section>
+<anchor xml:id="_interface_openlabs_1_1_mgcxm_1_1_net_1_1_i_ip_address_1aa261bfcf48963c8f4501b3c3f8201451"/><section>
+    <title>Port</title>
+<indexterm><primary>Port</primary><secondary>Openlabs.Mgcxm.Net.IIpAddress</secondary></indexterm>
+<indexterm><primary>Openlabs.Mgcxm.Net.IIpAddress</primary><secondary>Port</secondary></indexterm>
+<para><computeroutput>ushort Openlabs.Mgcxm.Net.IIpAddress.Port<computeroutput>[get]</computeroutput></computeroutput></para><para>
+
+<para>The port of the IP address. (80 / 443) </para>
+</para>
+<para>
+Implemented in <link linkend="_class_openlabs_1_1_mgcxm_1_1_net_1_1_ip_address_1a43a68d0142702aa4dc7fddbfd4d92463">Openlabs.Mgcxm.Net.IpAddress</link>.</para>
+</section>
+<para>
+The documentation for this interface was generated from the following file:</para>
+C:/Users/adenf/RiderProjects/Openlabs.Mgcxm/Openlabs.Mgcxm/Net/<link linkend="__i_ip_address_8cs">IIpAddress.cs</link></section>
+</section>

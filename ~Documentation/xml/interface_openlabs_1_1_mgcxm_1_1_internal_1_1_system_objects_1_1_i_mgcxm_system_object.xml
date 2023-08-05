@@ -1,0 +1,111 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.7" xml:lang="en-US">
+  <compounddef id="interface_openlabs_1_1_mgcxm_1_1_internal_1_1_system_objects_1_1_i_mgcxm_system_object" kind="interface" language="C#" prot="public">
+    <compoundname>Openlabs::Mgcxm::Internal::SystemObjects::IMgcxmSystemObject</compoundname>
+    <derivedcompoundref refid="class_openlabs_1_1_mgcxm_1_1_common_1_1_framework_1_1_endpoint_framework_base" prot="public" virt="non-virtual">Openlabs.Mgcxm.Common.Framework.EndpointFrameworkBase</derivedcompoundref>
+    <derivedcompoundref refid="class_openlabs_1_1_mgcxm_1_1_internal_1_1_system_objects_1_1_mgcxm_object" prot="public" virt="non-virtual">Openlabs.Mgcxm.Internal.SystemObjects.MgcxmObject&lt; T &gt;</derivedcompoundref>
+    <derivedcompoundref refid="class_openlabs_1_1_mgcxm_1_1_net_1_1_mgcxm_socket" prot="public" virt="non-virtual">Openlabs.Mgcxm.Net.MgcxmSocket</derivedcompoundref>
+    <derivedcompoundref refid="class_openlabs_1_1_mgcxm_1_1_net_1_1_mgcxm_socket_listener" prot="public" virt="non-virtual">Openlabs.Mgcxm.Net.MgcxmSocketListener</derivedcompoundref>
+    <derivedcompoundref refid="class_openlabs_1_1_mgcxm_1_1_net_1_1_polling_1_1_polling_receiver" prot="public" virt="non-virtual">Openlabs.Mgcxm.Net.Polling.PollingReceiver</derivedcompoundref>
+      <sectiondef kind="property">
+      <memberdef kind="property" id="interface_openlabs_1_1_mgcxm_1_1_internal_1_1_system_objects_1_1_i_mgcxm_system_object_1afd31aa32e2b847ad283d3c5d5ce90e85" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="no" privatesettable="no" protectedsettable="no">
+        <type><ref refid="struct_openlabs_1_1_mgcxm_1_1_internal_1_1_mgcxm_id" kindref="compound">MgcxmId</ref></type>
+        <definition>MgcxmId Openlabs.Mgcxm.Internal.SystemObjects.IMgcxmSystemObject.AllocatedId</definition>
+        <argsstring></argsstring>
+        <name>AllocatedId</name>
+        <qualifiedname>Openlabs.Mgcxm.Internal.SystemObjects.IMgcxmSystemObject.AllocatedId</qualifiedname>
+        <reimplementedby refid="class_openlabs_1_1_mgcxm_1_1_common_1_1_framework_1_1_endpoint_framework_base_1a56993d0e1c63c88d666141273b779b9c">AllocatedId</reimplementedby>
+        <reimplementedby refid="class_openlabs_1_1_mgcxm_1_1_internal_1_1_system_objects_1_1_mgcxm_object_1adcda4a69c00fd202c0ae1bc494bde6c3">AllocatedId</reimplementedby>
+        <reimplementedby refid="class_openlabs_1_1_mgcxm_1_1_net_1_1_mgcxm_socket_1ae263c019329dc650ce69f7032ae340a4">AllocatedId</reimplementedby>
+        <reimplementedby refid="class_openlabs_1_1_mgcxm_1_1_net_1_1_mgcxm_socket_listener_1a0959c556574ae890223303b321d7e0bb">AllocatedId</reimplementedby>
+        <reimplementedby refid="class_openlabs_1_1_mgcxm_1_1_net_1_1_polling_1_1_polling_receiver_1af9b545b92a1a20c93979a30ff4ae5ed1">AllocatedId</reimplementedby>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/adenf/RiderProjects/Openlabs.Mgcxm/Openlabs.Mgcxm/Internal/SystemObjects/IMgcxmSystemObject.cs" line="20" column="13" bodyfile="C:/Users/adenf/RiderProjects/Openlabs.Mgcxm/Openlabs.Mgcxm/Internal/SystemObjects/IMgcxmSystemObject.cs" bodystart="20" bodyend="20"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="interface_openlabs_1_1_mgcxm_1_1_internal_1_1_system_objects_1_1_i_mgcxm_system_object_1ab14e018c681d09992e11bf3de82c5b45" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Openlabs.Mgcxm.Internal.SystemObjects.IMgcxmSystemObject.Trash</definition>
+        <argsstring>()</argsstring>
+        <name>Trash</name>
+        <qualifiedname>Openlabs.Mgcxm.Internal.SystemObjects.IMgcxmSystemObject.Trash</qualifiedname>
+        <reimplementedby refid="class_openlabs_1_1_mgcxm_1_1_common_1_1_framework_1_1_endpoint_framework_base_1ad89de642a84b28dfee547138826b8b13">Trash</reimplementedby>
+        <reimplementedby refid="class_openlabs_1_1_mgcxm_1_1_internal_1_1_system_objects_1_1_mgcxm_object_1a18a325de1eb61f905e19d1132e3c5f43">Trash</reimplementedby>
+        <reimplementedby refid="class_openlabs_1_1_mgcxm_1_1_net_1_1_mgcxm_socket_1a043ed4210f1876bdcd79d531f8b846c7">Trash</reimplementedby>
+        <reimplementedby refid="class_openlabs_1_1_mgcxm_1_1_net_1_1_mgcxm_socket_listener_1a7f5a42fc1c93730055da5ff435715c14">Trash</reimplementedby>
+        <reimplementedby refid="class_openlabs_1_1_mgcxm_1_1_net_1_1_polling_1_1_polling_receiver_1a6339d95cc9d06393e474d00fe2a498fb">Trash</reimplementedby>
+        <briefdescription>
+<para>Get rid of this object from memory. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/adenf/RiderProjects/Openlabs.Mgcxm/Openlabs.Mgcxm/Internal/SystemObjects/IMgcxmSystemObject.cs" line="18" column="10"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>Openlabs.Mgcxm.Internal.SystemObjects.IMgcxmSystemObject</label>
+        <link refid="interface_openlabs_1_1_mgcxm_1_1_internal_1_1_system_objects_1_1_i_mgcxm_system_object"/>
+      </node>
+      <node id="3">
+        <label>Openlabs.Mgcxm.Common.Framework.EndpointFramework&lt; TEndpointUrl &gt;</label>
+        <link refid="class_openlabs_1_1_mgcxm_1_1_common_1_1_framework_1_1_endpoint_framework"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>Openlabs.Mgcxm.Common.Framework.EndpointFrameworkBase</label>
+        <link refid="class_openlabs_1_1_mgcxm_1_1_common_1_1_framework_1_1_endpoint_framework_base"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>Openlabs.Mgcxm.Internal.SystemObjects.MgcxmObject&lt; T &gt;</label>
+        <link refid="class_openlabs_1_1_mgcxm_1_1_internal_1_1_system_objects_1_1_mgcxm_object"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>Openlabs.Mgcxm.Net.MgcxmSocket</label>
+        <link refid="class_openlabs_1_1_mgcxm_1_1_net_1_1_mgcxm_socket"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>Openlabs.Mgcxm.Net.MgcxmSocketListener</label>
+        <link refid="class_openlabs_1_1_mgcxm_1_1_net_1_1_mgcxm_socket_listener"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="8">
+        <label>Openlabs.Mgcxm.Net.Polling.PollingReceiver</label>
+        <link refid="class_openlabs_1_1_mgcxm_1_1_net_1_1_polling_1_1_polling_receiver"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="7">
+        <label>Openlabs.Mgcxm.Tests.TestWsServer</label>
+        <link refid="class_openlabs_1_1_mgcxm_1_1_tests_1_1_test_ws_server"/>
+        <childnode refid="6" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <location file="C:/Users/adenf/RiderProjects/Openlabs.Mgcxm/Openlabs.Mgcxm/Internal/SystemObjects/IMgcxmSystemObject.cs" line="13" column="18" bodyfile="C:/Users/adenf/RiderProjects/Openlabs.Mgcxm/Openlabs.Mgcxm/Internal/SystemObjects/IMgcxmSystemObject.cs" bodystart="14" bodyend="21"/>
+    <listofallmembers>
+      <member refid="interface_openlabs_1_1_mgcxm_1_1_internal_1_1_system_objects_1_1_i_mgcxm_system_object_1afd31aa32e2b847ad283d3c5d5ce90e85" prot="public" virt="non-virtual"><scope>Openlabs::Mgcxm::Internal::SystemObjects::IMgcxmSystemObject</scope><name>AllocatedId</name></member>
+      <member refid="interface_openlabs_1_1_mgcxm_1_1_internal_1_1_system_objects_1_1_i_mgcxm_system_object_1ab14e018c681d09992e11bf3de82c5b45" prot="public" virt="non-virtual"><scope>Openlabs::Mgcxm::Internal::SystemObjects::IMgcxmSystemObject</scope><name>Trash</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

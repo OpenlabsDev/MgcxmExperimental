@@ -1,0 +1,120 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_class_openlabs_1_1_mgcxm_1_1_net_1_1_http_requires_attribute" xml:lang="en-US">
+<title>Openlabs.Mgcxm.Net.HttpRequiresAttribute Class Reference</title>
+<indexterm><primary>Openlabs.Mgcxm.Net.HttpRequiresAttribute</primary></indexterm>
+<para>
+
+<para>Represents an attribute used to specify additional requirements for an HTTP endpoint method. </para>
+ 
+</para>
+Inheritance diagram for Openlabs.Mgcxm.Net.HttpRequiresAttribute:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="class_openlabs_1_1_mgcxm_1_1_net_1_1_http_requires_attribute__inherit__graph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+Collaboration diagram for Openlabs.Mgcxm.Net.HttpRequiresAttribute:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="class_openlabs_1_1_mgcxm_1_1_net_1_1_http_requires_attribute__coll__graph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+<simplesect>
+    <title>Public Member Functions    </title>
+        <itemizedlist>
+            <listitem><para><link linkend="_class_openlabs_1_1_mgcxm_1_1_net_1_1_http_requires_attribute_1a737fbd8f13775a7a7661b31c82bdbbfc">HttpRequiresAttribute</link> (<link linkend="_namespace_openlabs_1_1_mgcxm_1_1_net_1ac91eddadee1cf42d551524d032a0d76c">HttpRequireFlag</link> flag, object data=null)</para>
+
+<para>Initializes a new instance of the HttpRequiresAttribute class with the specified HTTP requirement flag and optional data. </para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Properties    </title>
+        <itemizedlist>
+            <listitem><para><link linkend="_namespace_openlabs_1_1_mgcxm_1_1_net_1ac91eddadee1cf42d551524d032a0d76c">HttpRequireFlag</link> <link linkend="_class_openlabs_1_1_mgcxm_1_1_net_1_1_http_requires_attribute_1ac0fd19004e02c896f39b4636a8c07c06">Flag</link><computeroutput> [get]</computeroutput>
+</para>
+
+<para>Gets the HTTP requirement flag associated with the attribute. </para>
+</listitem>
+            <listitem><para>object <link linkend="_class_openlabs_1_1_mgcxm_1_1_net_1_1_http_requires_attribute_1a056439d510877bf65ecfd5caffbf11ad">Data</link><computeroutput> [get]</computeroutput>
+</para>
+
+<para>Gets optional data associated with the requirement, if applicable. </para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Detailed Description</title>
+
+<para>Represents an attribute used to specify additional requirements for an HTTP endpoint method. </para>
+</section>
+<section>
+<title>Constructor &amp; Destructor Documentation</title>
+<anchor xml:id="_class_openlabs_1_1_mgcxm_1_1_net_1_1_http_requires_attribute_1a737fbd8f13775a7a7661b31c82bdbbfc"/><section>
+    <title>HttpRequiresAttribute()</title>
+<indexterm><primary>HttpRequiresAttribute</primary><secondary>Openlabs.Mgcxm.Net.HttpRequiresAttribute</secondary></indexterm>
+<indexterm><primary>Openlabs.Mgcxm.Net.HttpRequiresAttribute</primary><secondary>HttpRequiresAttribute</secondary></indexterm>
+<para><computeroutput>Openlabs.Mgcxm.Net.HttpRequiresAttribute.HttpRequiresAttribute (<link linkend="_namespace_openlabs_1_1_mgcxm_1_1_net_1ac91eddadee1cf42d551524d032a0d76c">HttpRequireFlag</link> flag, object data = <computeroutput>null</computeroutput>
+)</computeroutput></para><para>
+
+<para>Initializes a new instance of the HttpRequiresAttribute class with the specified HTTP requirement flag and optional data. </para>
+</para>
+
+<para>
+                <formalpara>
+                    <title>
+Parameters</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>flag</entry><entry>
+<para>The HTTP requirement flag associated with the attribute.</para>
+</entry>
+                            </row>
+                            <row>
+<entry>data</entry><entry>
+<para>Optional data associated with the requirement, if applicable.</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                </para>
+</section>
+</section>
+<section>
+<title>Property Documentation</title>
+<anchor xml:id="_class_openlabs_1_1_mgcxm_1_1_net_1_1_http_requires_attribute_1a056439d510877bf65ecfd5caffbf11ad"/><section>
+    <title>Data</title>
+<indexterm><primary>Data</primary><secondary>Openlabs.Mgcxm.Net.HttpRequiresAttribute</secondary></indexterm>
+<indexterm><primary>Openlabs.Mgcxm.Net.HttpRequiresAttribute</primary><secondary>Data</secondary></indexterm>
+<para><computeroutput>object Openlabs.Mgcxm.Net.HttpRequiresAttribute.Data<computeroutput>[get]</computeroutput></computeroutput></para><para>
+
+<para>Gets optional data associated with the requirement, if applicable. </para>
+</para>
+</section>
+<anchor xml:id="_class_openlabs_1_1_mgcxm_1_1_net_1_1_http_requires_attribute_1ac0fd19004e02c896f39b4636a8c07c06"/><section>
+    <title>Flag</title>
+<indexterm><primary>Flag</primary><secondary>Openlabs.Mgcxm.Net.HttpRequiresAttribute</secondary></indexterm>
+<indexterm><primary>Openlabs.Mgcxm.Net.HttpRequiresAttribute</primary><secondary>Flag</secondary></indexterm>
+<para><computeroutput><link linkend="_namespace_openlabs_1_1_mgcxm_1_1_net_1ac91eddadee1cf42d551524d032a0d76c">HttpRequireFlag</link> Openlabs.Mgcxm.Net.HttpRequiresAttribute.Flag<computeroutput>[get]</computeroutput></computeroutput></para><para>
+
+<para>Gets the HTTP requirement flag associated with the attribute. </para>
+</para>
+</section>
+<para>
+The documentation for this class was generated from the following file:</para>
+C:/Users/adenf/RiderProjects/Openlabs.Mgcxm/Openlabs.Mgcxm/Net/Attributes/<link linkend="__http_requires_attribute_8cs">HttpRequiresAttribute.cs</link></section>
+</section>

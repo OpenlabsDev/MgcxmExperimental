@@ -1,0 +1,167 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_class_openlabs_1_1_mgcxm_1_1_net_1_1_mgcxm_socket_connection_handler" xml:lang="en-US">
+<title>Openlabs.Mgcxm.Net.MgcxmSocketConnectionHandler Class Reference</title>
+<indexterm><primary>Openlabs.Mgcxm.Net.MgcxmSocketConnectionHandler</primary></indexterm>
+<para>
+
+<para>Represents an abstract base class for handling WebSocket connections and events. </para>
+ 
+</para>
+Inheritance diagram for Openlabs.Mgcxm.Net.MgcxmSocketConnectionHandler:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="class_openlabs_1_1_mgcxm_1_1_net_1_1_mgcxm_socket_connection_handler__inherit__graph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+<simplesect>
+    <title>Public Member Functions    </title>
+        <itemizedlist>
+            <listitem><para>abstract void <link linkend="_class_openlabs_1_1_mgcxm_1_1_net_1_1_mgcxm_socket_connection_handler_1a527166eaef7a85035b3589e0e28c0f03">OnConnection</link> (<link linkend="_class_openlabs_1_1_mgcxm_1_1_net_1_1_mgcxm_socket">MgcxmSocket</link> socket)</para>
+
+<para>Invoked when a WebSocket connection is established. </para>
+</listitem>
+            <listitem><para>abstract void <link linkend="_class_openlabs_1_1_mgcxm_1_1_net_1_1_mgcxm_socket_connection_handler_1a2c47d96988c995e2ca929f95f91cb887">OnMessage</link> (byte[] data)</para>
+
+<para>Invoked when a message is received over the WebSocket connection. </para>
+</listitem>
+            <listitem><para>abstract void <link linkend="_class_openlabs_1_1_mgcxm_1_1_net_1_1_mgcxm_socket_connection_handler_1a2cb430522ba5031ec5d1b0ae03412cc4">OnDisconnection</link> (WebSocketCloseStatus? status)</para>
+
+<para>Invoked when the WebSocket connection is closed. </para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Properties    </title>
+        <itemizedlist>
+            <listitem><para><link linkend="_class_openlabs_1_1_mgcxm_1_1_net_1_1_mgcxm_socket">MgcxmSocket</link> <link linkend="_class_openlabs_1_1_mgcxm_1_1_net_1_1_mgcxm_socket_connection_handler_1aa3946ce9b9de4622ae5ef11a147634d0">Socket</link><computeroutput> [get]</computeroutput>
+</para>
+
+<para>Gets the MgcxmSocket representing the current WebSocket connection. </para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Detailed Description</title>
+
+<para>Represents an abstract base class for handling WebSocket connections and events. </para>
+</section>
+<section>
+<title>Member Function Documentation</title>
+<anchor xml:id="_class_openlabs_1_1_mgcxm_1_1_net_1_1_mgcxm_socket_connection_handler_1a527166eaef7a85035b3589e0e28c0f03"/><section>
+    <title>OnConnection()</title>
+<indexterm><primary>OnConnection</primary><secondary>Openlabs.Mgcxm.Net.MgcxmSocketConnectionHandler</secondary></indexterm>
+<indexterm><primary>Openlabs.Mgcxm.Net.MgcxmSocketConnectionHandler</primary><secondary>OnConnection</secondary></indexterm>
+<para><computeroutput>abstract void Openlabs.Mgcxm.Net.MgcxmSocketConnectionHandler.OnConnection (<link linkend="_class_openlabs_1_1_mgcxm_1_1_net_1_1_mgcxm_socket">MgcxmSocket</link> socket)<computeroutput>[pure virtual]</computeroutput></computeroutput></para><para>
+
+<para>Invoked when a WebSocket connection is established. </para>
+</para>
+
+<para>
+                <formalpara>
+                    <title>
+Parameters</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>socket</entry><entry>
+<para>The MgcxmSocket representing the connected socket.</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                </para>
+<para>
+Implemented in <link linkend="_class_openlabs_1_1_mgcxm_1_1_tests_1_1_test_ws_server_1_1_notification_socket_connection_handler_1ad59983cd000c9f9ac2cb7403d527fcc9">Openlabs.Mgcxm.Tests.TestWsServer.NotificationSocketConnectionHandler</link>.</para>
+</section>
+<anchor xml:id="_class_openlabs_1_1_mgcxm_1_1_net_1_1_mgcxm_socket_connection_handler_1a2cb430522ba5031ec5d1b0ae03412cc4"/><section>
+    <title>OnDisconnection()</title>
+<indexterm><primary>OnDisconnection</primary><secondary>Openlabs.Mgcxm.Net.MgcxmSocketConnectionHandler</secondary></indexterm>
+<indexterm><primary>Openlabs.Mgcxm.Net.MgcxmSocketConnectionHandler</primary><secondary>OnDisconnection</secondary></indexterm>
+<para><computeroutput>abstract void Openlabs.Mgcxm.Net.MgcxmSocketConnectionHandler.OnDisconnection (WebSocketCloseStatus? status)<computeroutput>[pure virtual]</computeroutput></computeroutput></para><para>
+
+<para>Invoked when the WebSocket connection is closed. </para>
+</para>
+
+<para>
+                <formalpara>
+                    <title>
+Parameters</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>status</entry><entry>
+<para>The close status of the WebSocket connection, if available.</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                </para>
+<para>
+Implemented in <link linkend="_class_openlabs_1_1_mgcxm_1_1_tests_1_1_test_ws_server_1_1_notification_socket_connection_handler_1a27ea967b691db8c35a7de481f569fef3">Openlabs.Mgcxm.Tests.TestWsServer.NotificationSocketConnectionHandler</link>.</para>
+</section>
+<anchor xml:id="_class_openlabs_1_1_mgcxm_1_1_net_1_1_mgcxm_socket_connection_handler_1a2c47d96988c995e2ca929f95f91cb887"/><section>
+    <title>OnMessage()</title>
+<indexterm><primary>OnMessage</primary><secondary>Openlabs.Mgcxm.Net.MgcxmSocketConnectionHandler</secondary></indexterm>
+<indexterm><primary>Openlabs.Mgcxm.Net.MgcxmSocketConnectionHandler</primary><secondary>OnMessage</secondary></indexterm>
+<para><computeroutput>abstract void Openlabs.Mgcxm.Net.MgcxmSocketConnectionHandler.OnMessage (byte[] data)<computeroutput>[pure virtual]</computeroutput></computeroutput></para><para>
+
+<para>Invoked when a message is received over the WebSocket connection. </para>
+</para>
+
+<para>
+                <formalpara>
+                    <title>
+Parameters</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>data</entry><entry>
+<para>The byte array representing the received message data.</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                </para>
+<para>
+Implemented in <link linkend="_class_openlabs_1_1_mgcxm_1_1_tests_1_1_test_ws_server_1_1_notification_socket_connection_handler_1ac2c91de5d04a0a65ebe788137522ce6b">Openlabs.Mgcxm.Tests.TestWsServer.NotificationSocketConnectionHandler</link>.</para>
+</section>
+</section>
+<section>
+<title>Property Documentation</title>
+<anchor xml:id="_class_openlabs_1_1_mgcxm_1_1_net_1_1_mgcxm_socket_connection_handler_1aa3946ce9b9de4622ae5ef11a147634d0"/><section>
+    <title>Socket</title>
+<indexterm><primary>Socket</primary><secondary>Openlabs.Mgcxm.Net.MgcxmSocketConnectionHandler</secondary></indexterm>
+<indexterm><primary>Openlabs.Mgcxm.Net.MgcxmSocketConnectionHandler</primary><secondary>Socket</secondary></indexterm>
+<para><computeroutput><link linkend="_class_openlabs_1_1_mgcxm_1_1_net_1_1_mgcxm_socket">MgcxmSocket</link> Openlabs.Mgcxm.Net.MgcxmSocketConnectionHandler.Socket<computeroutput>[get]</computeroutput></computeroutput></para><para>
+
+<para>Gets the MgcxmSocket representing the current WebSocket connection. </para>
+</para>
+</section>
+<para>
+The documentation for this class was generated from the following file:</para>
+C:/Users/adenf/RiderProjects/Openlabs.Mgcxm/Openlabs.Mgcxm/Net/WebSocket/<link linkend="__mgcxm_socket_connection_handler_8cs">MgcxmSocketConnectionHandler.cs</link></section>
+</section>

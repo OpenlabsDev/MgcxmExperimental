@@ -1,0 +1,19 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.7" xml:lang="en-US">
+  <compounddef id="dir_2d6f05b05e1065468f2f9e5cf72d169e" kind="dir">
+    <compoundname>C:/Users/adenf/RiderProjects/Openlabs.Mgcxm/Openlabs.Mgcxm/Net</compoundname>
+    <innerdir refid="dir_82c5f702e2405e2efb375c5ebc40ddb1">C:/Users/adenf/RiderProjects/Openlabs.Mgcxm/Openlabs.Mgcxm/Net/Attributes</innerdir>
+    <innerdir refid="dir_cfcc75f56e362adeba53493f3df8230f">C:/Users/adenf/RiderProjects/Openlabs.Mgcxm/Openlabs.Mgcxm/Net/Authorization</innerdir>
+    <innerdir refid="dir_4e0ff3ab93d63478ff73752f5c6ad054">C:/Users/adenf/RiderProjects/Openlabs.Mgcxm/Openlabs.Mgcxm/Net/Extensions</innerdir>
+    <innerdir refid="dir_19991ed514ec4c2a39643c641ef9045f">C:/Users/adenf/RiderProjects/Openlabs.Mgcxm/Openlabs.Mgcxm/Net/Http</innerdir>
+    <innerdir refid="dir_1cfa03ed7aef5a97ccf4a17251fb3e8e">C:/Users/adenf/RiderProjects/Openlabs.Mgcxm/Openlabs.Mgcxm/Net/WebSocket</innerdir>
+    <innerfile refid="_authorization_schemes_8cs">AuthorizationSchemes.cs</innerfile>
+    <innerfile refid="_i_ip_address_8cs">IIpAddress.cs</innerfile>
+    <innerfile refid="_ip_address_8cs">IpAddress.cs</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/Users/adenf/RiderProjects/Openlabs.Mgcxm/Openlabs.Mgcxm/Net/"/>
+  </compounddef>
+</doxygen>

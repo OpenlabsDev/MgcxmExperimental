@@ -1,0 +1,452 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.7" xml:lang="en-US">
+  <compounddef id="interface_j_w_t_1_1_i_jwt_decoder" kind="interface" language="C#" prot="public">
+    <compoundname>JWT::IJwtDecoder</compoundname>
+    <derivedcompoundref refid="class_j_w_t_1_1_jwt_decoder" prot="public" virt="non-virtual">JWT.JwtDecoder</derivedcompoundref>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="interface_j_w_t_1_1_i_jwt_decoder_1ace2a937b6e306e573691765a734ea422" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>string</type>
+        <definition>string JWT.IJwtDecoder.DecodeHeader</definition>
+        <argsstring>(string token)</argsstring>
+        <name>DecodeHeader</name>
+        <qualifiedname>JWT.IJwtDecoder.DecodeHeader</qualifiedname>
+        <reimplementedby refid="class_j_w_t_1_1_jwt_decoder_1ad35c18371276f882263a129147d56033">DecodeHeader</reimplementedby>
+        <param>
+          <type>string</type>
+          <declname>token</declname>
+        </param>
+        <briefdescription>
+<para>Given a <ref refid="namespace_j_w_t" kindref="compound">JWT</ref>, decodes it and return the header. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>token</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The <ref refid="namespace_j_w_t" kindref="compound">JWT</ref></para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/adenf/RiderProjects/Openlabs.Mgcxm/Openlabs.Mgcxm/JWT/IJwtDecoder.cs" line="20" column="16"/>
+        <referencedby refid="class_j_w_t_1_1_builder_1_1_jwt_builder_1a3a4ec54245d85c1b64cf2ec9b203ff69" compoundref="_jwt_builder_8cs" startline="303" endline="308">JWT.Builder.JwtBuilder.DecodeHeader</referencedby>
+        <referencedby refid="class_j_w_t_1_1_builder_1_1_jwt_builder_1a49ba989aa19182afaf7e200eb7004357" compoundref="_jwt_builder_8cs" startline="314" endline="319">JWT.Builder.JwtBuilder.DecodeHeader&lt; T &gt;</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_j_w_t_1_1_i_jwt_decoder_1abc3c3b456952aa67044a399fe4df95c1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>T</type>
+        <definition>T JWT.IJwtDecoder.DecodeHeader&lt; T &gt;</definition>
+        <argsstring>(JwtParts jwt)</argsstring>
+        <name>DecodeHeader&lt; T &gt;</name>
+        <qualifiedname>JWT.IJwtDecoder.DecodeHeader&lt; T &gt;</qualifiedname>
+        <reimplementedby refid="class_j_w_t_1_1_jwt_decoder_1ae455c9bb547b6cd16fa7f46c80919934">DecodeHeader&lt; T &gt;</reimplementedby>
+        <param>
+          <type><ref refid="class_j_w_t_1_1_jwt_parts" kindref="compound">JwtParts</ref></type>
+          <declname>jwt</declname>
+        </param>
+        <briefdescription>
+<para>Given a <ref refid="namespace_j_w_t" kindref="compound">JWT</ref>, decodes it and return the header as an object. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>jwt</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The <ref refid="namespace_j_w_t" kindref="compound">JWT</ref></para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/adenf/RiderProjects/Openlabs.Mgcxm/Openlabs.Mgcxm/JWT/IJwtDecoder.cs" line="26" column="9"/>
+      </memberdef>
+      <memberdef kind="function" id="interface_j_w_t_1_1_i_jwt_decoder_1ac72a33117bbb87d4955c5e31eaa9f082" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>string</type>
+        <definition>string JWT.IJwtDecoder.Decode</definition>
+        <argsstring>(JwtParts jwt, bool verify)</argsstring>
+        <name>Decode</name>
+        <qualifiedname>JWT.IJwtDecoder.Decode</qualifiedname>
+        <reimplementedby refid="class_j_w_t_1_1_jwt_decoder_1aa14378f1bcd2782f35a6d4e4d77ee5c7">Decode</reimplementedby>
+        <param>
+          <type><ref refid="class_j_w_t_1_1_jwt_parts" kindref="compound">JwtParts</ref></type>
+          <declname>jwt</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>verify</declname>
+        </param>
+        <briefdescription>
+<para>Given a <ref refid="namespace_j_w_t" kindref="compound">JWT</ref>, decodes it and return the payload. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>jwt</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The <ref refid="namespace_j_w_t" kindref="compound">JWT</ref></para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>verify</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Whether to verify the signature (default is true)</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>A string containing the JSON payload</para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/adenf/RiderProjects/Openlabs.Mgcxm/Openlabs.Mgcxm/JWT/IJwtDecoder.cs" line="37" column="16"/>
+        <referencedby refid="class_j_w_t_1_1_builder_1_1_jwt_builder_1ae1aafe966bfed0d2c22d468dbe8b72b1" compoundref="_jwt_builder_8cs" startline="292" endline="297">JWT.Builder.JwtBuilder.Decode</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_j_w_t_1_1_i_jwt_decoder_1ac13bd195a85713439290861a005e3f64" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>string</type>
+        <definition>string JWT.IJwtDecoder.Decode</definition>
+        <argsstring>(JwtParts jwt, byte[] key, bool verify)</argsstring>
+        <name>Decode</name>
+        <qualifiedname>JWT.IJwtDecoder.Decode</qualifiedname>
+        <reimplementedby refid="class_j_w_t_1_1_jwt_decoder_1a66055439f5767767fffe090669e4f97f">Decode</reimplementedby>
+        <param>
+          <type><ref refid="class_j_w_t_1_1_jwt_parts" kindref="compound">JwtParts</ref></type>
+          <declname>jwt</declname>
+        </param>
+        <param>
+          <type>byte[]</type>
+          <declname>key</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>verify</declname>
+        </param>
+        <briefdescription>
+<para>Given a <ref refid="namespace_j_w_t" kindref="compound">JWT</ref>, decodes it and return the payload. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>jwt</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The <ref refid="namespace_j_w_t" kindref="compound">JWT</ref></para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>key</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The key that were used to sign the <ref refid="namespace_j_w_t" kindref="compound">JWT</ref></para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>verify</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Whether to verify the signature (default is true)</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>A string containing the JSON payload</para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/adenf/RiderProjects/Openlabs.Mgcxm/Openlabs.Mgcxm/JWT/IJwtDecoder.cs" line="46" column="16"/>
+      </memberdef>
+      <memberdef kind="function" id="interface_j_w_t_1_1_i_jwt_decoder_1aca98278477e9a8696d8e3673703896d2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>string</type>
+        <definition>string JWT.IJwtDecoder.Decode</definition>
+        <argsstring>(JwtParts jwt, byte[][] keys, bool verify)</argsstring>
+        <name>Decode</name>
+        <qualifiedname>JWT.IJwtDecoder.Decode</qualifiedname>
+        <reimplementedby refid="class_j_w_t_1_1_jwt_decoder_1a8cb3413ad89a3c4ce4cd00b354aad0d5">Decode</reimplementedby>
+        <param>
+          <type><ref refid="class_j_w_t_1_1_jwt_parts" kindref="compound">JwtParts</ref></type>
+          <declname>jwt</declname>
+        </param>
+        <param>
+          <type>byte</type>
+          <declname>keys</declname>
+          <array>[][]</array>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>verify</declname>
+        </param>
+        <briefdescription>
+<para>Given a <ref refid="namespace_j_w_t" kindref="compound">JWT</ref>, decodes it and return the payload. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>jwt</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The <ref refid="namespace_j_w_t" kindref="compound">JWT</ref></para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>keys</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The keys provided which one of them was used to sign the <ref refid="namespace_j_w_t" kindref="compound">JWT</ref></para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>verify</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Whether to verify the signature (default is true)</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>A string containing the JSON payload</para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/adenf/RiderProjects/Openlabs.Mgcxm/Openlabs.Mgcxm/JWT/IJwtDecoder.cs" line="55" column="16"/>
+      </memberdef>
+      <memberdef kind="function" id="interface_j_w_t_1_1_i_jwt_decoder_1a7bc410788b6465433d9bed7a7b91c67c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>object</type>
+        <definition>object JWT.IJwtDecoder.DecodeToObject</definition>
+        <argsstring>(Type type, JwtParts jwt, bool verify)</argsstring>
+        <name>DecodeToObject</name>
+        <qualifiedname>JWT.IJwtDecoder.DecodeToObject</qualifiedname>
+        <reimplementedby refid="class_j_w_t_1_1_jwt_decoder_1a4cfae033fd0e63870039a95ce0da08dc">DecodeToObject</reimplementedby>
+        <param>
+          <type>Type</type>
+          <declname>type</declname>
+        </param>
+        <param>
+          <type><ref refid="class_j_w_t_1_1_jwt_parts" kindref="compound">JwtParts</ref></type>
+          <declname>jwt</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>verify</declname>
+        </param>
+        <briefdescription>
+<para>Given a <ref refid="namespace_j_w_t" kindref="compound">JWT</ref>, decodes it and return the payload as an object. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>type</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The type to deserialize to.</para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>jwt</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The <ref refid="namespace_j_w_t" kindref="compound">JWT</ref></para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>verify</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Whether to verify the signature (default is true)</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>An object representing the payload</para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/adenf/RiderProjects/Openlabs.Mgcxm/Openlabs.Mgcxm/JWT/IJwtDecoder.cs" line="68" column="16"/>
+        <referencedby refid="class_j_w_t_1_1_builder_1_1_jwt_builder_1aaf1169fe50c65d733de5c3d32a959190" compoundref="_jwt_builder_8cs" startline="321" endline="326">JWT.Builder.JwtBuilder.Decode</referencedby>
+        <referencedby refid="class_j_w_t_1_1_builder_1_1_jwt_builder_1a22a9152db27a718e16a81d334836d367" compoundref="_jwt_builder_8cs" startline="333" endline="338">JWT.Builder.JwtBuilder.Decode&lt; T &gt;</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_j_w_t_1_1_i_jwt_decoder_1a31f9fc174279237300d5a1573f30b368" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>object</type>
+        <definition>object JWT.IJwtDecoder.DecodeToObject</definition>
+        <argsstring>(Type type, JwtParts jwt, byte[] key, bool verify)</argsstring>
+        <name>DecodeToObject</name>
+        <qualifiedname>JWT.IJwtDecoder.DecodeToObject</qualifiedname>
+        <reimplementedby refid="class_j_w_t_1_1_jwt_decoder_1ad74fea61e5832bb49489843a24564d1c">DecodeToObject</reimplementedby>
+        <param>
+          <type>Type</type>
+          <declname>type</declname>
+        </param>
+        <param>
+          <type><ref refid="class_j_w_t_1_1_jwt_parts" kindref="compound">JwtParts</ref></type>
+          <declname>jwt</declname>
+        </param>
+        <param>
+          <type>byte[]</type>
+          <declname>key</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>verify</declname>
+        </param>
+        <briefdescription>
+<para>Given a <ref refid="namespace_j_w_t" kindref="compound">JWT</ref>, decodes it and return the payload as an object. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>type</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The type to deserialize to.</para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>jwt</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The <ref refid="namespace_j_w_t" kindref="compound">JWT</ref></para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>key</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The key that was used to sign the <ref refid="namespace_j_w_t" kindref="compound">JWT</ref></para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>verify</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Whether to verify the signature (default is true)</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>An object representing the payload</para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/adenf/RiderProjects/Openlabs.Mgcxm/Openlabs.Mgcxm/JWT/IJwtDecoder.cs" line="78" column="16"/>
+      </memberdef>
+      <memberdef kind="function" id="interface_j_w_t_1_1_i_jwt_decoder_1a66f3f63a645cba226c8a44b9039c1e3f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>object</type>
+        <definition>object JWT.IJwtDecoder.DecodeToObject</definition>
+        <argsstring>(Type type, JwtParts jwt, byte[][] keys, bool verify)</argsstring>
+        <name>DecodeToObject</name>
+        <qualifiedname>JWT.IJwtDecoder.DecodeToObject</qualifiedname>
+        <reimplementedby refid="class_j_w_t_1_1_jwt_decoder_1a4aedfc167e223098ef880b2f059737c4">DecodeToObject</reimplementedby>
+        <param>
+          <type>Type</type>
+          <declname>type</declname>
+        </param>
+        <param>
+          <type><ref refid="class_j_w_t_1_1_jwt_parts" kindref="compound">JwtParts</ref></type>
+          <declname>jwt</declname>
+        </param>
+        <param>
+          <type>byte</type>
+          <declname>keys</declname>
+          <array>[][]</array>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>verify</declname>
+        </param>
+        <briefdescription>
+<para>Given a <ref refid="namespace_j_w_t" kindref="compound">JWT</ref>, decodes it and return the payload as an object. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>type</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The type to deserialize to.</para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>jwt</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The <ref refid="namespace_j_w_t" kindref="compound">JWT</ref></para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>keys</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The keys which one of them was used to sign the <ref refid="namespace_j_w_t" kindref="compound">JWT</ref></para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>verify</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Whether to verify the signature (default is true)</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>An object representing the payload</para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/adenf/RiderProjects/Openlabs.Mgcxm/Openlabs.Mgcxm/JWT/IJwtDecoder.cs" line="88" column="16"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Represents a <ref refid="namespace_j_w_t" kindref="compound">JWT</ref> decoder. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>JWT.IJwtDecoder</label>
+        <link refid="interface_j_w_t_1_1_i_jwt_decoder"/>
+      </node>
+      <node id="2">
+        <label>JWT.JwtDecoder</label>
+        <link refid="class_j_w_t_1_1_jwt_decoder"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <location file="C:/Users/adenf/RiderProjects/Openlabs.Mgcxm/Openlabs.Mgcxm/JWT/IJwtDecoder.cs" line="12" column="22" bodyfile="C:/Users/adenf/RiderProjects/Openlabs.Mgcxm/Openlabs.Mgcxm/JWT/IJwtDecoder.cs" bodystart="13" bodyend="91"/>
+    <listofallmembers>
+      <member refid="interface_j_w_t_1_1_i_jwt_decoder_1ac72a33117bbb87d4955c5e31eaa9f082" prot="public" virt="non-virtual"><scope>JWT::IJwtDecoder</scope><name>Decode</name></member>
+      <member refid="interface_j_w_t_1_1_i_jwt_decoder_1ac13bd195a85713439290861a005e3f64" prot="public" virt="non-virtual"><scope>JWT::IJwtDecoder</scope><name>Decode</name></member>
+      <member refid="interface_j_w_t_1_1_i_jwt_decoder_1aca98278477e9a8696d8e3673703896d2" prot="public" virt="non-virtual"><scope>JWT::IJwtDecoder</scope><name>Decode</name></member>
+      <member refid="interface_j_w_t_1_1_i_jwt_decoder_1ace2a937b6e306e573691765a734ea422" prot="public" virt="non-virtual"><scope>JWT::IJwtDecoder</scope><name>DecodeHeader</name></member>
+      <member refid="interface_j_w_t_1_1_i_jwt_decoder_1abc3c3b456952aa67044a399fe4df95c1" prot="public" virt="non-virtual"><scope>JWT::IJwtDecoder</scope><name>DecodeHeader&lt; T &gt;</name></member>
+      <member refid="interface_j_w_t_1_1_i_jwt_decoder_1a7bc410788b6465433d9bed7a7b91c67c" prot="public" virt="non-virtual"><scope>JWT::IJwtDecoder</scope><name>DecodeToObject</name></member>
+      <member refid="interface_j_w_t_1_1_i_jwt_decoder_1a31f9fc174279237300d5a1573f30b368" prot="public" virt="non-virtual"><scope>JWT::IJwtDecoder</scope><name>DecodeToObject</name></member>
+      <member refid="interface_j_w_t_1_1_i_jwt_decoder_1a66f3f63a645cba226c8a44b9039c1e3f" prot="public" virt="non-virtual"><scope>JWT::IJwtDecoder</scope><name>DecodeToObject</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

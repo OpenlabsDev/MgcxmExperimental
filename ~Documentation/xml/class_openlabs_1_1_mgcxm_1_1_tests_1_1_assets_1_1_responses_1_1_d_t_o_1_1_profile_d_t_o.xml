@@ -1,0 +1,180 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.7" xml:lang="en-US">
+  <compounddef id="class_openlabs_1_1_mgcxm_1_1_tests_1_1_assets_1_1_responses_1_1_d_t_o_1_1_profile_d_t_o" kind="class" language="C#" prot="public">
+    <compoundname>Openlabs::Mgcxm::Tests::Assets::Responses::DTO::ProfileDTO</compoundname>
+      <sectiondef kind="property">
+      <memberdef kind="property" id="class_openlabs_1_1_mgcxm_1_1_tests_1_1_assets_1_1_responses_1_1_d_t_o_1_1_profile_d_t_o_1a587c0aa24dc72ba793d46e633b8a982f" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type>ulong</type>
+        <definition>ulong Openlabs.Mgcxm.Tests.Assets.Responses.DTO.ProfileDTO.Id</definition>
+        <argsstring></argsstring>
+        <name>Id</name>
+        <qualifiedname>Openlabs.Mgcxm.Tests.Assets.Responses.DTO.ProfileDTO.Id</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/adenf/RiderProjects/Openlabs.Mgcxm/Openlabs.Mgcxm.Tests/Assets/Responses/DTO/ProfileDTO.cs" line="7" column="18" bodyfile="C:/Users/adenf/RiderProjects/Openlabs.Mgcxm/Openlabs.Mgcxm.Tests/Assets/Responses/DTO/ProfileDTO.cs" bodystart="7" bodyend="7"/>
+      </memberdef>
+      <memberdef kind="property" id="class_openlabs_1_1_mgcxm_1_1_tests_1_1_assets_1_1_responses_1_1_d_t_o_1_1_profile_d_t_o_1a396862e5d6eea60e5cfb7b653b014760" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type>string</type>
+        <definition>string Openlabs.Mgcxm.Tests.Assets.Responses.DTO.ProfileDTO.Username</definition>
+        <argsstring></argsstring>
+        <name>Username</name>
+        <qualifiedname>Openlabs.Mgcxm.Tests.Assets.Responses.DTO.ProfileDTO.Username</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/adenf/RiderProjects/Openlabs.Mgcxm/Openlabs.Mgcxm.Tests/Assets/Responses/DTO/ProfileDTO.cs" line="8" column="19" bodyfile="C:/Users/adenf/RiderProjects/Openlabs.Mgcxm/Openlabs.Mgcxm.Tests/Assets/Responses/DTO/ProfileDTO.cs" bodystart="8" bodyend="8"/>
+      </memberdef>
+      <memberdef kind="property" id="class_openlabs_1_1_mgcxm_1_1_tests_1_1_assets_1_1_responses_1_1_d_t_o_1_1_profile_d_t_o_1a95831d16112be1b95bc0c27ab21eed95" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type>string</type>
+        <definition>string Openlabs.Mgcxm.Tests.Assets.Responses.DTO.ProfileDTO.DisplayName</definition>
+        <argsstring></argsstring>
+        <name>DisplayName</name>
+        <qualifiedname>Openlabs.Mgcxm.Tests.Assets.Responses.DTO.ProfileDTO.DisplayName</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/adenf/RiderProjects/Openlabs.Mgcxm/Openlabs.Mgcxm.Tests/Assets/Responses/DTO/ProfileDTO.cs" line="9" column="19" bodyfile="C:/Users/adenf/RiderProjects/Openlabs.Mgcxm/Openlabs.Mgcxm.Tests/Assets/Responses/DTO/ProfileDTO.cs" bodystart="9" bodyend="9"/>
+      </memberdef>
+      <memberdef kind="property" id="class_openlabs_1_1_mgcxm_1_1_tests_1_1_assets_1_1_responses_1_1_d_t_o_1_1_profile_d_t_o_1affa08b15c41e46f466f9aba9064ec33d" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type>int</type>
+        <definition>int Openlabs.Mgcxm.Tests.Assets.Responses.DTO.ProfileDTO.XP</definition>
+        <argsstring></argsstring>
+        <name>XP</name>
+        <qualifiedname>Openlabs.Mgcxm.Tests.Assets.Responses.DTO.ProfileDTO.XP</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/adenf/RiderProjects/Openlabs.Mgcxm/Openlabs.Mgcxm.Tests/Assets/Responses/DTO/ProfileDTO.cs" line="10" column="16" bodyfile="C:/Users/adenf/RiderProjects/Openlabs.Mgcxm/Openlabs.Mgcxm.Tests/Assets/Responses/DTO/ProfileDTO.cs" bodystart="10" bodyend="10"/>
+      </memberdef>
+      <memberdef kind="property" id="class_openlabs_1_1_mgcxm_1_1_tests_1_1_assets_1_1_responses_1_1_d_t_o_1_1_profile_d_t_o_1a067672a9c320ee05bd8e8f2cca69fd14" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type>int</type>
+        <definition>int Openlabs.Mgcxm.Tests.Assets.Responses.DTO.ProfileDTO.Level</definition>
+        <argsstring></argsstring>
+        <name>Level</name>
+        <qualifiedname>Openlabs.Mgcxm.Tests.Assets.Responses.DTO.ProfileDTO.Level</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/adenf/RiderProjects/Openlabs.Mgcxm/Openlabs.Mgcxm.Tests/Assets/Responses/DTO/ProfileDTO.cs" line="11" column="16" bodyfile="C:/Users/adenf/RiderProjects/Openlabs.Mgcxm/Openlabs.Mgcxm.Tests/Assets/Responses/DTO/ProfileDTO.cs" bodystart="11" bodyend="11"/>
+      </memberdef>
+      <memberdef kind="property" id="class_openlabs_1_1_mgcxm_1_1_tests_1_1_assets_1_1_responses_1_1_d_t_o_1_1_profile_d_t_o_1af842c233a31be10a91786d0f5f3f2ba1" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type>int</type>
+        <definition>int Openlabs.Mgcxm.Tests.Assets.Responses.DTO.ProfileDTO.Reputation</definition>
+        <argsstring></argsstring>
+        <name>Reputation</name>
+        <qualifiedname>Openlabs.Mgcxm.Tests.Assets.Responses.DTO.ProfileDTO.Reputation</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/adenf/RiderProjects/Openlabs.Mgcxm/Openlabs.Mgcxm.Tests/Assets/Responses/DTO/ProfileDTO.cs" line="12" column="16" bodyfile="C:/Users/adenf/RiderProjects/Openlabs.Mgcxm/Openlabs.Mgcxm.Tests/Assets/Responses/DTO/ProfileDTO.cs" bodystart="12" bodyend="12"/>
+      </memberdef>
+      <memberdef kind="property" id="class_openlabs_1_1_mgcxm_1_1_tests_1_1_assets_1_1_responses_1_1_d_t_o_1_1_profile_d_t_o_1a895353b3b7d3717e8d8a97d4bbb57cde" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type>bool</type>
+        <definition>bool Openlabs.Mgcxm.Tests.Assets.Responses.DTO.ProfileDTO.Verified</definition>
+        <argsstring></argsstring>
+        <name>Verified</name>
+        <qualifiedname>Openlabs.Mgcxm.Tests.Assets.Responses.DTO.ProfileDTO.Verified</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/adenf/RiderProjects/Openlabs.Mgcxm/Openlabs.Mgcxm.Tests/Assets/Responses/DTO/ProfileDTO.cs" line="13" column="17" bodyfile="C:/Users/adenf/RiderProjects/Openlabs.Mgcxm/Openlabs.Mgcxm.Tests/Assets/Responses/DTO/ProfileDTO.cs" bodystart="13" bodyend="13"/>
+      </memberdef>
+      <memberdef kind="property" id="class_openlabs_1_1_mgcxm_1_1_tests_1_1_assets_1_1_responses_1_1_d_t_o_1_1_profile_d_t_o_1adbacc6518fc0da11e14911ba18247d3b" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type>bool</type>
+        <definition>bool Openlabs.Mgcxm.Tests.Assets.Responses.DTO.ProfileDTO.Developer</definition>
+        <argsstring></argsstring>
+        <name>Developer</name>
+        <qualifiedname>Openlabs.Mgcxm.Tests.Assets.Responses.DTO.ProfileDTO.Developer</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/adenf/RiderProjects/Openlabs.Mgcxm/Openlabs.Mgcxm.Tests/Assets/Responses/DTO/ProfileDTO.cs" line="14" column="17" bodyfile="C:/Users/adenf/RiderProjects/Openlabs.Mgcxm/Openlabs.Mgcxm.Tests/Assets/Responses/DTO/ProfileDTO.cs" bodystart="14" bodyend="14"/>
+      </memberdef>
+      <memberdef kind="property" id="class_openlabs_1_1_mgcxm_1_1_tests_1_1_assets_1_1_responses_1_1_d_t_o_1_1_profile_d_t_o_1aeac3edaa75fc487904d94a93d280f8da" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type>bool</type>
+        <definition>bool Openlabs.Mgcxm.Tests.Assets.Responses.DTO.ProfileDTO.HasEmail</definition>
+        <argsstring></argsstring>
+        <name>HasEmail</name>
+        <qualifiedname>Openlabs.Mgcxm.Tests.Assets.Responses.DTO.ProfileDTO.HasEmail</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/adenf/RiderProjects/Openlabs.Mgcxm/Openlabs.Mgcxm.Tests/Assets/Responses/DTO/ProfileDTO.cs" line="15" column="17" bodyfile="C:/Users/adenf/RiderProjects/Openlabs.Mgcxm/Openlabs.Mgcxm.Tests/Assets/Responses/DTO/ProfileDTO.cs" bodystart="15" bodyend="15"/>
+      </memberdef>
+      <memberdef kind="property" id="class_openlabs_1_1_mgcxm_1_1_tests_1_1_assets_1_1_responses_1_1_d_t_o_1_1_profile_d_t_o_1ae0b90b790a5237a1646fe5a7b140e8a7" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type>bool</type>
+        <definition>bool Openlabs.Mgcxm.Tests.Assets.Responses.DTO.ProfileDTO.CanReceiveInvites</definition>
+        <argsstring></argsstring>
+        <name>CanReceiveInvites</name>
+        <qualifiedname>Openlabs.Mgcxm.Tests.Assets.Responses.DTO.ProfileDTO.CanReceiveInvites</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/adenf/RiderProjects/Openlabs.Mgcxm/Openlabs.Mgcxm.Tests/Assets/Responses/DTO/ProfileDTO.cs" line="16" column="17" bodyfile="C:/Users/adenf/RiderProjects/Openlabs.Mgcxm/Openlabs.Mgcxm.Tests/Assets/Responses/DTO/ProfileDTO.cs" bodystart="16" bodyend="16"/>
+      </memberdef>
+      <memberdef kind="property" id="class_openlabs_1_1_mgcxm_1_1_tests_1_1_assets_1_1_responses_1_1_d_t_o_1_1_profile_d_t_o_1a360dfbef0c4550eaedec1de2b4e28806" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type>string</type>
+        <definition>string Openlabs.Mgcxm.Tests.Assets.Responses.DTO.ProfileDTO.ProfileImageName</definition>
+        <argsstring></argsstring>
+        <name>ProfileImageName</name>
+        <qualifiedname>Openlabs.Mgcxm.Tests.Assets.Responses.DTO.ProfileDTO.ProfileImageName</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/adenf/RiderProjects/Openlabs.Mgcxm/Openlabs.Mgcxm.Tests/Assets/Responses/DTO/ProfileDTO.cs" line="17" column="19" bodyfile="C:/Users/adenf/RiderProjects/Openlabs.Mgcxm/Openlabs.Mgcxm.Tests/Assets/Responses/DTO/ProfileDTO.cs" bodystart="17" bodyend="17"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/Users/adenf/RiderProjects/Openlabs.Mgcxm/Openlabs.Mgcxm.Tests/Assets/Responses/DTO/ProfileDTO.cs" line="5" column="7" bodyfile="C:/Users/adenf/RiderProjects/Openlabs.Mgcxm/Openlabs.Mgcxm.Tests/Assets/Responses/DTO/ProfileDTO.cs" bodystart="6" bodyend="18"/>
+    <listofallmembers>
+      <member refid="class_openlabs_1_1_mgcxm_1_1_tests_1_1_assets_1_1_responses_1_1_d_t_o_1_1_profile_d_t_o_1ae0b90b790a5237a1646fe5a7b140e8a7" prot="public" virt="non-virtual"><scope>Openlabs::Mgcxm::Tests::Assets::Responses::DTO::ProfileDTO</scope><name>CanReceiveInvites</name></member>
+      <member refid="class_openlabs_1_1_mgcxm_1_1_tests_1_1_assets_1_1_responses_1_1_d_t_o_1_1_profile_d_t_o_1adbacc6518fc0da11e14911ba18247d3b" prot="public" virt="non-virtual"><scope>Openlabs::Mgcxm::Tests::Assets::Responses::DTO::ProfileDTO</scope><name>Developer</name></member>
+      <member refid="class_openlabs_1_1_mgcxm_1_1_tests_1_1_assets_1_1_responses_1_1_d_t_o_1_1_profile_d_t_o_1a95831d16112be1b95bc0c27ab21eed95" prot="public" virt="non-virtual"><scope>Openlabs::Mgcxm::Tests::Assets::Responses::DTO::ProfileDTO</scope><name>DisplayName</name></member>
+      <member refid="class_openlabs_1_1_mgcxm_1_1_tests_1_1_assets_1_1_responses_1_1_d_t_o_1_1_profile_d_t_o_1aeac3edaa75fc487904d94a93d280f8da" prot="public" virt="non-virtual"><scope>Openlabs::Mgcxm::Tests::Assets::Responses::DTO::ProfileDTO</scope><name>HasEmail</name></member>
+      <member refid="class_openlabs_1_1_mgcxm_1_1_tests_1_1_assets_1_1_responses_1_1_d_t_o_1_1_profile_d_t_o_1a587c0aa24dc72ba793d46e633b8a982f" prot="public" virt="non-virtual"><scope>Openlabs::Mgcxm::Tests::Assets::Responses::DTO::ProfileDTO</scope><name>Id</name></member>
+      <member refid="class_openlabs_1_1_mgcxm_1_1_tests_1_1_assets_1_1_responses_1_1_d_t_o_1_1_profile_d_t_o_1a067672a9c320ee05bd8e8f2cca69fd14" prot="public" virt="non-virtual"><scope>Openlabs::Mgcxm::Tests::Assets::Responses::DTO::ProfileDTO</scope><name>Level</name></member>
+      <member refid="class_openlabs_1_1_mgcxm_1_1_tests_1_1_assets_1_1_responses_1_1_d_t_o_1_1_profile_d_t_o_1a360dfbef0c4550eaedec1de2b4e28806" prot="public" virt="non-virtual"><scope>Openlabs::Mgcxm::Tests::Assets::Responses::DTO::ProfileDTO</scope><name>ProfileImageName</name></member>
+      <member refid="class_openlabs_1_1_mgcxm_1_1_tests_1_1_assets_1_1_responses_1_1_d_t_o_1_1_profile_d_t_o_1af842c233a31be10a91786d0f5f3f2ba1" prot="public" virt="non-virtual"><scope>Openlabs::Mgcxm::Tests::Assets::Responses::DTO::ProfileDTO</scope><name>Reputation</name></member>
+      <member refid="class_openlabs_1_1_mgcxm_1_1_tests_1_1_assets_1_1_responses_1_1_d_t_o_1_1_profile_d_t_o_1a396862e5d6eea60e5cfb7b653b014760" prot="public" virt="non-virtual"><scope>Openlabs::Mgcxm::Tests::Assets::Responses::DTO::ProfileDTO</scope><name>Username</name></member>
+      <member refid="class_openlabs_1_1_mgcxm_1_1_tests_1_1_assets_1_1_responses_1_1_d_t_o_1_1_profile_d_t_o_1a895353b3b7d3717e8d8a97d4bbb57cde" prot="public" virt="non-virtual"><scope>Openlabs::Mgcxm::Tests::Assets::Responses::DTO::ProfileDTO</scope><name>Verified</name></member>
+      <member refid="class_openlabs_1_1_mgcxm_1_1_tests_1_1_assets_1_1_responses_1_1_d_t_o_1_1_profile_d_t_o_1affa08b15c41e46f466f9aba9064ec33d" prot="public" virt="non-virtual"><scope>Openlabs::Mgcxm::Tests::Assets::Responses::DTO::ProfileDTO</scope><name>XP</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

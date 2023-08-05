@@ -1,0 +1,36 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="__jwt_algorithm_name_8cs" xml:lang="en-US">
+<title>C:/Users/adenf/RiderProjects/Openlabs.Mgcxm/Openlabs.Mgcxm/JWT/Algorithms/JwtAlgorithmName.cs File Reference</title>
+<indexterm><primary>C:/Users/adenf/RiderProjects/Openlabs.Mgcxm/Openlabs.Mgcxm/JWT/Algorithms/JwtAlgorithmName.cs</primary></indexterm>
+<simplesect>
+    <title>Namespaces    </title>
+        <itemizedlist>
+            <listitem><para>namespace <link linkend="_namespace_j_w_t">JWT</link></para>
+</listitem>
+            <listitem><para>namespace <link linkend="_namespace_j_w_t_1_1_algorithms">JWT.Algorithms</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Enumerations    </title>
+        <itemizedlist>
+            <listitem><para>enum <link linkend="_namespace_j_w_t_1_1_algorithms_1a01c3b16fc1ceb98f077a59f749d39198">JWT.Algorithms.JwtAlgorithmName</link> { <?linebreak?><link linkend="_namespace_j_w_t_1_1_algorithms_1a01c3b16fc1ceb98f077a59f749d39198aeb86be6fe0588de61c66e415b1e789a6">JWT.Algorithms.HS256</link>
+, <link linkend="_namespace_j_w_t_1_1_algorithms_1a01c3b16fc1ceb98f077a59f749d39198af29fe2e02af29dc284213787eec34264">JWT.Algorithms.HS384</link>
+, <link linkend="_namespace_j_w_t_1_1_algorithms_1a01c3b16fc1ceb98f077a59f749d39198acc302b6a187ce46ca24f03e737b35ce0">JWT.Algorithms.HS512</link>
+, <link linkend="_namespace_j_w_t_1_1_algorithms_1a01c3b16fc1ceb98f077a59f749d39198ab774c36caa844a2b0e94f9c04c3ccacc">JWT.Algorithms.RS256</link>
+, <?linebreak?><link linkend="_namespace_j_w_t_1_1_algorithms_1a01c3b16fc1ceb98f077a59f749d39198ab03bdb0d07788e23633412c2e6126beb">JWT.Algorithms.RS384</link>
+, <link linkend="_namespace_j_w_t_1_1_algorithms_1a01c3b16fc1ceb98f077a59f749d39198a712d59cd4e4ebe95bb0b24e0e188f17b">JWT.Algorithms.RS512</link>
+, <link linkend="_namespace_j_w_t_1_1_algorithms_1a01c3b16fc1ceb98f077a59f749d39198a17d8d3f62bf7b97ac5aeb1ba86966944">JWT.Algorithms.RS1024</link>
+, <link linkend="_namespace_j_w_t_1_1_algorithms_1a01c3b16fc1ceb98f077a59f749d39198ad3969090914c682937a2d6bdf93d96c6">JWT.Algorithms.RS2048</link>
+, <?linebreak?><link linkend="_namespace_j_w_t_1_1_algorithms_1a01c3b16fc1ceb98f077a59f749d39198ae14b5321a9b5ec5af06c818ec6619895">JWT.Algorithms.RS4096</link>
+, <link linkend="_namespace_j_w_t_1_1_algorithms_1a01c3b16fc1ceb98f077a59f749d39198afd60368f8e6bdf74fddcbd09f89c4aa5">JWT.Algorithms.ES256</link>
+, <link linkend="_namespace_j_w_t_1_1_algorithms_1a01c3b16fc1ceb98f077a59f749d39198a0b24963bd9959fbc123de61adbdc07e4">JWT.Algorithms.ES384</link>
+, <link linkend="_namespace_j_w_t_1_1_algorithms_1a01c3b16fc1ceb98f077a59f749d39198a9bed1c03a3ddb9495e6bf7d6699dd595">JWT.Algorithms.ES512</link>
+, <?linebreak?><link linkend="_namespace_j_w_t_1_1_algorithms_1a01c3b16fc1ceb98f077a59f749d39198a6adf97f83acf6453d4a6a4b1070f3754">JWT.Algorithms.None</link>
+ }</para>
+
+<para>Enum representing the various Jwt Hash Algorithms. </para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+</section>

@@ -1,0 +1,11 @@
+digraph "JWT.Builder.JwtBuilder.Encode"
+{
+ // LATEX_PDF_SIZE
+  bgcolor="transparent";
+  edge [fontname=Helvetica,fontsize=10,labelfontname=Helvetica,labelfontsize=10];
+  node [fontname=Helvetica,fontsize=10,shape=box,height=0.2,width=0.4];
+  rankdir="LR";
+  Node1 [id="Node000001",label="JWT.Builder.JwtBuilder.Encode",height=0.2,width=0.4,color="gray40", fillcolor="grey60", style="filled", fontcolor="black",tooltip=" "];
+  Node1 -> Node2 [id="edge1_Node000001_Node000002",color="steelblue1",style="solid",tooltip=" "];
+  Node2 [id="Node000002",label="JWT.IJwtEncoder.Encode",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$interface_j_w_t_1_1_i_jwt_encoder.html#a0ece85ed8dae5fc53da5ba8d850a8171",tooltip="Creates a JWT given a header, a payload, the signing key, and the algorithm to use."];
+}

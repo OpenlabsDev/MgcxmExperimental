@@ -1,0 +1,153 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.7" xml:lang="en-US">
+  <compounddef id="namespace_j_w_t_1_1_algorithms" kind="namespace" language="C#">
+    <compoundname>JWT::Algorithms</compoundname>
+    <innerclass refid="class_j_w_t_1_1_algorithms_1_1_certificate_algorithm" prot="public">JWT::Algorithms::CertificateAlgorithm</innerclass>
+    <innerclass refid="class_j_w_t_1_1_algorithms_1_1_delegate_algorithm_factory" prot="public">JWT::Algorithms::DelegateAlgorithmFactory</innerclass>
+    <innerclass refid="class_j_w_t_1_1_algorithms_1_1_e_c_d_s_a_algorithm_factory" prot="public">JWT::Algorithms::ECDSAAlgorithmFactory</innerclass>
+    <innerclass refid="class_j_w_t_1_1_algorithms_1_1_generic_algorithm_factory" prot="public">JWT::Algorithms::GenericAlgorithmFactory</innerclass>
+    <innerclass refid="class_j_w_t_1_1_algorithms_1_1_h_m_a_c_s_h_a256_algorithm" prot="public">JWT::Algorithms::HMACSHA256Algorithm</innerclass>
+    <innerclass refid="class_j_w_t_1_1_algorithms_1_1_h_m_a_c_s_h_a384_algorithm" prot="public">JWT::Algorithms::HMACSHA384Algorithm</innerclass>
+    <innerclass refid="class_j_w_t_1_1_algorithms_1_1_h_m_a_c_s_h_a512_algorithm" prot="public">JWT::Algorithms::HMACSHA512Algorithm</innerclass>
+    <innerclass refid="class_j_w_t_1_1_algorithms_1_1_h_m_a_c_s_h_a_algorithm" prot="public">JWT::Algorithms::HMACSHAAlgorithm</innerclass>
+    <innerclass refid="class_j_w_t_1_1_algorithms_1_1_h_m_a_c_s_h_a_algorithm_factory" prot="public">JWT::Algorithms::HMACSHAAlgorithmFactory</innerclass>
+    <innerclass refid="interface_j_w_t_1_1_algorithms_1_1_i_algorithm_factory" prot="public">JWT::Algorithms::IAlgorithmFactory</innerclass>
+    <innerclass refid="interface_j_w_t_1_1_algorithms_1_1_i_asymmetric_algorithm" prot="public">JWT::Algorithms::IAsymmetricAlgorithm</innerclass>
+    <innerclass refid="interface_j_w_t_1_1_algorithms_1_1_i_jwt_algorithm" prot="public">JWT::Algorithms::IJwtAlgorithm</innerclass>
+    <innerclass refid="class_j_w_t_1_1_algorithms_1_1_jwt_algorithm_extensions" prot="public">JWT::Algorithms::JwtAlgorithmExtensions</innerclass>
+    <innerclass refid="class_j_w_t_1_1_algorithms_1_1_jwt_algorithm_factory" prot="public">JWT::Algorithms::JwtAlgorithmFactory</innerclass>
+    <innerclass refid="class_j_w_t_1_1_algorithms_1_1_none_algorithm" prot="public">JWT::Algorithms::NoneAlgorithm</innerclass>
+    <innerclass refid="class_j_w_t_1_1_algorithms_1_1_r_s1024_algorithm" prot="public">JWT::Algorithms::RS1024Algorithm</innerclass>
+    <innerclass refid="class_j_w_t_1_1_algorithms_1_1_r_s2048_algorithm" prot="public">JWT::Algorithms::RS2048Algorithm</innerclass>
+    <innerclass refid="class_j_w_t_1_1_algorithms_1_1_r_s256_algorithm" prot="public">JWT::Algorithms::RS256Algorithm</innerclass>
+    <innerclass refid="class_j_w_t_1_1_algorithms_1_1_r_s384_algorithm" prot="public">JWT::Algorithms::RS384Algorithm</innerclass>
+    <innerclass refid="class_j_w_t_1_1_algorithms_1_1_r_s4096_algorithm" prot="public">JWT::Algorithms::RS4096Algorithm</innerclass>
+    <innerclass refid="class_j_w_t_1_1_algorithms_1_1_r_s512_algorithm" prot="public">JWT::Algorithms::RS512Algorithm</innerclass>
+    <innerclass refid="class_j_w_t_1_1_algorithms_1_1_r_s_algorithm" prot="public">JWT::Algorithms::RSAlgorithm</innerclass>
+    <innerclass refid="class_j_w_t_1_1_algorithms_1_1_r_s_algorithm_factory" prot="public">JWT::Algorithms::RSAlgorithmFactory</innerclass>
+      <sectiondef kind="enum">
+      <memberdef kind="enum" id="namespace_j_w_t_1_1_algorithms_1a01c3b16fc1ceb98f077a59f749d39198" prot="public" static="no" strong="yes">
+        <type></type>
+        <name>JwtAlgorithmName</name>
+        <qualifiedname>JWT.Algorithms.JwtAlgorithmName</qualifiedname>
+        <enumvalue id="namespace_j_w_t_1_1_algorithms_1a01c3b16fc1ceb98f077a59f749d39198aeb86be6fe0588de61c66e415b1e789a6" prot="public">
+          <name>HS256</name>
+          <briefdescription>
+<para>HMAC using SHA-256. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespace_j_w_t_1_1_algorithms_1a01c3b16fc1ceb98f077a59f749d39198af29fe2e02af29dc284213787eec34264" prot="public">
+          <name>HS384</name>
+          <briefdescription>
+<para>HMAC using SHA-384. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespace_j_w_t_1_1_algorithms_1a01c3b16fc1ceb98f077a59f749d39198acc302b6a187ce46ca24f03e737b35ce0" prot="public">
+          <name>HS512</name>
+          <briefdescription>
+<para>HMAC using SHA-512. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespace_j_w_t_1_1_algorithms_1a01c3b16fc1ceb98f077a59f749d39198ab774c36caa844a2b0e94f9c04c3ccacc" prot="public">
+          <name>RS256</name>
+          <briefdescription>
+<para>RSASSA-PKCS1-v1_5 using SHA-256. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespace_j_w_t_1_1_algorithms_1a01c3b16fc1ceb98f077a59f749d39198ab03bdb0d07788e23633412c2e6126beb" prot="public">
+          <name>RS384</name>
+          <briefdescription>
+<para>RSASSA-PKCS1-v1_5 using SHA-384. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespace_j_w_t_1_1_algorithms_1a01c3b16fc1ceb98f077a59f749d39198a712d59cd4e4ebe95bb0b24e0e188f17b" prot="public">
+          <name>RS512</name>
+          <briefdescription>
+<para>RSASSA-PKCS1-v1_5 using SHA-512. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespace_j_w_t_1_1_algorithms_1a01c3b16fc1ceb98f077a59f749d39198a17d8d3f62bf7b97ac5aeb1ba86966944" prot="public">
+          <name>RS1024</name>
+          <briefdescription>
+<para>RSASSA-PKCS1-v1_5 using SHA-1024. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespace_j_w_t_1_1_algorithms_1a01c3b16fc1ceb98f077a59f749d39198ad3969090914c682937a2d6bdf93d96c6" prot="public">
+          <name>RS2048</name>
+          <briefdescription>
+<para>RSASSA-PKCS1-v1_5 using SHA-2048. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespace_j_w_t_1_1_algorithms_1a01c3b16fc1ceb98f077a59f749d39198ae14b5321a9b5ec5af06c818ec6619895" prot="public">
+          <name>RS4096</name>
+          <briefdescription>
+<para>RSASSA-PKCS1-v1_5 using SHA-4096. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespace_j_w_t_1_1_algorithms_1a01c3b16fc1ceb98f077a59f749d39198afd60368f8e6bdf74fddcbd09f89c4aa5" prot="public">
+          <name>ES256</name>
+          <briefdescription>
+<para>ECDSA using SHA-256. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespace_j_w_t_1_1_algorithms_1a01c3b16fc1ceb98f077a59f749d39198a0b24963bd9959fbc123de61adbdc07e4" prot="public">
+          <name>ES384</name>
+          <briefdescription>
+<para>ECDSA using SHA-384. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespace_j_w_t_1_1_algorithms_1a01c3b16fc1ceb98f077a59f749d39198a9bed1c03a3ddb9495e6bf7d6699dd595" prot="public">
+          <name>ES512</name>
+          <briefdescription>
+<para>ECDSA using SHA-512. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespace_j_w_t_1_1_algorithms_1a01c3b16fc1ceb98f077a59f749d39198a6adf97f83acf6453d4a6a4b1070f3754" prot="public">
+          <name>None</name>
+          <briefdescription>
+<para>Algorithm used when no signing is wanted. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>Enum representing the various Jwt Hash Algorithms. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/adenf/RiderProjects/Openlabs.Mgcxm/Openlabs.Mgcxm/JWT/Algorithms/JwtAlgorithmName.cs" line="6" column="11" bodyfile="C:/Users/adenf/RiderProjects/Openlabs.Mgcxm/Openlabs.Mgcxm/JWT/Algorithms/JwtAlgorithmName.cs" bodystart="7" bodyend="72"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/Users/adenf/RiderProjects/Openlabs.Mgcxm/Openlabs.Mgcxm/JWT/Algorithms/CertificateAlgorithm.cs" line="5" column="1"/>
+  </compounddef>
+</doxygen>

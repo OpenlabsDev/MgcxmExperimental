@@ -1,0 +1,124 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.7" xml:lang="en-US">
+  <compounddef id="class_j_w_t_1_1_algorithms_1_1_none_algorithm" kind="class" language="C#" prot="public">
+    <compoundname>JWT::Algorithms::NoneAlgorithm</compoundname>
+    <basecompoundref refid="interface_j_w_t_1_1_algorithms_1_1_i_jwt_algorithm" prot="public" virt="non-virtual">JWT.Algorithms.IJwtAlgorithm</basecompoundref>
+      <sectiondef kind="property">
+      <memberdef kind="property" id="class_j_w_t_1_1_algorithms_1_1_none_algorithm_1aa7d65a06a27213ea317d35a264deb366" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="no" privatesettable="no" protectedsettable="no">
+        <type>string</type>
+        <definition>string JWT.Algorithms.NoneAlgorithm.Name</definition>
+        <argsstring></argsstring>
+        <name>Name</name>
+        <qualifiedname>JWT.Algorithms.NoneAlgorithm.Name</qualifiedname>
+        <reimplements refid="interface_j_w_t_1_1_algorithms_1_1_i_jwt_algorithm_1a62da69d146007031e3ce9d0e3e9e75d3">Name</reimplements>
+        <briefdescription>
+<para><para>Gets algorithm name.</para>
+ </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/adenf/RiderProjects/Openlabs.Mgcxm/Openlabs.Mgcxm/JWT/Algorithms/NoneAlgorithm.cs" line="13" column="23" bodyfile="C:/Users/adenf/RiderProjects/Openlabs.Mgcxm/Openlabs.Mgcxm/JWT/Algorithms/NoneAlgorithm.cs" bodystart="13" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="property" id="class_j_w_t_1_1_algorithms_1_1_none_algorithm_1aaa387a5acaddafc3325da65dd36dce7a" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="no" privatesettable="no" protectedsettable="no">
+        <type>HashAlgorithmName</type>
+        <definition>HashAlgorithmName JWT.Algorithms.NoneAlgorithm.HashAlgorithmName</definition>
+        <argsstring></argsstring>
+        <name>HashAlgorithmName</name>
+        <qualifiedname>JWT.Algorithms.NoneAlgorithm.HashAlgorithmName</qualifiedname>
+        <reimplements refid="interface_j_w_t_1_1_algorithms_1_1_i_jwt_algorithm_1a5d291434247bc99339dc5e3b1dd2b934">HashAlgorithmName</reimplements>
+        <briefdescription>
+<para><para>Gets name of the hashing algorithm (e.g. SHA-256/SHA-384/SHA-512).</para>
+ </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/adenf/RiderProjects/Openlabs.Mgcxm/Openlabs.Mgcxm/JWT/Algorithms/NoneAlgorithm.cs" line="16" column="34" bodyfile="C:/Users/adenf/RiderProjects/Openlabs.Mgcxm/Openlabs.Mgcxm/JWT/Algorithms/NoneAlgorithm.cs" bodystart="16" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_j_w_t_1_1_algorithms_1_1_none_algorithm_1aec567a5415bef88d75fd9ffa7f85a08b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>byte[]</type>
+        <definition>byte[] JWT.Algorithms.NoneAlgorithm.Sign</definition>
+        <argsstring>(byte[] key, byte[] bytesToSign)</argsstring>
+        <name>Sign</name>
+        <qualifiedname>JWT.Algorithms.NoneAlgorithm.Sign</qualifiedname>
+        <reimplements refid="interface_j_w_t_1_1_algorithms_1_1_i_jwt_algorithm_1ad652a42a9eb189006c5a866a556826c0">Sign</reimplements>
+        <param>
+          <type>byte[]</type>
+          <declname>key</declname>
+        </param>
+        <param>
+          <type>byte[]</type>
+          <declname>bytesToSign</declname>
+        </param>
+        <briefdescription>
+<para><para>Signs provided byte array with provided key.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>key</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The key used to sign the data</para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>bytesToSign</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The data to sign</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+ </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/adenf/RiderProjects/Openlabs.Mgcxm/Openlabs.Mgcxm/JWT/Algorithms/NoneAlgorithm.cs" line="20" column="21"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Implements the &quot;None&quot; algorithm. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>RFC-7519</para>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>IJwtAlgorithm</label>
+        <link refid="interface_j_w_t_1_1_algorithms_1_1_i_jwt_algorithm"/>
+      </node>
+      <node id="1">
+        <label>JWT.Algorithms.NoneAlgorithm</label>
+        <link refid="class_j_w_t_1_1_algorithms_1_1_none_algorithm"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>IJwtAlgorithm</label>
+        <link refid="interface_j_w_t_1_1_algorithms_1_1_i_jwt_algorithm"/>
+      </node>
+      <node id="1">
+        <label>JWT.Algorithms.NoneAlgorithm</label>
+        <link refid="class_j_w_t_1_1_algorithms_1_1_none_algorithm"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="C:/Users/adenf/RiderProjects/Openlabs.Mgcxm/Openlabs.Mgcxm/JWT/Algorithms/NoneAlgorithm.cs" line="10" column="18" bodyfile="C:/Users/adenf/RiderProjects/Openlabs.Mgcxm/Openlabs.Mgcxm/JWT/Algorithms/NoneAlgorithm.cs" bodystart="11" bodyend="22"/>
+    <listofallmembers>
+      <member refid="class_j_w_t_1_1_algorithms_1_1_none_algorithm_1aaa387a5acaddafc3325da65dd36dce7a" prot="public" virt="non-virtual"><scope>JWT::Algorithms::NoneAlgorithm</scope><name>HashAlgorithmName</name></member>
+      <member refid="class_j_w_t_1_1_algorithms_1_1_none_algorithm_1aa7d65a06a27213ea317d35a264deb366" prot="public" virt="non-virtual"><scope>JWT::Algorithms::NoneAlgorithm</scope><name>Name</name></member>
+      <member refid="class_j_w_t_1_1_algorithms_1_1_none_algorithm_1aec567a5415bef88d75fd9ffa7f85a08b" prot="public" virt="non-virtual"><scope>JWT::Algorithms::NoneAlgorithm</scope><name>Sign</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

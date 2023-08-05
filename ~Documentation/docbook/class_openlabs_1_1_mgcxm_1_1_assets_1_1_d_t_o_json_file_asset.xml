@@ -1,0 +1,113 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_class_openlabs_1_1_mgcxm_1_1_assets_1_1_d_t_o_json_file_asset" xml:lang="en-US">
+<title>Openlabs.Mgcxm.Assets.DTOJsonFileAsset&lt; TDtoType &gt; Class Template Reference</title>
+<indexterm><primary>Openlabs.Mgcxm.Assets.DTOJsonFileAsset&lt; TDtoType &gt;</primary></indexterm>
+Inheritance diagram for Openlabs.Mgcxm.Assets.DTOJsonFileAsset&lt; TDtoType &gt;:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="class_openlabs_1_1_mgcxm_1_1_assets_1_1_d_t_o_json_file_asset__inherit__graph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+Collaboration diagram for Openlabs.Mgcxm.Assets.DTOJsonFileAsset&lt; TDtoType &gt;:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="class_openlabs_1_1_mgcxm_1_1_assets_1_1_d_t_o_json_file_asset__coll__graph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+<simplesect>
+    <title>Public Member Functions    </title>
+        <itemizedlist>
+            <listitem><para>virtual TDtoType <link linkend="_class_openlabs_1_1_mgcxm_1_1_assets_1_1_d_t_o_json_file_asset_1a21983bb77e20dda6e2b883a580ce8625">ReadDto</link> ()</para>
+</listitem>
+            <listitem><para>virtual void <link linkend="_class_openlabs_1_1_mgcxm_1_1_assets_1_1_d_t_o_json_file_asset_1aac4e39c13e9ea5e9a14b594501e70c4d">WriteDto</link> (TDtoType dtoType)</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+Public Member Functions inherited from <link linkend="_class_openlabs_1_1_mgcxm_1_1_assets_1_1_json_file_asset">Openlabs.Mgcxm.Assets.JsonFileAsset</link>        <itemizedlist>
+            <listitem><para>T <link linkend="_class_openlabs_1_1_mgcxm_1_1_assets_1_1_json_file_asset_1afce3d6d9b0129e160b4c3bbb07f61c9d">ReadObject&lt; T &gt;</link> ()</para>
+</listitem>
+        </itemizedlist>
+Public Member Functions inherited from <link linkend="_class_openlabs_1_1_mgcxm_1_1_assets_1_1_file_asset">Openlabs.Mgcxm.Assets.FileAsset</link>        <itemizedlist>
+            <listitem><para>override async Task <link linkend="_class_openlabs_1_1_mgcxm_1_1_assets_1_1_file_asset_1a14d73b3c257081f1fd0c396aef743d08">Load</link> (object[] arguments)</para>
+</listitem>
+            <listitem><para>string <link linkend="_class_openlabs_1_1_mgcxm_1_1_assets_1_1_file_asset_1af103053a1e7692a9cc5a5cbef4583b5c">ReadString</link> ()</para>
+</listitem>
+            <listitem><para>byte[] <link linkend="_class_openlabs_1_1_mgcxm_1_1_assets_1_1_file_asset_1ac24b81b13ac7c8b0355256df7e6cb990">ReadBytes</link> ()</para>
+</listitem>
+            <listitem><para>void <link linkend="_class_openlabs_1_1_mgcxm_1_1_assets_1_1_file_asset_1a0b2234ca9ec00924c19f199858bcb8fa">WriteString</link> (string data)</para>
+</listitem>
+            <listitem><para>void <link linkend="_class_openlabs_1_1_mgcxm_1_1_assets_1_1_file_asset_1a04578bc35f4f06606efe4bd3fb8101cc">WriteBytes</link> (byte[] data)</para>
+</listitem>
+            <listitem><para>void <link linkend="_class_openlabs_1_1_mgcxm_1_1_assets_1_1_file_asset_1a0905e7a66d5eb24561889e6725925196">AppendString</link> (string data)</para>
+</listitem>
+        </itemizedlist>
+        <itemizedlist>
+            <listitem><para>abstract Task <link linkend="_class_openlabs_1_1_mgcxm_1_1_assets_1_1_object_asset_1abbde774f0607a5f80b85e5fb4b8bc6ee">Load</link> (object[] arguments)</para>
+</listitem>
+        </itemizedlist>
+<simplesect>
+    <title>Additional Inherited Members    </title>
+Properties inherited from <link linkend="_class_openlabs_1_1_mgcxm_1_1_assets_1_1_file_asset">Openlabs.Mgcxm.Assets.FileAsset</link>        <itemizedlist>
+            <listitem><para>string <link linkend="_class_openlabs_1_1_mgcxm_1_1_assets_1_1_file_asset_1ae131c3bb335987a9cac1785e68cb1195">FileName</link><computeroutput> [get]</computeroutput>
+</para>
+</listitem>
+            <listitem><para>string <link linkend="_class_openlabs_1_1_mgcxm_1_1_assets_1_1_file_asset_1a41a909c811b08a652205a2243eeeb43c">Extension</link><computeroutput> [get]</computeroutput>
+</para>
+</listitem>
+            <listitem><para>string <link linkend="_class_openlabs_1_1_mgcxm_1_1_assets_1_1_file_asset_1ac322790cbf49ce37cbc7cdeef81d52a5">Path</link><computeroutput> [get]</computeroutput>
+</para>
+</listitem>
+            <listitem><para>string <link linkend="_class_openlabs_1_1_mgcxm_1_1_assets_1_1_file_asset_1a3533d4a097f526031684420c63c745d1">Guid</link><computeroutput> [get]</computeroutput>
+</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Member Function Documentation</title>
+<anchor xml:id="_class_openlabs_1_1_mgcxm_1_1_assets_1_1_d_t_o_json_file_asset_1a21983bb77e20dda6e2b883a580ce8625"/><section>
+    <title>ReadDto()</title>
+<indexterm><primary>ReadDto</primary><secondary>Openlabs.Mgcxm.Assets.DTOJsonFileAsset&lt; TDtoType &gt;</secondary></indexterm>
+<indexterm><primary>Openlabs.Mgcxm.Assets.DTOJsonFileAsset&lt; TDtoType &gt;</primary><secondary>ReadDto</secondary></indexterm>
+<para><computeroutput>virtual TDtoType <link linkend="_class_openlabs_1_1_mgcxm_1_1_assets_1_1_d_t_o_json_file_asset">Openlabs.Mgcxm.Assets.DTOJsonFileAsset</link>&lt; TDtoType &gt;.ReadDto ( )<computeroutput>[virtual]</computeroutput></computeroutput></para>Here is the caller graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="class_openlabs_1_1_mgcxm_1_1_assets_1_1_d_t_o_json_file_asset_a21983bb77e20dda6e2b883a580ce8625_icgraph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+</section>
+<anchor xml:id="_class_openlabs_1_1_mgcxm_1_1_assets_1_1_d_t_o_json_file_asset_1aac4e39c13e9ea5e9a14b594501e70c4d"/><section>
+    <title>WriteDto()</title>
+<indexterm><primary>WriteDto</primary><secondary>Openlabs.Mgcxm.Assets.DTOJsonFileAsset&lt; TDtoType &gt;</secondary></indexterm>
+<indexterm><primary>Openlabs.Mgcxm.Assets.DTOJsonFileAsset&lt; TDtoType &gt;</primary><secondary>WriteDto</secondary></indexterm>
+<para><computeroutput>virtual void <link linkend="_class_openlabs_1_1_mgcxm_1_1_assets_1_1_d_t_o_json_file_asset">Openlabs.Mgcxm.Assets.DTOJsonFileAsset</link>&lt; TDtoType &gt;.WriteDto (TDtoType dtoType)<computeroutput>[virtual]</computeroutput></computeroutput></para>Here is the call graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="class_openlabs_1_1_mgcxm_1_1_assets_1_1_d_t_o_json_file_asset_aac4e39c13e9ea5e9a14b594501e70c4d_cgraph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+Here is the caller graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="class_openlabs_1_1_mgcxm_1_1_assets_1_1_d_t_o_json_file_asset_aac4e39c13e9ea5e9a14b594501e70c4d_icgraph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+</section>
+<para>
+The documentation for this class was generated from the following file:</para>
+C:/Users/adenf/RiderProjects/Openlabs.Mgcxm/Openlabs.Mgcxm/Assets/<link linkend="__d_t_o_json_file_asset_8cs">DTOJsonFileAsset.cs</link></section>
+</section>

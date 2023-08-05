@@ -1,0 +1,25 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_dir_f3ea502d1f20004513ac223484f5f352" xml:lang="en-US">
+<title>C:/Users/adenf/RiderProjects/Openlabs.Mgcxm/Openlabs.Mgcxm.Tests/obj/Debug/net6.0 Directory Reference</title>
+<indexterm><primary>C:/Users/adenf/RiderProjects/Openlabs.Mgcxm/Openlabs.Mgcxm.Tests/obj/Debug/net6.0 Directory Reference</primary></indexterm>
+Directory dependency graph for net6.0:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="dir_f3ea502d1f20004513ac223484f5f352_dep.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+<simplesect>
+    <title>Files    </title>
+        <itemizedlist>
+            <listitem><para>file <link linkend="__openlabs_8_mgcxm_8_tests_2obj_2_debug_2net6_80_2_8_n_e_t_core_app_00_version_0av6_80_8_assembly_attributes_8cs">.NETCoreApp,Version=v6.0.AssemblyAttributes.cs</link></para>
+</listitem>
+            <listitem><para>file <link linkend="__openlabs_8_mgcxm_8_tests_8_assembly_info_8cs">Openlabs.Mgcxm.Tests.AssemblyInfo.cs</link></para>
+</listitem>
+            <listitem><para>file <link linkend="__openlabs_8_mgcxm_8_tests_8_global_usings_8g_8cs">Openlabs.Mgcxm.Tests.GlobalUsings.g.cs</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+</section>

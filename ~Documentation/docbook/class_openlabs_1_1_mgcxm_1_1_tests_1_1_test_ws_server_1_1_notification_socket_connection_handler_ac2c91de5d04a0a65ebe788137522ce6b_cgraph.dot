@@ -1,0 +1,11 @@
+digraph "Openlabs.Mgcxm.Tests.TestWsServer.NotificationSocketConnectionHandler.OnMessage"
+{
+ // LATEX_PDF_SIZE
+  bgcolor="transparent";
+  edge [fontname=Helvetica,fontsize=10,labelfontname=Helvetica,labelfontsize=10];
+  node [fontname=Helvetica,fontsize=10,shape=box,height=0.2,width=0.4];
+  rankdir="LR";
+  Node1 [id="Node000001",label="Openlabs.Mgcxm.Tests.Test\lWsServer.NotificationSocketConnection\lHandler.OnMessage",height=0.2,width=0.4,color="gray40", fillcolor="grey60", style="filled", fontcolor="black",tooltip="Invoked when a message is received over the WebSocket connection."];
+  Node1 -> Node2 [id="edge3_Node000001_Node000002",color="steelblue1",style="solid",tooltip=" "];
+  Node2 [id="Node000002",label="Openlabs.Mgcxm.Net.Mgcxm\lSocket.SendMessage",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$class_openlabs_1_1_mgcxm_1_1_net_1_1_mgcxm_socket.html#ad66e3a7cf2e29aa3270b42135426f651",tooltip="Sends a binary message over the WebSocket connection."];
+}

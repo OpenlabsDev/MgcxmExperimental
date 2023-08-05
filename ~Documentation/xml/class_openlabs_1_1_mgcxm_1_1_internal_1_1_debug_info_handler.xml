@@ -1,0 +1,48 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.7" xml:lang="en-US">
+  <compounddef id="class_openlabs_1_1_mgcxm_1_1_internal_1_1_debug_info_handler" kind="class" language="C#" prot="public" abstract="yes">
+    <compoundname>Openlabs::Mgcxm::Internal::DebugInfoHandler</compoundname>
+    <derivedcompoundref refid="class_openlabs_1_1_mgcxm_1_1_net_1_1_mgcxm_http_listener_debug_info" prot="public" virt="non-virtual">Openlabs.Mgcxm.Net.MgcxmHttpListenerDebugInfo</derivedcompoundref>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_openlabs_1_1_mgcxm_1_1_internal_1_1_debug_info_handler_1a78f7082ddeedc32a5ef4e695ffd5921d" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>abstract void</type>
+        <definition>abstract void Openlabs.Mgcxm.Internal.DebugInfoHandler.Print</definition>
+        <argsstring>(object target)</argsstring>
+        <name>Print</name>
+        <qualifiedname>Openlabs.Mgcxm.Internal.DebugInfoHandler.Print</qualifiedname>
+        <reimplementedby refid="class_openlabs_1_1_mgcxm_1_1_net_1_1_mgcxm_http_listener_debug_info_1aa7dea108f39cf5ebbefd26d042682815">Print</reimplementedby>
+        <param>
+          <type>object</type>
+          <declname>target</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/adenf/RiderProjects/Openlabs.Mgcxm/Openlabs.Mgcxm/Internal/DebugInfoHandler.cs" line="7" column="26"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>Openlabs.Mgcxm.Internal.DebugInfoHandler</label>
+        <link refid="class_openlabs_1_1_mgcxm_1_1_internal_1_1_debug_info_handler"/>
+      </node>
+      <node id="2">
+        <label>Openlabs.Mgcxm.Net.MgcxmHttpListenerDebugInfo</label>
+        <link refid="class_openlabs_1_1_mgcxm_1_1_net_1_1_mgcxm_http_listener_debug_info"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <location file="C:/Users/adenf/RiderProjects/Openlabs.Mgcxm/Openlabs.Mgcxm/Internal/DebugInfoHandler.cs" line="5" column="17" bodyfile="C:/Users/adenf/RiderProjects/Openlabs.Mgcxm/Openlabs.Mgcxm/Internal/DebugInfoHandler.cs" bodystart="6" bodyend="8"/>
+    <listofallmembers>
+      <member refid="class_openlabs_1_1_mgcxm_1_1_internal_1_1_debug_info_handler_1a78f7082ddeedc32a5ef4e695ffd5921d" prot="public" virt="pure-virtual"><scope>Openlabs::Mgcxm::Internal::DebugInfoHandler</scope><name>Print</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

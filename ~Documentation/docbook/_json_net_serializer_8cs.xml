@@ -1,0 +1,23 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="__json_net_serializer_8cs" xml:lang="en-US">
+<title>C:/Users/adenf/RiderProjects/Openlabs.Mgcxm/Openlabs.Mgcxm/JWT/Serializers/JsonNetSerializer.cs File Reference</title>
+<indexterm><primary>C:/Users/adenf/RiderProjects/Openlabs.Mgcxm/Openlabs.Mgcxm/JWT/Serializers/JsonNetSerializer.cs</primary></indexterm>
+<simplesect>
+    <title>Classes    </title>
+        <itemizedlist>
+            <listitem><para>class <link linkend="_class_j_w_t_1_1_serializers_1_1_json_net_serializer">JWT.Serializers.JsonNetSerializer</link></para>
+
+<para>JSON serializer using Newtonsoft.Json implementation. </para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Namespaces    </title>
+        <itemizedlist>
+            <listitem><para>namespace <link linkend="_namespace_j_w_t">JWT</link></para>
+</listitem>
+            <listitem><para>namespace <link linkend="_namespace_j_w_t_1_1_serializers">JWT.Serializers</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+</section>

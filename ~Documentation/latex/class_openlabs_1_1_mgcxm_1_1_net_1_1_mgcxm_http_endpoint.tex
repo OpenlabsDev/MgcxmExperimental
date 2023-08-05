@@ -1,0 +1,156 @@
+\doxysection{Openlabs.\+Mgcxm.\+Net.\+Mgcxm\+Http\+Endpoint Class Reference}
+\hypertarget{class_openlabs_1_1_mgcxm_1_1_net_1_1_mgcxm_http_endpoint}{}\label{class_openlabs_1_1_mgcxm_1_1_net_1_1_mgcxm_http_endpoint}\index{Openlabs.Mgcxm.Net.MgcxmHttpEndpoint@{Openlabs.Mgcxm.Net.MgcxmHttpEndpoint}}
+
+
+Represents an HTTP endpoint for Mgcxm\+Socket\+Listener.  
+
+
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_openlabs_1_1_mgcxm_1_1_net_1_1_mgcxm_http_endpoint_ac732c5bf4d0098f9721db7c53f7ab022}{Mgcxm\+Http\+Endpoint}} (\mbox{\hyperlink{struct_openlabs_1_1_mgcxm_1_1_internal_1_1_mgcxm_id}{Mgcxm\+Id}} mgcxm\+Id, string url, \mbox{\hyperlink{class_openlabs_1_1_mgcxm_1_1_net_1_1_mgcxm_dynamic_identifier}{Mgcxm\+Dynamic\+Identifier}}\mbox{[}$\,$\mbox{]} dynamic\+Identifiers, \mbox{\hyperlink{namespace_openlabs_1_1_mgcxm_1_1_net_a63268740291f4b97a3eb53abd380f84e}{Http\+Methods}} method, \mbox{\hyperlink{class_openlabs_1_1_mgcxm_1_1_net_1_1_mgcxm_http_endpoint_a67aa6bf33dfc3e2cd1655b4a0e74bad0}{On\+Endpoint\+Requested}} callback)
+\begin{DoxyCompactList}\small\item\em Initializes a new instance of the Mgcxm\+Http\+Endpoint class. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static bool \mbox{\hyperlink{class_openlabs_1_1_mgcxm_1_1_net_1_1_mgcxm_http_endpoint_a6c914d467280bf05af024802214f88c9}{Matches}} (string url, \mbox{\hyperlink{class_openlabs_1_1_mgcxm_1_1_net_1_1_mgcxm_http_endpoint}{Mgcxm\+Http\+Endpoint}} endpoint, \mbox{\hyperlink{class_openlabs_1_1_mgcxm_1_1_net_1_1_mgcxm_http_request}{Mgcxm\+Http\+Request}} request)
+\begin{DoxyCompactList}\small\item\em Checks if the given URL matches the endpoint URL using the Mgcxm\+Dynamic\+Identifiers and supports dynamic matching. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{struct_openlabs_1_1_mgcxm_1_1_internal_1_1_mgcxm_id}{Mgcxm\+Id}} \mbox{\hyperlink{class_openlabs_1_1_mgcxm_1_1_net_1_1_mgcxm_http_endpoint_abd4b6660cbb382b1de0697334f5b48d3}{Owner\+Id}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Gets the Mgcxm\+Id of the owner. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{struct_openlabs_1_1_mgcxm_1_1_internal_1_1_mgcxm_id}{Mgcxm\+Id}} \mbox{\hyperlink{class_openlabs_1_1_mgcxm_1_1_net_1_1_mgcxm_http_endpoint_a4a9282c64e174b2ee49536f185b6bd25}{Endpoint\+Id}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Gets the Mgcxm\+Id of the endpoint. \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{class_openlabs_1_1_mgcxm_1_1_net_1_1_mgcxm_http_endpoint_adf3a0592ec3ca9ac0b625037a7116630}{Url}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Gets the URL of the endpoint. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_openlabs_1_1_mgcxm_1_1_net_1_1_mgcxm_dynamic_identifier}{Mgcxm\+Dynamic\+Identifier}}\mbox{[}$\,$\mbox{]} \mbox{\hyperlink{class_openlabs_1_1_mgcxm_1_1_net_1_1_mgcxm_http_endpoint_a151debce5e057912e0a0c87b228a97fe}{Dynamic\+Identifiers}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Gets an array of dynamic identifiers for the endpoint. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{namespace_openlabs_1_1_mgcxm_1_1_net_a63268740291f4b97a3eb53abd380f84e}{Http\+Methods}} \mbox{\hyperlink{class_openlabs_1_1_mgcxm_1_1_net_1_1_mgcxm_http_endpoint_a0d1967d179cc7a080f42ceba40e17939}{Required\+Method}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Gets the HTTP method required for this endpoint. \end{DoxyCompactList}\item 
+On\+Endpoint\+Requested \mbox{\hyperlink{class_openlabs_1_1_mgcxm_1_1_net_1_1_mgcxm_http_endpoint_a67aa6bf33dfc3e2cd1655b4a0e74bad0}{On\+Endpoint\+Requested}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Gets the callback function to be called when the endpoint is requested. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Represents an HTTP endpoint for Mgcxm\+Socket\+Listener. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_openlabs_1_1_mgcxm_1_1_net_1_1_mgcxm_http_endpoint_ac732c5bf4d0098f9721db7c53f7ab022}\label{class_openlabs_1_1_mgcxm_1_1_net_1_1_mgcxm_http_endpoint_ac732c5bf4d0098f9721db7c53f7ab022} 
+\index{Openlabs.Mgcxm.Net.MgcxmHttpEndpoint@{Openlabs.Mgcxm.Net.MgcxmHttpEndpoint}!MgcxmHttpEndpoint@{MgcxmHttpEndpoint}}
+\index{MgcxmHttpEndpoint@{MgcxmHttpEndpoint}!Openlabs.Mgcxm.Net.MgcxmHttpEndpoint@{Openlabs.Mgcxm.Net.MgcxmHttpEndpoint}}
+\doxysubsubsection{\texorpdfstring{MgcxmHttpEndpoint()}{MgcxmHttpEndpoint()}}
+{\footnotesize\ttfamily Openlabs.\+Mgcxm.\+Net.\+Mgcxm\+Http\+Endpoint.\+Mgcxm\+Http\+Endpoint (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_openlabs_1_1_mgcxm_1_1_internal_1_1_mgcxm_id}{Mgcxm\+Id}}}]{mgcxm\+Id,  }\item[{string}]{url,  }\item[{\mbox{\hyperlink{class_openlabs_1_1_mgcxm_1_1_net_1_1_mgcxm_dynamic_identifier}{Mgcxm\+Dynamic\+Identifier}}\mbox{[}$\,$\mbox{]}}]{dynamic\+Identifiers,  }\item[{\mbox{\hyperlink{namespace_openlabs_1_1_mgcxm_1_1_net_a63268740291f4b97a3eb53abd380f84e}{Http\+Methods}}}]{method,  }\item[{\mbox{\hyperlink{class_openlabs_1_1_mgcxm_1_1_net_1_1_mgcxm_http_endpoint_a67aa6bf33dfc3e2cd1655b4a0e74bad0}{On\+Endpoint\+Requested}}}]{callback }\end{DoxyParamCaption})}
+
+
+
+Initializes a new instance of the Mgcxm\+Http\+Endpoint class. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em mgcxm\+Id} & The Mgcxm\+Id of the owner.\\
+\hline
+{\em url} & The URL of the endpoint.\\
+\hline
+{\em dynamic\+Identifiers} & An array of dynamic identifiers for the endpoint.\\
+\hline
+{\em method} & The HTTP method used for this endpoint.\\
+\hline
+{\em callback} & The callback function to be called when the endpoint is requested.\\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_openlabs_1_1_mgcxm_1_1_net_1_1_mgcxm_http_endpoint_a6c914d467280bf05af024802214f88c9}\label{class_openlabs_1_1_mgcxm_1_1_net_1_1_mgcxm_http_endpoint_a6c914d467280bf05af024802214f88c9} 
+\index{Openlabs.Mgcxm.Net.MgcxmHttpEndpoint@{Openlabs.Mgcxm.Net.MgcxmHttpEndpoint}!Matches@{Matches}}
+\index{Matches@{Matches}!Openlabs.Mgcxm.Net.MgcxmHttpEndpoint@{Openlabs.Mgcxm.Net.MgcxmHttpEndpoint}}
+\doxysubsubsection{\texorpdfstring{Matches()}{Matches()}}
+{\footnotesize\ttfamily static bool Openlabs.\+Mgcxm.\+Net.\+Mgcxm\+Http\+Endpoint.\+Matches (\begin{DoxyParamCaption}\item[{string}]{url,  }\item[{\mbox{\hyperlink{class_openlabs_1_1_mgcxm_1_1_net_1_1_mgcxm_http_endpoint}{Mgcxm\+Http\+Endpoint}}}]{endpoint,  }\item[{\mbox{\hyperlink{class_openlabs_1_1_mgcxm_1_1_net_1_1_mgcxm_http_request}{Mgcxm\+Http\+Request}}}]{request }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Checks if the given URL matches the endpoint URL using the Mgcxm\+Dynamic\+Identifiers and supports dynamic matching. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em url} & The URL to check for a match.\\
+\hline
+{\em endpoint} & The Mgcxm\+Http\+Endpoint to compare with.\\
+\hline
+{\em request} & The Mgcxm\+Http\+Request for additional checks.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True if the URL matches the endpoint; otherwise, false.
+\end{DoxyReturn}
+Here is the caller graph for this function\+:
+% FIG 0
+
+
+\doxysubsection{Property Documentation}
+\Hypertarget{class_openlabs_1_1_mgcxm_1_1_net_1_1_mgcxm_http_endpoint_a151debce5e057912e0a0c87b228a97fe}\label{class_openlabs_1_1_mgcxm_1_1_net_1_1_mgcxm_http_endpoint_a151debce5e057912e0a0c87b228a97fe} 
+\index{Openlabs.Mgcxm.Net.MgcxmHttpEndpoint@{Openlabs.Mgcxm.Net.MgcxmHttpEndpoint}!DynamicIdentifiers@{DynamicIdentifiers}}
+\index{DynamicIdentifiers@{DynamicIdentifiers}!Openlabs.Mgcxm.Net.MgcxmHttpEndpoint@{Openlabs.Mgcxm.Net.MgcxmHttpEndpoint}}
+\doxysubsubsection{\texorpdfstring{DynamicIdentifiers}{DynamicIdentifiers}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_openlabs_1_1_mgcxm_1_1_net_1_1_mgcxm_dynamic_identifier}{Mgcxm\+Dynamic\+Identifier}} \mbox{[}$\,$\mbox{]} Openlabs.\+Mgcxm.\+Net.\+Mgcxm\+Http\+Endpoint.\+Dynamic\+Identifiers\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+Gets an array of dynamic identifiers for the endpoint. 
+
+\Hypertarget{class_openlabs_1_1_mgcxm_1_1_net_1_1_mgcxm_http_endpoint_a4a9282c64e174b2ee49536f185b6bd25}\label{class_openlabs_1_1_mgcxm_1_1_net_1_1_mgcxm_http_endpoint_a4a9282c64e174b2ee49536f185b6bd25} 
+\index{Openlabs.Mgcxm.Net.MgcxmHttpEndpoint@{Openlabs.Mgcxm.Net.MgcxmHttpEndpoint}!EndpointId@{EndpointId}}
+\index{EndpointId@{EndpointId}!Openlabs.Mgcxm.Net.MgcxmHttpEndpoint@{Openlabs.Mgcxm.Net.MgcxmHttpEndpoint}}
+\doxysubsubsection{\texorpdfstring{EndpointId}{EndpointId}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_openlabs_1_1_mgcxm_1_1_internal_1_1_mgcxm_id}{Mgcxm\+Id}} Openlabs.\+Mgcxm.\+Net.\+Mgcxm\+Http\+Endpoint.\+Endpoint\+Id\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+Gets the Mgcxm\+Id of the endpoint. 
+
+\Hypertarget{class_openlabs_1_1_mgcxm_1_1_net_1_1_mgcxm_http_endpoint_a67aa6bf33dfc3e2cd1655b4a0e74bad0}\label{class_openlabs_1_1_mgcxm_1_1_net_1_1_mgcxm_http_endpoint_a67aa6bf33dfc3e2cd1655b4a0e74bad0} 
+\index{Openlabs.Mgcxm.Net.MgcxmHttpEndpoint@{Openlabs.Mgcxm.Net.MgcxmHttpEndpoint}!OnEndpointRequested@{OnEndpointRequested}}
+\index{OnEndpointRequested@{OnEndpointRequested}!Openlabs.Mgcxm.Net.MgcxmHttpEndpoint@{Openlabs.Mgcxm.Net.MgcxmHttpEndpoint}}
+\doxysubsubsection{\texorpdfstring{OnEndpointRequested}{OnEndpointRequested}}
+{\footnotesize\ttfamily On\+Endpoint\+Requested Openlabs.\+Mgcxm.\+Net.\+Mgcxm\+Http\+Endpoint.\+On\+Endpoint\+Requested\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+Gets the callback function to be called when the endpoint is requested. 
+
+\Hypertarget{class_openlabs_1_1_mgcxm_1_1_net_1_1_mgcxm_http_endpoint_abd4b6660cbb382b1de0697334f5b48d3}\label{class_openlabs_1_1_mgcxm_1_1_net_1_1_mgcxm_http_endpoint_abd4b6660cbb382b1de0697334f5b48d3} 
+\index{Openlabs.Mgcxm.Net.MgcxmHttpEndpoint@{Openlabs.Mgcxm.Net.MgcxmHttpEndpoint}!OwnerId@{OwnerId}}
+\index{OwnerId@{OwnerId}!Openlabs.Mgcxm.Net.MgcxmHttpEndpoint@{Openlabs.Mgcxm.Net.MgcxmHttpEndpoint}}
+\doxysubsubsection{\texorpdfstring{OwnerId}{OwnerId}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_openlabs_1_1_mgcxm_1_1_internal_1_1_mgcxm_id}{Mgcxm\+Id}} Openlabs.\+Mgcxm.\+Net.\+Mgcxm\+Http\+Endpoint.\+Owner\+Id\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+Gets the Mgcxm\+Id of the owner. 
+
+\Hypertarget{class_openlabs_1_1_mgcxm_1_1_net_1_1_mgcxm_http_endpoint_a0d1967d179cc7a080f42ceba40e17939}\label{class_openlabs_1_1_mgcxm_1_1_net_1_1_mgcxm_http_endpoint_a0d1967d179cc7a080f42ceba40e17939} 
+\index{Openlabs.Mgcxm.Net.MgcxmHttpEndpoint@{Openlabs.Mgcxm.Net.MgcxmHttpEndpoint}!RequiredMethod@{RequiredMethod}}
+\index{RequiredMethod@{RequiredMethod}!Openlabs.Mgcxm.Net.MgcxmHttpEndpoint@{Openlabs.Mgcxm.Net.MgcxmHttpEndpoint}}
+\doxysubsubsection{\texorpdfstring{RequiredMethod}{RequiredMethod}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespace_openlabs_1_1_mgcxm_1_1_net_a63268740291f4b97a3eb53abd380f84e}{Http\+Methods}} Openlabs.\+Mgcxm.\+Net.\+Mgcxm\+Http\+Endpoint.\+Required\+Method\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+Gets the HTTP method required for this endpoint. 
+
+\Hypertarget{class_openlabs_1_1_mgcxm_1_1_net_1_1_mgcxm_http_endpoint_adf3a0592ec3ca9ac0b625037a7116630}\label{class_openlabs_1_1_mgcxm_1_1_net_1_1_mgcxm_http_endpoint_adf3a0592ec3ca9ac0b625037a7116630} 
+\index{Openlabs.Mgcxm.Net.MgcxmHttpEndpoint@{Openlabs.Mgcxm.Net.MgcxmHttpEndpoint}!Url@{Url}}
+\index{Url@{Url}!Openlabs.Mgcxm.Net.MgcxmHttpEndpoint@{Openlabs.Mgcxm.Net.MgcxmHttpEndpoint}}
+\doxysubsubsection{\texorpdfstring{Url}{Url}}
+{\footnotesize\ttfamily string Openlabs.\+Mgcxm.\+Net.\+Mgcxm\+Http\+Endpoint.\+Url\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+Gets the URL of the endpoint. 
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/adenf/\+Rider\+Projects/\+Openlabs.\+Mgcxm/\+Openlabs.\+Mgcxm/\+Net/\+Http/\mbox{\hyperlink{_mgcxm_http_endpoint_8cs}{Mgcxm\+Http\+Endpoint.\+cs}}\end{DoxyCompactItemize}

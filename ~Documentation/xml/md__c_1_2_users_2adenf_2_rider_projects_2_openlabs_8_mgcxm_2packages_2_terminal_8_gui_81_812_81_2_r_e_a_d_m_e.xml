@@ -1,0 +1,187 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.7" xml:lang="en-US">
+  <compounddef id="md__c_1_2_users_2adenf_2_rider_projects_2_openlabs_8_mgcxm_2packages_2_terminal_8_gui_81_812_81_2_r_e_a_d_m_e" kind="page">
+    <compoundname>md__c_1_2_users_2adenf_2_rider_projects_2_openlabs_8_mgcxm_2packages_2_terminal_8_gui_81_812_81_2_r_e_a_d_m_e</compoundname>
+    <title>README</title>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para><image type="html" name="https://socialify.git.ci/gui-cs/Terminal.Gui/image?description=1&amp;font=Rokkitt&amp;forks=1&amp;language=1&amp;logo=https%3A%2F%2Fraw.githubusercontent.com%2Fgui-cs%2FTerminal.Gui%2Fdevelop%2Fdocfx%2Fimages%2Flogo.png&amp;name=1&amp;owner=1&amp;pattern=Circuit%20Board&amp;stargazers=1&amp;theme=Auto" alt="Terminal.Gui" inline="yes"></image>
+ <image type="html" name="https://github.com/gui-cs/Terminal.Gui/workflows/.NET%20Core/badge.svg?branch=master" alt=".NET Core" inline="yes"></image>
+ <image type="html" name="https://github.com/gui-cs/Terminal.Gui/workflows/Code%20scanning%20-%20action/badge.svg" alt="Code scanning - action" inline="yes"></image>
+ <ulink url="https://www.nuget.org/packages/Terminal.Gui"><image type="html" name="https://img.shields.io/nuget/v/Terminal.Gui.svg" alt="Version" inline="yes"></image>
+</ulink> <image type="html" name="https://img.shields.io/endpoint?url=https://gist.githubusercontent.com/migueldeicaza/90ef67a684cb71db1817921a970f8d27/raw/code-coverage.json" alt="Code Coverage" inline="yes"></image>
+ <ulink url="https://www.nuget.org/packages/Terminal.Gui"><image type="html" name="https://img.shields.io/nuget/dt/Terminal.Gui" alt="Downloads" inline="yes"></image>
+</ulink> [<image type="html" name="https://img.shields.io/github/license/gui-cs/gui.cs.svg" alt="License" inline="yes"></image>
+](LICENSE) <image type="html" name="https://img.shields.io/github/issues/gui-cs/gui.cs/bug" alt="Bugs" inline="yes"></image>
+</para>
+<para><emphasis><bold>The current, stable, release of Terminal.Gui is <ulink url="https://www.nuget.org/packages/Terminal.Gui">v1.x</ulink>. It is stable, rich, and broadly used. The team is now focused on designing and building a significant upgrade we&apos;re referring to as <computeroutput>v2</computeroutput>. Therefore:</bold></emphasis><itemizedlist>
+<listitem><para>*<computeroutput>v1</computeroutput> is now in maintenance mode, meaning we will accept PRs for v1.x (the <computeroutput>develop</computeroutput> branch) only for issues impacting existing functionality.*</para>
+</listitem><listitem><para><emphasis>All new development happens on the <computeroutput>v2_develop</computeroutput> branch. See the V2 discussion <ulink url="https://github.com/gui-cs/Terminal.Gui/discussions/1940">here</ulink>.</emphasis></para>
+</listitem><listitem><para><emphasis>Developers are encouraged to continue building on <ulink url="https://www.nuget.org/packages/Terminal.Gui">v1.x</ulink> until we announce <computeroutput>v2</computeroutput> is stable.</emphasis></para>
+</listitem></itemizedlist>
+</para>
+<para><bold>Terminal.Gui</bold>: A toolkit for building rich console apps for .NET, .NET Core, and Mono that works on Windows, the Mac, and Linux/Unix.</para>
+<para><image type="html" name="docfx/images/sample.gif" alt="Sample app" inline="yes"></image>
+</para>
+<sect2 id="md__c_1_2_users_2adenf_2_rider_projects_2_openlabs_8_mgcxm_2packages_2_terminal_8_gui_81_812_81_2_r_e_a_d_m_e_1autotoc_md2">
+<title>Quick Start</title>
+<para>Paste these commands into your favorite terminal on Windows, Mac, or Linux. This will install the <ulink url="https://github.com/gui-cs/Terminal.Gui.templates">Terminal.Gui.Templates</ulink>, create a new &quot;Hello World&quot; TUI app, and run it.</para>
+<para>(Press <computeroutput>CTRL-Q</computeroutput> to exit the app)</para>
+<para><programlisting filename=".powershell"><codeline><highlight class="normal">dotnet<sp/>new<sp/>--install<sp/>Terminal.Gui.templates</highlight></codeline>
+<codeline><highlight class="normal">dotnet<sp/>new<sp/>tui<sp/>-n<sp/>myproj</highlight></codeline>
+<codeline><highlight class="normal">cd<sp/>myproj</highlight></codeline>
+<codeline><highlight class="normal">dotnet<sp/>run</highlight></codeline>
+</programlisting></para>
+</sect2>
+<sect2 id="md__c_1_2_users_2adenf_2_rider_projects_2_openlabs_8_mgcxm_2packages_2_terminal_8_gui_81_812_81_2_r_e_a_d_m_e_1autotoc_md3">
+<title>Documentation</title>
+<para><itemizedlist>
+<listitem><para><ulink url="https://gui-cs.github.io/Terminal.Gui/index.html">Documentation Home</ulink></para>
+</listitem><listitem><para><ulink url="https://gui-cs.github.io/Terminal.Gui/articles/overview.html">Terminal.Gui Overview</ulink></para>
+</listitem><listitem><para><ulink url="https://gui-cs.github.io/Terminal.Gui/articles/views.html">List of Views/Controls</ulink></para>
+</listitem><listitem><para><ulink url="https://gui-cs.github.io/Terminal.Gui/articles/index.html">Conceptual Documentation</ulink></para>
+</listitem><listitem><para><ulink url="https://gui-cs.github.io/Terminal.Gui/api/Terminal.Gui/Terminal.Gui.html">API Documentation</ulink></para>
+</listitem></itemizedlist>
+</para>
+<para><emphasis>The Documentation matches the most recent Nuget release from the <computeroutput>main</computeroutput> branch (<ulink url="https://www.nuget.org/packages/Terminal.Gui"><image type="html" name="https://img.shields.io/nuget/v/Terminal.Gui.svg" alt="Version" inline="yes"></image>
+</ulink>)</emphasis></para>
+</sect2>
+<sect2 id="md__c_1_2_users_2adenf_2_rider_projects_2_openlabs_8_mgcxm_2packages_2_terminal_8_gui_81_812_81_2_r_e_a_d_m_e_1autotoc_md4">
+<title>Features</title>
+<para><itemizedlist>
+<listitem><para><bold>Cross Platform</bold> - Windows, Mac, and Linux. Terminal drivers for Curses, <ulink url="https://github.com/gui-cs/Terminal.Gui/issues/27">Windows Console</ulink>, and the .NET Console mean apps will work well on both color and monochrome terminals.</para>
+</listitem><listitem><para><bold>Keyboard and Mouse Input</bold> - Both keyboard and mouse input are supported, including support for drag &amp; drop.</para>
+</listitem><listitem><para><bold><ulink url="https://gui-cs.github.io/Terminal.Gui/articles/overview.html#layout">Flexible Layout</ulink></bold> - Supports both <emphasis>Absolute layout</emphasis> and an innovative <emphasis>Computed Layout</emphasis> system. <emphasis>Computed Layout</emphasis> makes it easy to layout controls relative to each other and enables dynamic terminal UIs.</para>
+</listitem><listitem><para><bold>Clipboard support</bold> - Cut, Copy, and Paste of text provided through the <ulink url="https://gui-cs.github.io/Terminal.Gui/api/Terminal.Gui/Terminal.Gui.Clipboard.html"><computeroutput>Clipboard</computeroutput></ulink> class.</para>
+</listitem><listitem><para><bold><ulink url="https://gui-cs.github.io/Terminal.Gui/api/Terminal.Gui/Terminal.Gui.View.html">Arbitrary Views</ulink></bold> - All visible UI elements are subclasses of the <computeroutput>View</computeroutput> class, and these in turn can contain an arbitrary number of sub-views.</para>
+</listitem><listitem><para><bold>Advanced App Features</bold> - The <ulink url="https://gui-cs.github.io/Terminal.Gui/api/Terminal.Gui/Terminal.Gui.MainLoop.html">Mainloop</ulink> supports processing events, idle handlers, timers, and monitoring file descriptors. Most classes are safe for threading.</para>
+</listitem><listitem><para><bold>Reactive Extensions</bold> - Use <ulink url="https://github.com/dotnet/reactive">reactive extensions</ulink> and benefit from increased code readability, and the ability to apply the MVVM pattern and <ulink url="https://www.reactiveui.net/">ReactiveUI</ulink> data bindings. See the <ulink url="https://github.com/gui-cs/Terminal.Gui/tree/master/ReactiveExample">source code</ulink> of a sample app in order to learn how to achieve this.</para>
+</listitem></itemizedlist>
+</para>
+</sect2>
+<sect2 id="md__c_1_2_users_2adenf_2_rider_projects_2_openlabs_8_mgcxm_2packages_2_terminal_8_gui_81_812_81_2_r_e_a_d_m_e_1autotoc_md5">
+<title>Showcase &amp; Examples</title>
+<para><itemizedlist>
+<listitem><para><bold><ulink url="https://github.com/gui-cs/Terminal.Gui/tree/master/UICatalog">UI Catalog</ulink></bold> - The UI Catalog project provides an easy to use and extend sample illustrating the capabilities of <bold>Terminal.Gui</bold>. Run <computeroutput>dotnet run --project UICatalog</computeroutput> to run the UI Catalog.</para>
+</listitem><listitem><para><bold><ulink url="https://github.com/gui-cs/Terminal.Gui/tree/master/Example">C# Example</ulink></bold> - Run <computeroutput>dotnet run</computeroutput> in the <computeroutput>Example</computeroutput> directory to run the C# Example.</para>
+</listitem><listitem><para><bold><ulink url="https://github.com/gui-cs/Terminal.Gui/tree/master/FSharpExample">F# Example</ulink></bold> - An example showing how to build a Terminal.Gui app using F#.</para>
+</listitem><listitem><para><bold><ulink url="https://github.com/gui-cs/Terminal.Gui/tree/master/ReactiveExample">Reactive Example</ulink></bold> - A sample app that shows how to use <computeroutput>System.Reactive</computeroutput> and <computeroutput>ReactiveUI</computeroutput> with <computeroutput>Terminal.Gui</computeroutput>. The app uses the MVVM architecture that may seem familiar to folks coming from WPF, Xamarin Forms, UWP, Avalonia, or Windows Forms. In this app, we implement the data bindings using ReactiveUI <computeroutput>WhenAnyValue</computeroutput> syntax and <ulink url="https://github.com/reactiveui/pharmacist">Pharmacist</ulink> — a tool that converts all events in a NuGet package into observable wrappers.</para>
+</listitem><listitem><para><bold><ulink url="https://github.com/PowerShell/GraphicalTools">PowerShell&apos;s <computeroutput>Out-ConsoleGridView</computeroutput></ulink></bold> - <computeroutput>OCGV</computeroutput> sends the output from a command to an interactive table.</para>
+</listitem><listitem><para><bold><ulink url="https://github.com/En3Tho/PoshRedisViewer">PoshRedisViewer</ulink></bold> - A compact Redis viewer module for PowerShell written in F# and Gui.cs</para>
+</listitem><listitem><para><bold><ulink url="https://github.com/tznind/TerminalGuiDesigner">TerminalGuiDesigner</ulink></bold> - Cross platform view designer for building Terminal.Gui applications.</para>
+</listitem></itemizedlist>
+</para>
+<para>See the <ulink url="https://github.com/gui-cs/Terminal.Gui/tree/master/Terminal.Gui"><computeroutput>Terminal.Gui/</computeroutput> README</ulink> for an overview of how the library is structured. The <ulink url="https://gui-cs.github.io/Terminal.Gui/articles/index.html">Conceptual Documentation</ulink> provides insight into core concepts.</para>
+</sect2>
+<sect2 id="md__c_1_2_users_2adenf_2_rider_projects_2_openlabs_8_mgcxm_2packages_2_terminal_8_gui_81_812_81_2_r_e_a_d_m_e_1autotoc_md6">
+<title>Sample Usage in C</title>
+<para>The following example shows a basic Terminal.Gui application written in C#:</para>
+<para><programlisting filename=".cs"><codeline><highlight class="comment">//<sp/>A<sp/>simple<sp/>Terminal.Gui<sp/>example<sp/>in<sp/>C#<sp/>-<sp/>using<sp/>C#<sp/>9.0<sp/>Top-level<sp/>statements</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="keyword">using<sp/></highlight><highlight class="normal">Terminal.Gui;</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal">Application.Run&lt;ExampleWindow&gt;<sp/>();</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal">System.Console.WriteLine<sp/>($</highlight><highlight class="stringliteral">&quot;Username:<sp/>{((ExampleWindow)Application.Top).usernameText.Text}&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="comment">//<sp/>Before<sp/>the<sp/>application<sp/>exits,<sp/>reset<sp/>Terminal.Gui<sp/>for<sp/>clean<sp/>shutdown</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal">Application.Shutdown<sp/>();</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="comment">//<sp/>Defines<sp/>a<sp/>top-level<sp/>window<sp/>with<sp/>border<sp/>and<sp/>title</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal">ExampleWindow<sp/>:<sp/>Window<sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/>TextField<sp/>usernameText;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/>ExampleWindow<sp/>()</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Title<sp/>=<sp/></highlight><highlight class="stringliteral">&quot;Example<sp/>App<sp/>(Ctrl+Q<sp/>to<sp/>quit)&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Create<sp/>input<sp/>components<sp/>and<sp/>labels</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>var<sp/>usernameLabel<sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/>Label<sp/>()<sp/>{<sp/></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Text<sp/>=<sp/></highlight><highlight class="stringliteral">&quot;Username:&quot;</highlight><highlight class="normal"><sp/></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>usernameText<sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/>TextField<sp/>(</highlight><highlight class="stringliteral">&quot;&quot;</highlight><highlight class="normal">)<sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Position<sp/>text<sp/>field<sp/>adjacent<sp/>to<sp/>the<sp/>label</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>X<sp/>=<sp/>Pos.Right<sp/>(usernameLabel)<sp/>+<sp/>1,</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Fill<sp/>remaining<sp/>horizontal<sp/>space</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Width<sp/>=<sp/>Dim.Fill<sp/>(),</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>var<sp/>passwordLabel<sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/>Label<sp/>()<sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Text<sp/>=<sp/></highlight><highlight class="stringliteral">&quot;Password:&quot;</highlight><highlight class="normal">,</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>X<sp/>=<sp/>Pos.Left<sp/>(usernameLabel),</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Y<sp/>=<sp/>Pos.Bottom<sp/>(usernameLabel)<sp/>+<sp/>1</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>var<sp/>passwordText<sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/>TextField<sp/>(</highlight><highlight class="stringliteral">&quot;&quot;</highlight><highlight class="normal">)<sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Secret<sp/>=<sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">,</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>align<sp/>with<sp/>the<sp/>text<sp/>box<sp/>above</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>X<sp/>=<sp/>Pos.Left<sp/>(usernameText),</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Y<sp/>=<sp/>Pos.Top<sp/>(passwordLabel),</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Width<sp/>=<sp/>Dim.Fill<sp/>(),</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Create<sp/>login<sp/>button</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>var<sp/>btnLogin<sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/>Button<sp/>()<sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Text<sp/>=<sp/></highlight><highlight class="stringliteral">&quot;Login&quot;</highlight><highlight class="normal">,</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Y<sp/>=<sp/>Pos.Bottom(passwordLabel)<sp/>+<sp/>1,</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>center<sp/>the<sp/>login<sp/>button<sp/>horizontally</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>X<sp/>=<sp/>Pos.Center<sp/>(),</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>IsDefault<sp/>=<sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">,</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>When<sp/>login<sp/>button<sp/>is<sp/>clicked<sp/>display<sp/>a<sp/>message<sp/>popup</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>btnLogin.Clicked<sp/>+=<sp/>()<sp/>=&gt;<sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(usernameText.Text<sp/>==<sp/></highlight><highlight class="stringliteral">&quot;admin&quot;</highlight><highlight class="normal"><sp/>&amp;&amp;<sp/>passwordText.Text<sp/>==<sp/></highlight><highlight class="stringliteral">&quot;password&quot;</highlight><highlight class="normal">)<sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>MessageBox.Query<sp/>(</highlight><highlight class="stringliteral">&quot;Logging<sp/>In&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;Login<sp/>Successful&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;Ok&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Application.RequestStop<sp/>();</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}<sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>MessageBox.ErrorQuery<sp/>(</highlight><highlight class="stringliteral">&quot;Logging<sp/>In&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;Incorrect<sp/>username<sp/>or<sp/>password&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;Ok&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Add<sp/>the<sp/>views<sp/>to<sp/>the<sp/>Window</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespace_openlabs_1_1_mgcxm_1_1_internal_1ad2ef54d1161dd1cbb1948a60ce7bfe51aec211f7c20af43e742bf2570c3cb84f9" kindref="member">Add</ref><sp/>(usernameLabel,<sp/>usernameText,<sp/>passwordLabel,<sp/>passwordText,<sp/>btnLogin);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline><highlight class="normal">}</highlight></codeline>
+</programlisting></para>
+<para>When run the application looks as follows:</para>
+<para><image type="html" name="./docfx/images/Example.png" alt="Simple Usage app" inline="yes"></image>
+</para>
+<para><emphasis>Sample application running</emphasis></para>
+</sect2>
+<sect2 id="md__c_1_2_users_2adenf_2_rider_projects_2_openlabs_8_mgcxm_2packages_2_terminal_8_gui_81_812_81_2_r_e_a_d_m_e_1autotoc_md7">
+<title>Installing</title>
+<para>Use NuGet to install the <computeroutput>Terminal.Gui</computeroutput> NuGet package: <ulink url="https://www.nuget.org/packages/Terminal.Gui">https://www.nuget.org/packages/Terminal.Gui</ulink></para>
+<sect3 id="md__c_1_2_users_2adenf_2_rider_projects_2_openlabs_8_mgcxm_2packages_2_terminal_8_gui_81_812_81_2_r_e_a_d_m_e_1autotoc_md8">
+<title>Installation in .NET Core Projects</title>
+<para>To install Terminal.Gui into a .NET Core project, use the <computeroutput>dotnet</computeroutput> CLI tool with following command.</para>
+<para><programlisting><codeline><highlight class="normal">dotnet<sp/>add<sp/>package<sp/>Terminal.Gui</highlight></codeline>
+</programlisting></para>
+<para>Or, you can use the <ulink url="https://github.com/gui-cs/Terminal.Gui.templates">Terminal.Gui.Templates</ulink>.</para>
+</sect3>
+</sect2>
+<sect2 id="md__c_1_2_users_2adenf_2_rider_projects_2_openlabs_8_mgcxm_2packages_2_terminal_8_gui_81_812_81_2_r_e_a_d_m_e_1autotoc_md9">
+<title>Building the Library and Running the Examples</title>
+<para><itemizedlist>
+<listitem><para>Windows, Mac, and Linux - Build and run using the .NET SDK command line tools (<computeroutput>dotnet build</computeroutput> in the root directory). Run <computeroutput>UICatalog</computeroutput> with <computeroutput>dotnet run --project UICatalog</computeroutput>.</para>
+</listitem><listitem><para>Windows - Open <computeroutput>Terminal.sln</computeroutput> with Visual Studio 2022.</para>
+</listitem></itemizedlist>
+</para>
+<para>See CONTRIBUTING.md for instructions for downloading and forking the source.</para>
+</sect2>
+<sect2 id="md__c_1_2_users_2adenf_2_rider_projects_2_openlabs_8_mgcxm_2packages_2_terminal_8_gui_81_812_81_2_r_e_a_d_m_e_1autotoc_md10">
+<title>Contributing</title>
+<para>See <ulink url="https://github.com/gui-cs/Terminal.Gui/blob/master/CONTRIBUTING.md">CONTRIBUTING.md</ulink>.</para>
+<para>Debates on architecture and design can be found in Issues tagged with <ulink url="https://github.com/gui-cs/Terminal.Gui/issues?q=is%3Aopen+is%3Aissue+label%3Adesign">design</ulink>.</para>
+</sect2>
+<sect2 id="md__c_1_2_users_2adenf_2_rider_projects_2_openlabs_8_mgcxm_2packages_2_terminal_8_gui_81_812_81_2_r_e_a_d_m_e_1autotoc_md11">
+<title>History</title>
+<para>See <ulink url="https://github.com/gui-cs/">gui-cs</ulink> for how this project came to be. </para>
+</sect2>
+    </detaileddescription>
+    <location file="C:/Users/adenf/RiderProjects/Openlabs.Mgcxm/packages/Terminal.Gui.1.12.1/README.md"/>
+  </compounddef>
+</doxygen>

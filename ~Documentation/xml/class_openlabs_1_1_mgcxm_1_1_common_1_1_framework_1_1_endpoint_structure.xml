@@ -1,0 +1,132 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.7" xml:lang="en-US">
+  <compounddef id="class_openlabs_1_1_mgcxm_1_1_common_1_1_framework_1_1_endpoint_structure" kind="class" language="C#" prot="public" abstract="yes">
+    <compoundname>Openlabs::Mgcxm::Common::Framework::EndpointStructure</compoundname>
+    <basecompoundref refid="interface_openlabs_1_1_mgcxm_1_1_common_1_1_framework_1_1_i_endpoint_url_resolver" prot="public" virt="non-virtual">Openlabs.Mgcxm.Common.Framework.IEndpointUrlResolver</basecompoundref>
+    <templateparamlist>
+      <param>
+        <type>TEndpointUrl</type>
+      </param>
+    </templateparamlist>
+      <sectiondef kind="property">
+      <memberdef kind="property" id="class_openlabs_1_1_mgcxm_1_1_common_1_1_framework_1_1_endpoint_structure_1a578f39620f698880cf07880b3c03d596" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="no" privatesettable="no" protectedsettable="no">
+        <type>abstract string</type>
+        <definition>abstract string Openlabs.Mgcxm.Common.Framework.EndpointStructure&lt; TEndpointUrl &gt;.ApiPath</definition>
+        <argsstring></argsstring>
+        <name>ApiPath</name>
+        <qualifiedname>Openlabs.Mgcxm.Common.Framework.EndpointStructure.ApiPath</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/adenf/RiderProjects/Openlabs.Mgcxm/Openlabs.Mgcxm/Common/Framework/Base/EndpointStructure.cs" line="15" column="28" bodyfile="C:/Users/adenf/RiderProjects/Openlabs.Mgcxm/Openlabs.Mgcxm/Common/Framework/Base/EndpointStructure.cs" bodystart="15" bodyend="15"/>
+      </memberdef>
+      <memberdef kind="property" id="class_openlabs_1_1_mgcxm_1_1_common_1_1_framework_1_1_endpoint_structure_1a828cce978a8e94eb89d9df55bbff1331" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="no" privatesettable="no" protectedsettable="no">
+        <type>abstract IReadOnlyDictionary&lt; TEndpointUrl, <ref refid="class_openlabs_1_1_mgcxm_1_1_net_1_1_mgcxm_http_endpoint" kindref="compound">MgcxmHttpEndpoint</ref> &gt;</type>
+        <definition>abstract IReadOnlyDictionary&lt;TEndpointUrl, MgcxmHttpEndpoint&gt; Openlabs.Mgcxm.Common.Framework.EndpointStructure&lt; TEndpointUrl &gt;.Endpoints</definition>
+        <argsstring></argsstring>
+        <name>Endpoints</name>
+        <qualifiedname>Openlabs.Mgcxm.Common.Framework.EndpointStructure.Endpoints</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/adenf/RiderProjects/Openlabs.Mgcxm/Openlabs.Mgcxm/Common/Framework/Base/EndpointStructure.cs" line="16" column="41" bodyfile="C:/Users/adenf/RiderProjects/Openlabs.Mgcxm/Openlabs.Mgcxm/Common/Framework/Base/EndpointStructure.cs" bodystart="16" bodyend="16"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_openlabs_1_1_mgcxm_1_1_common_1_1_framework_1_1_endpoint_structure_1a83746033ebf4dc1764ff0e917a7066f9" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>abstract <ref refid="class_openlabs_1_1_mgcxm_1_1_net_1_1_mgcxm_http_endpoint" kindref="compound">MgcxmHttpEndpoint</ref></type>
+        <definition>abstract MgcxmHttpEndpoint Openlabs.Mgcxm.Common.Framework.EndpointStructure&lt; TEndpointUrl &gt;.ResolveUrl</definition>
+        <argsstring>(string url, MgcxmHttpRequest request)</argsstring>
+        <name>ResolveUrl</name>
+        <qualifiedname>Openlabs.Mgcxm.Common.Framework.EndpointStructure.ResolveUrl</qualifiedname>
+        <reimplements refid="interface_openlabs_1_1_mgcxm_1_1_common_1_1_framework_1_1_i_endpoint_url_resolver_1a043642047e41bac082f82a45bb4e64b5">ResolveUrl</reimplements>
+        <param>
+          <type>string</type>
+          <declname>url</declname>
+        </param>
+        <param>
+          <type><ref refid="class_openlabs_1_1_mgcxm_1_1_net_1_1_mgcxm_http_request" kindref="compound">MgcxmHttpRequest</ref></type>
+          <declname>request</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/adenf/RiderProjects/Openlabs.Mgcxm/Openlabs.Mgcxm/Common/Framework/Base/EndpointStructure.cs" line="11" column="39"/>
+      </memberdef>
+      <memberdef kind="function" id="class_openlabs_1_1_mgcxm_1_1_common_1_1_framework_1_1_endpoint_structure_1a0fb5716e1e1345511cd9c714b5fa4bd0" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>abstract void</type>
+        <definition>abstract void Openlabs.Mgcxm.Common.Framework.EndpointStructure&lt; TEndpointUrl &gt;.AddEndpoint</definition>
+        <argsstring>(EndpointUrl url, HttpMethods method, OnEndpointRequested requestedHandler, MgcxmHttpListener listener)</argsstring>
+        <name>AddEndpoint</name>
+        <qualifiedname>Openlabs.Mgcxm.Common.Framework.EndpointStructure.AddEndpoint</qualifiedname>
+        <param>
+          <type><ref refid="class_openlabs_1_1_mgcxm_1_1_common_1_1_framework_1_1_endpoint_url" kindref="compound">EndpointUrl</ref></type>
+          <declname>url</declname>
+        </param>
+        <param>
+          <type><ref refid="namespace_openlabs_1_1_mgcxm_1_1_net_1a63268740291f4b97a3eb53abd380f84e" kindref="member">HttpMethods</ref></type>
+          <declname>method</declname>
+        </param>
+        <param>
+          <type>OnEndpointRequested</type>
+          <declname>requestedHandler</declname>
+        </param>
+        <param>
+          <type><ref refid="class_openlabs_1_1_mgcxm_1_1_net_1_1_mgcxm_http_listener" kindref="compound">MgcxmHttpListener</ref></type>
+          <declname>listener</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/adenf/RiderProjects/Openlabs.Mgcxm/Openlabs.Mgcxm/Common/Framework/Base/EndpointStructure.cs" line="13" column="26"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>IEndpointUrlResolver</label>
+        <link refid="interface_openlabs_1_1_mgcxm_1_1_common_1_1_framework_1_1_i_endpoint_url_resolver"/>
+      </node>
+      <node id="1">
+        <label>Openlabs.Mgcxm.Common.Framework.EndpointStructure&lt; TEndpointUrl &gt;</label>
+        <link refid="class_openlabs_1_1_mgcxm_1_1_common_1_1_framework_1_1_endpoint_structure"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>IEndpointUrlResolver</label>
+        <link refid="interface_openlabs_1_1_mgcxm_1_1_common_1_1_framework_1_1_i_endpoint_url_resolver"/>
+      </node>
+      <node id="1">
+        <label>Openlabs.Mgcxm.Common.Framework.EndpointStructure&lt; TEndpointUrl &gt;</label>
+        <link refid="class_openlabs_1_1_mgcxm_1_1_common_1_1_framework_1_1_endpoint_structure"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="C:/Users/adenf/RiderProjects/Openlabs.Mgcxm/Openlabs.Mgcxm/Common/Framework/Base/EndpointStructure.cs" line="7" column="17" bodyfile="C:/Users/adenf/RiderProjects/Openlabs.Mgcxm/Openlabs.Mgcxm/Common/Framework/Base/EndpointStructure.cs" bodystart="10" bodyend="17"/>
+    <listofallmembers>
+      <member refid="class_openlabs_1_1_mgcxm_1_1_common_1_1_framework_1_1_endpoint_structure_1a0fb5716e1e1345511cd9c714b5fa4bd0" prot="public" virt="pure-virtual"><scope>Openlabs::Mgcxm::Common::Framework::EndpointStructure</scope><name>AddEndpoint</name></member>
+      <member refid="class_openlabs_1_1_mgcxm_1_1_common_1_1_framework_1_1_endpoint_structure_1a578f39620f698880cf07880b3c03d596" prot="public" virt="non-virtual"><scope>Openlabs::Mgcxm::Common::Framework::EndpointStructure</scope><name>ApiPath</name></member>
+      <member refid="class_openlabs_1_1_mgcxm_1_1_common_1_1_framework_1_1_endpoint_structure_1a828cce978a8e94eb89d9df55bbff1331" prot="public" virt="non-virtual"><scope>Openlabs::Mgcxm::Common::Framework::EndpointStructure</scope><name>Endpoints</name></member>
+      <member refid="class_openlabs_1_1_mgcxm_1_1_common_1_1_framework_1_1_endpoint_structure_1a83746033ebf4dc1764ff0e917a7066f9" prot="public" virt="pure-virtual"><scope>Openlabs::Mgcxm::Common::Framework::EndpointStructure</scope><name>ResolveUrl</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

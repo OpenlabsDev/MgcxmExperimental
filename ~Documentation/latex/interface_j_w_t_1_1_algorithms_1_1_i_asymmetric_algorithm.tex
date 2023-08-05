@@ -1,0 +1,65 @@
+\doxysection{JWT.\+Algorithms.\+IAsymmetric\+Algorithm Interface Reference}
+\hypertarget{interface_j_w_t_1_1_algorithms_1_1_i_asymmetric_algorithm}{}\label{interface_j_w_t_1_1_algorithms_1_1_i_asymmetric_algorithm}\index{JWT.Algorithms.IAsymmetricAlgorithm@{JWT.Algorithms.IAsymmetricAlgorithm}}
+
+
+Represents an asymmetric algorithm to generate or validate \doxylink{namespace_j_w_t}{JWT} signature.  
+
+
+
+
+Inheritance diagram for JWT.\+Algorithms.\+IAsymmetric\+Algorithm\+:
+% FIG 0
+
+
+Collaboration diagram for JWT.\+Algorithms.\+IAsymmetric\+Algorithm\+:
+% FIG 1
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+bool \mbox{\hyperlink{interface_j_w_t_1_1_algorithms_1_1_i_asymmetric_algorithm_adeacc6789ce5d3ce129749f065d45e41}{Verify}} (byte\mbox{[}$\,$\mbox{]} bytes\+To\+Sign, byte\mbox{[}$\,$\mbox{]} signature)
+\begin{DoxyCompactList}\small\item\em Verifies provided byte array with provided signature. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{interface_j_w_t_1_1_algorithms_1_1_i_jwt_algorithm}{JWT.\+Algorithms.\+IJwt\+Algorithm}}}
+\begin{DoxyCompactItemize}
+\item 
+byte\mbox{[}$\,$\mbox{]} \mbox{\hyperlink{interface_j_w_t_1_1_algorithms_1_1_i_jwt_algorithm_ad652a42a9eb189006c5a866a556826c0}{Sign}} (byte\mbox{[}$\,$\mbox{]} key, byte\mbox{[}$\,$\mbox{]} bytes\+To\+Sign)
+\begin{DoxyCompactList}\small\item\em Signs provided byte array with provided key. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Additional Inherited Members}
+\doxysubsection*{Properties inherited from \mbox{\hyperlink{interface_j_w_t_1_1_algorithms_1_1_i_jwt_algorithm}{JWT.\+Algorithms.\+IJwt\+Algorithm}}}
+\begin{DoxyCompactItemize}
+\item 
+string \mbox{\hyperlink{interface_j_w_t_1_1_algorithms_1_1_i_jwt_algorithm_a62da69d146007031e3ce9d0e3e9e75d3}{Name}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Gets algorithm name. \end{DoxyCompactList}\item 
+Hash\+Algorithm\+Name \mbox{\hyperlink{interface_j_w_t_1_1_algorithms_1_1_i_jwt_algorithm_a5d291434247bc99339dc5e3b1dd2b934}{Hash\+Algorithm\+Name}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Gets name of the hashing algorithm (e.\+g. SHA-\/256/\+SHA-\/384/\+SHA-\/512). \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Represents an asymmetric algorithm to generate or validate \doxylink{namespace_j_w_t}{JWT} signature. 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{interface_j_w_t_1_1_algorithms_1_1_i_asymmetric_algorithm_adeacc6789ce5d3ce129749f065d45e41}\label{interface_j_w_t_1_1_algorithms_1_1_i_asymmetric_algorithm_adeacc6789ce5d3ce129749f065d45e41} 
+\index{JWT.Algorithms.IAsymmetricAlgorithm@{JWT.Algorithms.IAsymmetricAlgorithm}!Verify@{Verify}}
+\index{Verify@{Verify}!JWT.Algorithms.IAsymmetricAlgorithm@{JWT.Algorithms.IAsymmetricAlgorithm}}
+\doxysubsubsection{\texorpdfstring{Verify()}{Verify()}}
+{\footnotesize\ttfamily bool JWT.\+Algorithms.\+IAsymmetric\+Algorithm.\+Verify (\begin{DoxyParamCaption}\item[{byte\mbox{[}$\,$\mbox{]}}]{bytes\+To\+Sign,  }\item[{byte\mbox{[}$\,$\mbox{]}}]{signature }\end{DoxyParamCaption})}
+
+
+
+Verifies provided byte array with provided signature. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em bytes\+To\+Sign} & The data to verify\\
+\hline
+{\em signature} & The signature to verify with\\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \mbox{\hyperlink{class_j_w_t_1_1_algorithms_1_1_certificate_algorithm_a2a9f256e62c57ef7d3c49560de27fe06}{JWT.\+Algorithms.\+Certificate\+Algorithm$<$ T $>$}}.
+
+
+
+The documentation for this interface was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/adenf/\+Rider\+Projects/\+Openlabs.\+Mgcxm/\+Openlabs.\+Mgcxm/\+JWT/\+Algorithms/\mbox{\hyperlink{_i_asymmetric_algorithm_8cs}{IAsymmetric\+Algorithm.\+cs}}\end{DoxyCompactItemize}

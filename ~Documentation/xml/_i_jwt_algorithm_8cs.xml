@@ -1,0 +1,36 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.7" xml:lang="en-US">
+  <compounddef id="_i_jwt_algorithm_8cs" kind="file" language="C#">
+    <compoundname>IJwtAlgorithm.cs</compoundname>
+    <innerclass refid="interface_j_w_t_1_1_algorithms_1_1_i_jwt_algorithm" prot="public">JWT::Algorithms::IJwtAlgorithm</innerclass>
+    <innerclass refid="class_j_w_t_1_1_algorithms_1_1_jwt_algorithm_extensions" prot="public">JWT::Algorithms::JwtAlgorithmExtensions</innerclass>
+    <innernamespace refid="namespace_j_w_t">JWT</innernamespace>
+    <innernamespace refid="namespace_j_w_t_1_1_algorithms">JWT::Algorithms</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="keyword">using<sp/></highlight><highlight class="normal">System.Security.Cryptography;</highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="namespace_j_w_t_1_1_algorithms" kindref="compound">JWT.Algorithms</ref></highlight></codeline>
+<codeline lineno="4"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="8" refid="interface_j_w_t_1_1_algorithms_1_1_i_jwt_algorithm" refkind="compound"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">interface<sp/></highlight><highlight class="normal"><ref refid="interface_j_w_t_1_1_algorithms_1_1_i_jwt_algorithm" kindref="compound">IJwtAlgorithm</ref></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="15" refid="interface_j_w_t_1_1_algorithms_1_1_i_jwt_algorithm_1ad652a42a9eb189006c5a866a556826c0" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">byte</highlight><highlight class="normal">[]<sp/><ref refid="interface_j_w_t_1_1_algorithms_1_1_i_jwt_algorithm_1ad652a42a9eb189006c5a866a556826c0" kindref="member">Sign</ref>(</highlight><highlight class="keywordtype">byte</highlight><highlight class="normal">[]<sp/>key,<sp/></highlight><highlight class="keywordtype">byte</highlight><highlight class="normal">[]<sp/>bytesToSign);</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight></codeline>
+<codeline lineno="20" refid="interface_j_w_t_1_1_algorithms_1_1_i_jwt_algorithm_1a62da69d146007031e3ce9d0e3e9e75d3" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/><ref refid="interface_j_w_t_1_1_algorithms_1_1_i_jwt_algorithm_1a62da69d146007031e3ce9d0e3e9e75d3" kindref="member">Name</ref><sp/>{<sp/></highlight><highlight class="keyword">get</highlight><highlight class="normal">;<sp/>}</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight></codeline>
+<codeline lineno="25" refid="interface_j_w_t_1_1_algorithms_1_1_i_jwt_algorithm_1a5d291434247bc99339dc5e3b1dd2b934" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="interface_j_w_t_1_1_algorithms_1_1_i_jwt_algorithm_1a5d291434247bc99339dc5e3b1dd2b934" kindref="member">HashAlgorithmName</ref><sp/><ref refid="interface_j_w_t_1_1_algorithms_1_1_i_jwt_algorithm_1a5d291434247bc99339dc5e3b1dd2b934" kindref="member">HashAlgorithmName</ref><sp/>{<sp/></highlight><highlight class="keyword">get</highlight><highlight class="normal">;<sp/>}</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal">JwtAlgorithmExtensions</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>IsAsymmetric(</highlight><highlight class="keyword">this</highlight><highlight class="normal"><sp/>IJwtAlgorithm<sp/>alg)<sp/>=&gt;</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>alg<sp/>is<sp/>IAsymmetricAlgorithm;</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="40"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="C:/Users/adenf/RiderProjects/Openlabs.Mgcxm/Openlabs.Mgcxm/JWT/Algorithms/IJwtAlgorithm.cs"/>
+  </compounddef>
+</doxygen>

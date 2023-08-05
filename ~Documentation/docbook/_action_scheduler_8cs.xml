@@ -1,0 +1,38 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="__action_scheduler_8cs" xml:lang="en-US">
+<title>C:/Users/adenf/RiderProjects/Openlabs.Mgcxm/Openlabs.Mgcxm/Internal/ActionScheduler.cs File Reference</title>
+<indexterm><primary>C:/Users/adenf/RiderProjects/Openlabs.Mgcxm/Openlabs.Mgcxm/Internal/ActionScheduler.cs</primary></indexterm>
+<simplesect>
+    <title>Classes    </title>
+        <itemizedlist>
+            <listitem><para>class <link linkend="_class_openlabs_1_1_mgcxm_1_1_internal_1_1_action_scheduler">Openlabs.Mgcxm.Internal.ActionScheduler</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Namespaces    </title>
+        <itemizedlist>
+            <listitem><para>namespace <link linkend="_namespace_openlabs">Openlabs</link></para>
+</listitem>
+            <listitem><para>namespace <link linkend="_namespace_openlabs_1_1_mgcxm">Openlabs.Mgcxm</link></para>
+</listitem>
+            <listitem><para>namespace <link linkend="_namespace_openlabs_1_1_mgcxm_1_1_internal">Openlabs.Mgcxm.Internal</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Typedefs    </title>
+        <itemizedlist>
+            <listitem><para>using <link linkend="__action_scheduler_8cs_1a885d2472e770f94c2baca8bbbf0e1b9a">Random</link> = Openlabs.Mgcxm.Common.Random</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Typedef Documentation</title>
+<anchor xml:id="__action_scheduler_8cs_1a885d2472e770f94c2baca8bbbf0e1b9a"/><section>
+    <title>Random</title>
+<indexterm><primary>Random</primary><secondary>ActionScheduler.cs</secondary></indexterm>
+<indexterm><primary>ActionScheduler.cs</primary><secondary>Random</secondary></indexterm>
+<para><computeroutput>using Random =  Openlabs.Mgcxm.Common.Random</computeroutput></para></section>
+</section>
+</section>

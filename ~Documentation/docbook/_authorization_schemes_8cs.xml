@@ -1,0 +1,28 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="__authorization_schemes_8cs" xml:lang="en-US">
+<title>C:/Users/adenf/RiderProjects/Openlabs.Mgcxm/Openlabs.Mgcxm/Net/AuthorizationSchemes.cs File Reference</title>
+<indexterm><primary>C:/Users/adenf/RiderProjects/Openlabs.Mgcxm/Openlabs.Mgcxm/Net/AuthorizationSchemes.cs</primary></indexterm>
+<simplesect>
+    <title>Namespaces    </title>
+        <itemizedlist>
+            <listitem><para>namespace <link linkend="_namespace_openlabs">Openlabs</link></para>
+</listitem>
+            <listitem><para>namespace <link linkend="_namespace_openlabs_1_1_mgcxm">Openlabs.Mgcxm</link></para>
+</listitem>
+            <listitem><para>namespace <link linkend="_namespace_openlabs_1_1_mgcxm_1_1_net">Openlabs.Mgcxm.Net</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Enumerations    </title>
+        <itemizedlist>
+            <listitem><para>enum <link linkend="_namespace_openlabs_1_1_mgcxm_1_1_net_1a1cf0ff6088d262006cd028b076749e13">Openlabs.Mgcxm.Net.AuthorizationSchemes</link> { <link linkend="_namespace_openlabs_1_1_mgcxm_1_1_net_1a1cf0ff6088d262006cd028b076749e13a83dedad0728baaef3ad3f50bd05ed030">Openlabs.Mgcxm.Net.Bearer</link>
+, <link linkend="_namespace_openlabs_1_1_mgcxm_1_1_net_1a1cf0ff6088d262006cd028b076749e13ae5cfc515f312c9e85f367e9854d9963e">Openlabs.Mgcxm.Net.Digest</link>
+, <link linkend="_namespace_openlabs_1_1_mgcxm_1_1_net_1a1cf0ff6088d262006cd028b076749e13a972e73b7a882d0802a4e3a16946a2f94">Openlabs.Mgcxm.Net.Basic</link>
+ }</para>
+
+<para>Represents different types of authorization schemes. </para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+</section>

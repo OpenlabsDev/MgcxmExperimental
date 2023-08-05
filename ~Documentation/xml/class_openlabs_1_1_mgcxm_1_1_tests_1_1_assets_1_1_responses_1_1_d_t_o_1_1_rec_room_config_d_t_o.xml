@@ -1,0 +1,146 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.7" xml:lang="en-US">
+  <compounddef id="class_openlabs_1_1_mgcxm_1_1_tests_1_1_assets_1_1_responses_1_1_d_t_o_1_1_rec_room_config_d_t_o" kind="class" language="C#" prot="public">
+    <compoundname>Openlabs::Mgcxm::Tests::Assets::Responses::DTO::RecRoomConfigDTO</compoundname>
+    <basecompoundref refid="class_openlabs_1_1_mgcxm_1_1_assets_1_1_object_d_t_o" prot="public" virt="non-virtual">Openlabs.Mgcxm.Assets.ObjectDTO</basecompoundref>
+      <sectiondef kind="property">
+      <memberdef kind="property" id="class_openlabs_1_1_mgcxm_1_1_tests_1_1_assets_1_1_responses_1_1_d_t_o_1_1_rec_room_config_d_t_o_1a56ae4fce31337f585ba62f103a9cd0b9" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type>string</type>
+        <definition>string Openlabs.Mgcxm.Tests.Assets.Responses.DTO.RecRoomConfigDTO.MessageOfTheDay</definition>
+        <argsstring></argsstring>
+        <name>MessageOfTheDay</name>
+        <qualifiedname>Openlabs.Mgcxm.Tests.Assets.Responses.DTO.RecRoomConfigDTO.MessageOfTheDay</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/adenf/RiderProjects/Openlabs.Mgcxm/Openlabs.Mgcxm.Tests/Assets/Responses/DTO/RecRoomConfigDTO.cs" line="10" column="19" bodyfile="C:/Users/adenf/RiderProjects/Openlabs.Mgcxm/Openlabs.Mgcxm.Tests/Assets/Responses/DTO/RecRoomConfigDTO.cs" bodystart="10" bodyend="10"/>
+      </memberdef>
+      <memberdef kind="property" id="class_openlabs_1_1_mgcxm_1_1_tests_1_1_assets_1_1_responses_1_1_d_t_o_1_1_rec_room_config_d_t_o_1a950a2a73609ba45c1782821855c94462" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type>string</type>
+        <definition>string Openlabs.Mgcxm.Tests.Assets.Responses.DTO.RecRoomConfigDTO.CdnBaseUri</definition>
+        <argsstring></argsstring>
+        <name>CdnBaseUri</name>
+        <qualifiedname>Openlabs.Mgcxm.Tests.Assets.Responses.DTO.RecRoomConfigDTO.CdnBaseUri</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/adenf/RiderProjects/Openlabs.Mgcxm/Openlabs.Mgcxm.Tests/Assets/Responses/DTO/RecRoomConfigDTO.cs" line="11" column="19" bodyfile="C:/Users/adenf/RiderProjects/Openlabs.Mgcxm/Openlabs.Mgcxm.Tests/Assets/Responses/DTO/RecRoomConfigDTO.cs" bodystart="11" bodyend="11"/>
+      </memberdef>
+      <memberdef kind="property" id="class_openlabs_1_1_mgcxm_1_1_tests_1_1_assets_1_1_responses_1_1_d_t_o_1_1_rec_room_config_d_t_o_1a555ae5794a57e119e30dbfc9ec9ab29e" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type><ref refid="class_openlabs_1_1_mgcxm_1_1_tests_1_1_assets_1_1_responses_1_1_d_t_o_1_1_matchmaking_params_d_t_o" kindref="compound">MatchmakingParamsDTO</ref></type>
+        <definition>MatchmakingParamsDTO Openlabs.Mgcxm.Tests.Assets.Responses.DTO.RecRoomConfigDTO.MatchmakingParams</definition>
+        <argsstring></argsstring>
+        <name>MatchmakingParams</name>
+        <qualifiedname>Openlabs.Mgcxm.Tests.Assets.Responses.DTO.RecRoomConfigDTO.MatchmakingParams</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/adenf/RiderProjects/Openlabs.Mgcxm/Openlabs.Mgcxm.Tests/Assets/Responses/DTO/RecRoomConfigDTO.cs" line="12" column="33" bodyfile="C:/Users/adenf/RiderProjects/Openlabs.Mgcxm/Openlabs.Mgcxm.Tests/Assets/Responses/DTO/RecRoomConfigDTO.cs" bodystart="12" bodyend="12"/>
+      </memberdef>
+      <memberdef kind="property" id="class_openlabs_1_1_mgcxm_1_1_tests_1_1_assets_1_1_responses_1_1_d_t_o_1_1_rec_room_config_d_t_o_1a5559c8a0f7f20acd1c95dcff74ef53ce" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type>List&lt; <ref refid="class_openlabs_1_1_mgcxm_1_1_tests_1_1_assets_1_1_responses_1_1_d_t_o_1_1_level_progression_index_d_t_o" kindref="compound">LevelProgressionIndexDTO</ref> &gt;</type>
+        <definition>List&lt;LevelProgressionIndexDTO&gt; Openlabs.Mgcxm.Tests.Assets.Responses.DTO.RecRoomConfigDTO.LevelProgressionMaps</definition>
+        <argsstring></argsstring>
+        <name>LevelProgressionMaps</name>
+        <qualifiedname>Openlabs.Mgcxm.Tests.Assets.Responses.DTO.RecRoomConfigDTO.LevelProgressionMaps</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/adenf/RiderProjects/Openlabs.Mgcxm/Openlabs.Mgcxm.Tests/Assets/Responses/DTO/RecRoomConfigDTO.cs" line="13" column="17" bodyfile="C:/Users/adenf/RiderProjects/Openlabs.Mgcxm/Openlabs.Mgcxm.Tests/Assets/Responses/DTO/RecRoomConfigDTO.cs" bodystart="13" bodyend="13"/>
+      </memberdef>
+      <memberdef kind="property" id="class_openlabs_1_1_mgcxm_1_1_tests_1_1_assets_1_1_responses_1_1_d_t_o_1_1_rec_room_config_d_t_o_1af9e898f48064a81ec71af9ecd9f08b23" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type>List&lt; List&lt; <ref refid="class_openlabs_1_1_mgcxm_1_1_tests_1_1_assets_1_1_responses_1_1_d_t_o_1_1_objective_d_t_o" kindref="compound">ObjectiveDTO</ref> &gt; &gt;</type>
+        <definition>List&lt;List&lt;ObjectiveDTO&gt; &gt; Openlabs.Mgcxm.Tests.Assets.Responses.DTO.RecRoomConfigDTO.DailyObjectives</definition>
+        <argsstring></argsstring>
+        <name>DailyObjectives</name>
+        <qualifiedname>Openlabs.Mgcxm.Tests.Assets.Responses.DTO.RecRoomConfigDTO.DailyObjectives</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/adenf/RiderProjects/Openlabs.Mgcxm/Openlabs.Mgcxm.Tests/Assets/Responses/DTO/RecRoomConfigDTO.cs" line="14" column="17" bodyfile="C:/Users/adenf/RiderProjects/Openlabs.Mgcxm/Openlabs.Mgcxm.Tests/Assets/Responses/DTO/RecRoomConfigDTO.cs" bodystart="14" bodyend="14"/>
+      </memberdef>
+      <memberdef kind="property" id="class_openlabs_1_1_mgcxm_1_1_tests_1_1_assets_1_1_responses_1_1_d_t_o_1_1_rec_room_config_d_t_o_1a9347a320a64ecc392c285a523bbaca6a" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type>List&lt; <ref refid="class_openlabs_1_1_mgcxm_1_1_tests_1_1_assets_1_1_responses_1_1_d_t_o_1_1_setting_d_t_o" kindref="compound">SettingDTO</ref> &gt;</type>
+        <definition>List&lt;SettingDTO&gt; Openlabs.Mgcxm.Tests.Assets.Responses.DTO.RecRoomConfigDTO.ConfigTable</definition>
+        <argsstring></argsstring>
+        <name>ConfigTable</name>
+        <qualifiedname>Openlabs.Mgcxm.Tests.Assets.Responses.DTO.RecRoomConfigDTO.ConfigTable</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/adenf/RiderProjects/Openlabs.Mgcxm/Openlabs.Mgcxm.Tests/Assets/Responses/DTO/RecRoomConfigDTO.cs" line="15" column="17" bodyfile="C:/Users/adenf/RiderProjects/Openlabs.Mgcxm/Openlabs.Mgcxm.Tests/Assets/Responses/DTO/RecRoomConfigDTO.cs" bodystart="15" bodyend="15"/>
+      </memberdef>
+      <memberdef kind="property" id="class_openlabs_1_1_mgcxm_1_1_tests_1_1_assets_1_1_responses_1_1_d_t_o_1_1_rec_room_config_d_t_o_1ad68bfeadbe99d2f6c7ecb3082ff89e4b" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type><ref refid="class_openlabs_1_1_mgcxm_1_1_tests_1_1_assets_1_1_responses_1_1_d_t_o_1_1_photon_config_d_t_o" kindref="compound">PhotonConfigDTO</ref></type>
+        <definition>PhotonConfigDTO Openlabs.Mgcxm.Tests.Assets.Responses.DTO.RecRoomConfigDTO.PhotonConfig</definition>
+        <argsstring></argsstring>
+        <name>PhotonConfig</name>
+        <qualifiedname>Openlabs.Mgcxm.Tests.Assets.Responses.DTO.RecRoomConfigDTO.PhotonConfig</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/adenf/RiderProjects/Openlabs.Mgcxm/Openlabs.Mgcxm.Tests/Assets/Responses/DTO/RecRoomConfigDTO.cs" line="16" column="28" bodyfile="C:/Users/adenf/RiderProjects/Openlabs.Mgcxm/Openlabs.Mgcxm.Tests/Assets/Responses/DTO/RecRoomConfigDTO.cs" bodystart="16" bodyend="16"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>ObjectDTO</label>
+        <link refid="class_openlabs_1_1_mgcxm_1_1_assets_1_1_object_d_t_o"/>
+      </node>
+      <node id="1">
+        <label>Openlabs.Mgcxm.Tests.Assets.Responses.DTO.RecRoomConfigDTO</label>
+        <link refid="class_openlabs_1_1_mgcxm_1_1_tests_1_1_assets_1_1_responses_1_1_d_t_o_1_1_rec_room_config_d_t_o"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>ObjectDTO</label>
+        <link refid="class_openlabs_1_1_mgcxm_1_1_assets_1_1_object_d_t_o"/>
+      </node>
+      <node id="1">
+        <label>Openlabs.Mgcxm.Tests.Assets.Responses.DTO.RecRoomConfigDTO</label>
+        <link refid="class_openlabs_1_1_mgcxm_1_1_tests_1_1_assets_1_1_responses_1_1_d_t_o_1_1_rec_room_config_d_t_o"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="C:/Users/adenf/RiderProjects/Openlabs.Mgcxm/Openlabs.Mgcxm.Tests/Assets/Responses/DTO/RecRoomConfigDTO.cs" line="8" column="7" bodyfile="C:/Users/adenf/RiderProjects/Openlabs.Mgcxm/Openlabs.Mgcxm.Tests/Assets/Responses/DTO/RecRoomConfigDTO.cs" bodystart="9" bodyend="17"/>
+    <listofallmembers>
+      <member refid="class_openlabs_1_1_mgcxm_1_1_tests_1_1_assets_1_1_responses_1_1_d_t_o_1_1_rec_room_config_d_t_o_1a950a2a73609ba45c1782821855c94462" prot="public" virt="non-virtual"><scope>Openlabs::Mgcxm::Tests::Assets::Responses::DTO::RecRoomConfigDTO</scope><name>CdnBaseUri</name></member>
+      <member refid="class_openlabs_1_1_mgcxm_1_1_tests_1_1_assets_1_1_responses_1_1_d_t_o_1_1_rec_room_config_d_t_o_1a9347a320a64ecc392c285a523bbaca6a" prot="public" virt="non-virtual"><scope>Openlabs::Mgcxm::Tests::Assets::Responses::DTO::RecRoomConfigDTO</scope><name>ConfigTable</name></member>
+      <member refid="class_openlabs_1_1_mgcxm_1_1_tests_1_1_assets_1_1_responses_1_1_d_t_o_1_1_rec_room_config_d_t_o_1af9e898f48064a81ec71af9ecd9f08b23" prot="public" virt="non-virtual"><scope>Openlabs::Mgcxm::Tests::Assets::Responses::DTO::RecRoomConfigDTO</scope><name>DailyObjectives</name></member>
+      <member refid="class_openlabs_1_1_mgcxm_1_1_assets_1_1_object_d_t_o_1ae614d674a342e92fb9c5b2c8052f7433" prot="public" virt="non-virtual"><scope>Openlabs::Mgcxm::Tests::Assets::Responses::DTO::RecRoomConfigDTO</scope><name>GetDtoId</name></member>
+      <member refid="class_openlabs_1_1_mgcxm_1_1_tests_1_1_assets_1_1_responses_1_1_d_t_o_1_1_rec_room_config_d_t_o_1a5559c8a0f7f20acd1c95dcff74ef53ce" prot="public" virt="non-virtual"><scope>Openlabs::Mgcxm::Tests::Assets::Responses::DTO::RecRoomConfigDTO</scope><name>LevelProgressionMaps</name></member>
+      <member refid="class_openlabs_1_1_mgcxm_1_1_tests_1_1_assets_1_1_responses_1_1_d_t_o_1_1_rec_room_config_d_t_o_1a555ae5794a57e119e30dbfc9ec9ab29e" prot="public" virt="non-virtual"><scope>Openlabs::Mgcxm::Tests::Assets::Responses::DTO::RecRoomConfigDTO</scope><name>MatchmakingParams</name></member>
+      <member refid="class_openlabs_1_1_mgcxm_1_1_tests_1_1_assets_1_1_responses_1_1_d_t_o_1_1_rec_room_config_d_t_o_1a56ae4fce31337f585ba62f103a9cd0b9" prot="public" virt="non-virtual"><scope>Openlabs::Mgcxm::Tests::Assets::Responses::DTO::RecRoomConfigDTO</scope><name>MessageOfTheDay</name></member>
+      <member refid="class_openlabs_1_1_mgcxm_1_1_tests_1_1_assets_1_1_responses_1_1_d_t_o_1_1_rec_room_config_d_t_o_1ad68bfeadbe99d2f6c7ecb3082ff89e4b" prot="public" virt="non-virtual"><scope>Openlabs::Mgcxm::Tests::Assets::Responses::DTO::RecRoomConfigDTO</scope><name>PhotonConfig</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

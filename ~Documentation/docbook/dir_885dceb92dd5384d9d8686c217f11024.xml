@@ -1,0 +1,27 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_dir_885dceb92dd5384d9d8686c217f11024" xml:lang="en-US">
+<title>C:/Users/adenf/RiderProjects/Openlabs.Mgcxm/Openlabs.Mgcxm/JWT/Exceptions Directory Reference</title>
+<indexterm><primary>C:/Users/adenf/RiderProjects/Openlabs.Mgcxm/Openlabs.Mgcxm/JWT/Exceptions Directory Reference</primary></indexterm>
+Directory dependency graph for Exceptions:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="dir_885dceb92dd5384d9d8686c217f11024_dep.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+<simplesect>
+    <title>Files    </title>
+        <itemizedlist>
+            <listitem><para>file <link linkend="__invalid_token_parts_exception_8cs">InvalidTokenPartsException.cs</link></para>
+</listitem>
+            <listitem><para>file <link linkend="__signature_verification_exception_8cs">SignatureVerificationException.cs</link></para>
+</listitem>
+            <listitem><para>file <link linkend="__token_expired_exception_8cs">TokenExpiredException.cs</link></para>
+</listitem>
+            <listitem><para>file <link linkend="__token_not_yet_valid_exception_8cs">TokenNotYetValidException.cs</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+</section>

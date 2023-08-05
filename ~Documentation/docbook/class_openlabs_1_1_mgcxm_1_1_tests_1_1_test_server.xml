@@ -1,0 +1,165 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_class_openlabs_1_1_mgcxm_1_1_tests_1_1_test_server" xml:lang="en-US">
+<title>Openlabs.Mgcxm.Tests.TestServer Class Reference</title>
+<indexterm><primary>Openlabs.Mgcxm.Tests.TestServer</primary></indexterm>
+Inheritance diagram for Openlabs.Mgcxm.Tests.TestServer:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="class_openlabs_1_1_mgcxm_1_1_tests_1_1_test_server__inherit__graph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+Collaboration diagram for Openlabs.Mgcxm.Tests.TestServer:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="class_openlabs_1_1_mgcxm_1_1_tests_1_1_test_server__coll__graph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+<simplesect>
+    <title>Classes    </title>
+        <itemizedlist>
+            <listitem><para>class <link linkend="_class_openlabs_1_1_mgcxm_1_1_tests_1_1_test_server_1_1_avatar_controller">AvatarController</link></para>
+</listitem>
+            <listitem><para>class <link linkend="_class_openlabs_1_1_mgcxm_1_1_tests_1_1_test_server_1_1_config_controller">ConfigController</link></para>
+</listitem>
+            <listitem><para>class <link linkend="_class_openlabs_1_1_mgcxm_1_1_tests_1_1_test_server_1_1_messages_controller">MessagesController</link></para>
+</listitem>
+            <listitem><para>class <link linkend="_class_openlabs_1_1_mgcxm_1_1_tests_1_1_test_server_1_1_platform_login_controller">PlatformLoginController</link></para>
+</listitem>
+            <listitem><para>class <link linkend="_class_openlabs_1_1_mgcxm_1_1_tests_1_1_test_server_1_1_players_controller">PlayersController</link></para>
+</listitem>
+            <listitem><para>class <link linkend="_class_openlabs_1_1_mgcxm_1_1_tests_1_1_test_server_1_1_relationships_controller">RelationshipsController</link></para>
+</listitem>
+            <listitem><para>class <link linkend="_class_openlabs_1_1_mgcxm_1_1_tests_1_1_test_server_1_1_settings_controller">SettingsController</link></para>
+</listitem>
+            <listitem><para>class <link linkend="_class_openlabs_1_1_mgcxm_1_1_tests_1_1_test_server_1_1_version_check_controller">VersionCheckController</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Public Member Functions    </title>
+        <itemizedlist>
+            <listitem><para><link linkend="_class_openlabs_1_1_mgcxm_1_1_tests_1_1_test_server_1ae4c2d5aff7a19f2af9ad57762b9bf3a1">TestServer</link> ()</para>
+</listitem>
+            <listitem><para>void <link linkend="_class_openlabs_1_1_mgcxm_1_1_tests_1_1_test_server_1ac5c96d033df87e72b9e59d719d76f130">HttpGet_Activities_CharadesV1_GetWords</link> (<link linkend="_class_openlabs_1_1_mgcxm_1_1_net_1_1_mgcxm_http_request">MgcxmHttpRequest</link> request, <link linkend="_class_openlabs_1_1_mgcxm_1_1_net_1_1_mgcxm_http_response">MgcxmHttpResponse</link> response)</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+Public Member Functions inherited from <link linkend="_class_openlabs_1_1_mgcxm_1_1_net_1_1_mgcxm_http_listener">Openlabs.Mgcxm.Net.MgcxmHttpListener</link>        <itemizedlist>
+            <listitem><para><link linkend="_class_openlabs_1_1_mgcxm_1_1_net_1_1_mgcxm_http_listener_1a9f72afe79266697d4ac42833c11b2412">MgcxmHttpListener</link> (<link linkend="_class_openlabs_1_1_mgcxm_1_1_net_1_1_ip_address">IpAddress</link> addressToHostOn)</para>
+
+<para>Initializes a new instance of the MgcxmHttpListener class. </para>
+</listitem>
+            <listitem><para>void <link linkend="_class_openlabs_1_1_mgcxm_1_1_net_1_1_mgcxm_http_listener_1a12292b58f349e2c26d118701feddc862">Start</link> ()</para>
+
+<para>Starts the HTTP listener to listen for incoming requests. </para>
+</listitem>
+            <listitem><para>void <link linkend="_class_openlabs_1_1_mgcxm_1_1_net_1_1_mgcxm_http_listener_1a0cff1c8433b7454c44997956e33ba3f5">Stop</link> ()</para>
+
+<para>Stops the HTTP listener from listening for incoming requests. </para>
+</listitem>
+            <listitem><para>void <link linkend="_class_openlabs_1_1_mgcxm_1_1_net_1_1_mgcxm_http_listener_1a687fc4b689ec657e672354b394dee8be">SetFramework&lt; TEndpointUrl &gt;</link> (<link linkend="_class_openlabs_1_1_mgcxm_1_1_common_1_1_framework_1_1_endpoint_framework">EndpointFramework</link>&lt; TEndpointUrl &gt; endpointFramework)</para>
+
+<para>Sets the current framework of the server. </para>
+</listitem>
+            <listitem><para>void <link linkend="_class_openlabs_1_1_mgcxm_1_1_net_1_1_mgcxm_http_listener_1a0763f648b9f2a6802fbb5b8cebb28e86">AddFrameworkEndpoint</link> (<link linkend="_class_openlabs_1_1_mgcxm_1_1_common_1_1_framework_1_1_endpoint_url">EndpointUrl</link> url, <link linkend="_namespace_openlabs_1_1_mgcxm_1_1_net_1a63268740291f4b97a3eb53abd380f84e">HttpMethods</link> method, <link linkend="_namespace_openlabs_1_1_mgcxm_1_1_net_1affacc6bf2b6a12de7307197182a70877">OnEndpointRequested</link> requestedHandler)</para>
+
+<para>Adds an endpoint to the framework. </para>
+</listitem>
+        </itemizedlist>
+<simplesect>
+    <title>Static Public Attributes    </title>
+        <itemizedlist>
+            <listitem><para>static string <link linkend="_class_openlabs_1_1_mgcxm_1_1_tests_1_1_test_server_1ad219b2c889d56112d4269e64c3744de8">PlayerName</link> = &quot;Invalid Name&quot;</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Additional Inherited Members    </title>
+Properties inherited from <link linkend="_class_openlabs_1_1_mgcxm_1_1_net_1_1_mgcxm_http_listener">Openlabs.Mgcxm.Net.MgcxmHttpListener</link>        <itemizedlist>
+            <listitem><para><link linkend="_struct_openlabs_1_1_mgcxm_1_1_internal_1_1_mgcxm_id">MgcxmId</link> <link linkend="_class_openlabs_1_1_mgcxm_1_1_net_1_1_mgcxm_http_listener_1a8ceea64a86452b7799832d512bf59b05">AllocatedId</link><computeroutput> [get]</computeroutput>
+</para>
+
+<para>Gets the allocated ID of the listener. </para>
+</listitem>
+            <listitem><para>bool <link linkend="_class_openlabs_1_1_mgcxm_1_1_net_1_1_mgcxm_http_listener_1a04b35b5cc47ebb7a8abe9d51de700f4d">ListenToRequests</link><computeroutput> [get]</computeroutput>
+</para>
+
+<para>Gets a value indicating whether the listener is listening for requests. </para>
+</listitem>
+            <listitem><para>HttpListener <link linkend="_class_openlabs_1_1_mgcxm_1_1_net_1_1_mgcxm_http_listener_1a62c66d562f2d7163e7fd0c4abb44d20b">Listener</link><computeroutput> [get]</computeroutput>
+</para>
+
+<para>Gets the HttpListener instance associated with the listener. </para>
+</listitem>
+            <listitem><para>IReadOnlyList&lt; <link linkend="_class_openlabs_1_1_mgcxm_1_1_net_1_1_mgcxm_http_endpoint">MgcxmHttpEndpoint</link> &gt; <link linkend="_class_openlabs_1_1_mgcxm_1_1_net_1_1_mgcxm_http_listener_1a48022e396188dc6c132f88863bf69323">Endpoints</link><computeroutput> [get]</computeroutput>
+</para>
+
+<para>Gets a list of all endpoints associated with the listener. </para>
+</listitem>
+            <listitem><para><link linkend="_class_openlabs_1_1_mgcxm_1_1_common_1_1_framework_1_1_endpoint_framework_base">EndpointFrameworkBase</link> <link linkend="_class_openlabs_1_1_mgcxm_1_1_net_1_1_mgcxm_http_listener_1ab0ef008cf60af7ed3b814650407c2b7a">Framework</link><computeroutput> [get]</computeroutput>
+</para>
+
+<para>Gets the current framework associated with the listener. </para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Constructor &amp; Destructor Documentation</title>
+<anchor xml:id="_class_openlabs_1_1_mgcxm_1_1_tests_1_1_test_server_1ae4c2d5aff7a19f2af9ad57762b9bf3a1"/><section>
+    <title>TestServer()</title>
+<indexterm><primary>TestServer</primary><secondary>Openlabs.Mgcxm.Tests.TestServer</secondary></indexterm>
+<indexterm><primary>Openlabs.Mgcxm.Tests.TestServer</primary><secondary>TestServer</secondary></indexterm>
+<para><computeroutput>Openlabs.Mgcxm.Tests.TestServer.TestServer ( )</computeroutput></para>Here is the call graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="class_openlabs_1_1_mgcxm_1_1_tests_1_1_test_server_ae4c2d5aff7a19f2af9ad57762b9bf3a1_cgraph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+</section>
+</section>
+<section>
+<title>Member Function Documentation</title>
+<anchor xml:id="_class_openlabs_1_1_mgcxm_1_1_tests_1_1_test_server_1ac5c96d033df87e72b9e59d719d76f130"/><section>
+    <title>HttpGet_Activities_CharadesV1_GetWords()</title>
+<indexterm><primary>HttpGet_Activities_CharadesV1_GetWords</primary><secondary>Openlabs.Mgcxm.Tests.TestServer</secondary></indexterm>
+<indexterm><primary>Openlabs.Mgcxm.Tests.TestServer</primary><secondary>HttpGet_Activities_CharadesV1_GetWords</secondary></indexterm>
+<para><computeroutput>void Openlabs.Mgcxm.Tests.TestServer.HttpGet_Activities_CharadesV1_GetWords (<link linkend="_class_openlabs_1_1_mgcxm_1_1_net_1_1_mgcxm_http_request">MgcxmHttpRequest</link> request, <link linkend="_class_openlabs_1_1_mgcxm_1_1_net_1_1_mgcxm_http_response">MgcxmHttpResponse</link> response)</computeroutput></para>Here is the call graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="class_openlabs_1_1_mgcxm_1_1_tests_1_1_test_server_ac5c96d033df87e72b9e59d719d76f130_cgraph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+Here is the caller graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="class_openlabs_1_1_mgcxm_1_1_tests_1_1_test_server_ac5c96d033df87e72b9e59d719d76f130_icgraph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+</section>
+</section>
+<section>
+<title>Member Data Documentation</title>
+<anchor xml:id="_class_openlabs_1_1_mgcxm_1_1_tests_1_1_test_server_1ad219b2c889d56112d4269e64c3744de8"/><section>
+    <title>PlayerName</title>
+<indexterm><primary>PlayerName</primary><secondary>Openlabs.Mgcxm.Tests.TestServer</secondary></indexterm>
+<indexterm><primary>Openlabs.Mgcxm.Tests.TestServer</primary><secondary>PlayerName</secondary></indexterm>
+<para><computeroutput>string Openlabs.Mgcxm.Tests.TestServer.PlayerName = &quot;Invalid Name&quot;<computeroutput>[static]</computeroutput></computeroutput></para></section>
+<para>
+The documentation for this class was generated from the following file:</para>
+C:/Users/adenf/RiderProjects/Openlabs.Mgcxm/Openlabs.Mgcxm.Tests/<link linkend="__test_server_8cs">TestServer.cs</link></section>
+</section>

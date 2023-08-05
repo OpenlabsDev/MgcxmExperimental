@@ -1,0 +1,312 @@
+\doxysection{JWT.\+Builder Namespace Reference}
+\hypertarget{namespace_j_w_t_1_1_builder}{}\label{namespace_j_w_t_1_1_builder}\index{JWT.Builder@{JWT.Builder}}
+\doxysubsubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class {\bfseries Enum\+Extensions}
+\item 
+class \mbox{\hyperlink{class_j_w_t_1_1_builder_1_1_jwt_builder}{Jwt\+Builder}}
+\begin{DoxyCompactList}\small\item\em Encode and decode \doxylink{namespace_j_w_t}{JWT} with Fluent API. \end{DoxyCompactList}\item 
+class {\bfseries Jwt\+Builder\+Extensions}
+\item 
+class \mbox{\hyperlink{class_j_w_t_1_1_builder_1_1_jwt_data}{Jwt\+Data}}
+\begin{DoxyCompactList}\small\item\em Represents the Data that will store in a \doxylink{namespace_j_w_t}{JWT}. \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{class_j_w_t_1_1_builder_1_1_jwt_header}{Jwt\+Header}}
+\begin{DoxyCompactList}\small\item\em JSON header model with predefined parameter names specified by RFC 7515, see \href{https://tools.ietf.org/html/rfc7515}{\texttt{ https\+://tools.\+ietf.\+org/html/rfc7515}}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Enumerations}
+\begin{DoxyCompactItemize}
+\item 
+enum \mbox{\hyperlink{namespace_j_w_t_1_1_builder_a57c0cb26bf11005be5a0f47d50fce5d9}{Claim\+Name}} \{ \newline
+\mbox{\hyperlink{namespace_j_w_t_1_1_builder_a57c0cb26bf11005be5a0f47d50fce5d9a51360304ea03557e79bdf5ff9cd2e234}{Issuer}}
+, \mbox{\hyperlink{namespace_j_w_t_1_1_builder_a57c0cb26bf11005be5a0f47d50fce5d9ac7892ebbb139886662c6f2fc8c450710}{Subject}}
+, \mbox{\hyperlink{namespace_j_w_t_1_1_builder_a57c0cb26bf11005be5a0f47d50fce5d9aef1e6887c579ba81dcedc3f4e3793cd2}{Audience}}
+, \mbox{\hyperlink{namespace_j_w_t_1_1_builder_a57c0cb26bf11005be5a0f47d50fce5d9a409876201639120b8ae48f35d409a9c9}{Expiration\+Time}}
+, \newline
+\mbox{\hyperlink{namespace_j_w_t_1_1_builder_a57c0cb26bf11005be5a0f47d50fce5d9ae57c1a382aa4a985bea73749443b100f}{Not\+Before}}
+, \mbox{\hyperlink{namespace_j_w_t_1_1_builder_a57c0cb26bf11005be5a0f47d50fce5d9a7e7a4abb7b6fd1f7ff9cf441b61f474b}{Issued\+At}}
+, \mbox{\hyperlink{namespace_j_w_t_1_1_builder_a57c0cb26bf11005be5a0f47d50fce5d9a5f77254989af9d3a0c838784e45b3828}{Jwt\+Id}}
+, \mbox{\hyperlink{namespace_j_w_t_1_1_builder_a57c0cb26bf11005be5a0f47d50fce5d9ae309e678d77a80e722dd1695137a5a21}{Full\+Name}}
+, \newline
+\mbox{\hyperlink{namespace_j_w_t_1_1_builder_a57c0cb26bf11005be5a0f47d50fce5d9a4fbf07df82c9fbf379c690d11a44fd09}{Given\+Name}}
+, \mbox{\hyperlink{namespace_j_w_t_1_1_builder_a57c0cb26bf11005be5a0f47d50fce5d9a66afb8580305c04534c520eb243f3957}{Family\+Name}}
+, \mbox{\hyperlink{namespace_j_w_t_1_1_builder_a57c0cb26bf11005be5a0f47d50fce5d9a856f4ac082419650d35060a19d3059dc}{Middle\+Name}}
+, \mbox{\hyperlink{namespace_j_w_t_1_1_builder_a57c0cb26bf11005be5a0f47d50fce5d9a6d191348a7664e0827ef6e2055a9b66e}{Casual\+Name}}
+, \newline
+\mbox{\hyperlink{namespace_j_w_t_1_1_builder_a57c0cb26bf11005be5a0f47d50fce5d9a3d63751ddecded1e0c57847376fb0843}{Preferred\+Username}}
+, \mbox{\hyperlink{namespace_j_w_t_1_1_builder_a57c0cb26bf11005be5a0f47d50fce5d9ab929c906c34d6f7988ba8d8eddaea3f1}{Profile\+Page\+Url}}
+, \mbox{\hyperlink{namespace_j_w_t_1_1_builder_a57c0cb26bf11005be5a0f47d50fce5d9a10b19049aab3634a555cecb2f33255eb}{Profile\+Picture\+Url}}
+, \mbox{\hyperlink{namespace_j_w_t_1_1_builder_a57c0cb26bf11005be5a0f47d50fce5d9a15bbb9d0bbf25e8d2978de1168c749dc}{Website}}
+, \newline
+\mbox{\hyperlink{namespace_j_w_t_1_1_builder_a57c0cb26bf11005be5a0f47d50fce5d9ad88e427572d74c6ce3cb6aa229281a7a}{Preferred\+Email}}
+, \mbox{\hyperlink{namespace_j_w_t_1_1_builder_a57c0cb26bf11005be5a0f47d50fce5d9a941ac86fb0b7db8c8c548ff28d91f79a}{Verified\+Email}}
+, \mbox{\hyperlink{namespace_j_w_t_1_1_builder_a57c0cb26bf11005be5a0f47d50fce5d9a019ec3132cdf8ee0f2e2a75cf5d3e459}{Gender}}
+, \mbox{\hyperlink{namespace_j_w_t_1_1_builder_a57c0cb26bf11005be5a0f47d50fce5d9aaac772216aecbeca0e86d06671fe985a}{Birthday}}
+, \newline
+\mbox{\hyperlink{namespace_j_w_t_1_1_builder_a57c0cb26bf11005be5a0f47d50fce5d9ae775675ba2acbaac5c1142393c8a4339}{Time\+Zone}}
+, \mbox{\hyperlink{namespace_j_w_t_1_1_builder_a57c0cb26bf11005be5a0f47d50fce5d9a911f0f24bdce6808f4614d6a263b143b}{Locale}}
+, \mbox{\hyperlink{namespace_j_w_t_1_1_builder_a57c0cb26bf11005be5a0f47d50fce5d9adb9a80a45930968e9446dd6dcf49e7b2}{Preferred\+Phone\+Number}}
+, \mbox{\hyperlink{namespace_j_w_t_1_1_builder_a57c0cb26bf11005be5a0f47d50fce5d9ab56995c9fa08fee82d86d1aa378025e3}{Verified\+Phone\+Number}}
+, \newline
+\mbox{\hyperlink{namespace_j_w_t_1_1_builder_a57c0cb26bf11005be5a0f47d50fce5d9add7bf230fde8d4836917806aff6a6b27}{Address}}
+, \mbox{\hyperlink{namespace_j_w_t_1_1_builder_a57c0cb26bf11005be5a0f47d50fce5d9a0b2a8a8fed13280ecd74f7545bc2b962}{Updated\+At}}
+, \mbox{\hyperlink{namespace_j_w_t_1_1_builder_a57c0cb26bf11005be5a0f47d50fce5d9a8da1ffae24c762bb5503cf311e6dc769}{Authorized\+Party}}
+, \mbox{\hyperlink{namespace_j_w_t_1_1_builder_a57c0cb26bf11005be5a0f47d50fce5d9a3a90ac83535fb1f3d071e8beb25aa956}{Nonce}}
+, \newline
+\mbox{\hyperlink{namespace_j_w_t_1_1_builder_a57c0cb26bf11005be5a0f47d50fce5d9a499fae991c2c87047e81700e81332850}{Authentication\+Time}}
+, \mbox{\hyperlink{namespace_j_w_t_1_1_builder_a57c0cb26bf11005be5a0f47d50fce5d9ace1c01ff2b2760c036c92fa974384249}{Access\+Token\+Hash}}
+, \mbox{\hyperlink{namespace_j_w_t_1_1_builder_a57c0cb26bf11005be5a0f47d50fce5d9a6155c3dcee6acd0ce0f5657d93374768}{Code\+Hash\+Value}}
+, \mbox{\hyperlink{namespace_j_w_t_1_1_builder_a57c0cb26bf11005be5a0f47d50fce5d9a089627148b6465032f5034c396ef5a8b}{Acr}}
+, \newline
+\mbox{\hyperlink{namespace_j_w_t_1_1_builder_a57c0cb26bf11005be5a0f47d50fce5d9a2cec1d2d096bef119c9699e03b7220b3}{Amr}}
+, \mbox{\hyperlink{namespace_j_w_t_1_1_builder_a57c0cb26bf11005be5a0f47d50fce5d9aaddbd28a071e14f428d003c79304dd18}{Public\+Key}}
+, \mbox{\hyperlink{namespace_j_w_t_1_1_builder_a57c0cb26bf11005be5a0f47d50fce5d9af4d1ea475eaa85102e2b4e6d95da84bd}{Confirmation}}
+, \mbox{\hyperlink{namespace_j_w_t_1_1_builder_a57c0cb26bf11005be5a0f47d50fce5d9ada03ab89a6f3e306d21773699624c66d}{Sip\+From\+Tag}}
+, \newline
+\mbox{\hyperlink{namespace_j_w_t_1_1_builder_a57c0cb26bf11005be5a0f47d50fce5d9a66deff01785d43bd406921a690a82bcc}{Sip\+Date}}
+, \mbox{\hyperlink{namespace_j_w_t_1_1_builder_a57c0cb26bf11005be5a0f47d50fce5d9a4f81b2d6bdbce84f4a40124fb432a949}{Sip\+Call\+Id}}
+, \mbox{\hyperlink{namespace_j_w_t_1_1_builder_a57c0cb26bf11005be5a0f47d50fce5d9adc2d2d2787987a05f5202f872b853a86}{Sip\+Cseq\+Number}}
+, \mbox{\hyperlink{namespace_j_w_t_1_1_builder_a57c0cb26bf11005be5a0f47d50fce5d9ac7064bd64988344d5bc950dff8fddd1b}{Sip\+Via\+Branch}}
+, \newline
+\mbox{\hyperlink{namespace_j_w_t_1_1_builder_a57c0cb26bf11005be5a0f47d50fce5d9a3ff552c553274b1b6da334f4881b352d}{Originating\+Identity\+String}}
+, \mbox{\hyperlink{namespace_j_w_t_1_1_builder_a57c0cb26bf11005be5a0f47d50fce5d9acf232eeee42dc758ae783c155fb82522}{Destination\+Identity\+String}}
+, \mbox{\hyperlink{namespace_j_w_t_1_1_builder_a57c0cb26bf11005be5a0f47d50fce5d9ac6d67a90b043768b45ef2e4a12f69336}{Media\+Key\+Fingerprint\+String}}
+ \}
+\begin{DoxyCompactList}\small\item\em All public claims of a \doxylink{namespace_j_w_t}{JWT} specified by IANA, see \href{https://www.iana.org/assignments/jwt/jwt.xhtml}{\texttt{ https\+://www.\+iana.\+org/assignments/jwt/jwt.\+xhtml}}. \end{DoxyCompactList}\item 
+enum \mbox{\hyperlink{namespace_j_w_t_1_1_builder_ac7975cf4137f77fbee4748e795ff375c}{Header\+Name}} \{ \newline
+\mbox{\hyperlink{namespace_j_w_t_1_1_builder_ac7975cf4137f77fbee4748e795ff375caa1fa27779242b4902f7ae3bdd5c6d508}{Type}}
+, \mbox{\hyperlink{namespace_j_w_t_1_1_builder_ac7975cf4137f77fbee4748e795ff375cab8178dd7819d7531e93b9d8112c16e11}{Content\+Type}}
+, \mbox{\hyperlink{namespace_j_w_t_1_1_builder_ac7975cf4137f77fbee4748e795ff375ca4afa80e77a07f7488ce4d1bdd8c4977a}{Algorithm}}
+, \mbox{\hyperlink{namespace_j_w_t_1_1_builder_ac7975cf4137f77fbee4748e795ff375ca08fa271a89e6b0b323501821f98cf43f}{Key\+Id}}
+, \newline
+\mbox{\hyperlink{namespace_j_w_t_1_1_builder_ac7975cf4137f77fbee4748e795ff375ca356bd0b49c451cc7b8952406e181d3da}{X5u}}
+, \mbox{\hyperlink{namespace_j_w_t_1_1_builder_ac7975cf4137f77fbee4748e795ff375ca17eb252c0b5b7438e2a04b8a1e22fdb6}{X5c}}
+, \mbox{\hyperlink{namespace_j_w_t_1_1_builder_ac7975cf4137f77fbee4748e795ff375caff0b417b710990e10a4a0bbbd01153ab}{X5t}}
+ \}
+\begin{DoxyCompactList}\small\item\em All predefined parameter names specified by RFC 7515, see \href{https://tools.ietf.org/html/rfc7515}{\texttt{ https\+://tools.\+ietf.\+org/html/rfc7515}}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Enumeration Type Documentation}
+\Hypertarget{namespace_j_w_t_1_1_builder_a57c0cb26bf11005be5a0f47d50fce5d9}\label{namespace_j_w_t_1_1_builder_a57c0cb26bf11005be5a0f47d50fce5d9} 
+\index{JWT.Builder@{JWT.Builder}!ClaimName@{ClaimName}}
+\index{ClaimName@{ClaimName}!JWT.Builder@{JWT.Builder}}
+\doxysubsubsection{\texorpdfstring{ClaimName}{ClaimName}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{namespace_j_w_t_1_1_builder_a57c0cb26bf11005be5a0f47d50fce5d9}{JWT.\+Builder.\+Claim\+Name}}}
+
+
+
+All public claims of a \doxylink{namespace_j_w_t}{JWT} specified by IANA, see \href{https://www.iana.org/assignments/jwt/jwt.xhtml}{\texttt{ https\+://www.\+iana.\+org/assignments/jwt/jwt.\+xhtml}}. 
+
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Issuer@{Issuer}!JWT.Builder@{JWT.Builder}}\index{JWT.Builder@{JWT.Builder}!Issuer@{Issuer}}}\Hypertarget{namespace_j_w_t_1_1_builder_a57c0cb26bf11005be5a0f47d50fce5d9a51360304ea03557e79bdf5ff9cd2e234}\label{namespace_j_w_t_1_1_builder_a57c0cb26bf11005be5a0f47d50fce5d9a51360304ea03557e79bdf5ff9cd2e234} 
+Issuer&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Subject@{Subject}!JWT.Builder@{JWT.Builder}}\index{JWT.Builder@{JWT.Builder}!Subject@{Subject}}}\Hypertarget{namespace_j_w_t_1_1_builder_a57c0cb26bf11005be5a0f47d50fce5d9ac7892ebbb139886662c6f2fc8c450710}\label{namespace_j_w_t_1_1_builder_a57c0cb26bf11005be5a0f47d50fce5d9ac7892ebbb139886662c6f2fc8c450710} 
+Subject&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Audience@{Audience}!JWT.Builder@{JWT.Builder}}\index{JWT.Builder@{JWT.Builder}!Audience@{Audience}}}\Hypertarget{namespace_j_w_t_1_1_builder_a57c0cb26bf11005be5a0f47d50fce5d9aef1e6887c579ba81dcedc3f4e3793cd2}\label{namespace_j_w_t_1_1_builder_a57c0cb26bf11005be5a0f47d50fce5d9aef1e6887c579ba81dcedc3f4e3793cd2} 
+Audience&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{ExpirationTime@{ExpirationTime}!JWT.Builder@{JWT.Builder}}\index{JWT.Builder@{JWT.Builder}!ExpirationTime@{ExpirationTime}}}\Hypertarget{namespace_j_w_t_1_1_builder_a57c0cb26bf11005be5a0f47d50fce5d9a409876201639120b8ae48f35d409a9c9}\label{namespace_j_w_t_1_1_builder_a57c0cb26bf11005be5a0f47d50fce5d9a409876201639120b8ae48f35d409a9c9} 
+Expiration\+Time&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{NotBefore@{NotBefore}!JWT.Builder@{JWT.Builder}}\index{JWT.Builder@{JWT.Builder}!NotBefore@{NotBefore}}}\Hypertarget{namespace_j_w_t_1_1_builder_a57c0cb26bf11005be5a0f47d50fce5d9ae57c1a382aa4a985bea73749443b100f}\label{namespace_j_w_t_1_1_builder_a57c0cb26bf11005be5a0f47d50fce5d9ae57c1a382aa4a985bea73749443b100f} 
+Not\+Before&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{IssuedAt@{IssuedAt}!JWT.Builder@{JWT.Builder}}\index{JWT.Builder@{JWT.Builder}!IssuedAt@{IssuedAt}}}\Hypertarget{namespace_j_w_t_1_1_builder_a57c0cb26bf11005be5a0f47d50fce5d9a7e7a4abb7b6fd1f7ff9cf441b61f474b}\label{namespace_j_w_t_1_1_builder_a57c0cb26bf11005be5a0f47d50fce5d9a7e7a4abb7b6fd1f7ff9cf441b61f474b} 
+Issued\+At&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{JwtId@{JwtId}!JWT.Builder@{JWT.Builder}}\index{JWT.Builder@{JWT.Builder}!JwtId@{JwtId}}}\Hypertarget{namespace_j_w_t_1_1_builder_a57c0cb26bf11005be5a0f47d50fce5d9a5f77254989af9d3a0c838784e45b3828}\label{namespace_j_w_t_1_1_builder_a57c0cb26bf11005be5a0f47d50fce5d9a5f77254989af9d3a0c838784e45b3828} 
+Jwt\+Id&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{FullName@{FullName}!JWT.Builder@{JWT.Builder}}\index{JWT.Builder@{JWT.Builder}!FullName@{FullName}}}\Hypertarget{namespace_j_w_t_1_1_builder_a57c0cb26bf11005be5a0f47d50fce5d9ae309e678d77a80e722dd1695137a5a21}\label{namespace_j_w_t_1_1_builder_a57c0cb26bf11005be5a0f47d50fce5d9ae309e678d77a80e722dd1695137a5a21} 
+Full\+Name&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{GivenName@{GivenName}!JWT.Builder@{JWT.Builder}}\index{JWT.Builder@{JWT.Builder}!GivenName@{GivenName}}}\Hypertarget{namespace_j_w_t_1_1_builder_a57c0cb26bf11005be5a0f47d50fce5d9a4fbf07df82c9fbf379c690d11a44fd09}\label{namespace_j_w_t_1_1_builder_a57c0cb26bf11005be5a0f47d50fce5d9a4fbf07df82c9fbf379c690d11a44fd09} 
+Given\+Name&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{FamilyName@{FamilyName}!JWT.Builder@{JWT.Builder}}\index{JWT.Builder@{JWT.Builder}!FamilyName@{FamilyName}}}\Hypertarget{namespace_j_w_t_1_1_builder_a57c0cb26bf11005be5a0f47d50fce5d9a66afb8580305c04534c520eb243f3957}\label{namespace_j_w_t_1_1_builder_a57c0cb26bf11005be5a0f47d50fce5d9a66afb8580305c04534c520eb243f3957} 
+Family\+Name&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{MiddleName@{MiddleName}!JWT.Builder@{JWT.Builder}}\index{JWT.Builder@{JWT.Builder}!MiddleName@{MiddleName}}}\Hypertarget{namespace_j_w_t_1_1_builder_a57c0cb26bf11005be5a0f47d50fce5d9a856f4ac082419650d35060a19d3059dc}\label{namespace_j_w_t_1_1_builder_a57c0cb26bf11005be5a0f47d50fce5d9a856f4ac082419650d35060a19d3059dc} 
+Middle\+Name&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{CasualName@{CasualName}!JWT.Builder@{JWT.Builder}}\index{JWT.Builder@{JWT.Builder}!CasualName@{CasualName}}}\Hypertarget{namespace_j_w_t_1_1_builder_a57c0cb26bf11005be5a0f47d50fce5d9a6d191348a7664e0827ef6e2055a9b66e}\label{namespace_j_w_t_1_1_builder_a57c0cb26bf11005be5a0f47d50fce5d9a6d191348a7664e0827ef6e2055a9b66e} 
+Casual\+Name&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{PreferredUsername@{PreferredUsername}!JWT.Builder@{JWT.Builder}}\index{JWT.Builder@{JWT.Builder}!PreferredUsername@{PreferredUsername}}}\Hypertarget{namespace_j_w_t_1_1_builder_a57c0cb26bf11005be5a0f47d50fce5d9a3d63751ddecded1e0c57847376fb0843}\label{namespace_j_w_t_1_1_builder_a57c0cb26bf11005be5a0f47d50fce5d9a3d63751ddecded1e0c57847376fb0843} 
+Preferred\+Username&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{ProfilePageUrl@{ProfilePageUrl}!JWT.Builder@{JWT.Builder}}\index{JWT.Builder@{JWT.Builder}!ProfilePageUrl@{ProfilePageUrl}}}\Hypertarget{namespace_j_w_t_1_1_builder_a57c0cb26bf11005be5a0f47d50fce5d9ab929c906c34d6f7988ba8d8eddaea3f1}\label{namespace_j_w_t_1_1_builder_a57c0cb26bf11005be5a0f47d50fce5d9ab929c906c34d6f7988ba8d8eddaea3f1} 
+Profile\+Page\+Url&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{ProfilePictureUrl@{ProfilePictureUrl}!JWT.Builder@{JWT.Builder}}\index{JWT.Builder@{JWT.Builder}!ProfilePictureUrl@{ProfilePictureUrl}}}\Hypertarget{namespace_j_w_t_1_1_builder_a57c0cb26bf11005be5a0f47d50fce5d9a10b19049aab3634a555cecb2f33255eb}\label{namespace_j_w_t_1_1_builder_a57c0cb26bf11005be5a0f47d50fce5d9a10b19049aab3634a555cecb2f33255eb} 
+Profile\+Picture\+Url&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Website@{Website}!JWT.Builder@{JWT.Builder}}\index{JWT.Builder@{JWT.Builder}!Website@{Website}}}\Hypertarget{namespace_j_w_t_1_1_builder_a57c0cb26bf11005be5a0f47d50fce5d9a15bbb9d0bbf25e8d2978de1168c749dc}\label{namespace_j_w_t_1_1_builder_a57c0cb26bf11005be5a0f47d50fce5d9a15bbb9d0bbf25e8d2978de1168c749dc} 
+Website&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{PreferredEmail@{PreferredEmail}!JWT.Builder@{JWT.Builder}}\index{JWT.Builder@{JWT.Builder}!PreferredEmail@{PreferredEmail}}}\Hypertarget{namespace_j_w_t_1_1_builder_a57c0cb26bf11005be5a0f47d50fce5d9ad88e427572d74c6ce3cb6aa229281a7a}\label{namespace_j_w_t_1_1_builder_a57c0cb26bf11005be5a0f47d50fce5d9ad88e427572d74c6ce3cb6aa229281a7a} 
+Preferred\+Email&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{VerifiedEmail@{VerifiedEmail}!JWT.Builder@{JWT.Builder}}\index{JWT.Builder@{JWT.Builder}!VerifiedEmail@{VerifiedEmail}}}\Hypertarget{namespace_j_w_t_1_1_builder_a57c0cb26bf11005be5a0f47d50fce5d9a941ac86fb0b7db8c8c548ff28d91f79a}\label{namespace_j_w_t_1_1_builder_a57c0cb26bf11005be5a0f47d50fce5d9a941ac86fb0b7db8c8c548ff28d91f79a} 
+Verified\+Email&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Gender@{Gender}!JWT.Builder@{JWT.Builder}}\index{JWT.Builder@{JWT.Builder}!Gender@{Gender}}}\Hypertarget{namespace_j_w_t_1_1_builder_a57c0cb26bf11005be5a0f47d50fce5d9a019ec3132cdf8ee0f2e2a75cf5d3e459}\label{namespace_j_w_t_1_1_builder_a57c0cb26bf11005be5a0f47d50fce5d9a019ec3132cdf8ee0f2e2a75cf5d3e459} 
+Gender&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Birthday@{Birthday}!JWT.Builder@{JWT.Builder}}\index{JWT.Builder@{JWT.Builder}!Birthday@{Birthday}}}\Hypertarget{namespace_j_w_t_1_1_builder_a57c0cb26bf11005be5a0f47d50fce5d9aaac772216aecbeca0e86d06671fe985a}\label{namespace_j_w_t_1_1_builder_a57c0cb26bf11005be5a0f47d50fce5d9aaac772216aecbeca0e86d06671fe985a} 
+Birthday&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{TimeZone@{TimeZone}!JWT.Builder@{JWT.Builder}}\index{JWT.Builder@{JWT.Builder}!TimeZone@{TimeZone}}}\Hypertarget{namespace_j_w_t_1_1_builder_a57c0cb26bf11005be5a0f47d50fce5d9ae775675ba2acbaac5c1142393c8a4339}\label{namespace_j_w_t_1_1_builder_a57c0cb26bf11005be5a0f47d50fce5d9ae775675ba2acbaac5c1142393c8a4339} 
+Time\+Zone&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Locale@{Locale}!JWT.Builder@{JWT.Builder}}\index{JWT.Builder@{JWT.Builder}!Locale@{Locale}}}\Hypertarget{namespace_j_w_t_1_1_builder_a57c0cb26bf11005be5a0f47d50fce5d9a911f0f24bdce6808f4614d6a263b143b}\label{namespace_j_w_t_1_1_builder_a57c0cb26bf11005be5a0f47d50fce5d9a911f0f24bdce6808f4614d6a263b143b} 
+Locale&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{PreferredPhoneNumber@{PreferredPhoneNumber}!JWT.Builder@{JWT.Builder}}\index{JWT.Builder@{JWT.Builder}!PreferredPhoneNumber@{PreferredPhoneNumber}}}\Hypertarget{namespace_j_w_t_1_1_builder_a57c0cb26bf11005be5a0f47d50fce5d9adb9a80a45930968e9446dd6dcf49e7b2}\label{namespace_j_w_t_1_1_builder_a57c0cb26bf11005be5a0f47d50fce5d9adb9a80a45930968e9446dd6dcf49e7b2} 
+Preferred\+Phone\+Number&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{VerifiedPhoneNumber@{VerifiedPhoneNumber}!JWT.Builder@{JWT.Builder}}\index{JWT.Builder@{JWT.Builder}!VerifiedPhoneNumber@{VerifiedPhoneNumber}}}\Hypertarget{namespace_j_w_t_1_1_builder_a57c0cb26bf11005be5a0f47d50fce5d9ab56995c9fa08fee82d86d1aa378025e3}\label{namespace_j_w_t_1_1_builder_a57c0cb26bf11005be5a0f47d50fce5d9ab56995c9fa08fee82d86d1aa378025e3} 
+Verified\+Phone\+Number&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Address@{Address}!JWT.Builder@{JWT.Builder}}\index{JWT.Builder@{JWT.Builder}!Address@{Address}}}\Hypertarget{namespace_j_w_t_1_1_builder_a57c0cb26bf11005be5a0f47d50fce5d9add7bf230fde8d4836917806aff6a6b27}\label{namespace_j_w_t_1_1_builder_a57c0cb26bf11005be5a0f47d50fce5d9add7bf230fde8d4836917806aff6a6b27} 
+Address&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{UpdatedAt@{UpdatedAt}!JWT.Builder@{JWT.Builder}}\index{JWT.Builder@{JWT.Builder}!UpdatedAt@{UpdatedAt}}}\Hypertarget{namespace_j_w_t_1_1_builder_a57c0cb26bf11005be5a0f47d50fce5d9a0b2a8a8fed13280ecd74f7545bc2b962}\label{namespace_j_w_t_1_1_builder_a57c0cb26bf11005be5a0f47d50fce5d9a0b2a8a8fed13280ecd74f7545bc2b962} 
+Updated\+At&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{AuthorizedParty@{AuthorizedParty}!JWT.Builder@{JWT.Builder}}\index{JWT.Builder@{JWT.Builder}!AuthorizedParty@{AuthorizedParty}}}\Hypertarget{namespace_j_w_t_1_1_builder_a57c0cb26bf11005be5a0f47d50fce5d9a8da1ffae24c762bb5503cf311e6dc769}\label{namespace_j_w_t_1_1_builder_a57c0cb26bf11005be5a0f47d50fce5d9a8da1ffae24c762bb5503cf311e6dc769} 
+Authorized\+Party&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Nonce@{Nonce}!JWT.Builder@{JWT.Builder}}\index{JWT.Builder@{JWT.Builder}!Nonce@{Nonce}}}\Hypertarget{namespace_j_w_t_1_1_builder_a57c0cb26bf11005be5a0f47d50fce5d9a3a90ac83535fb1f3d071e8beb25aa956}\label{namespace_j_w_t_1_1_builder_a57c0cb26bf11005be5a0f47d50fce5d9a3a90ac83535fb1f3d071e8beb25aa956} 
+Nonce&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{AuthenticationTime@{AuthenticationTime}!JWT.Builder@{JWT.Builder}}\index{JWT.Builder@{JWT.Builder}!AuthenticationTime@{AuthenticationTime}}}\Hypertarget{namespace_j_w_t_1_1_builder_a57c0cb26bf11005be5a0f47d50fce5d9a499fae991c2c87047e81700e81332850}\label{namespace_j_w_t_1_1_builder_a57c0cb26bf11005be5a0f47d50fce5d9a499fae991c2c87047e81700e81332850} 
+Authentication\+Time&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{AccessTokenHash@{AccessTokenHash}!JWT.Builder@{JWT.Builder}}\index{JWT.Builder@{JWT.Builder}!AccessTokenHash@{AccessTokenHash}}}\Hypertarget{namespace_j_w_t_1_1_builder_a57c0cb26bf11005be5a0f47d50fce5d9ace1c01ff2b2760c036c92fa974384249}\label{namespace_j_w_t_1_1_builder_a57c0cb26bf11005be5a0f47d50fce5d9ace1c01ff2b2760c036c92fa974384249} 
+Access\+Token\+Hash&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{CodeHashValue@{CodeHashValue}!JWT.Builder@{JWT.Builder}}\index{JWT.Builder@{JWT.Builder}!CodeHashValue@{CodeHashValue}}}\Hypertarget{namespace_j_w_t_1_1_builder_a57c0cb26bf11005be5a0f47d50fce5d9a6155c3dcee6acd0ce0f5657d93374768}\label{namespace_j_w_t_1_1_builder_a57c0cb26bf11005be5a0f47d50fce5d9a6155c3dcee6acd0ce0f5657d93374768} 
+Code\+Hash\+Value&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Acr@{Acr}!JWT.Builder@{JWT.Builder}}\index{JWT.Builder@{JWT.Builder}!Acr@{Acr}}}\Hypertarget{namespace_j_w_t_1_1_builder_a57c0cb26bf11005be5a0f47d50fce5d9a089627148b6465032f5034c396ef5a8b}\label{namespace_j_w_t_1_1_builder_a57c0cb26bf11005be5a0f47d50fce5d9a089627148b6465032f5034c396ef5a8b} 
+Acr&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Amr@{Amr}!JWT.Builder@{JWT.Builder}}\index{JWT.Builder@{JWT.Builder}!Amr@{Amr}}}\Hypertarget{namespace_j_w_t_1_1_builder_a57c0cb26bf11005be5a0f47d50fce5d9a2cec1d2d096bef119c9699e03b7220b3}\label{namespace_j_w_t_1_1_builder_a57c0cb26bf11005be5a0f47d50fce5d9a2cec1d2d096bef119c9699e03b7220b3} 
+Amr&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{PublicKey@{PublicKey}!JWT.Builder@{JWT.Builder}}\index{JWT.Builder@{JWT.Builder}!PublicKey@{PublicKey}}}\Hypertarget{namespace_j_w_t_1_1_builder_a57c0cb26bf11005be5a0f47d50fce5d9aaddbd28a071e14f428d003c79304dd18}\label{namespace_j_w_t_1_1_builder_a57c0cb26bf11005be5a0f47d50fce5d9aaddbd28a071e14f428d003c79304dd18} 
+Public\+Key&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Confirmation@{Confirmation}!JWT.Builder@{JWT.Builder}}\index{JWT.Builder@{JWT.Builder}!Confirmation@{Confirmation}}}\Hypertarget{namespace_j_w_t_1_1_builder_a57c0cb26bf11005be5a0f47d50fce5d9af4d1ea475eaa85102e2b4e6d95da84bd}\label{namespace_j_w_t_1_1_builder_a57c0cb26bf11005be5a0f47d50fce5d9af4d1ea475eaa85102e2b4e6d95da84bd} 
+Confirmation&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{SipFromTag@{SipFromTag}!JWT.Builder@{JWT.Builder}}\index{JWT.Builder@{JWT.Builder}!SipFromTag@{SipFromTag}}}\Hypertarget{namespace_j_w_t_1_1_builder_a57c0cb26bf11005be5a0f47d50fce5d9ada03ab89a6f3e306d21773699624c66d}\label{namespace_j_w_t_1_1_builder_a57c0cb26bf11005be5a0f47d50fce5d9ada03ab89a6f3e306d21773699624c66d} 
+Sip\+From\+Tag&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{SipDate@{SipDate}!JWT.Builder@{JWT.Builder}}\index{JWT.Builder@{JWT.Builder}!SipDate@{SipDate}}}\Hypertarget{namespace_j_w_t_1_1_builder_a57c0cb26bf11005be5a0f47d50fce5d9a66deff01785d43bd406921a690a82bcc}\label{namespace_j_w_t_1_1_builder_a57c0cb26bf11005be5a0f47d50fce5d9a66deff01785d43bd406921a690a82bcc} 
+Sip\+Date&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{SipCallId@{SipCallId}!JWT.Builder@{JWT.Builder}}\index{JWT.Builder@{JWT.Builder}!SipCallId@{SipCallId}}}\Hypertarget{namespace_j_w_t_1_1_builder_a57c0cb26bf11005be5a0f47d50fce5d9a4f81b2d6bdbce84f4a40124fb432a949}\label{namespace_j_w_t_1_1_builder_a57c0cb26bf11005be5a0f47d50fce5d9a4f81b2d6bdbce84f4a40124fb432a949} 
+Sip\+Call\+Id&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{SipCseqNumber@{SipCseqNumber}!JWT.Builder@{JWT.Builder}}\index{JWT.Builder@{JWT.Builder}!SipCseqNumber@{SipCseqNumber}}}\Hypertarget{namespace_j_w_t_1_1_builder_a57c0cb26bf11005be5a0f47d50fce5d9adc2d2d2787987a05f5202f872b853a86}\label{namespace_j_w_t_1_1_builder_a57c0cb26bf11005be5a0f47d50fce5d9adc2d2d2787987a05f5202f872b853a86} 
+Sip\+Cseq\+Number&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{SipViaBranch@{SipViaBranch}!JWT.Builder@{JWT.Builder}}\index{JWT.Builder@{JWT.Builder}!SipViaBranch@{SipViaBranch}}}\Hypertarget{namespace_j_w_t_1_1_builder_a57c0cb26bf11005be5a0f47d50fce5d9ac7064bd64988344d5bc950dff8fddd1b}\label{namespace_j_w_t_1_1_builder_a57c0cb26bf11005be5a0f47d50fce5d9ac7064bd64988344d5bc950dff8fddd1b} 
+Sip\+Via\+Branch&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{OriginatingIdentityString@{OriginatingIdentityString}!JWT.Builder@{JWT.Builder}}\index{JWT.Builder@{JWT.Builder}!OriginatingIdentityString@{OriginatingIdentityString}}}\Hypertarget{namespace_j_w_t_1_1_builder_a57c0cb26bf11005be5a0f47d50fce5d9a3ff552c553274b1b6da334f4881b352d}\label{namespace_j_w_t_1_1_builder_a57c0cb26bf11005be5a0f47d50fce5d9a3ff552c553274b1b6da334f4881b352d} 
+Originating\+Identity\+String&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{DestinationIdentityString@{DestinationIdentityString}!JWT.Builder@{JWT.Builder}}\index{JWT.Builder@{JWT.Builder}!DestinationIdentityString@{DestinationIdentityString}}}\Hypertarget{namespace_j_w_t_1_1_builder_a57c0cb26bf11005be5a0f47d50fce5d9acf232eeee42dc758ae783c155fb82522}\label{namespace_j_w_t_1_1_builder_a57c0cb26bf11005be5a0f47d50fce5d9acf232eeee42dc758ae783c155fb82522} 
+Destination\+Identity\+String&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{MediaKeyFingerprintString@{MediaKeyFingerprintString}!JWT.Builder@{JWT.Builder}}\index{JWT.Builder@{JWT.Builder}!MediaKeyFingerprintString@{MediaKeyFingerprintString}}}\Hypertarget{namespace_j_w_t_1_1_builder_a57c0cb26bf11005be5a0f47d50fce5d9ac6d67a90b043768b45ef2e4a12f69336}\label{namespace_j_w_t_1_1_builder_a57c0cb26bf11005be5a0f47d50fce5d9ac6d67a90b043768b45ef2e4a12f69336} 
+Media\+Key\+Fingerprint\+String&\\
+\hline
+
+\end{DoxyEnumFields}
+\Hypertarget{namespace_j_w_t_1_1_builder_ac7975cf4137f77fbee4748e795ff375c}\label{namespace_j_w_t_1_1_builder_ac7975cf4137f77fbee4748e795ff375c} 
+\index{JWT.Builder@{JWT.Builder}!HeaderName@{HeaderName}}
+\index{HeaderName@{HeaderName}!JWT.Builder@{JWT.Builder}}
+\doxysubsubsection{\texorpdfstring{HeaderName}{HeaderName}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{namespace_j_w_t_1_1_builder_ac7975cf4137f77fbee4748e795ff375c}{JWT.\+Builder.\+Header\+Name}}}
+
+
+
+All predefined parameter names specified by RFC 7515, see \href{https://tools.ietf.org/html/rfc7515}{\texttt{ https\+://tools.\+ietf.\+org/html/rfc7515}}. 
+
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Type@{Type}!JWT.Builder@{JWT.Builder}}\index{JWT.Builder@{JWT.Builder}!Type@{Type}}}\Hypertarget{namespace_j_w_t_1_1_builder_ac7975cf4137f77fbee4748e795ff375caa1fa27779242b4902f7ae3bdd5c6d508}\label{namespace_j_w_t_1_1_builder_ac7975cf4137f77fbee4748e795ff375caa1fa27779242b4902f7ae3bdd5c6d508} 
+Type&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{ContentType@{ContentType}!JWT.Builder@{JWT.Builder}}\index{JWT.Builder@{JWT.Builder}!ContentType@{ContentType}}}\Hypertarget{namespace_j_w_t_1_1_builder_ac7975cf4137f77fbee4748e795ff375cab8178dd7819d7531e93b9d8112c16e11}\label{namespace_j_w_t_1_1_builder_ac7975cf4137f77fbee4748e795ff375cab8178dd7819d7531e93b9d8112c16e11} 
+Content\+Type&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Algorithm@{Algorithm}!JWT.Builder@{JWT.Builder}}\index{JWT.Builder@{JWT.Builder}!Algorithm@{Algorithm}}}\Hypertarget{namespace_j_w_t_1_1_builder_ac7975cf4137f77fbee4748e795ff375ca4afa80e77a07f7488ce4d1bdd8c4977a}\label{namespace_j_w_t_1_1_builder_ac7975cf4137f77fbee4748e795ff375ca4afa80e77a07f7488ce4d1bdd8c4977a} 
+Algorithm&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{KeyId@{KeyId}!JWT.Builder@{JWT.Builder}}\index{JWT.Builder@{JWT.Builder}!KeyId@{KeyId}}}\Hypertarget{namespace_j_w_t_1_1_builder_ac7975cf4137f77fbee4748e795ff375ca08fa271a89e6b0b323501821f98cf43f}\label{namespace_j_w_t_1_1_builder_ac7975cf4137f77fbee4748e795ff375ca08fa271a89e6b0b323501821f98cf43f} 
+Key\+Id&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{X5u@{X5u}!JWT.Builder@{JWT.Builder}}\index{JWT.Builder@{JWT.Builder}!X5u@{X5u}}}\Hypertarget{namespace_j_w_t_1_1_builder_ac7975cf4137f77fbee4748e795ff375ca356bd0b49c451cc7b8952406e181d3da}\label{namespace_j_w_t_1_1_builder_ac7975cf4137f77fbee4748e795ff375ca356bd0b49c451cc7b8952406e181d3da} 
+X5u&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{X5c@{X5c}!JWT.Builder@{JWT.Builder}}\index{JWT.Builder@{JWT.Builder}!X5c@{X5c}}}\Hypertarget{namespace_j_w_t_1_1_builder_ac7975cf4137f77fbee4748e795ff375ca17eb252c0b5b7438e2a04b8a1e22fdb6}\label{namespace_j_w_t_1_1_builder_ac7975cf4137f77fbee4748e795ff375ca17eb252c0b5b7438e2a04b8a1e22fdb6} 
+X5c&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{X5t@{X5t}!JWT.Builder@{JWT.Builder}}\index{JWT.Builder@{JWT.Builder}!X5t@{X5t}}}\Hypertarget{namespace_j_w_t_1_1_builder_ac7975cf4137f77fbee4748e795ff375caff0b417b710990e10a4a0bbbd01153ab}\label{namespace_j_w_t_1_1_builder_ac7975cf4137f77fbee4748e795ff375caff0b417b710990e10a4a0bbbd01153ab} 
+X5t&\\
+\hline
+
+\end{DoxyEnumFields}

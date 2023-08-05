@@ -1,0 +1,186 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.7" xml:lang="en-US">
+  <compounddef id="interface_openlabs_1_1_mgcxm_1_1_net_1_1_i_mgcxm_http_response_modifiable" kind="interface" language="C#" prot="public">
+    <compoundname>Openlabs::Mgcxm::Net::IMgcxmHttpResponseModifiable</compoundname>
+    <derivedcompoundref refid="class_openlabs_1_1_mgcxm_1_1_net_1_1_mgcxm_http_response" prot="public" virt="non-virtual">Openlabs.Mgcxm.Net.MgcxmHttpResponse</derivedcompoundref>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="interface_openlabs_1_1_mgcxm_1_1_net_1_1_i_mgcxm_http_response_modifiable_1a3869580b496b637b36dec73deee2709d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="interface_openlabs_1_1_mgcxm_1_1_net_1_1_i_mgcxm_http_response_modifiable" kindref="compound">IMgcxmHttpResponseModifiable</ref></type>
+        <definition>IMgcxmHttpResponseModifiable Openlabs.Mgcxm.Net.IMgcxmHttpResponseModifiable.Status</definition>
+        <argsstring>(HttpStatusCodes statusCode)</argsstring>
+        <name>Status</name>
+        <qualifiedname>Openlabs.Mgcxm.Net.IMgcxmHttpResponseModifiable.Status</qualifiedname>
+        <reimplementedby refid="class_openlabs_1_1_mgcxm_1_1_net_1_1_mgcxm_http_response_1adc1b22b68bfa0cb2b9f0d5c86d23cd07">Status</reimplementedby>
+        <param>
+          <type><ref refid="namespace_openlabs_1_1_mgcxm_1_1_net_1a3465bc704788a5ead88ca632927a5dfd" kindref="member">HttpStatusCodes</ref></type>
+          <declname>statusCode</declname>
+        </param>
+        <briefdescription>
+<para>Sets the HTTP status code of the response. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/adenf/RiderProjects/Openlabs.Mgcxm/Openlabs.Mgcxm/Net/Http/MgcxmHttpResponse.cs" line="164" column="34"/>
+      </memberdef>
+      <memberdef kind="function" id="interface_openlabs_1_1_mgcxm_1_1_net_1_1_i_mgcxm_http_response_modifiable_1a37941903d9b7a59d6a0657e043f3677b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int Openlabs.Mgcxm.Net.IMgcxmHttpResponseModifiable.GetStatus</definition>
+        <argsstring>()</argsstring>
+        <name>GetStatus</name>
+        <qualifiedname>Openlabs.Mgcxm.Net.IMgcxmHttpResponseModifiable.GetStatus</qualifiedname>
+        <reimplementedby refid="class_openlabs_1_1_mgcxm_1_1_net_1_1_mgcxm_http_response_1a81609d5c181c78f6976ec9910f172fe4">GetStatus</reimplementedby>
+        <briefdescription>
+<para>Gets the HTTP status code of the response. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/adenf/RiderProjects/Openlabs.Mgcxm/Openlabs.Mgcxm/Net/Http/MgcxmHttpResponse.cs" line="169" column="9"/>
+      </memberdef>
+      <memberdef kind="function" id="interface_openlabs_1_1_mgcxm_1_1_net_1_1_i_mgcxm_http_response_modifiable_1a4a98f316f506db0fc3fa025eab572671" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="interface_openlabs_1_1_mgcxm_1_1_net_1_1_i_mgcxm_http_response_modifiable" kindref="compound">IMgcxmHttpResponseModifiable</ref></type>
+        <definition>IMgcxmHttpResponseModifiable Openlabs.Mgcxm.Net.IMgcxmHttpResponseModifiable.Header</definition>
+        <argsstring>(string key, string value)</argsstring>
+        <name>Header</name>
+        <qualifiedname>Openlabs.Mgcxm.Net.IMgcxmHttpResponseModifiable.Header</qualifiedname>
+        <reimplementedby refid="class_openlabs_1_1_mgcxm_1_1_net_1_1_mgcxm_http_response_1a6e27b78714af3536741a6f5f59143f90">Header</reimplementedby>
+        <param>
+          <type>string</type>
+          <declname>key</declname>
+        </param>
+        <param>
+          <type>string</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+<para>Sets a header in the response. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/adenf/RiderProjects/Openlabs.Mgcxm/Openlabs.Mgcxm/Net/Http/MgcxmHttpResponse.cs" line="174" column="34"/>
+      </memberdef>
+      <memberdef kind="function" id="interface_openlabs_1_1_mgcxm_1_1_net_1_1_i_mgcxm_http_response_modifiable_1a41f4e421bfd86ae15e8095cd71a13eb3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="interface_openlabs_1_1_mgcxm_1_1_net_1_1_i_mgcxm_http_response_modifiable" kindref="compound">IMgcxmHttpResponseModifiable</ref></type>
+        <definition>IMgcxmHttpResponseModifiable Openlabs.Mgcxm.Net.IMgcxmHttpResponseModifiable.Content</definition>
+        <argsstring>(HttpContentTypes contentType, byte[] data)</argsstring>
+        <name>Content</name>
+        <qualifiedname>Openlabs.Mgcxm.Net.IMgcxmHttpResponseModifiable.Content</qualifiedname>
+        <reimplementedby refid="class_openlabs_1_1_mgcxm_1_1_net_1_1_mgcxm_http_response_1afcd126ac0006140d7e35896923360eac">Content</reimplementedby>
+        <param>
+          <type><ref refid="namespace_openlabs_1_1_mgcxm_1_1_net_1a0190ca5d59602d92653be09f01e3fc18" kindref="member">HttpContentTypes</ref></type>
+          <declname>contentType</declname>
+        </param>
+        <param>
+          <type>byte[]</type>
+          <declname>data</declname>
+        </param>
+        <briefdescription>
+<para>Sets the content of the response with a byte array and content type. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/adenf/RiderProjects/Openlabs.Mgcxm/Openlabs.Mgcxm/Net/Http/MgcxmHttpResponse.cs" line="179" column="34"/>
+        <referencedby refid="class_openlabs_1_1_mgcxm_1_1_tests_1_1_test_server_1_1_version_check_controller_1a87a00f05abc5f21b88ad3ffe8b4d2b94" compoundref="_test_server_8cs" startline="48" endline="51">Openlabs.Mgcxm.Tests.TestServer.VersionCheckController.HttpGet_VersionCheckV1</referencedby>
+        <referencedby refid="class_openlabs_1_1_mgcxm_1_1_tests_1_1_test_server_1_1_platform_login_controller_1a5b3325c3d254528a9b34721d88d40a46" compoundref="_test_server_8cs" startline="57" endline="69">Openlabs.Mgcxm.Tests.TestServer.PlatformLoginController.HttpPost_PlatformLoginV2</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interface_openlabs_1_1_mgcxm_1_1_net_1_1_i_mgcxm_http_response_modifiable_1a8a62fbd638fc4bfbcf7538ea4a9774b5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="interface_openlabs_1_1_mgcxm_1_1_net_1_1_i_mgcxm_http_response_modifiable" kindref="compound">IMgcxmHttpResponseModifiable</ref></type>
+        <definition>IMgcxmHttpResponseModifiable Openlabs.Mgcxm.Net.IMgcxmHttpResponseModifiable.Content</definition>
+        <argsstring>(HttpContentTypes contentType, string data)</argsstring>
+        <name>Content</name>
+        <qualifiedname>Openlabs.Mgcxm.Net.IMgcxmHttpResponseModifiable.Content</qualifiedname>
+        <reimplementedby refid="class_openlabs_1_1_mgcxm_1_1_net_1_1_mgcxm_http_response_1a7f8815a9b0b772f123b9ad59b3dd3037">Content</reimplementedby>
+        <param>
+          <type><ref refid="namespace_openlabs_1_1_mgcxm_1_1_net_1a0190ca5d59602d92653be09f01e3fc18" kindref="member">HttpContentTypes</ref></type>
+          <declname>contentType</declname>
+        </param>
+        <param>
+          <type>string</type>
+          <declname>data</declname>
+        </param>
+        <briefdescription>
+<para>Sets the content of the response with a string data and content type. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/adenf/RiderProjects/Openlabs.Mgcxm/Openlabs.Mgcxm/Net/Http/MgcxmHttpResponse.cs" line="184" column="34"/>
+      </memberdef>
+      <memberdef kind="function" id="interface_openlabs_1_1_mgcxm_1_1_net_1_1_i_mgcxm_http_response_modifiable_1a3912590bde0582fcf16f45ddb6100b4d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="interface_openlabs_1_1_mgcxm_1_1_net_1_1_i_mgcxm_http_response_modifiable" kindref="compound">IMgcxmHttpResponseModifiable</ref></type>
+        <definition>IMgcxmHttpResponseModifiable Openlabs.Mgcxm.Net.IMgcxmHttpResponseModifiable.Content&lt; T &gt;</definition>
+        <argsstring>(T data)</argsstring>
+        <name>Content&lt; T &gt;</name>
+        <qualifiedname>Openlabs.Mgcxm.Net.IMgcxmHttpResponseModifiable.Content&lt; T &gt;</qualifiedname>
+        <reimplementedby refid="class_openlabs_1_1_mgcxm_1_1_net_1_1_mgcxm_http_response_1acc5744c7743a7d109c1e8a3b95c44eb5">Content&lt; T &gt;</reimplementedby>
+        <param>
+          <type>T</type>
+          <declname>data</declname>
+        </param>
+        <briefdescription>
+<para>Sets the content of the response by serializing an object to JSON and setting content type as JSON. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/adenf/RiderProjects/Openlabs.Mgcxm/Openlabs.Mgcxm/Net/Http/MgcxmHttpResponse.cs" line="189" column="5"/>
+      </memberdef>
+      <memberdef kind="function" id="interface_openlabs_1_1_mgcxm_1_1_net_1_1_i_mgcxm_http_response_modifiable_1a0a22ce913afef85a98ecf2e938141738" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="interface_openlabs_1_1_mgcxm_1_1_net_1_1_i_mgcxm_http_response_modifiable" kindref="compound">IMgcxmHttpResponseModifiable</ref></type>
+        <definition>IMgcxmHttpResponseModifiable Openlabs.Mgcxm.Net.IMgcxmHttpResponseModifiable.File</definition>
+        <argsstring>(string path)</argsstring>
+        <name>File</name>
+        <qualifiedname>Openlabs.Mgcxm.Net.IMgcxmHttpResponseModifiable.File</qualifiedname>
+        <reimplementedby refid="class_openlabs_1_1_mgcxm_1_1_net_1_1_mgcxm_http_response_1a98f1581ab3108f9779ed9b8163782cdc">File</reimplementedby>
+        <param>
+          <type>string</type>
+          <declname>path</declname>
+        </param>
+        <briefdescription>
+<para>Sets the content of the response from a file on disk. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/adenf/RiderProjects/Openlabs.Mgcxm/Openlabs.Mgcxm/Net/Http/MgcxmHttpResponse.cs" line="194" column="34"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Represents an interface for modifying an HTTP response. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>Openlabs.Mgcxm.Net.IMgcxmHttpResponseModifiable</label>
+        <link refid="interface_openlabs_1_1_mgcxm_1_1_net_1_1_i_mgcxm_http_response_modifiable"/>
+      </node>
+      <node id="2">
+        <label>Openlabs.Mgcxm.Net.MgcxmHttpResponse</label>
+        <link refid="class_openlabs_1_1_mgcxm_1_1_net_1_1_mgcxm_http_response"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <location file="C:/Users/adenf/RiderProjects/Openlabs.Mgcxm/Openlabs.Mgcxm/Net/Http/MgcxmHttpResponse.cs" line="159" column="18" bodyfile="C:/Users/adenf/RiderProjects/Openlabs.Mgcxm/Openlabs.Mgcxm/Net/Http/MgcxmHttpResponse.cs" bodystart="160" bodyend="195"/>
+    <listofallmembers>
+      <member refid="interface_openlabs_1_1_mgcxm_1_1_net_1_1_i_mgcxm_http_response_modifiable_1a41f4e421bfd86ae15e8095cd71a13eb3" prot="public" virt="non-virtual"><scope>Openlabs::Mgcxm::Net::IMgcxmHttpResponseModifiable</scope><name>Content</name></member>
+      <member refid="interface_openlabs_1_1_mgcxm_1_1_net_1_1_i_mgcxm_http_response_modifiable_1a8a62fbd638fc4bfbcf7538ea4a9774b5" prot="public" virt="non-virtual"><scope>Openlabs::Mgcxm::Net::IMgcxmHttpResponseModifiable</scope><name>Content</name></member>
+      <member refid="interface_openlabs_1_1_mgcxm_1_1_net_1_1_i_mgcxm_http_response_modifiable_1a3912590bde0582fcf16f45ddb6100b4d" prot="public" virt="non-virtual"><scope>Openlabs::Mgcxm::Net::IMgcxmHttpResponseModifiable</scope><name>Content&lt; T &gt;</name></member>
+      <member refid="interface_openlabs_1_1_mgcxm_1_1_net_1_1_i_mgcxm_http_response_modifiable_1a0a22ce913afef85a98ecf2e938141738" prot="public" virt="non-virtual"><scope>Openlabs::Mgcxm::Net::IMgcxmHttpResponseModifiable</scope><name>File</name></member>
+      <member refid="interface_openlabs_1_1_mgcxm_1_1_net_1_1_i_mgcxm_http_response_modifiable_1a37941903d9b7a59d6a0657e043f3677b" prot="public" virt="non-virtual"><scope>Openlabs::Mgcxm::Net::IMgcxmHttpResponseModifiable</scope><name>GetStatus</name></member>
+      <member refid="interface_openlabs_1_1_mgcxm_1_1_net_1_1_i_mgcxm_http_response_modifiable_1a4a98f316f506db0fc3fa025eab572671" prot="public" virt="non-virtual"><scope>Openlabs::Mgcxm::Net::IMgcxmHttpResponseModifiable</scope><name>Header</name></member>
+      <member refid="interface_openlabs_1_1_mgcxm_1_1_net_1_1_i_mgcxm_http_response_modifiable_1a3869580b496b637b36dec73deee2709d" prot="public" virt="non-virtual"><scope>Openlabs::Mgcxm::Net::IMgcxmHttpResponseModifiable</scope><name>Status</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

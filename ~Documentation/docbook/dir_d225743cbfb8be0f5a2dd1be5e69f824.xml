@@ -1,0 +1,33 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_dir_d225743cbfb8be0f5a2dd1be5e69f824" xml:lang="en-US">
+<title>C:/Users/adenf/RiderProjects/Openlabs.Mgcxm/Openlabs.Mgcxm/Assets Directory Reference</title>
+<indexterm><primary>C:/Users/adenf/RiderProjects/Openlabs.Mgcxm/Openlabs.Mgcxm/Assets Directory Reference</primary></indexterm>
+Directory dependency graph for Assets:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="dir_d225743cbfb8be0f5a2dd1be5e69f824_dep.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+<simplesect>
+    <title>Files    </title>
+        <itemizedlist>
+            <listitem><para>file <link linkend="__asset_manager_8cs">AssetManager.cs</link></para>
+</listitem>
+            <listitem><para>file <link linkend="__d_t_o_json_file_asset_8cs">DTOJsonFileAsset.cs</link></para>
+</listitem>
+            <listitem><para>file <link linkend="__file_asset_8cs">FileAsset.cs</link></para>
+</listitem>
+            <listitem><para>file <link linkend="__file_flag_asset_8cs">FileFlagAsset.cs</link></para>
+</listitem>
+            <listitem><para>file <link linkend="__json_file_asset_8cs">JsonFileAsset.cs</link></para>
+</listitem>
+            <listitem><para>file <link linkend="__object_asset_8cs">ObjectAsset.cs</link></para>
+</listitem>
+            <listitem><para>file <link linkend="__object_d_t_o_8cs">ObjectDTO.cs</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+</section>

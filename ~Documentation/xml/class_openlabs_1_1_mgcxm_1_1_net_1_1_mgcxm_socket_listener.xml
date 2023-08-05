@@ -1,0 +1,350 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.7" xml:lang="en-US">
+  <compounddef id="class_openlabs_1_1_mgcxm_1_1_net_1_1_mgcxm_socket_listener" kind="class" language="C#" prot="public">
+    <compoundname>Openlabs::Mgcxm::Net::MgcxmSocketListener</compoundname>
+    <basecompoundref refid="interface_openlabs_1_1_mgcxm_1_1_internal_1_1_system_objects_1_1_i_mgcxm_system_object" prot="public" virt="non-virtual">Openlabs.Mgcxm.Internal.SystemObjects.IMgcxmSystemObject</basecompoundref>
+    <derivedcompoundref refid="class_openlabs_1_1_mgcxm_1_1_tests_1_1_test_ws_server" prot="public" virt="non-virtual">Openlabs.Mgcxm.Tests.TestWsServer</derivedcompoundref>
+    <innerclass refid="class_openlabs_1_1_mgcxm_1_1_net_1_1_mgcxm_socket_listener_1_1_socket_thread" prot="private">Openlabs::Mgcxm::Net::MgcxmSocketListener::SocketThread</innerclass>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_openlabs_1_1_mgcxm_1_1_net_1_1_mgcxm_socket_listener_1aec7646a64b3e0a74064ae60488f7152c" prot="private" static="no" mutable="no">
+        <type><ref refid="class_openlabs_1_1_mgcxm_1_1_net_1_1_mgcxm_http_listener" kindref="compound">MgcxmHttpListener</ref></type>
+        <definition>MgcxmHttpListener Openlabs.Mgcxm.Net.MgcxmSocketListener._listener</definition>
+        <argsstring></argsstring>
+        <name>_listener</name>
+        <qualifiedname>Openlabs.Mgcxm.Net.MgcxmSocketListener._listener</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/adenf/RiderProjects/Openlabs.Mgcxm/Openlabs.Mgcxm/Net/WebSocket/MgcxmSocketListener.cs" line="27" column="31" bodyfile="C:/Users/adenf/RiderProjects/Openlabs.Mgcxm/Openlabs.Mgcxm/Net/WebSocket/MgcxmSocketListener.cs" bodystart="27" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_openlabs_1_1_mgcxm_1_1_net_1_1_mgcxm_socket_listener_1acf5446cf21df05799a6a445e8f9a8543" prot="private" static="no" mutable="no">
+        <type>List&lt; <ref refid="class_openlabs_1_1_mgcxm_1_1_net_1_1_mgcxm_socket_route" kindref="compound">MgcxmSocketRoute</ref> &gt;</type>
+        <definition>List&lt;MgcxmSocketRoute&gt; Openlabs.Mgcxm.Net.MgcxmSocketListener._routes</definition>
+        <argsstring></argsstring>
+        <name>_routes</name>
+        <qualifiedname>Openlabs.Mgcxm.Net.MgcxmSocketListener._routes</qualifiedname>
+        <initializer>= new()</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/adenf/RiderProjects/Openlabs.Mgcxm/Openlabs.Mgcxm/Net/WebSocket/MgcxmSocketListener.cs" line="28" column="18" bodyfile="C:/Users/adenf/RiderProjects/Openlabs.Mgcxm/Openlabs.Mgcxm/Net/WebSocket/MgcxmSocketListener.cs" bodystart="28" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_openlabs_1_1_mgcxm_1_1_net_1_1_mgcxm_socket_listener_1a2fcc3e1a3536288cd6741ce7648bf143" prot="private" static="no" mutable="no">
+        <type><ref refid="class_openlabs_1_1_mgcxm_1_1_net_1_1_polling_1_1_polling_receiver" kindref="compound">PollingReceiver</ref></type>
+        <definition>PollingReceiver Openlabs.Mgcxm.Net.MgcxmSocketListener._pollingReceiver</definition>
+        <argsstring></argsstring>
+        <name>_pollingReceiver</name>
+        <qualifiedname>Openlabs.Mgcxm.Net.MgcxmSocketListener._pollingReceiver</qualifiedname>
+        <initializer>= new()</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/adenf/RiderProjects/Openlabs.Mgcxm/Openlabs.Mgcxm/Net/WebSocket/MgcxmSocketListener.cs" line="29" column="29" bodyfile="C:/Users/adenf/RiderProjects/Openlabs.Mgcxm/Openlabs.Mgcxm/Net/WebSocket/MgcxmSocketListener.cs" bodystart="29" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_openlabs_1_1_mgcxm_1_1_net_1_1_mgcxm_socket_listener_1a6b1ab7eab46ae257655cda5e28c96a4f" prot="private" static="no" mutable="no">
+        <type>Thread</type>
+        <definition>Thread Openlabs.Mgcxm.Net.MgcxmSocketListener._listenThread</definition>
+        <argsstring></argsstring>
+        <name>_listenThread</name>
+        <qualifiedname>Openlabs.Mgcxm.Net.MgcxmSocketListener._listenThread</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/adenf/RiderProjects/Openlabs.Mgcxm/Openlabs.Mgcxm/Net/WebSocket/MgcxmSocketListener.cs" line="30" column="20" bodyfile="C:/Users/adenf/RiderProjects/Openlabs.Mgcxm/Openlabs.Mgcxm/Net/WebSocket/MgcxmSocketListener.cs" bodystart="30" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_openlabs_1_1_mgcxm_1_1_net_1_1_mgcxm_socket_listener_1a87bdcbbda92e70f268adfad0c858c378" prot="private" static="no" mutable="no">
+        <type>Dictionary&lt; <ref refid="class_openlabs_1_1_mgcxm_1_1_internal_1_1_system_objects_1_1_mgcxm_string" kindref="compound">MgcxmString</ref>, SocketThread &gt;</type>
+        <definition>Dictionary&lt;MgcxmString, SocketThread&gt; Openlabs.Mgcxm.Net.MgcxmSocketListener._socketThreads</definition>
+        <argsstring></argsstring>
+        <name>_socketThreads</name>
+        <qualifiedname>Openlabs.Mgcxm.Net.MgcxmSocketListener._socketThreads</qualifiedname>
+        <initializer>= new()</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/adenf/RiderProjects/Openlabs.Mgcxm/Openlabs.Mgcxm/Net/WebSocket/MgcxmSocketListener.cs" line="31" column="24" bodyfile="C:/Users/adenf/RiderProjects/Openlabs.Mgcxm/Openlabs.Mgcxm/Net/WebSocket/MgcxmSocketListener.cs" bodystart="31" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="property">
+      <memberdef kind="property" id="class_openlabs_1_1_mgcxm_1_1_net_1_1_mgcxm_socket_listener_1a0959c556574ae890223303b321d7e0bb" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="no" privatesettable="no" protectedsettable="no">
+        <type><ref refid="struct_openlabs_1_1_mgcxm_1_1_internal_1_1_mgcxm_id" kindref="compound">MgcxmId</ref></type>
+        <definition>MgcxmId Openlabs.Mgcxm.Net.MgcxmSocketListener.AllocatedId</definition>
+        <argsstring></argsstring>
+        <name>AllocatedId</name>
+        <qualifiedname>Openlabs.Mgcxm.Net.MgcxmSocketListener.AllocatedId</qualifiedname>
+        <reimplements refid="interface_openlabs_1_1_mgcxm_1_1_internal_1_1_system_objects_1_1_i_mgcxm_system_object_1afd31aa32e2b847ad283d3c5d5ce90e85">AllocatedId</reimplements>
+        <briefdescription>
+<para>Gets the unique identifier (object ID) of the MgcxmSocketListener. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/adenf/RiderProjects/Openlabs.Mgcxm/Openlabs.Mgcxm/Net/WebSocket/MgcxmSocketListener.cs" line="254" column="20" bodyfile="C:/Users/adenf/RiderProjects/Openlabs.Mgcxm/Openlabs.Mgcxm/Net/WebSocket/MgcxmSocketListener.cs" bodystart="254" bodyend="254"/>
+        <referencedby refid="class_openlabs_1_1_mgcxm_1_1_net_1_1_mgcxm_socket_listener_1a8b8f0c86b9c0334af4f4e9adfb28d371" compoundref="_mgcxm_socket_listener_8cs" startline="37" endline="62">Openlabs.Mgcxm.Net.MgcxmSocketListener.MgcxmSocketListener</referencedby>
+      </memberdef>
+      <memberdef kind="property" id="class_openlabs_1_1_mgcxm_1_1_net_1_1_mgcxm_socket_listener_1af8a6cd6593a657015456cd031c5207db" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="no" privatesettable="no" protectedsettable="no">
+        <type><ref refid="class_openlabs_1_1_mgcxm_1_1_net_1_1_mgcxm_http_listener" kindref="compound">MgcxmHttpListener</ref></type>
+        <definition>MgcxmHttpListener Openlabs.Mgcxm.Net.MgcxmSocketListener.Listener</definition>
+        <argsstring></argsstring>
+        <name>Listener</name>
+        <qualifiedname>Openlabs.Mgcxm.Net.MgcxmSocketListener.Listener</qualifiedname>
+        <briefdescription>
+<para>Gets the underlying MgcxmHttpListener used by the MgcxmSocketListener. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/adenf/RiderProjects/Openlabs.Mgcxm/Openlabs.Mgcxm/Net/WebSocket/MgcxmSocketListener.cs" line="266" column="30" bodyfile="C:/Users/adenf/RiderProjects/Openlabs.Mgcxm/Openlabs.Mgcxm/Net/WebSocket/MgcxmSocketListener.cs" bodystart="266" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_openlabs_1_1_mgcxm_1_1_net_1_1_mgcxm_socket_listener_1a8b8f0c86b9c0334af4f4e9adfb28d371" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Openlabs.Mgcxm.Net.MgcxmSocketListener.MgcxmSocketListener</definition>
+        <argsstring>(IpAddress addressToHostOn)</argsstring>
+        <name>MgcxmSocketListener</name>
+        <qualifiedname>Openlabs.Mgcxm.Net.MgcxmSocketListener.MgcxmSocketListener</qualifiedname>
+        <param>
+          <type><ref refid="class_openlabs_1_1_mgcxm_1_1_net_1_1_ip_address" kindref="compound">IpAddress</ref></type>
+          <declname>addressToHostOn</declname>
+        </param>
+        <briefdescription>
+<para>Initializes a new instance of the MgcxmSocketListener class with the specified IP address to host on. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>addressToHostOn</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The IP address to host the socket listener on.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/adenf/RiderProjects/Openlabs.Mgcxm/Openlabs.Mgcxm/Net/WebSocket/MgcxmSocketListener.cs" line="37" column="12" bodyfile="C:/Users/adenf/RiderProjects/Openlabs.Mgcxm/Openlabs.Mgcxm/Net/WebSocket/MgcxmSocketListener.cs" bodystart="37" bodyend="62"/>
+        <references refid="class_openlabs_1_1_mgcxm_1_1_net_1_1_mgcxm_socket_listener_1a0959c556574ae890223303b321d7e0bb" compoundref="_mgcxm_socket_listener_8cs" startline="254" endline="254">Openlabs.Mgcxm.Net.MgcxmSocketListener.AllocatedId</references>
+        <references refid="struct_openlabs_1_1_mgcxm_1_1_internal_1_1_mgcxm_id_1a1a0f97f9cbb455396c2605439fc42f76" compoundref="_mgcxm_id_8cs" startline="32">Openlabs.Mgcxm.Internal.MgcxmId.Id</references>
+        <references refid="class_openlabs_1_1_mgcxm_1_1_net_1_1_polling_1_1_polling_receiver_1ae14736a1edd2035b92b3ebfde3f12f22" compoundref="_polling_receiver_8cs" startline="59" endline="59">Openlabs.Mgcxm.Net.Polling.PollingReceiver.OnPollReceived</references>
+      </memberdef>
+      <memberdef kind="function" id="class_openlabs_1_1_mgcxm_1_1_net_1_1_mgcxm_socket_listener_1a5c5de235a73088cce6c137d25664c3c2" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Openlabs.Mgcxm.Net.MgcxmSocketListener.Start</definition>
+        <argsstring>()</argsstring>
+        <name>Start</name>
+        <qualifiedname>Openlabs.Mgcxm.Net.MgcxmSocketListener.Start</qualifiedname>
+        <briefdescription>
+<para>Starts the socket listener. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/adenf/RiderProjects/Openlabs.Mgcxm/Openlabs.Mgcxm/Net/WebSocket/MgcxmSocketListener.cs" line="72" column="17" bodyfile="C:/Users/adenf/RiderProjects/Openlabs.Mgcxm/Openlabs.Mgcxm/Net/WebSocket/MgcxmSocketListener.cs" bodystart="72" bodyend="75"/>
+      </memberdef>
+      <memberdef kind="function" id="class_openlabs_1_1_mgcxm_1_1_net_1_1_mgcxm_socket_listener_1a4f17ffd0df41189db57d419430b7ac3d" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Openlabs.Mgcxm.Net.MgcxmSocketListener.Stop</definition>
+        <argsstring>()</argsstring>
+        <name>Stop</name>
+        <qualifiedname>Openlabs.Mgcxm.Net.MgcxmSocketListener.Stop</qualifiedname>
+        <briefdescription>
+<para>Stops the socket listener. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/adenf/RiderProjects/Openlabs.Mgcxm/Openlabs.Mgcxm/Net/WebSocket/MgcxmSocketListener.cs" line="80" column="17" bodyfile="C:/Users/adenf/RiderProjects/Openlabs.Mgcxm/Openlabs.Mgcxm/Net/WebSocket/MgcxmSocketListener.cs" bodystart="80" bodyend="83"/>
+      </memberdef>
+      <memberdef kind="function" id="class_openlabs_1_1_mgcxm_1_1_net_1_1_mgcxm_socket_listener_1a1615b438c92fa6343170b1fe67950225" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>void</type>
+        <definition>virtual void Openlabs.Mgcxm.Net.MgcxmSocketListener.OnWebRequest</definition>
+        <argsstring>(MgcxmHttpRequest request, MgcxmHttpResponse response)</argsstring>
+        <name>OnWebRequest</name>
+        <qualifiedname>Openlabs.Mgcxm.Net.MgcxmSocketListener.OnWebRequest</qualifiedname>
+        <reimplementedby refid="class_openlabs_1_1_mgcxm_1_1_tests_1_1_test_ws_server_1a885ccad7a7418c7e29689b7c3daa1d61">OnWebRequest</reimplementedby>
+        <param>
+          <type><ref refid="class_openlabs_1_1_mgcxm_1_1_net_1_1_mgcxm_http_request" kindref="compound">MgcxmHttpRequest</ref></type>
+          <declname>request</declname>
+        </param>
+        <param>
+          <type><ref refid="class_openlabs_1_1_mgcxm_1_1_net_1_1_mgcxm_http_response" kindref="compound">MgcxmHttpResponse</ref></type>
+          <declname>response</declname>
+        </param>
+        <briefdescription>
+<para>Invoked when a WebSocket request is received. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>request</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The HTTP request data.</para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>response</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The HTTP response data.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/adenf/RiderProjects/Openlabs.Mgcxm/Openlabs.Mgcxm/Net/WebSocket/MgcxmSocketListener.cs" line="247" column="25" bodyfile="C:/Users/adenf/RiderProjects/Openlabs.Mgcxm/Openlabs.Mgcxm/Net/WebSocket/MgcxmSocketListener.cs" bodystart="247" bodyend="247"/>
+      </memberdef>
+      <memberdef kind="function" id="class_openlabs_1_1_mgcxm_1_1_net_1_1_mgcxm_socket_listener_1a7f5a42fc1c93730055da5ff435715c14" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Openlabs.Mgcxm.Net.MgcxmSocketListener.Trash</definition>
+        <argsstring>()</argsstring>
+        <name>Trash</name>
+        <qualifiedname>Openlabs.Mgcxm.Net.MgcxmSocketListener.Trash</qualifiedname>
+        <reimplements refid="interface_openlabs_1_1_mgcxm_1_1_internal_1_1_system_objects_1_1_i_mgcxm_system_object_1ab14e018c681d09992e11bf3de82c5b45">Trash</reimplements>
+        <briefdescription>
+<para>Disposes of the MgcxmSocketListener and deregisters it from the object manager. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/adenf/RiderProjects/Openlabs.Mgcxm/Openlabs.Mgcxm/Net/WebSocket/MgcxmSocketListener.cs" line="259" column="17"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="class_openlabs_1_1_mgcxm_1_1_net_1_1_mgcxm_socket_listener_1a066cec5000c9c3b9dc58b9f88980eb01" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Openlabs.Mgcxm.Net.MgcxmSocketListener.~MgcxmSocketListener</definition>
+        <argsstring>()</argsstring>
+        <name>~MgcxmSocketListener</name>
+        <qualifiedname>Openlabs.Mgcxm.Net.MgcxmSocketListener.~MgcxmSocketListener</qualifiedname>
+        <briefdescription>
+<para>Finalizer (destructor) for the MgcxmSocketListener class. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/adenf/RiderProjects/Openlabs.Mgcxm/Openlabs.Mgcxm/Net/WebSocket/MgcxmSocketListener.cs" line="67" column="5"/>
+      </memberdef>
+      <memberdef kind="function" id="class_openlabs_1_1_mgcxm_1_1_net_1_1_mgcxm_socket_listener_1afe258471e175158b20db9ddc13a2782a" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Openlabs.Mgcxm.Net.MgcxmSocketListener.IsValidRoute</definition>
+        <argsstring>(string routeUrl, out MgcxmSocketRoute foundRoute)</argsstring>
+        <name>IsValidRoute</name>
+        <qualifiedname>Openlabs.Mgcxm.Net.MgcxmSocketListener.IsValidRoute</qualifiedname>
+        <param>
+          <type>string</type>
+          <declname>routeUrl</declname>
+        </param>
+        <param>
+          <type>out <ref refid="class_openlabs_1_1_mgcxm_1_1_net_1_1_mgcxm_socket_route" kindref="compound">MgcxmSocketRoute</ref></type>
+          <declname>foundRoute</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/adenf/RiderProjects/Openlabs.Mgcxm/Openlabs.Mgcxm/Net/WebSocket/MgcxmSocketListener.cs" line="85" column="18" bodyfile="C:/Users/adenf/RiderProjects/Openlabs.Mgcxm/Openlabs.Mgcxm/Net/WebSocket/MgcxmSocketListener.cs" bodystart="85" bodyend="99"/>
+      </memberdef>
+      <memberdef kind="function" id="class_openlabs_1_1_mgcxm_1_1_net_1_1_mgcxm_socket_listener_1ad066ab9f63dda5559a4d3576abee647d" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>async Task</type>
+        <definition>async Task Openlabs.Mgcxm.Net.MgcxmSocketListener.HttpServerListenTask</definition>
+        <argsstring>(HttpListener listener)</argsstring>
+        <name>HttpServerListenTask</name>
+        <qualifiedname>Openlabs.Mgcxm.Net.MgcxmSocketListener.HttpServerListenTask</qualifiedname>
+        <param>
+          <type>HttpListener</type>
+          <declname>listener</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/adenf/RiderProjects/Openlabs.Mgcxm/Openlabs.Mgcxm/Net/WebSocket/MgcxmSocketListener.cs" line="101" column="24" bodyfile="C:/Users/adenf/RiderProjects/Openlabs.Mgcxm/Openlabs.Mgcxm/Net/WebSocket/MgcxmSocketListener.cs" bodystart="101" bodyend="240"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Represents a socket listener for handling WebSocket and HTTP requests. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>IMgcxmSystemObject</label>
+        <link refid="interface_openlabs_1_1_mgcxm_1_1_internal_1_1_system_objects_1_1_i_mgcxm_system_object"/>
+      </node>
+      <node id="1">
+        <label>Openlabs.Mgcxm.Net.MgcxmSocketListener</label>
+        <link refid="class_openlabs_1_1_mgcxm_1_1_net_1_1_mgcxm_socket_listener"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>Openlabs.Mgcxm.Tests.TestWsServer</label>
+        <link refid="class_openlabs_1_1_mgcxm_1_1_tests_1_1_test_ws_server"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>IMgcxmSystemObject</label>
+        <link refid="interface_openlabs_1_1_mgcxm_1_1_internal_1_1_system_objects_1_1_i_mgcxm_system_object"/>
+      </node>
+      <node id="1">
+        <label>Openlabs.Mgcxm.Net.MgcxmSocketListener</label>
+        <link refid="class_openlabs_1_1_mgcxm_1_1_net_1_1_mgcxm_socket_listener"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="C:/Users/adenf/RiderProjects/Openlabs.Mgcxm/Openlabs.Mgcxm/Net/WebSocket/MgcxmSocketListener.cs" line="25" column="7" bodyfile="C:/Users/adenf/RiderProjects/Openlabs.Mgcxm/Openlabs.Mgcxm/Net/WebSocket/MgcxmSocketListener.cs" bodystart="26" bodyend="326"/>
+    <listofallmembers>
+      <member refid="class_openlabs_1_1_mgcxm_1_1_net_1_1_mgcxm_socket_listener_1aec7646a64b3e0a74064ae60488f7152c" prot="private" virt="non-virtual"><scope>Openlabs::Mgcxm::Net::MgcxmSocketListener</scope><name>_listener</name></member>
+      <member refid="class_openlabs_1_1_mgcxm_1_1_net_1_1_mgcxm_socket_listener_1a6b1ab7eab46ae257655cda5e28c96a4f" prot="private" virt="non-virtual"><scope>Openlabs::Mgcxm::Net::MgcxmSocketListener</scope><name>_listenThread</name></member>
+      <member refid="class_openlabs_1_1_mgcxm_1_1_net_1_1_mgcxm_socket_listener_1a2fcc3e1a3536288cd6741ce7648bf143" prot="private" virt="non-virtual"><scope>Openlabs::Mgcxm::Net::MgcxmSocketListener</scope><name>_pollingReceiver</name></member>
+      <member refid="class_openlabs_1_1_mgcxm_1_1_net_1_1_mgcxm_socket_listener_1acf5446cf21df05799a6a445e8f9a8543" prot="private" virt="non-virtual"><scope>Openlabs::Mgcxm::Net::MgcxmSocketListener</scope><name>_routes</name></member>
+      <member refid="class_openlabs_1_1_mgcxm_1_1_net_1_1_mgcxm_socket_listener_1a87bdcbbda92e70f268adfad0c858c378" prot="private" virt="non-virtual"><scope>Openlabs::Mgcxm::Net::MgcxmSocketListener</scope><name>_socketThreads</name></member>
+      <member refid="class_openlabs_1_1_mgcxm_1_1_net_1_1_mgcxm_socket_listener_1a0959c556574ae890223303b321d7e0bb" prot="public" virt="non-virtual"><scope>Openlabs::Mgcxm::Net::MgcxmSocketListener</scope><name>AllocatedId</name></member>
+      <member refid="class_openlabs_1_1_mgcxm_1_1_net_1_1_mgcxm_socket_listener_1ad066ab9f63dda5559a4d3576abee647d" prot="private" virt="non-virtual"><scope>Openlabs::Mgcxm::Net::MgcxmSocketListener</scope><name>HttpServerListenTask</name></member>
+      <member refid="class_openlabs_1_1_mgcxm_1_1_net_1_1_mgcxm_socket_listener_1afe258471e175158b20db9ddc13a2782a" prot="private" virt="non-virtual"><scope>Openlabs::Mgcxm::Net::MgcxmSocketListener</scope><name>IsValidRoute</name></member>
+      <member refid="class_openlabs_1_1_mgcxm_1_1_net_1_1_mgcxm_socket_listener_1af8a6cd6593a657015456cd031c5207db" prot="public" virt="non-virtual"><scope>Openlabs::Mgcxm::Net::MgcxmSocketListener</scope><name>Listener</name></member>
+      <member refid="class_openlabs_1_1_mgcxm_1_1_net_1_1_mgcxm_socket_listener_1a8b8f0c86b9c0334af4f4e9adfb28d371" prot="public" virt="non-virtual"><scope>Openlabs::Mgcxm::Net::MgcxmSocketListener</scope><name>MgcxmSocketListener</name></member>
+      <member refid="class_openlabs_1_1_mgcxm_1_1_net_1_1_mgcxm_socket_listener_1a1615b438c92fa6343170b1fe67950225" prot="public" virt="virtual"><scope>Openlabs::Mgcxm::Net::MgcxmSocketListener</scope><name>OnWebRequest</name></member>
+      <member refid="class_openlabs_1_1_mgcxm_1_1_net_1_1_mgcxm_socket_listener_1a5c5de235a73088cce6c137d25664c3c2" prot="public" virt="non-virtual"><scope>Openlabs::Mgcxm::Net::MgcxmSocketListener</scope><name>Start</name></member>
+      <member refid="class_openlabs_1_1_mgcxm_1_1_net_1_1_mgcxm_socket_listener_1a4f17ffd0df41189db57d419430b7ac3d" prot="public" virt="non-virtual"><scope>Openlabs::Mgcxm::Net::MgcxmSocketListener</scope><name>Stop</name></member>
+      <member refid="class_openlabs_1_1_mgcxm_1_1_net_1_1_mgcxm_socket_listener_1a7f5a42fc1c93730055da5ff435715c14" prot="public" virt="non-virtual"><scope>Openlabs::Mgcxm::Net::MgcxmSocketListener</scope><name>Trash</name></member>
+      <member refid="class_openlabs_1_1_mgcxm_1_1_net_1_1_mgcxm_socket_listener_1a066cec5000c9c3b9dc58b9f88980eb01" prot="private" virt="non-virtual"><scope>Openlabs::Mgcxm::Net::MgcxmSocketListener</scope><name>~MgcxmSocketListener</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

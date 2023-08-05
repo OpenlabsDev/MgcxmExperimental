@@ -1,0 +1,96 @@
+\doxysection{JWT.\+Exceptions.\+Token\+Not\+Yet\+Valid\+Exception Class Reference}
+\hypertarget{class_j_w_t_1_1_exceptions_1_1_token_not_yet_valid_exception}{}\label{class_j_w_t_1_1_exceptions_1_1_token_not_yet_valid_exception}\index{JWT.Exceptions.TokenNotYetValidException@{JWT.Exceptions.TokenNotYetValidException}}
+
+
+Represents an exception thrown when a token is not yet valid.  
+
+
+
+
+Inheritance diagram for JWT.\+Exceptions.\+Token\+Not\+Yet\+Valid\+Exception\+:
+% FIG 0
+
+
+Collaboration diagram for JWT.\+Exceptions.\+Token\+Not\+Yet\+Valid\+Exception\+:
+% FIG 1
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_j_w_t_1_1_exceptions_1_1_token_not_yet_valid_exception_a805da305e8ea6deed745b8d04d6144ab}{Token\+Not\+Yet\+Valid\+Exception}} (string message)
+\begin{DoxyCompactList}\small\item\em Creates an instance of Token\+Not\+Yet\+Valid\+Exception \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{class_j_w_t_1_1_exceptions_1_1_signature_verification_exception}{JWT.\+Exceptions.\+Signature\+Verification\+Exception}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_j_w_t_1_1_exceptions_1_1_signature_verification_exception_a8d4a78500f3af829662a971394598ab6}{Signature\+Verification\+Exception}} (string message)
+\begin{DoxyCompactList}\small\item\em Creates an instance of Signature\+Verification\+Exception \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_j_w_t_1_1_exceptions_1_1_signature_verification_exception_a5365a4899c85a73f359e1469f3d81339}{Signature\+Verification\+Exception}} (string decoded\+Crypto, params string\mbox{[}$\,$\mbox{]} decoded\+Signatures)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{_token_expired_exception_8cs_a49f7c509ca28625003350370ad50589b}{IRead\+Only\+Payload\+Dictionary}} \mbox{\hyperlink{class_j_w_t_1_1_exceptions_1_1_token_not_yet_valid_exception_a358c2a83bcc855caf1ad97c87c02e8fc}{Payload\+Data}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em The payload. \end{DoxyCompactList}\item 
+Date\+Time? \mbox{\hyperlink{class_j_w_t_1_1_exceptions_1_1_token_not_yet_valid_exception_a221573983049d11733edfd61d6ef3167}{Not\+Before}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em The not before Date\+Time of the token. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Properties inherited from \mbox{\hyperlink{class_j_w_t_1_1_exceptions_1_1_signature_verification_exception}{JWT.\+Exceptions.\+Signature\+Verification\+Exception}}}
+\begin{DoxyCompactItemize}
+\item 
+string \mbox{\hyperlink{class_j_w_t_1_1_exceptions_1_1_signature_verification_exception_ab408b80fba82de0fce2c1dd17ee131bf}{Expected}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Expected key. \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{class_j_w_t_1_1_exceptions_1_1_signature_verification_exception_aeb339fa40d103d4e295533f37cbb87ee}{Received}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Received key. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Additional Inherited Members}
+\doxysubsection*{Protected Member Functions inherited from \mbox{\hyperlink{class_j_w_t_1_1_exceptions_1_1_signature_verification_exception}{JWT.\+Exceptions.\+Signature\+Verification\+Exception}}}
+\begin{DoxyCompactItemize}
+\item 
+T \mbox{\hyperlink{class_j_w_t_1_1_exceptions_1_1_signature_verification_exception_a7ebcc98dcf87e842f558e6b087aaddc8}{Get\+Or\+Default$<$ T $>$}} (string key)
+\begin{DoxyCompactList}\small\item\em Retrieves the value for the provided key, or default. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Represents an exception thrown when a token is not yet valid. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_j_w_t_1_1_exceptions_1_1_token_not_yet_valid_exception_a805da305e8ea6deed745b8d04d6144ab}\label{class_j_w_t_1_1_exceptions_1_1_token_not_yet_valid_exception_a805da305e8ea6deed745b8d04d6144ab} 
+\index{JWT.Exceptions.TokenNotYetValidException@{JWT.Exceptions.TokenNotYetValidException}!TokenNotYetValidException@{TokenNotYetValidException}}
+\index{TokenNotYetValidException@{TokenNotYetValidException}!JWT.Exceptions.TokenNotYetValidException@{JWT.Exceptions.TokenNotYetValidException}}
+\doxysubsubsection{\texorpdfstring{TokenNotYetValidException()}{TokenNotYetValidException()}}
+{\footnotesize\ttfamily JWT.\+Exceptions.\+Token\+Not\+Yet\+Valid\+Exception.\+Token\+Not\+Yet\+Valid\+Exception (\begin{DoxyParamCaption}\item[{string}]{message }\end{DoxyParamCaption})}
+
+
+
+Creates an instance of Token\+Not\+Yet\+Valid\+Exception 
+
+
+\begin{DoxyParams}{Parameters}
+{\em message} & The error message\\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Property Documentation}
+\Hypertarget{class_j_w_t_1_1_exceptions_1_1_token_not_yet_valid_exception_a221573983049d11733edfd61d6ef3167}\label{class_j_w_t_1_1_exceptions_1_1_token_not_yet_valid_exception_a221573983049d11733edfd61d6ef3167} 
+\index{JWT.Exceptions.TokenNotYetValidException@{JWT.Exceptions.TokenNotYetValidException}!NotBefore@{NotBefore}}
+\index{NotBefore@{NotBefore}!JWT.Exceptions.TokenNotYetValidException@{JWT.Exceptions.TokenNotYetValidException}}
+\doxysubsubsection{\texorpdfstring{NotBefore}{NotBefore}}
+{\footnotesize\ttfamily Date\+Time? JWT.\+Exceptions.\+Token\+Not\+Yet\+Valid\+Exception.\+Not\+Before\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+The not before Date\+Time of the token. 
+
+\Hypertarget{class_j_w_t_1_1_exceptions_1_1_token_not_yet_valid_exception_a358c2a83bcc855caf1ad97c87c02e8fc}\label{class_j_w_t_1_1_exceptions_1_1_token_not_yet_valid_exception_a358c2a83bcc855caf1ad97c87c02e8fc} 
+\index{JWT.Exceptions.TokenNotYetValidException@{JWT.Exceptions.TokenNotYetValidException}!PayloadData@{PayloadData}}
+\index{PayloadData@{PayloadData}!JWT.Exceptions.TokenNotYetValidException@{JWT.Exceptions.TokenNotYetValidException}}
+\doxysubsubsection{\texorpdfstring{PayloadData}{PayloadData}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_token_expired_exception_8cs_a49f7c509ca28625003350370ad50589b}{IRead\+Only\+Payload\+Dictionary}} JWT.\+Exceptions.\+Token\+Not\+Yet\+Valid\+Exception.\+Payload\+Data\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+The payload. 
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/adenf/\+Rider\+Projects/\+Openlabs.\+Mgcxm/\+Openlabs.\+Mgcxm/\+JWT/\+Exceptions/\mbox{\hyperlink{_token_not_yet_valid_exception_8cs}{Token\+Not\+Yet\+Valid\+Exception.\+cs}}\end{DoxyCompactItemize}

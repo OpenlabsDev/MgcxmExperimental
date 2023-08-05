@@ -1,0 +1,299 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.7" xml:lang="en-US">
+  <compounddef id="class_openlabs_1_1_mgcxm_1_1_internal_1_1_duration" kind="class" language="C#" prot="public">
+    <compoundname>Openlabs::Mgcxm::Internal::Duration</compoundname>
+      <sectiondef kind="property">
+      <memberdef kind="property" id="class_openlabs_1_1_mgcxm_1_1_internal_1_1_duration_1a016c73b1d4f88fc38ca2c35bc81388c0" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="no" privatesettable="no" protectedsettable="no">
+        <type>TimeSpan</type>
+        <definition>TimeSpan Openlabs.Mgcxm.Internal.Duration.TimeSpan</definition>
+        <argsstring></argsstring>
+        <name>TimeSpan</name>
+        <qualifiedname>Openlabs.Mgcxm.Internal.Duration.TimeSpan</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/adenf/RiderProjects/Openlabs.Mgcxm/Openlabs.Mgcxm/Internal/Chrono.cs" line="64" column="21" bodyfile="C:/Users/adenf/RiderProjects/Openlabs.Mgcxm/Openlabs.Mgcxm/Internal/Chrono.cs" bodystart="64" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_openlabs_1_1_mgcxm_1_1_internal_1_1_duration_1ad2663fc427c308f5db83762431acc519" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int Openlabs.Mgcxm.Internal.Duration._durationPeriod</definition>
+        <argsstring></argsstring>
+        <name>_durationPeriod</name>
+        <qualifiedname>Openlabs.Mgcxm.Internal.Duration._durationPeriod</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/adenf/RiderProjects/Openlabs.Mgcxm/Openlabs.Mgcxm/Internal/Chrono.cs" line="66" column="17" bodyfile="C:/Users/adenf/RiderProjects/Openlabs.Mgcxm/Openlabs.Mgcxm/Internal/Chrono.cs" bodystart="66" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_openlabs_1_1_mgcxm_1_1_internal_1_1_duration_1a34bc75dbf9afd586b39b62869d39c576" prot="private" static="no" mutable="no">
+        <type><ref refid="namespace_openlabs_1_1_mgcxm_1_1_internal_1a55844e50e9a1cfec33e10bc13101669a" kindref="member">DurationType</ref></type>
+        <definition>DurationType Openlabs.Mgcxm.Internal.Duration._durationType</definition>
+        <argsstring></argsstring>
+        <name>_durationType</name>
+        <qualifiedname>Openlabs.Mgcxm.Internal.Duration._durationType</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/adenf/RiderProjects/Openlabs.Mgcxm/Openlabs.Mgcxm/Internal/Chrono.cs" line="67" column="26" bodyfile="C:/Users/adenf/RiderProjects/Openlabs.Mgcxm/Openlabs.Mgcxm/Internal/Chrono.cs" bodystart="67" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-static-attrib">
+      <memberdef kind="variable" id="class_openlabs_1_1_mgcxm_1_1_internal_1_1_duration_1af0ba527820a47a2d03a92115e515b38a" prot="private" static="yes" mutable="no">
+        <type>readonly <ref refid="class_openlabs_1_1_mgcxm_1_1_internal_1_1_ratio" kindref="compound">Ratio</ref></type>
+        <definition>readonly Ratio Openlabs.Mgcxm.Internal.Duration.HoursRatio</definition>
+        <argsstring></argsstring>
+        <name>HoursRatio</name>
+        <qualifiedname>Openlabs.Mgcxm.Internal.Duration.HoursRatio</qualifiedname>
+        <initializer>= <ref refid="class_openlabs_1_1_mgcxm_1_1_internal_1_1_ratio_1a729870f0097f11b590c43cd28942bf3d" kindref="member">Ratio.Create</ref>(3600, 1)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/adenf/RiderProjects/Openlabs.Mgcxm/Openlabs.Mgcxm/Internal/Chrono.cs" line="70" column="35" bodyfile="C:/Users/adenf/RiderProjects/Openlabs.Mgcxm/Openlabs.Mgcxm/Internal/Chrono.cs" bodystart="70" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_openlabs_1_1_mgcxm_1_1_internal_1_1_duration_1a4d3e4c345c349822eb80decd64a782de" prot="private" static="yes" mutable="no">
+        <type>readonly <ref refid="class_openlabs_1_1_mgcxm_1_1_internal_1_1_ratio" kindref="compound">Ratio</ref></type>
+        <definition>readonly Ratio Openlabs.Mgcxm.Internal.Duration.MinutesRatio</definition>
+        <argsstring></argsstring>
+        <name>MinutesRatio</name>
+        <qualifiedname>Openlabs.Mgcxm.Internal.Duration.MinutesRatio</qualifiedname>
+        <initializer>= <ref refid="class_openlabs_1_1_mgcxm_1_1_internal_1_1_ratio_1a729870f0097f11b590c43cd28942bf3d" kindref="member">Ratio.Create</ref>(60, 1)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/adenf/RiderProjects/Openlabs.Mgcxm/Openlabs.Mgcxm/Internal/Chrono.cs" line="71" column="35" bodyfile="C:/Users/adenf/RiderProjects/Openlabs.Mgcxm/Openlabs.Mgcxm/Internal/Chrono.cs" bodystart="71" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_openlabs_1_1_mgcxm_1_1_internal_1_1_duration_1a4a28ee55e192547dc7340b1f6052a5b9" prot="private" static="yes" mutable="no">
+        <type>readonly <ref refid="class_openlabs_1_1_mgcxm_1_1_internal_1_1_ratio" kindref="compound">Ratio</ref></type>
+        <definition>readonly Ratio Openlabs.Mgcxm.Internal.Duration.SecondsRatio</definition>
+        <argsstring></argsstring>
+        <name>SecondsRatio</name>
+        <qualifiedname>Openlabs.Mgcxm.Internal.Duration.SecondsRatio</qualifiedname>
+        <initializer>= <ref refid="class_openlabs_1_1_mgcxm_1_1_internal_1_1_ratio_1a729870f0097f11b590c43cd28942bf3d" kindref="member">Ratio.Create</ref>(1, 1)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/adenf/RiderProjects/Openlabs.Mgcxm/Openlabs.Mgcxm/Internal/Chrono.cs" line="72" column="35" bodyfile="C:/Users/adenf/RiderProjects/Openlabs.Mgcxm/Openlabs.Mgcxm/Internal/Chrono.cs" bodystart="72" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_openlabs_1_1_mgcxm_1_1_internal_1_1_duration_1afd9b4234f1c97addb83a11ac0ae3d7ac" prot="private" static="yes" mutable="no">
+        <type>readonly <ref refid="class_openlabs_1_1_mgcxm_1_1_internal_1_1_ratio" kindref="compound">Ratio</ref></type>
+        <definition>readonly Ratio Openlabs.Mgcxm.Internal.Duration.MillisecondsRatio</definition>
+        <argsstring></argsstring>
+        <name>MillisecondsRatio</name>
+        <qualifiedname>Openlabs.Mgcxm.Internal.Duration.MillisecondsRatio</qualifiedname>
+        <initializer>= <ref refid="class_openlabs_1_1_mgcxm_1_1_internal_1_1_ratio_1a729870f0097f11b590c43cd28942bf3d" kindref="member">Ratio.Create</ref>(1, 1000)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/adenf/RiderProjects/Openlabs.Mgcxm/Openlabs.Mgcxm/Internal/Chrono.cs" line="75" column="35" bodyfile="C:/Users/adenf/RiderProjects/Openlabs.Mgcxm/Openlabs.Mgcxm/Internal/Chrono.cs" bodystart="75" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_openlabs_1_1_mgcxm_1_1_internal_1_1_duration_1ac7cd7273ce14952ef5c8c5c2d54a1ad9" prot="private" static="yes" mutable="no">
+        <type>readonly <ref refid="class_openlabs_1_1_mgcxm_1_1_internal_1_1_ratio" kindref="compound">Ratio</ref></type>
+        <definition>readonly Ratio Openlabs.Mgcxm.Internal.Duration.MicrosecondsRatio</definition>
+        <argsstring></argsstring>
+        <name>MicrosecondsRatio</name>
+        <qualifiedname>Openlabs.Mgcxm.Internal.Duration.MicrosecondsRatio</qualifiedname>
+        <initializer>= <ref refid="class_openlabs_1_1_mgcxm_1_1_internal_1_1_ratio_1a729870f0097f11b590c43cd28942bf3d" kindref="member">Ratio.Create</ref>(1, 1000000)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/adenf/RiderProjects/Openlabs.Mgcxm/Openlabs.Mgcxm/Internal/Chrono.cs" line="76" column="35" bodyfile="C:/Users/adenf/RiderProjects/Openlabs.Mgcxm/Openlabs.Mgcxm/Internal/Chrono.cs" bodystart="76" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_openlabs_1_1_mgcxm_1_1_internal_1_1_duration_1afab5272dbf33ea283a5d6aba54a35f69" prot="private" static="yes" mutable="no">
+        <type>readonly <ref refid="class_openlabs_1_1_mgcxm_1_1_internal_1_1_ratio" kindref="compound">Ratio</ref></type>
+        <definition>readonly Ratio Openlabs.Mgcxm.Internal.Duration.NanosecondsRatio</definition>
+        <argsstring></argsstring>
+        <name>NanosecondsRatio</name>
+        <qualifiedname>Openlabs.Mgcxm.Internal.Duration.NanosecondsRatio</qualifiedname>
+        <initializer>= <ref refid="class_openlabs_1_1_mgcxm_1_1_internal_1_1_ratio_1a729870f0097f11b590c43cd28942bf3d" kindref="member">Ratio.Create</ref>(1, 1000000000)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/adenf/RiderProjects/Openlabs.Mgcxm/Openlabs.Mgcxm/Internal/Chrono.cs" line="77" column="35" bodyfile="C:/Users/adenf/RiderProjects/Openlabs.Mgcxm/Openlabs.Mgcxm/Internal/Chrono.cs" bodystart="77" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="class_openlabs_1_1_mgcxm_1_1_internal_1_1_duration_1a54a90557029165dcb74a3fc5c1d447e9" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="class_openlabs_1_1_mgcxm_1_1_internal_1_1_duration" kindref="compound">Duration</ref></type>
+        <definition>static Duration Openlabs.Mgcxm.Internal.Duration.Create</definition>
+        <argsstring>(DurationType type, int period)</argsstring>
+        <name>Create</name>
+        <qualifiedname>Openlabs.Mgcxm.Internal.Duration.Create</qualifiedname>
+        <param>
+          <type><ref refid="namespace_openlabs_1_1_mgcxm_1_1_internal_1a55844e50e9a1cfec33e10bc13101669a" kindref="member">DurationType</ref></type>
+          <declname>type</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>period</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/adenf/RiderProjects/Openlabs.Mgcxm/Openlabs.Mgcxm/Internal/Chrono.cs" line="20" column="28" bodyfile="C:/Users/adenf/RiderProjects/Openlabs.Mgcxm/Openlabs.Mgcxm/Internal/Chrono.cs" bodystart="20" bodyend="27"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_openlabs_1_1_mgcxm_1_1_internal_1_1_duration_1acfc88dc86c48ab1bf64220043fac9a54" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>long</type>
+        <definition>long Openlabs.Mgcxm.Internal.Duration.GetHours</definition>
+        <argsstring>()</argsstring>
+        <name>GetHours</name>
+        <qualifiedname>Openlabs.Mgcxm.Internal.Duration.GetHours</qualifiedname>
+        <briefdescription>
+<para>Gets the actual value in hours. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/adenf/RiderProjects/Openlabs.Mgcxm/Openlabs.Mgcxm/Internal/Chrono.cs" line="30" column="17"/>
+      </memberdef>
+      <memberdef kind="function" id="class_openlabs_1_1_mgcxm_1_1_internal_1_1_duration_1a7cfee8f93cc868168918b665197b5f4b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>long</type>
+        <definition>long Openlabs.Mgcxm.Internal.Duration.GetMinutes</definition>
+        <argsstring>()</argsstring>
+        <name>GetMinutes</name>
+        <qualifiedname>Openlabs.Mgcxm.Internal.Duration.GetMinutes</qualifiedname>
+        <briefdescription>
+<para>Gets the actual value in minutes. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/adenf/RiderProjects/Openlabs.Mgcxm/Openlabs.Mgcxm/Internal/Chrono.cs" line="33" column="17"/>
+      </memberdef>
+      <memberdef kind="function" id="class_openlabs_1_1_mgcxm_1_1_internal_1_1_duration_1ad4ee1886febd4101f73de51d69ca529e" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>float</type>
+        <definition>float Openlabs.Mgcxm.Internal.Duration.GetSeconds</definition>
+        <argsstring>()</argsstring>
+        <name>GetSeconds</name>
+        <qualifiedname>Openlabs.Mgcxm.Internal.Duration.GetSeconds</qualifiedname>
+        <briefdescription>
+<para>Gets the actual value in seconds. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/adenf/RiderProjects/Openlabs.Mgcxm/Openlabs.Mgcxm/Internal/Chrono.cs" line="36" column="18" bodyfile="C:/Users/adenf/RiderProjects/Openlabs.Mgcxm/Openlabs.Mgcxm/Internal/Chrono.cs" bodystart="36" bodyend="50"/>
+      </memberdef>
+      <memberdef kind="function" id="class_openlabs_1_1_mgcxm_1_1_internal_1_1_duration_1a7dc7f3f0541d83d48ba297c216248886" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>long</type>
+        <definition>long Openlabs.Mgcxm.Internal.Duration.GetMilliseconds</definition>
+        <argsstring>()</argsstring>
+        <name>GetMilliseconds</name>
+        <qualifiedname>Openlabs.Mgcxm.Internal.Duration.GetMilliseconds</qualifiedname>
+        <briefdescription>
+<para>Gets the actual value in milliseconds. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/adenf/RiderProjects/Openlabs.Mgcxm/Openlabs.Mgcxm/Internal/Chrono.cs" line="53" column="17"/>
+      </memberdef>
+      <memberdef kind="function" id="class_openlabs_1_1_mgcxm_1_1_internal_1_1_duration_1a07514a6b33fbba8b58160454bcde6da1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>long</type>
+        <definition>long Openlabs.Mgcxm.Internal.Duration.GetMicroseconds</definition>
+        <argsstring>()</argsstring>
+        <name>GetMicroseconds</name>
+        <qualifiedname>Openlabs.Mgcxm.Internal.Duration.GetMicroseconds</qualifiedname>
+        <briefdescription>
+<para>Gets the actual value in microseconds. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/adenf/RiderProjects/Openlabs.Mgcxm/Openlabs.Mgcxm/Internal/Chrono.cs" line="56" column="17"/>
+      </memberdef>
+      <memberdef kind="function" id="class_openlabs_1_1_mgcxm_1_1_internal_1_1_duration_1ab780153b15d04d7b3fc97fed765b44ed" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>long</type>
+        <definition>long Openlabs.Mgcxm.Internal.Duration.GetNanoseconds</definition>
+        <argsstring>()</argsstring>
+        <name>GetNanoseconds</name>
+        <qualifiedname>Openlabs.Mgcxm.Internal.Duration.GetNanoseconds</qualifiedname>
+        <briefdescription>
+<para>Gets the actual value in nanoseconds. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/adenf/RiderProjects/Openlabs.Mgcxm/Openlabs.Mgcxm/Internal/Chrono.cs" line="59" column="17"/>
+      </memberdef>
+      <memberdef kind="function" id="class_openlabs_1_1_mgcxm_1_1_internal_1_1_duration_1a17de3e391fcac1b8af9f13646659458f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>long</type>
+        <definition>long Openlabs.Mgcxm.Internal.Duration.GetTicks</definition>
+        <argsstring>()</argsstring>
+        <name>GetTicks</name>
+        <qualifiedname>Openlabs.Mgcxm.Internal.Duration.GetTicks</qualifiedname>
+        <briefdescription>
+<para>Gets the actual value in TimeSpan ticks. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/adenf/RiderProjects/Openlabs.Mgcxm/Openlabs.Mgcxm/Internal/Chrono.cs" line="62" column="17"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/Users/adenf/RiderProjects/Openlabs.Mgcxm/Openlabs.Mgcxm/Internal/Chrono.cs" line="18" column="7" bodyfile="C:/Users/adenf/RiderProjects/Openlabs.Mgcxm/Openlabs.Mgcxm/Internal/Chrono.cs" bodystart="19" bodyend="78"/>
+    <listofallmembers>
+      <member refid="class_openlabs_1_1_mgcxm_1_1_internal_1_1_duration_1ad2663fc427c308f5db83762431acc519" prot="private" virt="non-virtual"><scope>Openlabs::Mgcxm::Internal::Duration</scope><name>_durationPeriod</name></member>
+      <member refid="class_openlabs_1_1_mgcxm_1_1_internal_1_1_duration_1a34bc75dbf9afd586b39b62869d39c576" prot="private" virt="non-virtual"><scope>Openlabs::Mgcxm::Internal::Duration</scope><name>_durationType</name></member>
+      <member refid="class_openlabs_1_1_mgcxm_1_1_internal_1_1_duration_1a54a90557029165dcb74a3fc5c1d447e9" prot="public" virt="non-virtual"><scope>Openlabs::Mgcxm::Internal::Duration</scope><name>Create</name></member>
+      <member refid="class_openlabs_1_1_mgcxm_1_1_internal_1_1_duration_1acfc88dc86c48ab1bf64220043fac9a54" prot="public" virt="non-virtual"><scope>Openlabs::Mgcxm::Internal::Duration</scope><name>GetHours</name></member>
+      <member refid="class_openlabs_1_1_mgcxm_1_1_internal_1_1_duration_1a07514a6b33fbba8b58160454bcde6da1" prot="public" virt="non-virtual"><scope>Openlabs::Mgcxm::Internal::Duration</scope><name>GetMicroseconds</name></member>
+      <member refid="class_openlabs_1_1_mgcxm_1_1_internal_1_1_duration_1a7dc7f3f0541d83d48ba297c216248886" prot="public" virt="non-virtual"><scope>Openlabs::Mgcxm::Internal::Duration</scope><name>GetMilliseconds</name></member>
+      <member refid="class_openlabs_1_1_mgcxm_1_1_internal_1_1_duration_1a7cfee8f93cc868168918b665197b5f4b" prot="public" virt="non-virtual"><scope>Openlabs::Mgcxm::Internal::Duration</scope><name>GetMinutes</name></member>
+      <member refid="class_openlabs_1_1_mgcxm_1_1_internal_1_1_duration_1ab780153b15d04d7b3fc97fed765b44ed" prot="public" virt="non-virtual"><scope>Openlabs::Mgcxm::Internal::Duration</scope><name>GetNanoseconds</name></member>
+      <member refid="class_openlabs_1_1_mgcxm_1_1_internal_1_1_duration_1ad4ee1886febd4101f73de51d69ca529e" prot="public" virt="non-virtual"><scope>Openlabs::Mgcxm::Internal::Duration</scope><name>GetSeconds</name></member>
+      <member refid="class_openlabs_1_1_mgcxm_1_1_internal_1_1_duration_1a17de3e391fcac1b8af9f13646659458f" prot="public" virt="non-virtual"><scope>Openlabs::Mgcxm::Internal::Duration</scope><name>GetTicks</name></member>
+      <member refid="class_openlabs_1_1_mgcxm_1_1_internal_1_1_duration_1af0ba527820a47a2d03a92115e515b38a" prot="private" virt="non-virtual"><scope>Openlabs::Mgcxm::Internal::Duration</scope><name>HoursRatio</name></member>
+      <member refid="class_openlabs_1_1_mgcxm_1_1_internal_1_1_duration_1ac7cd7273ce14952ef5c8c5c2d54a1ad9" prot="private" virt="non-virtual"><scope>Openlabs::Mgcxm::Internal::Duration</scope><name>MicrosecondsRatio</name></member>
+      <member refid="class_openlabs_1_1_mgcxm_1_1_internal_1_1_duration_1afd9b4234f1c97addb83a11ac0ae3d7ac" prot="private" virt="non-virtual"><scope>Openlabs::Mgcxm::Internal::Duration</scope><name>MillisecondsRatio</name></member>
+      <member refid="class_openlabs_1_1_mgcxm_1_1_internal_1_1_duration_1a4d3e4c345c349822eb80decd64a782de" prot="private" virt="non-virtual"><scope>Openlabs::Mgcxm::Internal::Duration</scope><name>MinutesRatio</name></member>
+      <member refid="class_openlabs_1_1_mgcxm_1_1_internal_1_1_duration_1afab5272dbf33ea283a5d6aba54a35f69" prot="private" virt="non-virtual"><scope>Openlabs::Mgcxm::Internal::Duration</scope><name>NanosecondsRatio</name></member>
+      <member refid="class_openlabs_1_1_mgcxm_1_1_internal_1_1_duration_1a4a28ee55e192547dc7340b1f6052a5b9" prot="private" virt="non-virtual"><scope>Openlabs::Mgcxm::Internal::Duration</scope><name>SecondsRatio</name></member>
+      <member refid="class_openlabs_1_1_mgcxm_1_1_internal_1_1_duration_1a016c73b1d4f88fc38ca2c35bc81388c0" prot="public" virt="non-virtual"><scope>Openlabs::Mgcxm::Internal::Duration</scope><name>TimeSpan</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

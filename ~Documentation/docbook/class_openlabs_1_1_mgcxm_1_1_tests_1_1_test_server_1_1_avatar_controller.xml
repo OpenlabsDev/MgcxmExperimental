@@ -1,0 +1,130 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_class_openlabs_1_1_mgcxm_1_1_tests_1_1_test_server_1_1_avatar_controller" xml:lang="en-US">
+<title>Openlabs.Mgcxm.Tests.TestServer.AvatarController Class Reference</title>
+<indexterm><primary>Openlabs.Mgcxm.Tests.TestServer.AvatarController</primary></indexterm>
+Inheritance diagram for Openlabs.Mgcxm.Tests.TestServer.AvatarController:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="class_openlabs_1_1_mgcxm_1_1_tests_1_1_test_server_1_1_avatar_controller__inherit__graph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+Collaboration diagram for Openlabs.Mgcxm.Tests.TestServer.AvatarController:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="class_openlabs_1_1_mgcxm_1_1_tests_1_1_test_server_1_1_avatar_controller__coll__graph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+<simplesect>
+    <title>Public Member Functions    </title>
+        <itemizedlist>
+            <listitem><para>void <link linkend="_class_openlabs_1_1_mgcxm_1_1_tests_1_1_test_server_1_1_avatar_controller_1ab1f8175e1b35853618489920e5dd43ab">HttpGet_AvatarV2_Get</link> (<link linkend="_class_openlabs_1_1_mgcxm_1_1_net_1_1_mgcxm_http_request">MgcxmHttpRequest</link> request, <link linkend="_class_openlabs_1_1_mgcxm_1_1_net_1_1_mgcxm_http_response">MgcxmHttpResponse</link> response)</para>
+</listitem>
+            <listitem><para>void <link linkend="_class_openlabs_1_1_mgcxm_1_1_tests_1_1_test_server_1_1_avatar_controller_1a3a976bbcc6d3e4ff1afd15b91f38fb7c">HttpGet_AvatarV2_Set</link> (<link linkend="_class_openlabs_1_1_mgcxm_1_1_net_1_1_mgcxm_http_request">MgcxmHttpRequest</link> request, <link linkend="_class_openlabs_1_1_mgcxm_1_1_net_1_1_mgcxm_http_response">MgcxmHttpResponse</link> response)</para>
+</listitem>
+            <listitem><para>void <link linkend="_class_openlabs_1_1_mgcxm_1_1_tests_1_1_test_server_1_1_avatar_controller_1a65039387899b5826da124b74251756e8">HttpGet_AvatarV3_GetItems</link> (<link linkend="_class_openlabs_1_1_mgcxm_1_1_net_1_1_mgcxm_http_request">MgcxmHttpRequest</link> request, <link linkend="_class_openlabs_1_1_mgcxm_1_1_net_1_1_mgcxm_http_response">MgcxmHttpResponse</link> response)</para>
+</listitem>
+            <listitem><para>void <link linkend="_class_openlabs_1_1_mgcxm_1_1_tests_1_1_test_server_1_1_avatar_controller_1ad05f1a6802047c93cb41a7ceff736aee">HttpGet_AvatarV2_GetGifts</link> (<link linkend="_class_openlabs_1_1_mgcxm_1_1_net_1_1_mgcxm_http_request">MgcxmHttpRequest</link> request, <link linkend="_class_openlabs_1_1_mgcxm_1_1_net_1_1_mgcxm_http_response">MgcxmHttpResponse</link> response)</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Static Public Member Functions    </title>
+        <itemizedlist>
+            <listitem><para>static async Task <link linkend="_class_openlabs_1_1_mgcxm_1_1_tests_1_1_test_server_1_1_avatar_controller_1a9fb4364c74dc74a7f2a8deaaa47c882a">Initialize</link> ()</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Additional Inherited Members    </title>
+Properties inherited from <link linkend="_class_openlabs_1_1_mgcxm_1_1_common_1_1_framework_1_1_endpoint_subpart_controller">Openlabs.Mgcxm.Common.Framework.EndpointSubpartController</link>        <itemizedlist>
+            <listitem><para>IReadOnlyList&lt; <link linkend="_class_openlabs_1_1_mgcxm_1_1_net_1_1_mgcxm_http_endpoint">MgcxmHttpEndpoint</link> &gt; <link linkend="_class_openlabs_1_1_mgcxm_1_1_common_1_1_framework_1_1_endpoint_subpart_controller_1a62af6228151851968601e7dee8b3d950">AllEndpoints</link><computeroutput> [get]</computeroutput>
+</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+Events inherited from <link linkend="_class_openlabs_1_1_mgcxm_1_1_common_1_1_framework_1_1_endpoint_subpart_controller">Openlabs.Mgcxm.Common.Framework.EndpointSubpartController</link>        <itemizedlist>
+            <listitem><para>Action <link linkend="_class_openlabs_1_1_mgcxm_1_1_common_1_1_framework_1_1_endpoint_subpart_controller_1a4c76afd9d57c42fe6df9574623c7ffd7">OnSubpartUpdated</link></para>
+</listitem>
+        </itemizedlist>
+<section>
+<title>Member Function Documentation</title>
+<anchor xml:id="_class_openlabs_1_1_mgcxm_1_1_tests_1_1_test_server_1_1_avatar_controller_1ab1f8175e1b35853618489920e5dd43ab"/><section>
+    <title>HttpGet_AvatarV2_Get()</title>
+<indexterm><primary>HttpGet_AvatarV2_Get</primary><secondary>Openlabs.Mgcxm.Tests.TestServer.AvatarController</secondary></indexterm>
+<indexterm><primary>Openlabs.Mgcxm.Tests.TestServer.AvatarController</primary><secondary>HttpGet_AvatarV2_Get</secondary></indexterm>
+<para><computeroutput>void Openlabs.Mgcxm.Tests.TestServer.AvatarController.HttpGet_AvatarV2_Get (<link linkend="_class_openlabs_1_1_mgcxm_1_1_net_1_1_mgcxm_http_request">MgcxmHttpRequest</link> request, <link linkend="_class_openlabs_1_1_mgcxm_1_1_net_1_1_mgcxm_http_response">MgcxmHttpResponse</link> response)</computeroutput></para>Here is the call graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="class_openlabs_1_1_mgcxm_1_1_tests_1_1_test_server_1_1_avatar_controller_ab1f8175e1b35853618489920e5dd43ab_cgraph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+</section>
+<anchor xml:id="_class_openlabs_1_1_mgcxm_1_1_tests_1_1_test_server_1_1_avatar_controller_1ad05f1a6802047c93cb41a7ceff736aee"/><section>
+    <title>HttpGet_AvatarV2_GetGifts()</title>
+<indexterm><primary>HttpGet_AvatarV2_GetGifts</primary><secondary>Openlabs.Mgcxm.Tests.TestServer.AvatarController</secondary></indexterm>
+<indexterm><primary>Openlabs.Mgcxm.Tests.TestServer.AvatarController</primary><secondary>HttpGet_AvatarV2_GetGifts</secondary></indexterm>
+<para><computeroutput>void Openlabs.Mgcxm.Tests.TestServer.AvatarController.HttpGet_AvatarV2_GetGifts (<link linkend="_class_openlabs_1_1_mgcxm_1_1_net_1_1_mgcxm_http_request">MgcxmHttpRequest</link> request, <link linkend="_class_openlabs_1_1_mgcxm_1_1_net_1_1_mgcxm_http_response">MgcxmHttpResponse</link> response)</computeroutput></para>Here is the call graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="class_openlabs_1_1_mgcxm_1_1_tests_1_1_test_server_1_1_avatar_controller_ad05f1a6802047c93cb41a7ceff736aee_cgraph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+</section>
+<anchor xml:id="_class_openlabs_1_1_mgcxm_1_1_tests_1_1_test_server_1_1_avatar_controller_1a3a976bbcc6d3e4ff1afd15b91f38fb7c"/><section>
+    <title>HttpGet_AvatarV2_Set()</title>
+<indexterm><primary>HttpGet_AvatarV2_Set</primary><secondary>Openlabs.Mgcxm.Tests.TestServer.AvatarController</secondary></indexterm>
+<indexterm><primary>Openlabs.Mgcxm.Tests.TestServer.AvatarController</primary><secondary>HttpGet_AvatarV2_Set</secondary></indexterm>
+<para><computeroutput>void Openlabs.Mgcxm.Tests.TestServer.AvatarController.HttpGet_AvatarV2_Set (<link linkend="_class_openlabs_1_1_mgcxm_1_1_net_1_1_mgcxm_http_request">MgcxmHttpRequest</link> request, <link linkend="_class_openlabs_1_1_mgcxm_1_1_net_1_1_mgcxm_http_response">MgcxmHttpResponse</link> response)</computeroutput></para>Here is the call graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="class_openlabs_1_1_mgcxm_1_1_tests_1_1_test_server_1_1_avatar_controller_a3a976bbcc6d3e4ff1afd15b91f38fb7c_cgraph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+</section>
+<anchor xml:id="_class_openlabs_1_1_mgcxm_1_1_tests_1_1_test_server_1_1_avatar_controller_1a65039387899b5826da124b74251756e8"/><section>
+    <title>HttpGet_AvatarV3_GetItems()</title>
+<indexterm><primary>HttpGet_AvatarV3_GetItems</primary><secondary>Openlabs.Mgcxm.Tests.TestServer.AvatarController</secondary></indexterm>
+<indexterm><primary>Openlabs.Mgcxm.Tests.TestServer.AvatarController</primary><secondary>HttpGet_AvatarV3_GetItems</secondary></indexterm>
+<para><computeroutput>void Openlabs.Mgcxm.Tests.TestServer.AvatarController.HttpGet_AvatarV3_GetItems (<link linkend="_class_openlabs_1_1_mgcxm_1_1_net_1_1_mgcxm_http_request">MgcxmHttpRequest</link> request, <link linkend="_class_openlabs_1_1_mgcxm_1_1_net_1_1_mgcxm_http_response">MgcxmHttpResponse</link> response)</computeroutput></para>Here is the call graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="class_openlabs_1_1_mgcxm_1_1_tests_1_1_test_server_1_1_avatar_controller_a65039387899b5826da124b74251756e8_cgraph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+</section>
+<anchor xml:id="_class_openlabs_1_1_mgcxm_1_1_tests_1_1_test_server_1_1_avatar_controller_1a9fb4364c74dc74a7f2a8deaaa47c882a"/><section>
+    <title>Initialize()</title>
+<indexterm><primary>Initialize</primary><secondary>Openlabs.Mgcxm.Tests.TestServer.AvatarController</secondary></indexterm>
+<indexterm><primary>Openlabs.Mgcxm.Tests.TestServer.AvatarController</primary><secondary>Initialize</secondary></indexterm>
+<para><computeroutput>static async Task Openlabs.Mgcxm.Tests.TestServer.AvatarController.Initialize ( )<computeroutput>[static]</computeroutput></computeroutput></para>Here is the caller graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="class_openlabs_1_1_mgcxm_1_1_tests_1_1_test_server_1_1_avatar_controller_a9fb4364c74dc74a7f2a8deaaa47c882a_icgraph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+</section>
+<para>
+The documentation for this class was generated from the following file:</para>
+C:/Users/adenf/RiderProjects/Openlabs.Mgcxm/Openlabs.Mgcxm.Tests/<link linkend="__test_server_8cs">TestServer.cs</link></section>
+</section>

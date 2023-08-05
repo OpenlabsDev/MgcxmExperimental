@@ -1,0 +1,155 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_class_j_w_t_1_1_jwt_base64_url_encoder" xml:lang="en-US">
+<title>JWT.JwtBase64UrlEncoder Class Reference</title>
+<indexterm><primary>JWT.JwtBase64UrlEncoder</primary></indexterm>
+<para>
+
+<para>base64 encoding/decoding implementation according to the <link linkend="_namespace_j_w_t">JWT</link> spec </para>
+ 
+</para>
+Inheritance diagram for JWT.JwtBase64UrlEncoder:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="class_j_w_t_1_1_jwt_base64_url_encoder__inherit__graph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+Collaboration diagram for JWT.JwtBase64UrlEncoder:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="class_j_w_t_1_1_jwt_base64_url_encoder__coll__graph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+<simplesect>
+    <title>Public Member Functions    </title>
+        <itemizedlist>
+            <listitem><para>string <link linkend="_class_j_w_t_1_1_jwt_base64_url_encoder_1a06cd88d4af2e4762ea12dd89a90fad86">Encode</link> (byte[] input)</para>
+</listitem>
+            <listitem><para>byte[] <link linkend="_class_j_w_t_1_1_jwt_base64_url_encoder_1a5d3a0011b96a5716ffc44a40b49da24f">Decode</link> (string input)</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+        <itemizedlist>
+            <listitem><para>string <link linkend="_interface_j_w_t_1_1_i_base64_url_encoder_1a0e1266c26222092a10082d1bb0c86e61">Encode</link> (byte[] input)</para>
+
+<para>Encodes the byte array to a base64 string. </para>
+</listitem>
+            <listitem><para>byte[] <link linkend="_interface_j_w_t_1_1_i_base64_url_encoder_1a70852ef851d7288fdba837a1248d3183">Decode</link> (string input)</para>
+
+<para>Decodes the base64 string to a byte array. </para>
+</listitem>
+        </itemizedlist>
+<section>
+<title>Detailed Description</title>
+
+<para>base64 encoding/decoding implementation according to the <link linkend="_namespace_j_w_t">JWT</link> spec </para>
+</section>
+<section>
+<title>Member Function Documentation</title>
+<anchor xml:id="_class_j_w_t_1_1_jwt_base64_url_encoder_1a5d3a0011b96a5716ffc44a40b49da24f"/><section>
+    <title>Decode()</title>
+<indexterm><primary>Decode</primary><secondary>JWT.JwtBase64UrlEncoder</secondary></indexterm>
+<indexterm><primary>JWT.JwtBase64UrlEncoder</primary><secondary>Decode</secondary></indexterm>
+<para><computeroutput>byte[] JWT.JwtBase64UrlEncoder.Decode (string input)</computeroutput></para>
+<para>
+<para>Decodes the base64 string to a byte array.</para>
+ 
+                <formalpara>
+                    <title>
+Exceptions</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>ArgumentException</entry><entry>
+<para>
+                <formalpara>
+                    <title>
+Exceptions</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>FormatException</entry><entry></entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                </para>
+<para>
+Implements <link linkend="_interface_j_w_t_1_1_i_base64_url_encoder_1a70852ef851d7288fdba837a1248d3183">JWT.IBase64UrlEncoder</link>.</para>
+</section>
+<anchor xml:id="_class_j_w_t_1_1_jwt_base64_url_encoder_1a06cd88d4af2e4762ea12dd89a90fad86"/><section>
+    <title>Encode()</title>
+<indexterm><primary>Encode</primary><secondary>JWT.JwtBase64UrlEncoder</secondary></indexterm>
+<indexterm><primary>JWT.JwtBase64UrlEncoder</primary><secondary>Encode</secondary></indexterm>
+<para><computeroutput>string JWT.JwtBase64UrlEncoder.Encode (byte[] input)</computeroutput></para>
+<para>
+<para>Encodes the byte array to a base64 string.</para>
+ 
+                <formalpara>
+                    <title>
+Exceptions</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>ArgumentNullException</entry><entry>
+<para>
+                <formalpara>
+                    <title>
+Exceptions</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>ArgumentOutOfRangeException</entry><entry></entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                </para>
+<para>
+Implements <link linkend="_interface_j_w_t_1_1_i_base64_url_encoder_1a0e1266c26222092a10082d1bb0c86e61">JWT.IBase64UrlEncoder</link>.</para>
+</section>
+<para>
+The documentation for this class was generated from the following file:</para>
+C:/Users/adenf/RiderProjects/Openlabs.Mgcxm/Openlabs.Mgcxm/JWT/<link linkend="__jwt_base64_url_encoder_8cs">JwtBase64UrlEncoder.cs</link></section>
+</section>

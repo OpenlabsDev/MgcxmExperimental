@@ -1,0 +1,25 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_dir_2a3e84ca603bacef733afd64585eded9" xml:lang="en-US">
+<title>C:/Users/adenf/RiderProjects/Openlabs.Mgcxm/Openlabs.Mgcxm/Internal/SystemObjects Directory Reference</title>
+<indexterm><primary>C:/Users/adenf/RiderProjects/Openlabs.Mgcxm/Openlabs.Mgcxm/Internal/SystemObjects Directory Reference</primary></indexterm>
+Directory dependency graph for SystemObjects:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="dir_2a3e84ca603bacef733afd64585eded9_dep.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+<simplesect>
+    <title>Files    </title>
+        <itemizedlist>
+            <listitem><para>file <link linkend="__i_mgcxm_system_object_8cs">IMgcxmSystemObject.cs</link></para>
+</listitem>
+            <listitem><para>file <link linkend="__mgcxm_object_8cs">MgcxmObject.cs</link></para>
+</listitem>
+            <listitem><para>file <link linkend="__mgcxm_object_parts_8cs">MgcxmObjectParts.cs</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+</section>

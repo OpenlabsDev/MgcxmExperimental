@@ -1,0 +1,18 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.7" xml:lang="en-US">
+  <compounddef id="dir_96e718dfa916e015e99698f6aa88a827" kind="dir">
+    <compoundname>C:/Users/adenf/RiderProjects/Openlabs.Mgcxm/Openlabs.Mgcxm.Tests/Assets/Responses/DTO</compoundname>
+    <innerfile refid="_avatar_d_t_o_8cs">AvatarDTO.cs</innerfile>
+    <innerfile refid="_login_response_d_t_o_8cs">LoginResponseDTO.cs</innerfile>
+    <innerfile refid="_message_d_t_o_8cs">MessageDTO.cs</innerfile>
+    <innerfile refid="_objective_d_t_o_8cs">ObjectiveDTO.cs</innerfile>
+    <innerfile refid="_profile_d_t_o_8cs">ProfileDTO.cs</innerfile>
+    <innerfile refid="_rec_room_config_d_t_o_8cs">RecRoomConfigDTO.cs</innerfile>
+    <innerfile refid="_setting_d_t_o_8cs">SettingDTO.cs</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/Users/adenf/RiderProjects/Openlabs.Mgcxm/Openlabs.Mgcxm.Tests/Assets/Responses/DTO/"/>
+  </compounddef>
+</doxygen>

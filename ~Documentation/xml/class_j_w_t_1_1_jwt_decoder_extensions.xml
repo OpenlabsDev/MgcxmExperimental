@@ -1,0 +1,1896 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.7" xml:lang="en-US">
+  <compounddef id="class_j_w_t_1_1_jwt_decoder_extensions" kind="class" language="C#" prot="public">
+    <compoundname>JWT::JwtDecoderExtensions</compoundname>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="class_j_w_t_1_1_jwt_decoder_extensions_1a70f64afa702b46591b001f2a4ff33e38" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>T</type>
+        <definition>static T JWT.JwtDecoderExtensions.DecodeHeader&lt; T &gt;</definition>
+        <argsstring>(this IJwtDecoder decoder, string token)</argsstring>
+        <name>DecodeHeader&lt; T &gt;</name>
+        <qualifiedname>JWT.JwtDecoderExtensions.DecodeHeader&lt; T &gt;</qualifiedname>
+        <param>
+          <type>this <ref refid="interface_j_w_t_1_1_i_jwt_decoder" kindref="compound">IJwtDecoder</ref></type>
+          <declname>decoder</declname>
+        </param>
+        <param>
+          <type>string</type>
+          <declname>token</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/adenf/RiderProjects/Openlabs.Mgcxm/Openlabs.Mgcxm/JWT/IJwtDecoder.cs" line="100" column="23"/>
+      </memberdef>
+      <memberdef kind="function" id="class_j_w_t_1_1_jwt_decoder_extensions_1a7062d3b6774435d91d2b0d2fd0133dc6" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>IDictionary&lt; string, string &gt;</type>
+        <definition>static IDictionary&lt; string, string &gt; JWT.JwtDecoderExtensions.DecodeHeaderToDictionary</definition>
+        <argsstring>(this IJwtDecoder decoder, string token)</argsstring>
+        <name>DecodeHeaderToDictionary</name>
+        <qualifiedname>JWT.JwtDecoderExtensions.DecodeHeaderToDictionary</qualifiedname>
+        <param>
+          <type>this <ref refid="interface_j_w_t_1_1_i_jwt_decoder" kindref="compound">IJwtDecoder</ref></type>
+          <declname>decoder</declname>
+        </param>
+        <param>
+          <type>string</type>
+          <declname>token</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/adenf/RiderProjects/Openlabs.Mgcxm/Openlabs.Mgcxm/JWT/IJwtDecoder.cs" line="103" column="35"/>
+      </memberdef>
+      <memberdef kind="function" id="class_j_w_t_1_1_jwt_decoder_extensions_1a5ee55f226d7994fce7b604cb016d2864" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>string</type>
+        <definition>static string JWT.JwtDecoderExtensions.Decode</definition>
+        <argsstring>(this IJwtDecoder decoder, string token, bool verify=true)</argsstring>
+        <name>Decode</name>
+        <qualifiedname>JWT.JwtDecoderExtensions.Decode</qualifiedname>
+        <param>
+          <type>this <ref refid="interface_j_w_t_1_1_i_jwt_decoder" kindref="compound">IJwtDecoder</ref></type>
+          <declname>decoder</declname>
+        </param>
+        <param>
+          <type>string</type>
+          <declname>token</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>verify</declname>
+          <defval>true</defval>
+        </param>
+        <briefdescription>
+<para>Given a <ref refid="namespace_j_w_t" kindref="compound">JWT</ref>, decodes it and return the payload. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>decoder</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The decoder instance</para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>token</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The <ref refid="namespace_j_w_t" kindref="compound">JWT</ref></para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>verify</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Whether to verify the signature (default is <computeroutput>true</computeroutput>)</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>A string containing the JSON payload</para>
+</simplesect>
+<parameterlist kind="exception"><parameteritem>
+<parameternamelist>
+<parametername>ArgumentException</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><parameterlist kind="exception"><parameteritem>
+<parameternamelist>
+<parametername>ArgumentOutOfRangeException</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><parameterlist kind="exception"><parameteritem>
+<parameternamelist>
+<parametername>InvalidTokenPartsException</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/adenf/RiderProjects/Openlabs.Mgcxm/Openlabs.Mgcxm/JWT/IJwtDecoder.cs" line="120" column="30"/>
+      </memberdef>
+      <memberdef kind="function" id="class_j_w_t_1_1_jwt_decoder_extensions_1a2c96d4c0c0071f25784a287dcb891405" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>string</type>
+        <definition>static string JWT.JwtDecoderExtensions.Decode</definition>
+        <argsstring>(this IJwtDecoder decoder, string token, byte[] key, bool verify=true)</argsstring>
+        <name>Decode</name>
+        <qualifiedname>JWT.JwtDecoderExtensions.Decode</qualifiedname>
+        <param>
+          <type>this <ref refid="interface_j_w_t_1_1_i_jwt_decoder" kindref="compound">IJwtDecoder</ref></type>
+          <declname>decoder</declname>
+        </param>
+        <param>
+          <type>string</type>
+          <declname>token</declname>
+        </param>
+        <param>
+          <type>byte[]</type>
+          <declname>key</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>verify</declname>
+          <defval>true</defval>
+        </param>
+        <briefdescription>
+<para>Given a <ref refid="namespace_j_w_t" kindref="compound">JWT</ref>, decodes it, and return the payload. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>decoder</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The decoder instance</para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>token</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The <ref refid="namespace_j_w_t" kindref="compound">JWT</ref></para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>key</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The key that was used to sign the <ref refid="namespace_j_w_t" kindref="compound">JWT</ref></para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>verify</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Whether to verify the signature (default is <computeroutput>true</computeroutput>)</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>A string containing the JSON payload</para>
+</simplesect>
+<parameterlist kind="exception"><parameteritem>
+<parameternamelist>
+<parametername>ArgumentException</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><parameterlist kind="exception"><parameteritem>
+<parameternamelist>
+<parametername>ArgumentOutOfRangeException</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><parameterlist kind="exception"><parameteritem>
+<parameternamelist>
+<parametername>InvalidTokenPartsException</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/adenf/RiderProjects/Openlabs.Mgcxm/Openlabs.Mgcxm/JWT/IJwtDecoder.cs" line="134" column="30"/>
+      </memberdef>
+      <memberdef kind="function" id="class_j_w_t_1_1_jwt_decoder_extensions_1acd8d69db131adc4bed3a7897f9414d72" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>string</type>
+        <definition>static string JWT.JwtDecoderExtensions.Decode</definition>
+        <argsstring>(this IJwtDecoder decoder, string token, byte[][] keys, bool verify=true)</argsstring>
+        <name>Decode</name>
+        <qualifiedname>JWT.JwtDecoderExtensions.Decode</qualifiedname>
+        <param>
+          <type>this <ref refid="interface_j_w_t_1_1_i_jwt_decoder" kindref="compound">IJwtDecoder</ref></type>
+          <declname>decoder</declname>
+        </param>
+        <param>
+          <type>string</type>
+          <declname>token</declname>
+        </param>
+        <param>
+          <type>byte</type>
+          <declname>keys</declname>
+          <array>[][]</array>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>verify</declname>
+          <defval>true</defval>
+        </param>
+        <briefdescription>
+<para>Given a <ref refid="namespace_j_w_t" kindref="compound">JWT</ref>, decodes it, and return the payload. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>decoder</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The decoder instance</para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>token</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The <ref refid="namespace_j_w_t" kindref="compound">JWT</ref></para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>keys</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The keys that were used to sign the <ref refid="namespace_j_w_t" kindref="compound">JWT</ref></para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>verify</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Whether to verify the signature (default is <computeroutput>true</computeroutput>)</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>A string containing the JSON payload</para>
+</simplesect>
+<parameterlist kind="exception"><parameteritem>
+<parameternamelist>
+<parametername>ArgumentException</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><parameterlist kind="exception"><parameteritem>
+<parameternamelist>
+<parametername>ArgumentOutOfRangeException</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><parameterlist kind="exception"><parameteritem>
+<parameternamelist>
+<parametername>InvalidTokenPartsException</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/adenf/RiderProjects/Openlabs.Mgcxm/Openlabs.Mgcxm/JWT/IJwtDecoder.cs" line="148" column="30"/>
+      </memberdef>
+      <memberdef kind="function" id="class_j_w_t_1_1_jwt_decoder_extensions_1a0ed89a93a26331d14b00a3f366981141" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>string</type>
+        <definition>static string JWT.JwtDecoderExtensions.Decode</definition>
+        <argsstring>(this IJwtDecoder decoder, string token, string key, bool verify=true)</argsstring>
+        <name>Decode</name>
+        <qualifiedname>JWT.JwtDecoderExtensions.Decode</qualifiedname>
+        <param>
+          <type>this <ref refid="interface_j_w_t_1_1_i_jwt_decoder" kindref="compound">IJwtDecoder</ref></type>
+          <declname>decoder</declname>
+        </param>
+        <param>
+          <type>string</type>
+          <declname>token</declname>
+        </param>
+        <param>
+          <type>string</type>
+          <declname>key</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>verify</declname>
+          <defval>true</defval>
+        </param>
+        <briefdescription>
+<para>Given a <ref refid="namespace_j_w_t" kindref="compound">JWT</ref>, decodes it, and return the payload as an dictionary. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>decoder</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The decoder instance</para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>token</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The <ref refid="namespace_j_w_t" kindref="compound">JWT</ref></para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>key</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The key that was used to sign the <ref refid="namespace_j_w_t" kindref="compound">JWT</ref></para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>verify</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Whether to verify the signature (default is <computeroutput>true</computeroutput>)</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>An object representing the payload</para>
+</simplesect>
+<parameterlist kind="exception"><parameteritem>
+<parameternamelist>
+<parametername>ArgumentException</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><parameterlist kind="exception"><parameteritem>
+<parameternamelist>
+<parametername>ArgumentOutOfRangeException</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/adenf/RiderProjects/Openlabs.Mgcxm/Openlabs.Mgcxm/JWT/IJwtDecoder.cs" line="161" column="30"/>
+      </memberdef>
+      <memberdef kind="function" id="class_j_w_t_1_1_jwt_decoder_extensions_1a14ade99dcdaf6d7cf02c381ef79f17a4" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>string</type>
+        <definition>static string JWT.JwtDecoderExtensions.Decode</definition>
+        <argsstring>(this IJwtDecoder decoder, string token, string[] keys, bool verify=true)</argsstring>
+        <name>Decode</name>
+        <qualifiedname>JWT.JwtDecoderExtensions.Decode</qualifiedname>
+        <param>
+          <type>this <ref refid="interface_j_w_t_1_1_i_jwt_decoder" kindref="compound">IJwtDecoder</ref></type>
+          <declname>decoder</declname>
+        </param>
+        <param>
+          <type>string</type>
+          <declname>token</declname>
+        </param>
+        <param>
+          <type>string[]</type>
+          <declname>keys</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>verify</declname>
+          <defval>true</defval>
+        </param>
+        <briefdescription>
+<para>Given a <ref refid="namespace_j_w_t" kindref="compound">JWT</ref>, decodes it, and return the payload as an dictionary. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>decoder</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The decoder instance</para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>token</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The <ref refid="namespace_j_w_t" kindref="compound">JWT</ref></para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>keys</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The key which one of them was used to sign the <ref refid="namespace_j_w_t" kindref="compound">JWT</ref></para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>verify</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Whether to verify the signature (default is <computeroutput>true</computeroutput>)</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>An object representing the payload</para>
+</simplesect>
+<parameterlist kind="exception"><parameteritem>
+<parameternamelist>
+<parametername>ArgumentException</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><parameterlist kind="exception"><parameteritem>
+<parameternamelist>
+<parametername>ArgumentOutOfRangeException</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/adenf/RiderProjects/Openlabs.Mgcxm/Openlabs.Mgcxm/JWT/IJwtDecoder.cs" line="174" column="30"/>
+      </memberdef>
+      <memberdef kind="function" id="class_j_w_t_1_1_jwt_decoder_extensions_1abbb80f44f8ac24b9ce9bb4569df0d472" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>IDictionary&lt; string, object &gt;</type>
+        <definition>static IDictionary&lt; string, object &gt; JWT.JwtDecoderExtensions.DecodeToObject</definition>
+        <argsstring>(this IJwtDecoder decoder, string token, bool verify=true)</argsstring>
+        <name>DecodeToObject</name>
+        <qualifiedname>JWT.JwtDecoderExtensions.DecodeToObject</qualifiedname>
+        <param>
+          <type>this <ref refid="interface_j_w_t_1_1_i_jwt_decoder" kindref="compound">IJwtDecoder</ref></type>
+          <declname>decoder</declname>
+        </param>
+        <param>
+          <type>string</type>
+          <declname>token</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>verify</declname>
+          <defval>true</defval>
+        </param>
+        <briefdescription>
+<para>Given a <ref refid="namespace_j_w_t" kindref="compound">JWT</ref>, decodes it and return the payload as a dictionary. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>decoder</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The decoder instance</para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>token</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The <ref refid="namespace_j_w_t" kindref="compound">JWT</ref></para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>verify</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Whether to verify the signature (default is <computeroutput>true</computeroutput>)</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>An object representing the payload</para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/adenf/RiderProjects/Openlabs.Mgcxm/Openlabs.Mgcxm/JWT/IJwtDecoder.cs" line="188" column="35"/>
+      </memberdef>
+      <memberdef kind="function" id="class_j_w_t_1_1_jwt_decoder_extensions_1a3b01d451e986fdc743778d75a448adc6" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>IDictionary&lt; string, object &gt;</type>
+        <definition>static IDictionary&lt; string, object &gt; JWT.JwtDecoderExtensions.DecodeToObject</definition>
+        <argsstring>(this IJwtDecoder decoder, string token, string key, bool verify=true)</argsstring>
+        <name>DecodeToObject</name>
+        <qualifiedname>JWT.JwtDecoderExtensions.DecodeToObject</qualifiedname>
+        <param>
+          <type>this <ref refid="interface_j_w_t_1_1_i_jwt_decoder" kindref="compound">IJwtDecoder</ref></type>
+          <declname>decoder</declname>
+        </param>
+        <param>
+          <type>string</type>
+          <declname>token</declname>
+        </param>
+        <param>
+          <type>string</type>
+          <declname>key</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>verify</declname>
+          <defval>true</defval>
+        </param>
+        <briefdescription>
+<para>Given a <ref refid="namespace_j_w_t" kindref="compound">JWT</ref>, decodes it and return the payload as a dictionary. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>decoder</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The decoder instance</para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>token</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The <ref refid="namespace_j_w_t" kindref="compound">JWT</ref></para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>key</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The key that was used to sign the <ref refid="namespace_j_w_t" kindref="compound">JWT</ref></para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>verify</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Whether to verify the signature (default is <computeroutput>true</computeroutput>)</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>An object representing the payload</para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/adenf/RiderProjects/Openlabs.Mgcxm/Openlabs.Mgcxm/JWT/IJwtDecoder.cs" line="199" column="35"/>
+      </memberdef>
+      <memberdef kind="function" id="class_j_w_t_1_1_jwt_decoder_extensions_1ad3610bdbe28a7ea9e25ca3197f65be7e" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>IDictionary&lt; string, object &gt;</type>
+        <definition>static IDictionary&lt; string, object &gt; JWT.JwtDecoderExtensions.DecodeToObject</definition>
+        <argsstring>(this IJwtDecoder decoder, string token, string[] keys, bool verify=true)</argsstring>
+        <name>DecodeToObject</name>
+        <qualifiedname>JWT.JwtDecoderExtensions.DecodeToObject</qualifiedname>
+        <param>
+          <type>this <ref refid="interface_j_w_t_1_1_i_jwt_decoder" kindref="compound">IJwtDecoder</ref></type>
+          <declname>decoder</declname>
+        </param>
+        <param>
+          <type>string</type>
+          <declname>token</declname>
+        </param>
+        <param>
+          <type>string[]</type>
+          <declname>keys</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>verify</declname>
+          <defval>true</defval>
+        </param>
+        <briefdescription>
+<para>Given a <ref refid="namespace_j_w_t" kindref="compound">JWT</ref>, decodes it and return the payload as a dictionary. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>decoder</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The decoder instance</para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>token</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The <ref refid="namespace_j_w_t" kindref="compound">JWT</ref></para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>keys</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The keys provided which one of them was used to sign the <ref refid="namespace_j_w_t" kindref="compound">JWT</ref></para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>verify</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Whether to verify the signature (default is <computeroutput>true</computeroutput>)</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>An object representing the payload</para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/adenf/RiderProjects/Openlabs.Mgcxm/Openlabs.Mgcxm/JWT/IJwtDecoder.cs" line="210" column="35"/>
+      </memberdef>
+      <memberdef kind="function" id="class_j_w_t_1_1_jwt_decoder_extensions_1ad5fb69a04d79dbefb8a1ef08dd9c65af" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>IDictionary&lt; string, object &gt;</type>
+        <definition>static IDictionary&lt; string, object &gt; JWT.JwtDecoderExtensions.DecodeToObject</definition>
+        <argsstring>(this IJwtDecoder decoder, string token, byte[] key, bool verify=true)</argsstring>
+        <name>DecodeToObject</name>
+        <qualifiedname>JWT.JwtDecoderExtensions.DecodeToObject</qualifiedname>
+        <param>
+          <type>this <ref refid="interface_j_w_t_1_1_i_jwt_decoder" kindref="compound">IJwtDecoder</ref></type>
+          <declname>decoder</declname>
+        </param>
+        <param>
+          <type>string</type>
+          <declname>token</declname>
+        </param>
+        <param>
+          <type>byte[]</type>
+          <declname>key</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>verify</declname>
+          <defval>true</defval>
+        </param>
+        <briefdescription>
+<para>Given a <ref refid="namespace_j_w_t" kindref="compound">JWT</ref>, decodes it and return the payload as a dictionary. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>decoder</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The decoder instance</para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>token</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The <ref refid="namespace_j_w_t" kindref="compound">JWT</ref></para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>key</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The key that was used to sign the <ref refid="namespace_j_w_t" kindref="compound">JWT</ref></para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>verify</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Whether to verify the signature (default is <computeroutput>true</computeroutput>)</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>An object representing the payload</para>
+</simplesect>
+<parameterlist kind="exception"><parameteritem>
+<parameternamelist>
+<parametername>ArgumentException</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><parameterlist kind="exception"><parameteritem>
+<parameternamelist>
+<parametername>ArgumentOutOfRangeException</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><parameterlist kind="exception"><parameteritem>
+<parameternamelist>
+<parametername>InvalidTokenPartsException</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/adenf/RiderProjects/Openlabs.Mgcxm/Openlabs.Mgcxm/JWT/IJwtDecoder.cs" line="224" column="35"/>
+      </memberdef>
+      <memberdef kind="function" id="class_j_w_t_1_1_jwt_decoder_extensions_1afc0d999bc1a3d11b69acfd46974484cb" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>IDictionary&lt; string, object &gt;</type>
+        <definition>static IDictionary&lt; string, object &gt; JWT.JwtDecoderExtensions.DecodeToObject</definition>
+        <argsstring>(this IJwtDecoder decoder, string token, byte[][] keys, bool verify=true)</argsstring>
+        <name>DecodeToObject</name>
+        <qualifiedname>JWT.JwtDecoderExtensions.DecodeToObject</qualifiedname>
+        <param>
+          <type>this <ref refid="interface_j_w_t_1_1_i_jwt_decoder" kindref="compound">IJwtDecoder</ref></type>
+          <declname>decoder</declname>
+        </param>
+        <param>
+          <type>string</type>
+          <declname>token</declname>
+        </param>
+        <param>
+          <type>byte</type>
+          <declname>keys</declname>
+          <array>[][]</array>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>verify</declname>
+          <defval>true</defval>
+        </param>
+        <briefdescription>
+<para>Given a <ref refid="namespace_j_w_t" kindref="compound">JWT</ref>, decodes it and return the payload as a dictionary. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>decoder</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The decoder instance</para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>token</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The <ref refid="namespace_j_w_t" kindref="compound">JWT</ref></para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>keys</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The keys that were used to sign the <ref refid="namespace_j_w_t" kindref="compound">JWT</ref></para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>verify</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Whether to verify the signature (default is <computeroutput>true</computeroutput>)</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>A string containing the JSON payload</para>
+</simplesect>
+<parameterlist kind="exception"><parameteritem>
+<parameternamelist>
+<parametername>ArgumentException</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><parameterlist kind="exception"><parameteritem>
+<parameternamelist>
+<parametername>ArgumentOutOfRangeException</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><parameterlist kind="exception"><parameteritem>
+<parameternamelist>
+<parametername>InvalidTokenPartsException</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/adenf/RiderProjects/Openlabs.Mgcxm/Openlabs.Mgcxm/JWT/IJwtDecoder.cs" line="238" column="35"/>
+      </memberdef>
+      <memberdef kind="function" id="class_j_w_t_1_1_jwt_decoder_extensions_1a8f6212917f07beacb2618c4673299306" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>object</type>
+        <definition>static object JWT.JwtDecoderExtensions.DecodeToObject</definition>
+        <argsstring>(this IJwtDecoder decoder, Type type, string token, byte[] key, bool verify=true)</argsstring>
+        <name>DecodeToObject</name>
+        <qualifiedname>JWT.JwtDecoderExtensions.DecodeToObject</qualifiedname>
+        <param>
+          <type>this <ref refid="interface_j_w_t_1_1_i_jwt_decoder" kindref="compound">IJwtDecoder</ref></type>
+          <declname>decoder</declname>
+        </param>
+        <param>
+          <type>Type</type>
+          <declname>type</declname>
+        </param>
+        <param>
+          <type>string</type>
+          <declname>token</declname>
+        </param>
+        <param>
+          <type>byte[]</type>
+          <declname>key</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>verify</declname>
+          <defval>true</defval>
+        </param>
+        <briefdescription>
+<para>Given a <ref refid="namespace_j_w_t" kindref="compound">JWT</ref>, decodes it and return the payload as a dictionary. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>decoder</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The decoder instance</para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>type</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The type to deserialize to.</para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>token</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The <ref refid="namespace_j_w_t" kindref="compound">JWT</ref></para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>key</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The key that was used to sign the <ref refid="namespace_j_w_t" kindref="compound">JWT</ref></para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>verify</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Whether to verify the signature (default is <computeroutput>true</computeroutput>)</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>An object representing the payload</para>
+</simplesect>
+<parameterlist kind="exception"><parameteritem>
+<parameternamelist>
+<parametername>ArgumentException</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><parameterlist kind="exception"><parameteritem>
+<parameternamelist>
+<parametername>ArgumentOutOfRangeException</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><parameterlist kind="exception"><parameteritem>
+<parameternamelist>
+<parametername>InvalidTokenPartsException</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/adenf/RiderProjects/Openlabs.Mgcxm/Openlabs.Mgcxm/JWT/IJwtDecoder.cs" line="253" column="30"/>
+      </memberdef>
+      <memberdef kind="function" id="class_j_w_t_1_1_jwt_decoder_extensions_1a673d7d5a6627f8d152d68b978d6a6251" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>object</type>
+        <definition>static object JWT.JwtDecoderExtensions.DecodeToObject</definition>
+        <argsstring>(this IJwtDecoder decoder, Type type, string token, byte[][] keys, bool verify=true)</argsstring>
+        <name>DecodeToObject</name>
+        <qualifiedname>JWT.JwtDecoderExtensions.DecodeToObject</qualifiedname>
+        <param>
+          <type>this <ref refid="interface_j_w_t_1_1_i_jwt_decoder" kindref="compound">IJwtDecoder</ref></type>
+          <declname>decoder</declname>
+        </param>
+        <param>
+          <type>Type</type>
+          <declname>type</declname>
+        </param>
+        <param>
+          <type>string</type>
+          <declname>token</declname>
+        </param>
+        <param>
+          <type>byte</type>
+          <declname>keys</declname>
+          <array>[][]</array>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>verify</declname>
+          <defval>true</defval>
+        </param>
+        <briefdescription>
+<para>Given a <ref refid="namespace_j_w_t" kindref="compound">JWT</ref>, decodes it and return the payload as a dictionary. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>decoder</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The decoder instance</para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>type</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The type to deserialize to.</para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>token</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The <ref refid="namespace_j_w_t" kindref="compound">JWT</ref></para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>keys</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The keys that were used to sign the <ref refid="namespace_j_w_t" kindref="compound">JWT</ref></para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>verify</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Whether to verify the signature (default is <computeroutput>true</computeroutput>)</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>A string containing the JSON payload</para>
+</simplesect>
+<parameterlist kind="exception"><parameteritem>
+<parameternamelist>
+<parametername>ArgumentException</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><parameterlist kind="exception"><parameteritem>
+<parameternamelist>
+<parametername>ArgumentOutOfRangeException</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><parameterlist kind="exception"><parameteritem>
+<parameternamelist>
+<parametername>InvalidTokenPartsException</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/adenf/RiderProjects/Openlabs.Mgcxm/Openlabs.Mgcxm/JWT/IJwtDecoder.cs" line="268" column="30"/>
+      </memberdef>
+      <memberdef kind="function" id="class_j_w_t_1_1_jwt_decoder_extensions_1aa25ac544a3564ef8fd5c3a30b9e10e91" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>object</type>
+        <definition>static object JWT.JwtDecoderExtensions.DecodeToObject</definition>
+        <argsstring>(this IJwtDecoder decoder, Type type, string token, string key, bool verify=true)</argsstring>
+        <name>DecodeToObject</name>
+        <qualifiedname>JWT.JwtDecoderExtensions.DecodeToObject</qualifiedname>
+        <param>
+          <type>this <ref refid="interface_j_w_t_1_1_i_jwt_decoder" kindref="compound">IJwtDecoder</ref></type>
+          <declname>decoder</declname>
+        </param>
+        <param>
+          <type>Type</type>
+          <declname>type</declname>
+        </param>
+        <param>
+          <type>string</type>
+          <declname>token</declname>
+        </param>
+        <param>
+          <type>string</type>
+          <declname>key</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>verify</declname>
+          <defval>true</defval>
+        </param>
+        <briefdescription>
+<para>Given a <ref refid="namespace_j_w_t" kindref="compound">JWT</ref>, decodes it and return the payload as an dictionary. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>decoder</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The decoder instance</para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>type</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The type to deserialize to.</para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>token</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The <ref refid="namespace_j_w_t" kindref="compound">JWT</ref></para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>key</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The key that was used to sign the <ref refid="namespace_j_w_t" kindref="compound">JWT</ref></para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>verify</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Whether to verify the signature (default is <computeroutput>true</computeroutput>)</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>An object representing the payload</para>
+</simplesect>
+<parameterlist kind="exception"><parameteritem>
+<parameternamelist>
+<parametername>ArgumentException</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><parameterlist kind="exception"><parameteritem>
+<parameternamelist>
+<parametername>ArgumentOutOfRangeException</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/adenf/RiderProjects/Openlabs.Mgcxm/Openlabs.Mgcxm/JWT/IJwtDecoder.cs" line="282" column="30"/>
+      </memberdef>
+      <memberdef kind="function" id="class_j_w_t_1_1_jwt_decoder_extensions_1a8fd9afbccda24b59bf7901181228b564" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>object</type>
+        <definition>static object JWT.JwtDecoderExtensions.DecodeToObject</definition>
+        <argsstring>(this IJwtDecoder decoder, Type type, string token, string[] keys, bool verify=true)</argsstring>
+        <name>DecodeToObject</name>
+        <qualifiedname>JWT.JwtDecoderExtensions.DecodeToObject</qualifiedname>
+        <param>
+          <type>this <ref refid="interface_j_w_t_1_1_i_jwt_decoder" kindref="compound">IJwtDecoder</ref></type>
+          <declname>decoder</declname>
+        </param>
+        <param>
+          <type>Type</type>
+          <declname>type</declname>
+        </param>
+        <param>
+          <type>string</type>
+          <declname>token</declname>
+        </param>
+        <param>
+          <type>string[]</type>
+          <declname>keys</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>verify</declname>
+          <defval>true</defval>
+        </param>
+        <briefdescription>
+<para>Given a <ref refid="namespace_j_w_t" kindref="compound">JWT</ref>, decodes it and return the payload as an dictionary. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>decoder</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The decoder instance</para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>type</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The type to deserialize to.</para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>token</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The <ref refid="namespace_j_w_t" kindref="compound">JWT</ref></para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>keys</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The key which one of them was used to sign the <ref refid="namespace_j_w_t" kindref="compound">JWT</ref></para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>verify</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Whether to verify the signature (default is <computeroutput>true</computeroutput>)</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>An object representing the payload</para>
+</simplesect>
+<parameterlist kind="exception"><parameteritem>
+<parameternamelist>
+<parametername>ArgumentException</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><parameterlist kind="exception"><parameteritem>
+<parameternamelist>
+<parametername>ArgumentOutOfRangeException</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/adenf/RiderProjects/Openlabs.Mgcxm/Openlabs.Mgcxm/JWT/IJwtDecoder.cs" line="296" column="30"/>
+      </memberdef>
+      <memberdef kind="function" id="class_j_w_t_1_1_jwt_decoder_extensions_1ab152ad8ceb8f0edce364b4ab29990c53" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>T</type>
+        <definition>static T JWT.JwtDecoderExtensions.DecodeToObject&lt; T &gt;</definition>
+        <argsstring>(this IJwtDecoder decoder, JwtParts jwt, bool verify=true)</argsstring>
+        <name>DecodeToObject&lt; T &gt;</name>
+        <qualifiedname>JWT.JwtDecoderExtensions.DecodeToObject&lt; T &gt;</qualifiedname>
+        <param>
+          <type>this <ref refid="interface_j_w_t_1_1_i_jwt_decoder" kindref="compound">IJwtDecoder</ref></type>
+          <declname>decoder</declname>
+        </param>
+        <param>
+          <type><ref refid="class_j_w_t_1_1_jwt_parts" kindref="compound">JwtParts</ref></type>
+          <declname>jwt</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>verify</declname>
+          <defval>true</defval>
+        </param>
+        <briefdescription>
+<para>Given a <ref refid="namespace_j_w_t" kindref="compound">JWT</ref>, decodes it and return the payload as an object. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="templateparam"><parameteritem>
+<parameternamelist>
+<parametername>T</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The type to deserialize to.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>decoder</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The decoder instance</para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>jwt</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The <ref refid="namespace_j_w_t" kindref="compound">JWT</ref></para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>verify</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Whether to verify the signature (default is <computeroutput>true</computeroutput>)</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>An object representing the payload</para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/adenf/RiderProjects/Openlabs.Mgcxm/Openlabs.Mgcxm/JWT/IJwtDecoder.cs" line="311" column="23"/>
+      </memberdef>
+      <memberdef kind="function" id="class_j_w_t_1_1_jwt_decoder_extensions_1a479955f0f9bdfa7a960a553f253bbaf8" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>T</type>
+        <definition>static T JWT.JwtDecoderExtensions.DecodeToObject&lt; T &gt;</definition>
+        <argsstring>(this IJwtDecoder decoder, JwtParts jwt, byte[] key, bool verify=true)</argsstring>
+        <name>DecodeToObject&lt; T &gt;</name>
+        <qualifiedname>JWT.JwtDecoderExtensions.DecodeToObject&lt; T &gt;</qualifiedname>
+        <param>
+          <type>this <ref refid="interface_j_w_t_1_1_i_jwt_decoder" kindref="compound">IJwtDecoder</ref></type>
+          <declname>decoder</declname>
+        </param>
+        <param>
+          <type><ref refid="class_j_w_t_1_1_jwt_parts" kindref="compound">JwtParts</ref></type>
+          <declname>jwt</declname>
+        </param>
+        <param>
+          <type>byte[]</type>
+          <declname>key</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>verify</declname>
+          <defval>true</defval>
+        </param>
+        <briefdescription>
+<para>Given a <ref refid="namespace_j_w_t" kindref="compound">JWT</ref>, decodes it and return the payload as an object. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="templateparam"><parameteritem>
+<parameternamelist>
+<parametername>T</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The type to deserialize to.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>decoder</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The decoder instance</para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>jwt</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The <ref refid="namespace_j_w_t" kindref="compound">JWT</ref></para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>key</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The key that was used to sign the <ref refid="namespace_j_w_t" kindref="compound">JWT</ref></para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>verify</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Whether to verify the signature (default is <computeroutput>true</computeroutput>)</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>An object representing the payload</para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/adenf/RiderProjects/Openlabs.Mgcxm/Openlabs.Mgcxm/JWT/IJwtDecoder.cs" line="323" column="23"/>
+      </memberdef>
+      <memberdef kind="function" id="class_j_w_t_1_1_jwt_decoder_extensions_1acc4da1d131269a54070322536a64653e" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>T</type>
+        <definition>static T JWT.JwtDecoderExtensions.DecodeToObject&lt; T &gt;</definition>
+        <argsstring>(this IJwtDecoder decoder, JwtParts jwt, byte[][] keys, bool verify=true)</argsstring>
+        <name>DecodeToObject&lt; T &gt;</name>
+        <qualifiedname>JWT.JwtDecoderExtensions.DecodeToObject&lt; T &gt;</qualifiedname>
+        <param>
+          <type>this <ref refid="interface_j_w_t_1_1_i_jwt_decoder" kindref="compound">IJwtDecoder</ref></type>
+          <declname>decoder</declname>
+        </param>
+        <param>
+          <type><ref refid="class_j_w_t_1_1_jwt_parts" kindref="compound">JwtParts</ref></type>
+          <declname>jwt</declname>
+        </param>
+        <param>
+          <type>byte</type>
+          <declname>keys</declname>
+          <array>[][]</array>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>verify</declname>
+          <defval>true</defval>
+        </param>
+        <briefdescription>
+<para>Given a <ref refid="namespace_j_w_t" kindref="compound">JWT</ref>, decodes it and return the payload as an object. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="templateparam"><parameteritem>
+<parameternamelist>
+<parametername>T</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The type to deserialize to.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>decoder</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The decoder instance</para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>jwt</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The <ref refid="namespace_j_w_t" kindref="compound">JWT</ref></para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>keys</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The keys which one of them was used to sign the <ref refid="namespace_j_w_t" kindref="compound">JWT</ref></para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>verify</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Whether to verify the signature (default is <computeroutput>true</computeroutput>)</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>An object representing the payload</para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/adenf/RiderProjects/Openlabs.Mgcxm/Openlabs.Mgcxm/JWT/IJwtDecoder.cs" line="335" column="23"/>
+      </memberdef>
+      <memberdef kind="function" id="class_j_w_t_1_1_jwt_decoder_extensions_1aec5059467c2b64a6fc5d9a5a527c15e7" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>T</type>
+        <definition>static T JWT.JwtDecoderExtensions.DecodeToObject&lt; T &gt;</definition>
+        <argsstring>(this IJwtDecoder decoder, string token)</argsstring>
+        <name>DecodeToObject&lt; T &gt;</name>
+        <qualifiedname>JWT.JwtDecoderExtensions.DecodeToObject&lt; T &gt;</qualifiedname>
+        <param>
+          <type>this <ref refid="interface_j_w_t_1_1_i_jwt_decoder" kindref="compound">IJwtDecoder</ref></type>
+          <declname>decoder</declname>
+        </param>
+        <param>
+          <type>string</type>
+          <declname>token</declname>
+        </param>
+        <briefdescription>
+<para>Given a <ref refid="namespace_j_w_t" kindref="compound">JWT</ref>, decodes it and return the payload as an object. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="templateparam"><parameteritem>
+<parameternamelist>
+<parametername>T</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The type to return</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>decoder</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The decoder instance</para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>token</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The <ref refid="namespace_j_w_t" kindref="compound">JWT</ref></para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>An object representing the payload</para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/adenf/RiderProjects/Openlabs.Mgcxm/Openlabs.Mgcxm/JWT/IJwtDecoder.cs" line="345" column="23"/>
+      </memberdef>
+      <memberdef kind="function" id="class_j_w_t_1_1_jwt_decoder_extensions_1afdf6166dc2d77bcdb06beccb05435a86" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>T</type>
+        <definition>static T JWT.JwtDecoderExtensions.DecodeToObject&lt; T &gt;</definition>
+        <argsstring>(this IJwtDecoder decoder, string token, string key, bool verify=true)</argsstring>
+        <name>DecodeToObject&lt; T &gt;</name>
+        <qualifiedname>JWT.JwtDecoderExtensions.DecodeToObject&lt; T &gt;</qualifiedname>
+        <param>
+          <type>this <ref refid="interface_j_w_t_1_1_i_jwt_decoder" kindref="compound">IJwtDecoder</ref></type>
+          <declname>decoder</declname>
+        </param>
+        <param>
+          <type>string</type>
+          <declname>token</declname>
+        </param>
+        <param>
+          <type>string</type>
+          <declname>key</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>verify</declname>
+          <defval>true</defval>
+        </param>
+        <briefdescription>
+<para>Given a <ref refid="namespace_j_w_t" kindref="compound">JWT</ref>, decodes it and return the payload as an object. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="templateparam"><parameteritem>
+<parameternamelist>
+<parametername>T</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The type to return</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>decoder</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The decoder instance</para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>token</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The <ref refid="namespace_j_w_t" kindref="compound">JWT</ref></para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>key</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The key that was used to sign the <ref refid="namespace_j_w_t" kindref="compound">JWT</ref></para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>verify</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Whether to verify the signature (default is <computeroutput>true</computeroutput>)</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>An object representing the payload</para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/adenf/RiderProjects/Openlabs.Mgcxm/Openlabs.Mgcxm/JWT/IJwtDecoder.cs" line="357" column="23"/>
+      </memberdef>
+      <memberdef kind="function" id="class_j_w_t_1_1_jwt_decoder_extensions_1a87aa4329e84da2b45a7c89b1bbc4337a" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>T</type>
+        <definition>static T JWT.JwtDecoderExtensions.DecodeToObject&lt; T &gt;</definition>
+        <argsstring>(this IJwtDecoder decoder, string token, byte[] key, bool verify=true)</argsstring>
+        <name>DecodeToObject&lt; T &gt;</name>
+        <qualifiedname>JWT.JwtDecoderExtensions.DecodeToObject&lt; T &gt;</qualifiedname>
+        <param>
+          <type>this <ref refid="interface_j_w_t_1_1_i_jwt_decoder" kindref="compound">IJwtDecoder</ref></type>
+          <declname>decoder</declname>
+        </param>
+        <param>
+          <type>string</type>
+          <declname>token</declname>
+        </param>
+        <param>
+          <type>byte[]</type>
+          <declname>key</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>verify</declname>
+          <defval>true</defval>
+        </param>
+        <briefdescription>
+<para>Given a <ref refid="namespace_j_w_t" kindref="compound">JWT</ref>, decodes it and return the payload as an object. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="templateparam"><parameteritem>
+<parameternamelist>
+<parametername>T</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The type to return</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>decoder</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The decoder instance</para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>token</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The <ref refid="namespace_j_w_t" kindref="compound">JWT</ref></para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>key</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The key that was used to sign the <ref refid="namespace_j_w_t" kindref="compound">JWT</ref></para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>verify</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Whether to verify the signature (default is <computeroutput>true</computeroutput>)</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>An object representing the payload</para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/adenf/RiderProjects/Openlabs.Mgcxm/Openlabs.Mgcxm/JWT/IJwtDecoder.cs" line="369" column="23"/>
+      </memberdef>
+      <memberdef kind="function" id="class_j_w_t_1_1_jwt_decoder_extensions_1a7abc78dbbc76af4a564bf671f02512bc" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>T</type>
+        <definition>static T JWT.JwtDecoderExtensions.DecodeToObject&lt; T &gt;</definition>
+        <argsstring>(this IJwtDecoder decoder, string token, byte[][] keys, bool verify=true)</argsstring>
+        <name>DecodeToObject&lt; T &gt;</name>
+        <qualifiedname>JWT.JwtDecoderExtensions.DecodeToObject&lt; T &gt;</qualifiedname>
+        <param>
+          <type>this <ref refid="interface_j_w_t_1_1_i_jwt_decoder" kindref="compound">IJwtDecoder</ref></type>
+          <declname>decoder</declname>
+        </param>
+        <param>
+          <type>string</type>
+          <declname>token</declname>
+        </param>
+        <param>
+          <type>byte</type>
+          <declname>keys</declname>
+          <array>[][]</array>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>verify</declname>
+          <defval>true</defval>
+        </param>
+        <briefdescription>
+<para>Given a <ref refid="namespace_j_w_t" kindref="compound">JWT</ref>, decodes it and return the payload as an object. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="templateparam"><parameteritem>
+<parameternamelist>
+<parametername>T</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The type to return</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>decoder</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The decoder instance</para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>token</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The <ref refid="namespace_j_w_t" kindref="compound">JWT</ref></para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>keys</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The keys provided which one of them was used to sign the <ref refid="namespace_j_w_t" kindref="compound">JWT</ref></para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>verify</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Whether to verify the signature (default is <computeroutput>true</computeroutput>)</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>An object representing the payload</para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/adenf/RiderProjects/Openlabs.Mgcxm/Openlabs.Mgcxm/JWT/IJwtDecoder.cs" line="381" column="23"/>
+      </memberdef>
+      <memberdef kind="function" id="class_j_w_t_1_1_jwt_decoder_extensions_1a3cff37ee85e6c4f9b39866ca239fe6dd" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>T</type>
+        <definition>static T JWT.JwtDecoderExtensions.DecodeToObject&lt; T &gt;</definition>
+        <argsstring>(this IJwtDecoder decoder, string token, string[] keys, bool verify=true)</argsstring>
+        <name>DecodeToObject&lt; T &gt;</name>
+        <qualifiedname>JWT.JwtDecoderExtensions.DecodeToObject&lt; T &gt;</qualifiedname>
+        <param>
+          <type>this <ref refid="interface_j_w_t_1_1_i_jwt_decoder" kindref="compound">IJwtDecoder</ref></type>
+          <declname>decoder</declname>
+        </param>
+        <param>
+          <type>string</type>
+          <declname>token</declname>
+        </param>
+        <param>
+          <type>string[]</type>
+          <declname>keys</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>verify</declname>
+          <defval>true</defval>
+        </param>
+        <briefdescription>
+<para>Given a <ref refid="namespace_j_w_t" kindref="compound">JWT</ref>, decodes it and return the payload as an object. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="templateparam"><parameteritem>
+<parameternamelist>
+<parametername>T</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The type to return</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>decoder</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The decoder instance</para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>token</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The <ref refid="namespace_j_w_t" kindref="compound">JWT</ref></para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>keys</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The keys provided which one of them was used to sign the <ref refid="namespace_j_w_t" kindref="compound">JWT</ref></para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>verify</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Whether to verify the signature (default is <computeroutput>true</computeroutput>)</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>An object representing the payload</para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/adenf/RiderProjects/Openlabs.Mgcxm/Openlabs.Mgcxm/JWT/IJwtDecoder.cs" line="393" column="23"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Extension methods for <simplesect kind="see"><para>IJwtDecoder</para>
+</simplesect>
+&gt; /summary&gt; </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/Users/adenf/RiderProjects/Openlabs.Mgcxm/Openlabs.Mgcxm/JWT/IJwtDecoder.cs" line="96" column="19" bodyfile="C:/Users/adenf/RiderProjects/Openlabs.Mgcxm/Openlabs.Mgcxm/JWT/IJwtDecoder.cs" bodystart="97" bodyend="397"/>
+    <listofallmembers>
+      <member refid="class_j_w_t_1_1_jwt_decoder_extensions_1a5ee55f226d7994fce7b604cb016d2864" prot="public" virt="non-virtual"><scope>JWT::JwtDecoderExtensions</scope><name>Decode</name></member>
+      <member refid="class_j_w_t_1_1_jwt_decoder_extensions_1a2c96d4c0c0071f25784a287dcb891405" prot="public" virt="non-virtual"><scope>JWT::JwtDecoderExtensions</scope><name>Decode</name></member>
+      <member refid="class_j_w_t_1_1_jwt_decoder_extensions_1acd8d69db131adc4bed3a7897f9414d72" prot="public" virt="non-virtual"><scope>JWT::JwtDecoderExtensions</scope><name>Decode</name></member>
+      <member refid="class_j_w_t_1_1_jwt_decoder_extensions_1a0ed89a93a26331d14b00a3f366981141" prot="public" virt="non-virtual"><scope>JWT::JwtDecoderExtensions</scope><name>Decode</name></member>
+      <member refid="class_j_w_t_1_1_jwt_decoder_extensions_1a14ade99dcdaf6d7cf02c381ef79f17a4" prot="public" virt="non-virtual"><scope>JWT::JwtDecoderExtensions</scope><name>Decode</name></member>
+      <member refid="class_j_w_t_1_1_jwt_decoder_extensions_1a70f64afa702b46591b001f2a4ff33e38" prot="public" virt="non-virtual"><scope>JWT::JwtDecoderExtensions</scope><name>DecodeHeader&lt; T &gt;</name></member>
+      <member refid="class_j_w_t_1_1_jwt_decoder_extensions_1a7062d3b6774435d91d2b0d2fd0133dc6" prot="public" virt="non-virtual"><scope>JWT::JwtDecoderExtensions</scope><name>DecodeHeaderToDictionary</name></member>
+      <member refid="class_j_w_t_1_1_jwt_decoder_extensions_1abbb80f44f8ac24b9ce9bb4569df0d472" prot="public" virt="non-virtual"><scope>JWT::JwtDecoderExtensions</scope><name>DecodeToObject</name></member>
+      <member refid="class_j_w_t_1_1_jwt_decoder_extensions_1a3b01d451e986fdc743778d75a448adc6" prot="public" virt="non-virtual"><scope>JWT::JwtDecoderExtensions</scope><name>DecodeToObject</name></member>
+      <member refid="class_j_w_t_1_1_jwt_decoder_extensions_1ad3610bdbe28a7ea9e25ca3197f65be7e" prot="public" virt="non-virtual"><scope>JWT::JwtDecoderExtensions</scope><name>DecodeToObject</name></member>
+      <member refid="class_j_w_t_1_1_jwt_decoder_extensions_1ad5fb69a04d79dbefb8a1ef08dd9c65af" prot="public" virt="non-virtual"><scope>JWT::JwtDecoderExtensions</scope><name>DecodeToObject</name></member>
+      <member refid="class_j_w_t_1_1_jwt_decoder_extensions_1afc0d999bc1a3d11b69acfd46974484cb" prot="public" virt="non-virtual"><scope>JWT::JwtDecoderExtensions</scope><name>DecodeToObject</name></member>
+      <member refid="class_j_w_t_1_1_jwt_decoder_extensions_1a8f6212917f07beacb2618c4673299306" prot="public" virt="non-virtual"><scope>JWT::JwtDecoderExtensions</scope><name>DecodeToObject</name></member>
+      <member refid="class_j_w_t_1_1_jwt_decoder_extensions_1a673d7d5a6627f8d152d68b978d6a6251" prot="public" virt="non-virtual"><scope>JWT::JwtDecoderExtensions</scope><name>DecodeToObject</name></member>
+      <member refid="class_j_w_t_1_1_jwt_decoder_extensions_1aa25ac544a3564ef8fd5c3a30b9e10e91" prot="public" virt="non-virtual"><scope>JWT::JwtDecoderExtensions</scope><name>DecodeToObject</name></member>
+      <member refid="class_j_w_t_1_1_jwt_decoder_extensions_1a8fd9afbccda24b59bf7901181228b564" prot="public" virt="non-virtual"><scope>JWT::JwtDecoderExtensions</scope><name>DecodeToObject</name></member>
+      <member refid="class_j_w_t_1_1_jwt_decoder_extensions_1ab152ad8ceb8f0edce364b4ab29990c53" prot="public" virt="non-virtual"><scope>JWT::JwtDecoderExtensions</scope><name>DecodeToObject&lt; T &gt;</name></member>
+      <member refid="class_j_w_t_1_1_jwt_decoder_extensions_1a479955f0f9bdfa7a960a553f253bbaf8" prot="public" virt="non-virtual"><scope>JWT::JwtDecoderExtensions</scope><name>DecodeToObject&lt; T &gt;</name></member>
+      <member refid="class_j_w_t_1_1_jwt_decoder_extensions_1acc4da1d131269a54070322536a64653e" prot="public" virt="non-virtual"><scope>JWT::JwtDecoderExtensions</scope><name>DecodeToObject&lt; T &gt;</name></member>
+      <member refid="class_j_w_t_1_1_jwt_decoder_extensions_1aec5059467c2b64a6fc5d9a5a527c15e7" prot="public" virt="non-virtual"><scope>JWT::JwtDecoderExtensions</scope><name>DecodeToObject&lt; T &gt;</name></member>
+      <member refid="class_j_w_t_1_1_jwt_decoder_extensions_1afdf6166dc2d77bcdb06beccb05435a86" prot="public" virt="non-virtual"><scope>JWT::JwtDecoderExtensions</scope><name>DecodeToObject&lt; T &gt;</name></member>
+      <member refid="class_j_w_t_1_1_jwt_decoder_extensions_1a87aa4329e84da2b45a7c89b1bbc4337a" prot="public" virt="non-virtual"><scope>JWT::JwtDecoderExtensions</scope><name>DecodeToObject&lt; T &gt;</name></member>
+      <member refid="class_j_w_t_1_1_jwt_decoder_extensions_1a7abc78dbbc76af4a564bf671f02512bc" prot="public" virt="non-virtual"><scope>JWT::JwtDecoderExtensions</scope><name>DecodeToObject&lt; T &gt;</name></member>
+      <member refid="class_j_w_t_1_1_jwt_decoder_extensions_1a3cff37ee85e6c4f9b39866ca239fe6dd" prot="public" virt="non-virtual"><scope>JWT::JwtDecoderExtensions</scope><name>DecodeToObject&lt; T &gt;</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

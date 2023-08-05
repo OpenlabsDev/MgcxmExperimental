@@ -1,0 +1,134 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.7" xml:lang="en-US">
+  <compounddef id="class_openlabs_1_1_mgcxm_1_1_tests_1_1_test_server" kind="class" language="C#" prot="public">
+    <compoundname>Openlabs::Mgcxm::Tests::TestServer</compoundname>
+    <basecompoundref refid="class_openlabs_1_1_mgcxm_1_1_net_1_1_mgcxm_http_listener" prot="public" virt="non-virtual">Openlabs.Mgcxm.Net.MgcxmHttpListener</basecompoundref>
+    <innerclass refid="class_openlabs_1_1_mgcxm_1_1_tests_1_1_test_server_1_1_avatar_controller" prot="public">Openlabs::Mgcxm::Tests::TestServer::AvatarController</innerclass>
+    <innerclass refid="class_openlabs_1_1_mgcxm_1_1_tests_1_1_test_server_1_1_config_controller" prot="public">Openlabs::Mgcxm::Tests::TestServer::ConfigController</innerclass>
+    <innerclass refid="class_openlabs_1_1_mgcxm_1_1_tests_1_1_test_server_1_1_messages_controller" prot="public">Openlabs::Mgcxm::Tests::TestServer::MessagesController</innerclass>
+    <innerclass refid="class_openlabs_1_1_mgcxm_1_1_tests_1_1_test_server_1_1_platform_login_controller" prot="public">Openlabs::Mgcxm::Tests::TestServer::PlatformLoginController</innerclass>
+    <innerclass refid="class_openlabs_1_1_mgcxm_1_1_tests_1_1_test_server_1_1_players_controller" prot="public">Openlabs::Mgcxm::Tests::TestServer::PlayersController</innerclass>
+    <innerclass refid="class_openlabs_1_1_mgcxm_1_1_tests_1_1_test_server_1_1_relationships_controller" prot="public">Openlabs::Mgcxm::Tests::TestServer::RelationshipsController</innerclass>
+    <innerclass refid="class_openlabs_1_1_mgcxm_1_1_tests_1_1_test_server_1_1_settings_controller" prot="public">Openlabs::Mgcxm::Tests::TestServer::SettingsController</innerclass>
+    <innerclass refid="class_openlabs_1_1_mgcxm_1_1_tests_1_1_test_server_1_1_version_check_controller" prot="public">Openlabs::Mgcxm::Tests::TestServer::VersionCheckController</innerclass>
+      <sectiondef kind="public-static-attrib">
+      <memberdef kind="variable" id="class_openlabs_1_1_mgcxm_1_1_tests_1_1_test_server_1ad219b2c889d56112d4269e64c3744de8" prot="public" static="yes" mutable="no">
+        <type>string</type>
+        <definition>string Openlabs.Mgcxm.Tests.TestServer.PlayerName</definition>
+        <argsstring></argsstring>
+        <name>PlayerName</name>
+        <qualifiedname>Openlabs.Mgcxm.Tests.TestServer.PlayerName</qualifiedname>
+        <initializer>= &quot;Invalid Name&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/adenf/RiderProjects/Openlabs.Mgcxm/Openlabs.Mgcxm.Tests/TestServer.cs" line="16" column="26" bodyfile="C:/Users/adenf/RiderProjects/Openlabs.Mgcxm/Openlabs.Mgcxm.Tests/TestServer.cs" bodystart="16" bodyend="-1"/>
+        <referencedby refid="class_openlabs_1_1_mgcxm_1_1_tests_1_1_test_server_1_1_players_controller_1a113dc034f4709b9affa4b76c92c6af4c" compoundref="_test_server_8cs" startline="136" endline="154">Openlabs.Mgcxm.Tests.TestServer.PlayersController.HttpGet_PlayersV1_PlayerId</referencedby>
+        <referencedby refid="class_openlabs_1_1_mgcxm_1_1_tests_1_1_test_server_1_1_platform_login_controller_1a5b3325c3d254528a9b34721d88d40a46" compoundref="_test_server_8cs" startline="57" endline="69">Openlabs.Mgcxm.Tests.TestServer.PlatformLoginController.HttpPost_PlatformLoginV2</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_openlabs_1_1_mgcxm_1_1_tests_1_1_test_server_1ae4c2d5aff7a19f2af9ad57762b9bf3a1" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Openlabs.Mgcxm.Tests.TestServer.TestServer</definition>
+        <argsstring>()</argsstring>
+        <name>TestServer</name>
+        <qualifiedname>Openlabs.Mgcxm.Tests.TestServer.TestServer</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/adenf/RiderProjects/Openlabs.Mgcxm/Openlabs.Mgcxm.Tests/TestServer.cs" line="18" column="12" bodyfile="C:/Users/adenf/RiderProjects/Openlabs.Mgcxm/Openlabs.Mgcxm.Tests/TestServer.cs" bodystart="18" bodyend="37"/>
+        <references refid="class_openlabs_1_1_mgcxm_1_1_net_1_1_mgcxm_http_listener_1a0763f648b9f2a6802fbb5b8cebb28e86" compoundref="_mgcxm_http_listener_8cs" startline="359" endline="368">Openlabs.Mgcxm.Net.MgcxmHttpListener.AddFrameworkEndpoint</references>
+        <references refid="class_openlabs_1_1_mgcxm_1_1_common_1_1_framework_1_1_endpoint_resolver_1a54aef0ad7c4bfa021effe49f4e0cf628">Openlabs.Mgcxm.Common.Framework.EndpointResolver.AddSubpartController</references>
+        <references refid="class_openlabs_1_1_mgcxm_1_1_common_1_1_framework_1_1_endpoint_framework_base_1a5ee570df55d4cefb4e50fc86955dd69e" compoundref="_endpoint_framework_base_8cs" startline="23" endline="23">Openlabs.Mgcxm.Common.Framework.EndpointFrameworkBase.EndpointResolver</references>
+        <references refid="class_openlabs_1_1_mgcxm_1_1_net_1_1_mgcxm_http_listener_1ab0ef008cf60af7ed3b814650407c2b7a" compoundref="_mgcxm_http_listener_8cs" startline="393">Openlabs.Mgcxm.Net.MgcxmHttpListener.Framework</references>
+        <references refid="class_openlabs_1_1_mgcxm_1_1_tests_1_1_test_server_1ac5c96d033df87e72b9e59d719d76f130" compoundref="_test_server_8cs" startline="39" endline="43">Openlabs.Mgcxm.Tests.TestServer.HttpGet_Activities_CharadesV1_GetWords</references>
+        <references refid="class_openlabs_1_1_mgcxm_1_1_tests_1_1_test_server_1_1_avatar_controller_1a9fb4364c74dc74a7f2a8deaaa47c882a" compoundref="_test_server_8cs" startline="169" endline="173">Openlabs.Mgcxm.Tests.TestServer.AvatarController.Initialize</references>
+        <references refid="class_openlabs_1_1_mgcxm_1_1_tests_1_1_test_server_1_1_settings_controller_1a4f065089f8a14299656044f8ab220e6e" compoundref="_test_server_8cs" startline="211" endline="215">Openlabs.Mgcxm.Tests.TestServer.SettingsController.Initialize</references>
+        <references refid="class_openlabs_1_1_mgcxm_1_1_tests_1_1_test_server_1_1_messages_controller_1a2b137d8bab731c01eada5bd003b8d69f" compoundref="_test_server_8cs" startline="253" endline="257">Openlabs.Mgcxm.Tests.TestServer.MessagesController.Initialize</references>
+        <references refid="class_openlabs_1_1_mgcxm_1_1_common_1_1_framework_1_1_endpoint_resolver_1aed1a60597efd353261601463c930123e">Openlabs.Mgcxm.Common.Framework.EndpointResolver.ResolveAll</references>
+      </memberdef>
+      <memberdef kind="function" id="class_openlabs_1_1_mgcxm_1_1_tests_1_1_test_server_1ac5c96d033df87e72b9e59d719d76f130" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Openlabs.Mgcxm.Tests.TestServer.HttpGet_Activities_CharadesV1_GetWords</definition>
+        <argsstring>(MgcxmHttpRequest request, MgcxmHttpResponse response)</argsstring>
+        <name>HttpGet_Activities_CharadesV1_GetWords</name>
+        <qualifiedname>Openlabs.Mgcxm.Tests.TestServer.HttpGet_Activities_CharadesV1_GetWords</qualifiedname>
+        <param>
+          <type><ref refid="class_openlabs_1_1_mgcxm_1_1_net_1_1_mgcxm_http_request" kindref="compound">MgcxmHttpRequest</ref></type>
+          <declname>request</declname>
+        </param>
+        <param>
+          <type><ref refid="class_openlabs_1_1_mgcxm_1_1_net_1_1_mgcxm_http_response" kindref="compound">MgcxmHttpResponse</ref></type>
+          <declname>response</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/adenf/RiderProjects/Openlabs.Mgcxm/Openlabs.Mgcxm.Tests/TestServer.cs" line="39" column="17" bodyfile="C:/Users/adenf/RiderProjects/Openlabs.Mgcxm/Openlabs.Mgcxm.Tests/TestServer.cs" bodystart="39" bodyend="43"/>
+        <references refid="class_openlabs_1_1_mgcxm_1_1_net_1_1_mgcxm_http_response_1adc1b22b68bfa0cb2b9f0d5c86d23cd07" compoundref="_mgcxm_http_response_8cs" startline="38" endline="42">Openlabs.Mgcxm.Net.MgcxmHttpResponse.Status</references>
+        <referencedby refid="class_openlabs_1_1_mgcxm_1_1_tests_1_1_test_server_1ae4c2d5aff7a19f2af9ad57762b9bf3a1" compoundref="_test_server_8cs" startline="18" endline="37">Openlabs.Mgcxm.Tests.TestServer.TestServer</referencedby>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>MgcxmHttpListener</label>
+        <link refid="class_openlabs_1_1_mgcxm_1_1_net_1_1_mgcxm_http_listener"/>
+      </node>
+      <node id="1">
+        <label>Openlabs.Mgcxm.Tests.TestServer</label>
+        <link refid="class_openlabs_1_1_mgcxm_1_1_tests_1_1_test_server"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>MgcxmHttpListener</label>
+        <link refid="class_openlabs_1_1_mgcxm_1_1_net_1_1_mgcxm_http_listener"/>
+      </node>
+      <node id="1">
+        <label>Openlabs.Mgcxm.Tests.TestServer</label>
+        <link refid="class_openlabs_1_1_mgcxm_1_1_tests_1_1_test_server"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="3" relation="usage">
+          <edgelabel>PlayerName</edgelabel>
+        </childnode>
+      </node>
+      <node id="3">
+        <label>static</label>
+      </node>
+    </collaborationgraph>
+    <location file="C:/Users/adenf/RiderProjects/Openlabs.Mgcxm/Openlabs.Mgcxm.Tests/TestServer.cs" line="14" column="14" bodyfile="C:/Users/adenf/RiderProjects/Openlabs.Mgcxm/Openlabs.Mgcxm.Tests/TestServer.cs" bodystart="15" bodyend="268"/>
+    <listofallmembers>
+      <member refid="class_openlabs_1_1_mgcxm_1_1_net_1_1_mgcxm_http_listener_1a0763f648b9f2a6802fbb5b8cebb28e86" prot="public" virt="non-virtual"><scope>Openlabs::Mgcxm::Tests::TestServer</scope><name>AddFrameworkEndpoint</name></member>
+      <member refid="class_openlabs_1_1_mgcxm_1_1_net_1_1_mgcxm_http_listener_1a8ceea64a86452b7799832d512bf59b05" prot="public" virt="non-virtual"><scope>Openlabs::Mgcxm::Tests::TestServer</scope><name>AllocatedId</name></member>
+      <member refid="class_openlabs_1_1_mgcxm_1_1_net_1_1_mgcxm_http_listener_1a48022e396188dc6c132f88863bf69323" prot="public" virt="non-virtual"><scope>Openlabs::Mgcxm::Tests::TestServer</scope><name>Endpoints</name></member>
+      <member refid="class_openlabs_1_1_mgcxm_1_1_net_1_1_mgcxm_http_listener_1ab0ef008cf60af7ed3b814650407c2b7a" prot="public" virt="non-virtual"><scope>Openlabs::Mgcxm::Tests::TestServer</scope><name>Framework</name></member>
+      <member refid="class_openlabs_1_1_mgcxm_1_1_tests_1_1_test_server_1ac5c96d033df87e72b9e59d719d76f130" prot="public" virt="non-virtual"><scope>Openlabs::Mgcxm::Tests::TestServer</scope><name>HttpGet_Activities_CharadesV1_GetWords</name></member>
+      <member refid="class_openlabs_1_1_mgcxm_1_1_net_1_1_mgcxm_http_listener_1a62c66d562f2d7163e7fd0c4abb44d20b" prot="public" virt="non-virtual"><scope>Openlabs::Mgcxm::Tests::TestServer</scope><name>Listener</name></member>
+      <member refid="class_openlabs_1_1_mgcxm_1_1_net_1_1_mgcxm_http_listener_1a04b35b5cc47ebb7a8abe9d51de700f4d" prot="public" virt="non-virtual"><scope>Openlabs::Mgcxm::Tests::TestServer</scope><name>ListenToRequests</name></member>
+      <member refid="class_openlabs_1_1_mgcxm_1_1_net_1_1_mgcxm_http_listener_1a9f72afe79266697d4ac42833c11b2412" prot="public" virt="non-virtual"><scope>Openlabs::Mgcxm::Tests::TestServer</scope><name>MgcxmHttpListener</name></member>
+      <member refid="class_openlabs_1_1_mgcxm_1_1_tests_1_1_test_server_1ad219b2c889d56112d4269e64c3744de8" prot="public" virt="non-virtual"><scope>Openlabs::Mgcxm::Tests::TestServer</scope><name>PlayerName</name></member>
+      <member refid="class_openlabs_1_1_mgcxm_1_1_net_1_1_mgcxm_http_listener_1a687fc4b689ec657e672354b394dee8be" prot="public" virt="non-virtual"><scope>Openlabs::Mgcxm::Tests::TestServer</scope><name>SetFramework&lt; TEndpointUrl &gt;</name></member>
+      <member refid="class_openlabs_1_1_mgcxm_1_1_net_1_1_mgcxm_http_listener_1a12292b58f349e2c26d118701feddc862" prot="public" virt="non-virtual"><scope>Openlabs::Mgcxm::Tests::TestServer</scope><name>Start</name></member>
+      <member refid="class_openlabs_1_1_mgcxm_1_1_net_1_1_mgcxm_http_listener_1adda681dfcb5f8b0d7acffd3e39d4aaaa" prot="package" virt="non-virtual"><scope>Openlabs::Mgcxm::Tests::TestServer</scope><name>StartInternal</name></member>
+      <member refid="class_openlabs_1_1_mgcxm_1_1_net_1_1_mgcxm_http_listener_1a0cff1c8433b7454c44997956e33ba3f5" prot="public" virt="non-virtual"><scope>Openlabs::Mgcxm::Tests::TestServer</scope><name>Stop</name></member>
+      <member refid="class_openlabs_1_1_mgcxm_1_1_tests_1_1_test_server_1ae4c2d5aff7a19f2af9ad57762b9bf3a1" prot="public" virt="non-virtual"><scope>Openlabs::Mgcxm::Tests::TestServer</scope><name>TestServer</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

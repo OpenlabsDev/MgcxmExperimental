@@ -1,0 +1,280 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.7" xml:lang="en-US">
+  <compounddef id="class_j_w_t_1_1_algorithms_1_1_r_s_algorithm" kind="class" language="C#" prot="public">
+    <compoundname>JWT::Algorithms::RSAlgorithm</compoundname>
+    <basecompoundref refid="class_j_w_t_1_1_algorithms_1_1_certificate_algorithm" prot="public" virt="non-virtual">JWT.Algorithms.CertificateAlgorithm&lt; RSA &gt;</basecompoundref>
+    <derivedcompoundref refid="class_j_w_t_1_1_algorithms_1_1_r_s1024_algorithm" prot="public" virt="non-virtual">JWT.Algorithms.RS1024Algorithm</derivedcompoundref>
+    <derivedcompoundref refid="class_j_w_t_1_1_algorithms_1_1_r_s2048_algorithm" prot="public" virt="non-virtual">JWT.Algorithms.RS2048Algorithm</derivedcompoundref>
+    <derivedcompoundref refid="class_j_w_t_1_1_algorithms_1_1_r_s256_algorithm" prot="public" virt="non-virtual">JWT.Algorithms.RS256Algorithm</derivedcompoundref>
+    <derivedcompoundref refid="class_j_w_t_1_1_algorithms_1_1_r_s384_algorithm" prot="public" virt="non-virtual">JWT.Algorithms.RS384Algorithm</derivedcompoundref>
+    <derivedcompoundref refid="class_j_w_t_1_1_algorithms_1_1_r_s4096_algorithm" prot="public" virt="non-virtual">JWT.Algorithms.RS4096Algorithm</derivedcompoundref>
+    <derivedcompoundref refid="class_j_w_t_1_1_algorithms_1_1_r_s512_algorithm" prot="public" virt="non-virtual">JWT.Algorithms.RS512Algorithm</derivedcompoundref>
+      <sectiondef kind="protected-func">
+      <memberdef kind="function" id="class_j_w_t_1_1_algorithms_1_1_r_s_algorithm_1a64131a63611025164d8f478496b5b038" prot="protected" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>JWT.Algorithms.RSAlgorithm.RSAlgorithm</definition>
+        <argsstring>(RSA publicKey, RSA privateKey)</argsstring>
+        <name>RSAlgorithm</name>
+        <qualifiedname>JWT.Algorithms.RSAlgorithm.RSAlgorithm</qualifiedname>
+        <param>
+          <type>RSA</type>
+          <declname>publicKey</declname>
+        </param>
+        <param>
+          <type>RSA</type>
+          <declname>privateKey</declname>
+        </param>
+        <briefdescription>
+<para>Creates an instance of RSAlgorithm using the provided pair of public and private keys. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>publicKey</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The public key for verifying the data.</para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>privateKey</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The private key for signing the data.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/adenf/RiderProjects/Openlabs.Mgcxm/Openlabs.Mgcxm/JWT/Algorithms/RSAlgorithm.cs" line="16" column="19" bodyfile="C:/Users/adenf/RiderProjects/Openlabs.Mgcxm/Openlabs.Mgcxm/JWT/Algorithms/RSAlgorithm.cs" bodystart="16" bodyend="19"/>
+      </memberdef>
+      <memberdef kind="function" id="class_j_w_t_1_1_algorithms_1_1_r_s_algorithm_1ace74eaab60e0f39308f14bb97050d66b" prot="protected" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>JWT.Algorithms.RSAlgorithm.RSAlgorithm</definition>
+        <argsstring>(RSA publicKey)</argsstring>
+        <name>RSAlgorithm</name>
+        <qualifiedname>JWT.Algorithms.RSAlgorithm.RSAlgorithm</qualifiedname>
+        <param>
+          <type>RSA</type>
+          <declname>publicKey</declname>
+        </param>
+        <briefdescription>
+<para>Creates an instance of RSAlgorithm using the provided public key only. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>An instance created using this constructor can only be used for verifying the data, not for signing it. </para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>publicKey</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The public key for verifying the data.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/adenf/RiderProjects/Openlabs.Mgcxm/Openlabs.Mgcxm/JWT/Algorithms/RSAlgorithm.cs" line="28" column="19" bodyfile="C:/Users/adenf/RiderProjects/Openlabs.Mgcxm/Openlabs.Mgcxm/JWT/Algorithms/RSAlgorithm.cs" bodystart="28" bodyend="31"/>
+      </memberdef>
+      <memberdef kind="function" id="class_j_w_t_1_1_algorithms_1_1_r_s_algorithm_1ace393f5285e79df9f542be829cf54126" prot="protected" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>JWT.Algorithms.RSAlgorithm.RSAlgorithm</definition>
+        <argsstring>(X509Certificate2 cert)</argsstring>
+        <name>RSAlgorithm</name>
+        <qualifiedname>JWT.Algorithms.RSAlgorithm.RSAlgorithm</qualifiedname>
+        <param>
+          <type>X509Certificate2</type>
+          <declname>cert</declname>
+        </param>
+        <briefdescription>
+<para>Creates an instance using the provided certificate. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>cert</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The certificate having a public key and an optional private key.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/adenf/RiderProjects/Openlabs.Mgcxm/Openlabs.Mgcxm/JWT/Algorithms/RSAlgorithm.cs" line="37" column="19" bodyfile="C:/Users/adenf/RiderProjects/Openlabs.Mgcxm/Openlabs.Mgcxm/JWT/Algorithms/RSAlgorithm.cs" bodystart="37" bodyend="40"/>
+      </memberdef>
+      <memberdef kind="function" id="class_j_w_t_1_1_algorithms_1_1_r_s_algorithm_1a26eeb7cd2c4f7b08fafd00651f951bb9" prot="protected" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>override RSA</type>
+        <definition>override RSA JWT.Algorithms.RSAlgorithm.GetPublicKey</definition>
+        <argsstring>(X509Certificate2 cert)</argsstring>
+        <name>GetPublicKey</name>
+        <qualifiedname>JWT.Algorithms.RSAlgorithm.GetPublicKey</qualifiedname>
+        <reimplements refid="class_j_w_t_1_1_algorithms_1_1_certificate_algorithm_1a2b6c5f4fd6429868c256100c1b191939">GetPublicKey</reimplements>
+        <param>
+          <type>X509Certificate2</type>
+          <declname>cert</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/adenf/RiderProjects/Openlabs.Mgcxm/Openlabs.Mgcxm/JWT/Algorithms/RSAlgorithm.cs" line="42" column="32"/>
+      </memberdef>
+      <memberdef kind="function" id="class_j_w_t_1_1_algorithms_1_1_r_s_algorithm_1a2365eb987babdec4c1bb3fe69530fd67" prot="protected" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>override RSA</type>
+        <definition>override RSA JWT.Algorithms.RSAlgorithm.GetPrivateKey</definition>
+        <argsstring>(X509Certificate2 cert)</argsstring>
+        <name>GetPrivateKey</name>
+        <qualifiedname>JWT.Algorithms.RSAlgorithm.GetPrivateKey</qualifiedname>
+        <reimplements refid="class_j_w_t_1_1_algorithms_1_1_certificate_algorithm_1aaa1a7789483cf5e1437997f88e5a3196">GetPrivateKey</reimplements>
+        <param>
+          <type>X509Certificate2</type>
+          <declname>cert</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/adenf/RiderProjects/Openlabs.Mgcxm/Openlabs.Mgcxm/JWT/Algorithms/RSAlgorithm.cs" line="49" column="32"/>
+      </memberdef>
+      <memberdef kind="function" id="class_j_w_t_1_1_algorithms_1_1_r_s_algorithm_1ae2ea827013bc5a8cf6a9d449a69c4c67" prot="protected" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>override byte[]</type>
+        <definition>override byte[] JWT.Algorithms.RSAlgorithm.SignData</definition>
+        <argsstring>(byte[] bytesToSign)</argsstring>
+        <name>SignData</name>
+        <qualifiedname>JWT.Algorithms.RSAlgorithm.SignData</qualifiedname>
+        <reimplements refid="class_j_w_t_1_1_algorithms_1_1_certificate_algorithm_1a870b391063934ea80dfb6b62aca4d800">SignData</reimplements>
+        <param>
+          <type>byte[]</type>
+          <declname>bytesToSign</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/adenf/RiderProjects/Openlabs.Mgcxm/Openlabs.Mgcxm/JWT/Algorithms/RSAlgorithm.cs" line="56" column="33"/>
+      </memberdef>
+      <memberdef kind="function" id="class_j_w_t_1_1_algorithms_1_1_r_s_algorithm_1ac614a310e0d22019492d75994d3a6a8e" prot="protected" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>override bool</type>
+        <definition>override bool JWT.Algorithms.RSAlgorithm.VerifyData</definition>
+        <argsstring>(byte[] bytesToSign, byte[] signature)</argsstring>
+        <name>VerifyData</name>
+        <qualifiedname>JWT.Algorithms.RSAlgorithm.VerifyData</qualifiedname>
+        <reimplements refid="class_j_w_t_1_1_algorithms_1_1_certificate_algorithm_1ae3bb3bc711ce8d8cd1004116c1f91baa">VerifyData</reimplements>
+        <param>
+          <type>byte[]</type>
+          <declname>bytesToSign</declname>
+        </param>
+        <param>
+          <type>byte[]</type>
+          <declname>signature</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/adenf/RiderProjects/Openlabs.Mgcxm/Openlabs.Mgcxm/JWT/Algorithms/RSAlgorithm.cs" line="63" column="33"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>RSASSA-PKCS1-v1_5 using SHA-256. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>CertificateAlgorithm&lt; RSA &gt;</label>
+        <link refid="class_j_w_t_1_1_algorithms_1_1_certificate_algorithm"/>
+      </node>
+      <node id="1">
+        <label>JWT.Algorithms.RSAlgorithm</label>
+        <link refid="class_j_w_t_1_1_algorithms_1_1_r_s_algorithm"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>JWT.Algorithms.RS1024Algorithm</label>
+        <link refid="class_j_w_t_1_1_algorithms_1_1_r_s1024_algorithm"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>JWT.Algorithms.RS2048Algorithm</label>
+        <link refid="class_j_w_t_1_1_algorithms_1_1_r_s2048_algorithm"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>JWT.Algorithms.RS256Algorithm</label>
+        <link refid="class_j_w_t_1_1_algorithms_1_1_r_s256_algorithm"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>JWT.Algorithms.RS384Algorithm</label>
+        <link refid="class_j_w_t_1_1_algorithms_1_1_r_s384_algorithm"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="7">
+        <label>JWT.Algorithms.RS4096Algorithm</label>
+        <link refid="class_j_w_t_1_1_algorithms_1_1_r_s4096_algorithm"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="8">
+        <label>JWT.Algorithms.RS512Algorithm</label>
+        <link refid="class_j_w_t_1_1_algorithms_1_1_r_s512_algorithm"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>CertificateAlgorithm&lt; RSA &gt;</label>
+        <link refid="class_j_w_t_1_1_algorithms_1_1_certificate_algorithm"/>
+      </node>
+      <node id="1">
+        <label>JWT.Algorithms.RSAlgorithm</label>
+        <link refid="class_j_w_t_1_1_algorithms_1_1_r_s_algorithm"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="C:/Users/adenf/RiderProjects/Openlabs.Mgcxm/Openlabs.Mgcxm/JWT/Algorithms/RSAlgorithm.cs" line="9" column="21" bodyfile="C:/Users/adenf/RiderProjects/Openlabs.Mgcxm/Openlabs.Mgcxm/JWT/Algorithms/RSAlgorithm.cs" bodystart="10" bodyend="69"/>
+    <listofallmembers>
+      <member refid="class_j_w_t_1_1_algorithms_1_1_certificate_algorithm_1a998d357ab8379f6a460fda413a4668fc" prot="protected" virt="non-virtual"><scope>JWT::Algorithms::RSAlgorithm</scope><name>_privateKey</name></member>
+      <member refid="class_j_w_t_1_1_algorithms_1_1_certificate_algorithm_1a2b0420e1c1745786cf469a3a2ed26d34" prot="protected" virt="non-virtual"><scope>JWT::Algorithms::RSAlgorithm</scope><name>_publicKey</name></member>
+      <member refid="class_j_w_t_1_1_algorithms_1_1_certificate_algorithm_1a43e9c1390c0e64c1eaa59f92c4aedc55" prot="protected" virt="non-virtual"><scope>JWT::Algorithms::RSAlgorithm</scope><name>CertificateAlgorithm</name></member>
+      <member refid="class_j_w_t_1_1_algorithms_1_1_certificate_algorithm_1ac66d69a276443c44662c7f4b496ac8da" prot="protected" virt="non-virtual"><scope>JWT::Algorithms::RSAlgorithm</scope><name>CertificateAlgorithm</name></member>
+      <member refid="class_j_w_t_1_1_algorithms_1_1_certificate_algorithm_1a1721400370a9a1334622962e86e09a1a" prot="protected" virt="non-virtual"><scope>JWT::Algorithms::RSAlgorithm</scope><name>CertificateAlgorithm</name></member>
+      <member refid="class_j_w_t_1_1_algorithms_1_1_r_s_algorithm_1a2365eb987babdec4c1bb3fe69530fd67" prot="protected" virt="virtual"><scope>JWT::Algorithms::RSAlgorithm</scope><name>GetPrivateKey</name></member>
+      <member refid="class_j_w_t_1_1_algorithms_1_1_r_s_algorithm_1a26eeb7cd2c4f7b08fafd00651f951bb9" prot="protected" virt="virtual"><scope>JWT::Algorithms::RSAlgorithm</scope><name>GetPublicKey</name></member>
+      <member refid="class_j_w_t_1_1_algorithms_1_1_certificate_algorithm_1a0dc44f24b84578049a79ee3e07cd3972" prot="public" virt="non-virtual"><scope>JWT::Algorithms::RSAlgorithm</scope><name>HashAlgorithmName</name></member>
+      <member refid="class_j_w_t_1_1_algorithms_1_1_certificate_algorithm_1a084de64501e51afd80ebc626284e65a6" prot="public" virt="non-virtual"><scope>JWT::Algorithms::RSAlgorithm</scope><name>Name</name></member>
+      <member refid="class_j_w_t_1_1_algorithms_1_1_r_s_algorithm_1a64131a63611025164d8f478496b5b038" prot="protected" virt="non-virtual"><scope>JWT::Algorithms::RSAlgorithm</scope><name>RSAlgorithm</name></member>
+      <member refid="class_j_w_t_1_1_algorithms_1_1_r_s_algorithm_1ace74eaab60e0f39308f14bb97050d66b" prot="protected" virt="non-virtual"><scope>JWT::Algorithms::RSAlgorithm</scope><name>RSAlgorithm</name></member>
+      <member refid="class_j_w_t_1_1_algorithms_1_1_r_s_algorithm_1ace393f5285e79df9f542be829cf54126" prot="protected" virt="non-virtual"><scope>JWT::Algorithms::RSAlgorithm</scope><name>RSAlgorithm</name></member>
+      <member refid="class_j_w_t_1_1_algorithms_1_1_certificate_algorithm_1a1a4d69530d9de76267bd7978599ed4b3" prot="public" virt="non-virtual"><scope>JWT::Algorithms::RSAlgorithm</scope><name>Sign</name></member>
+      <member refid="class_j_w_t_1_1_algorithms_1_1_certificate_algorithm_1a1ee6154637b24b75aacd2fb0d95cd685" prot="public" virt="non-virtual"><scope>JWT::Algorithms::RSAlgorithm</scope><name>Sign</name></member>
+      <member refid="class_j_w_t_1_1_algorithms_1_1_r_s_algorithm_1ae2ea827013bc5a8cf6a9d449a69c4c67" prot="protected" virt="virtual"><scope>JWT::Algorithms::RSAlgorithm</scope><name>SignData</name></member>
+      <member refid="class_j_w_t_1_1_algorithms_1_1_certificate_algorithm_1a2a9f256e62c57ef7d3c49560de27fe06" prot="public" virt="non-virtual"><scope>JWT::Algorithms::RSAlgorithm</scope><name>Verify</name></member>
+      <member refid="class_j_w_t_1_1_algorithms_1_1_r_s_algorithm_1ac614a310e0d22019492d75994d3a6a8e" prot="protected" virt="virtual"><scope>JWT::Algorithms::RSAlgorithm</scope><name>VerifyData</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

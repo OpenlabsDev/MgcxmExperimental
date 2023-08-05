@@ -1,0 +1,109 @@
+\doxysection{JWT.\+Jwt\+Encoder Class Reference}
+\hypertarget{class_j_w_t_1_1_jwt_encoder}{}\label{class_j_w_t_1_1_jwt_encoder}\index{JWT.JwtEncoder@{JWT.JwtEncoder}}
+
+
+Encodes Jwt.  
+
+
+
+
+Inheritance diagram for JWT.\+Jwt\+Encoder\+:
+% FIG 0
+
+
+Collaboration diagram for JWT.\+Jwt\+Encoder\+:
+% FIG 1
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_j_w_t_1_1_jwt_encoder_a6c4bea34741c348384a37b7158343e21}{Jwt\+Encoder}} (\mbox{\hyperlink{interface_j_w_t_1_1_algorithms_1_1_i_algorithm_factory}{IAlgorithm\+Factory}} alg\+Factory, \mbox{\hyperlink{interface_j_w_t_1_1_i_json_serializer}{IJson\+Serializer}} json\+Serializer, \mbox{\hyperlink{interface_j_w_t_1_1_i_base64_url_encoder}{IBase64\+Url\+Encoder}} url\+Encoder)
+\begin{DoxyCompactList}\small\item\em Creates an instance of Jwt\+Encoder \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_j_w_t_1_1_jwt_encoder_ab518a5980c668cfab9053592b2e0dbdd}{Jwt\+Encoder}} (\mbox{\hyperlink{interface_j_w_t_1_1_algorithms_1_1_i_jwt_algorithm}{IJwt\+Algorithm}} algorithm, \mbox{\hyperlink{interface_j_w_t_1_1_i_json_serializer}{IJson\+Serializer}} json\+Serializer, \mbox{\hyperlink{interface_j_w_t_1_1_i_base64_url_encoder}{IBase64\+Url\+Encoder}} url\+Encoder)
+\begin{DoxyCompactList}\small\item\em Creates an instance of Jwt\+Encoder \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{class_j_w_t_1_1_jwt_encoder_ae5504a30e85727b208f832f1bac010d1}{Encode}} (IDictionary$<$ string, object $>$ extra\+Headers, object payload, byte\mbox{[}$\,$\mbox{]} key)
+\end{DoxyCompactItemize}
+\begin{DoxyCompactItemize}
+\item 
+string \mbox{\hyperlink{interface_j_w_t_1_1_i_jwt_encoder_a0ece85ed8dae5fc53da5ba8d850a8171}{Encode}} (IDictionary$<$ string, object $>$ extra\+Headers, object payload, byte\mbox{[}$\,$\mbox{]} key)
+\begin{DoxyCompactList}\small\item\em Creates a \doxylink{namespace_j_w_t}{JWT} given a header, a payload, the signing key, and the algorithm to use. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Encodes Jwt. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_j_w_t_1_1_jwt_encoder_a6c4bea34741c348384a37b7158343e21}\label{class_j_w_t_1_1_jwt_encoder_a6c4bea34741c348384a37b7158343e21} 
+\index{JWT.JwtEncoder@{JWT.JwtEncoder}!JwtEncoder@{JwtEncoder}}
+\index{JwtEncoder@{JwtEncoder}!JWT.JwtEncoder@{JWT.JwtEncoder}}
+\doxysubsubsection{\texorpdfstring{JwtEncoder()}{JwtEncoder()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily JWT.\+Jwt\+Encoder.\+Jwt\+Encoder (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interface_j_w_t_1_1_algorithms_1_1_i_algorithm_factory}{IAlgorithm\+Factory}}}]{alg\+Factory,  }\item[{\mbox{\hyperlink{interface_j_w_t_1_1_i_json_serializer}{IJson\+Serializer}}}]{json\+Serializer,  }\item[{\mbox{\hyperlink{interface_j_w_t_1_1_i_base64_url_encoder}{IBase64\+Url\+Encoder}}}]{url\+Encoder }\end{DoxyParamCaption})}
+
+
+
+Creates an instance of Jwt\+Encoder 
+
+
+\begin{DoxyParams}{Parameters}
+{\em alg\+Factory} & The \doxylink{namespace_j_w_t}{JWT} algorithm factory\\
+\hline
+{\em json\+Serializer} & The JSON serializer\\
+\hline
+{\em url\+Encoder} & The base64 URL encoder\\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_j_w_t_1_1_jwt_encoder_ab518a5980c668cfab9053592b2e0dbdd}\label{class_j_w_t_1_1_jwt_encoder_ab518a5980c668cfab9053592b2e0dbdd} 
+\index{JWT.JwtEncoder@{JWT.JwtEncoder}!JwtEncoder@{JwtEncoder}}
+\index{JwtEncoder@{JwtEncoder}!JWT.JwtEncoder@{JWT.JwtEncoder}}
+\doxysubsubsection{\texorpdfstring{JwtEncoder()}{JwtEncoder()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily JWT.\+Jwt\+Encoder.\+Jwt\+Encoder (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interface_j_w_t_1_1_algorithms_1_1_i_jwt_algorithm}{IJwt\+Algorithm}}}]{algorithm,  }\item[{\mbox{\hyperlink{interface_j_w_t_1_1_i_json_serializer}{IJson\+Serializer}}}]{json\+Serializer,  }\item[{\mbox{\hyperlink{interface_j_w_t_1_1_i_base64_url_encoder}{IBase64\+Url\+Encoder}}}]{url\+Encoder }\end{DoxyParamCaption})}
+
+
+
+Creates an instance of Jwt\+Encoder 
+
+
+\begin{DoxyParams}{Parameters}
+{\em algorithm} & The \doxylink{namespace_j_w_t}{JWT} algorithm\\
+\hline
+{\em json\+Serializer} & The JSON serializer\\
+\hline
+{\em url\+Encoder} & The base64 URL encoder\\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_j_w_t_1_1_jwt_encoder_ae5504a30e85727b208f832f1bac010d1}\label{class_j_w_t_1_1_jwt_encoder_ae5504a30e85727b208f832f1bac010d1} 
+\index{JWT.JwtEncoder@{JWT.JwtEncoder}!Encode@{Encode}}
+\index{Encode@{Encode}!JWT.JwtEncoder@{JWT.JwtEncoder}}
+\doxysubsubsection{\texorpdfstring{Encode()}{Encode()}}
+{\footnotesize\ttfamily string JWT.\+Jwt\+Encoder.\+Encode (\begin{DoxyParamCaption}\item[{IDictionary$<$ string, object $>$}]{extra\+Headers,  }\item[{object}]{payload,  }\item[{byte\mbox{[}$\,$\mbox{]}}]{key }\end{DoxyParamCaption})}
+
+Creates a \doxylink{namespace_j_w_t}{JWT} given a header, a payload, the signing key, and the algorithm to use.
+
+
+\begin{DoxyParams}{Parameters}
+{\em extra\+Headers} & An arbitrary set of extra headers. Will be augmented with the standard \"{}typ\"{} and \"{}alg\"{} headers\\
+\hline
+{\em payload} & An arbitrary payload (must be serializable to JSON)\\
+\hline
+{\em key} & The key bytes used to sign the token\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The generated \doxylink{namespace_j_w_t}{JWT}
+\end{DoxyReturn}
+ 
+\begin{DoxyExceptions}{Exceptions}
+{\em Argument\+Null\+Exception} & \\
+\hline
+\end{DoxyExceptions}
+
+
+Implements \mbox{\hyperlink{interface_j_w_t_1_1_i_jwt_encoder_a0ece85ed8dae5fc53da5ba8d850a8171}{JWT.\+IJwt\+Encoder}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/adenf/\+Rider\+Projects/\+Openlabs.\+Mgcxm/\+Openlabs.\+Mgcxm/\+JWT/\mbox{\hyperlink{_jwt_encoder_8cs}{Jwt\+Encoder.\+cs}}\end{DoxyCompactItemize}

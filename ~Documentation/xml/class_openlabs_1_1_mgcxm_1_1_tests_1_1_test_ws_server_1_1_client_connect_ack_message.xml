@@ -1,0 +1,30 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.7" xml:lang="en-US">
+  <compounddef id="class_openlabs_1_1_mgcxm_1_1_tests_1_1_test_ws_server_1_1_client_connect_ack_message" kind="class" language="C#" prot="public">
+    <compoundname>Openlabs::Mgcxm::Tests::TestWsServer::ClientConnectAckMessage</compoundname>
+      <sectiondef kind="property">
+      <memberdef kind="property" id="class_openlabs_1_1_mgcxm_1_1_tests_1_1_test_ws_server_1_1_client_connect_ack_message_1a54cb3d39391e0bc051e2207f30ff80b0" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type>long</type>
+        <definition>long Openlabs.Mgcxm.Tests.TestWsServer.ClientConnectAckMessage.SessionId</definition>
+        <argsstring></argsstring>
+        <name>SessionId</name>
+        <qualifiedname>Openlabs.Mgcxm.Tests.TestWsServer.ClientConnectAckMessage.SessionId</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/adenf/RiderProjects/Openlabs.Mgcxm/Openlabs.Mgcxm.Tests/TestWsServer.cs" line="69" column="21" bodyfile="C:/Users/adenf/RiderProjects/Openlabs.Mgcxm/Openlabs.Mgcxm.Tests/TestWsServer.cs" bodystart="69" bodyend="69"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/Users/adenf/RiderProjects/Openlabs.Mgcxm/Openlabs.Mgcxm.Tests/TestWsServer.cs" line="67" column="11" bodyfile="C:/Users/adenf/RiderProjects/Openlabs.Mgcxm/Openlabs.Mgcxm.Tests/TestWsServer.cs" bodystart="68" bodyend="70"/>
+    <listofallmembers>
+      <member refid="class_openlabs_1_1_mgcxm_1_1_tests_1_1_test_ws_server_1_1_client_connect_ack_message_1a54cb3d39391e0bc051e2207f30ff80b0" prot="public" virt="non-virtual"><scope>Openlabs::Mgcxm::Tests::TestWsServer::ClientConnectAckMessage</scope><name>SessionId</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

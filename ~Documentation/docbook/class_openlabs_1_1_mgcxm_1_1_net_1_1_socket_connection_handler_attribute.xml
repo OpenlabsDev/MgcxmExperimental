@@ -1,0 +1,125 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_class_openlabs_1_1_mgcxm_1_1_net_1_1_socket_connection_handler_attribute" xml:lang="en-US">
+<title>Openlabs.Mgcxm.Net.SocketConnectionHandlerAttribute Class Reference</title>
+<indexterm><primary>Openlabs.Mgcxm.Net.SocketConnectionHandlerAttribute</primary></indexterm>
+<para>
+
+<para>Represents an attribute used to specify the type of socket connection handler for a socket. </para>
+ 
+</para>
+Inheritance diagram for Openlabs.Mgcxm.Net.SocketConnectionHandlerAttribute:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="class_openlabs_1_1_mgcxm_1_1_net_1_1_socket_connection_handler_attribute__inherit__graph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+Collaboration diagram for Openlabs.Mgcxm.Net.SocketConnectionHandlerAttribute:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="class_openlabs_1_1_mgcxm_1_1_net_1_1_socket_connection_handler_attribute__coll__graph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+<simplesect>
+    <title>Public Member Functions    </title>
+        <itemizedlist>
+            <listitem><para><link linkend="_class_openlabs_1_1_mgcxm_1_1_net_1_1_socket_connection_handler_attribute_1ae160f7e01f8bc94213b5424c097e3861">SocketConnectionHandlerAttribute</link> (Type type)</para>
+
+<para>Initializes a new instance of the SocketConnectionHandlerAttribute class with the specified handler type. </para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Properties    </title>
+        <itemizedlist>
+            <listitem><para>Type <link linkend="_class_openlabs_1_1_mgcxm_1_1_net_1_1_socket_connection_handler_attribute_1acfc959bae5971b4572d320baa5ae9188">HandlerType</link><computeroutput> [get]</computeroutput>
+</para>
+
+<para>Gets the type of the socket connection handler. </para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Detailed Description</title>
+
+<para>Represents an attribute used to specify the type of socket connection handler for a socket. </para>
+</section>
+<section>
+<title>Constructor &amp; Destructor Documentation</title>
+<anchor xml:id="_class_openlabs_1_1_mgcxm_1_1_net_1_1_socket_connection_handler_attribute_1ae160f7e01f8bc94213b5424c097e3861"/><section>
+    <title>SocketConnectionHandlerAttribute()</title>
+<indexterm><primary>SocketConnectionHandlerAttribute</primary><secondary>Openlabs.Mgcxm.Net.SocketConnectionHandlerAttribute</secondary></indexterm>
+<indexterm><primary>Openlabs.Mgcxm.Net.SocketConnectionHandlerAttribute</primary><secondary>SocketConnectionHandlerAttribute</secondary></indexterm>
+<para><computeroutput>Openlabs.Mgcxm.Net.SocketConnectionHandlerAttribute.SocketConnectionHandlerAttribute (Type type)</computeroutput></para><para>
+
+<para>Initializes a new instance of the SocketConnectionHandlerAttribute class with the specified handler type. </para>
+</para>
+
+<para>
+                <formalpara>
+                    <title>
+Parameters</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>type</entry><entry>
+<para>The type of the socket connection handler.</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                
+                <formalpara>
+                    <title>
+Exceptions</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>ArgumentNullException</entry><entry>
+<para>Thrown if the <emphasis>type</emphasis>  is null.</para>
+</entry>
+                            </row>
+                            <row>
+<entry>InvalidOperationException</entry><entry>
+<para>Thrown if the <emphasis>type</emphasis>  does not inherit or implement MgcxmSocketConnectionHandler.</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                </para>
+</section>
+</section>
+<section>
+<title>Property Documentation</title>
+<anchor xml:id="_class_openlabs_1_1_mgcxm_1_1_net_1_1_socket_connection_handler_attribute_1acfc959bae5971b4572d320baa5ae9188"/><section>
+    <title>HandlerType</title>
+<indexterm><primary>HandlerType</primary><secondary>Openlabs.Mgcxm.Net.SocketConnectionHandlerAttribute</secondary></indexterm>
+<indexterm><primary>Openlabs.Mgcxm.Net.SocketConnectionHandlerAttribute</primary><secondary>HandlerType</secondary></indexterm>
+<para><computeroutput>Type Openlabs.Mgcxm.Net.SocketConnectionHandlerAttribute.HandlerType<computeroutput>[get]</computeroutput></computeroutput></para><para>
+
+<para>Gets the type of the socket connection handler. </para>
+</para>
+</section>
+<para>
+The documentation for this class was generated from the following file:</para>
+C:/Users/adenf/RiderProjects/Openlabs.Mgcxm/Openlabs.Mgcxm/Net/Attributes/<link linkend="__socket_connection_handler_attribute_8cs">SocketConnectionHandlerAttribute.cs</link></section>
+</section>

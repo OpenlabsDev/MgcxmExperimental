@@ -1,0 +1,12 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_namespace_openlabs_1_1_mgcxm_1_1_net_1_1_authorization" xml:lang="en-US">
+<title>Openlabs.Mgcxm.Net.Authorization Namespace Reference</title>
+<indexterm><primary>Openlabs.Mgcxm.Net.Authorization</primary></indexterm>
+<simplesect>
+    <title>Classes    </title>
+        <itemizedlist>
+            <listitem><para>struct <link linkend="_struct_openlabs_1_1_mgcxm_1_1_net_1_1_authorization_1_1_access_token">AccessToken</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+</section>

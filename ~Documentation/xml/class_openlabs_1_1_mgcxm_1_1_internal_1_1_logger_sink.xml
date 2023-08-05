@@ -1,0 +1,230 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.7" xml:lang="en-US">
+  <compounddef id="class_openlabs_1_1_mgcxm_1_1_internal_1_1_logger_sink" kind="class" language="C#" prot="public">
+    <compoundname>Openlabs::Mgcxm::Internal::LoggerSink</compoundname>
+      <sectiondef kind="property">
+      <memberdef kind="property" id="class_openlabs_1_1_mgcxm_1_1_internal_1_1_logger_sink_1a07b57f6a251e9f4c26e88632f5e46be5" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="no" privatesettable="no" protectedsettable="no">
+        <type>string</type>
+        <definition>string Openlabs.Mgcxm.Internal.LoggerSink.SinkName</definition>
+        <argsstring></argsstring>
+        <name>SinkName</name>
+        <qualifiedname>Openlabs.Mgcxm.Internal.LoggerSink.SinkName</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/adenf/RiderProjects/Openlabs.Mgcxm/Openlabs.Mgcxm/Internal/Logger.cs" line="136" column="19" bodyfile="C:/Users/adenf/RiderProjects/Openlabs.Mgcxm/Openlabs.Mgcxm/Internal/Logger.cs" bodystart="136" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_openlabs_1_1_mgcxm_1_1_internal_1_1_logger_sink_1a63bcb549b0fe7b4b6639a4a6a501c998" prot="private" static="no" mutable="no">
+        <type>string</type>
+        <definition>string Openlabs.Mgcxm.Internal.LoggerSink._sinkName</definition>
+        <argsstring></argsstring>
+        <name>_sinkName</name>
+        <qualifiedname>Openlabs.Mgcxm.Internal.LoggerSink._sinkName</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/adenf/RiderProjects/Openlabs.Mgcxm/Openlabs.Mgcxm/Internal/Logger.cs" line="137" column="20" bodyfile="C:/Users/adenf/RiderProjects/Openlabs.Mgcxm/Openlabs.Mgcxm/Internal/Logger.cs" bodystart="137" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_openlabs_1_1_mgcxm_1_1_internal_1_1_logger_sink_1ad24db1165173be33e0068b4b58e520f7" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Openlabs.Mgcxm.Internal.LoggerSink.LoggerSink</definition>
+        <argsstring>(string sinkName)</argsstring>
+        <name>LoggerSink</name>
+        <qualifiedname>Openlabs.Mgcxm.Internal.LoggerSink.LoggerSink</qualifiedname>
+        <param>
+          <type>string</type>
+          <declname>sinkName</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/adenf/RiderProjects/Openlabs.Mgcxm/Openlabs.Mgcxm/Internal/Logger.cs" line="108" column="12" bodyfile="C:/Users/adenf/RiderProjects/Openlabs.Mgcxm/Openlabs.Mgcxm/Internal/Logger.cs" bodystart="108" bodyend="113"/>
+      </memberdef>
+      <memberdef kind="function" id="class_openlabs_1_1_mgcxm_1_1_internal_1_1_logger_sink_1a184cab05d3e176b9325bdf43b2856f2c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Openlabs.Mgcxm.Internal.LoggerSink.Trace</definition>
+        <argsstring>(string message, params object[] args)</argsstring>
+        <name>Trace</name>
+        <qualifiedname>Openlabs.Mgcxm.Internal.LoggerSink.Trace</qualifiedname>
+        <param>
+          <type>string</type>
+          <declname>message</declname>
+        </param>
+        <param>
+          <type>params object[]</type>
+          <declname>args</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/adenf/RiderProjects/Openlabs.Mgcxm/Openlabs.Mgcxm/Internal/Logger.cs" line="115" column="17"/>
+        <referencedby refid="class_openlabs_1_1_mgcxm_1_1_assets_1_1_object_d_t_o_1ae614d674a342e92fb9c5b2c8052f7433" compoundref="_object_d_t_o_8cs" startline="10" endline="23">Openlabs.Mgcxm.Assets.ObjectDTO.GetDtoId</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_openlabs_1_1_mgcxm_1_1_internal_1_1_logger_sink_1accf232f7cc5f01b0d9f0e89169c95e97" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Openlabs.Mgcxm.Internal.LoggerSink.Debug</definition>
+        <argsstring>(string message, params object[] args)</argsstring>
+        <name>Debug</name>
+        <qualifiedname>Openlabs.Mgcxm.Internal.LoggerSink.Debug</qualifiedname>
+        <param>
+          <type>string</type>
+          <declname>message</declname>
+        </param>
+        <param>
+          <type>params object[]</type>
+          <declname>args</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/adenf/RiderProjects/Openlabs.Mgcxm/Openlabs.Mgcxm/Internal/Logger.cs" line="118" column="17"/>
+      </memberdef>
+      <memberdef kind="function" id="class_openlabs_1_1_mgcxm_1_1_internal_1_1_logger_sink_1ad0713225028c2ed8c84927a9e9c9391b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Openlabs.Mgcxm.Internal.LoggerSink.Info</definition>
+        <argsstring>(string message, params object[] args)</argsstring>
+        <name>Info</name>
+        <qualifiedname>Openlabs.Mgcxm.Internal.LoggerSink.Info</qualifiedname>
+        <param>
+          <type>string</type>
+          <declname>message</declname>
+        </param>
+        <param>
+          <type>params object[]</type>
+          <declname>args</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/adenf/RiderProjects/Openlabs.Mgcxm/Openlabs.Mgcxm/Internal/Logger.cs" line="121" column="17"/>
+      </memberdef>
+      <memberdef kind="function" id="class_openlabs_1_1_mgcxm_1_1_internal_1_1_logger_sink_1a8c61c9cebd367e4d35f432050beb0ed0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Openlabs.Mgcxm.Internal.LoggerSink.Warning</definition>
+        <argsstring>(string message, params object[] args)</argsstring>
+        <name>Warning</name>
+        <qualifiedname>Openlabs.Mgcxm.Internal.LoggerSink.Warning</qualifiedname>
+        <param>
+          <type>string</type>
+          <declname>message</declname>
+        </param>
+        <param>
+          <type>params object[]</type>
+          <declname>args</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/adenf/RiderProjects/Openlabs.Mgcxm/Openlabs.Mgcxm/Internal/Logger.cs" line="124" column="17"/>
+      </memberdef>
+      <memberdef kind="function" id="class_openlabs_1_1_mgcxm_1_1_internal_1_1_logger_sink_1a2f42c4d9ad4f45c1ab7bbfd8be35e065" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Openlabs.Mgcxm.Internal.LoggerSink.Error</definition>
+        <argsstring>(string message, params object[] args)</argsstring>
+        <name>Error</name>
+        <qualifiedname>Openlabs.Mgcxm.Internal.LoggerSink.Error</qualifiedname>
+        <param>
+          <type>string</type>
+          <declname>message</declname>
+        </param>
+        <param>
+          <type>params object[]</type>
+          <declname>args</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/adenf/RiderProjects/Openlabs.Mgcxm/Openlabs.Mgcxm/Internal/Logger.cs" line="127" column="17"/>
+      </memberdef>
+      <memberdef kind="function" id="class_openlabs_1_1_mgcxm_1_1_internal_1_1_logger_sink_1ae240ccf774b813b0f90c6bcf3820a4ef" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Openlabs.Mgcxm.Internal.LoggerSink.Fatal</definition>
+        <argsstring>(string message, params object[] args)</argsstring>
+        <name>Fatal</name>
+        <qualifiedname>Openlabs.Mgcxm.Internal.LoggerSink.Fatal</qualifiedname>
+        <param>
+          <type>string</type>
+          <declname>message</declname>
+        </param>
+        <param>
+          <type>params object[]</type>
+          <declname>args</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/adenf/RiderProjects/Openlabs.Mgcxm/Openlabs.Mgcxm/Internal/Logger.cs" line="130" column="17"/>
+      </memberdef>
+      <memberdef kind="function" id="class_openlabs_1_1_mgcxm_1_1_internal_1_1_logger_sink_1aafac38ea5c805b23f5034baecc85dbeb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Openlabs.Mgcxm.Internal.LoggerSink.Exception</definition>
+        <argsstring>(string message, Exception ex)</argsstring>
+        <name>Exception</name>
+        <qualifiedname>Openlabs.Mgcxm.Internal.LoggerSink.Exception</qualifiedname>
+        <param>
+          <type>string</type>
+          <declname>message</declname>
+        </param>
+        <param>
+          <type>Exception</type>
+          <declname>ex</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/adenf/RiderProjects/Openlabs.Mgcxm/Openlabs.Mgcxm/Internal/Logger.cs" line="133" column="17"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/Users/adenf/RiderProjects/Openlabs.Mgcxm/Openlabs.Mgcxm/Internal/Logger.cs" line="106" column="7" bodyfile="C:/Users/adenf/RiderProjects/Openlabs.Mgcxm/Openlabs.Mgcxm/Internal/Logger.cs" bodystart="107" bodyend="138"/>
+    <listofallmembers>
+      <member refid="class_openlabs_1_1_mgcxm_1_1_internal_1_1_logger_sink_1a63bcb549b0fe7b4b6639a4a6a501c998" prot="private" virt="non-virtual"><scope>Openlabs::Mgcxm::Internal::LoggerSink</scope><name>_sinkName</name></member>
+      <member refid="class_openlabs_1_1_mgcxm_1_1_internal_1_1_logger_sink_1accf232f7cc5f01b0d9f0e89169c95e97" prot="public" virt="non-virtual"><scope>Openlabs::Mgcxm::Internal::LoggerSink</scope><name>Debug</name></member>
+      <member refid="class_openlabs_1_1_mgcxm_1_1_internal_1_1_logger_sink_1a2f42c4d9ad4f45c1ab7bbfd8be35e065" prot="public" virt="non-virtual"><scope>Openlabs::Mgcxm::Internal::LoggerSink</scope><name>Error</name></member>
+      <member refid="class_openlabs_1_1_mgcxm_1_1_internal_1_1_logger_sink_1aafac38ea5c805b23f5034baecc85dbeb" prot="public" virt="non-virtual"><scope>Openlabs::Mgcxm::Internal::LoggerSink</scope><name>Exception</name></member>
+      <member refid="class_openlabs_1_1_mgcxm_1_1_internal_1_1_logger_sink_1ae240ccf774b813b0f90c6bcf3820a4ef" prot="public" virt="non-virtual"><scope>Openlabs::Mgcxm::Internal::LoggerSink</scope><name>Fatal</name></member>
+      <member refid="class_openlabs_1_1_mgcxm_1_1_internal_1_1_logger_sink_1ad0713225028c2ed8c84927a9e9c9391b" prot="public" virt="non-virtual"><scope>Openlabs::Mgcxm::Internal::LoggerSink</scope><name>Info</name></member>
+      <member refid="class_openlabs_1_1_mgcxm_1_1_internal_1_1_logger_sink_1ad24db1165173be33e0068b4b58e520f7" prot="public" virt="non-virtual"><scope>Openlabs::Mgcxm::Internal::LoggerSink</scope><name>LoggerSink</name></member>
+      <member refid="class_openlabs_1_1_mgcxm_1_1_internal_1_1_logger_sink_1a07b57f6a251e9f4c26e88632f5e46be5" prot="public" virt="non-virtual"><scope>Openlabs::Mgcxm::Internal::LoggerSink</scope><name>SinkName</name></member>
+      <member refid="class_openlabs_1_1_mgcxm_1_1_internal_1_1_logger_sink_1a184cab05d3e176b9325bdf43b2856f2c" prot="public" virt="non-virtual"><scope>Openlabs::Mgcxm::Internal::LoggerSink</scope><name>Trace</name></member>
+      <member refid="class_openlabs_1_1_mgcxm_1_1_internal_1_1_logger_sink_1a8c61c9cebd367e4d35f432050beb0ed0" prot="public" virt="non-virtual"><scope>Openlabs::Mgcxm::Internal::LoggerSink</scope><name>Warning</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

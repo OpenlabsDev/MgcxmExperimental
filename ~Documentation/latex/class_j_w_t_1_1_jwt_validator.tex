@@ -1,0 +1,297 @@
+\doxysection{JWT.\+Jwt\+Validator Class Reference}
+\hypertarget{class_j_w_t_1_1_jwt_validator}{}\label{class_j_w_t_1_1_jwt_validator}\index{JWT.JwtValidator@{JWT.JwtValidator}}
+
+
+Jwt validator.  
+
+
+
+
+Inheritance diagram for JWT.\+Jwt\+Validator\+:
+% FIG 0
+
+
+Collaboration diagram for JWT.\+Jwt\+Validator\+:
+% FIG 1
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_j_w_t_1_1_jwt_validator_a0b251406739a3f8f0b5bfb7311be3bf7}{Jwt\+Validator}} (\mbox{\hyperlink{interface_j_w_t_1_1_i_json_serializer}{IJson\+Serializer}} json\+Serializer, \mbox{\hyperlink{interface_j_w_t_1_1_i_date_time_provider}{IDate\+Time\+Provider}} date\+Time\+Provider)
+\begin{DoxyCompactList}\small\item\em Creates an instance of Jwt\+Validator \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_j_w_t_1_1_jwt_validator_a7c6951bf8bea525d0ce7360dfdfa3861}{Jwt\+Validator}} (\mbox{\hyperlink{interface_j_w_t_1_1_i_json_serializer}{IJson\+Serializer}} json\+Serializer, \mbox{\hyperlink{interface_j_w_t_1_1_i_date_time_provider}{IDate\+Time\+Provider}} date\+Time\+Provider, \mbox{\hyperlink{class_j_w_t_1_1_validation_parameters}{Validation\+Parameters}} val\+Params)
+\begin{DoxyCompactList}\small\item\em Creates an instance of Jwt\+Validator with time margin. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_j_w_t_1_1_jwt_validator_a6b2c67683dfd55b5ff182814eca91560}{Jwt\+Validator}} (\mbox{\hyperlink{interface_j_w_t_1_1_i_json_serializer}{IJson\+Serializer}} json\+Serializer, \mbox{\hyperlink{interface_j_w_t_1_1_i_date_time_provider}{IDate\+Time\+Provider}} date\+Time\+Provider, \mbox{\hyperlink{class_j_w_t_1_1_validation_parameters}{Validation\+Parameters}} val\+Params, \mbox{\hyperlink{interface_j_w_t_1_1_i_base64_url_encoder}{IBase64\+Url\+Encoder}} url\+Encoder)
+\begin{DoxyCompactList}\small\item\em Creates an instance of Jwt\+Validator with time margin. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_j_w_t_1_1_jwt_validator_a40a34370eba0e6d1e71d9c585006e0c5}{Validate}} (string decoded\+Payload, string signature, params string\mbox{[}$\,$\mbox{]} decoded\+Signatures)
+\item 
+void \mbox{\hyperlink{class_j_w_t_1_1_jwt_validator_af52b2455c4d608013cd077fc41dd3421}{Validate}} (string decoded\+Payload, \mbox{\hyperlink{interface_j_w_t_1_1_algorithms_1_1_i_asymmetric_algorithm}{IAsymmetric\+Algorithm}} alg, byte\mbox{[}$\,$\mbox{]} bytes\+To\+Sign, byte\mbox{[}$\,$\mbox{]} decoded\+Signature)
+\item 
+bool \mbox{\hyperlink{class_j_w_t_1_1_jwt_validator_a729b5ad4f3b551b967bf6f0b1d558b56}{Try\+Validate}} (string payload\+Json, string signature, string decoded\+Signature, out Exception ex)
+\item 
+bool \mbox{\hyperlink{class_j_w_t_1_1_jwt_validator_a4b76397cce0223e28bc1797b2827e7f4}{Try\+Validate}} (string payload\+Json, string signature, string\mbox{[}$\,$\mbox{]} decoded\+Signature, out Exception ex)
+\item 
+bool \mbox{\hyperlink{class_j_w_t_1_1_jwt_validator_a274e40b60c7065846b331227ab99a92f}{Try\+Validate}} (string payload\+Json, \mbox{\hyperlink{interface_j_w_t_1_1_algorithms_1_1_i_asymmetric_algorithm}{IAsymmetric\+Algorithm}} alg, byte\mbox{[}$\,$\mbox{]} bytes\+To\+Sign, byte\mbox{[}$\,$\mbox{]} decoded\+Signature, out Exception ex)
+\item 
+Exception \mbox{\hyperlink{class_j_w_t_1_1_jwt_validator_aff404e7ee56295dffae8e61130efe70d}{Get\+Validation\+Exception}} (\mbox{\hyperlink{class_j_w_t_1_1_jwt_parts}{Jwt\+Parts}} parts)
+\item 
+Exception \mbox{\hyperlink{class_j_w_t_1_1_jwt_validator_a9637d8a7c56f0e14048cc2a8ec3ccb8f}{Get\+Validation\+Exception}} (byte\mbox{[}$\,$\mbox{]} bytes)
+\end{DoxyCompactItemize}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{interface_j_w_t_1_1_i_jwt_validator_ac2a038110fce4e9543386421dc866497}{Validate}} (string decoded\+Payload, string signature, params string\mbox{[}$\,$\mbox{]} decoded\+Signatures)
+\begin{DoxyCompactList}\small\item\em Given the \doxylink{namespace_j_w_t}{JWT}, verifies its signature correctness. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{interface_j_w_t_1_1_i_jwt_validator_a3338c5c0f418836f9eaf1a84482ce5b9}{Validate}} (string decoded\+Payload, \mbox{\hyperlink{interface_j_w_t_1_1_algorithms_1_1_i_asymmetric_algorithm}{IAsymmetric\+Algorithm}} alg, byte\mbox{[}$\,$\mbox{]} bytes\+To\+Sign, byte\mbox{[}$\,$\mbox{]} decoded\+Signature)
+\begin{DoxyCompactList}\small\item\em Given the \doxylink{namespace_j_w_t}{JWT}, verifies its signature correctness. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{interface_j_w_t_1_1_i_jwt_validator_a00359e1aaa882dce7d2bc71794e3df6a}{Try\+Validate}} (string payload\+Json, string signature, string decoded\+Signature, out Exception ex)
+\begin{DoxyCompactList}\small\item\em Given the \doxylink{namespace_j_w_t}{JWT}, verifies its signature correctness without throwing an exception but returning it instead. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{interface_j_w_t_1_1_i_jwt_validator_a6be9333406c4dca495d0524a2a269d76}{Try\+Validate}} (string payload\+Json, string signature, string\mbox{[}$\,$\mbox{]} decoded\+Signature, out Exception ex)
+\begin{DoxyCompactList}\small\item\em Given the \doxylink{namespace_j_w_t}{JWT}, verifies its signature correctness without throwing an exception but returning it instead. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{interface_j_w_t_1_1_i_jwt_validator_ad83594c87fa12d650d63b096550f9bef}{Try\+Validate}} (string payload\+Json, \mbox{\hyperlink{interface_j_w_t_1_1_algorithms_1_1_i_asymmetric_algorithm}{IAsymmetric\+Algorithm}} alg, byte\mbox{[}$\,$\mbox{]} bytes\+To\+Sign, byte\mbox{[}$\,$\mbox{]} decoded\+Signature, out Exception ex)
+\begin{DoxyCompactList}\small\item\em Given the \doxylink{namespace_j_w_t}{JWT}, verifies its signatures correctness without throwing an exception but returning it instead. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Jwt validator. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_j_w_t_1_1_jwt_validator_a0b251406739a3f8f0b5bfb7311be3bf7}\label{class_j_w_t_1_1_jwt_validator_a0b251406739a3f8f0b5bfb7311be3bf7} 
+\index{JWT.JwtValidator@{JWT.JwtValidator}!JwtValidator@{JwtValidator}}
+\index{JwtValidator@{JwtValidator}!JWT.JwtValidator@{JWT.JwtValidator}}
+\doxysubsubsection{\texorpdfstring{JwtValidator()}{JwtValidator()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily JWT.\+Jwt\+Validator.\+Jwt\+Validator (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interface_j_w_t_1_1_i_json_serializer}{IJson\+Serializer}}}]{json\+Serializer,  }\item[{\mbox{\hyperlink{interface_j_w_t_1_1_i_date_time_provider}{IDate\+Time\+Provider}}}]{date\+Time\+Provider }\end{DoxyParamCaption})}
+
+
+
+Creates an instance of Jwt\+Validator 
+
+
+\begin{DoxyParams}{Parameters}
+{\em json\+Serializer} & The JSON serializer\\
+\hline
+{\em date\+Time\+Provider} & The Date\+Time provider\\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_j_w_t_1_1_jwt_validator_a7c6951bf8bea525d0ce7360dfdfa3861}\label{class_j_w_t_1_1_jwt_validator_a7c6951bf8bea525d0ce7360dfdfa3861} 
+\index{JWT.JwtValidator@{JWT.JwtValidator}!JwtValidator@{JwtValidator}}
+\index{JwtValidator@{JwtValidator}!JWT.JwtValidator@{JWT.JwtValidator}}
+\doxysubsubsection{\texorpdfstring{JwtValidator()}{JwtValidator()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily JWT.\+Jwt\+Validator.\+Jwt\+Validator (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interface_j_w_t_1_1_i_json_serializer}{IJson\+Serializer}}}]{json\+Serializer,  }\item[{\mbox{\hyperlink{interface_j_w_t_1_1_i_date_time_provider}{IDate\+Time\+Provider}}}]{date\+Time\+Provider,  }\item[{\mbox{\hyperlink{class_j_w_t_1_1_validation_parameters}{Validation\+Parameters}}}]{val\+Params }\end{DoxyParamCaption})}
+
+
+
+Creates an instance of Jwt\+Validator with time margin. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em json\+Serializer} & The JSON serializer\\
+\hline
+{\em date\+Time\+Provider} & The Date\+Time provider\\
+\hline
+{\em val\+Params} & Validation parameters that are passed on to Jwt\+Validator\\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_j_w_t_1_1_jwt_validator_a6b2c67683dfd55b5ff182814eca91560}\label{class_j_w_t_1_1_jwt_validator_a6b2c67683dfd55b5ff182814eca91560} 
+\index{JWT.JwtValidator@{JWT.JwtValidator}!JwtValidator@{JwtValidator}}
+\index{JwtValidator@{JwtValidator}!JWT.JwtValidator@{JWT.JwtValidator}}
+\doxysubsubsection{\texorpdfstring{JwtValidator()}{JwtValidator()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily JWT.\+Jwt\+Validator.\+Jwt\+Validator (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interface_j_w_t_1_1_i_json_serializer}{IJson\+Serializer}}}]{json\+Serializer,  }\item[{\mbox{\hyperlink{interface_j_w_t_1_1_i_date_time_provider}{IDate\+Time\+Provider}}}]{date\+Time\+Provider,  }\item[{\mbox{\hyperlink{class_j_w_t_1_1_validation_parameters}{Validation\+Parameters}}}]{val\+Params,  }\item[{\mbox{\hyperlink{interface_j_w_t_1_1_i_base64_url_encoder}{IBase64\+Url\+Encoder}}}]{url\+Encoder }\end{DoxyParamCaption})}
+
+
+
+Creates an instance of Jwt\+Validator with time margin. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em json\+Serializer} & The JSON serializer\\
+\hline
+{\em date\+Time\+Provider} & The Date\+Time provider\\
+\hline
+{\em val\+Params} & Validation parameters that are passed on to Jwt\+Validator\\
+\hline
+{\em url\+Encoder} & The base64 URL Encoder\\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_j_w_t_1_1_jwt_validator_a9637d8a7c56f0e14048cc2a8ec3ccb8f}\label{class_j_w_t_1_1_jwt_validator_a9637d8a7c56f0e14048cc2a8ec3ccb8f} 
+\index{JWT.JwtValidator@{JWT.JwtValidator}!GetValidationException@{GetValidationException}}
+\index{GetValidationException@{GetValidationException}!JWT.JwtValidator@{JWT.JwtValidator}}
+\doxysubsubsection{\texorpdfstring{GetValidationException()}{GetValidationException()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily Exception JWT.\+Jwt\+Validator.\+Get\+Validation\+Exception (\begin{DoxyParamCaption}\item[{byte\mbox{[}$\,$\mbox{]}}]{bytes }\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:
+% FIG 2
+\Hypertarget{class_j_w_t_1_1_jwt_validator_aff404e7ee56295dffae8e61130efe70d}\label{class_j_w_t_1_1_jwt_validator_aff404e7ee56295dffae8e61130efe70d} 
+\index{JWT.JwtValidator@{JWT.JwtValidator}!GetValidationException@{GetValidationException}}
+\index{GetValidationException@{GetValidationException}!JWT.JwtValidator@{JWT.JwtValidator}}
+\doxysubsubsection{\texorpdfstring{GetValidationException()}{GetValidationException()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily Exception JWT.\+Jwt\+Validator.\+Get\+Validation\+Exception (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_j_w_t_1_1_jwt_parts}{Jwt\+Parts}}}]{parts }\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:
+% FIG 3
+Here is the caller graph for this function\+:
+% FIG 4
+\Hypertarget{class_j_w_t_1_1_jwt_validator_a274e40b60c7065846b331227ab99a92f}\label{class_j_w_t_1_1_jwt_validator_a274e40b60c7065846b331227ab99a92f} 
+\index{JWT.JwtValidator@{JWT.JwtValidator}!TryValidate@{TryValidate}}
+\index{TryValidate@{TryValidate}!JWT.JwtValidator@{JWT.JwtValidator}}
+\doxysubsubsection{\texorpdfstring{TryValidate()}{TryValidate()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily bool JWT.\+Jwt\+Validator.\+Try\+Validate (\begin{DoxyParamCaption}\item[{string}]{payload\+Json,  }\item[{\mbox{\hyperlink{interface_j_w_t_1_1_algorithms_1_1_i_asymmetric_algorithm}{IAsymmetric\+Algorithm}}}]{alg,  }\item[{byte\mbox{[}$\,$\mbox{]}}]{bytes\+To\+Sign,  }\item[{byte\mbox{[}$\,$\mbox{]}}]{decoded\+Signature,  }\item[{out Exception}]{ex }\end{DoxyParamCaption})}
+
+Given the \doxylink{namespace_j_w_t}{JWT}, verifies its signatures correctness without throwing an exception but returning it instead.
+
+
+\begin{DoxyParams}{Parameters}
+{\em payload\+Json} & \texorpdfstring{$>$}{>}An arbitrary payload (already serialized to JSON)\\
+\hline
+{\em alg} & The asymmetric algorithm to validate with\\
+\hline
+{\em bytes\+To\+Sign} & The header and payload bytes to validate\\
+\hline
+{\em decoded\+Signature} & The decoded\+Signatures to validate with\\
+\hline
+{\em ex} & Validation exception, if any\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True if exception is \doxylink{namespace_j_w_t}{JWT} is valid and exception is null, otherwise false
+\end{DoxyReturn}
+ 
+\begin{DoxyExceptions}{Exceptions}
+{\em Argument\+Exception} & \\
+\hline
+\end{DoxyExceptions}
+
+
+Implements \mbox{\hyperlink{interface_j_w_t_1_1_i_jwt_validator_ad83594c87fa12d650d63b096550f9bef}{JWT.\+IJwt\+Validator}}.
+
+Here is the call graph for this function\+:
+% FIG 5
+\Hypertarget{class_j_w_t_1_1_jwt_validator_a729b5ad4f3b551b967bf6f0b1d558b56}\label{class_j_w_t_1_1_jwt_validator_a729b5ad4f3b551b967bf6f0b1d558b56} 
+\index{JWT.JwtValidator@{JWT.JwtValidator}!TryValidate@{TryValidate}}
+\index{TryValidate@{TryValidate}!JWT.JwtValidator@{JWT.JwtValidator}}
+\doxysubsubsection{\texorpdfstring{TryValidate()}{TryValidate()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily bool JWT.\+Jwt\+Validator.\+Try\+Validate (\begin{DoxyParamCaption}\item[{string}]{payload\+Json,  }\item[{string}]{signature,  }\item[{string}]{decoded\+Signature,  }\item[{out Exception}]{ex }\end{DoxyParamCaption})}
+
+Given the \doxylink{namespace_j_w_t}{JWT}, verifies its signature correctness without throwing an exception but returning it instead.
+
+
+\begin{DoxyParams}{Parameters}
+{\em payload\+Json} & \texorpdfstring{$>$}{>}An arbitrary payload (already serialized to JSON)\\
+\hline
+{\em signature} & Decoded body\\
+\hline
+{\em decoded\+Signature} & The signature to validate with\\
+\hline
+{\em ex} & The resulting validation exception, if any\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Returns {\ttfamily true} if exception is \doxylink{namespace_j_w_t}{JWT} is valid and exception is null, otherwise false
+\end{DoxyReturn}
+ 
+\begin{DoxyExceptions}{Exceptions}
+{\em Argument\+Exception} & \\
+\hline
+\end{DoxyExceptions}
+
+
+Implements \mbox{\hyperlink{interface_j_w_t_1_1_i_jwt_validator_a00359e1aaa882dce7d2bc71794e3df6a}{JWT.\+IJwt\+Validator}}.
+
+Here is the call graph for this function\+:
+% FIG 6
+\Hypertarget{class_j_w_t_1_1_jwt_validator_a4b76397cce0223e28bc1797b2827e7f4}\label{class_j_w_t_1_1_jwt_validator_a4b76397cce0223e28bc1797b2827e7f4} 
+\index{JWT.JwtValidator@{JWT.JwtValidator}!TryValidate@{TryValidate}}
+\index{TryValidate@{TryValidate}!JWT.JwtValidator@{JWT.JwtValidator}}
+\doxysubsubsection{\texorpdfstring{TryValidate()}{TryValidate()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily bool JWT.\+Jwt\+Validator.\+Try\+Validate (\begin{DoxyParamCaption}\item[{string}]{payload\+Json,  }\item[{string}]{signature,  }\item[{string\mbox{[}$\,$\mbox{]}}]{decoded\+Signature,  }\item[{out Exception}]{ex }\end{DoxyParamCaption})}
+
+Given the \doxylink{namespace_j_w_t}{JWT}, verifies its signature correctness without throwing an exception but returning it instead.
+
+
+\begin{DoxyParams}{Parameters}
+{\em payload\+Json} & \texorpdfstring{$>$}{>}An arbitrary payload (already serialized to JSON)\\
+\hline
+{\em signature} & Decoded body\\
+\hline
+{\em decoded\+Signature} & The signatures to validate with\\
+\hline
+{\em ex} & The resulting validation exception, if any\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Returns {\ttfamily true} if exception is \doxylink{namespace_j_w_t}{JWT} is valid and exception is null, otherwise false
+\end{DoxyReturn}
+ 
+\begin{DoxyExceptions}{Exceptions}
+{\em Argument\+Exception} & \\
+\hline
+\end{DoxyExceptions}
+
+
+Implements \mbox{\hyperlink{interface_j_w_t_1_1_i_jwt_validator_a6be9333406c4dca495d0524a2a269d76}{JWT.\+IJwt\+Validator}}.
+
+Here is the call graph for this function\+:
+% FIG 7
+\Hypertarget{class_j_w_t_1_1_jwt_validator_af52b2455c4d608013cd077fc41dd3421}\label{class_j_w_t_1_1_jwt_validator_af52b2455c4d608013cd077fc41dd3421} 
+\index{JWT.JwtValidator@{JWT.JwtValidator}!Validate@{Validate}}
+\index{Validate@{Validate}!JWT.JwtValidator@{JWT.JwtValidator}}
+\doxysubsubsection{\texorpdfstring{Validate()}{Validate()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void JWT.\+Jwt\+Validator.\+Validate (\begin{DoxyParamCaption}\item[{string}]{decoded\+Payload,  }\item[{\mbox{\hyperlink{interface_j_w_t_1_1_algorithms_1_1_i_asymmetric_algorithm}{IAsymmetric\+Algorithm}}}]{alg,  }\item[{byte\mbox{[}$\,$\mbox{]}}]{bytes\+To\+Sign,  }\item[{byte\mbox{[}$\,$\mbox{]}}]{decoded\+Signature }\end{DoxyParamCaption})}
+
+Given the \doxylink{namespace_j_w_t}{JWT}, verifies its signature correctness.
+
+Used by the asymmetric algorithms only.  
+\begin{DoxyExceptions}{Exceptions}
+{\em Argument\+Exception} & 
+\begin{DoxyExceptions}{Exceptions}
+{\em Signature\+Verification\+Exception} & \\
+\hline
+\end{DoxyExceptions}
+\\
+\hline
+\end{DoxyExceptions}
+
+
+Implements \mbox{\hyperlink{interface_j_w_t_1_1_i_jwt_validator_a3338c5c0f418836f9eaf1a84482ce5b9}{JWT.\+IJwt\+Validator}}.
+
+Here is the call graph for this function\+:
+% FIG 8
+\Hypertarget{class_j_w_t_1_1_jwt_validator_a40a34370eba0e6d1e71d9c585006e0c5}\label{class_j_w_t_1_1_jwt_validator_a40a34370eba0e6d1e71d9c585006e0c5} 
+\index{JWT.JwtValidator@{JWT.JwtValidator}!Validate@{Validate}}
+\index{Validate@{Validate}!JWT.JwtValidator@{JWT.JwtValidator}}
+\doxysubsubsection{\texorpdfstring{Validate()}{Validate()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void JWT.\+Jwt\+Validator.\+Validate (\begin{DoxyParamCaption}\item[{string}]{decoded\+Payload,  }\item[{string}]{signature,  }\item[{params string\mbox{[}$\,$\mbox{]}}]{decoded\+Signatures }\end{DoxyParamCaption})}
+
+Given the \doxylink{namespace_j_w_t}{JWT}, verifies its signature correctness.
+
+
+\begin{DoxyParams}{Parameters}
+{\em decoded\+Payload} & \texorpdfstring{$>$}{>}An arbitrary payload (already serialized to JSON)\\
+\hline
+{\em signature} & Decoded body\\
+\hline
+{\em decoded\+Signatures} & The signatures to validate with\\
+\hline
+\end{DoxyParams}
+ 
+\begin{DoxyExceptions}{Exceptions}
+{\em Argument\+Exception} & 
+\begin{DoxyExceptions}{Exceptions}
+{\em Signature\+Verification\+Exception} & \\
+\hline
+\end{DoxyExceptions}
+\\
+\hline
+\end{DoxyExceptions}
+
+
+Implements \mbox{\hyperlink{interface_j_w_t_1_1_i_jwt_validator_ac2a038110fce4e9543386421dc866497}{JWT.\+IJwt\+Validator}}.
+
+Here is the call graph for this function\+:
+% FIG 9
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/adenf/\+Rider\+Projects/\+Openlabs.\+Mgcxm/\+Openlabs.\+Mgcxm/\+JWT/\mbox{\hyperlink{_jwt_validator_8cs}{Jwt\+Validator.\+cs}}\end{DoxyCompactItemize}

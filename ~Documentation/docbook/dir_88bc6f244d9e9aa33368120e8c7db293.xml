@@ -1,0 +1,23 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_dir_88bc6f244d9e9aa33368120e8c7db293" xml:lang="en-US">
+<title>C:/Users/adenf/RiderProjects/Openlabs.Mgcxm/Openlabs.Mgcxm/JWT/Internal Directory Reference</title>
+<indexterm><primary>C:/Users/adenf/RiderProjects/Openlabs.Mgcxm/Openlabs.Mgcxm/JWT/Internal Directory Reference</primary></indexterm>
+Directory dependency graph for Internal:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="dir_88bc6f244d9e9aa33368120e8c7db293_dep.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+<simplesect>
+    <title>Files    </title>
+        <itemizedlist>
+            <listitem><para>file <link linkend="__encoding_helper_8cs">EncodingHelper.cs</link></para>
+</listitem>
+            <listitem><para>file <link linkend="__string_helper_8cs">StringHelper.cs</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+</section>

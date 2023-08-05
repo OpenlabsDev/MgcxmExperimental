@@ -1,0 +1,71 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.7" xml:lang="en-US">
+  <compounddef id="class_j_w_t_1_1_json_serializer_extensions" kind="class" language="C#" prot="public">
+    <compoundname>JWT::JsonSerializerExtensions</compoundname>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="class_j_w_t_1_1_json_serializer_extensions_1a7a296af4565625d9840f237425dbe7e6" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>T</type>
+        <definition>static T JWT.JsonSerializerExtensions.Deserialize&lt; T &gt;</definition>
+        <argsstring>(this IJsonSerializer jsonSerializer, string json)</argsstring>
+        <name>Deserialize&lt; T &gt;</name>
+        <qualifiedname>JWT.JsonSerializerExtensions.Deserialize&lt; T &gt;</qualifiedname>
+        <param>
+          <type>this <ref refid="interface_j_w_t_1_1_i_json_serializer" kindref="compound">IJsonSerializer</ref></type>
+          <declname>jsonSerializer</declname>
+        </param>
+        <param>
+          <type>string</type>
+          <declname>json</declname>
+        </param>
+        <briefdescription>
+<para>Deserializes a JSON string to an object of specified type. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="templateparam"><parameteritem>
+<parameternamelist>
+<parametername>T</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The type of the object to deserialize to.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>jsonSerializer</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The JSON serializer instance.</para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>json</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>JSON string</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Strongly-typed object.</para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/adenf/RiderProjects/Openlabs.Mgcxm/Openlabs.Mgcxm/JWT/IJsonSerializer.cs" line="38" column="23"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Extension methods for <simplesect kind="see"><para>IJsonSerializer</para>
+</simplesect>
+/summary&gt; </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/Users/adenf/RiderProjects/Openlabs.Mgcxm/Openlabs.Mgcxm/JWT/IJsonSerializer.cs" line="29" column="19" bodyfile="C:/Users/adenf/RiderProjects/Openlabs.Mgcxm/Openlabs.Mgcxm/JWT/IJsonSerializer.cs" bodystart="30" bodyend="40"/>
+    <listofallmembers>
+      <member refid="class_j_w_t_1_1_json_serializer_extensions_1a7a296af4565625d9840f237425dbe7e6" prot="public" virt="non-virtual"><scope>JWT::JsonSerializerExtensions</scope><name>Deserialize&lt; T &gt;</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

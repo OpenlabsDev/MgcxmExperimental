@@ -1,0 +1,20 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.7" xml:lang="en-US">
+  <compounddef id="_r_e_a_d_m_e_8md" kind="file" language="Markdown">
+    <compoundname>README.md</compoundname>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline><highlight class="normal">#<sp/>MGCXM<sp/>Framework</highlight></codeline>
+<codeline><highlight class="normal">Mgcxm<sp/>is<sp/>a<sp/>HTTP<sp/>framework<sp/>used<sp/>to<sp/>host<sp/>HTTP<sp/>and<sp/>WS<sp/>server<sp/>on<sp/>the<sp/>internet.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">#<sp/>Compatibility</highlight></codeline>
+<codeline><highlight class="normal">Supports<sp/>port<sp/>forwarding<sp/>and<sp/>locally<sp/>hosted<sp/>servers.</highlight></codeline>
+<codeline><highlight class="normal">Does<sp/>not<sp/>support<sp/>certificates.</highlight></codeline>
+<codeline><highlight class="normal">Not<sp/>scalable.</highlight></codeline>
+    </programlisting>
+    <location file="C:/Users/adenf/RiderProjects/Openlabs.Mgcxm/README.md"/>
+  </compounddef>
+</doxygen>

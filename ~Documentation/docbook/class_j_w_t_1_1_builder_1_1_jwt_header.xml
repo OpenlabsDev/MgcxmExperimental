@@ -1,0 +1,81 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_class_j_w_t_1_1_builder_1_1_jwt_header" xml:lang="en-US">
+<title>JWT.Builder.JwtHeader Class Reference</title>
+<indexterm><primary>JWT.Builder.JwtHeader</primary></indexterm>
+<para>
+
+<para>JSON header model with predefined parameter names specified by RFC 7515, see <link xlink:href="https://tools.ietf.org/html/rfc7515">https://tools.ietf.org/html/rfc7515</link>. </para>
+ 
+</para>
+<simplesect>
+    <title>Properties    </title>
+        <itemizedlist>
+            <listitem><para>string <link linkend="_class_j_w_t_1_1_builder_1_1_jwt_header_1aec04bb5e71a36d95017d14aa85144c5d">Type</link><computeroutput> [get, set]</computeroutput>
+</para>
+</listitem>
+            <listitem><para>string <link linkend="_class_j_w_t_1_1_builder_1_1_jwt_header_1a5003ee801660d23ae7fa5be25da2577b">ContentType</link><computeroutput> [get, set]</computeroutput>
+</para>
+</listitem>
+            <listitem><para>string <link linkend="_class_j_w_t_1_1_builder_1_1_jwt_header_1a5dc575a8504a677276d962ab413eead8">Algorithm</link><computeroutput> [get, set]</computeroutput>
+</para>
+</listitem>
+            <listitem><para>string <link linkend="_class_j_w_t_1_1_builder_1_1_jwt_header_1a826d1ec8cd4313bfe2ed275b853908bd">KeyId</link><computeroutput> [get, set]</computeroutput>
+</para>
+</listitem>
+            <listitem><para>string <link linkend="_class_j_w_t_1_1_builder_1_1_jwt_header_1a6a5cbe0b0bdab0e5b975a16b6d8787c0">X5u</link><computeroutput> [get, set]</computeroutput>
+</para>
+</listitem>
+            <listitem><para>string[] <link linkend="_class_j_w_t_1_1_builder_1_1_jwt_header_1a05829c062708aecb1494c42b3bb83284">X5c</link><computeroutput> [get, set]</computeroutput>
+</para>
+</listitem>
+            <listitem><para>string <link linkend="_class_j_w_t_1_1_builder_1_1_jwt_header_1a94e22917b357efd2b16a7968487f525c">X5t</link><computeroutput> [get, set]</computeroutput>
+</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Detailed Description</title>
+
+<para>JSON header model with predefined parameter names specified by RFC 7515, see <link xlink:href="https://tools.ietf.org/html/rfc7515">https://tools.ietf.org/html/rfc7515</link>. </para>
+</section>
+<section>
+<title>Property Documentation</title>
+<anchor xml:id="_class_j_w_t_1_1_builder_1_1_jwt_header_1a5dc575a8504a677276d962ab413eead8"/><section>
+    <title>Algorithm</title>
+<indexterm><primary>Algorithm</primary><secondary>JWT.Builder.JwtHeader</secondary></indexterm>
+<indexterm><primary>JWT.Builder.JwtHeader</primary><secondary>Algorithm</secondary></indexterm>
+<para><computeroutput>string JWT.Builder.JwtHeader.Algorithm<computeroutput>[get]</computeroutput>, <computeroutput>[set]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_class_j_w_t_1_1_builder_1_1_jwt_header_1a5003ee801660d23ae7fa5be25da2577b"/><section>
+    <title>ContentType</title>
+<indexterm><primary>ContentType</primary><secondary>JWT.Builder.JwtHeader</secondary></indexterm>
+<indexterm><primary>JWT.Builder.JwtHeader</primary><secondary>ContentType</secondary></indexterm>
+<para><computeroutput>string JWT.Builder.JwtHeader.ContentType<computeroutput>[get]</computeroutput>, <computeroutput>[set]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_class_j_w_t_1_1_builder_1_1_jwt_header_1a826d1ec8cd4313bfe2ed275b853908bd"/><section>
+    <title>KeyId</title>
+<indexterm><primary>KeyId</primary><secondary>JWT.Builder.JwtHeader</secondary></indexterm>
+<indexterm><primary>JWT.Builder.JwtHeader</primary><secondary>KeyId</secondary></indexterm>
+<para><computeroutput>string JWT.Builder.JwtHeader.KeyId<computeroutput>[get]</computeroutput>, <computeroutput>[set]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_class_j_w_t_1_1_builder_1_1_jwt_header_1aec04bb5e71a36d95017d14aa85144c5d"/><section>
+    <title>Type</title>
+<indexterm><primary>Type</primary><secondary>JWT.Builder.JwtHeader</secondary></indexterm>
+<indexterm><primary>JWT.Builder.JwtHeader</primary><secondary>Type</secondary></indexterm>
+<para><computeroutput>string JWT.Builder.JwtHeader.Type<computeroutput>[get]</computeroutput>, <computeroutput>[set]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_class_j_w_t_1_1_builder_1_1_jwt_header_1a05829c062708aecb1494c42b3bb83284"/><section>
+    <title>X5c</title>
+<indexterm><primary>X5c</primary><secondary>JWT.Builder.JwtHeader</secondary></indexterm>
+<indexterm><primary>JWT.Builder.JwtHeader</primary><secondary>X5c</secondary></indexterm>
+<para><computeroutput>string [] JWT.Builder.JwtHeader.X5c<computeroutput>[get]</computeroutput>, <computeroutput>[set]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_class_j_w_t_1_1_builder_1_1_jwt_header_1a94e22917b357efd2b16a7968487f525c"/><section>
+    <title>X5t</title>
+<indexterm><primary>X5t</primary><secondary>JWT.Builder.JwtHeader</secondary></indexterm>
+<indexterm><primary>JWT.Builder.JwtHeader</primary><secondary>X5t</secondary></indexterm>
+<para><computeroutput>string JWT.Builder.JwtHeader.X5t<computeroutput>[get]</computeroutput>, <computeroutput>[set]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_class_j_w_t_1_1_builder_1_1_jwt_header_1a6a5cbe0b0bdab0e5b975a16b6d8787c0"/><section>
+    <title>X5u</title>
+<indexterm><primary>X5u</primary><secondary>JWT.Builder.JwtHeader</secondary></indexterm>
+<indexterm><primary>JWT.Builder.JwtHeader</primary><secondary>X5u</secondary></indexterm>
+<para><computeroutput>string JWT.Builder.JwtHeader.X5u<computeroutput>[get]</computeroutput>, <computeroutput>[set]</computeroutput></computeroutput></para></section>
+<para>
+The documentation for this class was generated from the following file:</para>
+C:/Users/adenf/RiderProjects/Openlabs.Mgcxm/Openlabs.Mgcxm/JWT/Builder/<link linkend="__jwt_header_8cs">JwtHeader.cs</link></section>
+</section>

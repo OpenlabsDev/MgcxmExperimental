@@ -1,0 +1,143 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_class_j_w_t_1_1_exceptions_1_1_token_expired_exception" xml:lang="en-US">
+<title>JWT.Exceptions.TokenExpiredException Class Reference</title>
+<indexterm><primary>JWT.Exceptions.TokenExpiredException</primary></indexterm>
+<para>
+
+<para>Represents an exception thrown when when a token is expired. </para>
+ 
+</para>
+Inheritance diagram for JWT.Exceptions.TokenExpiredException:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="class_j_w_t_1_1_exceptions_1_1_token_expired_exception__inherit__graph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+Collaboration diagram for JWT.Exceptions.TokenExpiredException:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="class_j_w_t_1_1_exceptions_1_1_token_expired_exception__coll__graph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+<simplesect>
+    <title>Public Member Functions    </title>
+        <itemizedlist>
+            <listitem><para><link linkend="_class_j_w_t_1_1_exceptions_1_1_token_expired_exception_1ad3d4aef174649ce8ba51fa09c3f7879e">TokenExpiredException</link> (string message)</para>
+
+<para>Creates an instance of TokenExpiredException </para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+Public Member Functions inherited from <link linkend="_class_j_w_t_1_1_exceptions_1_1_signature_verification_exception">JWT.Exceptions.SignatureVerificationException</link>        <itemizedlist>
+            <listitem><para><link linkend="_class_j_w_t_1_1_exceptions_1_1_signature_verification_exception_1a8d4a78500f3af829662a971394598ab6">SignatureVerificationException</link> (string message)</para>
+
+<para>Creates an instance of SignatureVerificationException </para>
+</listitem>
+            <listitem><para><link linkend="_class_j_w_t_1_1_exceptions_1_1_signature_verification_exception_1a5365a4899c85a73f359e1469f3d81339">SignatureVerificationException</link> (string decodedCrypto, params string[] decodedSignatures)</para>
+</listitem>
+        </itemizedlist>
+<simplesect>
+    <title>Properties    </title>
+        <itemizedlist>
+            <listitem><para><link linkend="__token_expired_exception_8cs_1a49f7c509ca28625003350370ad50589b">IReadOnlyPayloadDictionary</link> <link linkend="_class_j_w_t_1_1_exceptions_1_1_token_expired_exception_1a05c473803ae6177f0c71e5ea78bd9d49">PayloadData</link><computeroutput> [get, set]</computeroutput>
+</para>
+
+<para>The payload. </para>
+</listitem>
+            <listitem><para>DateTime? <link linkend="_class_j_w_t_1_1_exceptions_1_1_token_expired_exception_1aa48c9710b2c4efa7c8d07ca896056468">Expiration</link><computeroutput> [get, set]</computeroutput>
+</para>
+
+<para>The expiration DateTime of the token. </para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+Properties inherited from <link linkend="_class_j_w_t_1_1_exceptions_1_1_signature_verification_exception">JWT.Exceptions.SignatureVerificationException</link>        <itemizedlist>
+            <listitem><para>string <link linkend="_class_j_w_t_1_1_exceptions_1_1_signature_verification_exception_1ab408b80fba82de0fce2c1dd17ee131bf">Expected</link><computeroutput> [get, set]</computeroutput>
+</para>
+
+<para>Expected key. </para>
+</listitem>
+            <listitem><para>string <link linkend="_class_j_w_t_1_1_exceptions_1_1_signature_verification_exception_1aeb339fa40d103d4e295533f37cbb87ee">Received</link><computeroutput> [get, set]</computeroutput>
+</para>
+
+<para>Received key. </para>
+</listitem>
+        </itemizedlist>
+<simplesect>
+    <title>Additional Inherited Members    </title>
+Protected Member Functions inherited from <link linkend="_class_j_w_t_1_1_exceptions_1_1_signature_verification_exception">JWT.Exceptions.SignatureVerificationException</link>        <itemizedlist>
+            <listitem><para>T <link linkend="_class_j_w_t_1_1_exceptions_1_1_signature_verification_exception_1a7ebcc98dcf87e842f558e6b087aaddc8">GetOrDefault&lt; T &gt;</link> (string key)</para>
+
+<para>Retrieves the value for the provided key, or default. </para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Detailed Description</title>
+
+<para>Represents an exception thrown when when a token is expired. </para>
+</section>
+<section>
+<title>Constructor &amp; Destructor Documentation</title>
+<anchor xml:id="_class_j_w_t_1_1_exceptions_1_1_token_expired_exception_1ad3d4aef174649ce8ba51fa09c3f7879e"/><section>
+    <title>TokenExpiredException()</title>
+<indexterm><primary>TokenExpiredException</primary><secondary>JWT.Exceptions.TokenExpiredException</secondary></indexterm>
+<indexterm><primary>JWT.Exceptions.TokenExpiredException</primary><secondary>TokenExpiredException</secondary></indexterm>
+<para><computeroutput>JWT.Exceptions.TokenExpiredException.TokenExpiredException (string message)</computeroutput></para><para>
+
+<para>Creates an instance of TokenExpiredException </para>
+</para>
+
+<para>
+                <formalpara>
+                    <title>
+Parameters</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>message</entry><entry>
+<para>The error message</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                </para>
+</section>
+</section>
+<section>
+<title>Property Documentation</title>
+<anchor xml:id="_class_j_w_t_1_1_exceptions_1_1_token_expired_exception_1aa48c9710b2c4efa7c8d07ca896056468"/><section>
+    <title>Expiration</title>
+<indexterm><primary>Expiration</primary><secondary>JWT.Exceptions.TokenExpiredException</secondary></indexterm>
+<indexterm><primary>JWT.Exceptions.TokenExpiredException</primary><secondary>Expiration</secondary></indexterm>
+<para><computeroutput>DateTime? JWT.Exceptions.TokenExpiredException.Expiration<computeroutput>[get]</computeroutput>, <computeroutput>[set]</computeroutput></computeroutput></para><para>
+
+<para>The expiration DateTime of the token. </para>
+</para>
+</section>
+<anchor xml:id="_class_j_w_t_1_1_exceptions_1_1_token_expired_exception_1a05c473803ae6177f0c71e5ea78bd9d49"/><section>
+    <title>PayloadData</title>
+<indexterm><primary>PayloadData</primary><secondary>JWT.Exceptions.TokenExpiredException</secondary></indexterm>
+<indexterm><primary>JWT.Exceptions.TokenExpiredException</primary><secondary>PayloadData</secondary></indexterm>
+<para><computeroutput><link linkend="__token_expired_exception_8cs_1a49f7c509ca28625003350370ad50589b">IReadOnlyPayloadDictionary</link> JWT.Exceptions.TokenExpiredException.PayloadData<computeroutput>[get]</computeroutput>, <computeroutput>[set]</computeroutput></computeroutput></para><para>
+
+<para>The payload. </para>
+</para>
+</section>
+<para>
+The documentation for this class was generated from the following file:</para>
+C:/Users/adenf/RiderProjects/Openlabs.Mgcxm/Openlabs.Mgcxm/JWT/Exceptions/<link linkend="__token_expired_exception_8cs">TokenExpiredException.cs</link></section>
+</section>

@@ -1,0 +1,39 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.7" xml:lang="en-US">
+  <compounddef id="_access_token_8cs" kind="file" language="C#">
+    <compoundname>AccessToken.cs</compoundname>
+    <innerclass refid="struct_openlabs_1_1_mgcxm_1_1_net_1_1_authorization_1_1_access_token" prot="public">Openlabs::Mgcxm::Net::Authorization::AccessToken</innerclass>
+    <innernamespace refid="namespace_openlabs">Openlabs</innernamespace>
+    <innernamespace refid="namespace_openlabs_1_1_mgcxm">Openlabs::Mgcxm</innernamespace>
+    <innernamespace refid="namespace_openlabs_1_1_mgcxm_1_1_net">Openlabs::Mgcxm::Net</innernamespace>
+    <innernamespace refid="namespace_openlabs_1_1_mgcxm_1_1_net_1_1_authorization">Openlabs::Mgcxm::Net::Authorization</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">//<sp/>Copr.<sp/>(c)<sp/>Nexus<sp/>2023.<sp/>All<sp/>rights<sp/>reserved.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight></codeline>
+<codeline lineno="3" refid="namespace_openlabs_1_1_mgcxm_1_1_net_1_1_authorization" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="namespace_openlabs_1_1_mgcxm_1_1_net_1_1_authorization" kindref="compound">Openlabs.Mgcxm.Net.Authorization</ref>;</highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight></codeline>
+<codeline lineno="5" refid="struct_openlabs_1_1_mgcxm_1_1_net_1_1_authorization_1_1_access_token" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="struct_openlabs_1_1_mgcxm_1_1_net_1_1_authorization_1_1_access_token" kindref="compound">AccessToken</ref></highlight></codeline>
+<codeline lineno="6"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="7" refid="struct_openlabs_1_1_mgcxm_1_1_net_1_1_authorization_1_1_access_token_1ae493148fd787278076a8e3482c410e0f" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="struct_openlabs_1_1_mgcxm_1_1_net_1_1_authorization_1_1_access_token_1ae493148fd787278076a8e3482c410e0f" kindref="member">AccessToken</ref>(<ref refid="namespace_openlabs_1_1_mgcxm_1_1_net_1a1cf0ff6088d262006cd028b076749e13" kindref="member">AuthorizationSchemes</ref><sp/>scheme,<sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>plainText)</highlight></codeline>
+<codeline lineno="8"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="9"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>this._authorizationScheme<sp/>=<sp/>scheme;</highlight></codeline>
+<codeline lineno="10"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>this._plainText<sp/>=<sp/>plainText;</highlight></codeline>
+<codeline lineno="11"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="12"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="13" refid="struct_openlabs_1_1_mgcxm_1_1_net_1_1_authorization_1_1_access_token_1ac5f6d9e7ec6b28a2efa7b03efe00b218" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/><ref refid="struct_openlabs_1_1_mgcxm_1_1_net_1_1_authorization_1_1_access_token_1ac5f6d9e7ec6b28a2efa7b03efe00b218" kindref="member">ConstructString</ref>()</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=&gt;<sp/>$</highlight><highlight class="stringliteral">&quot;{_authorizationScheme}<sp/>{_plainText}&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight></codeline>
+<codeline lineno="16" refid="struct_openlabs_1_1_mgcxm_1_1_net_1_1_authorization_1_1_access_token_1a4888d259496a15b8bada0e21d824250e" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="namespace_openlabs_1_1_mgcxm_1_1_net_1a1cf0ff6088d262006cd028b076749e13" kindref="member">AuthorizationSchemes</ref><sp/><ref refid="struct_openlabs_1_1_mgcxm_1_1_net_1_1_authorization_1_1_access_token_1a4888d259496a15b8bada0e21d824250e" kindref="member">AuthorizationScheme</ref><sp/>=&gt;<sp/>_authorizationScheme;</highlight></codeline>
+<codeline lineno="17" refid="struct_openlabs_1_1_mgcxm_1_1_net_1_1_authorization_1_1_access_token_1a5edabf8b6057597878021b9453f0817c" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/><ref refid="struct_openlabs_1_1_mgcxm_1_1_net_1_1_authorization_1_1_access_token_1a5edabf8b6057597878021b9453f0817c" kindref="member">PlainText</ref><sp/>=&gt;<sp/>_plainText;</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">private</highlight><highlight class="normal"><sp/><ref refid="namespace_openlabs_1_1_mgcxm_1_1_net_1a1cf0ff6088d262006cd028b076749e13" kindref="member">AuthorizationSchemes</ref><sp/>_authorizationScheme;</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">private</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>_plainText;</highlight></codeline>
+<codeline lineno="21"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="C:/Users/adenf/RiderProjects/Openlabs.Mgcxm/Openlabs.Mgcxm/Net/Authorization/AccessToken.cs"/>
+  </compounddef>
+</doxygen>

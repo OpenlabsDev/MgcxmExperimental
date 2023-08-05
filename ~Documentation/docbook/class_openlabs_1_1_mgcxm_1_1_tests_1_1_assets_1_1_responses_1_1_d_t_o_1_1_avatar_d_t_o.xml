@@ -1,0 +1,64 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_class_openlabs_1_1_mgcxm_1_1_tests_1_1_assets_1_1_responses_1_1_d_t_o_1_1_avatar_d_t_o" xml:lang="en-US">
+<title>Openlabs.Mgcxm.Tests.Assets.Responses.DTO.AvatarDTO Class Reference</title>
+<indexterm><primary>Openlabs.Mgcxm.Tests.Assets.Responses.DTO.AvatarDTO</primary></indexterm>
+Inheritance diagram for Openlabs.Mgcxm.Tests.Assets.Responses.DTO.AvatarDTO:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="class_openlabs_1_1_mgcxm_1_1_tests_1_1_assets_1_1_responses_1_1_d_t_o_1_1_avatar_d_t_o__inherit__graph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+Collaboration diagram for Openlabs.Mgcxm.Tests.Assets.Responses.DTO.AvatarDTO:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="class_openlabs_1_1_mgcxm_1_1_tests_1_1_assets_1_1_responses_1_1_d_t_o_1_1_avatar_d_t_o__coll__graph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+<simplesect>
+    <title>Properties    </title>
+        <itemizedlist>
+            <listitem><para>string <link linkend="_class_openlabs_1_1_mgcxm_1_1_tests_1_1_assets_1_1_responses_1_1_d_t_o_1_1_avatar_d_t_o_1adb98a6251d0040f17a604e6d98ee3fe8">OutfitSelections</link><computeroutput> [get, set]</computeroutput>
+</para>
+</listitem>
+            <listitem><para>string <link linkend="_class_openlabs_1_1_mgcxm_1_1_tests_1_1_assets_1_1_responses_1_1_d_t_o_1_1_avatar_d_t_o_1a97c7d080a381a4fa636f302f151ff3be">HairColor</link> = Guid.Empty.ToString()<computeroutput> [get, set]</computeroutput>
+</para>
+</listitem>
+            <listitem><para>string <link linkend="_class_openlabs_1_1_mgcxm_1_1_tests_1_1_assets_1_1_responses_1_1_d_t_o_1_1_avatar_d_t_o_1a1d069c5946d13cdbd1b17b33f0794576">SkinColor</link> = Guid.Empty.ToString()<computeroutput> [get, set]</computeroutput>
+</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Additional Inherited Members    </title>
+Public Member Functions inherited from <link linkend="_class_openlabs_1_1_mgcxm_1_1_assets_1_1_object_d_t_o">Openlabs.Mgcxm.Assets.ObjectDTO</link>        <itemizedlist>
+            <listitem><para>string <link linkend="_class_openlabs_1_1_mgcxm_1_1_assets_1_1_object_d_t_o_1ae614d674a342e92fb9c5b2c8052f7433">GetDtoId</link> ()</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Property Documentation</title>
+<anchor xml:id="_class_openlabs_1_1_mgcxm_1_1_tests_1_1_assets_1_1_responses_1_1_d_t_o_1_1_avatar_d_t_o_1a97c7d080a381a4fa636f302f151ff3be"/><section>
+    <title>HairColor</title>
+<indexterm><primary>HairColor</primary><secondary>Openlabs.Mgcxm.Tests.Assets.Responses.DTO.AvatarDTO</secondary></indexterm>
+<indexterm><primary>Openlabs.Mgcxm.Tests.Assets.Responses.DTO.AvatarDTO</primary><secondary>HairColor</secondary></indexterm>
+<para><computeroutput>string Openlabs.Mgcxm.Tests.Assets.Responses.DTO.AvatarDTO.HairColor = Guid.Empty.ToString()<computeroutput>[get]</computeroutput>, <computeroutput>[set]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_class_openlabs_1_1_mgcxm_1_1_tests_1_1_assets_1_1_responses_1_1_d_t_o_1_1_avatar_d_t_o_1adb98a6251d0040f17a604e6d98ee3fe8"/><section>
+    <title>OutfitSelections</title>
+<indexterm><primary>OutfitSelections</primary><secondary>Openlabs.Mgcxm.Tests.Assets.Responses.DTO.AvatarDTO</secondary></indexterm>
+<indexterm><primary>Openlabs.Mgcxm.Tests.Assets.Responses.DTO.AvatarDTO</primary><secondary>OutfitSelections</secondary></indexterm>
+<para><computeroutput>string Openlabs.Mgcxm.Tests.Assets.Responses.DTO.AvatarDTO.OutfitSelections<computeroutput>[get]</computeroutput>, <computeroutput>[set]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_class_openlabs_1_1_mgcxm_1_1_tests_1_1_assets_1_1_responses_1_1_d_t_o_1_1_avatar_d_t_o_1a1d069c5946d13cdbd1b17b33f0794576"/><section>
+    <title>SkinColor</title>
+<indexterm><primary>SkinColor</primary><secondary>Openlabs.Mgcxm.Tests.Assets.Responses.DTO.AvatarDTO</secondary></indexterm>
+<indexterm><primary>Openlabs.Mgcxm.Tests.Assets.Responses.DTO.AvatarDTO</primary><secondary>SkinColor</secondary></indexterm>
+<para><computeroutput>string Openlabs.Mgcxm.Tests.Assets.Responses.DTO.AvatarDTO.SkinColor = Guid.Empty.ToString()<computeroutput>[get]</computeroutput>, <computeroutput>[set]</computeroutput></computeroutput></para></section>
+<para>
+The documentation for this class was generated from the following file:</para>
+C:/Users/adenf/RiderProjects/Openlabs.Mgcxm/Openlabs.Mgcxm.Tests/Assets/Responses/DTO/<link linkend="__avatar_d_t_o_8cs">AvatarDTO.cs</link></section>
+</section>

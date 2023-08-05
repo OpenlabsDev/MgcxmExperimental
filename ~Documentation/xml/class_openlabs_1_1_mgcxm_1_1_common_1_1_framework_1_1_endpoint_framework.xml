@@ -1,0 +1,78 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.7" xml:lang="en-US">
+  <compounddef id="class_openlabs_1_1_mgcxm_1_1_common_1_1_framework_1_1_endpoint_framework" kind="class" language="C#" prot="public">
+    <compoundname>Openlabs::Mgcxm::Common::Framework::EndpointFramework</compoundname>
+    <basecompoundref refid="class_openlabs_1_1_mgcxm_1_1_common_1_1_framework_1_1_endpoint_framework_base" prot="public" virt="non-virtual">Openlabs.Mgcxm.Common.Framework.EndpointFrameworkBase</basecompoundref>
+    <templateparamlist>
+      <param>
+        <type>TEndpointUrl</type>
+      </param>
+    </templateparamlist>
+      <sectiondef kind="property">
+      <memberdef kind="property" id="class_openlabs_1_1_mgcxm_1_1_common_1_1_framework_1_1_endpoint_framework_1a7f1f7f2e662975b2ebb7dcb4dacb1f9a" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="no" privatesettable="no" protectedsettable="no">
+        <type>abstract <ref refid="class_openlabs_1_1_mgcxm_1_1_common_1_1_framework_1_1_endpoint_structure" kindref="compound">EndpointStructure</ref>&lt; TEndpointUrl &gt;</type>
+        <definition>abstract EndpointStructure&lt;TEndpointUrl&gt; Openlabs.Mgcxm.Common.Framework.EndpointFramework&lt; TEndpointUrl &gt;.EndpointStructure</definition>
+        <argsstring></argsstring>
+        <name>EndpointStructure</name>
+        <qualifiedname>Openlabs.Mgcxm.Common.Framework.EndpointFramework.EndpointStructure</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/adenf/RiderProjects/Openlabs.Mgcxm/Openlabs.Mgcxm/Common/Framework/Base/EndpointFramework.cs" line="10" column="39" bodyfile="C:/Users/adenf/RiderProjects/Openlabs.Mgcxm/Openlabs.Mgcxm/Common/Framework/Base/EndpointFramework.cs" bodystart="10" bodyend="10"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>EndpointFrameworkBase</label>
+        <link refid="class_openlabs_1_1_mgcxm_1_1_common_1_1_framework_1_1_endpoint_framework_base"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>IMgcxmSystemObject</label>
+        <link refid="interface_openlabs_1_1_mgcxm_1_1_internal_1_1_system_objects_1_1_i_mgcxm_system_object"/>
+      </node>
+      <node id="1">
+        <label>Openlabs.Mgcxm.Common.Framework.EndpointFramework&lt; TEndpointUrl &gt;</label>
+        <link refid="class_openlabs_1_1_mgcxm_1_1_common_1_1_framework_1_1_endpoint_framework"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>EndpointFrameworkBase</label>
+        <link refid="class_openlabs_1_1_mgcxm_1_1_common_1_1_framework_1_1_endpoint_framework_base"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>IMgcxmSystemObject</label>
+        <link refid="interface_openlabs_1_1_mgcxm_1_1_internal_1_1_system_objects_1_1_i_mgcxm_system_object"/>
+      </node>
+      <node id="1">
+        <label>Openlabs.Mgcxm.Common.Framework.EndpointFramework&lt; TEndpointUrl &gt;</label>
+        <link refid="class_openlabs_1_1_mgcxm_1_1_common_1_1_framework_1_1_endpoint_framework"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="C:/Users/adenf/RiderProjects/Openlabs.Mgcxm/Openlabs.Mgcxm/Common/Framework/Base/EndpointFramework.cs" line="8" column="17" bodyfile="C:/Users/adenf/RiderProjects/Openlabs.Mgcxm/Openlabs.Mgcxm/Common/Framework/Base/EndpointFramework.cs" bodystart="9" bodyend="12"/>
+    <listofallmembers>
+      <member refid="class_openlabs_1_1_mgcxm_1_1_common_1_1_framework_1_1_endpoint_framework_base_1a557adb0fc3d2805a5a0d0cc08d445fa3" prot="public" virt="pure-virtual"><scope>Openlabs::Mgcxm::Common::Framework::EndpointFramework</scope><name>AddEndpoint</name></member>
+      <member refid="class_openlabs_1_1_mgcxm_1_1_common_1_1_framework_1_1_endpoint_framework_base_1a56993d0e1c63c88d666141273b779b9c" prot="public" virt="non-virtual"><scope>Openlabs::Mgcxm::Common::Framework::EndpointFramework</scope><name>AllocatedId</name></member>
+      <member refid="class_openlabs_1_1_mgcxm_1_1_common_1_1_framework_1_1_endpoint_framework_base_1a5ee570df55d4cefb4e50fc86955dd69e" prot="public" virt="non-virtual"><scope>Openlabs::Mgcxm::Common::Framework::EndpointFramework</scope><name>EndpointResolver</name></member>
+      <member refid="class_openlabs_1_1_mgcxm_1_1_common_1_1_framework_1_1_endpoint_framework_base_1afb815f6241022877b2e24643be0cafe6" prot="public" virt="non-virtual"><scope>Openlabs::Mgcxm::Common::Framework::EndpointFramework</scope><name>Endpoints</name></member>
+      <member refid="class_openlabs_1_1_mgcxm_1_1_common_1_1_framework_1_1_endpoint_framework_1a7f1f7f2e662975b2ebb7dcb4dacb1f9a" prot="public" virt="non-virtual"><scope>Openlabs::Mgcxm::Common::Framework::EndpointFramework</scope><name>EndpointStructure</name></member>
+      <member refid="class_openlabs_1_1_mgcxm_1_1_common_1_1_framework_1_1_endpoint_framework_base_1a39c7af7eef147c7e3f9c0e63b0f2dabf" prot="public" virt="pure-virtual"><scope>Openlabs::Mgcxm::Common::Framework::EndpointFramework</scope><name>ResolveRequest</name></member>
+      <member refid="class_openlabs_1_1_mgcxm_1_1_common_1_1_framework_1_1_endpoint_framework_base_1ad89de642a84b28dfee547138826b8b13" prot="public" virt="pure-virtual"><scope>Openlabs::Mgcxm::Common::Framework::EndpointFramework</scope><name>Trash</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

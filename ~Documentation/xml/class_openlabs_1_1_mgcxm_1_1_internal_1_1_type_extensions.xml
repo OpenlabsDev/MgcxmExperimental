@@ -1,0 +1,101 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.7" xml:lang="en-US">
+  <compounddef id="class_openlabs_1_1_mgcxm_1_1_internal_1_1_type_extensions" kind="class" language="C#" prot="public">
+    <compoundname>Openlabs::Mgcxm::Internal::TypeExtensions</compoundname>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="class_openlabs_1_1_mgcxm_1_1_internal_1_1_type_extensions_1a98c11586a5b741959d7d8675f48cc412" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>string</type>
+        <definition>static string Openlabs.Mgcxm.Internal.TypeExtensions.GetSafeName</definition>
+        <argsstring>(this Type type)</argsstring>
+        <name>GetSafeName</name>
+        <qualifiedname>Openlabs.Mgcxm.Internal.TypeExtensions.GetSafeName</qualifiedname>
+        <param>
+          <type>this Type</type>
+          <declname>type</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/adenf/RiderProjects/Openlabs.Mgcxm/Openlabs.Mgcxm/Internal/TypeExtensions.cs" line="7" column="26" bodyfile="C:/Users/adenf/RiderProjects/Openlabs.Mgcxm/Openlabs.Mgcxm/Internal/TypeExtensions.cs" bodystart="7" bodyend="22"/>
+      </memberdef>
+      <memberdef kind="function" id="class_openlabs_1_1_mgcxm_1_1_internal_1_1_type_extensions_1a5c1f5d480dc3481ef4157fffc54a9eeb" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>static bool Openlabs.Mgcxm.Internal.TypeExtensions.InheritsOrImplements</definition>
+        <argsstring>(this Type child, Type parent)</argsstring>
+        <name>InheritsOrImplements</name>
+        <qualifiedname>Openlabs.Mgcxm.Internal.TypeExtensions.InheritsOrImplements</qualifiedname>
+        <param>
+          <type>this Type</type>
+          <declname>child</declname>
+        </param>
+        <param>
+          <type>Type</type>
+          <declname>parent</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/adenf/RiderProjects/Openlabs.Mgcxm/Openlabs.Mgcxm/Internal/TypeExtensions.cs" line="24" column="24" bodyfile="C:/Users/adenf/RiderProjects/Openlabs.Mgcxm/Openlabs.Mgcxm/Internal/TypeExtensions.cs" bodystart="24" bodyend="46"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-static-func">
+      <memberdef kind="function" id="class_openlabs_1_1_mgcxm_1_1_internal_1_1_type_extensions_1a3d058107e1fdb4e4a6f950f66431f1f2" prot="private" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>static bool Openlabs.Mgcxm.Internal.TypeExtensions.HasAnyInterfaces</definition>
+        <argsstring>(Type parent, Type child)</argsstring>
+        <name>HasAnyInterfaces</name>
+        <qualifiedname>Openlabs.Mgcxm.Internal.TypeExtensions.HasAnyInterfaces</qualifiedname>
+        <param>
+          <type>Type</type>
+          <declname>parent</declname>
+        </param>
+        <param>
+          <type>Type</type>
+          <declname>child</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/adenf/RiderProjects/Openlabs.Mgcxm/Openlabs.Mgcxm/Internal/TypeExtensions.cs" line="48" column="25" bodyfile="C:/Users/adenf/RiderProjects/Openlabs.Mgcxm/Openlabs.Mgcxm/Internal/TypeExtensions.cs" bodystart="48" bodyend="59"/>
+      </memberdef>
+      <memberdef kind="function" id="class_openlabs_1_1_mgcxm_1_1_internal_1_1_type_extensions_1a1c89536ec4b1613469ccff54c5afeb8f" prot="private" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>Type</type>
+        <definition>static Type Openlabs.Mgcxm.Internal.TypeExtensions.ResolveGenericTypeDefinition</definition>
+        <argsstring>(Type parent)</argsstring>
+        <name>ResolveGenericTypeDefinition</name>
+        <qualifiedname>Openlabs.Mgcxm.Internal.TypeExtensions.ResolveGenericTypeDefinition</qualifiedname>
+        <param>
+          <type>Type</type>
+          <declname>parent</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/adenf/RiderProjects/Openlabs.Mgcxm/Openlabs.Mgcxm/Internal/TypeExtensions.cs" line="61" column="25" bodyfile="C:/Users/adenf/RiderProjects/Openlabs.Mgcxm/Openlabs.Mgcxm/Internal/TypeExtensions.cs" bodystart="61" bodyend="70"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/Users/adenf/RiderProjects/Openlabs.Mgcxm/Openlabs.Mgcxm/Internal/TypeExtensions.cs" line="5" column="15" bodyfile="C:/Users/adenf/RiderProjects/Openlabs.Mgcxm/Openlabs.Mgcxm/Internal/TypeExtensions.cs" bodystart="6" bodyend="71"/>
+    <listofallmembers>
+      <member refid="class_openlabs_1_1_mgcxm_1_1_internal_1_1_type_extensions_1a98c11586a5b741959d7d8675f48cc412" prot="public" virt="non-virtual"><scope>Openlabs::Mgcxm::Internal::TypeExtensions</scope><name>GetSafeName</name></member>
+      <member refid="class_openlabs_1_1_mgcxm_1_1_internal_1_1_type_extensions_1a3d058107e1fdb4e4a6f950f66431f1f2" prot="private" virt="non-virtual"><scope>Openlabs::Mgcxm::Internal::TypeExtensions</scope><name>HasAnyInterfaces</name></member>
+      <member refid="class_openlabs_1_1_mgcxm_1_1_internal_1_1_type_extensions_1a5c1f5d480dc3481ef4157fffc54a9eeb" prot="public" virt="non-virtual"><scope>Openlabs::Mgcxm::Internal::TypeExtensions</scope><name>InheritsOrImplements</name></member>
+      <member refid="class_openlabs_1_1_mgcxm_1_1_internal_1_1_type_extensions_1a1c89536ec4b1613469ccff54c5afeb8f" prot="private" virt="non-virtual"><scope>Openlabs::Mgcxm::Internal::TypeExtensions</scope><name>ResolveGenericTypeDefinition</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

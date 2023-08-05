@@ -1,0 +1,106 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.7" xml:lang="en-US">
+  <compounddef id="class_openlabs_1_1_mgcxm_1_1_internal_1_1_system_objects_1_1_mgcxm_uint" kind="class" language="C#" prot="public">
+    <compoundname>Openlabs::Mgcxm::Internal::SystemObjects::MgcxmUint</compoundname>
+    <basecompoundref refid="class_openlabs_1_1_mgcxm_1_1_internal_1_1_system_objects_1_1_mgcxm_object" prot="public" virt="non-virtual">Openlabs.Mgcxm.Internal.SystemObjects.MgcxmObject&lt; uint &gt;</basecompoundref>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_openlabs_1_1_mgcxm_1_1_internal_1_1_system_objects_1_1_mgcxm_uint_1aec9276d31daaffaff8c148d48897fa1c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Openlabs.Mgcxm.Internal.SystemObjects.MgcxmUint.MgcxmUint</definition>
+        <argsstring>(uint obj)</argsstring>
+        <name>MgcxmUint</name>
+        <qualifiedname>Openlabs.Mgcxm.Internal.SystemObjects.MgcxmUint.MgcxmUint</qualifiedname>
+        <param>
+          <type>uint</type>
+          <declname>obj</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/adenf/RiderProjects/Openlabs.Mgcxm/Openlabs.Mgcxm/Internal/SystemObjects/MgcxmObjectParts.cs" line="41" column="12" bodyfile="C:/Users/adenf/RiderProjects/Openlabs.Mgcxm/Openlabs.Mgcxm/Internal/SystemObjects/MgcxmObjectParts.cs" bodystart="41" bodyend="41"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="class_openlabs_1_1_mgcxm_1_1_internal_1_1_system_objects_1_1_mgcxm_uint_1a69a30994b33fdafb48c775b68dce944a" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>implicit</type>
+        <definition>static implicit Openlabs.Mgcxm.Internal.SystemObjects.MgcxmUint.operator uint</definition>
+        <argsstring>(MgcxmUint obj)</argsstring>
+        <name>operator uint</name>
+        <qualifiedname>Openlabs.Mgcxm.Internal.SystemObjects.MgcxmUint.operator uint</qualifiedname>
+        <param>
+          <type><ref refid="class_openlabs_1_1_mgcxm_1_1_internal_1_1_system_objects_1_1_mgcxm_uint" kindref="compound">MgcxmUint</ref></type>
+          <declname>obj</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/adenf/RiderProjects/Openlabs.Mgcxm/Openlabs.Mgcxm/Internal/SystemObjects/MgcxmObjectParts.cs" line="43" column="28"/>
+      </memberdef>
+      <memberdef kind="function" id="class_openlabs_1_1_mgcxm_1_1_internal_1_1_system_objects_1_1_mgcxm_uint_1a88be5bb6425a1a58a28019fa3cbc6bb7" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>implicit</type>
+        <definition>static implicit Openlabs.Mgcxm.Internal.SystemObjects.MgcxmUint.operator MgcxmUint</definition>
+        <argsstring>(uint obj)</argsstring>
+        <name>operator MgcxmUint</name>
+        <qualifiedname>Openlabs.Mgcxm.Internal.SystemObjects.MgcxmUint.operator MgcxmUint</qualifiedname>
+        <param>
+          <type>uint</type>
+          <declname>obj</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/adenf/RiderProjects/Openlabs.Mgcxm/Openlabs.Mgcxm/Internal/SystemObjects/MgcxmObjectParts.cs" line="44" column="28"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>MgcxmObject&lt; uint &gt;</label>
+        <link refid="class_openlabs_1_1_mgcxm_1_1_internal_1_1_system_objects_1_1_mgcxm_object"/>
+      </node>
+      <node id="1">
+        <label>Openlabs.Mgcxm.Internal.SystemObjects.MgcxmUint</label>
+        <link refid="class_openlabs_1_1_mgcxm_1_1_internal_1_1_system_objects_1_1_mgcxm_uint"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>MgcxmObject&lt; uint &gt;</label>
+        <link refid="class_openlabs_1_1_mgcxm_1_1_internal_1_1_system_objects_1_1_mgcxm_object"/>
+      </node>
+      <node id="1">
+        <label>Openlabs.Mgcxm.Internal.SystemObjects.MgcxmUint</label>
+        <link refid="class_openlabs_1_1_mgcxm_1_1_internal_1_1_system_objects_1_1_mgcxm_uint"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="C:/Users/adenf/RiderProjects/Openlabs.Mgcxm/Openlabs.Mgcxm/Internal/SystemObjects/MgcxmObjectParts.cs" line="39" column="7" bodyfile="C:/Users/adenf/RiderProjects/Openlabs.Mgcxm/Openlabs.Mgcxm/Internal/SystemObjects/MgcxmObjectParts.cs" bodystart="40" bodyend="45"/>
+    <listofallmembers>
+      <member refid="class_openlabs_1_1_mgcxm_1_1_internal_1_1_system_objects_1_1_mgcxm_object_1adcda4a69c00fd202c0ae1bc494bde6c3" prot="public" virt="non-virtual"><scope>Openlabs::Mgcxm::Internal::SystemObjects::MgcxmUint</scope><name>AllocatedId</name></member>
+      <member refid="class_openlabs_1_1_mgcxm_1_1_internal_1_1_system_objects_1_1_mgcxm_object_1a9d23fbd79659c79e449391acd8bd2480" prot="public" virt="non-virtual"><scope>Openlabs::Mgcxm::Internal::SystemObjects::MgcxmUint</scope><name>MgcxmObject</name></member>
+      <member refid="class_openlabs_1_1_mgcxm_1_1_internal_1_1_system_objects_1_1_mgcxm_uint_1aec9276d31daaffaff8c148d48897fa1c" prot="public" virt="non-virtual"><scope>Openlabs::Mgcxm::Internal::SystemObjects::MgcxmUint</scope><name>MgcxmUint</name></member>
+      <member refid="class_openlabs_1_1_mgcxm_1_1_internal_1_1_system_objects_1_1_mgcxm_object_1ae48561d0742bb9f4cba2bad2eaf3f519" prot="public" virt="non-virtual"><scope>Openlabs::Mgcxm::Internal::SystemObjects::MgcxmUint</scope><name>operator MgcxmObject</name></member>
+      <member refid="class_openlabs_1_1_mgcxm_1_1_internal_1_1_system_objects_1_1_mgcxm_uint_1a88be5bb6425a1a58a28019fa3cbc6bb7" prot="public" virt="non-virtual"><scope>Openlabs::Mgcxm::Internal::SystemObjects::MgcxmUint</scope><name>operator MgcxmUint</name></member>
+      <member refid="class_openlabs_1_1_mgcxm_1_1_internal_1_1_system_objects_1_1_mgcxm_object_1a9f6afc5bd98e6a745639a03d6d0167b0" prot="public" virt="non-virtual"><scope>Openlabs::Mgcxm::Internal::SystemObjects::MgcxmUint</scope><name>operator T</name></member>
+      <member refid="class_openlabs_1_1_mgcxm_1_1_internal_1_1_system_objects_1_1_mgcxm_uint_1a69a30994b33fdafb48c775b68dce944a" prot="public" virt="non-virtual"><scope>Openlabs::Mgcxm::Internal::SystemObjects::MgcxmUint</scope><name>operator uint</name></member>
+      <member refid="class_openlabs_1_1_mgcxm_1_1_internal_1_1_system_objects_1_1_mgcxm_object_1a23f633157f4160455f171f8591a7d973" prot="protected" virt="non-virtual"><scope>Openlabs::Mgcxm::Internal::SystemObjects::MgcxmUint</scope><name>Retrieve</name></member>
+      <member refid="class_openlabs_1_1_mgcxm_1_1_internal_1_1_system_objects_1_1_mgcxm_object_1a18a325de1eb61f905e19d1132e3c5f43" prot="public" virt="non-virtual"><scope>Openlabs::Mgcxm::Internal::SystemObjects::MgcxmUint</scope><name>Trash</name></member>
+      <member refid="class_openlabs_1_1_mgcxm_1_1_internal_1_1_system_objects_1_1_mgcxm_object_1ae685ec17ad6d040c029280d98d37925a" prot="public" virt="non-virtual"><scope>Openlabs::Mgcxm::Internal::SystemObjects::MgcxmUint</scope><name>Value</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

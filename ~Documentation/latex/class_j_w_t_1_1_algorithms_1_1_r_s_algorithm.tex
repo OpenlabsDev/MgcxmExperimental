@@ -1,0 +1,176 @@
+\doxysection{JWT.\+Algorithms.\+RSAlgorithm Class Reference}
+\hypertarget{class_j_w_t_1_1_algorithms_1_1_r_s_algorithm}{}\label{class_j_w_t_1_1_algorithms_1_1_r_s_algorithm}\index{JWT.Algorithms.RSAlgorithm@{JWT.Algorithms.RSAlgorithm}}
+
+
+RSASSA-\/\+PKCS1-\/v1\+\_\+5 using SHA-\/256.  
+
+
+
+
+Inheritance diagram for JWT.\+Algorithms.\+RSAlgorithm\+:
+% FIG 0
+
+
+Collaboration diagram for JWT.\+Algorithms.\+RSAlgorithm\+:
+% FIG 1
+\doxysubsubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_j_w_t_1_1_algorithms_1_1_r_s_algorithm_a64131a63611025164d8f478496b5b038}{RSAlgorithm}} (RSA public\+Key, RSA private\+Key)
+\begin{DoxyCompactList}\small\item\em Creates an instance of RSAlgorithm using the provided pair of public and private keys. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_j_w_t_1_1_algorithms_1_1_r_s_algorithm_ace74eaab60e0f39308f14bb97050d66b}{RSAlgorithm}} (RSA public\+Key)
+\begin{DoxyCompactList}\small\item\em Creates an instance of RSAlgorithm using the provided public key only. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_j_w_t_1_1_algorithms_1_1_r_s_algorithm_ace393f5285e79df9f542be829cf54126}{RSAlgorithm}} (X509\+Certificate2 cert)
+\begin{DoxyCompactList}\small\item\em Creates an instance using the provided certificate. \end{DoxyCompactList}\item 
+override RSA \mbox{\hyperlink{class_j_w_t_1_1_algorithms_1_1_r_s_algorithm_a26eeb7cd2c4f7b08fafd00651f951bb9}{Get\+Public\+Key}} (X509\+Certificate2 cert)
+\item 
+override RSA \mbox{\hyperlink{class_j_w_t_1_1_algorithms_1_1_r_s_algorithm_a2365eb987babdec4c1bb3fe69530fd67}{Get\+Private\+Key}} (X509\+Certificate2 cert)
+\item 
+override byte\mbox{[}$\,$\mbox{]} \mbox{\hyperlink{class_j_w_t_1_1_algorithms_1_1_r_s_algorithm_ae2ea827013bc5a8cf6a9d449a69c4c67}{Sign\+Data}} (byte\mbox{[}$\,$\mbox{]} bytes\+To\+Sign)
+\item 
+override bool \mbox{\hyperlink{class_j_w_t_1_1_algorithms_1_1_r_s_algorithm_ac614a310e0d22019492d75994d3a6a8e}{Verify\+Data}} (byte\mbox{[}$\,$\mbox{]} bytes\+To\+Sign, byte\mbox{[}$\,$\mbox{]} signature)
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions inherited from \mbox{\hyperlink{class_j_w_t_1_1_algorithms_1_1_certificate_algorithm}{JWT.\+Algorithms.\+Certificate\+Algorithm$<$ RSA $>$}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_j_w_t_1_1_algorithms_1_1_certificate_algorithm_a43e9c1390c0e64c1eaa59f92c4aedc55}{Certificate\+Algorithm}} (T public\+Key, T private\+Key)
+\item 
+\mbox{\hyperlink{class_j_w_t_1_1_algorithms_1_1_certificate_algorithm_ac66d69a276443c44662c7f4b496ac8da}{Certificate\+Algorithm}} (T public\+Key)
+\item 
+\mbox{\hyperlink{class_j_w_t_1_1_algorithms_1_1_certificate_algorithm_a1721400370a9a1334622962e86e09a1a}{Certificate\+Algorithm}} (X509\+Certificate2 cert)
+\item 
+abstract T \mbox{\hyperlink{class_j_w_t_1_1_algorithms_1_1_certificate_algorithm_a2b6c5f4fd6429868c256100c1b191939}{Get\+Public\+Key}} (X509\+Certificate2 cert)
+\item 
+abstract T \mbox{\hyperlink{class_j_w_t_1_1_algorithms_1_1_certificate_algorithm_aaa1a7789483cf5e1437997f88e5a3196}{Get\+Private\+Key}} (X509\+Certificate2 cert)
+\item 
+abstract byte\mbox{[}$\,$\mbox{]} \mbox{\hyperlink{class_j_w_t_1_1_algorithms_1_1_certificate_algorithm_a870b391063934ea80dfb6b62aca4d800}{Sign\+Data}} (byte\mbox{[}$\,$\mbox{]} bytes\+To\+Sign)
+\item 
+abstract bool \mbox{\hyperlink{class_j_w_t_1_1_algorithms_1_1_certificate_algorithm_ae3bb3bc711ce8d8cd1004116c1f91baa}{Verify\+Data}} (byte\mbox{[}$\,$\mbox{]} bytes\+To\+Sign, byte\mbox{[}$\,$\mbox{]} signature)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Additional Inherited Members}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{class_j_w_t_1_1_algorithms_1_1_certificate_algorithm}{JWT.\+Algorithms.\+Certificate\+Algorithm$<$ RSA $>$}}}
+\begin{DoxyCompactItemize}
+\item 
+byte\mbox{[}$\,$\mbox{]} \mbox{\hyperlink{class_j_w_t_1_1_algorithms_1_1_certificate_algorithm_a1a4d69530d9de76267bd7978599ed4b3}{Sign}} (byte\mbox{[}$\,$\mbox{]} key, byte\mbox{[}$\,$\mbox{]} bytes\+To\+Sign)
+\item 
+byte\mbox{[}$\,$\mbox{]} \mbox{\hyperlink{class_j_w_t_1_1_algorithms_1_1_certificate_algorithm_a1ee6154637b24b75aacd2fb0d95cd685}{Sign}} (byte\mbox{[}$\,$\mbox{]} bytes\+To\+Sign)
+\begin{DoxyCompactList}\small\item\em Signs the provided byte array with the private key. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_j_w_t_1_1_algorithms_1_1_certificate_algorithm_a2a9f256e62c57ef7d3c49560de27fe06}{Verify}} (byte\mbox{[}$\,$\mbox{]} bytes\+To\+Sign, byte\mbox{[}$\,$\mbox{]} signature)
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes inherited from \mbox{\hyperlink{class_j_w_t_1_1_algorithms_1_1_certificate_algorithm}{JWT.\+Algorithms.\+Certificate\+Algorithm$<$ RSA $>$}}}
+\begin{DoxyCompactItemize}
+\item 
+readonly T \mbox{\hyperlink{class_j_w_t_1_1_algorithms_1_1_certificate_algorithm_a2b0420e1c1745786cf469a3a2ed26d34}{\+\_\+public\+Key}}
+\item 
+readonly T \mbox{\hyperlink{class_j_w_t_1_1_algorithms_1_1_certificate_algorithm_a998d357ab8379f6a460fda413a4668fc}{\+\_\+private\+Key}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Properties inherited from \mbox{\hyperlink{class_j_w_t_1_1_algorithms_1_1_certificate_algorithm}{JWT.\+Algorithms.\+Certificate\+Algorithm$<$ RSA $>$}}}
+\begin{DoxyCompactItemize}
+\item 
+abstract string \mbox{\hyperlink{class_j_w_t_1_1_algorithms_1_1_certificate_algorithm_a084de64501e51afd80ebc626284e65a6}{Name}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\item 
+abstract Hash\+Algorithm\+Name \mbox{\hyperlink{class_j_w_t_1_1_algorithms_1_1_certificate_algorithm_a0dc44f24b84578049a79ee3e07cd3972}{Hash\+Algorithm\+Name}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+RSASSA-\/\+PKCS1-\/v1\+\_\+5 using SHA-\/256. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_j_w_t_1_1_algorithms_1_1_r_s_algorithm_a64131a63611025164d8f478496b5b038}\label{class_j_w_t_1_1_algorithms_1_1_r_s_algorithm_a64131a63611025164d8f478496b5b038} 
+\index{JWT.Algorithms.RSAlgorithm@{JWT.Algorithms.RSAlgorithm}!RSAlgorithm@{RSAlgorithm}}
+\index{RSAlgorithm@{RSAlgorithm}!JWT.Algorithms.RSAlgorithm@{JWT.Algorithms.RSAlgorithm}}
+\doxysubsubsection{\texorpdfstring{RSAlgorithm()}{RSAlgorithm()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily JWT.\+Algorithms.\+RSAlgorithm.\+RSAlgorithm (\begin{DoxyParamCaption}\item[{RSA}]{public\+Key,  }\item[{RSA}]{private\+Key }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Creates an instance of RSAlgorithm using the provided pair of public and private keys. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em public\+Key} & The public key for verifying the data.\\
+\hline
+{\em private\+Key} & The private key for signing the data.\\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_j_w_t_1_1_algorithms_1_1_r_s_algorithm_ace74eaab60e0f39308f14bb97050d66b}\label{class_j_w_t_1_1_algorithms_1_1_r_s_algorithm_ace74eaab60e0f39308f14bb97050d66b} 
+\index{JWT.Algorithms.RSAlgorithm@{JWT.Algorithms.RSAlgorithm}!RSAlgorithm@{RSAlgorithm}}
+\index{RSAlgorithm@{RSAlgorithm}!JWT.Algorithms.RSAlgorithm@{JWT.Algorithms.RSAlgorithm}}
+\doxysubsubsection{\texorpdfstring{RSAlgorithm()}{RSAlgorithm()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily JWT.\+Algorithms.\+RSAlgorithm.\+RSAlgorithm (\begin{DoxyParamCaption}\item[{RSA}]{public\+Key }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Creates an instance of RSAlgorithm using the provided public key only. 
+
+An instance created using this constructor can only be used for verifying the data, not for signing it. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em public\+Key} & The public key for verifying the data.\\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_j_w_t_1_1_algorithms_1_1_r_s_algorithm_ace393f5285e79df9f542be829cf54126}\label{class_j_w_t_1_1_algorithms_1_1_r_s_algorithm_ace393f5285e79df9f542be829cf54126} 
+\index{JWT.Algorithms.RSAlgorithm@{JWT.Algorithms.RSAlgorithm}!RSAlgorithm@{RSAlgorithm}}
+\index{RSAlgorithm@{RSAlgorithm}!JWT.Algorithms.RSAlgorithm@{JWT.Algorithms.RSAlgorithm}}
+\doxysubsubsection{\texorpdfstring{RSAlgorithm()}{RSAlgorithm()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily JWT.\+Algorithms.\+RSAlgorithm.\+RSAlgorithm (\begin{DoxyParamCaption}\item[{X509\+Certificate2}]{cert }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Creates an instance using the provided certificate. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em cert} & The certificate having a public key and an optional private key.\\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_j_w_t_1_1_algorithms_1_1_r_s_algorithm_a2365eb987babdec4c1bb3fe69530fd67}\label{class_j_w_t_1_1_algorithms_1_1_r_s_algorithm_a2365eb987babdec4c1bb3fe69530fd67} 
+\index{JWT.Algorithms.RSAlgorithm@{JWT.Algorithms.RSAlgorithm}!GetPrivateKey@{GetPrivateKey}}
+\index{GetPrivateKey@{GetPrivateKey}!JWT.Algorithms.RSAlgorithm@{JWT.Algorithms.RSAlgorithm}}
+\doxysubsubsection{\texorpdfstring{GetPrivateKey()}{GetPrivateKey()}}
+{\footnotesize\ttfamily override RSA JWT.\+Algorithms.\+RSAlgorithm.\+Get\+Private\+Key (\begin{DoxyParamCaption}\item[{X509\+Certificate2}]{cert }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+
+
+Implements \mbox{\hyperlink{class_j_w_t_1_1_algorithms_1_1_certificate_algorithm_aaa1a7789483cf5e1437997f88e5a3196}{JWT.\+Algorithms.\+Certificate\+Algorithm$<$ RSA $>$}}.
+
+\Hypertarget{class_j_w_t_1_1_algorithms_1_1_r_s_algorithm_a26eeb7cd2c4f7b08fafd00651f951bb9}\label{class_j_w_t_1_1_algorithms_1_1_r_s_algorithm_a26eeb7cd2c4f7b08fafd00651f951bb9} 
+\index{JWT.Algorithms.RSAlgorithm@{JWT.Algorithms.RSAlgorithm}!GetPublicKey@{GetPublicKey}}
+\index{GetPublicKey@{GetPublicKey}!JWT.Algorithms.RSAlgorithm@{JWT.Algorithms.RSAlgorithm}}
+\doxysubsubsection{\texorpdfstring{GetPublicKey()}{GetPublicKey()}}
+{\footnotesize\ttfamily override RSA JWT.\+Algorithms.\+RSAlgorithm.\+Get\+Public\+Key (\begin{DoxyParamCaption}\item[{X509\+Certificate2}]{cert }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+
+
+Implements \mbox{\hyperlink{class_j_w_t_1_1_algorithms_1_1_certificate_algorithm_a2b6c5f4fd6429868c256100c1b191939}{JWT.\+Algorithms.\+Certificate\+Algorithm$<$ RSA $>$}}.
+
+\Hypertarget{class_j_w_t_1_1_algorithms_1_1_r_s_algorithm_ae2ea827013bc5a8cf6a9d449a69c4c67}\label{class_j_w_t_1_1_algorithms_1_1_r_s_algorithm_ae2ea827013bc5a8cf6a9d449a69c4c67} 
+\index{JWT.Algorithms.RSAlgorithm@{JWT.Algorithms.RSAlgorithm}!SignData@{SignData}}
+\index{SignData@{SignData}!JWT.Algorithms.RSAlgorithm@{JWT.Algorithms.RSAlgorithm}}
+\doxysubsubsection{\texorpdfstring{SignData()}{SignData()}}
+{\footnotesize\ttfamily override byte\mbox{[}$\,$\mbox{]} JWT.\+Algorithms.\+RSAlgorithm.\+Sign\+Data (\begin{DoxyParamCaption}\item[{byte\mbox{[}$\,$\mbox{]}}]{bytes\+To\+Sign }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+
+
+Implements \mbox{\hyperlink{class_j_w_t_1_1_algorithms_1_1_certificate_algorithm_a870b391063934ea80dfb6b62aca4d800}{JWT.\+Algorithms.\+Certificate\+Algorithm$<$ RSA $>$}}.
+
+\Hypertarget{class_j_w_t_1_1_algorithms_1_1_r_s_algorithm_ac614a310e0d22019492d75994d3a6a8e}\label{class_j_w_t_1_1_algorithms_1_1_r_s_algorithm_ac614a310e0d22019492d75994d3a6a8e} 
+\index{JWT.Algorithms.RSAlgorithm@{JWT.Algorithms.RSAlgorithm}!VerifyData@{VerifyData}}
+\index{VerifyData@{VerifyData}!JWT.Algorithms.RSAlgorithm@{JWT.Algorithms.RSAlgorithm}}
+\doxysubsubsection{\texorpdfstring{VerifyData()}{VerifyData()}}
+{\footnotesize\ttfamily override bool JWT.\+Algorithms.\+RSAlgorithm.\+Verify\+Data (\begin{DoxyParamCaption}\item[{byte\mbox{[}$\,$\mbox{]}}]{bytes\+To\+Sign,  }\item[{byte\mbox{[}$\,$\mbox{]}}]{signature }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+
+
+Implements \mbox{\hyperlink{class_j_w_t_1_1_algorithms_1_1_certificate_algorithm_ae3bb3bc711ce8d8cd1004116c1f91baa}{JWT.\+Algorithms.\+Certificate\+Algorithm$<$ RSA $>$}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/adenf/\+Rider\+Projects/\+Openlabs.\+Mgcxm/\+Openlabs.\+Mgcxm/\+JWT/\+Algorithms/\mbox{\hyperlink{_r_s_algorithm_8cs}{RSAlgorithm.\+cs}}\end{DoxyCompactItemize}

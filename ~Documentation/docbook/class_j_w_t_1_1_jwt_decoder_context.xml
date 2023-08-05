@@ -1,0 +1,81 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_class_j_w_t_1_1_jwt_decoder_context" xml:lang="en-US">
+<title>JWT.JwtDecoderContext Class Reference</title>
+<indexterm><primary>JWT.JwtDecoderContext</primary></indexterm>
+<simplesect>
+    <title>Static Public Member Functions    </title>
+        <itemizedlist>
+            <listitem><para>static <link linkend="_class_j_w_t_1_1_jwt_decoder_context">JwtDecoderContext</link> <link linkend="_class_j_w_t_1_1_jwt_decoder_context_1ac42b128e3f1a39a6ab6da27738ad7c65">Create</link> (<link linkend="_class_j_w_t_1_1_builder_1_1_jwt_header">JwtHeader</link> header, string decodedPayload, <link linkend="_class_j_w_t_1_1_jwt_parts">JwtParts</link> jwt)</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Properties    </title>
+        <itemizedlist>
+            <listitem><para><link linkend="_class_j_w_t_1_1_jwt_parts">JwtParts</link> <link linkend="_class_j_w_t_1_1_jwt_decoder_context_1aea6485cf7c6eb40692a5fe3662627060">Token</link><computeroutput> [get, set]</computeroutput>
+</para>
+
+<para>Unmodified <link linkend="_namespace_j_w_t">JWT</link>. </para>
+</listitem>
+            <listitem><para><link linkend="_class_j_w_t_1_1_builder_1_1_jwt_header">JwtHeader</link> <link linkend="_class_j_w_t_1_1_jwt_decoder_context_1aad1d99c795395fbea376ba3e8ad46aed">Header</link><computeroutput> [get, set]</computeroutput>
+</para>
+
+<para>Deserialized <link linkend="_namespace_j_w_t">JWT</link> header. </para>
+</listitem>
+            <listitem><para>string <link linkend="_class_j_w_t_1_1_jwt_decoder_context_1a130305c3deb783257c34a189864366fe">Payload</link><computeroutput> [get, set]</computeroutput>
+</para>
+
+<para>Decoded <link linkend="_namespace_j_w_t">JWT</link> payload. </para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Member Function Documentation</title>
+<anchor xml:id="_class_j_w_t_1_1_jwt_decoder_context_1ac42b128e3f1a39a6ab6da27738ad7c65"/><section>
+    <title>Create()</title>
+<indexterm><primary>Create</primary><secondary>JWT.JwtDecoderContext</secondary></indexterm>
+<indexterm><primary>JWT.JwtDecoderContext</primary><secondary>Create</secondary></indexterm>
+<para><computeroutput>static <link linkend="_class_j_w_t_1_1_jwt_decoder_context">JwtDecoderContext</link> JWT.JwtDecoderContext.Create (<link linkend="_class_j_w_t_1_1_builder_1_1_jwt_header">JwtHeader</link> header, string decodedPayload, <link linkend="_class_j_w_t_1_1_jwt_parts">JwtParts</link> jwt)<computeroutput>[static]</computeroutput></computeroutput></para>Here is the caller graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="class_j_w_t_1_1_jwt_decoder_context_ac42b128e3f1a39a6ab6da27738ad7c65_icgraph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+</section>
+</section>
+<section>
+<title>Property Documentation</title>
+<anchor xml:id="_class_j_w_t_1_1_jwt_decoder_context_1aad1d99c795395fbea376ba3e8ad46aed"/><section>
+    <title>Header</title>
+<indexterm><primary>Header</primary><secondary>JWT.JwtDecoderContext</secondary></indexterm>
+<indexterm><primary>JWT.JwtDecoderContext</primary><secondary>Header</secondary></indexterm>
+<para><computeroutput><link linkend="_class_j_w_t_1_1_builder_1_1_jwt_header">JwtHeader</link> JWT.JwtDecoderContext.Header<computeroutput>[get]</computeroutput>, <computeroutput>[set]</computeroutput></computeroutput></para><para>
+
+<para>Deserialized <link linkend="_namespace_j_w_t">JWT</link> header. </para>
+</para>
+</section>
+<anchor xml:id="_class_j_w_t_1_1_jwt_decoder_context_1a130305c3deb783257c34a189864366fe"/><section>
+    <title>Payload</title>
+<indexterm><primary>Payload</primary><secondary>JWT.JwtDecoderContext</secondary></indexterm>
+<indexterm><primary>JWT.JwtDecoderContext</primary><secondary>Payload</secondary></indexterm>
+<para><computeroutput>string JWT.JwtDecoderContext.Payload<computeroutput>[get]</computeroutput>, <computeroutput>[set]</computeroutput></computeroutput></para><para>
+
+<para>Decoded <link linkend="_namespace_j_w_t">JWT</link> payload. </para>
+</para>
+</section>
+<anchor xml:id="_class_j_w_t_1_1_jwt_decoder_context_1aea6485cf7c6eb40692a5fe3662627060"/><section>
+    <title>Token</title>
+<indexterm><primary>Token</primary><secondary>JWT.JwtDecoderContext</secondary></indexterm>
+<indexterm><primary>JWT.JwtDecoderContext</primary><secondary>Token</secondary></indexterm>
+<para><computeroutput><link linkend="_class_j_w_t_1_1_jwt_parts">JwtParts</link> JWT.JwtDecoderContext.Token<computeroutput>[get]</computeroutput>, <computeroutput>[set]</computeroutput></computeroutput></para><para>
+
+<para>Unmodified <link linkend="_namespace_j_w_t">JWT</link>. </para>
+</para>
+</section>
+<para>
+The documentation for this class was generated from the following file:</para>
+C:/Users/adenf/RiderProjects/Openlabs.Mgcxm/Openlabs.Mgcxm/JWT/<link linkend="__jwt_decoder_context_8cs">JwtDecoderContext.cs</link></section>
+</section>

@@ -1,0 +1,109 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_class_j_w_t_1_1_validation_parameters" xml:lang="en-US">
+<title>JWT.ValidationParameters Class Reference</title>
+<indexterm><primary>JWT.ValidationParameters</primary></indexterm>
+<para>
+
+<para>Contains a set of parameters that are used by a JwtValidator when validating a token. </para>
+ 
+</para>
+<simplesect>
+    <title>Properties    </title>
+        <itemizedlist>
+            <listitem><para>bool <link linkend="_class_j_w_t_1_1_validation_parameters_1ae01373cd0ff53221bedecd9e37d242b3">ValidateSignature</link><computeroutput> [get, set]</computeroutput>
+</para>
+
+<para>Gets or sets whether to validate the validity of the token&apos;s signature. </para>
+</listitem>
+            <listitem><para>bool <link linkend="_class_j_w_t_1_1_validation_parameters_1aa9d44ffc64cbf264c4e061392d41c537">ValidateExpirationTime</link><computeroutput> [get, set]</computeroutput>
+</para>
+
+<para>Gets or sets whether to validate the validity of the token&apos;s expiration time. </para>
+</listitem>
+            <listitem><para>bool <link linkend="_class_j_w_t_1_1_validation_parameters_1a248fa961de564736aa506d0e7e4513d7">ValidateIssuedTime</link><computeroutput> [get, set]</computeroutput>
+</para>
+
+<para>Gets or sets whether to validate the validity of the token&apos;s issued time. </para>
+</listitem>
+            <listitem><para>int <link linkend="_class_j_w_t_1_1_validation_parameters_1a953c455fff2a0bee80dd3aaa62ac818a">TimeMargin</link><computeroutput> [get, set]</computeroutput>
+</para>
+
+<para>Gets or sets the time margin in seconds for exp and nbf during token validation. </para>
+</listitem>
+            <listitem><para>static <link linkend="_class_j_w_t_1_1_validation_parameters">ValidationParameters</link> <link linkend="_class_j_w_t_1_1_validation_parameters_1ac0aeff730d874616a17ee6c9e75e3eae">Default</link><computeroutput> [get]</computeroutput>
+</para>
+
+<para>Returns a ValidationParameters with all properties set to <computeroutput>true</computeroutput>. </para>
+</listitem>
+            <listitem><para>static <link linkend="_class_j_w_t_1_1_validation_parameters">ValidationParameters</link> <link linkend="_class_j_w_t_1_1_validation_parameters_1a340818ecd853abcebead6069a384d3d8">None</link><computeroutput> [get]</computeroutput>
+</para>
+
+<para>Returns a ValidationParameters with all properties set to <computeroutput>false</computeroutput>. </para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Detailed Description</title>
+
+<para>Contains a set of parameters that are used by a JwtValidator when validating a token. </para>
+</section>
+<section>
+<title>Property Documentation</title>
+<anchor xml:id="_class_j_w_t_1_1_validation_parameters_1ac0aeff730d874616a17ee6c9e75e3eae"/><section>
+    <title>Default</title>
+<indexterm><primary>Default</primary><secondary>JWT.ValidationParameters</secondary></indexterm>
+<indexterm><primary>JWT.ValidationParameters</primary><secondary>Default</secondary></indexterm>
+<para><computeroutput><link linkend="_class_j_w_t_1_1_validation_parameters">ValidationParameters</link> JWT.ValidationParameters.Default<computeroutput>[static]</computeroutput>, <computeroutput>[get]</computeroutput></computeroutput></para><para>
+
+<para>Returns a ValidationParameters with all properties set to <computeroutput>true</computeroutput>. </para>
+</para>
+</section>
+<anchor xml:id="_class_j_w_t_1_1_validation_parameters_1a340818ecd853abcebead6069a384d3d8"/><section>
+    <title>None</title>
+<indexterm><primary>None</primary><secondary>JWT.ValidationParameters</secondary></indexterm>
+<indexterm><primary>JWT.ValidationParameters</primary><secondary>None</secondary></indexterm>
+<para><computeroutput><link linkend="_class_j_w_t_1_1_validation_parameters">ValidationParameters</link> JWT.ValidationParameters.None<computeroutput>[static]</computeroutput>, <computeroutput>[get]</computeroutput></computeroutput></para><para>
+
+<para>Returns a ValidationParameters with all properties set to <computeroutput>false</computeroutput>. </para>
+</para>
+</section>
+<anchor xml:id="_class_j_w_t_1_1_validation_parameters_1a953c455fff2a0bee80dd3aaa62ac818a"/><section>
+    <title>TimeMargin</title>
+<indexterm><primary>TimeMargin</primary><secondary>JWT.ValidationParameters</secondary></indexterm>
+<indexterm><primary>JWT.ValidationParameters</primary><secondary>TimeMargin</secondary></indexterm>
+<para><computeroutput>int JWT.ValidationParameters.TimeMargin<computeroutput>[get]</computeroutput>, <computeroutput>[set]</computeroutput></computeroutput></para><para>
+
+<para>Gets or sets the time margin in seconds for exp and nbf during token validation. </para>
+</para>
+</section>
+<anchor xml:id="_class_j_w_t_1_1_validation_parameters_1aa9d44ffc64cbf264c4e061392d41c537"/><section>
+    <title>ValidateExpirationTime</title>
+<indexterm><primary>ValidateExpirationTime</primary><secondary>JWT.ValidationParameters</secondary></indexterm>
+<indexterm><primary>JWT.ValidationParameters</primary><secondary>ValidateExpirationTime</secondary></indexterm>
+<para><computeroutput>bool JWT.ValidationParameters.ValidateExpirationTime<computeroutput>[get]</computeroutput>, <computeroutput>[set]</computeroutput></computeroutput></para><para>
+
+<para>Gets or sets whether to validate the validity of the token&apos;s expiration time. </para>
+</para>
+</section>
+<anchor xml:id="_class_j_w_t_1_1_validation_parameters_1a248fa961de564736aa506d0e7e4513d7"/><section>
+    <title>ValidateIssuedTime</title>
+<indexterm><primary>ValidateIssuedTime</primary><secondary>JWT.ValidationParameters</secondary></indexterm>
+<indexterm><primary>JWT.ValidationParameters</primary><secondary>ValidateIssuedTime</secondary></indexterm>
+<para><computeroutput>bool JWT.ValidationParameters.ValidateIssuedTime<computeroutput>[get]</computeroutput>, <computeroutput>[set]</computeroutput></computeroutput></para><para>
+
+<para>Gets or sets whether to validate the validity of the token&apos;s issued time. </para>
+</para>
+</section>
+<anchor xml:id="_class_j_w_t_1_1_validation_parameters_1ae01373cd0ff53221bedecd9e37d242b3"/><section>
+    <title>ValidateSignature</title>
+<indexterm><primary>ValidateSignature</primary><secondary>JWT.ValidationParameters</secondary></indexterm>
+<indexterm><primary>JWT.ValidationParameters</primary><secondary>ValidateSignature</secondary></indexterm>
+<para><computeroutput>bool JWT.ValidationParameters.ValidateSignature<computeroutput>[get]</computeroutput>, <computeroutput>[set]</computeroutput></computeroutput></para><para>
+
+<para>Gets or sets whether to validate the validity of the token&apos;s signature. </para>
+</para>
+</section>
+<para>
+The documentation for this class was generated from the following file:</para>
+C:/Users/adenf/RiderProjects/Openlabs.Mgcxm/Openlabs.Mgcxm/JWT/<link linkend="__validation_parameters_8cs">ValidationParameters.cs</link></section>
+</section>

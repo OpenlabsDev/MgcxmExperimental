@@ -1,0 +1,44 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="__logger_8cs" xml:lang="en-US">
+<title>C:/Users/adenf/RiderProjects/Openlabs.Mgcxm/Openlabs.Mgcxm/Internal/Logger.cs File Reference</title>
+<indexterm><primary>C:/Users/adenf/RiderProjects/Openlabs.Mgcxm/Openlabs.Mgcxm/Internal/Logger.cs</primary></indexterm>
+<simplesect>
+    <title>Classes    </title>
+        <itemizedlist>
+            <listitem><para>class <emphasis role="strong">Openlabs.Mgcxm.Internal.Logger</emphasis></para>
+
+<para>Static class to log messages. </para>
+</listitem>
+            <listitem><para>class <link linkend="_class_openlabs_1_1_mgcxm_1_1_internal_1_1_log_message">Openlabs.Mgcxm.Internal.LogMessage</link></para>
+</listitem>
+            <listitem><para>class <link linkend="_class_openlabs_1_1_mgcxm_1_1_internal_1_1_logger_sink">Openlabs.Mgcxm.Internal.LoggerSink</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Namespaces    </title>
+        <itemizedlist>
+            <listitem><para>namespace <link linkend="_namespace_openlabs">Openlabs</link></para>
+</listitem>
+            <listitem><para>namespace <link linkend="_namespace_openlabs_1_1_mgcxm">Openlabs.Mgcxm</link></para>
+</listitem>
+            <listitem><para>namespace <link linkend="_namespace_openlabs_1_1_mgcxm_1_1_internal">Openlabs.Mgcxm.Internal</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Enumerations    </title>
+        <itemizedlist>
+            <listitem><para>enum <link linkend="_namespace_openlabs_1_1_mgcxm_1_1_internal_1a25582aed8bd08a2f6803962cbe3d27fe">Openlabs.Mgcxm.Internal.LogLevel</link> { <?linebreak?><link linkend="_namespace_openlabs_1_1_mgcxm_1_1_internal_1a25582aed8bd08a2f6803962cbe3d27fea2d3e4144aa384b18849ab9a8abad74d6">Openlabs.Mgcxm.Internal.TRACE</link>
+, <link linkend="_namespace_openlabs_1_1_mgcxm_1_1_internal_1a25582aed8bd08a2f6803962cbe3d27feadc30ec20708ef7b0f641ef78b7880a15">Openlabs.Mgcxm.Internal.DEBUG</link>
+, <link linkend="_namespace_openlabs_1_1_mgcxm_1_1_internal_1a25582aed8bd08a2f6803962cbe3d27fea551b723eafd6a31d444fcb2f5920fbd3">Openlabs.Mgcxm.Internal.INFO</link>
+, <link linkend="_namespace_openlabs_1_1_mgcxm_1_1_internal_1a25582aed8bd08a2f6803962cbe3d27fea059e9861e0400dfbe05c98a841f3f96b">Openlabs.Mgcxm.Internal.WARNING</link>
+, <?linebreak?><link linkend="_namespace_openlabs_1_1_mgcxm_1_1_internal_1a25582aed8bd08a2f6803962cbe3d27feabb1ca97ec761fc37101737ba0aa2e7c5">Openlabs.Mgcxm.Internal.ERROR</link>
+, <link linkend="_namespace_openlabs_1_1_mgcxm_1_1_internal_1a25582aed8bd08a2f6803962cbe3d27fea19da7170bea36556dde582519795f3fc">Openlabs.Mgcxm.Internal.FATAL</link>
+ }</para>
+
+<para>An enumeration of all the possible log level types. </para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+</section>

@@ -1,0 +1,168 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_class_openlabs_1_1_mgcxm_1_1_common_1_1_framework_1_1_open_api_endpoint_resolver" xml:lang="en-US">
+<title>Openlabs.Mgcxm.Common.Framework.OpenApiEndpointResolver Class Reference</title>
+<indexterm><primary>Openlabs.Mgcxm.Common.Framework.OpenApiEndpointResolver</primary></indexterm>
+Inheritance diagram for Openlabs.Mgcxm.Common.Framework.OpenApiEndpointResolver:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="class_openlabs_1_1_mgcxm_1_1_common_1_1_framework_1_1_open_api_endpoint_resolver__inherit__graph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+Collaboration diagram for Openlabs.Mgcxm.Common.Framework.OpenApiEndpointResolver:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="class_openlabs_1_1_mgcxm_1_1_common_1_1_framework_1_1_open_api_endpoint_resolver__coll__graph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+<simplesect>
+    <title>Public Member Functions    </title>
+        <itemizedlist>
+            <listitem><para><link linkend="_class_openlabs_1_1_mgcxm_1_1_common_1_1_framework_1_1_open_api_endpoint_resolver_1ae601223ee0b726813806c0623b10bd19">OpenApiEndpointResolver</link> (<link linkend="_class_openlabs_1_1_mgcxm_1_1_net_1_1_mgcxm_http_listener">MgcxmHttpListener</link> listener, <link linkend="_class_openlabs_1_1_mgcxm_1_1_common_1_1_framework_1_1_open_api_framework">OpenApiFramework</link> framework)</para>
+</listitem>
+            <listitem><para>override <link linkend="_class_openlabs_1_1_mgcxm_1_1_net_1_1_mgcxm_http_endpoint">MgcxmHttpEndpoint</link> <link linkend="_class_openlabs_1_1_mgcxm_1_1_common_1_1_framework_1_1_open_api_endpoint_resolver_1a6651fce2b1acb99112a210e5480dc15c">ResolveUrl</link> (string url, <link linkend="_class_openlabs_1_1_mgcxm_1_1_net_1_1_mgcxm_http_request">MgcxmHttpRequest</link> request)</para>
+</listitem>
+            <listitem><para>override void <link linkend="_class_openlabs_1_1_mgcxm_1_1_common_1_1_framework_1_1_open_api_endpoint_resolver_1a5511fe30a12e498447f86bc592ec8982">ResolveAll</link> ()</para>
+</listitem>
+            <listitem><para>override void <link linkend="_class_openlabs_1_1_mgcxm_1_1_common_1_1_framework_1_1_open_api_endpoint_resolver_1af842534120678b57b757c42985491275">AddSubpartController</link> (<link linkend="_class_openlabs_1_1_mgcxm_1_1_common_1_1_framework_1_1_endpoint_subpart_controller">EndpointSubpartController</link> subpartController)</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+Public Member Functions inherited from <link linkend="_class_openlabs_1_1_mgcxm_1_1_common_1_1_framework_1_1_endpoint_resolver">Openlabs.Mgcxm.Common.Framework.EndpointResolver</link>        <itemizedlist>
+            <listitem><para><link linkend="_class_openlabs_1_1_mgcxm_1_1_common_1_1_framework_1_1_endpoint_resolver_1a918eee3bbcc96a5c76337af4b0bca99f">EndpointResolver</link> (<link linkend="_class_openlabs_1_1_mgcxm_1_1_net_1_1_mgcxm_http_listener">MgcxmHttpListener</link> listener, <link linkend="_class_openlabs_1_1_mgcxm_1_1_common_1_1_framework_1_1_endpoint_framework_base">EndpointFrameworkBase</link> endpointFramework)</para>
+</listitem>
+            <listitem><para>abstract <link linkend="_class_openlabs_1_1_mgcxm_1_1_net_1_1_mgcxm_http_endpoint">MgcxmHttpEndpoint</link> <link linkend="_class_openlabs_1_1_mgcxm_1_1_common_1_1_framework_1_1_endpoint_resolver_1a6e262cab3c50f9aa89ddcfd132a5078d">ResolveUrl</link> (string url, <link linkend="_class_openlabs_1_1_mgcxm_1_1_net_1_1_mgcxm_http_request">MgcxmHttpRequest</link> request)</para>
+</listitem>
+            <listitem><para>abstract void <link linkend="_class_openlabs_1_1_mgcxm_1_1_common_1_1_framework_1_1_endpoint_resolver_1aed1a60597efd353261601463c930123e">ResolveAll</link> ()</para>
+</listitem>
+            <listitem><para>abstract void <link linkend="_class_openlabs_1_1_mgcxm_1_1_common_1_1_framework_1_1_endpoint_resolver_1a54aef0ad7c4bfa021effe49f4e0cf628">AddSubpartController</link> (<link linkend="_class_openlabs_1_1_mgcxm_1_1_common_1_1_framework_1_1_endpoint_subpart_controller">EndpointSubpartController</link> subpartController)</para>
+</listitem>
+        </itemizedlist>
+        <itemizedlist>
+            <listitem><para><link linkend="_class_openlabs_1_1_mgcxm_1_1_net_1_1_mgcxm_http_endpoint">MgcxmHttpEndpoint</link> <link linkend="_interface_openlabs_1_1_mgcxm_1_1_common_1_1_framework_1_1_i_endpoint_url_resolver_1a043642047e41bac082f82a45bb4e64b5">ResolveUrl</link> (string url, <link linkend="_class_openlabs_1_1_mgcxm_1_1_net_1_1_mgcxm_http_request">MgcxmHttpRequest</link> request)</para>
+</listitem>
+        </itemizedlist>
+<simplesect>
+    <title>Properties    </title>
+        <itemizedlist>
+            <listitem><para><link linkend="_struct_openlabs_1_1_mgcxm_1_1_internal_1_1_mgcxm_id">MgcxmId</link> <link linkend="_class_openlabs_1_1_mgcxm_1_1_common_1_1_framework_1_1_open_api_endpoint_resolver_1a7d31b0a8d7d5b8e1e0f958372380e7b2">AllocatedId</link><computeroutput> [get]</computeroutput>
+</para>
+</listitem>
+            <listitem><para>override IReadOnlyList&lt; <link linkend="_class_openlabs_1_1_mgcxm_1_1_common_1_1_framework_1_1_endpoint_subpart_controller">EndpointSubpartController</link> &gt; <link linkend="_class_openlabs_1_1_mgcxm_1_1_common_1_1_framework_1_1_open_api_endpoint_resolver_1a2a38c0c7313970c8ee454affbebad324">EndpointSubpartControllers</link><computeroutput> [get]</computeroutput>
+</para>
+</listitem>
+            <listitem><para><link linkend="_class_openlabs_1_1_mgcxm_1_1_common_1_1_framework_1_1_open_api_framework">OpenApiFramework</link>? <link linkend="_class_openlabs_1_1_mgcxm_1_1_common_1_1_framework_1_1_open_api_endpoint_resolver_1a1db35922d9e1d820cf4b92ffa142b9ac">OpenApiFramework</link><computeroutput> [get]</computeroutput>
+</para>
+</listitem>
+            <listitem><para><link linkend="_class_openlabs_1_1_mgcxm_1_1_common_1_1_framework_1_1_open_api_endpoint_structure">OpenApiEndpointStructure</link>? <link linkend="_class_openlabs_1_1_mgcxm_1_1_common_1_1_framework_1_1_open_api_endpoint_resolver_1ab46a8f04ac1144e7ca9b1eb274679ca5">OpenApiEndpointStructure</link><computeroutput> [get]</computeroutput>
+</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+Properties inherited from <link linkend="_class_openlabs_1_1_mgcxm_1_1_common_1_1_framework_1_1_endpoint_resolver">Openlabs.Mgcxm.Common.Framework.EndpointResolver</link>        <itemizedlist>
+            <listitem><para><link linkend="_class_openlabs_1_1_mgcxm_1_1_common_1_1_framework_1_1_endpoint_framework_base">EndpointFrameworkBase</link> <link linkend="_class_openlabs_1_1_mgcxm_1_1_common_1_1_framework_1_1_endpoint_resolver_1a388d0b34b8fc3e7beb613ea689f7a11e">EndpointFramework</link><computeroutput> [get]</computeroutput>
+</para>
+</listitem>
+            <listitem><para><link linkend="_class_openlabs_1_1_mgcxm_1_1_net_1_1_mgcxm_http_listener">MgcxmHttpListener</link> <link linkend="_class_openlabs_1_1_mgcxm_1_1_common_1_1_framework_1_1_endpoint_resolver_1ad2dff8fe1ae21b4dee5429c8cf11a935">HttpListener</link><computeroutput> [get]</computeroutput>
+</para>
+</listitem>
+            <listitem><para>abstract IReadOnlyList&lt; <link linkend="_class_openlabs_1_1_mgcxm_1_1_common_1_1_framework_1_1_endpoint_subpart_controller">EndpointSubpartController</link> &gt; <link linkend="_class_openlabs_1_1_mgcxm_1_1_common_1_1_framework_1_1_endpoint_resolver_1a784e520ec43bc94bd18a78188e4055c6">EndpointSubpartControllers</link><computeroutput> [get]</computeroutput>
+</para>
+</listitem>
+        </itemizedlist>
+<simplesect>
+    <title>Events    </title>
+        <itemizedlist>
+            <listitem><para>Action&lt; <link linkend="_class_openlabs_1_1_mgcxm_1_1_common_1_1_framework_1_1_endpoint_subpart_controller">EndpointSubpartController</link> &gt;? <link linkend="_class_openlabs_1_1_mgcxm_1_1_common_1_1_framework_1_1_open_api_endpoint_resolver_1ad48d61c86edb249bd7ba614f5a5c44d6">OnSubpartUpdated</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Constructor &amp; Destructor Documentation</title>
+<anchor xml:id="_class_openlabs_1_1_mgcxm_1_1_common_1_1_framework_1_1_open_api_endpoint_resolver_1ae601223ee0b726813806c0623b10bd19"/><section>
+    <title>OpenApiEndpointResolver()</title>
+<indexterm><primary>OpenApiEndpointResolver</primary><secondary>Openlabs.Mgcxm.Common.Framework.OpenApiEndpointResolver</secondary></indexterm>
+<indexterm><primary>Openlabs.Mgcxm.Common.Framework.OpenApiEndpointResolver</primary><secondary>OpenApiEndpointResolver</secondary></indexterm>
+<para><computeroutput>Openlabs.Mgcxm.Common.Framework.OpenApiEndpointResolver.OpenApiEndpointResolver (<link linkend="_class_openlabs_1_1_mgcxm_1_1_net_1_1_mgcxm_http_listener">MgcxmHttpListener</link> listener, <link linkend="_class_openlabs_1_1_mgcxm_1_1_common_1_1_framework_1_1_open_api_framework">OpenApiFramework</link> framework)</computeroutput></para></section>
+</section>
+<section>
+<title>Member Function Documentation</title>
+<anchor xml:id="_class_openlabs_1_1_mgcxm_1_1_common_1_1_framework_1_1_open_api_endpoint_resolver_1af842534120678b57b757c42985491275"/><section>
+    <title>AddSubpartController()</title>
+<indexterm><primary>AddSubpartController</primary><secondary>Openlabs.Mgcxm.Common.Framework.OpenApiEndpointResolver</secondary></indexterm>
+<indexterm><primary>Openlabs.Mgcxm.Common.Framework.OpenApiEndpointResolver</primary><secondary>AddSubpartController</secondary></indexterm>
+<para><computeroutput>override void Openlabs.Mgcxm.Common.Framework.OpenApiEndpointResolver.AddSubpartController (<link linkend="_class_openlabs_1_1_mgcxm_1_1_common_1_1_framework_1_1_endpoint_subpart_controller">EndpointSubpartController</link> subpartController)<computeroutput>[virtual]</computeroutput></computeroutput></para><para>
+Implements <link linkend="_class_openlabs_1_1_mgcxm_1_1_common_1_1_framework_1_1_endpoint_resolver_1a54aef0ad7c4bfa021effe49f4e0cf628">Openlabs.Mgcxm.Common.Framework.EndpointResolver</link>.</para>
+</section>
+<anchor xml:id="_class_openlabs_1_1_mgcxm_1_1_common_1_1_framework_1_1_open_api_endpoint_resolver_1a5511fe30a12e498447f86bc592ec8982"/><section>
+    <title>ResolveAll()</title>
+<indexterm><primary>ResolveAll</primary><secondary>Openlabs.Mgcxm.Common.Framework.OpenApiEndpointResolver</secondary></indexterm>
+<indexterm><primary>Openlabs.Mgcxm.Common.Framework.OpenApiEndpointResolver</primary><secondary>ResolveAll</secondary></indexterm>
+<para><computeroutput>override void Openlabs.Mgcxm.Common.Framework.OpenApiEndpointResolver.ResolveAll ( )<computeroutput>[virtual]</computeroutput></computeroutput></para><para>
+Implements <link linkend="_class_openlabs_1_1_mgcxm_1_1_common_1_1_framework_1_1_endpoint_resolver_1aed1a60597efd353261601463c930123e">Openlabs.Mgcxm.Common.Framework.EndpointResolver</link>.</para>
+Here is the call graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="class_openlabs_1_1_mgcxm_1_1_common_1_1_framework_1_1_open_api_endpoint_resolver_a5511fe30a12e498447f86bc592ec8982_cgraph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+</section>
+<anchor xml:id="_class_openlabs_1_1_mgcxm_1_1_common_1_1_framework_1_1_open_api_endpoint_resolver_1a6651fce2b1acb99112a210e5480dc15c"/><section>
+    <title>ResolveUrl()</title>
+<indexterm><primary>ResolveUrl</primary><secondary>Openlabs.Mgcxm.Common.Framework.OpenApiEndpointResolver</secondary></indexterm>
+<indexterm><primary>Openlabs.Mgcxm.Common.Framework.OpenApiEndpointResolver</primary><secondary>ResolveUrl</secondary></indexterm>
+<para><computeroutput>override <link linkend="_class_openlabs_1_1_mgcxm_1_1_net_1_1_mgcxm_http_endpoint">MgcxmHttpEndpoint</link> Openlabs.Mgcxm.Common.Framework.OpenApiEndpointResolver.ResolveUrl (string url, <link linkend="_class_openlabs_1_1_mgcxm_1_1_net_1_1_mgcxm_http_request">MgcxmHttpRequest</link> request)<computeroutput>[virtual]</computeroutput></computeroutput></para><para>
+Implements <link linkend="_class_openlabs_1_1_mgcxm_1_1_common_1_1_framework_1_1_endpoint_resolver_1a6e262cab3c50f9aa89ddcfd132a5078d">Openlabs.Mgcxm.Common.Framework.EndpointResolver</link>.</para>
+Here is the call graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="class_openlabs_1_1_mgcxm_1_1_common_1_1_framework_1_1_open_api_endpoint_resolver_a6651fce2b1acb99112a210e5480dc15c_cgraph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+</section>
+</section>
+<section>
+<title>Property Documentation</title>
+<anchor xml:id="_class_openlabs_1_1_mgcxm_1_1_common_1_1_framework_1_1_open_api_endpoint_resolver_1a7d31b0a8d7d5b8e1e0f958372380e7b2"/><section>
+    <title>AllocatedId</title>
+<indexterm><primary>AllocatedId</primary><secondary>Openlabs.Mgcxm.Common.Framework.OpenApiEndpointResolver</secondary></indexterm>
+<indexterm><primary>Openlabs.Mgcxm.Common.Framework.OpenApiEndpointResolver</primary><secondary>AllocatedId</secondary></indexterm>
+<para><computeroutput><link linkend="_struct_openlabs_1_1_mgcxm_1_1_internal_1_1_mgcxm_id">MgcxmId</link> Openlabs.Mgcxm.Common.Framework.OpenApiEndpointResolver.AllocatedId<computeroutput>[get]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_class_openlabs_1_1_mgcxm_1_1_common_1_1_framework_1_1_open_api_endpoint_resolver_1a2a38c0c7313970c8ee454affbebad324"/><section>
+    <title>EndpointSubpartControllers</title>
+<indexterm><primary>EndpointSubpartControllers</primary><secondary>Openlabs.Mgcxm.Common.Framework.OpenApiEndpointResolver</secondary></indexterm>
+<indexterm><primary>Openlabs.Mgcxm.Common.Framework.OpenApiEndpointResolver</primary><secondary>EndpointSubpartControllers</secondary></indexterm>
+<para><computeroutput>override IReadOnlyList&lt;<link linkend="_class_openlabs_1_1_mgcxm_1_1_common_1_1_framework_1_1_endpoint_subpart_controller">EndpointSubpartController</link>&gt; Openlabs.Mgcxm.Common.Framework.OpenApiEndpointResolver.EndpointSubpartControllers<computeroutput>[get]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_class_openlabs_1_1_mgcxm_1_1_common_1_1_framework_1_1_open_api_endpoint_resolver_1ab46a8f04ac1144e7ca9b1eb274679ca5"/><section>
+    <title>OpenApiEndpointStructure</title>
+<indexterm><primary>OpenApiEndpointStructure</primary><secondary>Openlabs.Mgcxm.Common.Framework.OpenApiEndpointResolver</secondary></indexterm>
+<indexterm><primary>Openlabs.Mgcxm.Common.Framework.OpenApiEndpointResolver</primary><secondary>OpenApiEndpointStructure</secondary></indexterm>
+<para><computeroutput><link linkend="_class_openlabs_1_1_mgcxm_1_1_common_1_1_framework_1_1_open_api_endpoint_structure">OpenApiEndpointStructure</link>? Openlabs.Mgcxm.Common.Framework.OpenApiEndpointResolver.OpenApiEndpointStructure<computeroutput>[get]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_class_openlabs_1_1_mgcxm_1_1_common_1_1_framework_1_1_open_api_endpoint_resolver_1a1db35922d9e1d820cf4b92ffa142b9ac"/><section>
+    <title>OpenApiFramework</title>
+<indexterm><primary>OpenApiFramework</primary><secondary>Openlabs.Mgcxm.Common.Framework.OpenApiEndpointResolver</secondary></indexterm>
+<indexterm><primary>Openlabs.Mgcxm.Common.Framework.OpenApiEndpointResolver</primary><secondary>OpenApiFramework</secondary></indexterm>
+<para><computeroutput><link linkend="_class_openlabs_1_1_mgcxm_1_1_common_1_1_framework_1_1_open_api_framework">OpenApiFramework</link>? Openlabs.Mgcxm.Common.Framework.OpenApiEndpointResolver.OpenApiFramework<computeroutput>[get]</computeroutput></computeroutput></para></section>
+</section>
+<section>
+<title>Event Documentation</title>
+<anchor xml:id="_class_openlabs_1_1_mgcxm_1_1_common_1_1_framework_1_1_open_api_endpoint_resolver_1ad48d61c86edb249bd7ba614f5a5c44d6"/><section>
+    <title>OnSubpartUpdated</title>
+<indexterm><primary>OnSubpartUpdated</primary><secondary>Openlabs.Mgcxm.Common.Framework.OpenApiEndpointResolver</secondary></indexterm>
+<indexterm><primary>Openlabs.Mgcxm.Common.Framework.OpenApiEndpointResolver</primary><secondary>OnSubpartUpdated</secondary></indexterm>
+<para><computeroutput>Action&lt;<link linkend="_class_openlabs_1_1_mgcxm_1_1_common_1_1_framework_1_1_endpoint_subpart_controller">EndpointSubpartController</link>&gt;? Openlabs.Mgcxm.Common.Framework.OpenApiEndpointResolver.OnSubpartUpdated</computeroutput></para></section>
+<para>
+The documentation for this class was generated from the following file:</para>
+C:/Users/adenf/RiderProjects/Openlabs.Mgcxm/Openlabs.Mgcxm/Common/Framework/OpenApi/<link linkend="__open_api_endpoint_resolver_8cs">OpenApiEndpointResolver.cs</link></section>
+</section>

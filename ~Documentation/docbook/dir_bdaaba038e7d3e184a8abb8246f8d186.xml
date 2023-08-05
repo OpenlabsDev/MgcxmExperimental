@@ -1,0 +1,33 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_dir_bdaaba038e7d3e184a8abb8246f8d186" xml:lang="en-US">
+<title>C:/Users/adenf/RiderProjects/Openlabs.Mgcxm/Openlabs.Mgcxm/Common/Framework/Base Directory Reference</title>
+<indexterm><primary>C:/Users/adenf/RiderProjects/Openlabs.Mgcxm/Openlabs.Mgcxm/Common/Framework/Base Directory Reference</primary></indexterm>
+Directory dependency graph for Base:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="dir_bdaaba038e7d3e184a8abb8246f8d186_dep.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+<simplesect>
+    <title>Files    </title>
+        <itemizedlist>
+            <listitem><para>file <link linkend="__endpoint_framework_8cs">EndpointFramework.cs</link></para>
+</listitem>
+            <listitem><para>file <link linkend="__endpoint_framework_base_8cs">EndpointFrameworkBase.cs</link></para>
+</listitem>
+            <listitem><para>file <link linkend="__endpoint_resolver_8cs">EndpointResolver.cs</link></para>
+</listitem>
+            <listitem><para>file <link linkend="__endpoint_structure_8cs">EndpointStructure.cs</link></para>
+</listitem>
+            <listitem><para>file <link linkend="__endpoint_subpart_controller_8cs">EndpointSubpartController.cs</link></para>
+</listitem>
+            <listitem><para>file <link linkend="__endpoint_url_8cs">EndpointUrl.cs</link></para>
+</listitem>
+            <listitem><para>file <link linkend="__i_endpoint_url_resolver_8cs">IEndpointUrlResolver.cs</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+</section>

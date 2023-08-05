@@ -1,0 +1,29 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.7" xml:lang="en-US">
+  <compounddef id="_http_extensions_8cs" kind="file" language="C#">
+    <compoundname>HttpExtensions.cs</compoundname>
+    <innerclass refid="class_openlabs_1_1_mgcxm_1_1_net_1_1_extensions_1_1_http_listener_extensions" prot="public">Openlabs::Mgcxm::Net::Extensions::HttpListenerExtensions</innerclass>
+    <innerclass refid="class_openlabs_1_1_mgcxm_1_1_net_1_1_extensions_1_1_http_listener_request_extensions" prot="public">Openlabs::Mgcxm::Net::Extensions::HttpListenerRequestExtensions</innerclass>
+    <innerclass refid="class_openlabs_1_1_mgcxm_1_1_net_1_1_extensions_1_1_http_listener_response_extensions" prot="public">Openlabs::Mgcxm::Net::Extensions::HttpListenerResponseExtensions</innerclass>
+    <innernamespace refid="namespace_openlabs">Openlabs</innernamespace>
+    <innernamespace refid="namespace_openlabs_1_1_mgcxm">Openlabs::Mgcxm</innernamespace>
+    <innernamespace refid="namespace_openlabs_1_1_mgcxm_1_1_net">Openlabs::Mgcxm::Net</innernamespace>
+    <innernamespace refid="namespace_openlabs_1_1_mgcxm_1_1_net_1_1_extensions">Openlabs::Mgcxm::Net::Extensions</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">//<sp/>Copr.<sp/>(c)<sp/>Nexus<sp/>2023.<sp/>All<sp/>rights<sp/>reserved.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="keyword">using<sp/></highlight><highlight class="normal">System.Net;</highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight></codeline>
+<codeline lineno="5" refid="namespace_openlabs_1_1_mgcxm_1_1_net_1_1_extensions" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="namespace_openlabs_1_1_mgcxm_1_1_net_1_1_extensions" kindref="compound">Openlabs.Mgcxm.Net.Extensions</ref>;</highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal">HttpListenerExtensions<sp/>{<sp/>}</highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal">HttpListenerRequestExtensions<sp/>{<sp/>}</highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal">HttpListenerResponseExtensions<sp/>{<sp/>}</highlight></codeline>
+    </programlisting>
+    <location file="C:/Users/adenf/RiderProjects/Openlabs.Mgcxm/Openlabs.Mgcxm/Net/Extensions/HttpExtensions.cs"/>
+  </compounddef>
+</doxygen>

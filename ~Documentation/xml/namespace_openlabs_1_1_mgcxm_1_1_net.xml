@@ -1,0 +1,1006 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.7" xml:lang="en-US">
+  <compounddef id="namespace_openlabs_1_1_mgcxm_1_1_net" kind="namespace" language="C#">
+    <compoundname>Openlabs::Mgcxm::Net</compoundname>
+    <innerclass refid="class_openlabs_1_1_mgcxm_1_1_net_1_1_address_utilities" prot="public">Openlabs::Mgcxm::Net::AddressUtilities</innerclass>
+    <innerclass refid="class_openlabs_1_1_mgcxm_1_1_net_1_1_common_mime_type_attribute" prot="package">Openlabs::Mgcxm::Net::CommonMimeTypeAttribute</innerclass>
+    <innerclass refid="class_openlabs_1_1_mgcxm_1_1_net_1_1_http_content_type_helper" prot="public">Openlabs::Mgcxm::Net::HttpContentTypeHelper</innerclass>
+    <innerclass refid="class_openlabs_1_1_mgcxm_1_1_net_1_1_http_dynamic_use_attribute" prot="public">Openlabs::Mgcxm::Net::HttpDynamicUseAttribute</innerclass>
+    <innerclass refid="class_openlabs_1_1_mgcxm_1_1_net_1_1_http_endpoint_attribute" prot="public">Openlabs::Mgcxm::Net::HttpEndpointAttribute</innerclass>
+    <innerclass refid="class_openlabs_1_1_mgcxm_1_1_net_1_1_http_endpoint_invocation" prot="public">Openlabs::Mgcxm::Net::HttpEndpointInvocation</innerclass>
+    <innerclass refid="class_openlabs_1_1_mgcxm_1_1_net_1_1_http_requires_attribute" prot="public">Openlabs::Mgcxm::Net::HttpRequiresAttribute</innerclass>
+    <innerclass refid="class_openlabs_1_1_mgcxm_1_1_net_1_1_http_use_authorization_attribute" prot="public">Openlabs::Mgcxm::Net::HttpUseAuthorizationAttribute</innerclass>
+    <innerclass refid="interface_openlabs_1_1_mgcxm_1_1_net_1_1_i_ip_address" prot="public">Openlabs::Mgcxm::Net::IIpAddress</innerclass>
+    <innerclass refid="interface_openlabs_1_1_mgcxm_1_1_net_1_1_i_mgcxm_http_response_modifiable" prot="public">Openlabs::Mgcxm::Net::IMgcxmHttpResponseModifiable</innerclass>
+    <innerclass refid="interface_openlabs_1_1_mgcxm_1_1_net_1_1_i_mgcxm_http_response_transferable" prot="public">Openlabs::Mgcxm::Net::IMgcxmHttpResponseTransferable</innerclass>
+    <innerclass refid="class_openlabs_1_1_mgcxm_1_1_net_1_1_ip_address" prot="public">Openlabs::Mgcxm::Net::IpAddress</innerclass>
+    <innerclass refid="class_openlabs_1_1_mgcxm_1_1_net_1_1_mgcxm_dynamic_identifier" prot="public">Openlabs::Mgcxm::Net::MgcxmDynamicIdentifier</innerclass>
+    <innerclass refid="class_openlabs_1_1_mgcxm_1_1_net_1_1_mgcxm_http_endpoint" prot="public">Openlabs::Mgcxm::Net::MgcxmHttpEndpoint</innerclass>
+    <innerclass refid="class_openlabs_1_1_mgcxm_1_1_net_1_1_mgcxm_http_listener" prot="public">Openlabs::Mgcxm::Net::MgcxmHttpListener</innerclass>
+    <innerclass refid="class_openlabs_1_1_mgcxm_1_1_net_1_1_mgcxm_http_listener_debug_info" prot="public">Openlabs::Mgcxm::Net::MgcxmHttpListenerDebugInfo</innerclass>
+    <innerclass refid="class_openlabs_1_1_mgcxm_1_1_net_1_1_mgcxm_http_request" prot="public">Openlabs::Mgcxm::Net::MgcxmHttpRequest</innerclass>
+    <innerclass refid="class_openlabs_1_1_mgcxm_1_1_net_1_1_mgcxm_http_response" prot="public">Openlabs::Mgcxm::Net::MgcxmHttpResponse</innerclass>
+    <innerclass refid="class_openlabs_1_1_mgcxm_1_1_net_1_1_mgcxm_socket" prot="public">Openlabs::Mgcxm::Net::MgcxmSocket</innerclass>
+    <innerclass refid="class_openlabs_1_1_mgcxm_1_1_net_1_1_mgcxm_socket_connection_handler" prot="public">Openlabs::Mgcxm::Net::MgcxmSocketConnectionHandler</innerclass>
+    <innerclass refid="class_openlabs_1_1_mgcxm_1_1_net_1_1_mgcxm_socket_listener" prot="public">Openlabs::Mgcxm::Net::MgcxmSocketListener</innerclass>
+    <innerclass refid="class_openlabs_1_1_mgcxm_1_1_net_1_1_mgcxm_socket_route" prot="public">Openlabs::Mgcxm::Net::MgcxmSocketRoute</innerclass>
+    <innerclass refid="class_openlabs_1_1_mgcxm_1_1_net_1_1_socket_connection_handler_attribute" prot="public">Openlabs::Mgcxm::Net::SocketConnectionHandlerAttribute</innerclass>
+    <innerclass refid="class_openlabs_1_1_mgcxm_1_1_net_1_1_socket_route_attribute" prot="public">Openlabs::Mgcxm::Net::SocketRouteAttribute</innerclass>
+    <innernamespace refid="namespace_openlabs_1_1_mgcxm_1_1_net_1_1_authorization">Openlabs::Mgcxm::Net::Authorization</innernamespace>
+    <innernamespace refid="namespace_openlabs_1_1_mgcxm_1_1_net_1_1_extensions">Openlabs::Mgcxm::Net::Extensions</innernamespace>
+    <innernamespace refid="namespace_openlabs_1_1_mgcxm_1_1_net_1_1_polling">Openlabs::Mgcxm::Net::Polling</innernamespace>
+      <sectiondef kind="enum">
+      <memberdef kind="enum" id="namespace_openlabs_1_1_mgcxm_1_1_net_1ac91eddadee1cf42d551524d032a0d76c" prot="public" static="no" strong="yes">
+        <type></type>
+        <name>HttpRequireFlag</name>
+        <qualifiedname>Openlabs.Mgcxm.Net.HttpRequireFlag</qualifiedname>
+        <enumvalue id="namespace_openlabs_1_1_mgcxm_1_1_net_1ac91eddadee1cf42d551524d032a0d76ca5109d53455b5e28d085cafb46fbfe99c" prot="public">
+          <name>FormBody</name>
+          <briefdescription>
+<para>Indicates that the HTTP endpoint requires form data in the request body. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespace_openlabs_1_1_mgcxm_1_1_net_1ac91eddadee1cf42d551524d032a0d76ca720d6b79124c921105436adcb9f99f7f" prot="public">
+          <name>BinaryData</name>
+          <briefdescription>
+<para>Indicates that the HTTP endpoint requires binary data in the request body. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespace_openlabs_1_1_mgcxm_1_1_net_1ac91eddadee1cf42d551524d032a0d76cabf50d5e661106d0abe925af3c2e6f7e7" prot="public">
+          <name>Header</name>
+          <briefdescription>
+<para>Indicates that the HTTP endpoint requires specific headers in the request. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespace_openlabs_1_1_mgcxm_1_1_net_1ac91eddadee1cf42d551524d032a0d76ca66c1b4c7f3dc385b68a9fa903ccd016d" prot="public">
+          <name>Query</name>
+          <briefdescription>
+<para>Indicates that the HTTP endpoint requires specific query parameters in the request. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>An enumeration of flags that represent additional requirements for an HTTP endpoint method. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/adenf/RiderProjects/Openlabs.Mgcxm/Openlabs.Mgcxm/Net/Attributes/HttpRequiresAttribute.cs" line="38" column="7" bodyfile="C:/Users/adenf/RiderProjects/Openlabs.Mgcxm/Openlabs.Mgcxm/Net/Attributes/HttpRequiresAttribute.cs" bodystart="39" bodyend="59"/>
+      </memberdef>
+      <memberdef kind="enum" id="namespace_openlabs_1_1_mgcxm_1_1_net_1a1cf0ff6088d262006cd028b076749e13" prot="public" static="no" strong="yes">
+        <type></type>
+        <name>AuthorizationSchemes</name>
+        <qualifiedname>Openlabs.Mgcxm.Net.AuthorizationSchemes</qualifiedname>
+        <enumvalue id="namespace_openlabs_1_1_mgcxm_1_1_net_1a1cf0ff6088d262006cd028b076749e13a83dedad0728baaef3ad3f50bd05ed030" prot="public">
+          <name>Bearer</name>
+          <briefdescription>
+<para>Bearer token authorization scheme commonly used in web APIs and OAuth 2.0 authentication. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespace_openlabs_1_1_mgcxm_1_1_net_1a1cf0ff6088d262006cd028b076749e13ae5cfc515f312c9e85f367e9854d9963e" prot="public">
+          <name>Digest</name>
+          <briefdescription>
+<para>Digest authorization scheme, an older HTTP authentication method that uses a challenge-response mechanism for authentication. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespace_openlabs_1_1_mgcxm_1_1_net_1a1cf0ff6088d262006cd028b076749e13a972e73b7a882d0802a4e3a16946a2f94" prot="public">
+          <name>Basic</name>
+          <briefdescription>
+<para>Basic authorization scheme, an HTTP authentication method where credentials (username and password) are sent in the request headers as base64-encoded. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>Represents different types of authorization schemes. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/adenf/RiderProjects/Openlabs.Mgcxm/Openlabs.Mgcxm/Net/AuthorizationSchemes.cs" line="8" column="7" bodyfile="C:/Users/adenf/RiderProjects/Openlabs.Mgcxm/Openlabs.Mgcxm/Net/AuthorizationSchemes.cs" bodystart="9" bodyend="24"/>
+      </memberdef>
+      <memberdef kind="enum" id="namespace_openlabs_1_1_mgcxm_1_1_net_1a0190ca5d59602d92653be09f01e3fc18" prot="public" static="no" strong="yes">
+        <type></type>
+        <name>HttpContentTypes</name>
+        <qualifiedname>Openlabs.Mgcxm.Net.HttpContentTypes</qualifiedname>
+        <enumvalue id="namespace_openlabs_1_1_mgcxm_1_1_net_1a0190ca5d59602d92653be09f01e3fc18a4bbb8f967da6d1a610596d7257179c2b" prot="public">
+          <name>Invalid</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespace_openlabs_1_1_mgcxm_1_1_net_1a0190ca5d59602d92653be09f01e3fc18a580ba9648b4a76ea7acf941c69fde2fb" prot="public">
+          <name>AacAudio</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespace_openlabs_1_1_mgcxm_1_1_net_1a0190ca5d59602d92653be09f01e3fc18a1d592ea6ac313f794afbabb2da35785d" prot="public">
+          <name>AbiWord</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespace_openlabs_1_1_mgcxm_1_1_net_1a0190ca5d59602d92653be09f01e3fc18a577a2b5c02e0013c7a318aab458666b4" prot="public">
+          <name>ArchiveDocument</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespace_openlabs_1_1_mgcxm_1_1_net_1a0190ca5d59602d92653be09f01e3fc18a2dca2c5bb60b9134564ac0073555b15f" prot="public">
+          <name>AvifImage</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespace_openlabs_1_1_mgcxm_1_1_net_1a0190ca5d59602d92653be09f01e3fc18a75614c3fca429c06226ca2518abb73aa" prot="public">
+          <name>Avi</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespace_openlabs_1_1_mgcxm_1_1_net_1a0190ca5d59602d92653be09f01e3fc18a720d6b79124c921105436adcb9f99f7f" prot="public">
+          <name>BinaryData</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespace_openlabs_1_1_mgcxm_1_1_net_1a0190ca5d59602d92653be09f01e3fc18ac56152fd166d9a9a95d2e77ddac6c2c6" prot="public">
+          <name>WinOs2Bitmap</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespace_openlabs_1_1_mgcxm_1_1_net_1a0190ca5d59602d92653be09f01e3fc18a721ef395d92fd468d7b2caabbafefa91" prot="public">
+          <name>BzipArchive</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespace_openlabs_1_1_mgcxm_1_1_net_1a0190ca5d59602d92653be09f01e3fc18a224a367e2bbe657040890b3ce384d4a9" prot="public">
+          <name>Bzip2Archive</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespace_openlabs_1_1_mgcxm_1_1_net_1a0190ca5d59602d92653be09f01e3fc18a79e3a446348ee602e54d76926ce313fb" prot="public">
+          <name>CdAudio</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespace_openlabs_1_1_mgcxm_1_1_net_1a0190ca5d59602d92653be09f01e3fc18a7c7f87a4485e883cd4a4c340b2de9a52" prot="public">
+          <name>CshellScript</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespace_openlabs_1_1_mgcxm_1_1_net_1a0190ca5d59602d92653be09f01e3fc18a4ddff390aaf6ec45919094f5a3cf2d79" prot="public">
+          <name>CssSheet</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespace_openlabs_1_1_mgcxm_1_1_net_1a0190ca5d59602d92653be09f01e3fc18ac670245442b38882ef3c2ab9dc9d26d2" prot="public">
+          <name>MsWordDocument</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespace_openlabs_1_1_mgcxm_1_1_net_1a0190ca5d59602d92653be09f01e3fc18a6b65cab2394372b872f87f403fff9ed2" prot="public">
+          <name>MsWordDocumentXml</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespace_openlabs_1_1_mgcxm_1_1_net_1a0190ca5d59602d92653be09f01e3fc18a8b618a6d38d6e2561f0aa5b89a91c201" prot="public">
+          <name>MsEmbeddedOpenTypeFont</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespace_openlabs_1_1_mgcxm_1_1_net_1a0190ca5d59602d92653be09f01e3fc18a636da876992c5b7f26866be41a26c57b" prot="public">
+          <name>ElectronicPublication</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespace_openlabs_1_1_mgcxm_1_1_net_1a0190ca5d59602d92653be09f01e3fc18a1566b01c8d448fc2ddcf1c11d72c0661" prot="public">
+          <name>GzipCompressArchive</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespace_openlabs_1_1_mgcxm_1_1_net_1a0190ca5d59602d92653be09f01e3fc18a1f458f5d2dad4d0529ed894254d51aa2" prot="public">
+          <name>GraphicsInterchange</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespace_openlabs_1_1_mgcxm_1_1_net_1a0190ca5d59602d92653be09f01e3fc18a2d310c4f098ed425228b7a47468034ba" prot="public">
+          <name>HtmlFile</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespace_openlabs_1_1_mgcxm_1_1_net_1a0190ca5d59602d92653be09f01e3fc18a0c963f094b5c4c9754ddbb52a7fbd7e0" prot="public">
+          <name>IconFile</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespace_openlabs_1_1_mgcxm_1_1_net_1a0190ca5d59602d92653be09f01e3fc18a29c34bcbf6427baef17773a148b62812" prot="public">
+          <name>Calender</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespace_openlabs_1_1_mgcxm_1_1_net_1a0190ca5d59602d92653be09f01e3fc18a9a916e21a170ee80bef9fc9700f82896" prot="public">
+          <name>JavaArchive</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespace_openlabs_1_1_mgcxm_1_1_net_1a0190ca5d59602d92653be09f01e3fc18ae0c9c839003e6b3bc3298e2a411bd53d" prot="public">
+          <name>JpegImage</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespace_openlabs_1_1_mgcxm_1_1_net_1a0190ca5d59602d92653be09f01e3fc18a9e13b69d1d2da927102acaaaf7154a37" prot="public">
+          <name>Javascript</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespace_openlabs_1_1_mgcxm_1_1_net_1a0190ca5d59602d92653be09f01e3fc18aeed8d85b888a6c015834240885ee6333" prot="public">
+          <name>Json</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespace_openlabs_1_1_mgcxm_1_1_net_1a0190ca5d59602d92653be09f01e3fc18afc376ec6e0da9a99e0c333cd42f958f5" prot="public">
+          <name>JsonLd</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespace_openlabs_1_1_mgcxm_1_1_net_1a0190ca5d59602d92653be09f01e3fc18acc7d9bcdaa80bb9993f20afa040d256d" prot="public">
+          <name>Mp3Audio</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespace_openlabs_1_1_mgcxm_1_1_net_1a0190ca5d59602d92653be09f01e3fc18a3d08e1782a993220dd7cdd36d8b9d5f0" prot="public">
+          <name>Mp4Video</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespace_openlabs_1_1_mgcxm_1_1_net_1a0190ca5d59602d92653be09f01e3fc18ae911c703b930e14a565b1680c9322f66" prot="public">
+          <name>MpegVideo</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespace_openlabs_1_1_mgcxm_1_1_net_1a0190ca5d59602d92653be09f01e3fc18aecff09c51e2d83f3a2d80aeca378ef64" prot="public">
+          <name>OggAudio</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespace_openlabs_1_1_mgcxm_1_1_net_1a0190ca5d59602d92653be09f01e3fc18a74dd024cd634f7690d6cb529fd044ae6" prot="public">
+          <name>OgvAudio</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespace_openlabs_1_1_mgcxm_1_1_net_1a0190ca5d59602d92653be09f01e3fc18a1ec8011862f272cf98199dae4568fa03" prot="public">
+          <name>OpusAudio</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespace_openlabs_1_1_mgcxm_1_1_net_1a0190ca5d59602d92653be09f01e3fc18a43f1c034e10eba58cda3750470366586" prot="public">
+          <name>OpenTypeFont</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespace_openlabs_1_1_mgcxm_1_1_net_1a0190ca5d59602d92653be09f01e3fc18a020e1d92c28f4478ff1f3477b6a6cdea" prot="public">
+          <name>PngImage</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespace_openlabs_1_1_mgcxm_1_1_net_1a0190ca5d59602d92653be09f01e3fc18ab7ebbf7f254ef646928dd58f62383a85" prot="public">
+          <name>PlainText</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespace_openlabs_1_1_mgcxm_1_1_net_1a0190ca5d59602d92653be09f01e3fc18ab8ee22298c76dc38d7d8545a5a6a2b96" prot="public">
+          <name>WavAudio</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespace_openlabs_1_1_mgcxm_1_1_net_1a0190ca5d59602d92653be09f01e3fc18acf0efedf426fab8750fd10b9cb7c2c94" prot="public">
+          <name>WebmAudio</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespace_openlabs_1_1_mgcxm_1_1_net_1a0190ca5d59602d92653be09f01e3fc18afea41e71c0603a4425dbfc4bce1758b7" prot="public">
+          <name>WebmVideo</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespace_openlabs_1_1_mgcxm_1_1_net_1a0190ca5d59602d92653be09f01e3fc18afb55b74df9472d8cca66dd07672e7f1f" prot="public">
+          <name>WebpImage</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespace_openlabs_1_1_mgcxm_1_1_net_1a0190ca5d59602d92653be09f01e3fc18a9ec8e4e3ab4c7eeba097f27d7364d743" prot="public">
+          <name>Xml</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespace_openlabs_1_1_mgcxm_1_1_net_1a0190ca5d59602d92653be09f01e3fc18aa1bce3344d2d27389dd84f81b74b827b" prot="public">
+          <name>ZipArchive</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespace_openlabs_1_1_mgcxm_1_1_net_1a0190ca5d59602d92653be09f01e3fc18a5347c60c0d625a8702ead26e3eb58bdb" prot="public">
+          <name>UrlencodedForm</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespace_openlabs_1_1_mgcxm_1_1_net_1a0190ca5d59602d92653be09f01e3fc18a41c914e8496b12fbd8b8f84886cb3bf0" prot="public">
+          <name>MultipartForm</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/adenf/RiderProjects/Openlabs.Mgcxm/Openlabs.Mgcxm/Net/Http/HttpContentTypes.cs" line="8" column="7" bodyfile="C:/Users/adenf/RiderProjects/Openlabs.Mgcxm/Openlabs.Mgcxm/Net/Http/HttpContentTypes.cs" bodystart="9" bodyend="99"/>
+      </memberdef>
+      <memberdef kind="enum" id="namespace_openlabs_1_1_mgcxm_1_1_net_1a63268740291f4b97a3eb53abd380f84e" prot="public" static="no" strong="yes">
+        <type></type>
+        <name>HttpMethods</name>
+        <qualifiedname>Openlabs.Mgcxm.Net.HttpMethods</qualifiedname>
+        <enumvalue id="namespace_openlabs_1_1_mgcxm_1_1_net_1a63268740291f4b97a3eb53abd380f84ea696b031073e74bf2cb98e5ef201d4aa3" prot="public">
+          <name>UNKNOWN</name>
+          <briefdescription>
+<para>Represents an unknown or unsupported HTTP method. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespace_openlabs_1_1_mgcxm_1_1_net_1a63268740291f4b97a3eb53abd380f84ea7528035a93ee69cedb1dbddb2f0bfcc8" prot="public">
+          <name>GET</name>
+          <briefdescription>
+<para>Represents an HTTP GET method used to retrieve data from the server. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespace_openlabs_1_1_mgcxm_1_1_net_1a63268740291f4b97a3eb53abd380f84eaa02439ec229d8be0e74b0c1602392310" prot="public">
+          <name>POST</name>
+          <briefdescription>
+<para>Represents an HTTP POST method used to submit data to be processed by the server. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespace_openlabs_1_1_mgcxm_1_1_net_1a63268740291f4b97a3eb53abd380f84ea3e75383a5992a6d15fb81e872e46e256" prot="public">
+          <name>PUT</name>
+          <briefdescription>
+<para>Represents an HTTP PUT method used to update existing data on the server. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespace_openlabs_1_1_mgcxm_1_1_net_1a63268740291f4b97a3eb53abd380f84eae15e216fc1c639f787b1231ecdfa1bf8" prot="public">
+          <name>HEAD</name>
+          <briefdescription>
+<para>Represents an HTTP HEAD method used to request the headers of an HTTP response. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespace_openlabs_1_1_mgcxm_1_1_net_1a63268740291f4b97a3eb53abd380f84ea32f68a60cef40faedbc6af20298c1a1e" prot="public">
+          <name>DELETE</name>
+          <briefdescription>
+<para>Represents an HTTP DELETE method used to request the deletion of a resource on the server. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>An enumeration of all supported HTTP methods. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/adenf/RiderProjects/Openlabs.Mgcxm/Openlabs.Mgcxm/Net/Http/HttpMethods.cs" line="8" column="7" bodyfile="C:/Users/adenf/RiderProjects/Openlabs.Mgcxm/Openlabs.Mgcxm/Net/Http/HttpMethods.cs" bodystart="9" bodyend="39"/>
+      </memberdef>
+      <memberdef kind="enum" id="namespace_openlabs_1_1_mgcxm_1_1_net_1a3465bc704788a5ead88ca632927a5dfd" prot="public" static="no" strong="yes">
+        <type></type>
+        <name>HttpStatusCodes</name>
+        <qualifiedname>Openlabs.Mgcxm.Net.HttpStatusCodes</qualifiedname>
+        <enumvalue id="namespace_openlabs_1_1_mgcxm_1_1_net_1a3465bc704788a5ead88ca632927a5dfdaa0bfb8e59e6c13fc8d990781f77694fe" prot="public">
+          <name>Continue</name>
+          <initializer>= 100</initializer>
+          <briefdescription>
+<para>Equivalent to HTTP status 100. HttpStatusCodes.Continue indicates that the client can continue with its request. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespace_openlabs_1_1_mgcxm_1_1_net_1a3465bc704788a5ead88ca632927a5dfda548c5a637eddf65132b21411aeafc6a1" prot="public">
+          <name>SwitchingProtocols</name>
+          <briefdescription>
+<para>Equivalent to HTTP status 101. HttpStatusCodes.SwitchingProtocols indicates that the protocol version or protocol is being changed. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespace_openlabs_1_1_mgcxm_1_1_net_1a3465bc704788a5ead88ca632927a5dfdae0aa021e21dddbd6d8cecec71e9cf564" prot="public">
+          <name>OK</name>
+          <initializer>= 200</initializer>
+          <briefdescription>
+<para>Equivalent to HTTP status 200. HttpStatusCodes.OK indicates that the request succeeded and that the requested information is in the response. This is the most common status code to receive. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespace_openlabs_1_1_mgcxm_1_1_net_1a3465bc704788a5ead88ca632927a5dfda0eceeb45861f9585dd7a97a3e36f85c6" prot="public">
+          <name>Created</name>
+          <briefdescription>
+<para>Equivalent to HTTP status 201. HttpStatusCodes.Created indicates that the request resulted in a new resource created before the response was sent. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespace_openlabs_1_1_mgcxm_1_1_net_1a3465bc704788a5ead88ca632927a5dfda382ab522931673c11e398ead1b7b1678" prot="public">
+          <name>Accepted</name>
+          <briefdescription>
+<para>Equivalent to HTTP status 202. HttpStatusCodes.Accepted indicates that the request has been accepted for further processing. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespace_openlabs_1_1_mgcxm_1_1_net_1a3465bc704788a5ead88ca632927a5dfda2d0ea43e788b779c0aec92366b711c2f" prot="public">
+          <name>NonAuthoritativeInformation</name>
+          <briefdescription>
+<para>Equivalent to HTTP status 203. HttpStatusCodes.NonAuthoritativeInformation indicates that the returned metainformation is from a cached copy instead of the origin server and therefore may be incorrect. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespace_openlabs_1_1_mgcxm_1_1_net_1a3465bc704788a5ead88ca632927a5dfdacd447f1ec89f564ebac583d60087df12" prot="public">
+          <name>NoContent</name>
+          <briefdescription>
+<para>Equivalent to HTTP status 204. HttpStatusCodes.NoContent indicates that the request has been successfully processed and that the response is intentionally blank. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespace_openlabs_1_1_mgcxm_1_1_net_1a3465bc704788a5ead88ca632927a5dfda4e9202c31896211f63be5b7345a897ed" prot="public">
+          <name>ResetContent</name>
+          <briefdescription>
+<para>Equivalent to HTTP status 205. HttpStatusCodes.ResetContent indicates that the client should reset (not reload) the current resource. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespace_openlabs_1_1_mgcxm_1_1_net_1a3465bc704788a5ead88ca632927a5dfda750de7eda10d780b3bbaefb57128c24b" prot="public">
+          <name>PartialContent</name>
+          <briefdescription>
+<para>Equivalent to HTTP status 206. HttpStatusCodes.PartialContent indicates that the response is a partial response as requested by a GET request that includes a byte range. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespace_openlabs_1_1_mgcxm_1_1_net_1a3465bc704788a5ead88ca632927a5dfdaa589749d075c3423333bdc93e3b4e774" prot="public">
+          <name>MultipleChoices</name>
+          <initializer>= 300</initializer>
+          <briefdescription>
+<para>Equivalent to HTTP status 300. HttpStatusCodes.MultipleChoices indicates that the requested information has multiple representations. The default action is to treat this status as a redirect and follow the contents of the Location header associated with this response. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespace_openlabs_1_1_mgcxm_1_1_net_1a3465bc704788a5ead88ca632927a5dfda02266588dfd4e565cc42949d0c73f28c" prot="public">
+          <name>Ambiguous</name>
+          <initializer>= 300</initializer>
+          <briefdescription>
+<para>Equivalent to HTTP status 300. HttpStatusCodes.Ambiguous indicates that the requested information has multiple representations. The default action is to treat this status as a redirect and follow the contents of the Location header associated with this response. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespace_openlabs_1_1_mgcxm_1_1_net_1a3465bc704788a5ead88ca632927a5dfda32638c25f4c913fce6214c2c4afff9dc" prot="public">
+          <name>MovedPermanently</name>
+          <briefdescription>
+<para>Equivalent to HTTP status 301. HttpStatusCodes.MovedPermanently indicates that the requested information has been moved to the URI specified in the Location header. The default action when this status is received is to follow the Location header associated with the response. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespace_openlabs_1_1_mgcxm_1_1_net_1a3465bc704788a5ead88ca632927a5dfda95bfdefaaf01553cbf21ccd942855c69" prot="public">
+          <name>Moved</name>
+          <initializer>= 301</initializer>
+          <briefdescription>
+<para>Equivalent to HTTP status 301. HttpStatusCodes.Moved indicates that the requested information has been moved to the URI specified in the Location header. The default action when this status is received is to follow the Location header associated with the response. When the original request method was POST, the redirected request will use the GET method. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespace_openlabs_1_1_mgcxm_1_1_net_1a3465bc704788a5ead88ca632927a5dfda5d695cc28c6a7ea955162fbdd0ae42b9" prot="public">
+          <name>Found</name>
+          <briefdescription>
+<para>Equivalent to HTTP status 302. HttpStatusCodes.Found indicates that the requested information is located at the URI specified in the Location header. The default action when this status is received is to follow the Location header associated with the response. When the original request method was POST, the redirected request will use the GET method. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespace_openlabs_1_1_mgcxm_1_1_net_1a3465bc704788a5ead88ca632927a5dfda4202ef115ebede37eb22297113f5fb32" prot="public">
+          <name>Redirect</name>
+          <initializer>= 302</initializer>
+          <briefdescription>
+<para>Equivalent to HTTP status 302. HttpStatusCodes.Redirect indicates that the requested information is located at the URI specified in the Location header. The default action when this status is received is to follow the Location header associated with the response. When the original request method was POST, the redirected request will use the GET method. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespace_openlabs_1_1_mgcxm_1_1_net_1a3465bc704788a5ead88ca632927a5dfda7843649eb3841f496a79303fd815029e" prot="public">
+          <name>SeeOther</name>
+          <briefdescription>
+<para>Equivalent to HTTP status 303. HttpStatusCodes.SeeOther automatically redirects the client to the URI specified in the Location header as the result of a POST. The request to the resource specified by the Location header will be made with a GET. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespace_openlabs_1_1_mgcxm_1_1_net_1a3465bc704788a5ead88ca632927a5dfda3d006d7cd9a99992b94bc01e54a067fc" prot="public">
+          <name>RedirectMethod</name>
+          <initializer>= 303</initializer>
+          <briefdescription>
+<para>Equivalent to HTTP status 303. HttpStatusCodes.RedirectMethod automatically redirects the client to the URI specified in the Location header as the result of a POST. The request to the resource specified by the Location header will be made with a GET. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespace_openlabs_1_1_mgcxm_1_1_net_1a3465bc704788a5ead88ca632927a5dfdac169e6d9a1b9442001384de8dcf49ab9" prot="public">
+          <name>NotModified</name>
+          <briefdescription>
+<para>Equivalent to HTTP status 304. HttpStatusCodes.NotModified indicates that the client&apos;s cached copy is up to date. The contents of the resource are not transferred. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespace_openlabs_1_1_mgcxm_1_1_net_1a3465bc704788a5ead88ca632927a5dfda0a272f25fd5e8a06065ef8ee41a88bea" prot="public">
+          <name>UseProxy</name>
+          <briefdescription>
+<para>Equivalent to HTTP status 305. HttpStatusCodes.UseProxy indicates that the request should use the proxy server at the URI specified in the Location header. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespace_openlabs_1_1_mgcxm_1_1_net_1a3465bc704788a5ead88ca632927a5dfda92e592d90b9548016776a6fb68dccded" prot="public">
+          <name>Unused</name>
+          <briefdescription>
+<para>Equivalent to HTTP status 306. HttpStatusCodes.Unused is a proposed extension to the HTTP/1.1 specification that is not fully specified. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespace_openlabs_1_1_mgcxm_1_1_net_1a3465bc704788a5ead88ca632927a5dfda1b73a351faf2b550d06fae9cc6e0a894" prot="public">
+          <name>TemporaryRedirect</name>
+          <briefdescription>
+<para>Equivalent to HTTP status 307. HttpStatusCodes.TemporaryRedirect indicates that the request information is located at the URI specified in the Location header. The default action when this status is received is to follow the Location header associated with the response. When the original request method was POST, the redirected request will also use the POST method. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespace_openlabs_1_1_mgcxm_1_1_net_1a3465bc704788a5ead88ca632927a5dfda5642a16c0f0774fec98ad5241b68f531" prot="public">
+          <name>RedirectKeepVerb</name>
+          <initializer>= 307</initializer>
+          <briefdescription>
+<para>Equivalent to HTTP status 307. HttpStatusCodes.RedirectKeepVerb indicates that the request information is located at the URI specified in the Location header. The default action when this status is received is to follow the Location header associated with the response. When the original request method was POST, the redirected request will also use the POST method. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespace_openlabs_1_1_mgcxm_1_1_net_1a3465bc704788a5ead88ca632927a5dfda9edf8fbf00a57d95a0af4923c9a1ec6f" prot="public">
+          <name>BadRequest</name>
+          <initializer>= 400</initializer>
+          <briefdescription>
+<para>Equivalent to HTTP status 400. HttpStatusCodes.BadRequest indicates that the request could not be understood by the server. HttpStatusCodes.BadRequest is sent when no other error is applicable, or if the exact error is unknown or does not have its own error code. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespace_openlabs_1_1_mgcxm_1_1_net_1a3465bc704788a5ead88ca632927a5dfdae06d1ba70f1331e9f9a113cc2f887d3f" prot="public">
+          <name>Unauthorized</name>
+          <briefdescription>
+<para>Equivalent to HTTP status 401. HttpStatusCodes.Unauthorized indicates that the requested resource requires authentication. The WWW-Authenticate header contains the details of how to perform the authentication. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespace_openlabs_1_1_mgcxm_1_1_net_1a3465bc704788a5ead88ca632927a5dfda4c99006c75b53fe48865cdfa0ac065ba" prot="public">
+          <name>PaymentRequired</name>
+          <briefdescription>
+<para>Equivalent to HTTP status 402. HttpStatusCodes.PaymentRequired is reserved for future use. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespace_openlabs_1_1_mgcxm_1_1_net_1a3465bc704788a5ead88ca632927a5dfda722969577a96ca3953e84e3d949dee81" prot="public">
+          <name>Forbidden</name>
+          <briefdescription>
+<para>Equivalent to HTTP status 403. HttpStatusCodes.Forbidden indicates that the server refuses to fulfill the request. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespace_openlabs_1_1_mgcxm_1_1_net_1a3465bc704788a5ead88ca632927a5dfda38c300f4fc9ce8a77aad4a30de05cad8" prot="public">
+          <name>NotFound</name>
+          <briefdescription>
+<para>Equivalent to HTTP status 404. HttpStatusCodes.NotFound indicates that the requested resource does not exist on the server. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespace_openlabs_1_1_mgcxm_1_1_net_1a3465bc704788a5ead88ca632927a5dfda8ba68fee5542f5fd071aed140c39bd8e" prot="public">
+          <name>MethodNotAllowed</name>
+          <briefdescription>
+<para>Equivalent to HTTP status 405. HttpStatusCodes.MethodNotAllowed indicates that the request method (POST or GET) is not allowed on the requested resource. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespace_openlabs_1_1_mgcxm_1_1_net_1a3465bc704788a5ead88ca632927a5dfdaf83a928e6a3f3b502ffadd2a414ce48c" prot="public">
+          <name>NotAcceptable</name>
+          <briefdescription>
+<para>Equivalent to HTTP status 406. HttpStatusCodes.NotAcceptable indicates that the client has indicated with Accept headers that it will not accept any of the available representations of the resource. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespace_openlabs_1_1_mgcxm_1_1_net_1a3465bc704788a5ead88ca632927a5dfda59a2898a8bf9da75a5855e76110f06f2" prot="public">
+          <name>ProxyAuthenticationRequired</name>
+          <briefdescription>
+<para>Equivalent to HTTP status 407. HttpStatusCodes.ProxyAuthenticationRequired indicates that the requested proxy requires authentication. The Proxy-authenticate header contains the details of how to perform the authentication. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespace_openlabs_1_1_mgcxm_1_1_net_1a3465bc704788a5ead88ca632927a5dfda3632c2e4e6225d4d9fcd2a6fd2c65048" prot="public">
+          <name>RequestTimeout</name>
+          <briefdescription>
+<para>Equivalent to HTTP status 408. HttpStatusCodes.RequestTimeout indicates that the client did not send a request within the time the server was expecting the request. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespace_openlabs_1_1_mgcxm_1_1_net_1a3465bc704788a5ead88ca632927a5dfdaf1d4ac54357cc0932f385d56814ba7e4" prot="public">
+          <name>Conflict</name>
+          <briefdescription>
+<para>Equivalent to HTTP status 409. HttpStatusCodes.Conflict indicates that the request could not be carried out because of a conflict on the server. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespace_openlabs_1_1_mgcxm_1_1_net_1a3465bc704788a5ead88ca632927a5dfda0b497b33b1a05057bc1634e607170bf6" prot="public">
+          <name>Gone</name>
+          <briefdescription>
+<para>Equivalent to HTTP status 410. HttpStatusCodes.Gone indicates that the requested resource is no longer available. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespace_openlabs_1_1_mgcxm_1_1_net_1a3465bc704788a5ead88ca632927a5dfda8282fb93cb1cf45b135ea191668ca583" prot="public">
+          <name>LengthRequired</name>
+          <briefdescription>
+<para>Equivalent to HTTP status 411. HttpStatusCodes.LengthRequired indicates that the required Content-length header is missing. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespace_openlabs_1_1_mgcxm_1_1_net_1a3465bc704788a5ead88ca632927a5dfda3542a02d18f11f46d53990d91752a6d4" prot="public">
+          <name>PreconditionFailed</name>
+          <briefdescription>
+<para>Equivalent to HTTP status 412. HttpStatusCodes.PreconditionFailed indicates that a condition set for this request failed, and the request cannot be carried out. Conditions are set with conditional request headers like If-Match, If-None-Match, or If-Unmodified-Since. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespace_openlabs_1_1_mgcxm_1_1_net_1a3465bc704788a5ead88ca632927a5dfda1d2dd18ee1a925e5887cbc2f9202e779" prot="public">
+          <name>RequestEntityTooLarge</name>
+          <briefdescription>
+<para>Equivalent to HTTP status 413. HttpStatusCodes.RequestEntityTooLarge indicates that the request is too large for the server to process. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespace_openlabs_1_1_mgcxm_1_1_net_1a3465bc704788a5ead88ca632927a5dfda08ad854bbc441f4edb6828769f8d3399" prot="public">
+          <name>RequestUriTooLong</name>
+          <briefdescription>
+<para>Equivalent to HTTP status 414. HttpStatusCodes.RequestUriTooLong indicates that the URI is too long. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespace_openlabs_1_1_mgcxm_1_1_net_1a3465bc704788a5ead88ca632927a5dfdaa3219a6843adbb23de79b4df9c307f5d" prot="public">
+          <name>UnsupportedMediaType</name>
+          <briefdescription>
+<para>Equivalent to HTTP status 415. HttpStatusCodes.UnsupportedMediaType indicates that the request is an unsupported type. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespace_openlabs_1_1_mgcxm_1_1_net_1a3465bc704788a5ead88ca632927a5dfda7779e53fc887ac0429f4ebde5fc0b59f" prot="public">
+          <name>RequestedRangeNotSatisfiable</name>
+          <briefdescription>
+<para>Equivalent to HTTP status 416. HttpStatusCodes.RequestedRangeNotSatisfiable indicates that the range of data requested from the resource cannot be returned, either because the beginning of the range is before the beginning of the resource, or the end of the range is after the end of the resource. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespace_openlabs_1_1_mgcxm_1_1_net_1a3465bc704788a5ead88ca632927a5dfda6af78095a2be4a230ba87f03dd131830" prot="public">
+          <name>ExpectationFailed</name>
+          <briefdescription>
+<para>Equivalent to HTTP status 417. HttpStatusCodes.ExpectationFailed indicates that an expectation given in an Expect header could not be met by the server. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespace_openlabs_1_1_mgcxm_1_1_net_1a3465bc704788a5ead88ca632927a5dfdae0eaea96be1ec038b859e02cc5330827" prot="public">
+          <name>UpgradeRequired</name>
+          <initializer>= 426</initializer>
+          <briefdescription>
+<para>Equivalent to HTTP status 426. HttpStatusCodes.UpgradeRequired indicates that the client should switch to a different protocol such as TLS/1.0. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespace_openlabs_1_1_mgcxm_1_1_net_1a3465bc704788a5ead88ca632927a5dfdaecbf01325f1c744e9d7bb586ac2eb5ed" prot="public">
+          <name>InternalServerError</name>
+          <initializer>= 500</initializer>
+          <briefdescription>
+<para>Equivalent to HTTP status 500. HttpStatusCodes.InternalServerError indicates that a generic error has occurred on the server. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespace_openlabs_1_1_mgcxm_1_1_net_1a3465bc704788a5ead88ca632927a5dfda997ca4ce119685f40f03a9a8a6c5346e" prot="public">
+          <name>NotImplemented</name>
+          <briefdescription>
+<para>Equivalent to HTTP status 501. HttpStatusCodes.NotImplemented indicates that the server does not support the requested function. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespace_openlabs_1_1_mgcxm_1_1_net_1a3465bc704788a5ead88ca632927a5dfda0e7c9ad08be0653518bf456c9994ace5" prot="public">
+          <name>BadGateway</name>
+          <briefdescription>
+<para>Equivalent to HTTP status 502. HttpStatusCodes.BadGateway indicates that an intermediate proxy server received a bad response from another proxy or the origin server. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespace_openlabs_1_1_mgcxm_1_1_net_1a3465bc704788a5ead88ca632927a5dfda2a4581043d849bcb0e4747970ef1489b" prot="public">
+          <name>ServiceUnavailable</name>
+          <briefdescription>
+<para>Equivalent to HTTP status 503. HttpStatusCodes.ServiceUnavailable indicates that the server is temporarily unavailable, usually due to high load or maintenance. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespace_openlabs_1_1_mgcxm_1_1_net_1a3465bc704788a5ead88ca632927a5dfdada405cbc74723dfdda615e3f679ef2be" prot="public">
+          <name>GatewayTimeout</name>
+          <briefdescription>
+<para>Equivalent to HTTP status 504. HttpStatusCodes.GatewayTimeout indicates that an intermediate proxy server timed out while waiting for a response from another proxy or the origin server. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespace_openlabs_1_1_mgcxm_1_1_net_1a3465bc704788a5ead88ca632927a5dfda56a7a02e415f5bf106088218f646c04f" prot="public">
+          <name>HttpVersionNotSupported</name>
+          <briefdescription>
+<para>Equivalent to HTTP status 505. HttpStatusCodes.HttpVersionNotSupported indicates that the requested HTTP version is not supported by the server. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>Contains the values of status codes defined for HTTP. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/adenf/RiderProjects/Openlabs.Mgcxm/Openlabs.Mgcxm/Net/Http/HttpStatusCodes.cs" line="6" column="7" bodyfile="C:/Users/adenf/RiderProjects/Openlabs.Mgcxm/Openlabs.Mgcxm/Net/Http/HttpStatusCodes.cs" bodystart="7" bodyend="148"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="namespace_openlabs_1_1_mgcxm_1_1_net_1affacc6bf2b6a12de7307197182a70877" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>delegate void</type>
+        <definition>delegate void Openlabs.Mgcxm.Net.OnEndpointRequested</definition>
+        <argsstring>(MgcxmHttpRequest request, MgcxmHttpResponse response)</argsstring>
+        <name>OnEndpointRequested</name>
+        <qualifiedname>Openlabs.Mgcxm.Net.OnEndpointRequested</qualifiedname>
+        <param>
+          <type><ref refid="class_openlabs_1_1_mgcxm_1_1_net_1_1_mgcxm_http_request" kindref="compound">MgcxmHttpRequest</ref></type>
+          <declname>request</declname>
+        </param>
+        <param>
+          <type><ref refid="class_openlabs_1_1_mgcxm_1_1_net_1_1_mgcxm_http_response" kindref="compound">MgcxmHttpResponse</ref></type>
+          <declname>response</declname>
+        </param>
+        <briefdescription>
+<para>Delegate representing a callback for handling endpoint requests. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>request</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The MgcxmHttpRequest object representing the incoming request.</para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>response</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The MgcxmHttpResponse object used to construct the response.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/adenf/RiderProjects/Openlabs.Mgcxm/Openlabs.Mgcxm/Net/Http/MgcxmHttpEndpoint.cs" line="157" column="22" declfile="C:/Users/adenf/RiderProjects/Openlabs.Mgcxm/Openlabs.Mgcxm/Net/Http/MgcxmHttpEndpoint.cs" declline="157" declcolumn="22"/>
+      </memberdef>
+      <memberdef kind="function" id="namespace_openlabs_1_1_mgcxm_1_1_net_1ae932ef589bc25b872380eab138472bfa" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>delegate Task</type>
+        <definition>delegate Task Openlabs.Mgcxm.Net.AsyncListenTask</definition>
+        <argsstring>(HttpListener listener)</argsstring>
+        <name>AsyncListenTask</name>
+        <qualifiedname>Openlabs.Mgcxm.Net.AsyncListenTask</qualifiedname>
+        <param>
+          <type>HttpListener</type>
+          <declname>listener</declname>
+        </param>
+        <briefdescription>
+<para>Delegate representing an asynchronous listen task for the HTTP listener. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>listener</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The HttpListener instance to listen for requests.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/adenf/RiderProjects/Openlabs.Mgcxm/Openlabs.Mgcxm/Net/Http/MgcxmHttpListener.cs" line="407" column="22" declfile="C:/Users/adenf/RiderProjects/Openlabs.Mgcxm/Openlabs.Mgcxm/Net/Http/MgcxmHttpListener.cs" declline="407" declcolumn="22"/>
+        <references refid="namespace_openlabs_1_1_mgcxm_1_1_net_1ae932ef589bc25b872380eab138472bfa">Openlabs.Mgcxm.Net.AsyncListenTask</references>
+        <referencedby refid="namespace_openlabs_1_1_mgcxm_1_1_net_1ae932ef589bc25b872380eab138472bfa">Openlabs.Mgcxm.Net.AsyncListenTask</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="namespace_openlabs_1_1_mgcxm_1_1_net_1ad2a2bbd4000fbc64e0bfc269bbadd132" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>delegate void</type>
+        <definition>delegate void Openlabs.Mgcxm.Net.OnSocketUpgraded</definition>
+        <argsstring>(MgcxmSocket socket)</argsstring>
+        <name>OnSocketUpgraded</name>
+        <qualifiedname>Openlabs.Mgcxm.Net.OnSocketUpgraded</qualifiedname>
+        <param>
+          <type><ref refid="class_openlabs_1_1_mgcxm_1_1_net_1_1_mgcxm_socket" kindref="compound">MgcxmSocket</ref></type>
+          <declname>socket</declname>
+        </param>
+        <briefdescription>
+<para>Represents a delegate for the callback function used when a WebSocket is upgraded. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>socket</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The MgcxmSocket representing the upgraded WebSocket.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/adenf/RiderProjects/Openlabs.Mgcxm/Openlabs.Mgcxm/Net/WebSocket/MgcxmSocketRoute.cs" line="87" column="22" declfile="C:/Users/adenf/RiderProjects/Openlabs.Mgcxm/Openlabs.Mgcxm/Net/WebSocket/MgcxmSocketRoute.cs" declline="87" declcolumn="22"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/Users/adenf/RiderProjects/Openlabs.Mgcxm/Openlabs.Mgcxm/Net/Attributes/CommonMimeTypeAttribute.cs" line="3" column="1"/>
+  </compounddef>
+</doxygen>

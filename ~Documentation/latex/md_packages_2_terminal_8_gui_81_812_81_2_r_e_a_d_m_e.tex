@@ -1,0 +1,163 @@
+\chapter{README}
+\hypertarget{md_packages_2_terminal_8_gui_81_812_81_2_r_e_a_d_m_e}{}\label{md_packages_2_terminal_8_gui_81_812_81_2_r_e_a_d_m_e}\index{README@{README}}
+   \href{https://www.nuget.org/packages/Terminal.Gui}{\texttt{ }}  \href{https://www.nuget.org/packages/Terminal.Gui}{\texttt{ }} \mbox{[}\mbox{]}(LICENSE) 
+
+{\itshape {\bfseries{The current, stable, release of Terminal.\+Gui is \href{https://www.nuget.org/packages/Terminal.Gui}{\texttt{ v1.\+x}}. It is stable, rich, and broadly used. The team is now focused on designing and building a significant upgrade we\textquotesingle{}re referring to as {\ttfamily v2}. Therefore\+:}}}
+\begin{DoxyItemize}
+\item \texorpdfstring{$\ast$}{*}{\ttfamily v1} is now in maintenance mode, meaning we will accept PRs for v1.\+x (the {\ttfamily develop} branch) only for issues impacting existing functionality.\texorpdfstring{$\ast$}{*}
+\item {\itshape All new development happens on the {\ttfamily v2\+\_\+develop} branch. See the V2 discussion \href{https://github.com/gui-cs/Terminal.Gui/discussions/1940}{\texttt{ here}}.}
+\item {\itshape Developers are encouraged to continue building on \href{https://www.nuget.org/packages/Terminal.Gui}{\texttt{ v1.\+x}} until we announce {\ttfamily v2} is stable.}
+\end{DoxyItemize}
+
+{\bfseries{Terminal.\+Gui}}\+: A toolkit for building rich console apps for .NET, .NET Core, and Mono that works on Windows, the Mac, and Linux/\+Unix.
+
+\hypertarget{md_packages_2_terminal_8_gui_81_812_81_2_r_e_a_d_m_e_autotoc_md2}{}\doxysubsection{\texorpdfstring{Quick Start}{Quick Start}}\label{md_packages_2_terminal_8_gui_81_812_81_2_r_e_a_d_m_e_autotoc_md2}
+Paste these commands into your favorite terminal on Windows, Mac, or Linux. This will install the \href{https://github.com/gui-cs/Terminal.Gui.templates}{\texttt{ Terminal.\+Gui.\+Templates}}, create a new \"{}\+Hello World\"{} TUI app, and run it.
+
+(Press {\ttfamily CTRL-\/Q} to exit the app)
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{dotnet\ new\ -\/-\/install\ Terminal.Gui.templates}
+\DoxyCodeLine{dotnet\ new\ tui\ -\/n\ myproj}
+\DoxyCodeLine{cd\ myproj}
+\DoxyCodeLine{dotnet\ run}
+
+\end{DoxyCode}
+\hypertarget{md_packages_2_terminal_8_gui_81_812_81_2_r_e_a_d_m_e_autotoc_md3}{}\doxysubsection{\texorpdfstring{Documentation}{Documentation}}\label{md_packages_2_terminal_8_gui_81_812_81_2_r_e_a_d_m_e_autotoc_md3}
+
+\begin{DoxyItemize}
+\item \href{https://gui-cs.github.io/Terminal.Gui/index.html}{\texttt{ Documentation Home}}
+\item \href{https://gui-cs.github.io/Terminal.Gui/articles/overview.html}{\texttt{ Terminal.\+Gui Overview}}
+\item \href{https://gui-cs.github.io/Terminal.Gui/articles/views.html}{\texttt{ List of Views/\+Controls}}
+\item \href{https://gui-cs.github.io/Terminal.Gui/articles/index.html}{\texttt{ Conceptual Documentation}}
+\item \href{https://gui-cs.github.io/Terminal.Gui/api/Terminal.Gui/Terminal.Gui.html}{\texttt{ API Documentation}}
+\end{DoxyItemize}
+
+{\itshape The Documentation matches the most recent Nuget release from the {\ttfamily main} branch (\href{https://www.nuget.org/packages/Terminal.Gui}{\texttt{ }})}\hypertarget{md_packages_2_terminal_8_gui_81_812_81_2_r_e_a_d_m_e_autotoc_md4}{}\doxysubsection{\texorpdfstring{Features}{Features}}\label{md_packages_2_terminal_8_gui_81_812_81_2_r_e_a_d_m_e_autotoc_md4}
+
+\begin{DoxyItemize}
+\item {\bfseries{Cross Platform}} -\/ Windows, Mac, and Linux. Terminal drivers for Curses, \href{https://github.com/gui-cs/Terminal.Gui/issues/27}{\texttt{ Windows Console}}, and the .NET Console mean apps will work well on both color and monochrome terminals.
+\item {\bfseries{Keyboard and Mouse Input}} -\/ Both keyboard and mouse input are supported, including support for drag \& drop.
+\item {\bfseries{\href{https://gui-cs.github.io/Terminal.Gui/articles/overview.html\#layout}{\texttt{ Flexible Layout}}}} -\/ Supports both {\itshape Absolute layout} and an innovative {\itshape Computed Layout} system. {\itshape Computed Layout} makes it easy to layout controls relative to each other and enables dynamic terminal UIs.
+\item {\bfseries{Clipboard support}} -\/ Cut, Copy, and Paste of text provided through the \href{https://gui-cs.github.io/Terminal.Gui/api/Terminal.Gui/Terminal.Gui.Clipboard.html}{\texttt{ {\ttfamily Clipboard}}} class.
+\item {\bfseries{\href{https://gui-cs.github.io/Terminal.Gui/api/Terminal.Gui/Terminal.Gui.View.html}{\texttt{ Arbitrary Views}}}} -\/ All visible UI elements are subclasses of the {\ttfamily View} class, and these in turn can contain an arbitrary number of sub-\/views.
+\item {\bfseries{Advanced App Features}} -\/ The \href{https://gui-cs.github.io/Terminal.Gui/api/Terminal.Gui/Terminal.Gui.MainLoop.html}{\texttt{ Mainloop}} supports processing events, idle handlers, timers, and monitoring file descriptors. Most classes are safe for threading.
+\item {\bfseries{Reactive Extensions}} -\/ Use \href{https://github.com/dotnet/reactive}{\texttt{ reactive extensions}} and benefit from increased code readability, and the ability to apply the MVVM pattern and \href{https://www.reactiveui.net/}{\texttt{ Reactive\+UI}} data bindings. See the \href{https://github.com/gui-cs/Terminal.Gui/tree/master/ReactiveExample}{\texttt{ source code}} of a sample app in order to learn how to achieve this.
+\end{DoxyItemize}\hypertarget{md_packages_2_terminal_8_gui_81_812_81_2_r_e_a_d_m_e_autotoc_md5}{}\doxysubsection{\texorpdfstring{Showcase \& Examples}{Showcase \& Examples}}\label{md_packages_2_terminal_8_gui_81_812_81_2_r_e_a_d_m_e_autotoc_md5}
+
+\begin{DoxyItemize}
+\item {\bfseries{\href{https://github.com/gui-cs/Terminal.Gui/tree/master/UICatalog}{\texttt{ UI Catalog}}}} -\/ The UI Catalog project provides an easy to use and extend sample illustrating the capabilities of {\bfseries{Terminal.\+Gui}}. Run {\ttfamily dotnet run -\/-\/project UICatalog} to run the UI Catalog.
+\item {\bfseries{\href{https://github.com/gui-cs/Terminal.Gui/tree/master/Example}{\texttt{ C\# Example}}}} -\/ Run {\ttfamily dotnet run} in the {\ttfamily Example} directory to run the C\# Example.
+\item {\bfseries{\href{https://github.com/gui-cs/Terminal.Gui/tree/master/FSharpExample}{\texttt{ F\# Example}}}} -\/ An example showing how to build a Terminal.\+Gui app using F\#.
+\item {\bfseries{\href{https://github.com/gui-cs/Terminal.Gui/tree/master/ReactiveExample}{\texttt{ Reactive Example}}}} -\/ A sample app that shows how to use {\ttfamily System.\+Reactive} and {\ttfamily Reactive\+UI} with {\ttfamily Terminal.\+Gui}. The app uses the MVVM architecture that may seem familiar to folks coming from WPF, Xamarin Forms, UWP, Avalonia, or Windows Forms. In this app, we implement the data bindings using Reactive\+UI {\ttfamily When\+Any\+Value} syntax and \href{https://github.com/reactiveui/pharmacist}{\texttt{ Pharmacist}} — a tool that converts all events in a Nu\+Get package into observable wrappers.
+\item {\bfseries{\href{https://github.com/PowerShell/GraphicalTools}{\texttt{ Power\+Shell\textquotesingle{}s {\ttfamily Out-\/\+Console\+Grid\+View}}}}} -\/ {\ttfamily OCGV} sends the output from a command to an interactive table.
+\item {\bfseries{\href{https://github.com/En3Tho/PoshRedisViewer}{\texttt{ Posh\+Redis\+Viewer}}}} -\/ A compact Redis viewer module for Power\+Shell written in F\# and Gui.\+cs
+\item {\bfseries{\href{https://github.com/tznind/TerminalGuiDesigner}{\texttt{ Terminal\+Gui\+Designer}}}} -\/ Cross platform view designer for building Terminal.\+Gui applications.
+\end{DoxyItemize}
+
+See the \href{https://github.com/gui-cs/Terminal.Gui/tree/master/Terminal.Gui}{\texttt{ {\ttfamily Terminal.\+Gui/} README}} for an overview of how the library is structured. The \href{https://gui-cs.github.io/Terminal.Gui/articles/index.html}{\texttt{ Conceptual Documentation}} provides insight into core concepts.\hypertarget{md_packages_2_terminal_8_gui_81_812_81_2_r_e_a_d_m_e_autotoc_md6}{}\doxysubsection{\texorpdfstring{Sample Usage in C}{Sample Usage in C}}\label{md_packages_2_terminal_8_gui_81_812_81_2_r_e_a_d_m_e_autotoc_md6}
+The following example shows a basic Terminal.\+Gui application written in C\#\+:
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\textcolor{comment}{//\ A\ simple\ Terminal.Gui\ example\ in\ C\#\ -\/\ using\ C\#\ 9.0\ Top-\/level\ statements}}
+\DoxyCodeLine{}
+\DoxyCodeLine{\textcolor{keyword}{using\ }Terminal.Gui;}
+\DoxyCodeLine{}
+\DoxyCodeLine{Application.Run<ExampleWindow>\ ();}
+\DoxyCodeLine{}
+\DoxyCodeLine{System.Console.WriteLine\ (\$\textcolor{stringliteral}{"{}Username:\ \{((ExampleWindow)Application.Top).usernameText.Text\}"{}});}
+\DoxyCodeLine{}
+\DoxyCodeLine{\textcolor{comment}{//\ Before\ the\ application\ exits,\ reset\ Terminal.Gui\ for\ clean\ shutdown}}
+\DoxyCodeLine{Application.Shutdown\ ();}
+\DoxyCodeLine{}
+\DoxyCodeLine{\textcolor{comment}{//\ Defines\ a\ top-\/level\ window\ with\ border\ and\ title}}
+\DoxyCodeLine{\textcolor{keyword}{public}\ \textcolor{keyword}{class\ }ExampleWindow\ :\ Window\ \{}
+\DoxyCodeLine{\ \ \ \ \textcolor{keyword}{public}\ TextField\ usernameText;}
+\DoxyCodeLine{\ \ \ \ }
+\DoxyCodeLine{\ \ \ \ \textcolor{keyword}{public}\ ExampleWindow\ ()}
+\DoxyCodeLine{\ \ \ \ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ Title\ =\ \textcolor{stringliteral}{"{}Example\ App\ (Ctrl+Q\ to\ quit)"{}};}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{comment}{//\ Create\ input\ components\ and\ labels}}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ var\ usernameLabel\ =\ \textcolor{keyword}{new}\ Label\ ()\ \{\ }
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ Text\ =\ \textcolor{stringliteral}{"{}Username:"{}}\ }
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \};}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ usernameText\ =\ \textcolor{keyword}{new}\ TextField\ (\textcolor{stringliteral}{"{}"{}})\ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ Position\ text\ field\ adjacent\ to\ the\ label}}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ X\ =\ Pos.Right\ (usernameLabel)\ +\ 1,}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ Fill\ remaining\ horizontal\ space}}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ Width\ =\ Dim.Fill\ (),}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \};}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ var\ passwordLabel\ =\ \textcolor{keyword}{new}\ Label\ ()\ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ Text\ =\ \textcolor{stringliteral}{"{}Password:"{}},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ X\ =\ Pos.Left\ (usernameLabel),}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ Y\ =\ Pos.Bottom\ (usernameLabel)\ +\ 1}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \};}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ var\ passwordText\ =\ \textcolor{keyword}{new}\ TextField\ (\textcolor{stringliteral}{"{}"{}})\ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ Secret\ =\ \textcolor{keyword}{true},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ align\ with\ the\ text\ box\ above}}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ X\ =\ Pos.Left\ (usernameText),}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ Y\ =\ Pos.Top\ (passwordLabel),}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ Width\ =\ Dim.Fill\ (),}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \};}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{comment}{//\ Create\ login\ button}}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ var\ btnLogin\ =\ \textcolor{keyword}{new}\ Button\ ()\ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ Text\ =\ \textcolor{stringliteral}{"{}Login"{}},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ Y\ =\ Pos.Bottom(passwordLabel)\ +\ 1,}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ center\ the\ login\ button\ horizontally}}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ X\ =\ Pos.Center\ (),}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ IsDefault\ =\ \textcolor{keyword}{true},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \};}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{comment}{//\ When\ login\ button\ is\ clicked\ display\ a\ message\ popup}}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ btnLogin.Clicked\ +=\ ()\ =>\ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (usernameText.Text\ ==\ \textcolor{stringliteral}{"{}admin"{}}\ \&\&\ passwordText.Text\ ==\ \textcolor{stringliteral}{"{}password"{}})\ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ MessageBox.Query\ (\textcolor{stringliteral}{"{}Logging\ In"{}},\ \textcolor{stringliteral}{"{}Login\ Successful"{}},\ \textcolor{stringliteral}{"{}Ok"{}});}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ Application.RequestStop\ ();}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \}\ \textcolor{keywordflow}{else}\ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ MessageBox.ErrorQuery\ (\textcolor{stringliteral}{"{}Logging\ In"{}},\ \textcolor{stringliteral}{"{}Incorrect\ username\ or\ password"{}},\ \textcolor{stringliteral}{"{}Ok"{}});}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \};}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{comment}{//\ Add\ the\ views\ to\ the\ Window}}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \mbox{\hyperlink{namespace_openlabs_1_1_mgcxm_1_1_internal_ad2ef54d1161dd1cbb1948a60ce7bfe51aec211f7c20af43e742bf2570c3cb84f9}{Add}}\ (usernameLabel,\ usernameText,\ passwordLabel,\ passwordText,\ btnLogin);}
+\DoxyCodeLine{\ \ \ \ \}}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+
+
+When run the application looks as follows\+:
+
+
+
+{\itshape Sample application running}\hypertarget{md_packages_2_terminal_8_gui_81_812_81_2_r_e_a_d_m_e_autotoc_md7}{}\doxysubsection{\texorpdfstring{Installing}{Installing}}\label{md_packages_2_terminal_8_gui_81_812_81_2_r_e_a_d_m_e_autotoc_md7}
+Use Nu\+Get to install the {\ttfamily Terminal.\+Gui} Nu\+Get package\+: \href{https://www.nuget.org/packages/Terminal.Gui}{\texttt{ https\+://www.\+nuget.\+org/packages/\+Terminal.\+Gui}}\hypertarget{md_packages_2_terminal_8_gui_81_812_81_2_r_e_a_d_m_e_autotoc_md8}{}\doxysubsubsection{\texorpdfstring{Installation in .\+NET Core Projects}{Installation in .NET Core Projects}}\label{md_packages_2_terminal_8_gui_81_812_81_2_r_e_a_d_m_e_autotoc_md8}
+To install Terminal.\+Gui into a .NET Core project, use the {\ttfamily dotnet} CLI tool with following command.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{dotnet\ add\ package\ Terminal.Gui}
+
+\end{DoxyCode}
+
+
+Or, you can use the \href{https://github.com/gui-cs/Terminal.Gui.templates}{\texttt{ Terminal.\+Gui.\+Templates}}.\hypertarget{md_packages_2_terminal_8_gui_81_812_81_2_r_e_a_d_m_e_autotoc_md9}{}\doxysubsection{\texorpdfstring{Building the Library and Running the Examples}{Building the Library and Running the Examples}}\label{md_packages_2_terminal_8_gui_81_812_81_2_r_e_a_d_m_e_autotoc_md9}
+
+\begin{DoxyItemize}
+\item Windows, Mac, and Linux -\/ Build and run using the .NET SDK command line tools ({\ttfamily dotnet build} in the root directory). Run {\ttfamily UICatalog} with {\ttfamily dotnet run -\/-\/project UICatalog}.
+\item Windows -\/ Open {\ttfamily Terminal.\+sln} with Visual Studio 2022.
+\end{DoxyItemize}
+
+See CONTRIBUTING.md for instructions for downloading and forking the source.\hypertarget{md_packages_2_terminal_8_gui_81_812_81_2_r_e_a_d_m_e_autotoc_md10}{}\doxysubsection{\texorpdfstring{Contributing}{Contributing}}\label{md_packages_2_terminal_8_gui_81_812_81_2_r_e_a_d_m_e_autotoc_md10}
+See \href{https://github.com/gui-cs/Terminal.Gui/blob/master/CONTRIBUTING.md}{\texttt{ CONTRIBUTING.\+md}}.
+
+Debates on architecture and design can be found in Issues tagged with \href{https://github.com/gui-cs/Terminal.Gui/issues?q=is\%3Aopen+is\%3Aissue+label\%3Adesign}{\texttt{ design}}.\hypertarget{md_packages_2_terminal_8_gui_81_812_81_2_r_e_a_d_m_e_autotoc_md11}{}\doxysubsection{\texorpdfstring{History}{History}}\label{md_packages_2_terminal_8_gui_81_812_81_2_r_e_a_d_m_e_autotoc_md11}
+See \href{https://github.com/gui-cs/}{\texttt{ gui-\/cs}} for how this project came to be. 

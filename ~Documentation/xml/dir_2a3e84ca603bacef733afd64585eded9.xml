@@ -1,0 +1,14 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.7" xml:lang="en-US">
+  <compounddef id="dir_2a3e84ca603bacef733afd64585eded9" kind="dir">
+    <compoundname>C:/Users/adenf/RiderProjects/Openlabs.Mgcxm/Openlabs.Mgcxm/Internal/SystemObjects</compoundname>
+    <innerfile refid="_i_mgcxm_system_object_8cs">IMgcxmSystemObject.cs</innerfile>
+    <innerfile refid="_mgcxm_object_8cs">MgcxmObject.cs</innerfile>
+    <innerfile refid="_mgcxm_object_parts_8cs">MgcxmObjectParts.cs</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/Users/adenf/RiderProjects/Openlabs.Mgcxm/Openlabs.Mgcxm/Internal/SystemObjects/"/>
+  </compounddef>
+</doxygen>

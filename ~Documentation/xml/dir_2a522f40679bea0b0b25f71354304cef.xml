@@ -1,0 +1,15 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.7" xml:lang="en-US">
+  <compounddef id="dir_2a522f40679bea0b0b25f71354304cef" kind="dir">
+    <compoundname>C:/Users/adenf/RiderProjects/Openlabs.Mgcxm/Openlabs.Mgcxm/Common/JsonMapping</compoundname>
+    <innerfile refid="_json_constants_8cs">JsonConstants.cs</innerfile>
+    <innerfile refid="_json_parser_8cs">JsonParser.cs</innerfile>
+    <innerfile refid="_json_writer_8cs">JsonWriter.cs</innerfile>
+    <innerfile refid="_mgcxm_json_object_extensions_8cs">MgcxmJsonObjectExtensions.cs</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/Users/adenf/RiderProjects/Openlabs.Mgcxm/Openlabs.Mgcxm/Common/JsonMapping/"/>
+  </compounddef>
+</doxygen>

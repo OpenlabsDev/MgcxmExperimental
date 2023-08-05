@@ -1,0 +1,36 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="__jwt_validator_8cs" xml:lang="en-US">
+<title>C:/Users/adenf/RiderProjects/Openlabs.Mgcxm/Openlabs.Mgcxm/JWT/JwtValidator.cs File Reference</title>
+<indexterm><primary>C:/Users/adenf/RiderProjects/Openlabs.Mgcxm/Openlabs.Mgcxm/JWT/JwtValidator.cs</primary></indexterm>
+<simplesect>
+    <title>Classes    </title>
+        <itemizedlist>
+            <listitem><para>class <link linkend="_class_j_w_t_1_1_jwt_validator">JWT.JwtValidator</link></para>
+
+<para>Jwt validator. </para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Namespaces    </title>
+        <itemizedlist>
+            <listitem><para>namespace <link linkend="_namespace_j_w_t">JWT</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Typedefs    </title>
+        <itemizedlist>
+            <listitem><para>using <link linkend="__jwt_validator_8cs_1a49f7c509ca28625003350370ad50589b">IReadOnlyPayloadDictionary</link> = System.Collections.Generic.IReadOnlyDictionary&lt; string, object &gt;</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Typedef Documentation</title>
+<anchor xml:id="__jwt_validator_8cs_1a49f7c509ca28625003350370ad50589b"/><section>
+    <title>IReadOnlyPayloadDictionary</title>
+<indexterm><primary>IReadOnlyPayloadDictionary</primary><secondary>JwtValidator.cs</secondary></indexterm>
+<indexterm><primary>JwtValidator.cs</primary><secondary>IReadOnlyPayloadDictionary</secondary></indexterm>
+<para><computeroutput>using <link linkend="__token_expired_exception_8cs_1a49f7c509ca28625003350370ad50589b">IReadOnlyPayloadDictionary</link> =  System.Collections.Generic.IReadOnlyDictionary&lt;string, object&gt;</computeroutput></para></section>
+</section>
+</section>

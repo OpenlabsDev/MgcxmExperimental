@@ -1,0 +1,93 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.7" xml:lang="en-US">
+  <compounddef id="class_openlabs_1_1_mgcxm_1_1_common_1_1_random" kind="class" language="C#" prot="public">
+    <compoundname>Openlabs::Mgcxm::Common::Random</compoundname>
+      <sectiondef kind="private-static-attrib">
+      <memberdef kind="variable" id="class_openlabs_1_1_mgcxm_1_1_common_1_1_random_1a7e94791e695334fe1449610f6262a6b2" prot="private" static="yes" mutable="no">
+        <type>System.Random</type>
+        <definition>System.Random Openlabs.Mgcxm.Common.Random._rng</definition>
+        <argsstring></argsstring>
+        <name>_rng</name>
+        <qualifiedname>Openlabs.Mgcxm.Common.Random._rng</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/adenf/RiderProjects/Openlabs.Mgcxm/Openlabs.Mgcxm/Common/Random.cs" line="52" column="33" bodyfile="C:/Users/adenf/RiderProjects/Openlabs.Mgcxm/Openlabs.Mgcxm/Common/Random.cs" bodystart="52" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="class_openlabs_1_1_mgcxm_1_1_common_1_1_random_1aa844ad36e6c9c87ac64d97c56267e10c" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void Openlabs.Mgcxm.Common.Random.Init</definition>
+        <argsstring>(long state)</argsstring>
+        <name>Init</name>
+        <qualifiedname>Openlabs.Mgcxm.Common.Random.Init</qualifiedname>
+        <param>
+          <type>long</type>
+          <declname>state</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/adenf/RiderProjects/Openlabs.Mgcxm/Openlabs.Mgcxm/Common/Random.cs" line="19" column="24" bodyfile="C:/Users/adenf/RiderProjects/Openlabs.Mgcxm/Openlabs.Mgcxm/Common/Random.cs" bodystart="19" bodyend="26"/>
+      </memberdef>
+      <memberdef kind="function" id="class_openlabs_1_1_mgcxm_1_1_common_1_1_random_1aace403dacc35ba76f3e9cc361474e51c" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>static int Openlabs.Mgcxm.Common.Random.Range</definition>
+        <argsstring>(int min, int max)</argsstring>
+        <name>Range</name>
+        <qualifiedname>Openlabs.Mgcxm.Common.Random.Range</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>min</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>max</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/adenf/RiderProjects/Openlabs.Mgcxm/Openlabs.Mgcxm/Common/Random.cs" line="28" column="23" bodyfile="C:/Users/adenf/RiderProjects/Openlabs.Mgcxm/Openlabs.Mgcxm/Common/Random.cs" bodystart="28" bodyend="41"/>
+      </memberdef>
+      <memberdef kind="function" id="class_openlabs_1_1_mgcxm_1_1_common_1_1_random_1abb98ab55605d2524a6230bf04ff19a30" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void Openlabs.Mgcxm.Common.Random.FillBuffer</definition>
+        <argsstring>(byte[] buffer)</argsstring>
+        <name>FillBuffer</name>
+        <qualifiedname>Openlabs.Mgcxm.Common.Random.FillBuffer</qualifiedname>
+        <param>
+          <type>byte[]</type>
+          <declname>buffer</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/adenf/RiderProjects/Openlabs.Mgcxm/Openlabs.Mgcxm/Common/Random.cs" line="43" column="24" bodyfile="C:/Users/adenf/RiderProjects/Openlabs.Mgcxm/Openlabs.Mgcxm/Common/Random.cs" bodystart="43" bodyend="47"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/Users/adenf/RiderProjects/Openlabs.Mgcxm/Openlabs.Mgcxm/Common/Random.cs" line="8" column="15" bodyfile="C:/Users/adenf/RiderProjects/Openlabs.Mgcxm/Openlabs.Mgcxm/Common/Random.cs" bodystart="9" bodyend="54"/>
+    <listofallmembers>
+      <member refid="class_openlabs_1_1_mgcxm_1_1_common_1_1_random_1a7e94791e695334fe1449610f6262a6b2" prot="private" virt="non-virtual"><scope>Openlabs::Mgcxm::Common::Random</scope><name>_rng</name></member>
+      <member refid="class_openlabs_1_1_mgcxm_1_1_common_1_1_random_1abb98ab55605d2524a6230bf04ff19a30" prot="public" virt="non-virtual"><scope>Openlabs::Mgcxm::Common::Random</scope><name>FillBuffer</name></member>
+      <member refid="class_openlabs_1_1_mgcxm_1_1_common_1_1_random_1aa844ad36e6c9c87ac64d97c56267e10c" prot="public" virt="non-virtual"><scope>Openlabs::Mgcxm::Common::Random</scope><name>Init</name></member>
+      <member refid="class_openlabs_1_1_mgcxm_1_1_common_1_1_random_1aace403dacc35ba76f3e9cc361474e51c" prot="public" virt="non-virtual"><scope>Openlabs::Mgcxm::Common::Random</scope><name>Range</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

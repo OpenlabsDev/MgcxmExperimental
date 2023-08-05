@@ -1,0 +1,12 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.7" xml:lang="en-US">
+  <compounddef id="namespace_openlabs_1_1_mgcxm_1_1_net_1_1_authorization" kind="namespace" language="C#">
+    <compoundname>Openlabs::Mgcxm::Net::Authorization</compoundname>
+    <innerclass refid="struct_openlabs_1_1_mgcxm_1_1_net_1_1_authorization_1_1_access_token" prot="public">Openlabs::Mgcxm::Net::Authorization::AccessToken</innerclass>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/Users/adenf/RiderProjects/Openlabs.Mgcxm/Openlabs.Mgcxm/Net/Authorization/AccessToken.cs" line="3" column="1"/>
+  </compounddef>
+</doxygen>

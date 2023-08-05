@@ -1,0 +1,139 @@
+\doxysection{Openlabs.\+Mgcxm.\+Net.\+IMgcxm\+Http\+Response\+Modifiable Interface Reference}
+\hypertarget{interface_openlabs_1_1_mgcxm_1_1_net_1_1_i_mgcxm_http_response_modifiable}{}\label{interface_openlabs_1_1_mgcxm_1_1_net_1_1_i_mgcxm_http_response_modifiable}\index{Openlabs.Mgcxm.Net.IMgcxmHttpResponseModifiable@{Openlabs.Mgcxm.Net.IMgcxmHttpResponseModifiable}}
+
+
+Represents an interface for modifying an HTTP response.  
+
+
+
+
+Inheritance diagram for Openlabs.\+Mgcxm.\+Net.\+IMgcxm\+Http\+Response\+Modifiable\+:
+% FIG 0
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{interface_openlabs_1_1_mgcxm_1_1_net_1_1_i_mgcxm_http_response_modifiable}{IMgcxm\+Http\+Response\+Modifiable}} \mbox{\hyperlink{interface_openlabs_1_1_mgcxm_1_1_net_1_1_i_mgcxm_http_response_modifiable_a3869580b496b637b36dec73deee2709d}{Status}} (\mbox{\hyperlink{namespace_openlabs_1_1_mgcxm_1_1_net_a3465bc704788a5ead88ca632927a5dfd}{Http\+Status\+Codes}} status\+Code)
+\begin{DoxyCompactList}\small\item\em Sets the HTTP status code of the response. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{interface_openlabs_1_1_mgcxm_1_1_net_1_1_i_mgcxm_http_response_modifiable_a37941903d9b7a59d6a0657e043f3677b}{Get\+Status}} ()
+\begin{DoxyCompactList}\small\item\em Gets the HTTP status code of the response. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{interface_openlabs_1_1_mgcxm_1_1_net_1_1_i_mgcxm_http_response_modifiable}{IMgcxm\+Http\+Response\+Modifiable}} \mbox{\hyperlink{interface_openlabs_1_1_mgcxm_1_1_net_1_1_i_mgcxm_http_response_modifiable_a4a98f316f506db0fc3fa025eab572671}{Header}} (string key, string value)
+\begin{DoxyCompactList}\small\item\em Sets a header in the response. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{interface_openlabs_1_1_mgcxm_1_1_net_1_1_i_mgcxm_http_response_modifiable}{IMgcxm\+Http\+Response\+Modifiable}} \mbox{\hyperlink{interface_openlabs_1_1_mgcxm_1_1_net_1_1_i_mgcxm_http_response_modifiable_a41f4e421bfd86ae15e8095cd71a13eb3}{Content}} (\mbox{\hyperlink{namespace_openlabs_1_1_mgcxm_1_1_net_a0190ca5d59602d92653be09f01e3fc18}{Http\+Content\+Types}} content\+Type, byte\mbox{[}$\,$\mbox{]} data)
+\begin{DoxyCompactList}\small\item\em Sets the content of the response with a byte array and content type. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{interface_openlabs_1_1_mgcxm_1_1_net_1_1_i_mgcxm_http_response_modifiable}{IMgcxm\+Http\+Response\+Modifiable}} \mbox{\hyperlink{interface_openlabs_1_1_mgcxm_1_1_net_1_1_i_mgcxm_http_response_modifiable_a8a62fbd638fc4bfbcf7538ea4a9774b5}{Content}} (\mbox{\hyperlink{namespace_openlabs_1_1_mgcxm_1_1_net_a0190ca5d59602d92653be09f01e3fc18}{Http\+Content\+Types}} content\+Type, string data)
+\begin{DoxyCompactList}\small\item\em Sets the content of the response with a string data and content type. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{interface_openlabs_1_1_mgcxm_1_1_net_1_1_i_mgcxm_http_response_modifiable}{IMgcxm\+Http\+Response\+Modifiable}} \mbox{\hyperlink{interface_openlabs_1_1_mgcxm_1_1_net_1_1_i_mgcxm_http_response_modifiable_a3912590bde0582fcf16f45ddb6100b4d}{Content$<$ T $>$}} (T data)
+\begin{DoxyCompactList}\small\item\em Sets the content of the response by serializing an object to JSON and setting content type as JSON. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{interface_openlabs_1_1_mgcxm_1_1_net_1_1_i_mgcxm_http_response_modifiable}{IMgcxm\+Http\+Response\+Modifiable}} \mbox{\hyperlink{interface_openlabs_1_1_mgcxm_1_1_net_1_1_i_mgcxm_http_response_modifiable_a0a22ce913afef85a98ecf2e938141738}{File}} (string path)
+\begin{DoxyCompactList}\small\item\em Sets the content of the response from a file on disk. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Represents an interface for modifying an HTTP response. 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{interface_openlabs_1_1_mgcxm_1_1_net_1_1_i_mgcxm_http_response_modifiable_a41f4e421bfd86ae15e8095cd71a13eb3}\label{interface_openlabs_1_1_mgcxm_1_1_net_1_1_i_mgcxm_http_response_modifiable_a41f4e421bfd86ae15e8095cd71a13eb3} 
+\index{Openlabs.Mgcxm.Net.IMgcxmHttpResponseModifiable@{Openlabs.Mgcxm.Net.IMgcxmHttpResponseModifiable}!Content@{Content}}
+\index{Content@{Content}!Openlabs.Mgcxm.Net.IMgcxmHttpResponseModifiable@{Openlabs.Mgcxm.Net.IMgcxmHttpResponseModifiable}}
+\doxysubsubsection{\texorpdfstring{Content()}{Content()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{interface_openlabs_1_1_mgcxm_1_1_net_1_1_i_mgcxm_http_response_modifiable}{IMgcxm\+Http\+Response\+Modifiable}} Openlabs.\+Mgcxm.\+Net.\+IMgcxm\+Http\+Response\+Modifiable.\+Content (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespace_openlabs_1_1_mgcxm_1_1_net_a0190ca5d59602d92653be09f01e3fc18}{Http\+Content\+Types}}}]{content\+Type,  }\item[{byte\mbox{[}$\,$\mbox{]}}]{data }\end{DoxyParamCaption})}
+
+
+
+Sets the content of the response with a byte array and content type. 
+
+
+
+Implemented in \mbox{\hyperlink{class_openlabs_1_1_mgcxm_1_1_net_1_1_mgcxm_http_response_afcd126ac0006140d7e35896923360eac}{Openlabs.\+Mgcxm.\+Net.\+Mgcxm\+Http\+Response}}.
+
+Here is the caller graph for this function\+:
+% FIG 1
+\Hypertarget{interface_openlabs_1_1_mgcxm_1_1_net_1_1_i_mgcxm_http_response_modifiable_a8a62fbd638fc4bfbcf7538ea4a9774b5}\label{interface_openlabs_1_1_mgcxm_1_1_net_1_1_i_mgcxm_http_response_modifiable_a8a62fbd638fc4bfbcf7538ea4a9774b5} 
+\index{Openlabs.Mgcxm.Net.IMgcxmHttpResponseModifiable@{Openlabs.Mgcxm.Net.IMgcxmHttpResponseModifiable}!Content@{Content}}
+\index{Content@{Content}!Openlabs.Mgcxm.Net.IMgcxmHttpResponseModifiable@{Openlabs.Mgcxm.Net.IMgcxmHttpResponseModifiable}}
+\doxysubsubsection{\texorpdfstring{Content()}{Content()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{interface_openlabs_1_1_mgcxm_1_1_net_1_1_i_mgcxm_http_response_modifiable}{IMgcxm\+Http\+Response\+Modifiable}} Openlabs.\+Mgcxm.\+Net.\+IMgcxm\+Http\+Response\+Modifiable.\+Content (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespace_openlabs_1_1_mgcxm_1_1_net_a0190ca5d59602d92653be09f01e3fc18}{Http\+Content\+Types}}}]{content\+Type,  }\item[{string}]{data }\end{DoxyParamCaption})}
+
+
+
+Sets the content of the response with a string data and content type. 
+
+
+
+Implemented in \mbox{\hyperlink{class_openlabs_1_1_mgcxm_1_1_net_1_1_mgcxm_http_response_a7f8815a9b0b772f123b9ad59b3dd3037}{Openlabs.\+Mgcxm.\+Net.\+Mgcxm\+Http\+Response}}.
+
+\Hypertarget{interface_openlabs_1_1_mgcxm_1_1_net_1_1_i_mgcxm_http_response_modifiable_a3912590bde0582fcf16f45ddb6100b4d}\label{interface_openlabs_1_1_mgcxm_1_1_net_1_1_i_mgcxm_http_response_modifiable_a3912590bde0582fcf16f45ddb6100b4d} 
+\index{Openlabs.Mgcxm.Net.IMgcxmHttpResponseModifiable@{Openlabs.Mgcxm.Net.IMgcxmHttpResponseModifiable}!Content$<$ T $>$@{Content$<$ T $>$}}
+\index{Content$<$ T $>$@{Content$<$ T $>$}!Openlabs.Mgcxm.Net.IMgcxmHttpResponseModifiable@{Openlabs.Mgcxm.Net.IMgcxmHttpResponseModifiable}}
+\doxysubsubsection{\texorpdfstring{Content$<$ T $>$()}{Content< T >()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{interface_openlabs_1_1_mgcxm_1_1_net_1_1_i_mgcxm_http_response_modifiable}{IMgcxm\+Http\+Response\+Modifiable}} \mbox{\hyperlink{interface_openlabs_1_1_mgcxm_1_1_net_1_1_i_mgcxm_http_response_modifiable_a41f4e421bfd86ae15e8095cd71a13eb3}{Openlabs.\+Mgcxm.\+Net.\+IMgcxm\+Http\+Response\+Modifiable.\+Content}}$<$ T $>$ (\begin{DoxyParamCaption}\item[{T}]{data }\end{DoxyParamCaption})}
+
+
+
+Sets the content of the response by serializing an object to JSON and setting content type as JSON. 
+
+
+
+Implemented in \mbox{\hyperlink{class_openlabs_1_1_mgcxm_1_1_net_1_1_mgcxm_http_response_acc5744c7743a7d109c1e8a3b95c44eb5}{Openlabs.\+Mgcxm.\+Net.\+Mgcxm\+Http\+Response}}.
+
+\Hypertarget{interface_openlabs_1_1_mgcxm_1_1_net_1_1_i_mgcxm_http_response_modifiable_a0a22ce913afef85a98ecf2e938141738}\label{interface_openlabs_1_1_mgcxm_1_1_net_1_1_i_mgcxm_http_response_modifiable_a0a22ce913afef85a98ecf2e938141738} 
+\index{Openlabs.Mgcxm.Net.IMgcxmHttpResponseModifiable@{Openlabs.Mgcxm.Net.IMgcxmHttpResponseModifiable}!File@{File}}
+\index{File@{File}!Openlabs.Mgcxm.Net.IMgcxmHttpResponseModifiable@{Openlabs.Mgcxm.Net.IMgcxmHttpResponseModifiable}}
+\doxysubsubsection{\texorpdfstring{File()}{File()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{interface_openlabs_1_1_mgcxm_1_1_net_1_1_i_mgcxm_http_response_modifiable}{IMgcxm\+Http\+Response\+Modifiable}} Openlabs.\+Mgcxm.\+Net.\+IMgcxm\+Http\+Response\+Modifiable.\+File (\begin{DoxyParamCaption}\item[{string}]{path }\end{DoxyParamCaption})}
+
+
+
+Sets the content of the response from a file on disk. 
+
+
+
+Implemented in \mbox{\hyperlink{class_openlabs_1_1_mgcxm_1_1_net_1_1_mgcxm_http_response_a98f1581ab3108f9779ed9b8163782cdc}{Openlabs.\+Mgcxm.\+Net.\+Mgcxm\+Http\+Response}}.
+
+\Hypertarget{interface_openlabs_1_1_mgcxm_1_1_net_1_1_i_mgcxm_http_response_modifiable_a37941903d9b7a59d6a0657e043f3677b}\label{interface_openlabs_1_1_mgcxm_1_1_net_1_1_i_mgcxm_http_response_modifiable_a37941903d9b7a59d6a0657e043f3677b} 
+\index{Openlabs.Mgcxm.Net.IMgcxmHttpResponseModifiable@{Openlabs.Mgcxm.Net.IMgcxmHttpResponseModifiable}!GetStatus@{GetStatus}}
+\index{GetStatus@{GetStatus}!Openlabs.Mgcxm.Net.IMgcxmHttpResponseModifiable@{Openlabs.Mgcxm.Net.IMgcxmHttpResponseModifiable}}
+\doxysubsubsection{\texorpdfstring{GetStatus()}{GetStatus()}}
+{\footnotesize\ttfamily int Openlabs.\+Mgcxm.\+Net.\+IMgcxm\+Http\+Response\+Modifiable.\+Get\+Status (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Gets the HTTP status code of the response. 
+
+
+
+Implemented in \mbox{\hyperlink{class_openlabs_1_1_mgcxm_1_1_net_1_1_mgcxm_http_response_a81609d5c181c78f6976ec9910f172fe4}{Openlabs.\+Mgcxm.\+Net.\+Mgcxm\+Http\+Response}}.
+
+\Hypertarget{interface_openlabs_1_1_mgcxm_1_1_net_1_1_i_mgcxm_http_response_modifiable_a4a98f316f506db0fc3fa025eab572671}\label{interface_openlabs_1_1_mgcxm_1_1_net_1_1_i_mgcxm_http_response_modifiable_a4a98f316f506db0fc3fa025eab572671} 
+\index{Openlabs.Mgcxm.Net.IMgcxmHttpResponseModifiable@{Openlabs.Mgcxm.Net.IMgcxmHttpResponseModifiable}!Header@{Header}}
+\index{Header@{Header}!Openlabs.Mgcxm.Net.IMgcxmHttpResponseModifiable@{Openlabs.Mgcxm.Net.IMgcxmHttpResponseModifiable}}
+\doxysubsubsection{\texorpdfstring{Header()}{Header()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{interface_openlabs_1_1_mgcxm_1_1_net_1_1_i_mgcxm_http_response_modifiable}{IMgcxm\+Http\+Response\+Modifiable}} Openlabs.\+Mgcxm.\+Net.\+IMgcxm\+Http\+Response\+Modifiable.\+Header (\begin{DoxyParamCaption}\item[{string}]{key,  }\item[{string}]{value }\end{DoxyParamCaption})}
+
+
+
+Sets a header in the response. 
+
+
+
+Implemented in \mbox{\hyperlink{class_openlabs_1_1_mgcxm_1_1_net_1_1_mgcxm_http_response_a6e27b78714af3536741a6f5f59143f90}{Openlabs.\+Mgcxm.\+Net.\+Mgcxm\+Http\+Response}}.
+
+\Hypertarget{interface_openlabs_1_1_mgcxm_1_1_net_1_1_i_mgcxm_http_response_modifiable_a3869580b496b637b36dec73deee2709d}\label{interface_openlabs_1_1_mgcxm_1_1_net_1_1_i_mgcxm_http_response_modifiable_a3869580b496b637b36dec73deee2709d} 
+\index{Openlabs.Mgcxm.Net.IMgcxmHttpResponseModifiable@{Openlabs.Mgcxm.Net.IMgcxmHttpResponseModifiable}!Status@{Status}}
+\index{Status@{Status}!Openlabs.Mgcxm.Net.IMgcxmHttpResponseModifiable@{Openlabs.Mgcxm.Net.IMgcxmHttpResponseModifiable}}
+\doxysubsubsection{\texorpdfstring{Status()}{Status()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{interface_openlabs_1_1_mgcxm_1_1_net_1_1_i_mgcxm_http_response_modifiable}{IMgcxm\+Http\+Response\+Modifiable}} Openlabs.\+Mgcxm.\+Net.\+IMgcxm\+Http\+Response\+Modifiable.\+Status (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespace_openlabs_1_1_mgcxm_1_1_net_a3465bc704788a5ead88ca632927a5dfd}{Http\+Status\+Codes}}}]{status\+Code }\end{DoxyParamCaption})}
+
+
+
+Sets the HTTP status code of the response. 
+
+
+
+Implemented in \mbox{\hyperlink{class_openlabs_1_1_mgcxm_1_1_net_1_1_mgcxm_http_response_adc1b22b68bfa0cb2b9f0d5c86d23cd07}{Openlabs.\+Mgcxm.\+Net.\+Mgcxm\+Http\+Response}}.
+
+
+
+The documentation for this interface was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/adenf/\+Rider\+Projects/\+Openlabs.\+Mgcxm/\+Openlabs.\+Mgcxm/\+Net/\+Http/\mbox{\hyperlink{_mgcxm_http_response_8cs}{Mgcxm\+Http\+Response.\+cs}}\end{DoxyCompactItemize}

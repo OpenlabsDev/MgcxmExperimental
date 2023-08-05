@@ -1,0 +1,90 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.7" xml:lang="en-US">
+  <compounddef id="class_openlabs_1_1_mgcxm_1_1_tests_1_1_test_ws_server_1_1_client_connect_message" kind="class" language="C#" prot="public">
+    <compoundname>Openlabs::Mgcxm::Tests::TestWsServer::ClientConnectMessage</compoundname>
+      <sectiondef kind="property">
+      <memberdef kind="property" id="class_openlabs_1_1_mgcxm_1_1_tests_1_1_test_ws_server_1_1_client_connect_message_1ab481bdd63a45795dc8f4650ba1be75ad" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type>string</type>
+        <definition>string Openlabs.Mgcxm.Tests.TestWsServer.ClientConnectMessage.PlayerId</definition>
+        <argsstring></argsstring>
+        <name>PlayerId</name>
+        <qualifiedname>Openlabs.Mgcxm.Tests.TestWsServer.ClientConnectMessage.PlayerId</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/adenf/RiderProjects/Openlabs.Mgcxm/Openlabs.Mgcxm.Tests/TestWsServer.cs" line="60" column="23" bodyfile="C:/Users/adenf/RiderProjects/Openlabs.Mgcxm/Openlabs.Mgcxm.Tests/TestWsServer.cs" bodystart="60" bodyend="60"/>
+      </memberdef>
+      <memberdef kind="property" id="class_openlabs_1_1_mgcxm_1_1_tests_1_1_test_ws_server_1_1_client_connect_message_1a85083b6b3986ffae0ff0430622b73391" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type>string</type>
+        <definition>string Openlabs.Mgcxm.Tests.TestWsServer.ClientConnectMessage.AppVersion</definition>
+        <argsstring></argsstring>
+        <name>AppVersion</name>
+        <qualifiedname>Openlabs.Mgcxm.Tests.TestWsServer.ClientConnectMessage.AppVersion</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/adenf/RiderProjects/Openlabs.Mgcxm/Openlabs.Mgcxm.Tests/TestWsServer.cs" line="61" column="23" bodyfile="C:/Users/adenf/RiderProjects/Openlabs.Mgcxm/Openlabs.Mgcxm.Tests/TestWsServer.cs" bodystart="61" bodyend="61"/>
+      </memberdef>
+      <memberdef kind="property" id="class_openlabs_1_1_mgcxm_1_1_tests_1_1_test_ws_server_1_1_client_connect_message_1af627e5375716377136dd1c95197c71db" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type>string</type>
+        <definition>string Openlabs.Mgcxm.Tests.TestWsServer.ClientConnectMessage.IpAddress</definition>
+        <argsstring></argsstring>
+        <name>IpAddress</name>
+        <qualifiedname>Openlabs.Mgcxm.Tests.TestWsServer.ClientConnectMessage.IpAddress</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/adenf/RiderProjects/Openlabs.Mgcxm/Openlabs.Mgcxm.Tests/TestWsServer.cs" line="62" column="23" bodyfile="C:/Users/adenf/RiderProjects/Openlabs.Mgcxm/Openlabs.Mgcxm.Tests/TestWsServer.cs" bodystart="62" bodyend="62"/>
+      </memberdef>
+      <memberdef kind="property" id="class_openlabs_1_1_mgcxm_1_1_tests_1_1_test_ws_server_1_1_client_connect_message_1a3c1fb65fb454ab561b841a39f2cf3d98" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type>string</type>
+        <definition>string Openlabs.Mgcxm.Tests.TestWsServer.ClientConnectMessage.VRDevice</definition>
+        <argsstring></argsstring>
+        <name>VRDevice</name>
+        <qualifiedname>Openlabs.Mgcxm.Tests.TestWsServer.ClientConnectMessage.VRDevice</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/adenf/RiderProjects/Openlabs.Mgcxm/Openlabs.Mgcxm.Tests/TestWsServer.cs" line="63" column="23" bodyfile="C:/Users/adenf/RiderProjects/Openlabs.Mgcxm/Openlabs.Mgcxm.Tests/TestWsServer.cs" bodystart="63" bodyend="63"/>
+      </memberdef>
+      <memberdef kind="property" id="class_openlabs_1_1_mgcxm_1_1_tests_1_1_test_ws_server_1_1_client_connect_message_1a91e3c77b14463a9393d2ad562a07897a" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type>string</type>
+        <definition>string Openlabs.Mgcxm.Tests.TestWsServer.ClientConnectMessage.IsDevelopment</definition>
+        <argsstring></argsstring>
+        <name>IsDevelopment</name>
+        <qualifiedname>Openlabs.Mgcxm.Tests.TestWsServer.ClientConnectMessage.IsDevelopment</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/adenf/RiderProjects/Openlabs.Mgcxm/Openlabs.Mgcxm.Tests/TestWsServer.cs" line="64" column="23" bodyfile="C:/Users/adenf/RiderProjects/Openlabs.Mgcxm/Openlabs.Mgcxm.Tests/TestWsServer.cs" bodystart="64" bodyend="64"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/Users/adenf/RiderProjects/Openlabs.Mgcxm/Openlabs.Mgcxm.Tests/TestWsServer.cs" line="58" column="11" bodyfile="C:/Users/adenf/RiderProjects/Openlabs.Mgcxm/Openlabs.Mgcxm.Tests/TestWsServer.cs" bodystart="59" bodyend="65"/>
+    <listofallmembers>
+      <member refid="class_openlabs_1_1_mgcxm_1_1_tests_1_1_test_ws_server_1_1_client_connect_message_1a85083b6b3986ffae0ff0430622b73391" prot="public" virt="non-virtual"><scope>Openlabs::Mgcxm::Tests::TestWsServer::ClientConnectMessage</scope><name>AppVersion</name></member>
+      <member refid="class_openlabs_1_1_mgcxm_1_1_tests_1_1_test_ws_server_1_1_client_connect_message_1af627e5375716377136dd1c95197c71db" prot="public" virt="non-virtual"><scope>Openlabs::Mgcxm::Tests::TestWsServer::ClientConnectMessage</scope><name>IpAddress</name></member>
+      <member refid="class_openlabs_1_1_mgcxm_1_1_tests_1_1_test_ws_server_1_1_client_connect_message_1a91e3c77b14463a9393d2ad562a07897a" prot="public" virt="non-virtual"><scope>Openlabs::Mgcxm::Tests::TestWsServer::ClientConnectMessage</scope><name>IsDevelopment</name></member>
+      <member refid="class_openlabs_1_1_mgcxm_1_1_tests_1_1_test_ws_server_1_1_client_connect_message_1ab481bdd63a45795dc8f4650ba1be75ad" prot="public" virt="non-virtual"><scope>Openlabs::Mgcxm::Tests::TestWsServer::ClientConnectMessage</scope><name>PlayerId</name></member>
+      <member refid="class_openlabs_1_1_mgcxm_1_1_tests_1_1_test_ws_server_1_1_client_connect_message_1a3c1fb65fb454ab561b841a39f2cf3d98" prot="public" virt="non-virtual"><scope>Openlabs::Mgcxm::Tests::TestWsServer::ClientConnectMessage</scope><name>VRDevice</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,15 @@
+digraph "Openlabs.Mgcxm.Tests.TestServer.AvatarController.HttpGet_AvatarV2_Set"
+{
+ // LATEX_PDF_SIZE
+  bgcolor="transparent";
+  edge [fontname=Helvetica,fontsize=10,labelfontname=Helvetica,labelfontsize=10];
+  node [fontname=Helvetica,fontsize=10,shape=box,height=0.2,width=0.4];
+  rankdir="LR";
+  Node1 [id="Node000001",label="Openlabs.Mgcxm.Tests.Test\lServer.AvatarController.HttpGet\l_AvatarV2_Set",height=0.2,width=0.4,color="gray40", fillcolor="grey60", style="filled", fontcolor="black",tooltip=" "];
+  Node1 -> Node2 [id="edge7_Node000001_Node000002",color="steelblue1",style="solid",tooltip=" "];
+  Node2 [id="Node000002",label="Openlabs.Mgcxm.Net.Mgcxm\lHttpResponse.Status",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$class_openlabs_1_1_mgcxm_1_1_net_1_1_mgcxm_http_response.html#adc1b22b68bfa0cb2b9f0d5c86d23cd07",tooltip="Sets the HTTP status code of the response."];
+  Node1 -> Node3 [id="edge8_Node000001_Node000003",color="steelblue1",style="solid",tooltip=" "];
+  Node3 [id="Node000003",label="Openlabs.Mgcxm.Assets.DTOJson\lFileAsset.WriteDto",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$class_openlabs_1_1_mgcxm_1_1_assets_1_1_d_t_o_json_file_asset.html#aac4e39c13e9ea5e9a14b594501e70c4d",tooltip=" "];
+  Node3 -> Node4 [id="edge9_Node000003_Node000004",color="steelblue1",style="solid",tooltip=" "];
+  Node4 [id="Node000004",label="Openlabs.Mgcxm.Assets.File\lAsset.WriteString",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$class_openlabs_1_1_mgcxm_1_1_assets_1_1_file_asset.html#a0b2234ca9ec00924c19f199858bcb8fa",tooltip=" "];
+}

@@ -1,0 +1,14 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.7" xml:lang="en-US">
+  <compounddef id="namespace_openlabs_1_1_mgcxm_1_1_net_1_1_extensions" kind="namespace" language="C#">
+    <compoundname>Openlabs::Mgcxm::Net::Extensions</compoundname>
+    <innerclass refid="class_openlabs_1_1_mgcxm_1_1_net_1_1_extensions_1_1_http_listener_extensions" prot="public">Openlabs::Mgcxm::Net::Extensions::HttpListenerExtensions</innerclass>
+    <innerclass refid="class_openlabs_1_1_mgcxm_1_1_net_1_1_extensions_1_1_http_listener_request_extensions" prot="public">Openlabs::Mgcxm::Net::Extensions::HttpListenerRequestExtensions</innerclass>
+    <innerclass refid="class_openlabs_1_1_mgcxm_1_1_net_1_1_extensions_1_1_http_listener_response_extensions" prot="public">Openlabs::Mgcxm::Net::Extensions::HttpListenerResponseExtensions</innerclass>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/Users/adenf/RiderProjects/Openlabs.Mgcxm/Openlabs.Mgcxm/Net/Extensions/HttpExtensions.cs" line="5" column="1"/>
+  </compounddef>
+</doxygen>

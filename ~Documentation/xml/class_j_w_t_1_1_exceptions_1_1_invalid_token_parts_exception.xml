@@ -1,0 +1,69 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.7" xml:lang="en-US">
+  <compounddef id="class_j_w_t_1_1_exceptions_1_1_invalid_token_parts_exception" kind="class" language="C#" prot="public">
+    <compoundname>JWT::Exceptions::InvalidTokenPartsException</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">ArgumentOutOfRangeException</basecompoundref>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_j_w_t_1_1_exceptions_1_1_invalid_token_parts_exception_1acc9c179664280c4f31be71a5d52c0b7d" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>JWT.Exceptions.InvalidTokenPartsException.InvalidTokenPartsException</definition>
+        <argsstring>(string paramName)</argsstring>
+        <name>InvalidTokenPartsException</name>
+        <qualifiedname>JWT.Exceptions.InvalidTokenPartsException.InvalidTokenPartsException</qualifiedname>
+        <param>
+          <type>string</type>
+          <declname>paramName</declname>
+        </param>
+        <briefdescription>
+<para>Creates an instance of InvalidTokenPartsException </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>paramName</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The name of the parameter that caused the exception</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/adenf/RiderProjects/Openlabs.Mgcxm/Openlabs.Mgcxm/JWT/Exceptions/InvalidTokenPartsException.cs" line="14" column="16" bodyfile="C:/Users/adenf/RiderProjects/Openlabs.Mgcxm/Openlabs.Mgcxm/JWT/Exceptions/InvalidTokenPartsException.cs" bodystart="14" bodyend="17"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Represents an exception thrown when a token doesn&apos;t consist of 3 delimited by dot parts. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>ArgumentOutOfRangeException</label>
+      </node>
+      <node id="1">
+        <label>JWT.Exceptions.InvalidTokenPartsException</label>
+        <link refid="class_j_w_t_1_1_exceptions_1_1_invalid_token_parts_exception"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>ArgumentOutOfRangeException</label>
+      </node>
+      <node id="1">
+        <label>JWT.Exceptions.InvalidTokenPartsException</label>
+        <link refid="class_j_w_t_1_1_exceptions_1_1_invalid_token_parts_exception"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="C:/Users/adenf/RiderProjects/Openlabs.Mgcxm/Openlabs.Mgcxm/JWT/Exceptions/InvalidTokenPartsException.cs" line="8" column="11" bodyfile="C:/Users/adenf/RiderProjects/Openlabs.Mgcxm/Openlabs.Mgcxm/JWT/Exceptions/InvalidTokenPartsException.cs" bodystart="9" bodyend="18"/>
+    <listofallmembers>
+      <member refid="class_j_w_t_1_1_exceptions_1_1_invalid_token_parts_exception_1acc9c179664280c4f31be71a5d52c0b7d" prot="public" virt="non-virtual"><scope>JWT::Exceptions::InvalidTokenPartsException</scope><name>InvalidTokenPartsException</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

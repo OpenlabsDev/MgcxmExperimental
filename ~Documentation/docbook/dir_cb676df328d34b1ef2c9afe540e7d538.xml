@@ -1,0 +1,68 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_dir_cb676df328d34b1ef2c9afe540e7d538" xml:lang="en-US">
+<title>C:/Users/adenf/RiderProjects/Openlabs.Mgcxm/Openlabs.Mgcxm/JWT Directory Reference</title>
+<indexterm><primary>C:/Users/adenf/RiderProjects/Openlabs.Mgcxm/Openlabs.Mgcxm/JWT Directory Reference</primary></indexterm>
+Directory dependency graph for JWT:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="dir_cb676df328d34b1ef2c9afe540e7d538_dep.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+<simplesect>
+    <title>Directories    </title>
+        <itemizedlist>
+            <listitem><para>directory <link linkend="_dir_325711a34435a87debffeefe26b959ac">Algorithms</link></para>
+</listitem>
+            <listitem><para>directory <link linkend="_dir_ae26df19305ee0fef5eab7f40b32a9a3">Builder</link></para>
+</listitem>
+            <listitem><para>directory <link linkend="_dir_8698bff08e98054ccc6c25fe3a7d755b">Compatibility</link></para>
+</listitem>
+            <listitem><para>directory <link linkend="_dir_885dceb92dd5384d9d8686c217f11024">Exceptions</link></para>
+</listitem>
+            <listitem><para>directory <link linkend="_dir_88bc6f244d9e9aa33368120e8c7db293">Internal</link></para>
+</listitem>
+            <listitem><para>directory <link linkend="_dir_8be0f64ce914d228af7690dea223114b">Properties</link></para>
+</listitem>
+            <listitem><para>directory <link linkend="_dir_23703096fc4528b1ea6f71bbdbec4e5a">Serializers</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Files    </title>
+        <itemizedlist>
+            <listitem><para>file <link linkend="__i_base64_url_encoder_8cs">IBase64UrlEncoder.cs</link></para>
+</listitem>
+            <listitem><para>file <link linkend="__i_date_time_provider_8cs">IDateTimeProvider.cs</link></para>
+</listitem>
+            <listitem><para>file <link linkend="__i_json_serializer_8cs">IJsonSerializer.cs</link></para>
+</listitem>
+            <listitem><para>file <link linkend="__i_jwt_decoder_8cs">IJwtDecoder.cs</link></para>
+</listitem>
+            <listitem><para>file <link linkend="__i_jwt_encoder_8cs">IJwtEncoder.cs</link></para>
+</listitem>
+            <listitem><para>file <link linkend="__i_jwt_validator_8cs">IJwtValidator.cs</link></para>
+</listitem>
+            <listitem><para>file <link linkend="__jwt_base64_url_encoder_8cs">JwtBase64UrlEncoder.cs</link></para>
+</listitem>
+            <listitem><para>file <link linkend="__jwt_decoder_8cs">JwtDecoder.cs</link></para>
+</listitem>
+            <listitem><para>file <link linkend="__jwt_decoder_context_8cs">JwtDecoderContext.cs</link></para>
+</listitem>
+            <listitem><para>file <link linkend="__jwt_encoder_8cs">JwtEncoder.cs</link></para>
+</listitem>
+            <listitem><para>file <link linkend="__jwt_parts_8cs">JwtParts.cs</link></para>
+</listitem>
+            <listitem><para>file <link linkend="__jwt_validator_8cs">JwtValidator.cs</link></para>
+</listitem>
+            <listitem><para>file <link linkend="__unix_epoch_8cs">UnixEpoch.cs</link></para>
+</listitem>
+            <listitem><para>file <link linkend="__utc_date_time_provider_8cs">UtcDateTimeProvider.cs</link></para>
+</listitem>
+            <listitem><para>file <link linkend="__validation_parameters_8cs">ValidationParameters.cs</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+</section>

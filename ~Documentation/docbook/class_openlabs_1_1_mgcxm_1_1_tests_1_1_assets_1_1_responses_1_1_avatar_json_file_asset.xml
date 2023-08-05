@@ -1,0 +1,34 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_class_openlabs_1_1_mgcxm_1_1_tests_1_1_assets_1_1_responses_1_1_avatar_json_file_asset" xml:lang="en-US">
+<title>Openlabs.Mgcxm.Tests.Assets.Responses.AvatarJsonFileAsset Class Reference</title>
+<indexterm><primary>Openlabs.Mgcxm.Tests.Assets.Responses.AvatarJsonFileAsset</primary></indexterm>
+Inheritance diagram for Openlabs.Mgcxm.Tests.Assets.Responses.AvatarJsonFileAsset:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="class_openlabs_1_1_mgcxm_1_1_tests_1_1_assets_1_1_responses_1_1_avatar_json_file_asset__inherit__graph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+Collaboration diagram for Openlabs.Mgcxm.Tests.Assets.Responses.AvatarJsonFileAsset:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="class_openlabs_1_1_mgcxm_1_1_tests_1_1_assets_1_1_responses_1_1_avatar_json_file_asset__coll__graph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+<simplesect>
+    <title>Additional Inherited Members    </title>
+Public Member Functions inherited from <link linkend="_class_openlabs_1_1_mgcxm_1_1_assets_1_1_d_t_o_json_file_asset">Openlabs.Mgcxm.Assets.DTOJsonFileAsset&lt; DTO.AvatarDTO &gt;</link>        <itemizedlist>
+            <listitem><para>virtual TDtoType <link linkend="_class_openlabs_1_1_mgcxm_1_1_assets_1_1_d_t_o_json_file_asset_1a21983bb77e20dda6e2b883a580ce8625">ReadDto</link> ()</para>
+</listitem>
+            <listitem><para>virtual void <link linkend="_class_openlabs_1_1_mgcxm_1_1_assets_1_1_d_t_o_json_file_asset_1aac4e39c13e9ea5e9a14b594501e70c4d">WriteDto</link> (TDtoType dtoType)</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<para>
+The documentation for this class was generated from the following file:</para>
+C:/Users/adenf/RiderProjects/Openlabs.Mgcxm/Openlabs.Mgcxm.Tests/Assets/Responses/<link linkend="__avatar_json_file_asset_8cs">AvatarJsonFileAsset.cs</link></section>

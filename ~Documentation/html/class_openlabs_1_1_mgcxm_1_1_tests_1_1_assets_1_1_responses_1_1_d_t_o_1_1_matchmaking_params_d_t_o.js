@@ -1,0 +1,5 @@
+var class_openlabs_1_1_mgcxm_1_1_tests_1_1_assets_1_1_responses_1_1_d_t_o_1_1_matchmaking_params_d_t_o =
+[
+    [ "PreferEmptyRoomsFrequency", "class_openlabs_1_1_mgcxm_1_1_tests_1_1_assets_1_1_responses_1_1_d_t_o_1_1_matchmaking_params_d_t_o.html#a5b12c54afee16a05d741306d138649f2", null ],
+    [ "PreferFullRoomsFrequency", "class_openlabs_1_1_mgcxm_1_1_tests_1_1_assets_1_1_responses_1_1_d_t_o_1_1_matchmaking_params_d_t_o.html#ae48dedf556eb4d2a92b73cfea293a558", null ]
+];

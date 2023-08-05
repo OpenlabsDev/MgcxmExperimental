@@ -1,0 +1,13 @@
+digraph "Openlabs.Mgcxm.Common.Framework.EndpointUrl.FromString"
+{
+ // LATEX_PDF_SIZE
+  bgcolor="transparent";
+  edge [fontname=Helvetica,fontsize=10,labelfontname=Helvetica,labelfontsize=10];
+  node [fontname=Helvetica,fontsize=10,shape=box,height=0.2,width=0.4];
+  rankdir="RL";
+  Node1 [id="Node000001",label="Openlabs.Mgcxm.Common.Framework.\lEndpointUrl.FromString",height=0.2,width=0.4,color="gray40", fillcolor="grey60", style="filled", fontcolor="black",tooltip=" "];
+  Node1 -> Node2 [id="edge5_Node000001_Node000002",dir="back",color="steelblue1",style="solid",tooltip=" "];
+  Node2 [id="Node000002",label="Openlabs.Mgcxm.Common.Framework.\lEndpointUrl.FromString\< TEndpointUrl \>",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$class_openlabs_1_1_mgcxm_1_1_common_1_1_framework_1_1_endpoint_url.html#a730c6300912736e1239920e640608ad9",tooltip=" "];
+  Node1 -> Node3 [id="edge6_Node000001_Node000003",dir="back",color="steelblue1",style="solid",tooltip=" "];
+  Node3 [id="Node000003",label="Openlabs.Mgcxm.Common.Framework.\lOpenApiEndpointResolver.ResolveAll",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$class_openlabs_1_1_mgcxm_1_1_common_1_1_framework_1_1_open_api_endpoint_resolver.html#a5511fe30a12e498447f86bc592ec8982",tooltip=" "];
+}

@@ -1,0 +1,27 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_dir_2a522f40679bea0b0b25f71354304cef" xml:lang="en-US">
+<title>C:/Users/adenf/RiderProjects/Openlabs.Mgcxm/Openlabs.Mgcxm/Common/JsonMapping Directory Reference</title>
+<indexterm><primary>C:/Users/adenf/RiderProjects/Openlabs.Mgcxm/Openlabs.Mgcxm/Common/JsonMapping Directory Reference</primary></indexterm>
+Directory dependency graph for JsonMapping:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="dir_2a522f40679bea0b0b25f71354304cef_dep.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+<simplesect>
+    <title>Files    </title>
+        <itemizedlist>
+            <listitem><para>file <link linkend="__json_constants_8cs">JsonConstants.cs</link></para>
+</listitem>
+            <listitem><para>file <link linkend="__json_parser_8cs">JsonParser.cs</link></para>
+</listitem>
+            <listitem><para>file <link linkend="__json_writer_8cs">JsonWriter.cs</link></para>
+</listitem>
+            <listitem><para>file <link linkend="__mgcxm_json_object_extensions_8cs">MgcxmJsonObjectExtensions.cs</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+</section>

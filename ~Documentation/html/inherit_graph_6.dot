@@ -1,0 +1,21 @@
+digraph "Graphical Class Hierarchy"
+{
+ // LATEX_PDF_SIZE
+  bgcolor="transparent";
+  edge [fontname=Helvetica,fontsize=10,labelfontname=Helvetica,labelfontsize=10];
+  node [fontname=Helvetica,fontsize=10,shape=box,height=0.2,width=0.4];
+  rankdir="LR";
+  Node0 [id="Node000000",label="JWT.Algorithms.IAlgorithm\lFactory",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$interface_j_w_t_1_1_algorithms_1_1_i_algorithm_factory.html",tooltip="Provides IJwtAlgorithms."];
+  Node0 -> Node1 [id="edge27_Node000000_Node000001",dir="back",color="steelblue1",style="solid",tooltip=" "];
+  Node1 [id="Node000001",label="JWT.Algorithms.DelegateAlgorithm\lFactory",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$class_j_w_t_1_1_algorithms_1_1_delegate_algorithm_factory.html",tooltip="Implements  by returning the supplied  while ignoring parameters."];
+  Node0 -> Node2 [id="edge28_Node000000_Node000002",dir="back",color="steelblue1",style="solid",tooltip=" "];
+  Node2 [id="Node000002",label="JWT.Algorithms.GenericAlgorithm\lFactory\< TAlgo \>",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$class_j_w_t_1_1_algorithms_1_1_generic_algorithm_factory.html",tooltip=" "];
+  Node0 -> Node3 [id="edge29_Node000000_Node000003",dir="back",color="steelblue1",style="solid",tooltip=" "];
+  Node3 [id="Node000003",label="JWT.Algorithms.JwtAlgorithm\lFactory",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$class_j_w_t_1_1_algorithms_1_1_jwt_algorithm_factory.html",tooltip=" "];
+  Node3 -> Node4 [id="edge30_Node000003_Node000004",dir="back",color="steelblue1",style="solid",tooltip=" "];
+  Node4 [id="Node000004",label="JWT.Algorithms.HMACSHAAlgorithm\lFactory",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$class_j_w_t_1_1_algorithms_1_1_h_m_a_c_s_h_a_algorithm_factory.html",tooltip=" "];
+  Node4 -> Node5 [id="edge31_Node000004_Node000005",dir="back",color="steelblue1",style="solid",tooltip=" "];
+  Node5 [id="Node000005",label="JWT.Algorithms.ECDSAAlgorithm\lFactory",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$class_j_w_t_1_1_algorithms_1_1_e_c_d_s_a_algorithm_factory.html",tooltip=" "];
+  Node3 -> Node6 [id="edge32_Node000003_Node000006",dir="back",color="steelblue1",style="solid",tooltip=" "];
+  Node6 [id="Node000006",label="JWT.Algorithms.RSAlgorithm\lFactory",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$class_j_w_t_1_1_algorithms_1_1_r_s_algorithm_factory.html",tooltip=" "];
+}

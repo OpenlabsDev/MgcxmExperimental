@@ -1,0 +1,185 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.7" xml:lang="en-US">
+  <compounddef id="class_j_w_t_1_1_algorithms_1_1_h_m_a_c_s_h_a_algorithm" kind="class" language="C#" prot="public" abstract="yes">
+    <compoundname>JWT::Algorithms::HMACSHAAlgorithm</compoundname>
+    <basecompoundref refid="interface_j_w_t_1_1_algorithms_1_1_i_jwt_algorithm" prot="public" virt="non-virtual">JWT.Algorithms.IJwtAlgorithm</basecompoundref>
+    <derivedcompoundref refid="class_j_w_t_1_1_algorithms_1_1_h_m_a_c_s_h_a256_algorithm" prot="public" virt="non-virtual">JWT.Algorithms.HMACSHA256Algorithm</derivedcompoundref>
+    <derivedcompoundref refid="class_j_w_t_1_1_algorithms_1_1_h_m_a_c_s_h_a384_algorithm" prot="public" virt="non-virtual">JWT.Algorithms.HMACSHA384Algorithm</derivedcompoundref>
+    <derivedcompoundref refid="class_j_w_t_1_1_algorithms_1_1_h_m_a_c_s_h_a512_algorithm" prot="public" virt="non-virtual">JWT.Algorithms.HMACSHA512Algorithm</derivedcompoundref>
+      <sectiondef kind="package-static-attrib">
+      <memberdef kind="variable" id="class_j_w_t_1_1_algorithms_1_1_h_m_a_c_s_h_a_algorithm_1a78ead7ceb359513ab020f8bd7fb0bd1f" prot="package" static="yes" mutable="no">
+        <type>const string</type>
+        <definition>const string JWT.Algorithms.HMACSHAAlgorithm.ObsoleteMessage</definition>
+        <argsstring></argsstring>
+        <name>ObsoleteMessage</name>
+        <qualifiedname>JWT.Algorithms.HMACSHAAlgorithm.ObsoleteMessage</qualifiedname>
+        <initializer>= &quot;HMAC SHA based algorithms are not secure to protect modern web applications. Consider switching to RSASSA or ECDSA.&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/adenf/RiderProjects/Openlabs.Mgcxm/Openlabs.Mgcxm/JWT/Algorithms/HMACSHAAlgorithm.cs" line="9" column="31" bodyfile="C:/Users/adenf/RiderProjects/Openlabs.Mgcxm/Openlabs.Mgcxm/JWT/Algorithms/HMACSHAAlgorithm.cs" bodystart="9" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="property">
+      <memberdef kind="property" id="class_j_w_t_1_1_algorithms_1_1_h_m_a_c_s_h_a_algorithm_1aac90fb1cfa98ffbf305ebf71b80f0a3a" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="no" privatesettable="no" protectedsettable="no">
+        <type>abstract string</type>
+        <definition>abstract string JWT.Algorithms.HMACSHAAlgorithm.Name</definition>
+        <argsstring></argsstring>
+        <name>Name</name>
+        <qualifiedname>JWT.Algorithms.HMACSHAAlgorithm.Name</qualifiedname>
+        <reimplements refid="interface_j_w_t_1_1_algorithms_1_1_i_jwt_algorithm_1a62da69d146007031e3ce9d0e3e9e75d3">Name</reimplements>
+        <briefdescription>
+<para><para>Gets algorithm name.</para>
+ </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/adenf/RiderProjects/Openlabs.Mgcxm/Openlabs.Mgcxm/JWT/Algorithms/HMACSHAAlgorithm.cs" line="12" column="32" bodyfile="C:/Users/adenf/RiderProjects/Openlabs.Mgcxm/Openlabs.Mgcxm/JWT/Algorithms/HMACSHAAlgorithm.cs" bodystart="12" bodyend="12"/>
+      </memberdef>
+      <memberdef kind="property" id="class_j_w_t_1_1_algorithms_1_1_h_m_a_c_s_h_a_algorithm_1a1928f028261e861ddfc16c90052dcdec" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="no" privatesettable="no" protectedsettable="no">
+        <type>abstract HashAlgorithmName</type>
+        <definition>abstract HashAlgorithmName JWT.Algorithms.HMACSHAAlgorithm.HashAlgorithmName</definition>
+        <argsstring></argsstring>
+        <name>HashAlgorithmName</name>
+        <qualifiedname>JWT.Algorithms.HMACSHAAlgorithm.HashAlgorithmName</qualifiedname>
+        <reimplements refid="interface_j_w_t_1_1_algorithms_1_1_i_jwt_algorithm_1a5d291434247bc99339dc5e3b1dd2b934">HashAlgorithmName</reimplements>
+        <briefdescription>
+<para><para>Gets name of the hashing algorithm (e.g. SHA-256/SHA-384/SHA-512).</para>
+ </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/adenf/RiderProjects/Openlabs.Mgcxm/Openlabs.Mgcxm/JWT/Algorithms/HMACSHAAlgorithm.cs" line="15" column="43" bodyfile="C:/Users/adenf/RiderProjects/Openlabs.Mgcxm/Openlabs.Mgcxm/JWT/Algorithms/HMACSHAAlgorithm.cs" bodystart="15" bodyend="15"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_j_w_t_1_1_algorithms_1_1_h_m_a_c_s_h_a_algorithm_1ab50a4c7dddcd0cdb6649532086f1d706" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>byte[]</type>
+        <definition>byte[] JWT.Algorithms.HMACSHAAlgorithm.Sign</definition>
+        <argsstring>(byte[] key, byte[] bytesToSign)</argsstring>
+        <name>Sign</name>
+        <qualifiedname>JWT.Algorithms.HMACSHAAlgorithm.Sign</qualifiedname>
+        <reimplements refid="interface_j_w_t_1_1_algorithms_1_1_i_jwt_algorithm_1ad652a42a9eb189006c5a866a556826c0">Sign</reimplements>
+        <param>
+          <type>byte[]</type>
+          <declname>key</declname>
+        </param>
+        <param>
+          <type>byte[]</type>
+          <declname>bytesToSign</declname>
+        </param>
+        <briefdescription>
+<para><para>Signs provided byte array with provided key.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>key</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The key used to sign the data</para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>bytesToSign</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The data to sign</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+ </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/adenf/RiderProjects/Openlabs.Mgcxm/Openlabs.Mgcxm/JWT/Algorithms/HMACSHAAlgorithm.cs" line="18" column="21" bodyfile="C:/Users/adenf/RiderProjects/Openlabs.Mgcxm/Openlabs.Mgcxm/JWT/Algorithms/HMACSHAAlgorithm.cs" bodystart="18" bodyend="22"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-func">
+      <memberdef kind="function" id="class_j_w_t_1_1_algorithms_1_1_h_m_a_c_s_h_a_algorithm_1aeb6658233677d1eb5f9caeaa83fa7162" prot="protected" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>abstract HMAC</type>
+        <definition>abstract HMAC JWT.Algorithms.HMACSHAAlgorithm.CreateAlgorithm</definition>
+        <argsstring>(byte[] key)</argsstring>
+        <name>CreateAlgorithm</name>
+        <qualifiedname>JWT.Algorithms.HMACSHAAlgorithm.CreateAlgorithm</qualifiedname>
+        <reimplementedby refid="class_j_w_t_1_1_algorithms_1_1_h_m_a_c_s_h_a256_algorithm_1a01fad7cc85144b885b2c7b3ed4a1b173">CreateAlgorithm</reimplementedby>
+        <reimplementedby refid="class_j_w_t_1_1_algorithms_1_1_h_m_a_c_s_h_a384_algorithm_1a35b6d4b1b668b12cb96081038bd5d5dc">CreateAlgorithm</reimplementedby>
+        <reimplementedby refid="class_j_w_t_1_1_algorithms_1_1_h_m_a_c_s_h_a512_algorithm_1a0b7acaee0ea58cb08f33c3e5263d9f98">CreateAlgorithm</reimplementedby>
+        <param>
+          <type>byte[]</type>
+          <declname>key</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/adenf/RiderProjects/Openlabs.Mgcxm/Openlabs.Mgcxm/JWT/Algorithms/HMACSHAAlgorithm.cs" line="24" column="33"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>IJwtAlgorithm</label>
+        <link refid="interface_j_w_t_1_1_algorithms_1_1_i_jwt_algorithm"/>
+      </node>
+      <node id="1">
+        <label>JWT.Algorithms.HMACSHAAlgorithm</label>
+        <link refid="class_j_w_t_1_1_algorithms_1_1_h_m_a_c_s_h_a_algorithm"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>JWT.Algorithms.HMACSHA256Algorithm</label>
+        <link refid="class_j_w_t_1_1_algorithms_1_1_h_m_a_c_s_h_a256_algorithm"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>JWT.Algorithms.HMACSHA384Algorithm</label>
+        <link refid="class_j_w_t_1_1_algorithms_1_1_h_m_a_c_s_h_a384_algorithm"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>JWT.Algorithms.HMACSHA512Algorithm</label>
+        <link refid="class_j_w_t_1_1_algorithms_1_1_h_m_a_c_s_h_a512_algorithm"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>IJwtAlgorithm</label>
+        <link refid="interface_j_w_t_1_1_algorithms_1_1_i_jwt_algorithm"/>
+      </node>
+      <node id="1">
+        <label>JWT.Algorithms.HMACSHAAlgorithm</label>
+        <link refid="class_j_w_t_1_1_algorithms_1_1_h_m_a_c_s_h_a_algorithm"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="C:/Users/adenf/RiderProjects/Openlabs.Mgcxm/Openlabs.Mgcxm/JWT/Algorithms/HMACSHAAlgorithm.cs" line="7" column="21" bodyfile="C:/Users/adenf/RiderProjects/Openlabs.Mgcxm/Openlabs.Mgcxm/JWT/Algorithms/HMACSHAAlgorithm.cs" bodystart="8" bodyend="25"/>
+    <listofallmembers>
+      <member refid="class_j_w_t_1_1_algorithms_1_1_h_m_a_c_s_h_a_algorithm_1aeb6658233677d1eb5f9caeaa83fa7162" prot="protected" virt="pure-virtual"><scope>JWT::Algorithms::HMACSHAAlgorithm</scope><name>CreateAlgorithm</name></member>
+      <member refid="class_j_w_t_1_1_algorithms_1_1_h_m_a_c_s_h_a_algorithm_1a1928f028261e861ddfc16c90052dcdec" prot="public" virt="non-virtual"><scope>JWT::Algorithms::HMACSHAAlgorithm</scope><name>HashAlgorithmName</name></member>
+      <member refid="class_j_w_t_1_1_algorithms_1_1_h_m_a_c_s_h_a_algorithm_1aac90fb1cfa98ffbf305ebf71b80f0a3a" prot="public" virt="non-virtual"><scope>JWT::Algorithms::HMACSHAAlgorithm</scope><name>Name</name></member>
+      <member refid="class_j_w_t_1_1_algorithms_1_1_h_m_a_c_s_h_a_algorithm_1a78ead7ceb359513ab020f8bd7fb0bd1f" prot="package" virt="non-virtual"><scope>JWT::Algorithms::HMACSHAAlgorithm</scope><name>ObsoleteMessage</name></member>
+      <member refid="class_j_w_t_1_1_algorithms_1_1_h_m_a_c_s_h_a_algorithm_1ab50a4c7dddcd0cdb6649532086f1d706" prot="public" virt="non-virtual"><scope>JWT::Algorithms::HMACSHAAlgorithm</scope><name>Sign</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

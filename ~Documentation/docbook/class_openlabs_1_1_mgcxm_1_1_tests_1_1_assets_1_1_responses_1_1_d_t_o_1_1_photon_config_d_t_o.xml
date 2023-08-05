@@ -1,0 +1,56 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_class_openlabs_1_1_mgcxm_1_1_tests_1_1_assets_1_1_responses_1_1_d_t_o_1_1_photon_config_d_t_o" xml:lang="en-US">
+<title>Openlabs.Mgcxm.Tests.Assets.Responses.DTO.PhotonConfigDTO Class Reference</title>
+<indexterm><primary>Openlabs.Mgcxm.Tests.Assets.Responses.DTO.PhotonConfigDTO</primary></indexterm>
+Inheritance diagram for Openlabs.Mgcxm.Tests.Assets.Responses.DTO.PhotonConfigDTO:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="class_openlabs_1_1_mgcxm_1_1_tests_1_1_assets_1_1_responses_1_1_d_t_o_1_1_photon_config_d_t_o__inherit__graph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+Collaboration diagram for Openlabs.Mgcxm.Tests.Assets.Responses.DTO.PhotonConfigDTO:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="class_openlabs_1_1_mgcxm_1_1_tests_1_1_assets_1_1_responses_1_1_d_t_o_1_1_photon_config_d_t_o__coll__graph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+<simplesect>
+    <title>Properties    </title>
+        <itemizedlist>
+            <listitem><para>string <link linkend="_class_openlabs_1_1_mgcxm_1_1_tests_1_1_assets_1_1_responses_1_1_d_t_o_1_1_photon_config_d_t_o_1a43106de355127e0b014701df4c0989d5">CloudRegion</link><computeroutput> [get, set]</computeroutput>
+</para>
+</listitem>
+            <listitem><para>bool <link linkend="_class_openlabs_1_1_mgcxm_1_1_tests_1_1_assets_1_1_responses_1_1_d_t_o_1_1_photon_config_d_t_o_1a284a0d4f214d1b0906add2352a72643c">CrcCheckEnabled</link><computeroutput> [get, set]</computeroutput>
+</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Additional Inherited Members    </title>
+Public Member Functions inherited from <link linkend="_class_openlabs_1_1_mgcxm_1_1_assets_1_1_object_d_t_o">Openlabs.Mgcxm.Assets.ObjectDTO</link>        <itemizedlist>
+            <listitem><para>string <link linkend="_class_openlabs_1_1_mgcxm_1_1_assets_1_1_object_d_t_o_1ae614d674a342e92fb9c5b2c8052f7433">GetDtoId</link> ()</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Property Documentation</title>
+<anchor xml:id="_class_openlabs_1_1_mgcxm_1_1_tests_1_1_assets_1_1_responses_1_1_d_t_o_1_1_photon_config_d_t_o_1a43106de355127e0b014701df4c0989d5"/><section>
+    <title>CloudRegion</title>
+<indexterm><primary>CloudRegion</primary><secondary>Openlabs.Mgcxm.Tests.Assets.Responses.DTO.PhotonConfigDTO</secondary></indexterm>
+<indexterm><primary>Openlabs.Mgcxm.Tests.Assets.Responses.DTO.PhotonConfigDTO</primary><secondary>CloudRegion</secondary></indexterm>
+<para><computeroutput>string Openlabs.Mgcxm.Tests.Assets.Responses.DTO.PhotonConfigDTO.CloudRegion<computeroutput>[get]</computeroutput>, <computeroutput>[set]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_class_openlabs_1_1_mgcxm_1_1_tests_1_1_assets_1_1_responses_1_1_d_t_o_1_1_photon_config_d_t_o_1a284a0d4f214d1b0906add2352a72643c"/><section>
+    <title>CrcCheckEnabled</title>
+<indexterm><primary>CrcCheckEnabled</primary><secondary>Openlabs.Mgcxm.Tests.Assets.Responses.DTO.PhotonConfigDTO</secondary></indexterm>
+<indexterm><primary>Openlabs.Mgcxm.Tests.Assets.Responses.DTO.PhotonConfigDTO</primary><secondary>CrcCheckEnabled</secondary></indexterm>
+<para><computeroutput>bool Openlabs.Mgcxm.Tests.Assets.Responses.DTO.PhotonConfigDTO.CrcCheckEnabled<computeroutput>[get]</computeroutput>, <computeroutput>[set]</computeroutput></computeroutput></para></section>
+<para>
+The documentation for this class was generated from the following file:</para>
+C:/Users/adenf/RiderProjects/Openlabs.Mgcxm/Openlabs.Mgcxm.Tests/Assets/Responses/DTO/<link linkend="__rec_room_config_d_t_o_8cs">RecRoomConfigDTO.cs</link></section>
+</section>

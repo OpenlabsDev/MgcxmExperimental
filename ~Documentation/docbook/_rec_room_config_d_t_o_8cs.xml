@@ -1,0 +1,53 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="__rec_room_config_d_t_o_8cs" xml:lang="en-US">
+<title>C:/Users/adenf/RiderProjects/Openlabs.Mgcxm/Openlabs.Mgcxm.Tests/Assets/Responses/DTO/RecRoomConfigDTO.cs File Reference</title>
+<indexterm><primary>C:/Users/adenf/RiderProjects/Openlabs.Mgcxm/Openlabs.Mgcxm.Tests/Assets/Responses/DTO/RecRoomConfigDTO.cs</primary></indexterm>
+<simplesect>
+    <title>Classes    </title>
+        <itemizedlist>
+            <listitem><para>class <link linkend="_class_openlabs_1_1_mgcxm_1_1_tests_1_1_assets_1_1_responses_1_1_d_t_o_1_1_rec_room_config_d_t_o">Openlabs.Mgcxm.Tests.Assets.Responses.DTO.RecRoomConfigDTO</link></para>
+</listitem>
+            <listitem><para>class <link linkend="_class_openlabs_1_1_mgcxm_1_1_tests_1_1_assets_1_1_responses_1_1_d_t_o_1_1_matchmaking_params_d_t_o">Openlabs.Mgcxm.Tests.Assets.Responses.DTO.MatchmakingParamsDTO</link></para>
+</listitem>
+            <listitem><para>class <link linkend="_class_openlabs_1_1_mgcxm_1_1_tests_1_1_assets_1_1_responses_1_1_d_t_o_1_1_level_progression_index_d_t_o">Openlabs.Mgcxm.Tests.Assets.Responses.DTO.LevelProgressionIndexDTO</link></para>
+</listitem>
+            <listitem><para>class <link linkend="_class_openlabs_1_1_mgcxm_1_1_tests_1_1_assets_1_1_responses_1_1_d_t_o_1_1_photon_config_d_t_o">Openlabs.Mgcxm.Tests.Assets.Responses.DTO.PhotonConfigDTO</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Namespaces    </title>
+        <itemizedlist>
+            <listitem><para>namespace <link linkend="_namespace_openlabs">Openlabs</link></para>
+</listitem>
+            <listitem><para>namespace <link linkend="_namespace_openlabs_1_1_mgcxm">Openlabs.Mgcxm</link></para>
+</listitem>
+            <listitem><para>namespace <link linkend="_namespace_openlabs_1_1_mgcxm_1_1_tests">Openlabs.Mgcxm.Tests</link></para>
+</listitem>
+            <listitem><para>namespace <link linkend="_namespace_openlabs_1_1_mgcxm_1_1_tests_1_1_assets">Openlabs.Mgcxm.Tests.Assets</link></para>
+</listitem>
+            <listitem><para>namespace <link linkend="_namespace_openlabs_1_1_mgcxm_1_1_tests_1_1_assets_1_1_responses">Openlabs.Mgcxm.Tests.Assets.Responses</link></para>
+</listitem>
+            <listitem><para>namespace <link linkend="_namespace_openlabs_1_1_mgcxm_1_1_tests_1_1_assets_1_1_responses_1_1_d_t_o">Openlabs.Mgcxm.Tests.Assets.Responses.DTO</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Enumerations    </title>
+        <itemizedlist>
+            <listitem><para>enum <link linkend="_namespace_openlabs_1_1_mgcxm_1_1_tests_1_1_assets_1_1_responses_1_1_d_t_o_1a68b1cfa84d693da88e6e5e3038a48f2b">Openlabs.Mgcxm.Tests.Assets.Responses.DTO.PhotonRegion</link> { <?linebreak?><link linkend="_namespace_openlabs_1_1_mgcxm_1_1_tests_1_1_assets_1_1_responses_1_1_d_t_o_1a68b1cfa84d693da88e6e5e3038a48f2ba4829322d03d1606fb09ae9af59a271d3">Openlabs.Mgcxm.Tests.Assets.Responses.DTO.eu</link>
+, <link linkend="_namespace_openlabs_1_1_mgcxm_1_1_tests_1_1_assets_1_1_responses_1_1_d_t_o_1a68b1cfa84d693da88e6e5e3038a48f2ba0b3b97fa66886c5688ee4ae80ec0c3c2">Openlabs.Mgcxm.Tests.Assets.Responses.DTO.us</link>
+, <link linkend="_namespace_openlabs_1_1_mgcxm_1_1_tests_1_1_assets_1_1_responses_1_1_d_t_o_1a68b1cfa84d693da88e6e5e3038a48f2bacffe819d4413b95dd8c35c0085930789">Openlabs.Mgcxm.Tests.Assets.Responses.DTO.asia</link>
+, <link linkend="_namespace_openlabs_1_1_mgcxm_1_1_tests_1_1_assets_1_1_responses_1_1_d_t_o_1a68b1cfa84d693da88e6e5e3038a48f2ba55add3d845bfcd87a9b0949b0da49c0a">Openlabs.Mgcxm.Tests.Assets.Responses.DTO.jp</link>
+, <?linebreak?><link linkend="_namespace_openlabs_1_1_mgcxm_1_1_tests_1_1_assets_1_1_responses_1_1_d_t_o_1a68b1cfa84d693da88e6e5e3038a48f2ba8bcc25c96aa5a71f7a76309077753e67">Openlabs.Mgcxm.Tests.Assets.Responses.DTO.au</link> = 5
+, <link linkend="_namespace_openlabs_1_1_mgcxm_1_1_tests_1_1_assets_1_1_responses_1_1_d_t_o_1a68b1cfa84d693da88e6e5e3038a48f2ba2cc2c74685f65f453bf6a6df1fc560df">Openlabs.Mgcxm.Tests.Assets.Responses.DTO.usw</link>
+, <link linkend="_namespace_openlabs_1_1_mgcxm_1_1_tests_1_1_assets_1_1_responses_1_1_d_t_o_1a68b1cfa84d693da88e6e5e3038a48f2bac12e01f2a13ff5587e1e9e4aedb8242d">Openlabs.Mgcxm.Tests.Assets.Responses.DTO.sa</link>
+, <link linkend="_namespace_openlabs_1_1_mgcxm_1_1_tests_1_1_assets_1_1_responses_1_1_d_t_o_1a68b1cfa84d693da88e6e5e3038a48f2ba43ef4393816412456a776afb5477cc24">Openlabs.Mgcxm.Tests.Assets.Responses.DTO.cae</link>
+, <?linebreak?><link linkend="_namespace_openlabs_1_1_mgcxm_1_1_tests_1_1_assets_1_1_responses_1_1_d_t_o_1a68b1cfa84d693da88e6e5e3038a48f2badcf0d7d2cd120bf42580d43f29785dd3">Openlabs.Mgcxm.Tests.Assets.Responses.DTO.kr</link>
+, <link linkend="_namespace_openlabs_1_1_mgcxm_1_1_tests_1_1_assets_1_1_responses_1_1_d_t_o_1a68b1cfa84d693da88e6e5e3038a48f2ba13b5bfe96f3e2fe411c9f66f4a582adf">Openlabs.Mgcxm.Tests.Assets.Responses.DTO.in</link>
+, <link linkend="_namespace_openlabs_1_1_mgcxm_1_1_tests_1_1_assets_1_1_responses_1_1_d_t_o_1a68b1cfa84d693da88e6e5e3038a48f2ba334c4a4c42fdb79d7ebc3e73b517e6f8">Openlabs.Mgcxm.Tests.Assets.Responses.DTO.none</link> = 4
+ }</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+</section>

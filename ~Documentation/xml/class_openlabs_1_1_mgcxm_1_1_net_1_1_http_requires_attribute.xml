@@ -1,0 +1,120 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.7" xml:lang="en-US">
+  <compounddef id="class_openlabs_1_1_mgcxm_1_1_net_1_1_http_requires_attribute" kind="class" language="C#" prot="public">
+    <compoundname>Openlabs::Mgcxm::Net::HttpRequiresAttribute</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">Attribute</basecompoundref>
+      <sectiondef kind="property">
+      <memberdef kind="property" id="class_openlabs_1_1_mgcxm_1_1_net_1_1_http_requires_attribute_1ac0fd19004e02c896f39b4636a8c07c06" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="no" privatesettable="yes" protectedsettable="no">
+        <type><ref refid="namespace_openlabs_1_1_mgcxm_1_1_net_1ac91eddadee1cf42d551524d032a0d76c" kindref="member">HttpRequireFlag</ref></type>
+        <definition>HttpRequireFlag Openlabs.Mgcxm.Net.HttpRequiresAttribute.Flag</definition>
+        <argsstring></argsstring>
+        <name>Flag</name>
+        <qualifiedname>Openlabs.Mgcxm.Net.HttpRequiresAttribute.Flag</qualifiedname>
+        <briefdescription>
+<para>Gets the HTTP requirement flag associated with the attribute. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/adenf/RiderProjects/Openlabs.Mgcxm/Openlabs.Mgcxm/Net/Attributes/HttpRequiresAttribute.cs" line="27" column="28" bodyfile="C:/Users/adenf/RiderProjects/Openlabs.Mgcxm/Openlabs.Mgcxm/Net/Attributes/HttpRequiresAttribute.cs" bodystart="27" bodyend="27"/>
+        <referencedby refid="class_openlabs_1_1_mgcxm_1_1_net_1_1_http_requires_attribute_1a737fbd8f13775a7a7661b31c82bdbbfc" compoundref="_http_requires_attribute_8cs" startline="18" endline="22">Openlabs.Mgcxm.Net.HttpRequiresAttribute.HttpRequiresAttribute</referencedby>
+      </memberdef>
+      <memberdef kind="property" id="class_openlabs_1_1_mgcxm_1_1_net_1_1_http_requires_attribute_1a056439d510877bf65ecfd5caffbf11ad" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="no" privatesettable="yes" protectedsettable="no">
+        <type>object</type>
+        <definition>object Openlabs.Mgcxm.Net.HttpRequiresAttribute.Data</definition>
+        <argsstring></argsstring>
+        <name>Data</name>
+        <qualifiedname>Openlabs.Mgcxm.Net.HttpRequiresAttribute.Data</qualifiedname>
+        <briefdescription>
+<para>Gets optional data associated with the requirement, if applicable. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/adenf/RiderProjects/Openlabs.Mgcxm/Openlabs.Mgcxm/Net/Attributes/HttpRequiresAttribute.cs" line="32" column="19" bodyfile="C:/Users/adenf/RiderProjects/Openlabs.Mgcxm/Openlabs.Mgcxm/Net/Attributes/HttpRequiresAttribute.cs" bodystart="32" bodyend="32"/>
+        <referencedby refid="class_openlabs_1_1_mgcxm_1_1_net_1_1_http_requires_attribute_1a737fbd8f13775a7a7661b31c82bdbbfc" compoundref="_http_requires_attribute_8cs" startline="18" endline="22">Openlabs.Mgcxm.Net.HttpRequiresAttribute.HttpRequiresAttribute</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_openlabs_1_1_mgcxm_1_1_net_1_1_http_requires_attribute_1a737fbd8f13775a7a7661b31c82bdbbfc" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Openlabs.Mgcxm.Net.HttpRequiresAttribute.HttpRequiresAttribute</definition>
+        <argsstring>(HttpRequireFlag flag, object data=null)</argsstring>
+        <name>HttpRequiresAttribute</name>
+        <qualifiedname>Openlabs.Mgcxm.Net.HttpRequiresAttribute.HttpRequiresAttribute</qualifiedname>
+        <param>
+          <type><ref refid="namespace_openlabs_1_1_mgcxm_1_1_net_1ac91eddadee1cf42d551524d032a0d76c" kindref="member">HttpRequireFlag</ref></type>
+          <declname>flag</declname>
+        </param>
+        <param>
+          <type>object</type>
+          <declname>data</declname>
+          <defval>null</defval>
+        </param>
+        <briefdescription>
+<para>Initializes a new instance of the HttpRequiresAttribute class with the specified HTTP requirement flag and optional data. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>flag</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The HTTP requirement flag associated with the attribute.</para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>data</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Optional data associated with the requirement, if applicable.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/adenf/RiderProjects/Openlabs.Mgcxm/Openlabs.Mgcxm/Net/Attributes/HttpRequiresAttribute.cs" line="18" column="12" bodyfile="C:/Users/adenf/RiderProjects/Openlabs.Mgcxm/Openlabs.Mgcxm/Net/Attributes/HttpRequiresAttribute.cs" bodystart="18" bodyend="22"/>
+        <references refid="class_openlabs_1_1_mgcxm_1_1_net_1_1_http_requires_attribute_1a056439d510877bf65ecfd5caffbf11ad" compoundref="_http_requires_attribute_8cs" startline="32" endline="32">Openlabs.Mgcxm.Net.HttpRequiresAttribute.Data</references>
+        <references refid="class_openlabs_1_1_mgcxm_1_1_net_1_1_http_requires_attribute_1ac0fd19004e02c896f39b4636a8c07c06" compoundref="_http_requires_attribute_8cs" startline="27" endline="27">Openlabs.Mgcxm.Net.HttpRequiresAttribute.Flag</references>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Represents an attribute used to specify additional requirements for an HTTP endpoint method. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>Attribute</label>
+      </node>
+      <node id="1">
+        <label>Openlabs.Mgcxm.Net.HttpRequiresAttribute</label>
+        <link refid="class_openlabs_1_1_mgcxm_1_1_net_1_1_http_requires_attribute"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>Attribute</label>
+      </node>
+      <node id="1">
+        <label>Openlabs.Mgcxm.Net.HttpRequiresAttribute</label>
+        <link refid="class_openlabs_1_1_mgcxm_1_1_net_1_1_http_requires_attribute"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="C:/Users/adenf/RiderProjects/Openlabs.Mgcxm/Openlabs.Mgcxm/Net/Attributes/HttpRequiresAttribute.cs" line="11" column="14" bodyfile="C:/Users/adenf/RiderProjects/Openlabs.Mgcxm/Openlabs.Mgcxm/Net/Attributes/HttpRequiresAttribute.cs" bodystart="12" bodyend="33"/>
+    <listofallmembers>
+      <member refid="class_openlabs_1_1_mgcxm_1_1_net_1_1_http_requires_attribute_1a056439d510877bf65ecfd5caffbf11ad" prot="public" virt="non-virtual"><scope>Openlabs::Mgcxm::Net::HttpRequiresAttribute</scope><name>Data</name></member>
+      <member refid="class_openlabs_1_1_mgcxm_1_1_net_1_1_http_requires_attribute_1ac0fd19004e02c896f39b4636a8c07c06" prot="public" virt="non-virtual"><scope>Openlabs::Mgcxm::Net::HttpRequiresAttribute</scope><name>Flag</name></member>
+      <member refid="class_openlabs_1_1_mgcxm_1_1_net_1_1_http_requires_attribute_1a737fbd8f13775a7a7661b31c82bdbbfc" prot="public" virt="non-virtual"><scope>Openlabs::Mgcxm::Net::HttpRequiresAttribute</scope><name>HttpRequiresAttribute</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

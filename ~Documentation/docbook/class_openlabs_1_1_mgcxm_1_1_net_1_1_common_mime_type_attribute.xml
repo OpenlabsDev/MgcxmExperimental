@@ -1,0 +1,71 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_class_openlabs_1_1_mgcxm_1_1_net_1_1_common_mime_type_attribute" xml:lang="en-US">
+<title>Openlabs.Mgcxm.Net.CommonMimeTypeAttribute Class Reference</title>
+<indexterm><primary>Openlabs.Mgcxm.Net.CommonMimeTypeAttribute</primary></indexterm>
+<para>Inheritance diagram for Openlabs.Mgcxm.Net.CommonMimeTypeAttribute:    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="class_openlabs_1_1_mgcxm_1_1_net_1_1_common_mime_type_attribute.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+<simplesect>
+    <title>Public Member Functions    </title>
+        <itemizedlist>
+            <listitem><para><link linkend="_class_openlabs_1_1_mgcxm_1_1_net_1_1_common_mime_type_attribute_1aa2e72ebac3184dab38771702c854a36c">CommonMimeTypeAttribute</link> (string mimeType, params string[] identifiers)</para>
+</listitem>
+            <listitem><para><link linkend="_class_openlabs_1_1_mgcxm_1_1_net_1_1_common_mime_type_attribute_1a8d03b4cf3f65e7658823a80a3d4de4f6">CommonMimeTypeAttribute</link> (string type, string subtype, params string[] identifiers)</para>
+</listitem>
+            <listitem><para>bool <link linkend="_class_openlabs_1_1_mgcxm_1_1_net_1_1_common_mime_type_attribute_1a038f3c745131150793204d1230b93488">Equals</link> (string identifier)</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Properties    </title>
+        <itemizedlist>
+            <listitem><para>string <link linkend="_class_openlabs_1_1_mgcxm_1_1_net_1_1_common_mime_type_attribute_1a93b6dc80283a860d348a4b2550b7d05f">MimeType</link><computeroutput> [get]</computeroutput>
+</para>
+</listitem>
+            <listitem><para>string[] <link linkend="_class_openlabs_1_1_mgcxm_1_1_net_1_1_common_mime_type_attribute_1a085bcd8f0a300cf577c5c7e8f6dca156">Identifiers</link><computeroutput> [get]</computeroutput>
+</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Constructor &amp; Destructor Documentation</title>
+<anchor xml:id="_class_openlabs_1_1_mgcxm_1_1_net_1_1_common_mime_type_attribute_1aa2e72ebac3184dab38771702c854a36c"/><section>
+    <title>CommonMimeTypeAttribute()<computeroutput>[1/2]</computeroutput></title>
+<indexterm><primary>CommonMimeTypeAttribute</primary><secondary>Openlabs.Mgcxm.Net.CommonMimeTypeAttribute</secondary></indexterm>
+<indexterm><primary>Openlabs.Mgcxm.Net.CommonMimeTypeAttribute</primary><secondary>CommonMimeTypeAttribute</secondary></indexterm>
+<para><computeroutput>Openlabs.Mgcxm.Net.CommonMimeTypeAttribute.CommonMimeTypeAttribute (string mimeType, params string[] identifiers)</computeroutput></para></section>
+<anchor xml:id="_class_openlabs_1_1_mgcxm_1_1_net_1_1_common_mime_type_attribute_1a8d03b4cf3f65e7658823a80a3d4de4f6"/><section>
+    <title>CommonMimeTypeAttribute()<computeroutput>[2/2]</computeroutput></title>
+<indexterm><primary>CommonMimeTypeAttribute</primary><secondary>Openlabs.Mgcxm.Net.CommonMimeTypeAttribute</secondary></indexterm>
+<indexterm><primary>Openlabs.Mgcxm.Net.CommonMimeTypeAttribute</primary><secondary>CommonMimeTypeAttribute</secondary></indexterm>
+<para><computeroutput>Openlabs.Mgcxm.Net.CommonMimeTypeAttribute.CommonMimeTypeAttribute (string type, string subtype, params string[] identifiers)</computeroutput></para></section>
+</section>
+<section>
+<title>Member Function Documentation</title>
+<anchor xml:id="_class_openlabs_1_1_mgcxm_1_1_net_1_1_common_mime_type_attribute_1a038f3c745131150793204d1230b93488"/><section>
+    <title>Equals()</title>
+<indexterm><primary>Equals</primary><secondary>Openlabs.Mgcxm.Net.CommonMimeTypeAttribute</secondary></indexterm>
+<indexterm><primary>Openlabs.Mgcxm.Net.CommonMimeTypeAttribute</primary><secondary>Equals</secondary></indexterm>
+<para><computeroutput>bool Openlabs.Mgcxm.Net.CommonMimeTypeAttribute.Equals (string identifier)</computeroutput></para></section>
+</section>
+<section>
+<title>Property Documentation</title>
+<anchor xml:id="_class_openlabs_1_1_mgcxm_1_1_net_1_1_common_mime_type_attribute_1a085bcd8f0a300cf577c5c7e8f6dca156"/><section>
+    <title>Identifiers</title>
+<indexterm><primary>Identifiers</primary><secondary>Openlabs.Mgcxm.Net.CommonMimeTypeAttribute</secondary></indexterm>
+<indexterm><primary>Openlabs.Mgcxm.Net.CommonMimeTypeAttribute</primary><secondary>Identifiers</secondary></indexterm>
+<para><computeroutput>string [] Openlabs.Mgcxm.Net.CommonMimeTypeAttribute.Identifiers<computeroutput>[get]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_class_openlabs_1_1_mgcxm_1_1_net_1_1_common_mime_type_attribute_1a93b6dc80283a860d348a4b2550b7d05f"/><section>
+    <title>MimeType</title>
+<indexterm><primary>MimeType</primary><secondary>Openlabs.Mgcxm.Net.CommonMimeTypeAttribute</secondary></indexterm>
+<indexterm><primary>Openlabs.Mgcxm.Net.CommonMimeTypeAttribute</primary><secondary>MimeType</secondary></indexterm>
+<para><computeroutput>string Openlabs.Mgcxm.Net.CommonMimeTypeAttribute.MimeType<computeroutput>[get]</computeroutput></computeroutput></para></section>
+<para>
+The documentation for this class was generated from the following file:</para>
+C:/Users/adenf/RiderProjects/Openlabs.Mgcxm/Openlabs.Mgcxm/Net/Attributes/<link linkend="__common_mime_type_attribute_8cs">CommonMimeTypeAttribute.cs</link></section>
+</section>

@@ -1,0 +1,14 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.7" xml:lang="en-US">
+  <compounddef id="namespace_openlabs_1_1_mgcxm_1_1_tests" kind="namespace" language="C#">
+    <compoundname>Openlabs::Mgcxm::Tests</compoundname>
+    <innerclass refid="class_openlabs_1_1_mgcxm_1_1_tests_1_1_test_server" prot="public">Openlabs::Mgcxm::Tests::TestServer</innerclass>
+    <innerclass refid="class_openlabs_1_1_mgcxm_1_1_tests_1_1_test_ws_server" prot="public">Openlabs::Mgcxm::Tests::TestWsServer</innerclass>
+    <innernamespace refid="namespace_openlabs_1_1_mgcxm_1_1_tests_1_1_assets">Openlabs::Mgcxm::Tests::Assets</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/Users/adenf/RiderProjects/Openlabs.Mgcxm/Openlabs.Mgcxm.Tests/Assets/Responses/AvatarJsonFileAsset.cs" line="5" column="1"/>
+  </compounddef>
+</doxygen>

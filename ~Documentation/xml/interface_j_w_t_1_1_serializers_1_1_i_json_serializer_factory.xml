@@ -1,0 +1,50 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.7" xml:lang="en-US">
+  <compounddef id="interface_j_w_t_1_1_serializers_1_1_i_json_serializer_factory" kind="interface" language="C#" prot="public">
+    <compoundname>JWT::Serializers::IJsonSerializerFactory</compoundname>
+    <derivedcompoundref refid="class_j_w_t_1_1_serializers_1_1_default_json_serializer_factory" prot="public" virt="non-virtual">JWT.Serializers.DefaultJsonSerializerFactory</derivedcompoundref>
+    <derivedcompoundref refid="class_j_w_t_1_1_serializers_1_1_delegate_json_serializer_factory" prot="public" virt="non-virtual">JWT.Serializers.DelegateJsonSerializerFactory</derivedcompoundref>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="interface_j_w_t_1_1_serializers_1_1_i_json_serializer_factory_1aa332e1cb9f5edb542c7232d22d0a7ede" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="interface_j_w_t_1_1_i_json_serializer" kindref="compound">IJsonSerializer</ref></type>
+        <definition>IJsonSerializer JWT.Serializers.IJsonSerializerFactory.Create</definition>
+        <argsstring>()</argsstring>
+        <name>Create</name>
+        <qualifiedname>JWT.Serializers.IJsonSerializerFactory.Create</qualifiedname>
+        <reimplementedby refid="class_j_w_t_1_1_serializers_1_1_default_json_serializer_factory_1a38fa20d50a05d328b60101f7daa63881">Create</reimplementedby>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/adenf/RiderProjects/Openlabs.Mgcxm/Openlabs.Mgcxm/JWT/Serializers/IJsonSerializerFactory.cs" line="5" column="25"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>JWT.Serializers.IJsonSerializerFactory</label>
+        <link refid="interface_j_w_t_1_1_serializers_1_1_i_json_serializer_factory"/>
+      </node>
+      <node id="2">
+        <label>JWT.Serializers.DefaultJsonSerializerFactory</label>
+        <link refid="class_j_w_t_1_1_serializers_1_1_default_json_serializer_factory"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>JWT.Serializers.DelegateJsonSerializerFactory</label>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <location file="C:/Users/adenf/RiderProjects/Openlabs.Mgcxm/Openlabs.Mgcxm/JWT/Serializers/IJsonSerializerFactory.cs" line="3" column="22" bodyfile="C:/Users/adenf/RiderProjects/Openlabs.Mgcxm/Openlabs.Mgcxm/JWT/Serializers/IJsonSerializerFactory.cs" bodystart="4" bodyend="6"/>
+    <listofallmembers>
+      <member refid="interface_j_w_t_1_1_serializers_1_1_i_json_serializer_factory_1aa332e1cb9f5edb542c7232d22d0a7ede" prot="public" virt="non-virtual"><scope>JWT::Serializers::IJsonSerializerFactory</scope><name>Create</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

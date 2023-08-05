@@ -1,0 +1,206 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.7" xml:lang="en-US">
+  <compounddef id="class_j_w_t_1_1_algorithms_1_1_delegate_algorithm_factory" kind="class" language="C#" prot="public">
+    <compoundname>JWT::Algorithms::DelegateAlgorithmFactory</compoundname>
+    <basecompoundref refid="interface_j_w_t_1_1_algorithms_1_1_i_algorithm_factory" prot="public" virt="non-virtual">JWT.Algorithms.IAlgorithmFactory</basecompoundref>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_j_w_t_1_1_algorithms_1_1_delegate_algorithm_factory_1a3658fd17c2684476ae2e603d85f90cf2" prot="private" static="no" mutable="no">
+        <type>readonly Func&lt; <ref refid="class_j_w_t_1_1_jwt_decoder_context" kindref="compound">JwtDecoderContext</ref>, <ref refid="interface_j_w_t_1_1_algorithms_1_1_i_jwt_algorithm" kindref="compound">IJwtAlgorithm</ref> &gt;</type>
+        <definition>readonly Func&lt;JwtDecoderContext, IJwtAlgorithm&gt; JWT.Algorithms.DelegateAlgorithmFactory._algFactory</definition>
+        <argsstring></argsstring>
+        <name>_algFactory</name>
+        <qualifiedname>JWT.Algorithms.DelegateAlgorithmFactory._algFactory</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/adenf/RiderProjects/Openlabs.Mgcxm/Openlabs.Mgcxm/JWT/Algorithms/DelegateAlgorithmFactory.cs" line="10" column="31" bodyfile="C:/Users/adenf/RiderProjects/Openlabs.Mgcxm/Openlabs.Mgcxm/JWT/Algorithms/DelegateAlgorithmFactory.cs" bodystart="10" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_j_w_t_1_1_algorithms_1_1_delegate_algorithm_factory_1ab58d836bd12592dbb9f11965ade772e1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>JWT.Algorithms.DelegateAlgorithmFactory.DelegateAlgorithmFactory</definition>
+        <argsstring>(Func&lt; JwtDecoderContext, IJwtAlgorithm &gt; algFactory)</argsstring>
+        <name>DelegateAlgorithmFactory</name>
+        <qualifiedname>JWT.Algorithms.DelegateAlgorithmFactory.DelegateAlgorithmFactory</qualifiedname>
+        <param>
+          <type>Func&lt; <ref refid="class_j_w_t_1_1_jwt_decoder_context" kindref="compound">JwtDecoderContext</ref>, <ref refid="interface_j_w_t_1_1_algorithms_1_1_i_jwt_algorithm" kindref="compound">IJwtAlgorithm</ref> &gt;</type>
+          <declname>algFactory</declname>
+        </param>
+        <briefdescription>
+<para>Creates an instance of DelegateAlgorithmFactory with supplied delegate to an algorithm with a context. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="exception"><parameteritem>
+<parameternamelist>
+<parametername>ArgumentNullException</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/adenf/RiderProjects/Openlabs.Mgcxm/Openlabs.Mgcxm/JWT/Algorithms/DelegateAlgorithmFactory.cs" line="16" column="16"/>
+      </memberdef>
+      <memberdef kind="function" id="class_j_w_t_1_1_algorithms_1_1_delegate_algorithm_factory_1a1c9e6c5b42fe59b0a587abd58f035e6c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>JWT.Algorithms.DelegateAlgorithmFactory.DelegateAlgorithmFactory</definition>
+        <argsstring>(Func&lt; IJwtAlgorithm &gt; algFactory)</argsstring>
+        <name>DelegateAlgorithmFactory</name>
+        <qualifiedname>JWT.Algorithms.DelegateAlgorithmFactory.DelegateAlgorithmFactory</qualifiedname>
+        <param>
+          <type>Func&lt; <ref refid="interface_j_w_t_1_1_algorithms_1_1_i_jwt_algorithm" kindref="compound">IJwtAlgorithm</ref> &gt;</type>
+          <declname>algFactory</declname>
+        </param>
+        <briefdescription>
+<para>Creates an instance of DelegateAlgorithmFactory with supplied delegate to an algorithm. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="exception"><parameteritem>
+<parameternamelist>
+<parametername>ArgumentNullException</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/adenf/RiderProjects/Openlabs.Mgcxm/Openlabs.Mgcxm/JWT/Algorithms/DelegateAlgorithmFactory.cs" line="23" column="16" bodyfile="C:/Users/adenf/RiderProjects/Openlabs.Mgcxm/Openlabs.Mgcxm/JWT/Algorithms/DelegateAlgorithmFactory.cs" bodystart="23" bodyend="28"/>
+      </memberdef>
+      <memberdef kind="function" id="class_j_w_t_1_1_algorithms_1_1_delegate_algorithm_factory_1ad5b83425d325b6fd16078db80a88f52e" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>JWT.Algorithms.DelegateAlgorithmFactory.DelegateAlgorithmFactory</definition>
+        <argsstring>(IAlgorithmFactory algFactory)</argsstring>
+        <name>DelegateAlgorithmFactory</name>
+        <qualifiedname>JWT.Algorithms.DelegateAlgorithmFactory.DelegateAlgorithmFactory</qualifiedname>
+        <param>
+          <type><ref refid="interface_j_w_t_1_1_algorithms_1_1_i_algorithm_factory" kindref="compound">IAlgorithmFactory</ref></type>
+          <declname>algFactory</declname>
+        </param>
+        <briefdescription>
+<para>Creates an instance of DelegateAlgorithmFactory with supplied algorithm factory. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="exception"><parameteritem>
+<parameternamelist>
+<parametername>ArgumentNullException</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/adenf/RiderProjects/Openlabs.Mgcxm/Openlabs.Mgcxm/JWT/Algorithms/DelegateAlgorithmFactory.cs" line="34" column="16" bodyfile="C:/Users/adenf/RiderProjects/Openlabs.Mgcxm/Openlabs.Mgcxm/JWT/Algorithms/DelegateAlgorithmFactory.cs" bodystart="34" bodyend="39"/>
+      </memberdef>
+      <memberdef kind="function" id="class_j_w_t_1_1_algorithms_1_1_delegate_algorithm_factory_1a17d62be3d6cad15e13fb8c26bba24523" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>JWT.Algorithms.DelegateAlgorithmFactory.DelegateAlgorithmFactory</definition>
+        <argsstring>(IJwtAlgorithm algorithm)</argsstring>
+        <name>DelegateAlgorithmFactory</name>
+        <qualifiedname>JWT.Algorithms.DelegateAlgorithmFactory.DelegateAlgorithmFactory</qualifiedname>
+        <param>
+          <type><ref refid="interface_j_w_t_1_1_algorithms_1_1_i_jwt_algorithm" kindref="compound">IJwtAlgorithm</ref></type>
+          <declname>algorithm</declname>
+        </param>
+        <briefdescription>
+<para>Creates an instance of DelegateAlgorithmFactory with supplied algorithm. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="exception"><parameteritem>
+<parameternamelist>
+<parametername>ArgumentNullException</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/adenf/RiderProjects/Openlabs.Mgcxm/Openlabs.Mgcxm/JWT/Algorithms/DelegateAlgorithmFactory.cs" line="45" column="16" bodyfile="C:/Users/adenf/RiderProjects/Openlabs.Mgcxm/Openlabs.Mgcxm/JWT/Algorithms/DelegateAlgorithmFactory.cs" bodystart="45" bodyend="50"/>
+      </memberdef>
+      <memberdef kind="function" id="class_j_w_t_1_1_algorithms_1_1_delegate_algorithm_factory_1a5bf43d49f12622f658f3aca9f8e59738" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="interface_j_w_t_1_1_algorithms_1_1_i_jwt_algorithm" kindref="compound">IJwtAlgorithm</ref></type>
+        <definition>IJwtAlgorithm JWT.Algorithms.DelegateAlgorithmFactory.Create</definition>
+        <argsstring>(JwtDecoderContext context)</argsstring>
+        <name>Create</name>
+        <qualifiedname>JWT.Algorithms.DelegateAlgorithmFactory.Create</qualifiedname>
+        <reimplements refid="interface_j_w_t_1_1_algorithms_1_1_i_algorithm_factory_1aadbbc767e8b2bc0f7360239b755ebdf6">Create</reimplements>
+        <param>
+          <type><ref refid="class_j_w_t_1_1_jwt_decoder_context" kindref="compound">JwtDecoderContext</ref></type>
+          <declname>context</declname>
+        </param>
+        <briefdescription>
+<para><para>Creates an AlgorithmFactory using the provided algorithm enum.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>context</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The captured context during validation of <ref refid="namespace_j_w_t" kindref="compound">JWT</ref> inside <ref refid="class_j_w_t_1_1_jwt_decoder" kindref="compound">JwtDecoder</ref></para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+ </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/adenf/RiderProjects/Openlabs.Mgcxm/Openlabs.Mgcxm/JWT/Algorithms/DelegateAlgorithmFactory.cs" line="53" column="30"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Implements  by returning the supplied  while ignoring parameters. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>IAlgorithmFactory</label>
+        <link refid="interface_j_w_t_1_1_algorithms_1_1_i_algorithm_factory"/>
+      </node>
+      <node id="1">
+        <label>JWT.Algorithms.DelegateAlgorithmFactory</label>
+        <link refid="class_j_w_t_1_1_algorithms_1_1_delegate_algorithm_factory"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>IAlgorithmFactory</label>
+        <link refid="interface_j_w_t_1_1_algorithms_1_1_i_algorithm_factory"/>
+      </node>
+      <node id="1">
+        <label>JWT.Algorithms.DelegateAlgorithmFactory</label>
+        <link refid="class_j_w_t_1_1_algorithms_1_1_delegate_algorithm_factory"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="C:/Users/adenf/RiderProjects/Openlabs.Mgcxm/Openlabs.Mgcxm/JWT/Algorithms/DelegateAlgorithmFactory.cs" line="8" column="18" bodyfile="C:/Users/adenf/RiderProjects/Openlabs.Mgcxm/Openlabs.Mgcxm/JWT/Algorithms/DelegateAlgorithmFactory.cs" bodystart="9" bodyend="55"/>
+    <listofallmembers>
+      <member refid="class_j_w_t_1_1_algorithms_1_1_delegate_algorithm_factory_1a3658fd17c2684476ae2e603d85f90cf2" prot="private" virt="non-virtual"><scope>JWT::Algorithms::DelegateAlgorithmFactory</scope><name>_algFactory</name></member>
+      <member refid="class_j_w_t_1_1_algorithms_1_1_delegate_algorithm_factory_1a5bf43d49f12622f658f3aca9f8e59738" prot="public" virt="non-virtual"><scope>JWT::Algorithms::DelegateAlgorithmFactory</scope><name>Create</name></member>
+      <member refid="class_j_w_t_1_1_algorithms_1_1_delegate_algorithm_factory_1ab58d836bd12592dbb9f11965ade772e1" prot="public" virt="non-virtual"><scope>JWT::Algorithms::DelegateAlgorithmFactory</scope><name>DelegateAlgorithmFactory</name></member>
+      <member refid="class_j_w_t_1_1_algorithms_1_1_delegate_algorithm_factory_1a1c9e6c5b42fe59b0a587abd58f035e6c" prot="public" virt="non-virtual"><scope>JWT::Algorithms::DelegateAlgorithmFactory</scope><name>DelegateAlgorithmFactory</name></member>
+      <member refid="class_j_w_t_1_1_algorithms_1_1_delegate_algorithm_factory_1ad5b83425d325b6fd16078db80a88f52e" prot="public" virt="non-virtual"><scope>JWT::Algorithms::DelegateAlgorithmFactory</scope><name>DelegateAlgorithmFactory</name></member>
+      <member refid="class_j_w_t_1_1_algorithms_1_1_delegate_algorithm_factory_1a17d62be3d6cad15e13fb8c26bba24523" prot="public" virt="non-virtual"><scope>JWT::Algorithms::DelegateAlgorithmFactory</scope><name>DelegateAlgorithmFactory</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

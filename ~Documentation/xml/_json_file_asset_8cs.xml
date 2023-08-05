@@ -1,0 +1,42 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.7" xml:lang="en-US">
+  <compounddef id="_json_file_asset_8cs" kind="file" language="C#">
+    <compoundname>JsonFileAsset.cs</compoundname>
+    <innerclass refid="class_openlabs_1_1_mgcxm_1_1_assets_1_1_json_file_asset" prot="public">Openlabs::Mgcxm::Assets::JsonFileAsset</innerclass>
+    <innernamespace refid="namespace_openlabs">Openlabs</innernamespace>
+    <innernamespace refid="namespace_openlabs_1_1_mgcxm">Openlabs::Mgcxm</innernamespace>
+    <innernamespace refid="namespace_openlabs_1_1_mgcxm_1_1_assets">Openlabs::Mgcxm::Assets</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">//<sp/>Copr.<sp/>(c)<sp/>Nexus<sp/>2023.<sp/>All<sp/>rights<sp/>reserved.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="keyword">using<sp/></highlight><highlight class="normal">Newtonsoft.Json;</highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="keyword">using<sp/></highlight><highlight class="normal"><ref refid="namespace_openlabs_1_1_mgcxm_1_1_common_1_1_json_mapping" kindref="compound">Openlabs.Mgcxm.Common.JsonMapping</ref>;</highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="keyword">using<sp/></highlight><highlight class="normal"><ref refid="namespace_openlabs_1_1_mgcxm_1_1_internal" kindref="compound">Openlabs.Mgcxm.Internal</ref>;</highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="namespace_openlabs_1_1_mgcxm_1_1_assets" kindref="compound">Openlabs.Mgcxm.Assets</ref>;</highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight></codeline>
+<codeline lineno="9" refid="class_openlabs_1_1_mgcxm_1_1_assets_1_1_json_file_asset" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="class_openlabs_1_1_mgcxm_1_1_assets_1_1_json_file_asset" kindref="compound">JsonFileAsset</ref><sp/>:<sp/><ref refid="class_openlabs_1_1_mgcxm_1_1_assets_1_1_file_asset" kindref="compound">FileAsset</ref></highlight></codeline>
+<codeline lineno="10"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="11" refid="class_openlabs_1_1_mgcxm_1_1_assets_1_1_json_file_asset_1afce3d6d9b0129e160b4c3bbb07f61c9d" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/>T<sp/><ref refid="class_openlabs_1_1_mgcxm_1_1_assets_1_1_json_file_asset_1afce3d6d9b0129e160b4c3bbb07f61c9d" kindref="member">ReadObject&lt;T&gt;</ref>()</highlight></codeline>
+<codeline lineno="12"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>AssetManager.LogSink.Debug(</highlight><highlight class="stringliteral">&quot;Reading<sp/>JsonFileAsset({0})<sp/>as<sp/>&apos;{1}&apos;<sp/>type&quot;</highlight><highlight class="normal">,<sp/><ref refid="class_openlabs_1_1_mgcxm_1_1_assets_1_1_file_asset_1a3533d4a097f526031684420c63c745d1" kindref="member">Guid</ref>,<sp/>typeof(T).Name);</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>contents<sp/>=<sp/>base.ReadString();</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>AssetManager.LogSink.Debug(contents);</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>T<sp/>deserializedJson<sp/>=<sp/>contents.FromJson&lt;T&gt;()<sp/></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>??<sp/></highlight><highlight class="keywordflow">throw</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/>InvalidOperationException(</highlight><highlight class="stringliteral">&quot;Cannot<sp/>read<sp/>as<sp/>JSON.<sp/>The<sp/>system<sp/>was<sp/>not<sp/>able<sp/>to<sp/>deserialize<sp/>the<sp/>contents.&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(deserializedJson<sp/>==<sp/></highlight><highlight class="keyword">null</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>AssetManager.LogSink.Warning(</highlight><highlight class="stringliteral">&quot;The<sp/>JSON<sp/>produced<sp/>by<sp/>JsonFileAsset({0})<sp/>is<sp/>null!<sp/>Was<sp/>this<sp/>supposed<sp/>to<sp/>happen?&quot;</highlight><highlight class="normal">,<sp/><ref refid="class_openlabs_1_1_mgcxm_1_1_assets_1_1_file_asset_1a3533d4a097f526031684420c63c745d1" kindref="member">Guid</ref>);</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>deserializedJson!;</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="25"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="C:/Users/adenf/RiderProjects/Openlabs.Mgcxm/Openlabs.Mgcxm/Assets/JsonFileAsset.cs"/>
+  </compounddef>
+</doxygen>

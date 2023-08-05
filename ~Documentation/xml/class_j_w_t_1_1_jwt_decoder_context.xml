@@ -1,0 +1,100 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.7" xml:lang="en-US">
+  <compounddef id="class_j_w_t_1_1_jwt_decoder_context" kind="class" language="C#" prot="public">
+    <compoundname>JWT::JwtDecoderContext</compoundname>
+      <sectiondef kind="property">
+      <memberdef kind="property" id="class_j_w_t_1_1_jwt_decoder_context_1aea6485cf7c6eb40692a5fe3662627060" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type><ref refid="class_j_w_t_1_1_jwt_parts" kindref="compound">JwtParts</ref></type>
+        <definition>JwtParts JWT.JwtDecoderContext.Token</definition>
+        <argsstring></argsstring>
+        <name>Token</name>
+        <qualifiedname>JWT.JwtDecoderContext.Token</qualifiedname>
+        <briefdescription>
+<para>Unmodified <ref refid="namespace_j_w_t" kindref="compound">JWT</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/adenf/RiderProjects/Openlabs.Mgcxm/Openlabs.Mgcxm/JWT/JwtDecoderContext.cs" line="10" column="25" bodyfile="C:/Users/adenf/RiderProjects/Openlabs.Mgcxm/Openlabs.Mgcxm/JWT/JwtDecoderContext.cs" bodystart="10" bodyend="10"/>
+        <referencedby refid="class_j_w_t_1_1_jwt_decoder_context_1ac42b128e3f1a39a6ab6da27738ad7c65">JWT.JwtDecoderContext.Create</referencedby>
+      </memberdef>
+      <memberdef kind="property" id="class_j_w_t_1_1_jwt_decoder_context_1aad1d99c795395fbea376ba3e8ad46aed" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type><ref refid="class_j_w_t_1_1_builder_1_1_jwt_header" kindref="compound">JwtHeader</ref></type>
+        <definition>JwtHeader JWT.JwtDecoderContext.Header</definition>
+        <argsstring></argsstring>
+        <name>Header</name>
+        <qualifiedname>JWT.JwtDecoderContext.Header</qualifiedname>
+        <briefdescription>
+<para>Deserialized <ref refid="namespace_j_w_t" kindref="compound">JWT</ref> header. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/adenf/RiderProjects/Openlabs.Mgcxm/Openlabs.Mgcxm/JWT/JwtDecoderContext.cs" line="15" column="26" bodyfile="C:/Users/adenf/RiderProjects/Openlabs.Mgcxm/Openlabs.Mgcxm/JWT/JwtDecoderContext.cs" bodystart="15" bodyend="15"/>
+        <referencedby refid="class_j_w_t_1_1_algorithms_1_1_jwt_algorithm_factory_1a9c6f4d9243c4c23653fa5c9905e16985" compoundref="_jwt_algorithm_factory_8cs" startline="9" endline="14">JWT.Algorithms.JwtAlgorithmFactory.Create</referencedby>
+        <referencedby refid="class_j_w_t_1_1_jwt_decoder_context_1ac42b128e3f1a39a6ab6da27738ad7c65">JWT.JwtDecoderContext.Create</referencedby>
+      </memberdef>
+      <memberdef kind="property" id="class_j_w_t_1_1_jwt_decoder_context_1a130305c3deb783257c34a189864366fe" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type>string</type>
+        <definition>string JWT.JwtDecoderContext.Payload</definition>
+        <argsstring></argsstring>
+        <name>Payload</name>
+        <qualifiedname>JWT.JwtDecoderContext.Payload</qualifiedname>
+        <briefdescription>
+<para>Decoded <ref refid="namespace_j_w_t" kindref="compound">JWT</ref> payload. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/adenf/RiderProjects/Openlabs.Mgcxm/Openlabs.Mgcxm/JWT/JwtDecoderContext.cs" line="20" column="23" bodyfile="C:/Users/adenf/RiderProjects/Openlabs.Mgcxm/Openlabs.Mgcxm/JWT/JwtDecoderContext.cs" bodystart="20" bodyend="20"/>
+        <referencedby refid="class_j_w_t_1_1_jwt_decoder_context_1ac42b128e3f1a39a6ab6da27738ad7c65">JWT.JwtDecoderContext.Create</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="class_j_w_t_1_1_jwt_decoder_context_1ac42b128e3f1a39a6ab6da27738ad7c65" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="class_j_w_t_1_1_jwt_decoder_context" kindref="compound">JwtDecoderContext</ref></type>
+        <definition>static JwtDecoderContext JWT.JwtDecoderContext.Create</definition>
+        <argsstring>(JwtHeader header, string decodedPayload, JwtParts jwt)</argsstring>
+        <name>Create</name>
+        <qualifiedname>JWT.JwtDecoderContext.Create</qualifiedname>
+        <param>
+          <type><ref refid="class_j_w_t_1_1_builder_1_1_jwt_header" kindref="compound">JwtHeader</ref></type>
+          <declname>header</declname>
+        </param>
+        <param>
+          <type>string</type>
+          <declname>decodedPayload</declname>
+        </param>
+        <param>
+          <type><ref refid="class_j_w_t_1_1_jwt_parts" kindref="compound">JwtParts</ref></type>
+          <declname>jwt</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/adenf/RiderProjects/Openlabs.Mgcxm/Openlabs.Mgcxm/JWT/JwtDecoderContext.cs" line="22" column="41"/>
+        <references refid="class_j_w_t_1_1_jwt_decoder_context_1aad1d99c795395fbea376ba3e8ad46aed" compoundref="_jwt_decoder_context_8cs" startline="15" endline="15">JWT.JwtDecoderContext.Header</references>
+        <references refid="class_j_w_t_1_1_jwt_decoder_context_1a130305c3deb783257c34a189864366fe" compoundref="_jwt_decoder_context_8cs" startline="20" endline="20">JWT.JwtDecoderContext.Payload</references>
+        <references refid="class_j_w_t_1_1_jwt_decoder_context_1aea6485cf7c6eb40692a5fe3662627060" compoundref="_jwt_decoder_context_8cs" startline="10" endline="10">JWT.JwtDecoderContext.Token</references>
+        <referencedby refid="class_j_w_t_1_1_jwt_decoder_1a7177bf70a440206276831c0956cea042" compoundref="_jwt_decoder_8cs" startline="229" endline="256">JWT.JwtDecoder.Validate</referencedby>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/Users/adenf/RiderProjects/Openlabs.Mgcxm/Openlabs.Mgcxm/JWT/JwtDecoderContext.cs" line="5" column="11" bodyfile="C:/Users/adenf/RiderProjects/Openlabs.Mgcxm/Openlabs.Mgcxm/JWT/JwtDecoderContext.cs" bodystart="6" bodyend="29"/>
+    <listofallmembers>
+      <member refid="class_j_w_t_1_1_jwt_decoder_context_1ac42b128e3f1a39a6ab6da27738ad7c65" prot="public" virt="non-virtual"><scope>JWT::JwtDecoderContext</scope><name>Create</name></member>
+      <member refid="class_j_w_t_1_1_jwt_decoder_context_1aad1d99c795395fbea376ba3e8ad46aed" prot="public" virt="non-virtual"><scope>JWT::JwtDecoderContext</scope><name>Header</name></member>
+      <member refid="class_j_w_t_1_1_jwt_decoder_context_1a130305c3deb783257c34a189864366fe" prot="public" virt="non-virtual"><scope>JWT::JwtDecoderContext</scope><name>Payload</name></member>
+      <member refid="class_j_w_t_1_1_jwt_decoder_context_1aea6485cf7c6eb40692a5fe3662627060" prot="public" virt="non-virtual"><scope>JWT::JwtDecoderContext</scope><name>Token</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

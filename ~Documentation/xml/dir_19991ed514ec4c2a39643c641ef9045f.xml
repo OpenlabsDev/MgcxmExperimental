@@ -1,0 +1,19 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.7" xml:lang="en-US">
+  <compounddef id="dir_19991ed514ec4c2a39643c641ef9045f" kind="dir">
+    <compoundname>C:/Users/adenf/RiderProjects/Openlabs.Mgcxm/Openlabs.Mgcxm/Net/Http</compoundname>
+    <innerfile refid="_http_content_types_8cs">HttpContentTypes.cs</innerfile>
+    <innerfile refid="_http_endpoint_8cs">HttpEndpoint.cs</innerfile>
+    <innerfile refid="_http_methods_8cs">HttpMethods.cs</innerfile>
+    <innerfile refid="_http_status_codes_8cs">HttpStatusCodes.cs</innerfile>
+    <innerfile refid="_mgcxm_http_endpoint_8cs">MgcxmHttpEndpoint.cs</innerfile>
+    <innerfile refid="_mgcxm_http_listener_8cs">MgcxmHttpListener.cs</innerfile>
+    <innerfile refid="_mgcxm_http_request_8cs">MgcxmHttpRequest.cs</innerfile>
+    <innerfile refid="_mgcxm_http_response_8cs">MgcxmHttpResponse.cs</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/Users/adenf/RiderProjects/Openlabs.Mgcxm/Openlabs.Mgcxm/Net/Http/"/>
+  </compounddef>
+</doxygen>

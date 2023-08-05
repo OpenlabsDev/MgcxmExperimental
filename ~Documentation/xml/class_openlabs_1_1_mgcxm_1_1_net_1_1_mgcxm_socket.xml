@@ -1,0 +1,287 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.7" xml:lang="en-US">
+  <compounddef id="class_openlabs_1_1_mgcxm_1_1_net_1_1_mgcxm_socket" kind="class" language="C#" prot="public">
+    <compoundname>Openlabs::Mgcxm::Net::MgcxmSocket</compoundname>
+    <basecompoundref refid="interface_openlabs_1_1_mgcxm_1_1_internal_1_1_system_objects_1_1_i_mgcxm_system_object" prot="public" virt="non-virtual">Openlabs.Mgcxm.Internal.SystemObjects.IMgcxmSystemObject</basecompoundref>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_openlabs_1_1_mgcxm_1_1_net_1_1_mgcxm_socket_1a5a9e4d800337fd9c73dbf64dddec95d7" prot="private" static="no" mutable="no">
+        <type>string</type>
+        <definition>string Openlabs.Mgcxm.Net.MgcxmSocket._socketId</definition>
+        <argsstring></argsstring>
+        <name>_socketId</name>
+        <qualifiedname>Openlabs.Mgcxm.Net.MgcxmSocket._socketId</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/adenf/RiderProjects/Openlabs.Mgcxm/Openlabs.Mgcxm/Net/WebSocket/MgcxmSocket.cs" line="18" column="20" bodyfile="C:/Users/adenf/RiderProjects/Openlabs.Mgcxm/Openlabs.Mgcxm/Net/WebSocket/MgcxmSocket.cs" bodystart="18" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_openlabs_1_1_mgcxm_1_1_net_1_1_mgcxm_socket_1a1238931ee636f23fd6d79465a4481de9" prot="private" static="no" mutable="no">
+        <type>HttpListenerWebSocketContext</type>
+        <definition>HttpListenerWebSocketContext Openlabs.Mgcxm.Net.MgcxmSocket._context</definition>
+        <argsstring></argsstring>
+        <name>_context</name>
+        <qualifiedname>Openlabs.Mgcxm.Net.MgcxmSocket._context</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/adenf/RiderProjects/Openlabs.Mgcxm/Openlabs.Mgcxm/Net/WebSocket/MgcxmSocket.cs" line="19" column="42" bodyfile="C:/Users/adenf/RiderProjects/Openlabs.Mgcxm/Openlabs.Mgcxm/Net/WebSocket/MgcxmSocket.cs" bodystart="19" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="property">
+      <memberdef kind="property" id="class_openlabs_1_1_mgcxm_1_1_net_1_1_mgcxm_socket_1ae263c019329dc650ce69f7032ae340a4" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="no" privatesettable="no" protectedsettable="no">
+        <type><ref refid="struct_openlabs_1_1_mgcxm_1_1_internal_1_1_mgcxm_id" kindref="compound">MgcxmId</ref></type>
+        <definition>MgcxmId Openlabs.Mgcxm.Net.MgcxmSocket.AllocatedId</definition>
+        <argsstring></argsstring>
+        <name>AllocatedId</name>
+        <qualifiedname>Openlabs.Mgcxm.Net.MgcxmSocket.AllocatedId</qualifiedname>
+        <reimplements refid="interface_openlabs_1_1_mgcxm_1_1_internal_1_1_system_objects_1_1_i_mgcxm_system_object_1afd31aa32e2b847ad283d3c5d5ce90e85">AllocatedId</reimplements>
+        <briefdescription>
+<para>Gets the unique identifier (object ID) of the MgcxmSocket. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/adenf/RiderProjects/Openlabs.Mgcxm/Openlabs.Mgcxm/Net/WebSocket/MgcxmSocket.cs" line="83" column="20" bodyfile="C:/Users/adenf/RiderProjects/Openlabs.Mgcxm/Openlabs.Mgcxm/Net/WebSocket/MgcxmSocket.cs" bodystart="83" bodyend="83"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="class_openlabs_1_1_mgcxm_1_1_net_1_1_mgcxm_socket_1ab9088ed10687a88a81eef31d5d339967" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="class_openlabs_1_1_mgcxm_1_1_net_1_1_mgcxm_socket" kindref="compound">MgcxmSocket</ref></type>
+        <definition>static MgcxmSocket Openlabs.Mgcxm.Net.MgcxmSocket.Create</definition>
+        <argsstring>(HttpListenerWebSocketContext context)</argsstring>
+        <name>Create</name>
+        <qualifiedname>Openlabs.Mgcxm.Net.MgcxmSocket.Create</qualifiedname>
+        <param>
+          <type>HttpListenerWebSocketContext</type>
+          <declname>context</declname>
+        </param>
+        <briefdescription>
+<para>Creates a new instance of MgcxmSocket from the provided HttpListenerWebSocketContext. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>context</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The HttpListenerWebSocketContext used to initialize the MgcxmSocket.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>A new instance of MgcxmSocket.</para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/adenf/RiderProjects/Openlabs.Mgcxm/Openlabs.Mgcxm/Net/WebSocket/MgcxmSocket.cs" line="26" column="31" bodyfile="C:/Users/adenf/RiderProjects/Openlabs.Mgcxm/Openlabs.Mgcxm/Net/WebSocket/MgcxmSocket.cs" bodystart="26" bodyend="33"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_openlabs_1_1_mgcxm_1_1_net_1_1_mgcxm_socket_1ad66e3a7cf2e29aa3270b42135426f651" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>async Task</type>
+        <definition>async Task Openlabs.Mgcxm.Net.MgcxmSocket.SendMessage</definition>
+        <argsstring>(byte[] data)</argsstring>
+        <name>SendMessage</name>
+        <qualifiedname>Openlabs.Mgcxm.Net.MgcxmSocket.SendMessage</qualifiedname>
+        <param>
+          <type>byte[]</type>
+          <declname>data</declname>
+        </param>
+        <briefdescription>
+<para>Sends a binary message over the WebSocket connection. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>data</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The byte array to be sent as a message.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>A Task representing the asynchronous operation.</para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/adenf/RiderProjects/Openlabs.Mgcxm/Openlabs.Mgcxm/Net/WebSocket/MgcxmSocket.cs" line="40" column="23" bodyfile="C:/Users/adenf/RiderProjects/Openlabs.Mgcxm/Openlabs.Mgcxm/Net/WebSocket/MgcxmSocket.cs" bodystart="40" bodyend="47"/>
+        <referencedby refid="class_openlabs_1_1_mgcxm_1_1_tests_1_1_test_ws_server_1_1_notification_socket_connection_handler_1ac2c91de5d04a0a65ebe788137522ce6b" compoundref="_test_ws_server_8cs" startline="30" endline="50">Openlabs.Mgcxm.Tests.TestWsServer.NotificationSocketConnectionHandler.OnMessage</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_openlabs_1_1_mgcxm_1_1_net_1_1_mgcxm_socket_1a1e9348aa54a56c56e9903c673b01c370" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>async Task</type>
+        <definition>async Task Openlabs.Mgcxm.Net.MgcxmSocket.SendMessage</definition>
+        <argsstring>(string data)</argsstring>
+        <name>SendMessage</name>
+        <qualifiedname>Openlabs.Mgcxm.Net.MgcxmSocket.SendMessage</qualifiedname>
+        <param>
+          <type>string</type>
+          <declname>data</declname>
+        </param>
+        <briefdescription>
+<para>Sends a string message over the WebSocket connection. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>data</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The string data to be sent as a message.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>A Task representing the asynchronous operation.</para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/adenf/RiderProjects/Openlabs.Mgcxm/Openlabs.Mgcxm/Net/WebSocket/MgcxmSocket.cs" line="54" column="23"/>
+      </memberdef>
+      <memberdef kind="function" id="class_openlabs_1_1_mgcxm_1_1_net_1_1_mgcxm_socket_1a00ce3b26229050d7a71058e02ea2290e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>async Task</type>
+        <definition>async Task Openlabs.Mgcxm.Net.MgcxmSocket.SendMessage&lt; T &gt;</definition>
+        <argsstring>(T data)</argsstring>
+        <name>SendMessage&lt; T &gt;</name>
+        <qualifiedname>Openlabs.Mgcxm.Net.MgcxmSocket.SendMessage&lt; T &gt;</qualifiedname>
+        <param>
+          <type>T</type>
+          <declname>data</declname>
+        </param>
+        <briefdescription>
+<para>Sends a serialized object as a JSON message over the WebSocket connection. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="templateparam"><parameteritem>
+<parameternamelist>
+<parametername>T</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The type of the object to be serialized and sent.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>data</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The object to be serialized and sent.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>A Task representing the asynchronous operation.</para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/adenf/RiderProjects/Openlabs.Mgcxm/Openlabs.Mgcxm/Net/WebSocket/MgcxmSocket.cs" line="63" column="18"/>
+      </memberdef>
+      <memberdef kind="function" id="class_openlabs_1_1_mgcxm_1_1_net_1_1_mgcxm_socket_1ad74378a1abab32c7cd80e2d09f956c28" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>WebSocket</type>
+        <definition>WebSocket Openlabs.Mgcxm.Net.MgcxmSocket.GetRawWebSocket</definition>
+        <argsstring>()</argsstring>
+        <name>GetRawWebSocket</name>
+        <qualifiedname>Openlabs.Mgcxm.Net.MgcxmSocket.GetRawWebSocket</qualifiedname>
+        <briefdescription>
+<para>Retrieves the underlying raw WebSocket associated with the MgcxmSocket. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>The raw WebSocket object.</para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/adenf/RiderProjects/Openlabs.Mgcxm/Openlabs.Mgcxm/Net/WebSocket/MgcxmSocket.cs" line="70" column="22"/>
+      </memberdef>
+      <memberdef kind="function" id="class_openlabs_1_1_mgcxm_1_1_net_1_1_mgcxm_socket_1aebea81c50e8c8a64570023a2f2fc23dc" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>string</type>
+        <definition>string Openlabs.Mgcxm.Net.MgcxmSocket.GetSocketId</definition>
+        <argsstring>()</argsstring>
+        <name>GetSocketId</name>
+        <qualifiedname>Openlabs.Mgcxm.Net.MgcxmSocket.GetSocketId</qualifiedname>
+        <briefdescription>
+<para>Retrieves the unique identifier (socket ID) associated with the MgcxmSocket. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>The socket ID.</para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/adenf/RiderProjects/Openlabs.Mgcxm/Openlabs.Mgcxm/Net/WebSocket/MgcxmSocket.cs" line="76" column="19"/>
+      </memberdef>
+      <memberdef kind="function" id="class_openlabs_1_1_mgcxm_1_1_net_1_1_mgcxm_socket_1a043ed4210f1876bdcd79d531f8b846c7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Openlabs.Mgcxm.Net.MgcxmSocket.Trash</definition>
+        <argsstring>()</argsstring>
+        <name>Trash</name>
+        <qualifiedname>Openlabs.Mgcxm.Net.MgcxmSocket.Trash</qualifiedname>
+        <reimplements refid="interface_openlabs_1_1_mgcxm_1_1_internal_1_1_system_objects_1_1_i_mgcxm_system_object_1ab14e018c681d09992e11bf3de82c5b45">Trash</reimplements>
+        <briefdescription>
+<para>Disposes of the MgcxmSocket and deregisters it from the object manager. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/adenf/RiderProjects/Openlabs.Mgcxm/Openlabs.Mgcxm/Net/WebSocket/MgcxmSocket.cs" line="88" column="17"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Represents a managed socket for handling WebSocket communication using HttpListenerWebSocketContext. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>IMgcxmSystemObject</label>
+        <link refid="interface_openlabs_1_1_mgcxm_1_1_internal_1_1_system_objects_1_1_i_mgcxm_system_object"/>
+      </node>
+      <node id="1">
+        <label>Openlabs.Mgcxm.Net.MgcxmSocket</label>
+        <link refid="class_openlabs_1_1_mgcxm_1_1_net_1_1_mgcxm_socket"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>IMgcxmSystemObject</label>
+        <link refid="interface_openlabs_1_1_mgcxm_1_1_internal_1_1_system_objects_1_1_i_mgcxm_system_object"/>
+      </node>
+      <node id="1">
+        <label>Openlabs.Mgcxm.Net.MgcxmSocket</label>
+        <link refid="class_openlabs_1_1_mgcxm_1_1_net_1_1_mgcxm_socket"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="C:/Users/adenf/RiderProjects/Openlabs.Mgcxm/Openlabs.Mgcxm/Net/WebSocket/MgcxmSocket.cs" line="16" column="14" bodyfile="C:/Users/adenf/RiderProjects/Openlabs.Mgcxm/Openlabs.Mgcxm/Net/WebSocket/MgcxmSocket.cs" bodystart="17" bodyend="91"/>
+    <listofallmembers>
+      <member refid="class_openlabs_1_1_mgcxm_1_1_net_1_1_mgcxm_socket_1a1238931ee636f23fd6d79465a4481de9" prot="private" virt="non-virtual"><scope>Openlabs::Mgcxm::Net::MgcxmSocket</scope><name>_context</name></member>
+      <member refid="class_openlabs_1_1_mgcxm_1_1_net_1_1_mgcxm_socket_1a5a9e4d800337fd9c73dbf64dddec95d7" prot="private" virt="non-virtual"><scope>Openlabs::Mgcxm::Net::MgcxmSocket</scope><name>_socketId</name></member>
+      <member refid="class_openlabs_1_1_mgcxm_1_1_net_1_1_mgcxm_socket_1ae263c019329dc650ce69f7032ae340a4" prot="public" virt="non-virtual"><scope>Openlabs::Mgcxm::Net::MgcxmSocket</scope><name>AllocatedId</name></member>
+      <member refid="class_openlabs_1_1_mgcxm_1_1_net_1_1_mgcxm_socket_1ab9088ed10687a88a81eef31d5d339967" prot="public" virt="non-virtual"><scope>Openlabs::Mgcxm::Net::MgcxmSocket</scope><name>Create</name></member>
+      <member refid="class_openlabs_1_1_mgcxm_1_1_net_1_1_mgcxm_socket_1ad74378a1abab32c7cd80e2d09f956c28" prot="public" virt="non-virtual"><scope>Openlabs::Mgcxm::Net::MgcxmSocket</scope><name>GetRawWebSocket</name></member>
+      <member refid="class_openlabs_1_1_mgcxm_1_1_net_1_1_mgcxm_socket_1aebea81c50e8c8a64570023a2f2fc23dc" prot="public" virt="non-virtual"><scope>Openlabs::Mgcxm::Net::MgcxmSocket</scope><name>GetSocketId</name></member>
+      <member refid="class_openlabs_1_1_mgcxm_1_1_net_1_1_mgcxm_socket_1ad66e3a7cf2e29aa3270b42135426f651" prot="public" virt="non-virtual"><scope>Openlabs::Mgcxm::Net::MgcxmSocket</scope><name>SendMessage</name></member>
+      <member refid="class_openlabs_1_1_mgcxm_1_1_net_1_1_mgcxm_socket_1a1e9348aa54a56c56e9903c673b01c370" prot="public" virt="non-virtual"><scope>Openlabs::Mgcxm::Net::MgcxmSocket</scope><name>SendMessage</name></member>
+      <member refid="class_openlabs_1_1_mgcxm_1_1_net_1_1_mgcxm_socket_1a00ce3b26229050d7a71058e02ea2290e" prot="public" virt="non-virtual"><scope>Openlabs::Mgcxm::Net::MgcxmSocket</scope><name>SendMessage&lt; T &gt;</name></member>
+      <member refid="class_openlabs_1_1_mgcxm_1_1_net_1_1_mgcxm_socket_1a043ed4210f1876bdcd79d531f8b846c7" prot="public" virt="non-virtual"><scope>Openlabs::Mgcxm::Net::MgcxmSocket</scope><name>Trash</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,232 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.7" xml:lang="en-US">
+  <compounddef id="class_openlabs_1_1_mgcxm_1_1_internal_1_1_action_scheduler_1_1_queued_task" kind="class" language="C#" prot="private">
+    <compoundname>Openlabs::Mgcxm::Internal::ActionScheduler::QueuedTask</compoundname>
+      <sectiondef kind="property">
+      <memberdef kind="property" id="class_openlabs_1_1_mgcxm_1_1_internal_1_1_action_scheduler_1_1_queued_task_1a0e62fc30ffd21906c09acd3d2030df1a" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="no" privatesettable="no" protectedsettable="no">
+        <type><ref refid="struct_openlabs_1_1_mgcxm_1_1_internal_1_1_mgcxm_id" kindref="compound">MgcxmId</ref></type>
+        <definition>MgcxmId Openlabs.Mgcxm.Internal.ActionScheduler.QueuedTask.TaskId</definition>
+        <argsstring></argsstring>
+        <name>TaskId</name>
+        <qualifiedname>Openlabs.Mgcxm.Internal.ActionScheduler.QueuedTask.TaskId</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/adenf/RiderProjects/Openlabs.Mgcxm/Openlabs.Mgcxm/Internal/ActionScheduler.cs" line="109" column="24" bodyfile="C:/Users/adenf/RiderProjects/Openlabs.Mgcxm/Openlabs.Mgcxm/Internal/ActionScheduler.cs" bodystart="109" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="property" id="class_openlabs_1_1_mgcxm_1_1_internal_1_1_action_scheduler_1_1_queued_task_1a1f44c9197a7212ceb77558a8e2765f1e" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="no" privatesettable="no" protectedsettable="no">
+        <type>string</type>
+        <definition>string Openlabs.Mgcxm.Internal.ActionScheduler.QueuedTask.Name</definition>
+        <argsstring></argsstring>
+        <name>Name</name>
+        <qualifiedname>Openlabs.Mgcxm.Internal.ActionScheduler.QueuedTask.Name</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/adenf/RiderProjects/Openlabs.Mgcxm/Openlabs.Mgcxm/Internal/ActionScheduler.cs" line="110" column="23" bodyfile="C:/Users/adenf/RiderProjects/Openlabs.Mgcxm/Openlabs.Mgcxm/Internal/ActionScheduler.cs" bodystart="110" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="property" id="class_openlabs_1_1_mgcxm_1_1_internal_1_1_action_scheduler_1_1_queued_task_1a79e83d98e7f8346d740c09d8ed995de4" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="no" privatesettable="no" protectedsettable="no">
+        <type>Delegate</type>
+        <definition>Delegate Openlabs.Mgcxm.Internal.ActionScheduler.QueuedTask.Delegate</definition>
+        <argsstring></argsstring>
+        <name>Delegate</name>
+        <qualifiedname>Openlabs.Mgcxm.Internal.ActionScheduler.QueuedTask.Delegate</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/adenf/RiderProjects/Openlabs.Mgcxm/Openlabs.Mgcxm/Internal/ActionScheduler.cs" line="111" column="25" bodyfile="C:/Users/adenf/RiderProjects/Openlabs.Mgcxm/Openlabs.Mgcxm/Internal/ActionScheduler.cs" bodystart="111" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="property" id="class_openlabs_1_1_mgcxm_1_1_internal_1_1_action_scheduler_1_1_queued_task_1af3a52f931ceed7de1165a4edacb3d0bc" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="no" privatesettable="no" protectedsettable="no">
+        <type>object[]</type>
+        <definition>object [] Openlabs.Mgcxm.Internal.ActionScheduler.QueuedTask.Arguments</definition>
+        <argsstring></argsstring>
+        <name>Arguments</name>
+        <qualifiedname>Openlabs.Mgcxm.Internal.ActionScheduler.QueuedTask.Arguments</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/adenf/RiderProjects/Openlabs.Mgcxm/Openlabs.Mgcxm/Internal/ActionScheduler.cs" line="112" column="23" bodyfile="C:/Users/adenf/RiderProjects/Openlabs.Mgcxm/Openlabs.Mgcxm/Internal/ActionScheduler.cs" bodystart="112" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="property" id="class_openlabs_1_1_mgcxm_1_1_internal_1_1_action_scheduler_1_1_queued_task_1ac549d57a50715c36fcc13c6ab3ab8541" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="no" privatesettable="yes" protectedsettable="no">
+        <type>bool</type>
+        <definition>bool Openlabs.Mgcxm.Internal.ActionScheduler.QueuedTask.Finished</definition>
+        <argsstring></argsstring>
+        <name>Finished</name>
+        <qualifiedname>Openlabs.Mgcxm.Internal.ActionScheduler.QueuedTask.Finished</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/adenf/RiderProjects/Openlabs.Mgcxm/Openlabs.Mgcxm/Internal/ActionScheduler.cs" line="114" column="21" bodyfile="C:/Users/adenf/RiderProjects/Openlabs.Mgcxm/Openlabs.Mgcxm/Internal/ActionScheduler.cs" bodystart="114" bodyend="114"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_openlabs_1_1_mgcxm_1_1_internal_1_1_action_scheduler_1_1_queued_task_1a94f80fa456a2daf1fdaa71e40af05734" prot="private" static="no" mutable="no">
+        <type><ref refid="struct_openlabs_1_1_mgcxm_1_1_internal_1_1_mgcxm_id" kindref="compound">MgcxmId</ref></type>
+        <definition>MgcxmId Openlabs.Mgcxm.Internal.ActionScheduler.QueuedTask._schedulerId</definition>
+        <argsstring></argsstring>
+        <name>_schedulerId</name>
+        <qualifiedname>Openlabs.Mgcxm.Internal.ActionScheduler.QueuedTask._schedulerId</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/adenf/RiderProjects/Openlabs.Mgcxm/Openlabs.Mgcxm/Internal/ActionScheduler.cs" line="116" column="25" bodyfile="C:/Users/adenf/RiderProjects/Openlabs.Mgcxm/Openlabs.Mgcxm/Internal/ActionScheduler.cs" bodystart="116" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_openlabs_1_1_mgcxm_1_1_internal_1_1_action_scheduler_1_1_queued_task_1af8eb0c249363972fd2072c04bae43ae4" prot="private" static="no" mutable="no">
+        <type><ref refid="struct_openlabs_1_1_mgcxm_1_1_internal_1_1_mgcxm_id" kindref="compound">MgcxmId</ref></type>
+        <definition>MgcxmId Openlabs.Mgcxm.Internal.ActionScheduler.QueuedTask._taskId</definition>
+        <argsstring></argsstring>
+        <name>_taskId</name>
+        <qualifiedname>Openlabs.Mgcxm.Internal.ActionScheduler.QueuedTask._taskId</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/adenf/RiderProjects/Openlabs.Mgcxm/Openlabs.Mgcxm/Internal/ActionScheduler.cs" line="117" column="25" bodyfile="C:/Users/adenf/RiderProjects/Openlabs.Mgcxm/Openlabs.Mgcxm/Internal/ActionScheduler.cs" bodystart="117" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_openlabs_1_1_mgcxm_1_1_internal_1_1_action_scheduler_1_1_queued_task_1a7681e89f7772137e67ea6cb4fdba518e" prot="private" static="no" mutable="no">
+        <type>string</type>
+        <definition>string Openlabs.Mgcxm.Internal.ActionScheduler.QueuedTask._name</definition>
+        <argsstring></argsstring>
+        <name>_name</name>
+        <qualifiedname>Openlabs.Mgcxm.Internal.ActionScheduler.QueuedTask._name</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/adenf/RiderProjects/Openlabs.Mgcxm/Openlabs.Mgcxm/Internal/ActionScheduler.cs" line="118" column="24" bodyfile="C:/Users/adenf/RiderProjects/Openlabs.Mgcxm/Openlabs.Mgcxm/Internal/ActionScheduler.cs" bodystart="118" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_openlabs_1_1_mgcxm_1_1_internal_1_1_action_scheduler_1_1_queued_task_1ac2534fa146c24b355a6924c403825211" prot="private" static="no" mutable="no">
+        <type>Delegate</type>
+        <definition>Delegate Openlabs.Mgcxm.Internal.ActionScheduler.QueuedTask._delegate</definition>
+        <argsstring></argsstring>
+        <name>_delegate</name>
+        <qualifiedname>Openlabs.Mgcxm.Internal.ActionScheduler.QueuedTask._delegate</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/adenf/RiderProjects/Openlabs.Mgcxm/Openlabs.Mgcxm/Internal/ActionScheduler.cs" line="119" column="26" bodyfile="C:/Users/adenf/RiderProjects/Openlabs.Mgcxm/Openlabs.Mgcxm/Internal/ActionScheduler.cs" bodystart="119" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_openlabs_1_1_mgcxm_1_1_internal_1_1_action_scheduler_1_1_queued_task_1a2a55c7bebb8ba5980b0a96f51282cdae" prot="private" static="no" mutable="no">
+        <type>object[]</type>
+        <definition>object [] Openlabs.Mgcxm.Internal.ActionScheduler.QueuedTask._arguments</definition>
+        <argsstring></argsstring>
+        <name>_arguments</name>
+        <qualifiedname>Openlabs.Mgcxm.Internal.ActionScheduler.QueuedTask._arguments</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/adenf/RiderProjects/Openlabs.Mgcxm/Openlabs.Mgcxm/Internal/ActionScheduler.cs" line="120" column="24" bodyfile="C:/Users/adenf/RiderProjects/Openlabs.Mgcxm/Openlabs.Mgcxm/Internal/ActionScheduler.cs" bodystart="120" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_openlabs_1_1_mgcxm_1_1_internal_1_1_action_scheduler_1_1_queued_task_1ab6cce60a67fa339cabdb9a83cfc7dd81" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Openlabs.Mgcxm.Internal.ActionScheduler.QueuedTask.QueuedTask</definition>
+        <argsstring>(string name, Delegate @delegate, object[] args, MgcxmId schedulerId)</argsstring>
+        <name>QueuedTask</name>
+        <qualifiedname>Openlabs.Mgcxm.Internal.ActionScheduler.QueuedTask.QueuedTask</qualifiedname>
+        <param>
+          <type>string</type>
+          <declname>name</declname>
+        </param>
+        <param>
+          <type>Delegate @</type>
+          <declname>delegate</declname>
+        </param>
+        <param>
+          <type>object[]</type>
+          <declname>args</declname>
+        </param>
+        <param>
+          <type><ref refid="struct_openlabs_1_1_mgcxm_1_1_internal_1_1_mgcxm_id" kindref="compound">MgcxmId</ref></type>
+          <declname>schedulerId</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/adenf/RiderProjects/Openlabs.Mgcxm/Openlabs.Mgcxm/Internal/ActionScheduler.cs" line="82" column="16" bodyfile="C:/Users/adenf/RiderProjects/Openlabs.Mgcxm/Openlabs.Mgcxm/Internal/ActionScheduler.cs" bodystart="82" bodyend="95"/>
+      </memberdef>
+      <memberdef kind="function" id="class_openlabs_1_1_mgcxm_1_1_internal_1_1_action_scheduler_1_1_queued_task_1a199df7418157cd308924877511e3ff3b" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Openlabs.Mgcxm.Internal.ActionScheduler.QueuedTask.Finish</definition>
+        <argsstring>()</argsstring>
+        <name>Finish</name>
+        <qualifiedname>Openlabs.Mgcxm.Internal.ActionScheduler.QueuedTask.Finish</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/adenf/RiderProjects/Openlabs.Mgcxm/Openlabs.Mgcxm/Internal/ActionScheduler.cs" line="103" column="21" bodyfile="C:/Users/adenf/RiderProjects/Openlabs.Mgcxm/Openlabs.Mgcxm/Internal/ActionScheduler.cs" bodystart="103" bodyend="107"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="class_openlabs_1_1_mgcxm_1_1_internal_1_1_action_scheduler_1_1_queued_task_1a1e5d08a56f961f8ad0f55f4a40507c5e" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Openlabs.Mgcxm.Internal.ActionScheduler.QueuedTask.~QueuedTask</definition>
+        <argsstring>()</argsstring>
+        <name>~QueuedTask</name>
+        <qualifiedname>Openlabs.Mgcxm.Internal.ActionScheduler.QueuedTask.~QueuedTask</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/adenf/RiderProjects/Openlabs.Mgcxm/Openlabs.Mgcxm/Internal/ActionScheduler.cs" line="97" column="9" bodyfile="C:/Users/adenf/RiderProjects/Openlabs.Mgcxm/Openlabs.Mgcxm/Internal/ActionScheduler.cs" bodystart="97" bodyend="101"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/Users/adenf/RiderProjects/Openlabs.Mgcxm/Openlabs.Mgcxm/Internal/ActionScheduler.cs" line="80" column="12" bodyfile="C:/Users/adenf/RiderProjects/Openlabs.Mgcxm/Openlabs.Mgcxm/Internal/ActionScheduler.cs" bodystart="81" bodyend="121"/>
+    <listofallmembers>
+      <member refid="class_openlabs_1_1_mgcxm_1_1_internal_1_1_action_scheduler_1_1_queued_task_1a2a55c7bebb8ba5980b0a96f51282cdae" prot="private" virt="non-virtual"><scope>Openlabs::Mgcxm::Internal::ActionScheduler::QueuedTask</scope><name>_arguments</name></member>
+      <member refid="class_openlabs_1_1_mgcxm_1_1_internal_1_1_action_scheduler_1_1_queued_task_1ac2534fa146c24b355a6924c403825211" prot="private" virt="non-virtual"><scope>Openlabs::Mgcxm::Internal::ActionScheduler::QueuedTask</scope><name>_delegate</name></member>
+      <member refid="class_openlabs_1_1_mgcxm_1_1_internal_1_1_action_scheduler_1_1_queued_task_1a7681e89f7772137e67ea6cb4fdba518e" prot="private" virt="non-virtual"><scope>Openlabs::Mgcxm::Internal::ActionScheduler::QueuedTask</scope><name>_name</name></member>
+      <member refid="class_openlabs_1_1_mgcxm_1_1_internal_1_1_action_scheduler_1_1_queued_task_1a94f80fa456a2daf1fdaa71e40af05734" prot="private" virt="non-virtual"><scope>Openlabs::Mgcxm::Internal::ActionScheduler::QueuedTask</scope><name>_schedulerId</name></member>
+      <member refid="class_openlabs_1_1_mgcxm_1_1_internal_1_1_action_scheduler_1_1_queued_task_1af8eb0c249363972fd2072c04bae43ae4" prot="private" virt="non-virtual"><scope>Openlabs::Mgcxm::Internal::ActionScheduler::QueuedTask</scope><name>_taskId</name></member>
+      <member refid="class_openlabs_1_1_mgcxm_1_1_internal_1_1_action_scheduler_1_1_queued_task_1af3a52f931ceed7de1165a4edacb3d0bc" prot="public" virt="non-virtual"><scope>Openlabs::Mgcxm::Internal::ActionScheduler::QueuedTask</scope><name>Arguments</name></member>
+      <member refid="class_openlabs_1_1_mgcxm_1_1_internal_1_1_action_scheduler_1_1_queued_task_1a79e83d98e7f8346d740c09d8ed995de4" prot="public" virt="non-virtual"><scope>Openlabs::Mgcxm::Internal::ActionScheduler::QueuedTask</scope><name>Delegate</name></member>
+      <member refid="class_openlabs_1_1_mgcxm_1_1_internal_1_1_action_scheduler_1_1_queued_task_1a199df7418157cd308924877511e3ff3b" prot="public" virt="non-virtual"><scope>Openlabs::Mgcxm::Internal::ActionScheduler::QueuedTask</scope><name>Finish</name></member>
+      <member refid="class_openlabs_1_1_mgcxm_1_1_internal_1_1_action_scheduler_1_1_queued_task_1ac549d57a50715c36fcc13c6ab3ab8541" prot="public" virt="non-virtual"><scope>Openlabs::Mgcxm::Internal::ActionScheduler::QueuedTask</scope><name>Finished</name></member>
+      <member refid="class_openlabs_1_1_mgcxm_1_1_internal_1_1_action_scheduler_1_1_queued_task_1a1f44c9197a7212ceb77558a8e2765f1e" prot="public" virt="non-virtual"><scope>Openlabs::Mgcxm::Internal::ActionScheduler::QueuedTask</scope><name>Name</name></member>
+      <member refid="class_openlabs_1_1_mgcxm_1_1_internal_1_1_action_scheduler_1_1_queued_task_1ab6cce60a67fa339cabdb9a83cfc7dd81" prot="public" virt="non-virtual"><scope>Openlabs::Mgcxm::Internal::ActionScheduler::QueuedTask</scope><name>QueuedTask</name></member>
+      <member refid="class_openlabs_1_1_mgcxm_1_1_internal_1_1_action_scheduler_1_1_queued_task_1a0e62fc30ffd21906c09acd3d2030df1a" prot="public" virt="non-virtual"><scope>Openlabs::Mgcxm::Internal::ActionScheduler::QueuedTask</scope><name>TaskId</name></member>
+      <member refid="class_openlabs_1_1_mgcxm_1_1_internal_1_1_action_scheduler_1_1_queued_task_1a1e5d08a56f961f8ad0f55f4a40507c5e" prot="private" virt="non-virtual"><scope>Openlabs::Mgcxm::Internal::ActionScheduler::QueuedTask</scope><name>~QueuedTask</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

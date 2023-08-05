@@ -1,0 +1,111 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.7" xml:lang="en-US">
+  <compounddef id="interface_openlabs_1_1_mgcxm_1_1_internal_1_1_i_nongeneric_listed_action" kind="interface" language="C#" prot="public">
+    <compoundname>Openlabs::Mgcxm::Internal::INongenericListedAction</compoundname>
+    <basecompoundref refid="interface_openlabs_1_1_mgcxm_1_1_internal_1_1_i_listed_action" prot="public" virt="non-virtual">Openlabs.Mgcxm.Internal.IListedAction</basecompoundref>
+    <derivedcompoundref refid="class_openlabs_1_1_mgcxm_1_1_internal_1_1_nongeneric_listed_action" prot="public" virt="non-virtual">Openlabs.Mgcxm.Internal.NongenericListedAction</derivedcompoundref>
+      <sectiondef kind="property">
+      <memberdef kind="property" id="interface_openlabs_1_1_mgcxm_1_1_internal_1_1_i_nongeneric_listed_action_1abd2b7c649be4ad22136b05081c84d694" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="no" privatesettable="no" protectedsettable="no">
+        <type>List&lt; Action &gt;</type>
+        <definition>List&lt;Action&gt; Openlabs.Mgcxm.Internal.INongenericListedAction.ActionList</definition>
+        <argsstring></argsstring>
+        <name>ActionList</name>
+        <qualifiedname>Openlabs.Mgcxm.Internal.INongenericListedAction.ActionList</qualifiedname>
+        <reimplementedby refid="class_openlabs_1_1_mgcxm_1_1_internal_1_1_nongeneric_listed_action_1adf42773fd4d8f87d59bf77727c19debf">ActionList</reimplementedby>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/adenf/RiderProjects/Openlabs.Mgcxm/Openlabs.Mgcxm/Internal/Events/Listed Action Parts.cs" line="18" column="14" bodyfile="C:/Users/adenf/RiderProjects/Openlabs.Mgcxm/Openlabs.Mgcxm/Internal/Events/Listed Action Parts.cs" bodystart="18" bodyend="18"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="interface_openlabs_1_1_mgcxm_1_1_internal_1_1_i_nongeneric_listed_action_1a63db1d34062d3871ce7222352f8e305e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Openlabs.Mgcxm.Internal.INongenericListedAction.AddAction</definition>
+        <argsstring>(Action action)</argsstring>
+        <name>AddAction</name>
+        <qualifiedname>Openlabs.Mgcxm.Internal.INongenericListedAction.AddAction</qualifiedname>
+        <reimplementedby refid="class_openlabs_1_1_mgcxm_1_1_internal_1_1_nongeneric_listed_action_1aff88ff79cb365fb4041a5f1a1d3186af">AddAction</reimplementedby>
+        <param>
+          <type>Action</type>
+          <declname>action</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/adenf/RiderProjects/Openlabs.Mgcxm/Openlabs.Mgcxm/Internal/Events/Listed Action Parts.cs" line="15" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="interface_openlabs_1_1_mgcxm_1_1_internal_1_1_i_nongeneric_listed_action_1a81329ff46703eff0d0cb9a0d035d533e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Openlabs.Mgcxm.Internal.INongenericListedAction.RemoveAction</definition>
+        <argsstring>(Action action)</argsstring>
+        <name>RemoveAction</name>
+        <qualifiedname>Openlabs.Mgcxm.Internal.INongenericListedAction.RemoveAction</qualifiedname>
+        <reimplementedby refid="class_openlabs_1_1_mgcxm_1_1_internal_1_1_nongeneric_listed_action_1a85fc162b0cafb22b1c7e717f448a519c">RemoveAction</reimplementedby>
+        <param>
+          <type>Action</type>
+          <declname>action</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/adenf/RiderProjects/Openlabs.Mgcxm/Openlabs.Mgcxm/Internal/Events/Listed Action Parts.cs" line="16" column="14"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>IListedAction</label>
+        <link refid="interface_openlabs_1_1_mgcxm_1_1_internal_1_1_i_listed_action"/>
+      </node>
+      <node id="1">
+        <label>Openlabs.Mgcxm.Internal.INongenericListedAction</label>
+        <link refid="interface_openlabs_1_1_mgcxm_1_1_internal_1_1_i_nongeneric_listed_action"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>Openlabs.Mgcxm.Internal.ActionEvent&lt; T, T1, T2, T3, T4 &gt;</label>
+        <link refid="class_openlabs_1_1_mgcxm_1_1_internal_1_1_action_event"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>Openlabs.Mgcxm.Internal.NongenericListedAction</label>
+        <link refid="class_openlabs_1_1_mgcxm_1_1_internal_1_1_nongeneric_listed_action"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>IListedAction</label>
+        <link refid="interface_openlabs_1_1_mgcxm_1_1_internal_1_1_i_listed_action"/>
+      </node>
+      <node id="1">
+        <label>Openlabs.Mgcxm.Internal.INongenericListedAction</label>
+        <link refid="interface_openlabs_1_1_mgcxm_1_1_internal_1_1_i_nongeneric_listed_action"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="C:/Users/adenf/RiderProjects/Openlabs.Mgcxm/Openlabs.Mgcxm/Internal/Events/Listed Action Parts.cs" line="13" column="22" bodyfile="C:/Users/adenf/RiderProjects/Openlabs.Mgcxm/Openlabs.Mgcxm/Internal/Events/Listed Action Parts.cs" bodystart="14" bodyend="19"/>
+    <listofallmembers>
+      <member refid="interface_openlabs_1_1_mgcxm_1_1_internal_1_1_i_nongeneric_listed_action_1abd2b7c649be4ad22136b05081c84d694" prot="public" virt="non-virtual"><scope>Openlabs::Mgcxm::Internal::INongenericListedAction</scope><name>ActionList</name></member>
+      <member refid="interface_openlabs_1_1_mgcxm_1_1_internal_1_1_i_nongeneric_listed_action_1a63db1d34062d3871ce7222352f8e305e" prot="public" virt="non-virtual"><scope>Openlabs::Mgcxm::Internal::INongenericListedAction</scope><name>AddAction</name></member>
+      <member refid="interface_openlabs_1_1_mgcxm_1_1_internal_1_1_i_nongeneric_listed_action_1a81329ff46703eff0d0cb9a0d035d533e" prot="public" virt="non-virtual"><scope>Openlabs::Mgcxm::Internal::INongenericListedAction</scope><name>RemoveAction</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

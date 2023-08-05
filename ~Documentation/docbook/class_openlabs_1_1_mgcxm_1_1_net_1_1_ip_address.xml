@@ -1,0 +1,211 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_class_openlabs_1_1_mgcxm_1_1_net_1_1_ip_address" xml:lang="en-US">
+<title>Openlabs.Mgcxm.Net.IpAddress Class Reference</title>
+<indexterm><primary>Openlabs.Mgcxm.Net.IpAddress</primary></indexterm>
+<para>
+
+<para>Defines a <computeroutput>Internet Protocol Address (IP Address)</computeroutput>, which is read-only. </para>
+ 
+</para>
+Inheritance diagram for Openlabs.Mgcxm.Net.IpAddress:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="class_openlabs_1_1_mgcxm_1_1_net_1_1_ip_address__inherit__graph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+Collaboration diagram for Openlabs.Mgcxm.Net.IpAddress:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="class_openlabs_1_1_mgcxm_1_1_net_1_1_ip_address__coll__graph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+<simplesect>
+    <title>Public Member Functions    </title>
+        <itemizedlist>
+            <listitem><para><link linkend="_class_openlabs_1_1_mgcxm_1_1_net_1_1_ip_address_1a49537d733c78a816a92fe56e848f6ec8">IpAddress</link> (string origin, ushort port=0)</para>
+
+<para>Creates a new instance of an IpAddress. </para>
+</listitem>
+            <listitem><para>override string <link linkend="_class_openlabs_1_1_mgcxm_1_1_net_1_1_ip_address_1acf912a826a1920cef76988dfdfd58f24">ToString</link> ()</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Static Public Member Functions    </title>
+        <itemizedlist>
+            <listitem><para>static implicit <link linkend="_class_openlabs_1_1_mgcxm_1_1_net_1_1_ip_address_1a65d230285b34e090cea5bfdaf1c331bd">operator IpAddress</link> (IPAddress ip)</para>
+</listitem>
+            <listitem><para>static implicit <link linkend="_class_openlabs_1_1_mgcxm_1_1_net_1_1_ip_address_1adfb34f358df740c27691f341da538067">operator IpAddress</link> (string ipString)</para>
+</listitem>
+            <listitem><para>static implicit <link linkend="_class_openlabs_1_1_mgcxm_1_1_net_1_1_ip_address_1a39e4a655030be1f447e8ba2c226dee50">operator IPAddress</link> (<link linkend="_class_openlabs_1_1_mgcxm_1_1_net_1_1_ip_address">IpAddress</link> ip)</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Properties    </title>
+        <itemizedlist>
+            <listitem><para>IPAddress <link linkend="_class_openlabs_1_1_mgcxm_1_1_net_1_1_ip_address_1a59ff9aaf387ad2074d0d9356162727c1">ActualIpAddress</link><computeroutput> [get]</computeroutput>
+</para>
+
+<para>The actual System object IP address. </para>
+</listitem>
+            <listitem><para>string <link linkend="_class_openlabs_1_1_mgcxm_1_1_net_1_1_ip_address_1ac8e80630b5e898053525d92e02b56d41">Origin</link><computeroutput> [get]</computeroutput>
+</para>
+
+<para>The host of the IP address. (localhost / 1.1.1.1) </para>
+</listitem>
+            <listitem><para>ushort <link linkend="_class_openlabs_1_1_mgcxm_1_1_net_1_1_ip_address_1a43a68d0142702aa4dc7fddbfd4d92463">Port</link><computeroutput> [get]</computeroutput>
+</para>
+
+<para>The port of the IP address. (80 / 443) </para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+Properties inherited from <link linkend="_interface_openlabs_1_1_mgcxm_1_1_net_1_1_i_ip_address">Openlabs.Mgcxm.Net.IIpAddress</link>        <itemizedlist>
+            <listitem><para>IPAddress <link linkend="_interface_openlabs_1_1_mgcxm_1_1_net_1_1_i_ip_address_1a796f5834e89706c954dfe3b0b8265a33">ActualIpAddress</link><computeroutput> [get]</computeroutput>
+</para>
+
+<para>The actual System object IP address. </para>
+</listitem>
+            <listitem><para>string <link linkend="_interface_openlabs_1_1_mgcxm_1_1_net_1_1_i_ip_address_1ae315274c2344bfb559aa2e38fa6352f6">Origin</link><computeroutput> [get]</computeroutput>
+</para>
+
+<para>The host of the IP address. (localhost / 1.1.1.1) </para>
+</listitem>
+            <listitem><para>ushort <link linkend="_interface_openlabs_1_1_mgcxm_1_1_net_1_1_i_ip_address_1aa261bfcf48963c8f4501b3c3f8201451">Port</link><computeroutput> [get]</computeroutput>
+</para>
+
+<para>The port of the IP address. (80 / 443) </para>
+</listitem>
+        </itemizedlist>
+<section>
+<title>Detailed Description</title>
+
+<para>Defines a <computeroutput>Internet Protocol Address (IP Address)</computeroutput>, which is read-only. </para>
+</section>
+<section>
+<title>Constructor &amp; Destructor Documentation</title>
+<anchor xml:id="_class_openlabs_1_1_mgcxm_1_1_net_1_1_ip_address_1a49537d733c78a816a92fe56e848f6ec8"/><section>
+    <title>IpAddress()</title>
+<indexterm><primary>IpAddress</primary><secondary>Openlabs.Mgcxm.Net.IpAddress</secondary></indexterm>
+<indexterm><primary>Openlabs.Mgcxm.Net.IpAddress</primary><secondary>IpAddress</secondary></indexterm>
+<para><computeroutput>Openlabs.Mgcxm.Net.IpAddress.IpAddress (string origin, ushort port = <computeroutput>0</computeroutput>
+)</computeroutput></para><para>
+
+<para>Creates a new instance of an IpAddress. </para>
+</para>
+
+<para>
+                <formalpara>
+                    <title>
+Parameters</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>origin</entry><entry>
+<para>The origin. (e.g. 1.1.1.1)</para>
+</entry>
+                            </row>
+                            <row>
+<entry>port</entry><entry>
+<para>The port. (e.g. 20001)</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                </para>
+</section>
+</section>
+<section>
+<title>Member Function Documentation</title>
+<anchor xml:id="_class_openlabs_1_1_mgcxm_1_1_net_1_1_ip_address_1a65d230285b34e090cea5bfdaf1c331bd"/><section>
+    <title>operator IpAddress()<computeroutput>[1/2]</computeroutput></title>
+<indexterm><primary>operator IpAddress</primary><secondary>Openlabs.Mgcxm.Net.IpAddress</secondary></indexterm>
+<indexterm><primary>Openlabs.Mgcxm.Net.IpAddress</primary><secondary>operator IpAddress</secondary></indexterm>
+<para><computeroutput>static implicit Openlabs.Mgcxm.Net.IpAddress.operator <link linkend="_class_openlabs_1_1_mgcxm_1_1_net_1_1_ip_address">IpAddress</link> (IPAddress ip)<computeroutput>[static]</computeroutput></computeroutput></para>Here is the call graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="class_openlabs_1_1_mgcxm_1_1_net_1_1_ip_address_a65d230285b34e090cea5bfdaf1c331bd_cgraph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+</section>
+<anchor xml:id="_class_openlabs_1_1_mgcxm_1_1_net_1_1_ip_address_1a39e4a655030be1f447e8ba2c226dee50"/><section>
+    <title>operator IPAddress()</title>
+<indexterm><primary>operator IPAddress</primary><secondary>Openlabs.Mgcxm.Net.IpAddress</secondary></indexterm>
+<indexterm><primary>Openlabs.Mgcxm.Net.IpAddress</primary><secondary>operator IPAddress</secondary></indexterm>
+<para><computeroutput>static implicit Openlabs.Mgcxm.Net.IpAddress.operator IPAddress (<link linkend="_class_openlabs_1_1_mgcxm_1_1_net_1_1_ip_address">IpAddress</link> ip)<computeroutput>[static]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_class_openlabs_1_1_mgcxm_1_1_net_1_1_ip_address_1adfb34f358df740c27691f341da538067"/><section>
+    <title>operator IpAddress()<computeroutput>[2/2]</computeroutput></title>
+<indexterm><primary>operator IpAddress</primary><secondary>Openlabs.Mgcxm.Net.IpAddress</secondary></indexterm>
+<indexterm><primary>Openlabs.Mgcxm.Net.IpAddress</primary><secondary>operator IpAddress</secondary></indexterm>
+<para><computeroutput>static implicit Openlabs.Mgcxm.Net.IpAddress.operator <link linkend="_class_openlabs_1_1_mgcxm_1_1_net_1_1_ip_address">IpAddress</link> (string ipString)<computeroutput>[static]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_class_openlabs_1_1_mgcxm_1_1_net_1_1_ip_address_1acf912a826a1920cef76988dfdfd58f24"/><section>
+    <title>ToString()</title>
+<indexterm><primary>ToString</primary><secondary>Openlabs.Mgcxm.Net.IpAddress</secondary></indexterm>
+<indexterm><primary>Openlabs.Mgcxm.Net.IpAddress</primary><secondary>ToString</secondary></indexterm>
+<para><computeroutput>override string Openlabs.Mgcxm.Net.IpAddress.ToString ( )</computeroutput></para>Here is the caller graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="class_openlabs_1_1_mgcxm_1_1_net_1_1_ip_address_acf912a826a1920cef76988dfdfd58f24_icgraph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+</section>
+</section>
+<section>
+<title>Property Documentation</title>
+<anchor xml:id="_class_openlabs_1_1_mgcxm_1_1_net_1_1_ip_address_1a59ff9aaf387ad2074d0d9356162727c1"/><section>
+    <title>ActualIpAddress</title>
+<indexterm><primary>ActualIpAddress</primary><secondary>Openlabs.Mgcxm.Net.IpAddress</secondary></indexterm>
+<indexterm><primary>Openlabs.Mgcxm.Net.IpAddress</primary><secondary>ActualIpAddress</secondary></indexterm>
+<para><computeroutput>IPAddress Openlabs.Mgcxm.Net.IpAddress.ActualIpAddress<computeroutput>[get]</computeroutput></computeroutput></para><para>
+
+<para>The actual System object IP address. </para>
+</para>
+<para>
+Implements <link linkend="_interface_openlabs_1_1_mgcxm_1_1_net_1_1_i_ip_address_1a796f5834e89706c954dfe3b0b8265a33">Openlabs.Mgcxm.Net.IIpAddress</link>.</para>
+</section>
+<anchor xml:id="_class_openlabs_1_1_mgcxm_1_1_net_1_1_ip_address_1ac8e80630b5e898053525d92e02b56d41"/><section>
+    <title>Origin</title>
+<indexterm><primary>Origin</primary><secondary>Openlabs.Mgcxm.Net.IpAddress</secondary></indexterm>
+<indexterm><primary>Openlabs.Mgcxm.Net.IpAddress</primary><secondary>Origin</secondary></indexterm>
+<para><computeroutput>string Openlabs.Mgcxm.Net.IpAddress.Origin<computeroutput>[get]</computeroutput></computeroutput></para><para>
+
+<para>The host of the IP address. (localhost / 1.1.1.1) </para>
+</para>
+<para>
+Implements <link linkend="_interface_openlabs_1_1_mgcxm_1_1_net_1_1_i_ip_address_1ae315274c2344bfb559aa2e38fa6352f6">Openlabs.Mgcxm.Net.IIpAddress</link>.</para>
+</section>
+<anchor xml:id="_class_openlabs_1_1_mgcxm_1_1_net_1_1_ip_address_1a43a68d0142702aa4dc7fddbfd4d92463"/><section>
+    <title>Port</title>
+<indexterm><primary>Port</primary><secondary>Openlabs.Mgcxm.Net.IpAddress</secondary></indexterm>
+<indexterm><primary>Openlabs.Mgcxm.Net.IpAddress</primary><secondary>Port</secondary></indexterm>
+<para><computeroutput>ushort Openlabs.Mgcxm.Net.IpAddress.Port<computeroutput>[get]</computeroutput></computeroutput></para><para>
+
+<para>The port of the IP address. (80 / 443) </para>
+</para>
+<para>
+Implements <link linkend="_interface_openlabs_1_1_mgcxm_1_1_net_1_1_i_ip_address_1aa261bfcf48963c8f4501b3c3f8201451">Openlabs.Mgcxm.Net.IIpAddress</link>.</para>
+</section>
+<para>
+The documentation for this class was generated from the following file:</para>
+C:/Users/adenf/RiderProjects/Openlabs.Mgcxm/Openlabs.Mgcxm/Net/<link linkend="__ip_address_8cs">IpAddress.cs</link></section>
+</section>

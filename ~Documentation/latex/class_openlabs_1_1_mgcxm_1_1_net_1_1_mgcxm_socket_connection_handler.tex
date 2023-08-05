@@ -1,0 +1,106 @@
+\doxysection{Openlabs.\+Mgcxm.\+Net.\+Mgcxm\+Socket\+Connection\+Handler Class Reference}
+\hypertarget{class_openlabs_1_1_mgcxm_1_1_net_1_1_mgcxm_socket_connection_handler}{}\label{class_openlabs_1_1_mgcxm_1_1_net_1_1_mgcxm_socket_connection_handler}\index{Openlabs.Mgcxm.Net.MgcxmSocketConnectionHandler@{Openlabs.Mgcxm.Net.MgcxmSocketConnectionHandler}}
+
+
+Represents an abstract base class for handling Web\+Socket connections and events.  
+
+
+
+
+Inheritance diagram for Openlabs.\+Mgcxm.\+Net.\+Mgcxm\+Socket\+Connection\+Handler\+:
+% FIG 0
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+abstract void \mbox{\hyperlink{class_openlabs_1_1_mgcxm_1_1_net_1_1_mgcxm_socket_connection_handler_a527166eaef7a85035b3589e0e28c0f03}{On\+Connection}} (\mbox{\hyperlink{class_openlabs_1_1_mgcxm_1_1_net_1_1_mgcxm_socket}{Mgcxm\+Socket}} socket)
+\begin{DoxyCompactList}\small\item\em Invoked when a Web\+Socket connection is established. \end{DoxyCompactList}\item 
+abstract void \mbox{\hyperlink{class_openlabs_1_1_mgcxm_1_1_net_1_1_mgcxm_socket_connection_handler_a2c47d96988c995e2ca929f95f91cb887}{On\+Message}} (byte\mbox{[}$\,$\mbox{]} data)
+\begin{DoxyCompactList}\small\item\em Invoked when a message is received over the Web\+Socket connection. \end{DoxyCompactList}\item 
+abstract void \mbox{\hyperlink{class_openlabs_1_1_mgcxm_1_1_net_1_1_mgcxm_socket_connection_handler_a2cb430522ba5031ec5d1b0ae03412cc4}{On\+Disconnection}} (Web\+Socket\+Close\+Status? status)
+\begin{DoxyCompactList}\small\item\em Invoked when the Web\+Socket connection is closed. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_openlabs_1_1_mgcxm_1_1_net_1_1_mgcxm_socket}{Mgcxm\+Socket}} \mbox{\hyperlink{class_openlabs_1_1_mgcxm_1_1_net_1_1_mgcxm_socket_connection_handler_aa3946ce9b9de4622ae5ef11a147634d0}{Socket}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Gets the Mgcxm\+Socket representing the current Web\+Socket connection. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Represents an abstract base class for handling Web\+Socket connections and events. 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_openlabs_1_1_mgcxm_1_1_net_1_1_mgcxm_socket_connection_handler_a527166eaef7a85035b3589e0e28c0f03}\label{class_openlabs_1_1_mgcxm_1_1_net_1_1_mgcxm_socket_connection_handler_a527166eaef7a85035b3589e0e28c0f03} 
+\index{Openlabs.Mgcxm.Net.MgcxmSocketConnectionHandler@{Openlabs.Mgcxm.Net.MgcxmSocketConnectionHandler}!OnConnection@{OnConnection}}
+\index{OnConnection@{OnConnection}!Openlabs.Mgcxm.Net.MgcxmSocketConnectionHandler@{Openlabs.Mgcxm.Net.MgcxmSocketConnectionHandler}}
+\doxysubsubsection{\texorpdfstring{OnConnection()}{OnConnection()}}
+{\footnotesize\ttfamily abstract void Openlabs.\+Mgcxm.\+Net.\+Mgcxm\+Socket\+Connection\+Handler.\+On\+Connection (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_openlabs_1_1_mgcxm_1_1_net_1_1_mgcxm_socket}{Mgcxm\+Socket}}}]{socket }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Invoked when a Web\+Socket connection is established. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em socket} & The Mgcxm\+Socket representing the connected socket.\\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \mbox{\hyperlink{class_openlabs_1_1_mgcxm_1_1_tests_1_1_test_ws_server_1_1_notification_socket_connection_handler_ad59983cd000c9f9ac2cb7403d527fcc9}{Openlabs.\+Mgcxm.\+Tests.\+Test\+Ws\+Server.\+Notification\+Socket\+Connection\+Handler}}.
+
+\Hypertarget{class_openlabs_1_1_mgcxm_1_1_net_1_1_mgcxm_socket_connection_handler_a2cb430522ba5031ec5d1b0ae03412cc4}\label{class_openlabs_1_1_mgcxm_1_1_net_1_1_mgcxm_socket_connection_handler_a2cb430522ba5031ec5d1b0ae03412cc4} 
+\index{Openlabs.Mgcxm.Net.MgcxmSocketConnectionHandler@{Openlabs.Mgcxm.Net.MgcxmSocketConnectionHandler}!OnDisconnection@{OnDisconnection}}
+\index{OnDisconnection@{OnDisconnection}!Openlabs.Mgcxm.Net.MgcxmSocketConnectionHandler@{Openlabs.Mgcxm.Net.MgcxmSocketConnectionHandler}}
+\doxysubsubsection{\texorpdfstring{OnDisconnection()}{OnDisconnection()}}
+{\footnotesize\ttfamily abstract void Openlabs.\+Mgcxm.\+Net.\+Mgcxm\+Socket\+Connection\+Handler.\+On\+Disconnection (\begin{DoxyParamCaption}\item[{Web\+Socket\+Close\+Status?}]{status }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Invoked when the Web\+Socket connection is closed. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em status} & The close status of the Web\+Socket connection, if available.\\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \mbox{\hyperlink{class_openlabs_1_1_mgcxm_1_1_tests_1_1_test_ws_server_1_1_notification_socket_connection_handler_a27ea967b691db8c35a7de481f569fef3}{Openlabs.\+Mgcxm.\+Tests.\+Test\+Ws\+Server.\+Notification\+Socket\+Connection\+Handler}}.
+
+\Hypertarget{class_openlabs_1_1_mgcxm_1_1_net_1_1_mgcxm_socket_connection_handler_a2c47d96988c995e2ca929f95f91cb887}\label{class_openlabs_1_1_mgcxm_1_1_net_1_1_mgcxm_socket_connection_handler_a2c47d96988c995e2ca929f95f91cb887} 
+\index{Openlabs.Mgcxm.Net.MgcxmSocketConnectionHandler@{Openlabs.Mgcxm.Net.MgcxmSocketConnectionHandler}!OnMessage@{OnMessage}}
+\index{OnMessage@{OnMessage}!Openlabs.Mgcxm.Net.MgcxmSocketConnectionHandler@{Openlabs.Mgcxm.Net.MgcxmSocketConnectionHandler}}
+\doxysubsubsection{\texorpdfstring{OnMessage()}{OnMessage()}}
+{\footnotesize\ttfamily abstract void Openlabs.\+Mgcxm.\+Net.\+Mgcxm\+Socket\+Connection\+Handler.\+On\+Message (\begin{DoxyParamCaption}\item[{byte\mbox{[}$\,$\mbox{]}}]{data }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Invoked when a message is received over the Web\+Socket connection. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em data} & The byte array representing the received message data.\\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \mbox{\hyperlink{class_openlabs_1_1_mgcxm_1_1_tests_1_1_test_ws_server_1_1_notification_socket_connection_handler_ac2c91de5d04a0a65ebe788137522ce6b}{Openlabs.\+Mgcxm.\+Tests.\+Test\+Ws\+Server.\+Notification\+Socket\+Connection\+Handler}}.
+
+
+
+\doxysubsection{Property Documentation}
+\Hypertarget{class_openlabs_1_1_mgcxm_1_1_net_1_1_mgcxm_socket_connection_handler_aa3946ce9b9de4622ae5ef11a147634d0}\label{class_openlabs_1_1_mgcxm_1_1_net_1_1_mgcxm_socket_connection_handler_aa3946ce9b9de4622ae5ef11a147634d0} 
+\index{Openlabs.Mgcxm.Net.MgcxmSocketConnectionHandler@{Openlabs.Mgcxm.Net.MgcxmSocketConnectionHandler}!Socket@{Socket}}
+\index{Socket@{Socket}!Openlabs.Mgcxm.Net.MgcxmSocketConnectionHandler@{Openlabs.Mgcxm.Net.MgcxmSocketConnectionHandler}}
+\doxysubsubsection{\texorpdfstring{Socket}{Socket}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_openlabs_1_1_mgcxm_1_1_net_1_1_mgcxm_socket}{Mgcxm\+Socket}} Openlabs.\+Mgcxm.\+Net.\+Mgcxm\+Socket\+Connection\+Handler.\+Socket\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+Gets the Mgcxm\+Socket representing the current Web\+Socket connection. 
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/adenf/\+Rider\+Projects/\+Openlabs.\+Mgcxm/\+Openlabs.\+Mgcxm/\+Net/\+Web\+Socket/\mbox{\hyperlink{_mgcxm_socket_connection_handler_8cs}{Mgcxm\+Socket\+Connection\+Handler.\+cs}}\end{DoxyCompactItemize}

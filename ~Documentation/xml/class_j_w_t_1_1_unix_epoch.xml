@@ -1,0 +1,53 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.7" xml:lang="en-US">
+  <compounddef id="class_j_w_t_1_1_unix_epoch" kind="class" language="C#" prot="public">
+    <compoundname>JWT::UnixEpoch</compoundname>
+      <sectiondef kind="property">
+      <memberdef kind="property" id="class_j_w_t_1_1_unix_epoch_1ae8d20ce59ec3de0f64ba6ae34549d09b" prot="public" static="yes" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="no" privatesettable="no" protectedsettable="no">
+        <type>DateTime</type>
+        <definition>DateTime JWT.UnixEpoch.Value</definition>
+        <argsstring></argsstring>
+        <name>Value</name>
+        <qualifiedname>JWT.UnixEpoch.Value</qualifiedname>
+        <initializer>= new DateTime(1970, 1, 1, 0, 0, 0, 0, DateTimeKind.Utc)</initializer>
+        <briefdescription>
+<para>Describes a point in time, defined as the number of seconds that have elapsed since 00:00:00 UTC, Thursday, 1 January 1970, not counting leap seconds. See <ulink url="https://en.wikipedia.org/wiki/Unix_time">https://en.wikipedia.org/wiki/Unix_time</ulink> /&gt; </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/adenf/RiderProjects/Openlabs.Mgcxm/Openlabs.Mgcxm/JWT/UnixEpoch.cs" line="12" column="32" bodyfile="C:/Users/adenf/RiderProjects/Openlabs.Mgcxm/Openlabs.Mgcxm/JWT/UnixEpoch.cs" bodystart="12" bodyend="12"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="class_j_w_t_1_1_unix_epoch_1a868f5b7e0fc925d3e9e2a0f127d6cb56" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>static double JWT.UnixEpoch.GetSecondsSince</definition>
+        <argsstring>(DateTimeOffset time)</argsstring>
+        <name>GetSecondsSince</name>
+        <qualifiedname>JWT.UnixEpoch.GetSecondsSince</qualifiedname>
+        <param>
+          <type>DateTimeOffset</type>
+          <declname>time</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/adenf/RiderProjects/Openlabs.Mgcxm/Openlabs.Mgcxm/JWT/UnixEpoch.cs" line="14" column="30"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/Users/adenf/RiderProjects/Openlabs.Mgcxm/Openlabs.Mgcxm/JWT/UnixEpoch.cs" line="6" column="19" bodyfile="C:/Users/adenf/RiderProjects/Openlabs.Mgcxm/Openlabs.Mgcxm/JWT/UnixEpoch.cs" bodystart="7" bodyend="16"/>
+    <listofallmembers>
+      <member refid="class_j_w_t_1_1_unix_epoch_1a868f5b7e0fc925d3e9e2a0f127d6cb56" prot="public" virt="non-virtual"><scope>JWT::UnixEpoch</scope><name>GetSecondsSince</name></member>
+      <member refid="class_j_w_t_1_1_unix_epoch_1ae8d20ce59ec3de0f64ba6ae34549d09b" prot="public" virt="non-virtual"><scope>JWT::UnixEpoch</scope><name>Value</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

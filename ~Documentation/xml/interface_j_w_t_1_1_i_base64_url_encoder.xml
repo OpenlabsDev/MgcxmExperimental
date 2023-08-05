@@ -1,0 +1,71 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.7" xml:lang="en-US">
+  <compounddef id="interface_j_w_t_1_1_i_base64_url_encoder" kind="interface" language="C#" prot="public">
+    <compoundname>JWT::IBase64UrlEncoder</compoundname>
+    <derivedcompoundref refid="class_j_w_t_1_1_jwt_base64_url_encoder" prot="public" virt="non-virtual">JWT.JwtBase64UrlEncoder</derivedcompoundref>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="interface_j_w_t_1_1_i_base64_url_encoder_1a0e1266c26222092a10082d1bb0c86e61" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>string</type>
+        <definition>string JWT.IBase64UrlEncoder.Encode</definition>
+        <argsstring>(byte[] input)</argsstring>
+        <name>Encode</name>
+        <qualifiedname>JWT.IBase64UrlEncoder.Encode</qualifiedname>
+        <reimplementedby refid="class_j_w_t_1_1_jwt_base64_url_encoder_1a06cd88d4af2e4762ea12dd89a90fad86">Encode</reimplementedby>
+        <param>
+          <type>byte[]</type>
+          <declname>input</declname>
+        </param>
+        <briefdescription>
+<para>Encodes the byte array to a base64 string. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/adenf/RiderProjects/Openlabs.Mgcxm/Openlabs.Mgcxm/JWT/IBase64UrlEncoder.cs" line="11" column="16"/>
+      </memberdef>
+      <memberdef kind="function" id="interface_j_w_t_1_1_i_base64_url_encoder_1a70852ef851d7288fdba837a1248d3183" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>byte[]</type>
+        <definition>byte[] JWT.IBase64UrlEncoder.Decode</definition>
+        <argsstring>(string input)</argsstring>
+        <name>Decode</name>
+        <qualifiedname>JWT.IBase64UrlEncoder.Decode</qualifiedname>
+        <reimplementedby refid="class_j_w_t_1_1_jwt_base64_url_encoder_1a5d3a0011b96a5716ffc44a40b49da24f">Decode</reimplementedby>
+        <param>
+          <type>string</type>
+          <declname>input</declname>
+        </param>
+        <briefdescription>
+<para>Decodes the base64 string to a byte array. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/adenf/RiderProjects/Openlabs.Mgcxm/Openlabs.Mgcxm/JWT/IBase64UrlEncoder.cs" line="16" column="14"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Represents a base64 encoder/decoder. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>JWT.IBase64UrlEncoder</label>
+        <link refid="interface_j_w_t_1_1_i_base64_url_encoder"/>
+      </node>
+      <node id="2">
+        <label>JWT.JwtBase64UrlEncoder</label>
+        <link refid="class_j_w_t_1_1_jwt_base64_url_encoder"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <location file="C:/Users/adenf/RiderProjects/Openlabs.Mgcxm/Openlabs.Mgcxm/JWT/IBase64UrlEncoder.cs" line="6" column="22" bodyfile="C:/Users/adenf/RiderProjects/Openlabs.Mgcxm/Openlabs.Mgcxm/JWT/IBase64UrlEncoder.cs" bodystart="7" bodyend="17"/>
+    <listofallmembers>
+      <member refid="interface_j_w_t_1_1_i_base64_url_encoder_1a70852ef851d7288fdba837a1248d3183" prot="public" virt="non-virtual"><scope>JWT::IBase64UrlEncoder</scope><name>Decode</name></member>
+      <member refid="interface_j_w_t_1_1_i_base64_url_encoder_1a0e1266c26222092a10082d1bb0c86e61" prot="public" virt="non-virtual"><scope>JWT::IBase64UrlEncoder</scope><name>Encode</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

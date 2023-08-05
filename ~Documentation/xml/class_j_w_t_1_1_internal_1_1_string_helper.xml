@@ -1,0 +1,61 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.7" xml:lang="en-US">
+  <compounddef id="class_j_w_t_1_1_internal_1_1_string_helper" kind="class" language="C#" prot="package">
+    <compoundname>JWT::Internal::StringHelper</compoundname>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="class_j_w_t_1_1_internal_1_1_string_helper_1af030b86c3280455d9579c049db38fde4" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>string</type>
+        <definition>static string JWT.Internal.StringHelper.FirstSegment</definition>
+        <argsstring>(this string input, char separator)</argsstring>
+        <name>FirstSegment</name>
+        <qualifiedname>JWT.Internal.StringHelper.FirstSegment</qualifiedname>
+        <param>
+          <type>this string</type>
+          <declname>input</declname>
+        </param>
+        <param>
+          <type>char</type>
+          <declname>separator</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/adenf/RiderProjects/Openlabs.Mgcxm/Openlabs.Mgcxm/JWT/Internal/StringHelper.cs" line="7" column="30" bodyfile="C:/Users/adenf/RiderProjects/Openlabs.Mgcxm/Openlabs.Mgcxm/JWT/Internal/StringHelper.cs" bodystart="7" bodyend="11"/>
+      </memberdef>
+      <memberdef kind="function" id="class_j_w_t_1_1_internal_1_1_string_helper_1af322d0ab85df9279cf9928d976d86cb6" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>static int JWT.Internal.StringHelper.Count</definition>
+        <argsstring>(this string input, char character)</argsstring>
+        <name>Count</name>
+        <qualifiedname>JWT.Internal.StringHelper.Count</qualifiedname>
+        <param>
+          <type>this string</type>
+          <declname>input</declname>
+        </param>
+        <param>
+          <type>char</type>
+          <declname>character</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/adenf/RiderProjects/Openlabs.Mgcxm/Openlabs.Mgcxm/JWT/Internal/StringHelper.cs" line="13" column="27" bodyfile="C:/Users/adenf/RiderProjects/Openlabs.Mgcxm/Openlabs.Mgcxm/JWT/Internal/StringHelper.cs" bodystart="13" bodyend="24"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/Users/adenf/RiderProjects/Openlabs.Mgcxm/Openlabs.Mgcxm/JWT/Internal/StringHelper.cs" line="5" column="21" bodyfile="C:/Users/adenf/RiderProjects/Openlabs.Mgcxm/Openlabs.Mgcxm/JWT/Internal/StringHelper.cs" bodystart="6" bodyend="25"/>
+    <listofallmembers>
+      <member refid="class_j_w_t_1_1_internal_1_1_string_helper_1af322d0ab85df9279cf9928d976d86cb6" prot="public" virt="non-virtual"><scope>JWT::Internal::StringHelper</scope><name>Count</name></member>
+      <member refid="class_j_w_t_1_1_internal_1_1_string_helper_1af030b86c3280455d9579c049db38fde4" prot="public" virt="non-virtual"><scope>JWT::Internal::StringHelper</scope><name>FirstSegment</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

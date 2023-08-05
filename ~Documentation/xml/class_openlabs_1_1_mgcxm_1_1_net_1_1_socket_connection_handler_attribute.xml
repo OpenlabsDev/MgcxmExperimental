@@ -1,0 +1,106 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.7" xml:lang="en-US">
+  <compounddef id="class_openlabs_1_1_mgcxm_1_1_net_1_1_socket_connection_handler_attribute" kind="class" language="C#" prot="public">
+    <compoundname>Openlabs::Mgcxm::Net::SocketConnectionHandlerAttribute</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">Attribute</basecompoundref>
+      <sectiondef kind="property">
+      <memberdef kind="property" id="class_openlabs_1_1_mgcxm_1_1_net_1_1_socket_connection_handler_attribute_1acfc959bae5971b4572d320baa5ae9188" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="no" privatesettable="yes" protectedsettable="no">
+        <type>Type</type>
+        <definition>Type Openlabs.Mgcxm.Net.SocketConnectionHandlerAttribute.HandlerType</definition>
+        <argsstring></argsstring>
+        <name>HandlerType</name>
+        <qualifiedname>Openlabs.Mgcxm.Net.SocketConnectionHandlerAttribute.HandlerType</qualifiedname>
+        <briefdescription>
+<para>Gets the type of the socket connection handler. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/adenf/RiderProjects/Openlabs.Mgcxm/Openlabs.Mgcxm/Net/Attributes/SocketConnectionHandlerAttribute.cs" line="32" column="17" bodyfile="C:/Users/adenf/RiderProjects/Openlabs.Mgcxm/Openlabs.Mgcxm/Net/Attributes/SocketConnectionHandlerAttribute.cs" bodystart="32" bodyend="32"/>
+        <referencedby refid="class_openlabs_1_1_mgcxm_1_1_net_1_1_socket_connection_handler_attribute_1ae160f7e01f8bc94213b5424c097e3861" compoundref="_socket_connection_handler_attribute_8cs" startline="19" endline="27">Openlabs.Mgcxm.Net.SocketConnectionHandlerAttribute.SocketConnectionHandlerAttribute</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_openlabs_1_1_mgcxm_1_1_net_1_1_socket_connection_handler_attribute_1ae160f7e01f8bc94213b5424c097e3861" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Openlabs.Mgcxm.Net.SocketConnectionHandlerAttribute.SocketConnectionHandlerAttribute</definition>
+        <argsstring>(Type type)</argsstring>
+        <name>SocketConnectionHandlerAttribute</name>
+        <qualifiedname>Openlabs.Mgcxm.Net.SocketConnectionHandlerAttribute.SocketConnectionHandlerAttribute</qualifiedname>
+        <param>
+          <type>Type</type>
+          <declname>type</declname>
+        </param>
+        <briefdescription>
+<para>Initializes a new instance of the SocketConnectionHandlerAttribute class with the specified handler type. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>type</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The type of the socket connection handler.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="exception"><parameteritem>
+<parameternamelist>
+<parametername>ArgumentNullException</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Thrown if the <emphasis>type</emphasis>  is null.</para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>InvalidOperationException</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Thrown if the <emphasis>type</emphasis>  does not inherit or implement MgcxmSocketConnectionHandler.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/adenf/RiderProjects/Openlabs.Mgcxm/Openlabs.Mgcxm/Net/Attributes/SocketConnectionHandlerAttribute.cs" line="19" column="12" bodyfile="C:/Users/adenf/RiderProjects/Openlabs.Mgcxm/Openlabs.Mgcxm/Net/Attributes/SocketConnectionHandlerAttribute.cs" bodystart="19" bodyend="27"/>
+        <references refid="class_openlabs_1_1_mgcxm_1_1_net_1_1_socket_connection_handler_attribute_1acfc959bae5971b4572d320baa5ae9188" compoundref="_socket_connection_handler_attribute_8cs" startline="32" endline="32">Openlabs.Mgcxm.Net.SocketConnectionHandlerAttribute.HandlerType</references>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Represents an attribute used to specify the type of socket connection handler for a socket. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>Attribute</label>
+      </node>
+      <node id="1">
+        <label>Openlabs.Mgcxm.Net.SocketConnectionHandlerAttribute</label>
+        <link refid="class_openlabs_1_1_mgcxm_1_1_net_1_1_socket_connection_handler_attribute"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>Attribute</label>
+      </node>
+      <node id="1">
+        <label>Openlabs.Mgcxm.Net.SocketConnectionHandlerAttribute</label>
+        <link refid="class_openlabs_1_1_mgcxm_1_1_net_1_1_socket_connection_handler_attribute"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="C:/Users/adenf/RiderProjects/Openlabs.Mgcxm/Openlabs.Mgcxm/Net/Attributes/SocketConnectionHandlerAttribute.cs" line="11" column="7" bodyfile="C:/Users/adenf/RiderProjects/Openlabs.Mgcxm/Openlabs.Mgcxm/Net/Attributes/SocketConnectionHandlerAttribute.cs" bodystart="12" bodyend="33"/>
+    <listofallmembers>
+      <member refid="class_openlabs_1_1_mgcxm_1_1_net_1_1_socket_connection_handler_attribute_1acfc959bae5971b4572d320baa5ae9188" prot="public" virt="non-virtual"><scope>Openlabs::Mgcxm::Net::SocketConnectionHandlerAttribute</scope><name>HandlerType</name></member>
+      <member refid="class_openlabs_1_1_mgcxm_1_1_net_1_1_socket_connection_handler_attribute_1ae160f7e01f8bc94213b5424c097e3861" prot="public" virt="non-virtual"><scope>Openlabs::Mgcxm::Net::SocketConnectionHandlerAttribute</scope><name>SocketConnectionHandlerAttribute</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

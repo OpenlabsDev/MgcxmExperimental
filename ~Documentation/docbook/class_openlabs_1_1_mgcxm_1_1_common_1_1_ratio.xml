@@ -1,0 +1,58 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_class_openlabs_1_1_mgcxm_1_1_common_1_1_ratio" xml:lang="en-US">
+<title>Openlabs.Mgcxm.Common.Ratio Class Reference</title>
+<indexterm><primary>Openlabs.Mgcxm.Common.Ratio</primary></indexterm>
+<simplesect>
+    <title>Public Member Functions    </title>
+        <itemizedlist>
+            <listitem><para>int <link linkend="_class_openlabs_1_1_mgcxm_1_1_common_1_1_ratio_1aa3f7832796b221b1ea922d1a076d18a1">GetValue</link> ()</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Static Public Member Functions    </title>
+        <itemizedlist>
+            <listitem><para>static <link linkend="_class_openlabs_1_1_mgcxm_1_1_common_1_1_ratio">Ratio</link> <link linkend="_class_openlabs_1_1_mgcxm_1_1_common_1_1_ratio_1abc0fe94f94420cebcb10a1cc00fe6068">Create</link> (int num, int den)</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Properties    </title>
+        <itemizedlist>
+            <listitem><para>int <link linkend="_class_openlabs_1_1_mgcxm_1_1_common_1_1_ratio_1a7361682c0c28dd787f1ac3a26ac721b4">Numerator</link><computeroutput> [get]</computeroutput>
+</para>
+</listitem>
+            <listitem><para>int <link linkend="_class_openlabs_1_1_mgcxm_1_1_common_1_1_ratio_1abf34f67a3b53436895056a76131e56ae">Denominator</link><computeroutput> [get]</computeroutput>
+</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Member Function Documentation</title>
+<anchor xml:id="_class_openlabs_1_1_mgcxm_1_1_common_1_1_ratio_1abc0fe94f94420cebcb10a1cc00fe6068"/><section>
+    <title>Create()</title>
+<indexterm><primary>Create</primary><secondary>Openlabs.Mgcxm.Common.Ratio</secondary></indexterm>
+<indexterm><primary>Openlabs.Mgcxm.Common.Ratio</primary><secondary>Create</secondary></indexterm>
+<para><computeroutput>static <link linkend="_class_openlabs_1_1_mgcxm_1_1_common_1_1_ratio">Ratio</link> Openlabs.Mgcxm.Common.Ratio.Create (int num, int den)<computeroutput>[static]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_class_openlabs_1_1_mgcxm_1_1_common_1_1_ratio_1aa3f7832796b221b1ea922d1a076d18a1"/><section>
+    <title>GetValue()</title>
+<indexterm><primary>GetValue</primary><secondary>Openlabs.Mgcxm.Common.Ratio</secondary></indexterm>
+<indexterm><primary>Openlabs.Mgcxm.Common.Ratio</primary><secondary>GetValue</secondary></indexterm>
+<para><computeroutput>int Openlabs.Mgcxm.Common.Ratio.GetValue ( )</computeroutput></para></section>
+</section>
+<section>
+<title>Property Documentation</title>
+<anchor xml:id="_class_openlabs_1_1_mgcxm_1_1_common_1_1_ratio_1abf34f67a3b53436895056a76131e56ae"/><section>
+    <title>Denominator</title>
+<indexterm><primary>Denominator</primary><secondary>Openlabs.Mgcxm.Common.Ratio</secondary></indexterm>
+<indexterm><primary>Openlabs.Mgcxm.Common.Ratio</primary><secondary>Denominator</secondary></indexterm>
+<para><computeroutput>int Openlabs.Mgcxm.Common.Ratio.Denominator<computeroutput>[get]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_class_openlabs_1_1_mgcxm_1_1_common_1_1_ratio_1a7361682c0c28dd787f1ac3a26ac721b4"/><section>
+    <title>Numerator</title>
+<indexterm><primary>Numerator</primary><secondary>Openlabs.Mgcxm.Common.Ratio</secondary></indexterm>
+<indexterm><primary>Openlabs.Mgcxm.Common.Ratio</primary><secondary>Numerator</secondary></indexterm>
+<para><computeroutput>int Openlabs.Mgcxm.Common.Ratio.Numerator<computeroutput>[get]</computeroutput></computeroutput></para></section>
+<para>
+The documentation for this class was generated from the following file:</para>
+C:/Users/adenf/RiderProjects/Openlabs.Mgcxm/Openlabs.Mgcxm/Common/<link linkend="__chrono_8cs">Chrono.cs</link></section>
+</section>

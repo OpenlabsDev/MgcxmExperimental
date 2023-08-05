@@ -1,0 +1,91 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_class_openlabs_1_1_mgcxm_1_1_internal_1_1_system_objects_1_1_mgcxm_ushort" xml:lang="en-US">
+<title>Openlabs.Mgcxm.Internal.SystemObjects.MgcxmUshort Class Reference</title>
+<indexterm><primary>Openlabs.Mgcxm.Internal.SystemObjects.MgcxmUshort</primary></indexterm>
+Inheritance diagram for Openlabs.Mgcxm.Internal.SystemObjects.MgcxmUshort:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="class_openlabs_1_1_mgcxm_1_1_internal_1_1_system_objects_1_1_mgcxm_ushort__inherit__graph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+Collaboration diagram for Openlabs.Mgcxm.Internal.SystemObjects.MgcxmUshort:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="class_openlabs_1_1_mgcxm_1_1_internal_1_1_system_objects_1_1_mgcxm_ushort__coll__graph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+<simplesect>
+    <title>Public Member Functions    </title>
+        <itemizedlist>
+            <listitem><para><link linkend="_class_openlabs_1_1_mgcxm_1_1_internal_1_1_system_objects_1_1_mgcxm_ushort_1ae911337e236d5944688de4992207a2b5">MgcxmUshort</link> (ushort obj)</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+Public Member Functions inherited from <link linkend="_class_openlabs_1_1_mgcxm_1_1_internal_1_1_system_objects_1_1_mgcxm_object">Openlabs.Mgcxm.Internal.SystemObjects.MgcxmObject&lt; ushort &gt;</link>        <itemizedlist>
+            <listitem><para><link linkend="_class_openlabs_1_1_mgcxm_1_1_internal_1_1_system_objects_1_1_mgcxm_object_1a9d23fbd79659c79e449391acd8bd2480">MgcxmObject</link> (T obj)</para>
+</listitem>
+            <listitem><para>void <link linkend="_class_openlabs_1_1_mgcxm_1_1_internal_1_1_system_objects_1_1_mgcxm_object_1a18a325de1eb61f905e19d1132e3c5f43">Trash</link> ()</para>
+
+<para>Get rid of this object from memory. </para>
+</listitem>
+        </itemizedlist>
+<simplesect>
+    <title>Static Public Member Functions    </title>
+        <itemizedlist>
+            <listitem><para>static implicit <link linkend="_class_openlabs_1_1_mgcxm_1_1_internal_1_1_system_objects_1_1_mgcxm_ushort_1a539048a0feaa7ce8a8da190cfc718c18">operator ushort</link> (<link linkend="_class_openlabs_1_1_mgcxm_1_1_internal_1_1_system_objects_1_1_mgcxm_ushort">MgcxmUshort</link> obj)</para>
+</listitem>
+            <listitem><para>static implicit <link linkend="_class_openlabs_1_1_mgcxm_1_1_internal_1_1_system_objects_1_1_mgcxm_ushort_1adae9b975a49f3a792313f82cf33747e2">operator MgcxmUshort</link> (ushort obj)</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+Static Public Member Functions inherited from <link linkend="_class_openlabs_1_1_mgcxm_1_1_internal_1_1_system_objects_1_1_mgcxm_object">Openlabs.Mgcxm.Internal.SystemObjects.MgcxmObject&lt; ushort &gt;</link>        <itemizedlist>
+            <listitem><para>static implicit <link linkend="_class_openlabs_1_1_mgcxm_1_1_internal_1_1_system_objects_1_1_mgcxm_object_1a9f6afc5bd98e6a745639a03d6d0167b0">operator T</link> (<link linkend="_class_openlabs_1_1_mgcxm_1_1_internal_1_1_system_objects_1_1_mgcxm_object">MgcxmObject</link>&lt; T &gt; obj)</para>
+</listitem>
+            <listitem><para>static implicit <link linkend="_class_openlabs_1_1_mgcxm_1_1_internal_1_1_system_objects_1_1_mgcxm_object_1ae48561d0742bb9f4cba2bad2eaf3f519">operator MgcxmObject</link> (T obj)</para>
+</listitem>
+        </itemizedlist>
+<simplesect>
+    <title>Additional Inherited Members    </title>
+Protected Member Functions inherited from <link linkend="_class_openlabs_1_1_mgcxm_1_1_internal_1_1_system_objects_1_1_mgcxm_object">Openlabs.Mgcxm.Internal.SystemObjects.MgcxmObject&lt; ushort &gt;</link>        <itemizedlist>
+            <listitem><para>T <link linkend="_class_openlabs_1_1_mgcxm_1_1_internal_1_1_system_objects_1_1_mgcxm_object_1a23f633157f4160455f171f8591a7d973">Retrieve</link> ()</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+Properties inherited from <link linkend="_class_openlabs_1_1_mgcxm_1_1_internal_1_1_system_objects_1_1_mgcxm_object">Openlabs.Mgcxm.Internal.SystemObjects.MgcxmObject&lt; ushort &gt;</link>        <itemizedlist>
+            <listitem><para><link linkend="_struct_openlabs_1_1_mgcxm_1_1_internal_1_1_mgcxm_id">MgcxmId</link> <link linkend="_class_openlabs_1_1_mgcxm_1_1_internal_1_1_system_objects_1_1_mgcxm_object_1adcda4a69c00fd202c0ae1bc494bde6c3">AllocatedId</link><computeroutput> [get]</computeroutput>
+</para>
+</listitem>
+            <listitem><para>T <link linkend="_class_openlabs_1_1_mgcxm_1_1_internal_1_1_system_objects_1_1_mgcxm_object_1ae685ec17ad6d040c029280d98d37925a">Value</link><computeroutput> [get]</computeroutput>
+</para>
+</listitem>
+        </itemizedlist>
+<section>
+<title>Constructor &amp; Destructor Documentation</title>
+<anchor xml:id="_class_openlabs_1_1_mgcxm_1_1_internal_1_1_system_objects_1_1_mgcxm_ushort_1ae911337e236d5944688de4992207a2b5"/><section>
+    <title>MgcxmUshort()</title>
+<indexterm><primary>MgcxmUshort</primary><secondary>Openlabs.Mgcxm.Internal.SystemObjects.MgcxmUshort</secondary></indexterm>
+<indexterm><primary>Openlabs.Mgcxm.Internal.SystemObjects.MgcxmUshort</primary><secondary>MgcxmUshort</secondary></indexterm>
+<para><computeroutput>Openlabs.Mgcxm.Internal.SystemObjects.MgcxmUshort.MgcxmUshort (ushort obj)</computeroutput></para></section>
+</section>
+<section>
+<title>Member Function Documentation</title>
+<anchor xml:id="_class_openlabs_1_1_mgcxm_1_1_internal_1_1_system_objects_1_1_mgcxm_ushort_1adae9b975a49f3a792313f82cf33747e2"/><section>
+    <title>operator MgcxmUshort()</title>
+<indexterm><primary>operator MgcxmUshort</primary><secondary>Openlabs.Mgcxm.Internal.SystemObjects.MgcxmUshort</secondary></indexterm>
+<indexterm><primary>Openlabs.Mgcxm.Internal.SystemObjects.MgcxmUshort</primary><secondary>operator MgcxmUshort</secondary></indexterm>
+<para><computeroutput>static implicit Openlabs.Mgcxm.Internal.SystemObjects.MgcxmUshort.operator <link linkend="_class_openlabs_1_1_mgcxm_1_1_internal_1_1_system_objects_1_1_mgcxm_ushort">MgcxmUshort</link> (ushort obj)<computeroutput>[static]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_class_openlabs_1_1_mgcxm_1_1_internal_1_1_system_objects_1_1_mgcxm_ushort_1a539048a0feaa7ce8a8da190cfc718c18"/><section>
+    <title>operator ushort()</title>
+<indexterm><primary>operator ushort</primary><secondary>Openlabs.Mgcxm.Internal.SystemObjects.MgcxmUshort</secondary></indexterm>
+<indexterm><primary>Openlabs.Mgcxm.Internal.SystemObjects.MgcxmUshort</primary><secondary>operator ushort</secondary></indexterm>
+<para><computeroutput>static implicit Openlabs.Mgcxm.Internal.SystemObjects.MgcxmUshort.operator ushort (<link linkend="_class_openlabs_1_1_mgcxm_1_1_internal_1_1_system_objects_1_1_mgcxm_ushort">MgcxmUshort</link> obj)<computeroutput>[static]</computeroutput></computeroutput></para></section>
+<para>
+The documentation for this class was generated from the following file:</para>
+C:/Users/adenf/RiderProjects/Openlabs.Mgcxm/Openlabs.Mgcxm/Internal/SystemObjects/<link linkend="__mgcxm_object_parts_8cs">MgcxmObjectParts.cs</link></section>
+</section>

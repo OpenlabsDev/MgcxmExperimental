@@ -1,0 +1,95 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.7" xml:lang="en-US">
+  <compounddef id="class_openlabs_1_1_mgcxm_1_1_common_1_1_framework_1_1_open_api_endpoint_search_exception" kind="class" language="C#" prot="public">
+    <compoundname>Openlabs::Mgcxm::Common::Framework::OpenApiEndpointSearchException</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">Exception</basecompoundref>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_openlabs_1_1_mgcxm_1_1_common_1_1_framework_1_1_open_api_endpoint_search_exception_1a2623b9f5103d0d2217327888e13391d9" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Openlabs.Mgcxm.Common.Framework.OpenApiEndpointSearchException.OpenApiEndpointSearchException</definition>
+        <argsstring>()</argsstring>
+        <name>OpenApiEndpointSearchException</name>
+        <qualifiedname>Openlabs.Mgcxm.Common.Framework.OpenApiEndpointSearchException.OpenApiEndpointSearchException</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/adenf/RiderProjects/Openlabs.Mgcxm/Openlabs.Mgcxm/Common/Framework/OpenApi/OpenApiEndpointStructure.cs" line="49" column="12" bodyfile="C:/Users/adenf/RiderProjects/Openlabs.Mgcxm/Openlabs.Mgcxm/Common/Framework/OpenApi/OpenApiEndpointStructure.cs" bodystart="49" bodyend="49"/>
+      </memberdef>
+      <memberdef kind="function" id="class_openlabs_1_1_mgcxm_1_1_common_1_1_framework_1_1_open_api_endpoint_search_exception_1a81141c473d266fb5af895c1a47ed3a80" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Openlabs.Mgcxm.Common.Framework.OpenApiEndpointSearchException.OpenApiEndpointSearchException</definition>
+        <argsstring>(string message)</argsstring>
+        <name>OpenApiEndpointSearchException</name>
+        <qualifiedname>Openlabs.Mgcxm.Common.Framework.OpenApiEndpointSearchException.OpenApiEndpointSearchException</qualifiedname>
+        <param>
+          <type>string</type>
+          <declname>message</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/adenf/RiderProjects/Openlabs.Mgcxm/Openlabs.Mgcxm/Common/Framework/OpenApi/OpenApiEndpointStructure.cs" line="50" column="12" bodyfile="C:/Users/adenf/RiderProjects/Openlabs.Mgcxm/Openlabs.Mgcxm/Common/Framework/OpenApi/OpenApiEndpointStructure.cs" bodystart="50" bodyend="50"/>
+      </memberdef>
+      <memberdef kind="function" id="class_openlabs_1_1_mgcxm_1_1_common_1_1_framework_1_1_open_api_endpoint_search_exception_1aba9ee2088c8025468a4c1ba4206ebcc2" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Openlabs.Mgcxm.Common.Framework.OpenApiEndpointSearchException.OpenApiEndpointSearchException</definition>
+        <argsstring>(string message, Exception inner)</argsstring>
+        <name>OpenApiEndpointSearchException</name>
+        <qualifiedname>Openlabs.Mgcxm.Common.Framework.OpenApiEndpointSearchException.OpenApiEndpointSearchException</qualifiedname>
+        <param>
+          <type>string</type>
+          <declname>message</declname>
+        </param>
+        <param>
+          <type>Exception</type>
+          <declname>inner</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/adenf/RiderProjects/Openlabs.Mgcxm/Openlabs.Mgcxm/Common/Framework/OpenApi/OpenApiEndpointStructure.cs" line="51" column="12" bodyfile="C:/Users/adenf/RiderProjects/Openlabs.Mgcxm/Openlabs.Mgcxm/Common/Framework/OpenApi/OpenApiEndpointStructure.cs" bodystart="51" bodyend="51"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>Exception</label>
+      </node>
+      <node id="1">
+        <label>Openlabs.Mgcxm.Common.Framework.OpenApiEndpointSearchException</label>
+        <link refid="class_openlabs_1_1_mgcxm_1_1_common_1_1_framework_1_1_open_api_endpoint_search_exception"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>Exception</label>
+      </node>
+      <node id="1">
+        <label>Openlabs.Mgcxm.Common.Framework.OpenApiEndpointSearchException</label>
+        <link refid="class_openlabs_1_1_mgcxm_1_1_common_1_1_framework_1_1_open_api_endpoint_search_exception"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="C:/Users/adenf/RiderProjects/Openlabs.Mgcxm/Openlabs.Mgcxm/Common/Framework/OpenApi/OpenApiEndpointStructure.cs" line="47" column="7" bodyfile="C:/Users/adenf/RiderProjects/Openlabs.Mgcxm/Openlabs.Mgcxm/Common/Framework/OpenApi/OpenApiEndpointStructure.cs" bodystart="48" bodyend="52"/>
+    <listofallmembers>
+      <member refid="class_openlabs_1_1_mgcxm_1_1_common_1_1_framework_1_1_open_api_endpoint_search_exception_1a2623b9f5103d0d2217327888e13391d9" prot="public" virt="non-virtual"><scope>Openlabs::Mgcxm::Common::Framework::OpenApiEndpointSearchException</scope><name>OpenApiEndpointSearchException</name></member>
+      <member refid="class_openlabs_1_1_mgcxm_1_1_common_1_1_framework_1_1_open_api_endpoint_search_exception_1a81141c473d266fb5af895c1a47ed3a80" prot="public" virt="non-virtual"><scope>Openlabs::Mgcxm::Common::Framework::OpenApiEndpointSearchException</scope><name>OpenApiEndpointSearchException</name></member>
+      <member refid="class_openlabs_1_1_mgcxm_1_1_common_1_1_framework_1_1_open_api_endpoint_search_exception_1aba9ee2088c8025468a4c1ba4206ebcc2" prot="public" virt="non-virtual"><scope>Openlabs::Mgcxm::Common::Framework::OpenApiEndpointSearchException</scope><name>OpenApiEndpointSearchException</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

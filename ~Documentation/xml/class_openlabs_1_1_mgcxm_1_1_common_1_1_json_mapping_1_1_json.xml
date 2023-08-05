@@ -1,0 +1,291 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.7" xml:lang="en-US">
+  <compounddef id="class_openlabs_1_1_mgcxm_1_1_common_1_1_json_mapping_1_1_json" kind="class" language="C#" prot="public">
+    <compoundname>Openlabs::Mgcxm::Common::JsonMapping::Json</compoundname>
+      <sectiondef kind="private-static-attrib">
+      <memberdef kind="variable" id="class_openlabs_1_1_mgcxm_1_1_common_1_1_json_mapping_1_1_json_1ae3fc8191d015237b212af1544ffa0ab3" prot="private" static="yes" mutable="no">
+        <type>Stack&lt; List&lt; string &gt; &gt;</type>
+        <definition>Stack&lt;List&lt;string&gt; &gt; Openlabs.Mgcxm.Common.JsonMapping.Json.splitArrayPool</definition>
+        <argsstring></argsstring>
+        <name>splitArrayPool</name>
+        <qualifiedname>Openlabs.Mgcxm.Common.JsonMapping.Json.splitArrayPool</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/adenf/RiderProjects/Openlabs.Mgcxm/Openlabs.Mgcxm/Common/JsonMapping/JsonParser.cs" line="31" column="19" bodyfile="C:/Users/adenf/RiderProjects/Openlabs.Mgcxm/Openlabs.Mgcxm/Common/JsonMapping/JsonParser.cs" bodystart="31" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_openlabs_1_1_mgcxm_1_1_common_1_1_json_mapping_1_1_json_1a4ad2bb1227da02b3a9464d39d872c391" prot="private" static="yes" mutable="no">
+        <type>StringBuilder</type>
+        <definition>StringBuilder Openlabs.Mgcxm.Common.JsonMapping.Json.stringBuilder</definition>
+        <argsstring></argsstring>
+        <name>stringBuilder</name>
+        <qualifiedname>Openlabs.Mgcxm.Common.JsonMapping.Json.stringBuilder</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/adenf/RiderProjects/Openlabs.Mgcxm/Openlabs.Mgcxm/Common/JsonMapping/JsonParser.cs" line="32" column="27" bodyfile="C:/Users/adenf/RiderProjects/Openlabs.Mgcxm/Openlabs.Mgcxm/Common/JsonMapping/JsonParser.cs" bodystart="32" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_openlabs_1_1_mgcxm_1_1_common_1_1_json_mapping_1_1_json_1af6be9e9bf87383e68838f6259bd35f8c" prot="private" static="yes" mutable="no">
+        <type>Dictionary&lt; Type, Dictionary&lt; string, FieldInfo &gt; &gt;</type>
+        <definition>Dictionary&lt;Type, Dictionary&lt;string, FieldInfo&gt; &gt; Openlabs.Mgcxm.Common.JsonMapping.Json.fieldInfoCache</definition>
+        <argsstring></argsstring>
+        <name>fieldInfoCache</name>
+        <qualifiedname>Openlabs.Mgcxm.Common.JsonMapping.Json.fieldInfoCache</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/adenf/RiderProjects/Openlabs.Mgcxm/Openlabs.Mgcxm/Common/JsonMapping/JsonParser.cs" line="33" column="24" bodyfile="C:/Users/adenf/RiderProjects/Openlabs.Mgcxm/Openlabs.Mgcxm/Common/JsonMapping/JsonParser.cs" bodystart="33" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_openlabs_1_1_mgcxm_1_1_common_1_1_json_mapping_1_1_json_1a9eee2baf63f077ace18dc3ca402b4889" prot="private" static="yes" mutable="no">
+        <type>Dictionary&lt; Type, Dictionary&lt; string, PropertyInfo &gt; &gt;</type>
+        <definition>Dictionary&lt;Type, Dictionary&lt;string, PropertyInfo&gt; &gt; Openlabs.Mgcxm.Common.JsonMapping.Json.propertyInfoCache</definition>
+        <argsstring></argsstring>
+        <name>propertyInfoCache</name>
+        <qualifiedname>Openlabs.Mgcxm.Common.JsonMapping.Json.propertyInfoCache</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/adenf/RiderProjects/Openlabs.Mgcxm/Openlabs.Mgcxm/Common/JsonMapping/JsonParser.cs" line="34" column="24" bodyfile="C:/Users/adenf/RiderProjects/Openlabs.Mgcxm/Openlabs.Mgcxm/Common/JsonMapping/JsonParser.cs" bodystart="34" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="class_openlabs_1_1_mgcxm_1_1_common_1_1_json_mapping_1_1_json_1a15e7a843bb66aed50a832e1bc6eb510b" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>T</type>
+        <definition>static T Openlabs.Mgcxm.Common.JsonMapping.Json.FromJson&lt; T &gt;</definition>
+        <argsstring>(this string json)</argsstring>
+        <name>FromJson&lt; T &gt;</name>
+        <qualifiedname>Openlabs.Mgcxm.Common.JsonMapping.Json.FromJson&lt; T &gt;</qualifiedname>
+        <param>
+          <type>this string</type>
+          <declname>json</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/adenf/RiderProjects/Openlabs.Mgcxm/Openlabs.Mgcxm/Common/JsonMapping/JsonParser.cs" line="36" column="19" bodyfile="C:/Users/adenf/RiderProjects/Openlabs.Mgcxm/Openlabs.Mgcxm/Common/JsonMapping/JsonParser.cs" bodystart="36" bodyend="63"/>
+      </memberdef>
+      <memberdef kind="function" id="class_openlabs_1_1_mgcxm_1_1_common_1_1_json_mapping_1_1_json_1a80fe6594549feea31ea77eaf7e428d84" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>string</type>
+        <definition>static string Openlabs.Mgcxm.Common.JsonMapping.Json.ToJson</definition>
+        <argsstring>(this object item)</argsstring>
+        <name>ToJson</name>
+        <qualifiedname>Openlabs.Mgcxm.Common.JsonMapping.Json.ToJson</qualifiedname>
+        <param>
+          <type>this object</type>
+          <declname>item</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/adenf/RiderProjects/Openlabs.Mgcxm/Openlabs.Mgcxm/Common/JsonMapping/JsonWriter.cs" line="18" column="26" bodyfile="C:/Users/adenf/RiderProjects/Openlabs.Mgcxm/Openlabs.Mgcxm/Common/JsonMapping/JsonWriter.cs" bodystart="18" bodyend="23"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-static-func">
+      <memberdef kind="function" id="class_openlabs_1_1_mgcxm_1_1_common_1_1_json_mapping_1_1_json_1a546140f645b4d7dbe6fca76eac2cc73b" prot="private" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>static int Openlabs.Mgcxm.Common.JsonMapping.Json.AppendUntilStringEnd</definition>
+        <argsstring>(bool appendEscapeCharacter, int startIdx, string json)</argsstring>
+        <name>AppendUntilStringEnd</name>
+        <qualifiedname>Openlabs.Mgcxm.Common.JsonMapping.Json.AppendUntilStringEnd</qualifiedname>
+        <param>
+          <type>bool</type>
+          <declname>appendEscapeCharacter</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>startIdx</declname>
+        </param>
+        <param>
+          <type>string</type>
+          <declname>json</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/adenf/RiderProjects/Openlabs.Mgcxm/Openlabs.Mgcxm/Common/JsonMapping/JsonParser.cs" line="65" column="16" bodyfile="C:/Users/adenf/RiderProjects/Openlabs.Mgcxm/Openlabs.Mgcxm/Common/JsonMapping/JsonParser.cs" bodystart="65" bodyend="87"/>
+      </memberdef>
+      <memberdef kind="function" id="class_openlabs_1_1_mgcxm_1_1_common_1_1_json_mapping_1_1_json_1aa1c9b7ac7b3143766a9c4ffea44c7ee1" prot="private" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>List&lt; string &gt;</type>
+        <definition>static List&lt; string &gt; Openlabs.Mgcxm.Common.JsonMapping.Json.Split</definition>
+        <argsstring>(string json)</argsstring>
+        <name>Split</name>
+        <qualifiedname>Openlabs.Mgcxm.Common.JsonMapping.Json.Split</qualifiedname>
+        <param>
+          <type>string</type>
+          <declname>json</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/adenf/RiderProjects/Openlabs.Mgcxm/Openlabs.Mgcxm/Common/JsonMapping/JsonParser.cs" line="90" column="17" bodyfile="C:/Users/adenf/RiderProjects/Openlabs.Mgcxm/Openlabs.Mgcxm/Common/JsonMapping/JsonParser.cs" bodystart="90" bodyend="131"/>
+      </memberdef>
+      <memberdef kind="function" id="class_openlabs_1_1_mgcxm_1_1_common_1_1_json_mapping_1_1_json_1ac5fab22875cfedd6ccacc5c8fe8c43a7" prot="private" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>object</type>
+        <definition>static object Openlabs.Mgcxm.Common.JsonMapping.Json.ParseAnonymousValue</definition>
+        <argsstring>(string json)</argsstring>
+        <name>ParseAnonymousValue</name>
+        <qualifiedname>Openlabs.Mgcxm.Common.JsonMapping.Json.ParseAnonymousValue</qualifiedname>
+        <param>
+          <type>string</type>
+          <declname>json</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/adenf/RiderProjects/Openlabs.Mgcxm/Openlabs.Mgcxm/Common/JsonMapping/JsonParser.cs" line="285" column="19" bodyfile="C:/Users/adenf/RiderProjects/Openlabs.Mgcxm/Openlabs.Mgcxm/Common/JsonMapping/JsonParser.cs" bodystart="285" bodyend="338"/>
+      </memberdef>
+      <memberdef kind="function" id="class_openlabs_1_1_mgcxm_1_1_common_1_1_json_mapping_1_1_json_1acd49622eba2f9ddd8e8675da989fad7f" prot="private" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>Dictionary&lt; string, T &gt;</type>
+        <definition>static Dictionary&lt; string, T &gt; Openlabs.Mgcxm.Common.JsonMapping.Json.CreateMemberNameDictionary&lt; T &gt;</definition>
+        <argsstring>(T[] members)</argsstring>
+        <name>CreateMemberNameDictionary&lt; T &gt;</name>
+        <qualifiedname>Openlabs.Mgcxm.Common.JsonMapping.Json.CreateMemberNameDictionary&lt; T &gt;</qualifiedname>
+        <param>
+          <type>T[]</type>
+          <declname>members</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/adenf/RiderProjects/Openlabs.Mgcxm/Openlabs.Mgcxm/Common/JsonMapping/JsonParser.cs" line="285" column="19" bodyfile="C:/Users/adenf/RiderProjects/Openlabs.Mgcxm/Openlabs.Mgcxm/Common/JsonMapping/JsonParser.cs" bodystart="340" bodyend="362"/>
+      </memberdef>
+      <memberdef kind="function" id="class_openlabs_1_1_mgcxm_1_1_common_1_1_json_mapping_1_1_json_1a65a9ad78071a5e7ef22d1f770d56b5fe" prot="private" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>object</type>
+        <definition>static object Openlabs.Mgcxm.Common.JsonMapping.Json.ParseObject</definition>
+        <argsstring>(Type type, string json)</argsstring>
+        <name>ParseObject</name>
+        <qualifiedname>Openlabs.Mgcxm.Common.JsonMapping.Json.ParseObject</qualifiedname>
+        <param>
+          <type>Type</type>
+          <declname>type</declname>
+        </param>
+        <param>
+          <type>string</type>
+          <declname>json</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/adenf/RiderProjects/Openlabs.Mgcxm/Openlabs.Mgcxm/Common/JsonMapping/JsonParser.cs" line="364" column="19" bodyfile="C:/Users/adenf/RiderProjects/Openlabs.Mgcxm/Openlabs.Mgcxm/Common/JsonMapping/JsonParser.cs" bodystart="364" bodyend="406"/>
+      </memberdef>
+      <memberdef kind="function" id="class_openlabs_1_1_mgcxm_1_1_common_1_1_json_mapping_1_1_json_1a4aa502b80ddfa0ad4b88fa36adf271a1" prot="private" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void Openlabs.Mgcxm.Common.JsonMapping.Json.AppendValue</definition>
+        <argsstring>(StringBuilder stringBuilder, object item)</argsstring>
+        <name>AppendValue</name>
+        <qualifiedname>Openlabs.Mgcxm.Common.JsonMapping.Json.AppendValue</qualifiedname>
+        <param>
+          <type>StringBuilder</type>
+          <declname>stringBuilder</declname>
+        </param>
+        <param>
+          <type>object</type>
+          <declname>item</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/adenf/RiderProjects/Openlabs.Mgcxm/Openlabs.Mgcxm/Common/JsonMapping/JsonWriter.cs" line="25" column="17" bodyfile="C:/Users/adenf/RiderProjects/Openlabs.Mgcxm/Openlabs.Mgcxm/Common/JsonMapping/JsonWriter.cs" bodystart="25" bodyend="174"/>
+      </memberdef>
+      <memberdef kind="function" id="class_openlabs_1_1_mgcxm_1_1_common_1_1_json_mapping_1_1_json_1ad2efffb7614fd1d2e82f63bfe296e5f3" prot="private" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>string</type>
+        <definition>static string Openlabs.Mgcxm.Common.JsonMapping.Json.GetMemberName</definition>
+        <argsstring>(MemberInfo member)</argsstring>
+        <name>GetMemberName</name>
+        <qualifiedname>Openlabs.Mgcxm.Common.JsonMapping.Json.GetMemberName</qualifiedname>
+        <param>
+          <type>MemberInfo</type>
+          <declname>member</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/adenf/RiderProjects/Openlabs.Mgcxm/Openlabs.Mgcxm/Common/JsonMapping/JsonWriter.cs" line="176" column="19" bodyfile="C:/Users/adenf/RiderProjects/Openlabs.Mgcxm/Openlabs.Mgcxm/Common/JsonMapping/JsonWriter.cs" bodystart="176" bodyend="187"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="package-static-func">
+      <memberdef kind="function" id="class_openlabs_1_1_mgcxm_1_1_common_1_1_json_mapping_1_1_json_1af3799dcb8ca9d272f472b62ec9d2978b" prot="package" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>object</type>
+        <definition>static object Openlabs.Mgcxm.Common.JsonMapping.Json.ParseValue</definition>
+        <argsstring>(Type type, string json)</argsstring>
+        <name>ParseValue</name>
+        <qualifiedname>Openlabs.Mgcxm.Common.JsonMapping.Json.ParseValue</qualifiedname>
+        <param>
+          <type>Type</type>
+          <declname>type</declname>
+        </param>
+        <param>
+          <type>string</type>
+          <declname>json</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/adenf/RiderProjects/Openlabs.Mgcxm/Openlabs.Mgcxm/Common/JsonMapping/JsonParser.cs" line="133" column="28" bodyfile="C:/Users/adenf/RiderProjects/Openlabs.Mgcxm/Openlabs.Mgcxm/Common/JsonMapping/JsonParser.cs" bodystart="133" bodyend="283"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/Users/adenf/RiderProjects/Openlabs.Mgcxm/Openlabs.Mgcxm/Common/JsonMapping/JsonParser.cs" line="29" column="22" bodyfile="C:/Users/adenf/RiderProjects/Openlabs.Mgcxm/Openlabs.Mgcxm/Common/JsonMapping/JsonParser.cs" bodystart="30" bodyend="407"/>
+    <listofallmembers>
+      <member refid="class_openlabs_1_1_mgcxm_1_1_common_1_1_json_mapping_1_1_json_1a546140f645b4d7dbe6fca76eac2cc73b" prot="private" virt="non-virtual"><scope>Openlabs::Mgcxm::Common::JsonMapping::Json</scope><name>AppendUntilStringEnd</name></member>
+      <member refid="class_openlabs_1_1_mgcxm_1_1_common_1_1_json_mapping_1_1_json_1a4aa502b80ddfa0ad4b88fa36adf271a1" prot="private" virt="non-virtual"><scope>Openlabs::Mgcxm::Common::JsonMapping::Json</scope><name>AppendValue</name></member>
+      <member refid="class_openlabs_1_1_mgcxm_1_1_common_1_1_json_mapping_1_1_json_1acd49622eba2f9ddd8e8675da989fad7f" prot="private" virt="non-virtual"><scope>Openlabs::Mgcxm::Common::JsonMapping::Json</scope><name>CreateMemberNameDictionary&lt; T &gt;</name></member>
+      <member refid="class_openlabs_1_1_mgcxm_1_1_common_1_1_json_mapping_1_1_json_1af6be9e9bf87383e68838f6259bd35f8c" prot="private" virt="non-virtual"><scope>Openlabs::Mgcxm::Common::JsonMapping::Json</scope><name>fieldInfoCache</name></member>
+      <member refid="class_openlabs_1_1_mgcxm_1_1_common_1_1_json_mapping_1_1_json_1a15e7a843bb66aed50a832e1bc6eb510b" prot="public" virt="non-virtual"><scope>Openlabs::Mgcxm::Common::JsonMapping::Json</scope><name>FromJson&lt; T &gt;</name></member>
+      <member refid="class_openlabs_1_1_mgcxm_1_1_common_1_1_json_mapping_1_1_json_1ad2efffb7614fd1d2e82f63bfe296e5f3" prot="private" virt="non-virtual"><scope>Openlabs::Mgcxm::Common::JsonMapping::Json</scope><name>GetMemberName</name></member>
+      <member refid="class_openlabs_1_1_mgcxm_1_1_common_1_1_json_mapping_1_1_json_1ac5fab22875cfedd6ccacc5c8fe8c43a7" prot="private" virt="non-virtual"><scope>Openlabs::Mgcxm::Common::JsonMapping::Json</scope><name>ParseAnonymousValue</name></member>
+      <member refid="class_openlabs_1_1_mgcxm_1_1_common_1_1_json_mapping_1_1_json_1a65a9ad78071a5e7ef22d1f770d56b5fe" prot="private" virt="non-virtual"><scope>Openlabs::Mgcxm::Common::JsonMapping::Json</scope><name>ParseObject</name></member>
+      <member refid="class_openlabs_1_1_mgcxm_1_1_common_1_1_json_mapping_1_1_json_1af3799dcb8ca9d272f472b62ec9d2978b" prot="package" virt="non-virtual"><scope>Openlabs::Mgcxm::Common::JsonMapping::Json</scope><name>ParseValue</name></member>
+      <member refid="class_openlabs_1_1_mgcxm_1_1_common_1_1_json_mapping_1_1_json_1a9eee2baf63f077ace18dc3ca402b4889" prot="private" virt="non-virtual"><scope>Openlabs::Mgcxm::Common::JsonMapping::Json</scope><name>propertyInfoCache</name></member>
+      <member refid="class_openlabs_1_1_mgcxm_1_1_common_1_1_json_mapping_1_1_json_1aa1c9b7ac7b3143766a9c4ffea44c7ee1" prot="private" virt="non-virtual"><scope>Openlabs::Mgcxm::Common::JsonMapping::Json</scope><name>Split</name></member>
+      <member refid="class_openlabs_1_1_mgcxm_1_1_common_1_1_json_mapping_1_1_json_1ae3fc8191d015237b212af1544ffa0ab3" prot="private" virt="non-virtual"><scope>Openlabs::Mgcxm::Common::JsonMapping::Json</scope><name>splitArrayPool</name></member>
+      <member refid="class_openlabs_1_1_mgcxm_1_1_common_1_1_json_mapping_1_1_json_1a4ad2bb1227da02b3a9464d39d872c391" prot="private" virt="non-virtual"><scope>Openlabs::Mgcxm::Common::JsonMapping::Json</scope><name>stringBuilder</name></member>
+      <member refid="class_openlabs_1_1_mgcxm_1_1_common_1_1_json_mapping_1_1_json_1a80fe6594549feea31ea77eaf7e428d84" prot="public" virt="non-virtual"><scope>Openlabs::Mgcxm::Common::JsonMapping::Json</scope><name>ToJson</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

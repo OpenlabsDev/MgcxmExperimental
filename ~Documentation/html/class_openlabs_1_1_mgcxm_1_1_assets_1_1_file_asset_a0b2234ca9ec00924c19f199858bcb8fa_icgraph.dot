@@ -1,0 +1,19 @@
+digraph "Openlabs.Mgcxm.Assets.FileAsset.WriteString"
+{
+ // LATEX_PDF_SIZE
+  bgcolor="transparent";
+  edge [fontname=Helvetica,fontsize=10,labelfontname=Helvetica,labelfontsize=10];
+  node [fontname=Helvetica,fontsize=10,shape=box,height=0.2,width=0.4];
+  rankdir="RL";
+  Node1 [id="Node000001",label="Openlabs.Mgcxm.Assets.File\lAsset.WriteString",height=0.2,width=0.4,color="gray40", fillcolor="grey60", style="filled", fontcolor="black",tooltip=" "];
+  Node1 -> Node2 [id="edge1_Node000001_Node000002",dir="back",color="steelblue1",style="solid",tooltip=" "];
+  Node2 [id="Node000002",label="Openlabs.Mgcxm.Assets.File\lFlagAsset.ReadFlag",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$class_openlabs_1_1_mgcxm_1_1_assets_1_1_file_flag_asset.html#a2526a7f4c996c7b706cd454ce8776bc8",tooltip=" "];
+  Node1 -> Node3 [id="edge2_Node000001_Node000003",dir="back",color="steelblue1",style="solid",tooltip=" "];
+  Node3 [id="Node000003",label="Openlabs.Mgcxm.Assets.DTOJson\lFileAsset.WriteDto",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$class_openlabs_1_1_mgcxm_1_1_assets_1_1_d_t_o_json_file_asset.html#aac4e39c13e9ea5e9a14b594501e70c4d",tooltip=" "];
+  Node3 -> Node4 [id="edge3_Node000003_Node000004",dir="back",color="steelblue1",style="solid",tooltip=" "];
+  Node4 [id="Node000004",label="Openlabs.Mgcxm.Tests.Test\lServer.AvatarController.HttpGet\l_AvatarV2_Set",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$class_openlabs_1_1_mgcxm_1_1_tests_1_1_test_server_1_1_avatar_controller.html#a3a976bbcc6d3e4ff1afd15b91f38fb7c",tooltip=" "];
+  Node3 -> Node5 [id="edge4_Node000003_Node000005",dir="back",color="steelblue1",style="solid",tooltip=" "];
+  Node5 [id="Node000005",label="Openlabs.Mgcxm.Tests.Test\lServer.SettingsController.Http\lGet_SettingsV2_Set",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$class_openlabs_1_1_mgcxm_1_1_tests_1_1_test_server_1_1_settings_controller.html#a0b70c8415071ff1263b618ffe7c7640c",tooltip=" "];
+  Node1 -> Node6 [id="edge5_Node000001_Node000006",dir="back",color="steelblue1",style="solid",tooltip=" "];
+  Node6 [id="Node000006",label="Openlabs.Mgcxm.Assets.File\lFlagAsset.WriteFlag",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$class_openlabs_1_1_mgcxm_1_1_assets_1_1_file_flag_asset.html#a09b52b8912979a715f4887e26b8cadb7",tooltip=" "];
+}

@@ -1,0 +1,245 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.7" xml:lang="en-US">
+  <compounddef id="class_openlabs_1_1_mgcxm_1_1_net_1_1_ip_address" kind="class" language="C#" prot="public">
+    <compoundname>Openlabs::Mgcxm::Net::IpAddress</compoundname>
+    <basecompoundref refid="interface_openlabs_1_1_mgcxm_1_1_net_1_1_i_ip_address" prot="public" virt="non-virtual">Openlabs.Mgcxm.Net.IIpAddress</basecompoundref>
+      <sectiondef kind="property">
+      <memberdef kind="property" id="class_openlabs_1_1_mgcxm_1_1_net_1_1_ip_address_1a59ff9aaf387ad2074d0d9356162727c1" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="no" privatesettable="no" protectedsettable="no">
+        <type>IPAddress</type>
+        <definition>IPAddress Openlabs.Mgcxm.Net.IpAddress.ActualIpAddress</definition>
+        <argsstring></argsstring>
+        <name>ActualIpAddress</name>
+        <qualifiedname>Openlabs.Mgcxm.Net.IpAddress.ActualIpAddress</qualifiedname>
+        <reimplements refid="interface_openlabs_1_1_mgcxm_1_1_net_1_1_i_ip_address_1a796f5834e89706c954dfe3b0b8265a33">ActualIpAddress</reimplements>
+        <briefdescription>
+<para>The actual System object IP address. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/adenf/RiderProjects/Openlabs.Mgcxm/Openlabs.Mgcxm/Net/IpAddress.cs" line="15" column="22" bodyfile="C:/Users/adenf/RiderProjects/Openlabs.Mgcxm/Openlabs.Mgcxm/Net/IpAddress.cs" bodystart="15" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="property" id="class_openlabs_1_1_mgcxm_1_1_net_1_1_ip_address_1ac8e80630b5e898053525d92e02b56d41" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="no" privatesettable="no" protectedsettable="no">
+        <type>string</type>
+        <definition>string Openlabs.Mgcxm.Net.IpAddress.Origin</definition>
+        <argsstring></argsstring>
+        <name>Origin</name>
+        <qualifiedname>Openlabs.Mgcxm.Net.IpAddress.Origin</qualifiedname>
+        <reimplements refid="interface_openlabs_1_1_mgcxm_1_1_net_1_1_i_ip_address_1ae315274c2344bfb559aa2e38fa6352f6">Origin</reimplements>
+        <briefdescription>
+<para>The host of the IP address. (localhost / 1.1.1.1) </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/adenf/RiderProjects/Openlabs.Mgcxm/Openlabs.Mgcxm/Net/IpAddress.cs" line="66" column="19" bodyfile="C:/Users/adenf/RiderProjects/Openlabs.Mgcxm/Openlabs.Mgcxm/Net/IpAddress.cs" bodystart="66" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="property" id="class_openlabs_1_1_mgcxm_1_1_net_1_1_ip_address_1a43a68d0142702aa4dc7fddbfd4d92463" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="no" privatesettable="no" protectedsettable="no">
+        <type>ushort</type>
+        <definition>ushort Openlabs.Mgcxm.Net.IpAddress.Port</definition>
+        <argsstring></argsstring>
+        <name>Port</name>
+        <qualifiedname>Openlabs.Mgcxm.Net.IpAddress.Port</qualifiedname>
+        <reimplements refid="interface_openlabs_1_1_mgcxm_1_1_net_1_1_i_ip_address_1aa261bfcf48963c8f4501b3c3f8201451">Port</reimplements>
+        <briefdescription>
+<para>The port of the IP address. (80 / 443) </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/adenf/RiderProjects/Openlabs.Mgcxm/Openlabs.Mgcxm/Net/IpAddress.cs" line="71" column="19" bodyfile="C:/Users/adenf/RiderProjects/Openlabs.Mgcxm/Openlabs.Mgcxm/Net/IpAddress.cs" bodystart="71" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_openlabs_1_1_mgcxm_1_1_net_1_1_ip_address_1a1684b04a1af3b16bec0429ae53192e1e" prot="private" static="no" mutable="no">
+        <type>string</type>
+        <definition>string Openlabs.Mgcxm.Net.IpAddress._origin</definition>
+        <argsstring></argsstring>
+        <name>_origin</name>
+        <qualifiedname>Openlabs.Mgcxm.Net.IpAddress._origin</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/adenf/RiderProjects/Openlabs.Mgcxm/Openlabs.Mgcxm/Net/IpAddress.cs" line="73" column="20" bodyfile="C:/Users/adenf/RiderProjects/Openlabs.Mgcxm/Openlabs.Mgcxm/Net/IpAddress.cs" bodystart="73" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_openlabs_1_1_mgcxm_1_1_net_1_1_ip_address_1a244928edc12514241926491d41d5c82d" prot="private" static="no" mutable="no">
+        <type>ushort</type>
+        <definition>ushort Openlabs.Mgcxm.Net.IpAddress._port</definition>
+        <argsstring></argsstring>
+        <name>_port</name>
+        <qualifiedname>Openlabs.Mgcxm.Net.IpAddress._port</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/adenf/RiderProjects/Openlabs.Mgcxm/Openlabs.Mgcxm/Net/IpAddress.cs" line="74" column="20" bodyfile="C:/Users/adenf/RiderProjects/Openlabs.Mgcxm/Openlabs.Mgcxm/Net/IpAddress.cs" bodystart="74" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_openlabs_1_1_mgcxm_1_1_net_1_1_ip_address_1a49537d733c78a816a92fe56e848f6ec8" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Openlabs.Mgcxm.Net.IpAddress.IpAddress</definition>
+        <argsstring>(string origin, ushort port=0)</argsstring>
+        <name>IpAddress</name>
+        <qualifiedname>Openlabs.Mgcxm.Net.IpAddress.IpAddress</qualifiedname>
+        <param>
+          <type>string</type>
+          <declname>origin</declname>
+        </param>
+        <param>
+          <type>ushort</type>
+          <declname>port</declname>
+          <defval>0</defval>
+        </param>
+        <briefdescription>
+<para>Creates a new instance of an IpAddress. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>origin</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The origin. (e.g. 1.1.1.1)</para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>port</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The port. (e.g. 20001)</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/adenf/RiderProjects/Openlabs.Mgcxm/Openlabs.Mgcxm/Net/IpAddress.cs" line="22" column="12" bodyfile="C:/Users/adenf/RiderProjects/Openlabs.Mgcxm/Openlabs.Mgcxm/Net/IpAddress.cs" bodystart="22" bodyend="26"/>
+      </memberdef>
+      <memberdef kind="function" id="class_openlabs_1_1_mgcxm_1_1_net_1_1_ip_address_1acf912a826a1920cef76988dfdfd58f24" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>override string</type>
+        <definition>override string Openlabs.Mgcxm.Net.IpAddress.ToString</definition>
+        <argsstring>()</argsstring>
+        <name>ToString</name>
+        <qualifiedname>Openlabs.Mgcxm.Net.IpAddress.ToString</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/adenf/RiderProjects/Openlabs.Mgcxm/Openlabs.Mgcxm/Net/IpAddress.cs" line="54" column="28" bodyfile="C:/Users/adenf/RiderProjects/Openlabs.Mgcxm/Openlabs.Mgcxm/Net/IpAddress.cs" bodystart="54" bodyend="61"/>
+        <referencedby refid="class_openlabs_1_1_mgcxm_1_1_net_1_1_ip_address_1a65d230285b34e090cea5bfdaf1c331bd" compoundref="_ip_address_8cs" startline="28" endline="38">Openlabs.Mgcxm.Net.IpAddress.operator IpAddress</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="class_openlabs_1_1_mgcxm_1_1_net_1_1_ip_address_1a65d230285b34e090cea5bfdaf1c331bd" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>implicit</type>
+        <definition>static implicit Openlabs.Mgcxm.Net.IpAddress.operator IpAddress</definition>
+        <argsstring>(IPAddress ip)</argsstring>
+        <name>operator IpAddress</name>
+        <qualifiedname>Openlabs.Mgcxm.Net.IpAddress.operator IpAddress</qualifiedname>
+        <param>
+          <type>IPAddress</type>
+          <declname>ip</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/adenf/RiderProjects/Openlabs.Mgcxm/Openlabs.Mgcxm/Net/IpAddress.cs" line="28" column="28" bodyfile="C:/Users/adenf/RiderProjects/Openlabs.Mgcxm/Openlabs.Mgcxm/Net/IpAddress.cs" bodystart="28" bodyend="38"/>
+        <references refid="class_openlabs_1_1_mgcxm_1_1_net_1_1_ip_address_1acf912a826a1920cef76988dfdfd58f24" compoundref="_ip_address_8cs" startline="54" endline="61">Openlabs.Mgcxm.Net.IpAddress.ToString</references>
+      </memberdef>
+      <memberdef kind="function" id="class_openlabs_1_1_mgcxm_1_1_net_1_1_ip_address_1adfb34f358df740c27691f341da538067" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>implicit</type>
+        <definition>static implicit Openlabs.Mgcxm.Net.IpAddress.operator IpAddress</definition>
+        <argsstring>(string ipString)</argsstring>
+        <name>operator IpAddress</name>
+        <qualifiedname>Openlabs.Mgcxm.Net.IpAddress.operator IpAddress</qualifiedname>
+        <param>
+          <type>string</type>
+          <declname>ipString</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/adenf/RiderProjects/Openlabs.Mgcxm/Openlabs.Mgcxm/Net/IpAddress.cs" line="40" column="28" bodyfile="C:/Users/adenf/RiderProjects/Openlabs.Mgcxm/Openlabs.Mgcxm/Net/IpAddress.cs" bodystart="40" bodyend="49"/>
+      </memberdef>
+      <memberdef kind="function" id="class_openlabs_1_1_mgcxm_1_1_net_1_1_ip_address_1a39e4a655030be1f447e8ba2c226dee50" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>implicit</type>
+        <definition>static implicit Openlabs.Mgcxm.Net.IpAddress.operator IPAddress</definition>
+        <argsstring>(IpAddress ip)</argsstring>
+        <name>operator IPAddress</name>
+        <qualifiedname>Openlabs.Mgcxm.Net.IpAddress.operator IPAddress</qualifiedname>
+        <param>
+          <type><ref refid="class_openlabs_1_1_mgcxm_1_1_net_1_1_ip_address" kindref="compound">IpAddress</ref></type>
+          <declname>ip</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/adenf/RiderProjects/Openlabs.Mgcxm/Openlabs.Mgcxm/Net/IpAddress.cs" line="51" column="28"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Defines a <computeroutput>Internet Protocol Address (IP Address)</computeroutput>, which is read-only. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>IIpAddress</label>
+        <link refid="interface_openlabs_1_1_mgcxm_1_1_net_1_1_i_ip_address"/>
+      </node>
+      <node id="1">
+        <label>Openlabs.Mgcxm.Net.IpAddress</label>
+        <link refid="class_openlabs_1_1_mgcxm_1_1_net_1_1_ip_address"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>IIpAddress</label>
+        <link refid="interface_openlabs_1_1_mgcxm_1_1_net_1_1_i_ip_address"/>
+      </node>
+      <node id="1">
+        <label>Openlabs.Mgcxm.Net.IpAddress</label>
+        <link refid="class_openlabs_1_1_mgcxm_1_1_net_1_1_ip_address"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="C:/Users/adenf/RiderProjects/Openlabs.Mgcxm/Openlabs.Mgcxm/Net/IpAddress.cs" line="10" column="7" bodyfile="C:/Users/adenf/RiderProjects/Openlabs.Mgcxm/Openlabs.Mgcxm/Net/IpAddress.cs" bodystart="11" bodyend="75"/>
+    <listofallmembers>
+      <member refid="class_openlabs_1_1_mgcxm_1_1_net_1_1_ip_address_1a1684b04a1af3b16bec0429ae53192e1e" prot="private" virt="non-virtual"><scope>Openlabs::Mgcxm::Net::IpAddress</scope><name>_origin</name></member>
+      <member refid="class_openlabs_1_1_mgcxm_1_1_net_1_1_ip_address_1a244928edc12514241926491d41d5c82d" prot="private" virt="non-virtual"><scope>Openlabs::Mgcxm::Net::IpAddress</scope><name>_port</name></member>
+      <member refid="class_openlabs_1_1_mgcxm_1_1_net_1_1_ip_address_1a59ff9aaf387ad2074d0d9356162727c1" prot="public" virt="non-virtual"><scope>Openlabs::Mgcxm::Net::IpAddress</scope><name>ActualIpAddress</name></member>
+      <member refid="class_openlabs_1_1_mgcxm_1_1_net_1_1_ip_address_1a49537d733c78a816a92fe56e848f6ec8" prot="public" virt="non-virtual"><scope>Openlabs::Mgcxm::Net::IpAddress</scope><name>IpAddress</name></member>
+      <member refid="class_openlabs_1_1_mgcxm_1_1_net_1_1_ip_address_1a65d230285b34e090cea5bfdaf1c331bd" prot="public" virt="non-virtual"><scope>Openlabs::Mgcxm::Net::IpAddress</scope><name>operator IpAddress</name></member>
+      <member refid="class_openlabs_1_1_mgcxm_1_1_net_1_1_ip_address_1adfb34f358df740c27691f341da538067" prot="public" virt="non-virtual"><scope>Openlabs::Mgcxm::Net::IpAddress</scope><name>operator IpAddress</name></member>
+      <member refid="class_openlabs_1_1_mgcxm_1_1_net_1_1_ip_address_1a39e4a655030be1f447e8ba2c226dee50" prot="public" virt="non-virtual"><scope>Openlabs::Mgcxm::Net::IpAddress</scope><name>operator IPAddress</name></member>
+      <member refid="class_openlabs_1_1_mgcxm_1_1_net_1_1_ip_address_1ac8e80630b5e898053525d92e02b56d41" prot="public" virt="non-virtual"><scope>Openlabs::Mgcxm::Net::IpAddress</scope><name>Origin</name></member>
+      <member refid="class_openlabs_1_1_mgcxm_1_1_net_1_1_ip_address_1a43a68d0142702aa4dc7fddbfd4d92463" prot="public" virt="non-virtual"><scope>Openlabs::Mgcxm::Net::IpAddress</scope><name>Port</name></member>
+      <member refid="class_openlabs_1_1_mgcxm_1_1_net_1_1_ip_address_1acf912a826a1920cef76988dfdfd58f24" prot="public" virt="non-virtual"><scope>Openlabs::Mgcxm::Net::IpAddress</scope><name>ToString</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

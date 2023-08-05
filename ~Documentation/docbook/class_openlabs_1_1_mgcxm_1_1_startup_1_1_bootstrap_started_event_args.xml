@@ -1,0 +1,41 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_class_openlabs_1_1_mgcxm_1_1_startup_1_1_bootstrap_started_event_args" xml:lang="en-US">
+<title>Openlabs.Mgcxm.Startup.BootstrapStartedEventArgs Class Reference</title>
+<indexterm><primary>Openlabs.Mgcxm.Startup.BootstrapStartedEventArgs</primary></indexterm>
+Inheritance diagram for Openlabs.Mgcxm.Startup.BootstrapStartedEventArgs:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="class_openlabs_1_1_mgcxm_1_1_startup_1_1_bootstrap_started_event_args__inherit__graph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+Collaboration diagram for Openlabs.Mgcxm.Startup.BootstrapStartedEventArgs:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="class_openlabs_1_1_mgcxm_1_1_startup_1_1_bootstrap_started_event_args__coll__graph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+<simplesect>
+    <title>Properties    </title>
+        <itemizedlist>
+            <listitem><para>DateTime <link linkend="_class_openlabs_1_1_mgcxm_1_1_startup_1_1_bootstrap_started_event_args_1a34498a7abfd355b0a77debb52f5e393f">StartedAt</link><computeroutput> [get]</computeroutput>
+</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Property Documentation</title>
+<anchor xml:id="_class_openlabs_1_1_mgcxm_1_1_startup_1_1_bootstrap_started_event_args_1a34498a7abfd355b0a77debb52f5e393f"/><section>
+    <title>StartedAt</title>
+<indexterm><primary>StartedAt</primary><secondary>Openlabs.Mgcxm.Startup.BootstrapStartedEventArgs</secondary></indexterm>
+<indexterm><primary>Openlabs.Mgcxm.Startup.BootstrapStartedEventArgs</primary><secondary>StartedAt</secondary></indexterm>
+<para><computeroutput>DateTime Openlabs.Mgcxm.Startup.BootstrapStartedEventArgs.StartedAt<computeroutput>[get]</computeroutput></computeroutput></para></section>
+<para>
+The documentation for this class was generated from the following file:</para>
+C:/Users/adenf/RiderProjects/Openlabs.Mgcxm/Openlabs.Mgcxm/Startup/<link linkend="__bootstrap_started_event_args_8cs">BootstrapStartedEventArgs.cs</link></section>
+</section>

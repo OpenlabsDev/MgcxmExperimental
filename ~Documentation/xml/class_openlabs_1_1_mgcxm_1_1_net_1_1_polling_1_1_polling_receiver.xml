@@ -1,0 +1,235 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.7" xml:lang="en-US">
+  <compounddef id="class_openlabs_1_1_mgcxm_1_1_net_1_1_polling_1_1_polling_receiver" kind="class" language="C#" prot="public">
+    <compoundname>Openlabs::Mgcxm::Net::Polling::PollingReceiver</compoundname>
+    <basecompoundref refid="interface_openlabs_1_1_mgcxm_1_1_internal_1_1_system_objects_1_1_i_mgcxm_system_object" prot="public" virt="non-virtual">Openlabs.Mgcxm.Internal.SystemObjects.IMgcxmSystemObject</basecompoundref>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_openlabs_1_1_mgcxm_1_1_net_1_1_polling_1_1_polling_receiver_1a50c4c16d05dc7cee64f1ebe72453d269" prot="private" static="no" mutable="no">
+        <type>Stopwatch</type>
+        <definition>Stopwatch Openlabs.Mgcxm.Net.Polling.PollingReceiver._timeoutStopwatch</definition>
+        <argsstring></argsstring>
+        <name>_timeoutStopwatch</name>
+        <qualifiedname>Openlabs.Mgcxm.Net.Polling.PollingReceiver._timeoutStopwatch</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/adenf/RiderProjects/Openlabs.Mgcxm/Openlabs.Mgcxm/Net/WebSocket/Polling/PollingReceiver.cs" line="16" column="23" bodyfile="C:/Users/adenf/RiderProjects/Openlabs.Mgcxm/Openlabs.Mgcxm/Net/WebSocket/Polling/PollingReceiver.cs" bodystart="16" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="property">
+      <memberdef kind="property" id="class_openlabs_1_1_mgcxm_1_1_net_1_1_polling_1_1_polling_receiver_1aadbcd8e98b3907c94e09931531dff04e" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="no" privatesettable="no" protectedsettable="no">
+        <type>Stopwatch</type>
+        <definition>Stopwatch Openlabs.Mgcxm.Net.Polling.PollingReceiver.TimeoutStopwatch</definition>
+        <argsstring></argsstring>
+        <name>TimeoutStopwatch</name>
+        <qualifiedname>Openlabs.Mgcxm.Net.Polling.PollingReceiver.TimeoutStopwatch</qualifiedname>
+        <briefdescription>
+<para>Gets the timeout stopwatch associated with the polling receiver. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/adenf/RiderProjects/Openlabs.Mgcxm/Openlabs.Mgcxm/Net/WebSocket/Polling/PollingReceiver.cs" line="54" column="22" bodyfile="C:/Users/adenf/RiderProjects/Openlabs.Mgcxm/Openlabs.Mgcxm/Net/WebSocket/Polling/PollingReceiver.cs" bodystart="54" bodyend="-1"/>
+        <referencedby refid="class_openlabs_1_1_mgcxm_1_1_net_1_1_polling_1_1_poll_request_1aead385ab4f446a913a028aa22e36fadb" compoundref="_polling_receiver_8cs" startline="105" endline="112">Openlabs.Mgcxm.Net.Polling.PollRequest.Accept</referencedby>
+      </memberdef>
+      <memberdef kind="property" id="class_openlabs_1_1_mgcxm_1_1_net_1_1_polling_1_1_polling_receiver_1ae14736a1edd2035b92b3ebfde3f12f22" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="no" privatesettable="no" protectedsettable="no">
+        <type><ref refid="class_openlabs_1_1_mgcxm_1_1_internal_1_1_action_event" kindref="compound">ActionEvent</ref>&lt; <ref refid="class_openlabs_1_1_mgcxm_1_1_net_1_1_polling_1_1_poll_request" kindref="compound">PollRequest</ref> &gt;</type>
+        <definition>ActionEvent&lt;PollRequest&gt; Openlabs.Mgcxm.Net.Polling.PollingReceiver.OnPollReceived</definition>
+        <argsstring></argsstring>
+        <name>OnPollReceived</name>
+        <qualifiedname>Openlabs.Mgcxm.Net.Polling.PollingReceiver.OnPollReceived</qualifiedname>
+        <initializer>= new <ref refid="class_openlabs_1_1_mgcxm_1_1_internal_1_1_action_event" kindref="compound">ActionEvent</ref>&lt;<ref refid="class_openlabs_1_1_mgcxm_1_1_net_1_1_polling_1_1_poll_request" kindref="compound">PollRequest</ref>&gt;()</initializer>
+        <briefdescription>
+<para>Event that is raised when a poll request is received. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/adenf/RiderProjects/Openlabs.Mgcxm/Openlabs.Mgcxm/Net/WebSocket/Polling/PollingReceiver.cs" line="59" column="24" bodyfile="C:/Users/adenf/RiderProjects/Openlabs.Mgcxm/Openlabs.Mgcxm/Net/WebSocket/Polling/PollingReceiver.cs" bodystart="59" bodyend="59"/>
+        <referencedby refid="class_openlabs_1_1_mgcxm_1_1_net_1_1_mgcxm_socket_listener_1a8b8f0c86b9c0334af4f4e9adfb28d371" compoundref="_mgcxm_socket_listener_8cs" startline="37" endline="62">Openlabs.Mgcxm.Net.MgcxmSocketListener.MgcxmSocketListener</referencedby>
+        <referencedby refid="class_openlabs_1_1_mgcxm_1_1_net_1_1_polling_1_1_polling_receiver_1ae0009c18d42e37b702f1c5215de20125" compoundref="_polling_receiver_8cs" startline="39" endline="49">Openlabs.Mgcxm.Net.Polling.PollingReceiver.SendPoll</referencedby>
+      </memberdef>
+      <memberdef kind="property" id="class_openlabs_1_1_mgcxm_1_1_net_1_1_polling_1_1_polling_receiver_1af9b545b92a1a20c93979a30ff4ae5ed1" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="no" privatesettable="no" protectedsettable="no">
+        <type><ref refid="struct_openlabs_1_1_mgcxm_1_1_internal_1_1_mgcxm_id" kindref="compound">MgcxmId</ref></type>
+        <definition>MgcxmId Openlabs.Mgcxm.Net.Polling.PollingReceiver.AllocatedId</definition>
+        <argsstring></argsstring>
+        <name>AllocatedId</name>
+        <qualifiedname>Openlabs.Mgcxm.Net.Polling.PollingReceiver.AllocatedId</qualifiedname>
+        <reimplements refid="interface_openlabs_1_1_mgcxm_1_1_internal_1_1_system_objects_1_1_i_mgcxm_system_object_1afd31aa32e2b847ad283d3c5d5ce90e85">AllocatedId</reimplements>
+        <briefdescription>
+<para>Gets the unique identifier of the polling receiver. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/adenf/RiderProjects/Openlabs.Mgcxm/Openlabs.Mgcxm/Net/WebSocket/Polling/PollingReceiver.cs" line="76" column="20" bodyfile="C:/Users/adenf/RiderProjects/Openlabs.Mgcxm/Openlabs.Mgcxm/Net/WebSocket/Polling/PollingReceiver.cs" bodystart="76" bodyend="76"/>
+        <referencedby refid="class_openlabs_1_1_mgcxm_1_1_net_1_1_polling_1_1_polling_receiver_1af0db027a0c642fb260f36d3f271d2d67" compoundref="_polling_receiver_8cs" startline="21" endline="27">Openlabs.Mgcxm.Net.Polling.PollingReceiver.PollingReceiver</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-attrib">
+      <memberdef kind="variable" id="class_openlabs_1_1_mgcxm_1_1_net_1_1_polling_1_1_polling_receiver_1a9ae8219cf87a3c5fec24181cf2a1dc4b" prot="public" static="yes" mutable="no">
+        <type>readonly <ref refid="class_openlabs_1_1_mgcxm_1_1_common_1_1_duration" kindref="compound">Duration</ref></type>
+        <definition>readonly Duration Openlabs.Mgcxm.Net.Polling.PollingReceiver.MaxTimeout</definition>
+        <argsstring></argsstring>
+        <name>MaxTimeout</name>
+        <qualifiedname>Openlabs.Mgcxm.Net.Polling.PollingReceiver.MaxTimeout</qualifiedname>
+        <initializer>= Duration.Create(DurationType.Seconds, 5)</initializer>
+        <briefdescription>
+<para>The maximum timeout duration for a poll request. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/adenf/RiderProjects/Openlabs.Mgcxm/Openlabs.Mgcxm/Net/WebSocket/Polling/PollingReceiver.cs" line="64" column="37" bodyfile="C:/Users/adenf/RiderProjects/Openlabs.Mgcxm/Openlabs.Mgcxm/Net/WebSocket/Polling/PollingReceiver.cs" bodystart="64" bodyend="-1"/>
+        <referencedby refid="class_openlabs_1_1_mgcxm_1_1_net_1_1_polling_1_1_poll_request_1aead385ab4f446a913a028aa22e36fadb" compoundref="_polling_receiver_8cs" startline="105" endline="112">Openlabs.Mgcxm.Net.Polling.PollRequest.Accept</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_openlabs_1_1_mgcxm_1_1_net_1_1_polling_1_1_polling_receiver_1af0db027a0c642fb260f36d3f271d2d67" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Openlabs.Mgcxm.Net.Polling.PollingReceiver.PollingReceiver</definition>
+        <argsstring>()</argsstring>
+        <name>PollingReceiver</name>
+        <qualifiedname>Openlabs.Mgcxm.Net.Polling.PollingReceiver.PollingReceiver</qualifiedname>
+        <briefdescription>
+<para>Initializes a new instance of the PollingReceiver class. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/adenf/RiderProjects/Openlabs.Mgcxm/Openlabs.Mgcxm/Net/WebSocket/Polling/PollingReceiver.cs" line="21" column="12" bodyfile="C:/Users/adenf/RiderProjects/Openlabs.Mgcxm/Openlabs.Mgcxm/Net/WebSocket/Polling/PollingReceiver.cs" bodystart="21" bodyend="27"/>
+        <references refid="class_openlabs_1_1_mgcxm_1_1_net_1_1_polling_1_1_polling_receiver_1af9b545b92a1a20c93979a30ff4ae5ed1" compoundref="_polling_receiver_8cs" startline="76" endline="76">Openlabs.Mgcxm.Net.Polling.PollingReceiver.AllocatedId</references>
+      </memberdef>
+      <memberdef kind="function" id="class_openlabs_1_1_mgcxm_1_1_net_1_1_polling_1_1_polling_receiver_1ae0009c18d42e37b702f1c5215de20125" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Openlabs.Mgcxm.Net.Polling.PollingReceiver.SendPoll</definition>
+        <argsstring>(object? sender, OnPollAccepted callback)</argsstring>
+        <name>SendPoll</name>
+        <qualifiedname>Openlabs.Mgcxm.Net.Polling.PollingReceiver.SendPoll</qualifiedname>
+        <param>
+          <type>object?</type>
+          <declname>sender</declname>
+        </param>
+        <param>
+          <type><ref refid="namespace_openlabs_1_1_mgcxm_1_1_net_1_1_polling_1a021c8fd0a263d6965d9c89fa9528920e" kindref="member">OnPollAccepted</ref></type>
+          <declname>callback</declname>
+        </param>
+        <briefdescription>
+<para>Sends a poll request with the provided callback function. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>sender</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The object that initiated the poll.</para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>callback</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The callback function to be invoked when the poll is accepted.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/adenf/RiderProjects/Openlabs.Mgcxm/Openlabs.Mgcxm/Net/WebSocket/Polling/PollingReceiver.cs" line="39" column="17" bodyfile="C:/Users/adenf/RiderProjects/Openlabs.Mgcxm/Openlabs.Mgcxm/Net/WebSocket/Polling/PollingReceiver.cs" bodystart="39" bodyend="49"/>
+        <references refid="class_openlabs_1_1_mgcxm_1_1_net_1_1_polling_1_1_polling_receiver_1ae14736a1edd2035b92b3ebfde3f12f22" compoundref="_polling_receiver_8cs" startline="59" endline="59">Openlabs.Mgcxm.Net.Polling.PollingReceiver.OnPollReceived</references>
+      </memberdef>
+      <memberdef kind="function" id="class_openlabs_1_1_mgcxm_1_1_net_1_1_polling_1_1_polling_receiver_1a6339d95cc9d06393e474d00fe2a498fb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Openlabs.Mgcxm.Net.Polling.PollingReceiver.Trash</definition>
+        <argsstring>()</argsstring>
+        <name>Trash</name>
+        <qualifiedname>Openlabs.Mgcxm.Net.Polling.PollingReceiver.Trash</qualifiedname>
+        <reimplements refid="interface_openlabs_1_1_mgcxm_1_1_internal_1_1_system_objects_1_1_i_mgcxm_system_object_1ab14e018c681d09992e11bf3de82c5b45">Trash</reimplements>
+        <briefdescription>
+<para>Disposes of the polling receiver and deregisters it from the object manager. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/adenf/RiderProjects/Openlabs.Mgcxm/Openlabs.Mgcxm/Net/WebSocket/Polling/PollingReceiver.cs" line="71" column="17"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="class_openlabs_1_1_mgcxm_1_1_net_1_1_polling_1_1_polling_receiver_1a59340b192081d2dc571f9e97536fa4a9" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Openlabs.Mgcxm.Net.Polling.PollingReceiver.~PollingReceiver</definition>
+        <argsstring>()</argsstring>
+        <name>~PollingReceiver</name>
+        <qualifiedname>Openlabs.Mgcxm.Net.Polling.PollingReceiver.~PollingReceiver</qualifiedname>
+        <briefdescription>
+<para>Finalizer (destructor) for the PollingReceiver class. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/adenf/RiderProjects/Openlabs.Mgcxm/Openlabs.Mgcxm/Net/WebSocket/Polling/PollingReceiver.cs" line="32" column="5"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Represents a polling receiver that can send poll requests and handle poll responses. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>IMgcxmSystemObject</label>
+        <link refid="interface_openlabs_1_1_mgcxm_1_1_internal_1_1_system_objects_1_1_i_mgcxm_system_object"/>
+      </node>
+      <node id="1">
+        <label>Openlabs.Mgcxm.Net.Polling.PollingReceiver</label>
+        <link refid="class_openlabs_1_1_mgcxm_1_1_net_1_1_polling_1_1_polling_receiver"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>IMgcxmSystemObject</label>
+        <link refid="interface_openlabs_1_1_mgcxm_1_1_internal_1_1_system_objects_1_1_i_mgcxm_system_object"/>
+      </node>
+      <node id="1">
+        <label>Openlabs.Mgcxm.Net.Polling.PollingReceiver</label>
+        <link refid="class_openlabs_1_1_mgcxm_1_1_net_1_1_polling_1_1_polling_receiver"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="3" relation="usage">
+          <edgelabel>MaxTimeout</edgelabel>
+        </childnode>
+      </node>
+      <node id="3">
+        <label>static</label>
+      </node>
+    </collaborationgraph>
+    <location file="C:/Users/adenf/RiderProjects/Openlabs.Mgcxm/Openlabs.Mgcxm/Net/WebSocket/Polling/PollingReceiver.cs" line="14" column="14" bodyfile="C:/Users/adenf/RiderProjects/Openlabs.Mgcxm/Openlabs.Mgcxm/Net/WebSocket/Polling/PollingReceiver.cs" bodystart="15" bodyend="79"/>
+    <listofallmembers>
+      <member refid="class_openlabs_1_1_mgcxm_1_1_net_1_1_polling_1_1_polling_receiver_1a50c4c16d05dc7cee64f1ebe72453d269" prot="private" virt="non-virtual"><scope>Openlabs::Mgcxm::Net::Polling::PollingReceiver</scope><name>_timeoutStopwatch</name></member>
+      <member refid="class_openlabs_1_1_mgcxm_1_1_net_1_1_polling_1_1_polling_receiver_1af9b545b92a1a20c93979a30ff4ae5ed1" prot="public" virt="non-virtual"><scope>Openlabs::Mgcxm::Net::Polling::PollingReceiver</scope><name>AllocatedId</name></member>
+      <member refid="class_openlabs_1_1_mgcxm_1_1_net_1_1_polling_1_1_polling_receiver_1a9ae8219cf87a3c5fec24181cf2a1dc4b" prot="public" virt="non-virtual"><scope>Openlabs::Mgcxm::Net::Polling::PollingReceiver</scope><name>MaxTimeout</name></member>
+      <member refid="class_openlabs_1_1_mgcxm_1_1_net_1_1_polling_1_1_polling_receiver_1ae14736a1edd2035b92b3ebfde3f12f22" prot="public" virt="non-virtual"><scope>Openlabs::Mgcxm::Net::Polling::PollingReceiver</scope><name>OnPollReceived</name></member>
+      <member refid="class_openlabs_1_1_mgcxm_1_1_net_1_1_polling_1_1_polling_receiver_1af0db027a0c642fb260f36d3f271d2d67" prot="public" virt="non-virtual"><scope>Openlabs::Mgcxm::Net::Polling::PollingReceiver</scope><name>PollingReceiver</name></member>
+      <member refid="class_openlabs_1_1_mgcxm_1_1_net_1_1_polling_1_1_polling_receiver_1ae0009c18d42e37b702f1c5215de20125" prot="public" virt="non-virtual"><scope>Openlabs::Mgcxm::Net::Polling::PollingReceiver</scope><name>SendPoll</name></member>
+      <member refid="class_openlabs_1_1_mgcxm_1_1_net_1_1_polling_1_1_polling_receiver_1aadbcd8e98b3907c94e09931531dff04e" prot="public" virt="non-virtual"><scope>Openlabs::Mgcxm::Net::Polling::PollingReceiver</scope><name>TimeoutStopwatch</name></member>
+      <member refid="class_openlabs_1_1_mgcxm_1_1_net_1_1_polling_1_1_polling_receiver_1a6339d95cc9d06393e474d00fe2a498fb" prot="public" virt="non-virtual"><scope>Openlabs::Mgcxm::Net::Polling::PollingReceiver</scope><name>Trash</name></member>
+      <member refid="class_openlabs_1_1_mgcxm_1_1_net_1_1_polling_1_1_polling_receiver_1a59340b192081d2dc571f9e97536fa4a9" prot="private" virt="non-virtual"><scope>Openlabs::Mgcxm::Net::Polling::PollingReceiver</scope><name>~PollingReceiver</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

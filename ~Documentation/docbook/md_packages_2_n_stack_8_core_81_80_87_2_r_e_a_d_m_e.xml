@@ -1,0 +1,32 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_md_packages_2_n_stack_8_core_81_80_87_2_r_e_a_d_m_e" xml:lang="en-US">
+<title>NStack</title>
+<indexterm><primary>NStack</primary></indexterm>
+
+<para><anchor xml:id="_md_packages_2_n_stack_8_core_81_80_87_2_r_e_a_d_m_e_1autotoc_md0"/>  <link xlink:href="https://www.nuget.org/packages/NStack.Core"></link> <link xlink:href="https://www.nuget.org/packages/NStack.Core"></link> [](LICENSE) </para>
+
+<para>NOTE: NStack has moved to the <link xlink:href="https://github.com/orgs/gui-cs/">gui-cs org</link>.</para>
+
+<para>Currently, this library contains a port of the Go string, and Go rune support as well as other Unicode helper methods.</para>
+
+<para>You can browse the <link xlink:href="https://gui-cs.github.io/NStack">API documentation</link>.</para>
+
+<para>Install the <link xlink:href="https://www.nuget.org/packages/NStack.Core">NuGet package from NuGet.org</link> by installing <computeroutput>NStack.Core</computeroutput>.</para>
+<section xml:id="_md_packages_2_n_stack_8_core_81_80_87_2_r_e_a_d_m_e_1autotoc_md1">
+<title>Future Additions</title>
+
+<para>The long term goal is to make this module an exploration of what the .NET APIs for IO looked like if they only used exceptions for either invalid parameters being passed to methods and used results/error codes for most IO operations:</para>
+
+<para><itemizedlist>
+<listitem>
+<para>Exceptions have a role, but IO code tends to become ugly in its presence.</para>
+</listitem><listitem>
+<para>Other areas include making an IO layer that does not surface &quot;string&quot; for filenames, as in Unix there are really no filenames as we treat them in .NET, but rather file names are a collection of bytes, which do not necessarily can be decoded into UTF8 [1]. <?linebreak?></para>
+</listitem></itemizedlist>
+</para>
+
+<para>To make things simple, this assumes that UTF8 strings (ustring in this code) can exist without them being valid UTF8 strings, but rather a collection of bytes.</para>
+
+<para>[1] For example, older file systems can have filenames that made sense with a particular character set and are effectively not possible to map into strings. </para>
+</section>
+</section>

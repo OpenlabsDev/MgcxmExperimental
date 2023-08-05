@@ -1,0 +1,77 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.7" xml:lang="en-US">
+  <compounddef id="class_openlabs_1_1_mgcxm_1_1_startup_1_1_bootstrap_options" kind="class" language="C#" prot="public">
+    <compoundname>Openlabs::Mgcxm::Startup::BootstrapOptions</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="class_openlabs_1_1_mgcxm_1_1_startup_1_1_bootstrap_options_1a438768c6bac1922d805bb2c8fb485e44" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool Openlabs.Mgcxm.Startup.BootstrapOptions.useExperimentalOptions</definition>
+        <argsstring></argsstring>
+        <name>useExperimentalOptions</name>
+        <qualifiedname>Openlabs.Mgcxm.Startup.BootstrapOptions.useExperimentalOptions</qualifiedname>
+        <briefdescription>
+<para>Gets or sets a value indicating whether to use experimental options during bootstrap. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/adenf/RiderProjects/Openlabs.Mgcxm/Openlabs.Mgcxm/Startup/Bootstrap.cs" line="66" column="17" bodyfile="C:/Users/adenf/RiderProjects/Openlabs.Mgcxm/Openlabs.Mgcxm/Startup/Bootstrap.cs" bodystart="66" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_openlabs_1_1_mgcxm_1_1_startup_1_1_bootstrap_options_1a041df6b29a2170b5d9a7e688ec9dc6b9" prot="public" static="no" mutable="no">
+        <type><ref refid="namespace_openlabs_1_1_mgcxm_1_1_internal_1a25582aed8bd08a2f6803962cbe3d27fe" kindref="member">LogLevel</ref></type>
+        <definition>LogLevel Openlabs.Mgcxm.Startup.BootstrapOptions.minimumLogLevel</definition>
+        <argsstring></argsstring>
+        <name>minimumLogLevel</name>
+        <qualifiedname>Openlabs.Mgcxm.Startup.BootstrapOptions.minimumLogLevel</qualifiedname>
+        <briefdescription>
+<para>Gets or sets the minimum log level for logging messages. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/adenf/RiderProjects/Openlabs.Mgcxm/Openlabs.Mgcxm/Startup/Bootstrap.cs" line="71" column="21" bodyfile="C:/Users/adenf/RiderProjects/Openlabs.Mgcxm/Openlabs.Mgcxm/Startup/Bootstrap.cs" bodystart="71" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_openlabs_1_1_mgcxm_1_1_startup_1_1_bootstrap_options_1a21135090c41f1d72fd847748f7276c16" prot="public" static="no" mutable="no">
+        <type><ref refid="class_openlabs_1_1_mgcxm_1_1_startup_1_1_scaling_options" kindref="compound">ScalingOptions</ref></type>
+        <definition>ScalingOptions Openlabs.Mgcxm.Startup.BootstrapOptions.scalingOptions</definition>
+        <argsstring></argsstring>
+        <name>scalingOptions</name>
+        <qualifiedname>Openlabs.Mgcxm.Startup.BootstrapOptions.scalingOptions</qualifiedname>
+        <briefdescription>
+<para>Gets or sets the scaling options for Mgcxm. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/adenf/RiderProjects/Openlabs.Mgcxm/Openlabs.Mgcxm/Startup/Bootstrap.cs" line="76" column="27" bodyfile="C:/Users/adenf/RiderProjects/Openlabs.Mgcxm/Openlabs.Mgcxm/Startup/Bootstrap.cs" bodystart="76" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Options for configuring the Mgcxm bootstrap process. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="1">
+        <label>Openlabs.Mgcxm.Startup.BootstrapOptions</label>
+        <link refid="class_openlabs_1_1_mgcxm_1_1_startup_1_1_bootstrap_options"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>scalingOptions</edgelabel>
+        </childnode>
+      </node>
+      <node id="2">
+        <label>Openlabs.Mgcxm.Startup.ScalingOptions</label>
+        <link refid="class_openlabs_1_1_mgcxm_1_1_startup_1_1_scaling_options"/>
+      </node>
+    </collaborationgraph>
+    <location file="C:/Users/adenf/RiderProjects/Openlabs.Mgcxm/Openlabs.Mgcxm/Startup/Bootstrap.cs" line="61" column="7" bodyfile="C:/Users/adenf/RiderProjects/Openlabs.Mgcxm/Openlabs.Mgcxm/Startup/Bootstrap.cs" bodystart="62" bodyend="77"/>
+    <listofallmembers>
+      <member refid="class_openlabs_1_1_mgcxm_1_1_startup_1_1_bootstrap_options_1a041df6b29a2170b5d9a7e688ec9dc6b9" prot="public" virt="non-virtual"><scope>Openlabs::Mgcxm::Startup::BootstrapOptions</scope><name>minimumLogLevel</name></member>
+      <member refid="class_openlabs_1_1_mgcxm_1_1_startup_1_1_bootstrap_options_1a21135090c41f1d72fd847748f7276c16" prot="public" virt="non-virtual"><scope>Openlabs::Mgcxm::Startup::BootstrapOptions</scope><name>scalingOptions</name></member>
+      <member refid="class_openlabs_1_1_mgcxm_1_1_startup_1_1_bootstrap_options_1a438768c6bac1922d805bb2c8fb485e44" prot="public" virt="non-virtual"><scope>Openlabs::Mgcxm::Startup::BootstrapOptions</scope><name>useExperimentalOptions</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

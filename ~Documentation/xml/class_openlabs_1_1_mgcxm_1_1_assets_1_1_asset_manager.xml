@@ -1,0 +1,100 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.7" xml:lang="en-US">
+  <compounddef id="class_openlabs_1_1_mgcxm_1_1_assets_1_1_asset_manager" kind="class" language="C#" prot="public">
+    <compoundname>Openlabs::Mgcxm::Assets::AssetManager</compoundname>
+      <sectiondef kind="private-static-attrib">
+      <memberdef kind="variable" id="class_openlabs_1_1_mgcxm_1_1_assets_1_1_asset_manager_1a31b99d7b5804cf6945de3cbf240dd05c" prot="private" static="yes" mutable="no">
+        <type>List&lt; <ref refid="class_openlabs_1_1_mgcxm_1_1_assets_1_1_object_asset" kindref="compound">ObjectAsset</ref> &gt;</type>
+        <definition>List&lt;ObjectAsset&gt; Openlabs.Mgcxm.Assets.AssetManager._allLoadedAssets</definition>
+        <argsstring></argsstring>
+        <name>_allLoadedAssets</name>
+        <qualifiedname>Openlabs.Mgcxm.Assets.AssetManager._allLoadedAssets</qualifiedname>
+        <initializer>= new()</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/adenf/RiderProjects/Openlabs.Mgcxm/Openlabs.Mgcxm/Assets/AssetManager.cs" line="48" column="25" bodyfile="C:/Users/adenf/RiderProjects/Openlabs.Mgcxm/Openlabs.Mgcxm/Assets/AssetManager.cs" bodystart="48" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-attrib">
+      <memberdef kind="variable" id="class_openlabs_1_1_mgcxm_1_1_assets_1_1_asset_manager_1a967786b915077247d93d083fb63a6d13" prot="public" static="yes" mutable="no">
+        <type>readonly <ref refid="class_openlabs_1_1_mgcxm_1_1_internal_1_1_logger_sink" kindref="compound">LoggerSink</ref></type>
+        <definition>readonly LoggerSink Openlabs.Mgcxm.Assets.AssetManager.LogSink</definition>
+        <argsstring></argsstring>
+        <name>LogSink</name>
+        <qualifiedname>Openlabs.Mgcxm.Assets.AssetManager.LogSink</qualifiedname>
+        <initializer>= new(&quot;AstMgr&quot;)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/adenf/RiderProjects/Openlabs.Mgcxm/Openlabs.Mgcxm/Assets/AssetManager.cs" line="49" column="39" bodyfile="C:/Users/adenf/RiderProjects/Openlabs.Mgcxm/Openlabs.Mgcxm/Assets/AssetManager.cs" bodystart="49" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="class_openlabs_1_1_mgcxm_1_1_assets_1_1_asset_manager_1a10bddf6016171b0cdfd62e2d884b88e5" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void Openlabs.Mgcxm.Assets.AssetManager.LoadAll</definition>
+        <argsstring>(AssetLoadRequest[] requests)</argsstring>
+        <name>LoadAll</name>
+        <qualifiedname>Openlabs.Mgcxm.Assets.AssetManager.LoadAll</qualifiedname>
+        <param>
+          <type><ref refid="class_openlabs_1_1_mgcxm_1_1_assets_1_1_asset_load_request" kindref="compound">AssetLoadRequest</ref>[]</type>
+          <declname>requests</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/adenf/RiderProjects/Openlabs.Mgcxm/Openlabs.Mgcxm/Assets/AssetManager.cs" line="9" column="24" bodyfile="C:/Users/adenf/RiderProjects/Openlabs.Mgcxm/Openlabs.Mgcxm/Assets/AssetManager.cs" bodystart="9" bodyend="27"/>
+      </memberdef>
+      <memberdef kind="function" id="class_openlabs_1_1_mgcxm_1_1_assets_1_1_asset_manager_1a8b7562d9a3eff97bc050bba7f4d00e1b" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>async Task&lt; T &gt;</type>
+        <definition>static async Task&lt; T &gt; Openlabs.Mgcxm.Assets.AssetManager.Load&lt; T &gt;</definition>
+        <argsstring>(params object[] arguments)</argsstring>
+        <name>Load&lt; T &gt;</name>
+        <qualifiedname>Openlabs.Mgcxm.Assets.AssetManager.Load&lt; T &gt;</qualifiedname>
+        <param>
+          <type>params object[]</type>
+          <declname>arguments</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/adenf/RiderProjects/Openlabs.Mgcxm/Openlabs.Mgcxm/Assets/AssetManager.cs" line="29" column="19" bodyfile="C:/Users/adenf/RiderProjects/Openlabs.Mgcxm/Openlabs.Mgcxm/Assets/AssetManager.cs" bodystart="29" bodyend="46"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="1">
+        <label>Openlabs.Mgcxm.Assets.AssetManager</label>
+        <childnode refid="2" relation="usage">
+          <edgelabel>LogSink</edgelabel>
+        </childnode>
+      </node>
+      <node id="2">
+        <label>static</label>
+      </node>
+    </collaborationgraph>
+    <location file="C:/Users/adenf/RiderProjects/Openlabs.Mgcxm/Openlabs.Mgcxm/Assets/AssetManager.cs" line="7" column="15" bodyfile="C:/Users/adenf/RiderProjects/Openlabs.Mgcxm/Openlabs.Mgcxm/Assets/AssetManager.cs" bodystart="8" bodyend="50"/>
+    <listofallmembers>
+      <member refid="class_openlabs_1_1_mgcxm_1_1_assets_1_1_asset_manager_1a31b99d7b5804cf6945de3cbf240dd05c" prot="private" virt="non-virtual"><scope>Openlabs::Mgcxm::Assets::AssetManager</scope><name>_allLoadedAssets</name></member>
+      <member refid="class_openlabs_1_1_mgcxm_1_1_assets_1_1_asset_manager_1a8b7562d9a3eff97bc050bba7f4d00e1b" prot="public" virt="non-virtual"><scope>Openlabs::Mgcxm::Assets::AssetManager</scope><name>Load&lt; T &gt;</name></member>
+      <member refid="class_openlabs_1_1_mgcxm_1_1_assets_1_1_asset_manager_1a10bddf6016171b0cdfd62e2d884b88e5" prot="public" virt="non-virtual"><scope>Openlabs::Mgcxm::Assets::AssetManager</scope><name>LoadAll</name></member>
+      <member refid="class_openlabs_1_1_mgcxm_1_1_assets_1_1_asset_manager_1a967786b915077247d93d083fb63a6d13" prot="public" virt="non-virtual"><scope>Openlabs::Mgcxm::Assets::AssetManager</scope><name>LogSink</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,142 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_struct_openlabs_1_1_mgcxm_1_1_internal_1_1_mgcxm_id" xml:lang="en-US">
+<title>Openlabs.Mgcxm.Internal.MgcxmId Struct Reference</title>
+<indexterm><primary>Openlabs.Mgcxm.Internal.MgcxmId</primary></indexterm>
+<para>
+
+<para>A simple way to identify an object allocated in Mgcxm space. </para>
+ 
+</para>
+Inheritance diagram for Openlabs.Mgcxm.Internal.MgcxmId:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="struct_openlabs_1_1_mgcxm_1_1_internal_1_1_mgcxm_id__inherit__graph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+Collaboration diagram for Openlabs.Mgcxm.Internal.MgcxmId:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="struct_openlabs_1_1_mgcxm_1_1_internal_1_1_mgcxm_id__coll__graph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+<simplesect>
+    <title>Public Member Functions    </title>
+        <itemizedlist>
+            <listitem><para>bool <link linkend="_struct_openlabs_1_1_mgcxm_1_1_internal_1_1_mgcxm_id_1a6d7bb095e346f8515c1b0abeca5dcb1e">Equals</link> (<link linkend="_struct_openlabs_1_1_mgcxm_1_1_internal_1_1_mgcxm_id">MgcxmId</link> other)</para>
+</listitem>
+            <listitem><para>override bool <link linkend="_struct_openlabs_1_1_mgcxm_1_1_internal_1_1_mgcxm_id_1ae96499c1166a4fc30347b083a3e80cc1">Equals</link> (object? obj)</para>
+</listitem>
+            <listitem><para>override int <link linkend="_struct_openlabs_1_1_mgcxm_1_1_internal_1_1_mgcxm_id_1a5f49b3fd10b2095149ede29f3a554b93">GetHashCode</link> ()</para>
+</listitem>
+            <listitem><para>void <link linkend="_struct_openlabs_1_1_mgcxm_1_1_internal_1_1_mgcxm_id_1aa28713b1a1ff59ad9a1a940a635bb4e8">Latch&lt; T &gt;</link> (<link linkend="_struct_openlabs_1_1_mgcxm_1_1_internal_1_1_mgcxm_id">MgcxmId</link> id, T owner)</para>
+</listitem>
+            <listitem><para>void <link linkend="_struct_openlabs_1_1_mgcxm_1_1_internal_1_1_mgcxm_id_1a718aeacf068b158ac586f9a55cfe8b00">Unlatch</link> (<link linkend="_struct_openlabs_1_1_mgcxm_1_1_internal_1_1_mgcxm_id">MgcxmId</link> id)</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Static Public Member Functions    </title>
+        <itemizedlist>
+            <listitem><para>static implicit <link linkend="_struct_openlabs_1_1_mgcxm_1_1_internal_1_1_mgcxm_id_1a2510894f91cd855f1809b8d715944229">operator MgcxmId</link> (long id)</para>
+</listitem>
+            <listitem><para>static implicit <link linkend="_struct_openlabs_1_1_mgcxm_1_1_internal_1_1_mgcxm_id_1a81df8dcec5f938e41dd412a5c455c331">operator string</link> (<link linkend="_struct_openlabs_1_1_mgcxm_1_1_internal_1_1_mgcxm_id">MgcxmId</link> id)</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Properties    </title>
+        <itemizedlist>
+            <listitem><para>long <link linkend="_struct_openlabs_1_1_mgcxm_1_1_internal_1_1_mgcxm_id_1a1a0f97f9cbb455396c2605439fc42f76">Id</link><computeroutput> [get]</computeroutput>
+</para>
+
+<para>The ID of the object. </para>
+</listitem>
+            <listitem><para>IReadOnlyList&lt; <link linkend="_struct_openlabs_1_1_mgcxm_1_1_internal_1_1_mgcxm_id">MgcxmId</link> &gt; <link linkend="_struct_openlabs_1_1_mgcxm_1_1_internal_1_1_mgcxm_id_1a055650b8a6c9f4ff377e04342a41f147">Children</link><computeroutput> [get]</computeroutput>
+</para>
+
+<para>The child objects of this ID. </para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Detailed Description</title>
+
+<para>A simple way to identify an object allocated in Mgcxm space. </para>
+</section>
+<section>
+<title>Member Function Documentation</title>
+<anchor xml:id="_struct_openlabs_1_1_mgcxm_1_1_internal_1_1_mgcxm_id_1a6d7bb095e346f8515c1b0abeca5dcb1e"/><section>
+    <title>Equals()<computeroutput>[1/2]</computeroutput></title>
+<indexterm><primary>Equals</primary><secondary>Openlabs.Mgcxm.Internal.MgcxmId</secondary></indexterm>
+<indexterm><primary>Openlabs.Mgcxm.Internal.MgcxmId</primary><secondary>Equals</secondary></indexterm>
+<para><computeroutput>bool Openlabs.Mgcxm.Internal.MgcxmId.Equals (<link linkend="_struct_openlabs_1_1_mgcxm_1_1_internal_1_1_mgcxm_id">MgcxmId</link> other)</computeroutput></para></section>
+<anchor xml:id="_struct_openlabs_1_1_mgcxm_1_1_internal_1_1_mgcxm_id_1ae96499c1166a4fc30347b083a3e80cc1"/><section>
+    <title>Equals()<computeroutput>[2/2]</computeroutput></title>
+<indexterm><primary>Equals</primary><secondary>Openlabs.Mgcxm.Internal.MgcxmId</secondary></indexterm>
+<indexterm><primary>Openlabs.Mgcxm.Internal.MgcxmId</primary><secondary>Equals</secondary></indexterm>
+<para><computeroutput>override bool Openlabs.Mgcxm.Internal.MgcxmId.Equals (object? obj)</computeroutput></para></section>
+<anchor xml:id="_struct_openlabs_1_1_mgcxm_1_1_internal_1_1_mgcxm_id_1a5f49b3fd10b2095149ede29f3a554b93"/><section>
+    <title>GetHashCode()</title>
+<indexterm><primary>GetHashCode</primary><secondary>Openlabs.Mgcxm.Internal.MgcxmId</secondary></indexterm>
+<indexterm><primary>Openlabs.Mgcxm.Internal.MgcxmId</primary><secondary>GetHashCode</secondary></indexterm>
+<para><computeroutput>override int Openlabs.Mgcxm.Internal.MgcxmId.GetHashCode ( )</computeroutput></para>Here is the caller graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="struct_openlabs_1_1_mgcxm_1_1_internal_1_1_mgcxm_id_a5f49b3fd10b2095149ede29f3a554b93_icgraph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+</section>
+<anchor xml:id="_struct_openlabs_1_1_mgcxm_1_1_internal_1_1_mgcxm_id_1aa28713b1a1ff59ad9a1a940a635bb4e8"/><section>
+    <title>Latch&lt; T &gt;()</title>
+<indexterm><primary>Latch&lt; T &gt;</primary><secondary>Openlabs.Mgcxm.Internal.MgcxmId</secondary></indexterm>
+<indexterm><primary>Openlabs.Mgcxm.Internal.MgcxmId</primary><secondary>Latch&lt; T &gt;</secondary></indexterm>
+<para><computeroutput>void Openlabs.Mgcxm.Internal.MgcxmId.Latch&lt; T &gt; (<link linkend="_struct_openlabs_1_1_mgcxm_1_1_internal_1_1_mgcxm_id">MgcxmId</link> id, T owner)</computeroutput></para></section>
+<anchor xml:id="_struct_openlabs_1_1_mgcxm_1_1_internal_1_1_mgcxm_id_1a2510894f91cd855f1809b8d715944229"/><section>
+    <title>operator MgcxmId()</title>
+<indexterm><primary>operator MgcxmId</primary><secondary>Openlabs.Mgcxm.Internal.MgcxmId</secondary></indexterm>
+<indexterm><primary>Openlabs.Mgcxm.Internal.MgcxmId</primary><secondary>operator MgcxmId</secondary></indexterm>
+<para><computeroutput>static implicit Openlabs.Mgcxm.Internal.MgcxmId.operator <link linkend="_struct_openlabs_1_1_mgcxm_1_1_internal_1_1_mgcxm_id">MgcxmId</link> (long id)<computeroutput>[static]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_struct_openlabs_1_1_mgcxm_1_1_internal_1_1_mgcxm_id_1a81df8dcec5f938e41dd412a5c455c331"/><section>
+    <title>operator string()</title>
+<indexterm><primary>operator string</primary><secondary>Openlabs.Mgcxm.Internal.MgcxmId</secondary></indexterm>
+<indexterm><primary>Openlabs.Mgcxm.Internal.MgcxmId</primary><secondary>operator string</secondary></indexterm>
+<para><computeroutput>static implicit Openlabs.Mgcxm.Internal.MgcxmId.operator string (<link linkend="_struct_openlabs_1_1_mgcxm_1_1_internal_1_1_mgcxm_id">MgcxmId</link> id)<computeroutput>[static]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_struct_openlabs_1_1_mgcxm_1_1_internal_1_1_mgcxm_id_1a718aeacf068b158ac586f9a55cfe8b00"/><section>
+    <title>Unlatch()</title>
+<indexterm><primary>Unlatch</primary><secondary>Openlabs.Mgcxm.Internal.MgcxmId</secondary></indexterm>
+<indexterm><primary>Openlabs.Mgcxm.Internal.MgcxmId</primary><secondary>Unlatch</secondary></indexterm>
+<para><computeroutput>void Openlabs.Mgcxm.Internal.MgcxmId.Unlatch (<link linkend="_struct_openlabs_1_1_mgcxm_1_1_internal_1_1_mgcxm_id">MgcxmId</link> id)</computeroutput></para></section>
+</section>
+<section>
+<title>Property Documentation</title>
+<anchor xml:id="_struct_openlabs_1_1_mgcxm_1_1_internal_1_1_mgcxm_id_1a055650b8a6c9f4ff377e04342a41f147"/><section>
+    <title>Children</title>
+<indexterm><primary>Children</primary><secondary>Openlabs.Mgcxm.Internal.MgcxmId</secondary></indexterm>
+<indexterm><primary>Openlabs.Mgcxm.Internal.MgcxmId</primary><secondary>Children</secondary></indexterm>
+<para><computeroutput>IReadOnlyList&lt;<link linkend="_struct_openlabs_1_1_mgcxm_1_1_internal_1_1_mgcxm_id">MgcxmId</link>&gt; Openlabs.Mgcxm.Internal.MgcxmId.Children<computeroutput>[get]</computeroutput></computeroutput></para><para>
+
+<para>The child objects of this ID. </para>
+</para>
+</section>
+<anchor xml:id="_struct_openlabs_1_1_mgcxm_1_1_internal_1_1_mgcxm_id_1a1a0f97f9cbb455396c2605439fc42f76"/><section>
+    <title>Id</title>
+<indexterm><primary>Id</primary><secondary>Openlabs.Mgcxm.Internal.MgcxmId</secondary></indexterm>
+<indexterm><primary>Openlabs.Mgcxm.Internal.MgcxmId</primary><secondary>Id</secondary></indexterm>
+<para><computeroutput>long Openlabs.Mgcxm.Internal.MgcxmId.Id<computeroutput>[get]</computeroutput></computeroutput></para><para>
+
+<para>The ID of the object. </para>
+</para>
+</section>
+<para>
+The documentation for this struct was generated from the following file:</para>
+C:/Users/adenf/RiderProjects/Openlabs.Mgcxm/Openlabs.Mgcxm/Internal/<link linkend="__mgcxm_id_8cs">MgcxmId.cs</link></section>
+</section>

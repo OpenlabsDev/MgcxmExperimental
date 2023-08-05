@@ -1,0 +1,49 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.7" xml:lang="en-US">
+  <compounddef id="packages_2_n_stack_8_core_81_80_87_2_r_e_a_d_m_e_8md" kind="file" language="Markdown">
+    <compoundname>README.md</compoundname>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline><highlight class="normal">#<sp/>NStack</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">![Build](https://github.com/gui-cs/NStack/actions/workflows/build.yml/badge.svg)</highlight></codeline>
+<codeline><highlight class="normal">[![Version](https://img.shields.io/nuget/v/NStack.Core.svg)](https://www.nuget.org/packages/NStack.Core)</highlight></codeline>
+<codeline><highlight class="normal">[![Downloads](https://img.shields.io/nuget/dt/NStack.Core)](https://www.nuget.org/packages/NStack.Core)</highlight></codeline>
+<codeline><highlight class="normal">[![License](https://img.shields.io/github/license/gui-cs/NStack.svg)](LICENSE)</highlight></codeline>
+<codeline><highlight class="normal">![Bugs](https://img.shields.io/github/issues/gui-cs/NStack)</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">NOTE:<sp/>NStack<sp/>has<sp/>moved<sp/>to<sp/>the<sp/>[gui-cs<sp/>org](https://github.com/orgs/gui-cs/).</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">Currently,<sp/>this<sp/>library<sp/>contains<sp/>a<sp/>port<sp/>of<sp/>the<sp/>Go<sp/>string,<sp/>and<sp/>Go<sp/>rune<sp/>support<sp/>as<sp/>well<sp/>as<sp/>other<sp/>Unicode<sp/>helper<sp/>methods.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">You<sp/>can<sp/>browse<sp/>the<sp/>[API<sp/>documentation](https://gui-cs.github.io/NStack).</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">Install<sp/>the<sp/>[NuGet<sp/>package<sp/>from<sp/>NuGet.org](https://www.nuget.org/packages/NStack.Core)<sp/>by<sp/>installing<sp/>`NStack.Core`.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">#<sp/>Future<sp/>Additions</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">The<sp/>long<sp/>term<sp/>goal<sp/>is<sp/>to<sp/>make<sp/>this<sp/>module<sp/>an<sp/>exploration<sp/>of<sp/>what<sp/>the<sp/>.NET<sp/>APIs<sp/>for<sp/>IO<sp/>looked<sp/>like<sp/>if<sp/>they<sp/>only</highlight></codeline>
+<codeline><highlight class="normal">used<sp/>exceptions<sp/>for<sp/>either<sp/>invalid<sp/>parameters<sp/>being<sp/>passed<sp/>to</highlight></codeline>
+<codeline><highlight class="normal">methods<sp/>and<sp/>used<sp/>results/error<sp/>codes<sp/>for<sp/>most<sp/>IO<sp/>operations:</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">*<sp/>Exceptions<sp/>have<sp/>a<sp/>role,<sp/>but<sp/>IO<sp/>code<sp/>tends<sp/>to<sp/>become<sp/>ugly<sp/>in<sp/>its<sp/>presence.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">*<sp/>Other<sp/>areas<sp/>include<sp/>making<sp/>an<sp/>IO<sp/>layer<sp/>that<sp/>does<sp/>not<sp/>surface<sp/>&quot;string&quot;<sp/>for</highlight></codeline>
+<codeline><highlight class="normal">filenames,<sp/>as<sp/>in<sp/>Unix<sp/>there<sp/>are<sp/>really<sp/>no<sp/>filenames<sp/>as<sp/>we<sp/>treat<sp/>them<sp/>in</highlight></codeline>
+<codeline><highlight class="normal">.NET,<sp/>but<sp/>rather<sp/>file<sp/>names<sp/>are<sp/>a<sp/>collection<sp/>of<sp/>bytes,<sp/>which<sp/>do<sp/>not<sp/>necessarily</highlight></codeline>
+<codeline><highlight class="normal">can<sp/>be<sp/>decoded<sp/>into<sp/>UTF8<sp/>[1].<sp/><sp/></highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">To<sp/>make<sp/>things<sp/>simple,<sp/>this<sp/>assumes<sp/>that<sp/>UTF8<sp/>strings<sp/>(ustring<sp/>in<sp/>this<sp/>code)</highlight></codeline>
+<codeline><highlight class="normal">can<sp/>exist<sp/>without<sp/>them<sp/>being<sp/>valid<sp/>UTF8<sp/>strings,<sp/>but<sp/>rather<sp/>a<sp/>collection<sp/>of<sp/>bytes.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">[1]<sp/>For<sp/>example,<sp/>older<sp/>file<sp/>systems<sp/>can<sp/>have<sp/>filenames<sp/>that<sp/>made<sp/>sense<sp/>with</highlight></codeline>
+<codeline><highlight class="normal">a<sp/>particular<sp/>character<sp/>set<sp/>and<sp/>are<sp/>effectively<sp/>not<sp/>possible<sp/>to<sp/>map<sp/>into<sp/>strings.</highlight></codeline>
+<codeline></codeline>
+<codeline></codeline>
+    </programlisting>
+    <location file="C:/Users/adenf/RiderProjects/Openlabs.Mgcxm/packages/NStack.Core.1.0.7/README.md"/>
+  </compounddef>
+</doxygen>

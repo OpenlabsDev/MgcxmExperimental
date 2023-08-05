@@ -1,0 +1,112 @@
+\doxysection{JWT.\+Algorithms.\+RSAlgorithm\+Factory Class Reference}
+\hypertarget{class_j_w_t_1_1_algorithms_1_1_r_s_algorithm_factory}{}\label{class_j_w_t_1_1_algorithms_1_1_r_s_algorithm_factory}\index{JWT.Algorithms.RSAlgorithmFactory@{JWT.Algorithms.RSAlgorithmFactory}}
+
+
+ 
+
+
+
+
+Inheritance diagram for JWT.\+Algorithms.\+RSAlgorithm\+Factory\+:
+% FIG 0
+
+
+Collaboration diagram for JWT.\+Algorithms.\+RSAlgorithm\+Factory\+:
+% FIG 1
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_j_w_t_1_1_algorithms_1_1_r_s_algorithm_factory_a0eb231a8dc2700f1223a5514d56e3d45}{RSAlgorithm\+Factory}} (Func$<$ X509\+Certificate2 $>$ cert\+Factory)
+\begin{DoxyCompactList}\small\item\em Creates an instance of the RSAlgorithm\+Factory class using the provided X509\+Certificate2. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_j_w_t_1_1_algorithms_1_1_r_s_algorithm_factory_a7b211a05b990e0a1a7a9cc1c8d3e2e2a}{RSAlgorithm\+Factory}} (RSA public\+Key)
+\begin{DoxyCompactList}\small\item\em Creates an instance of RSAlgorithm\+Factory using the provided public key only. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{class_j_w_t_1_1_algorithms_1_1_jwt_algorithm_factory}{JWT.\+Algorithms.\+Jwt\+Algorithm\+Factory}}}
+\begin{DoxyCompactItemize}
+\item 
+virtual \mbox{\hyperlink{interface_j_w_t_1_1_algorithms_1_1_i_jwt_algorithm}{IJwt\+Algorithm}} \mbox{\hyperlink{class_j_w_t_1_1_algorithms_1_1_jwt_algorithm_factory_a9c6f4d9243c4c23653fa5c9905e16985}{Create}} (\mbox{\hyperlink{class_j_w_t_1_1_jwt_decoder_context}{Jwt\+Decoder\+Context}} context)
+\begin{DoxyCompactList}\small\item\em Creates an Algorithm\+Factory using the provided algorithm enum.
+
+
+\begin{DoxyParams}{Parameters}
+{\em context} & The captured context during validation of \doxylink{namespace_j_w_t}{JWT} inside \doxylink{class_j_w_t_1_1_jwt_decoder}{Jwt\+Decoder}\\
+\hline
+\end{DoxyParams}
+ \end{DoxyCompactList}\end{DoxyCompactItemize}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{interface_j_w_t_1_1_algorithms_1_1_i_jwt_algorithm}{IJwt\+Algorithm}} \mbox{\hyperlink{interface_j_w_t_1_1_algorithms_1_1_i_algorithm_factory_aadbbc767e8b2bc0f7360239b755ebdf6}{Create}} (\mbox{\hyperlink{class_j_w_t_1_1_jwt_decoder_context}{Jwt\+Decoder\+Context}} context)
+\begin{DoxyCompactList}\small\item\em Creates an Algorithm\+Factory using the provided algorithm enum. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_j_w_t_1_1_algorithms_1_1_r_s_algorithm_factory}{RSAlgorithm\+Factory}}(RSA public\+Key, RSA private\+Key) override \mbox{\hyperlink{interface_j_w_t_1_1_algorithms_1_1_i_jwt_algorithm}{IJwt\+Algorithm}} \mbox{\hyperlink{class_j_w_t_1_1_algorithms_1_1_r_s_algorithm_factory_ad66f2ce16402440933cfb9135ad0dab9}{Create}} (\mbox{\hyperlink{namespace_j_w_t_1_1_algorithms_a01c3b16fc1ceb98f077a59f749d39198}{Jwt\+Algorithm\+Name}} algorithm)
+\begin{DoxyCompactList}\small\item\em Creates an instance of RSAlgorithm\+Factory using the provided pair of public and private keys. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\begin{DoxyCompactItemize}
+\item 
+abstract \mbox{\hyperlink{interface_j_w_t_1_1_algorithms_1_1_i_jwt_algorithm}{IJwt\+Algorithm}} \mbox{\hyperlink{class_j_w_t_1_1_algorithms_1_1_jwt_algorithm_factory_a279bf517a16e3ab26b339a961ef33c0a}{Create}} (\mbox{\hyperlink{namespace_j_w_t_1_1_algorithms_a01c3b16fc1ceb98f077a59f749d39198}{Jwt\+Algorithm\+Name}} algorithm)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_j_w_t_1_1_algorithms_1_1_r_s_algorithm_factory_a0eb231a8dc2700f1223a5514d56e3d45}\label{class_j_w_t_1_1_algorithms_1_1_r_s_algorithm_factory_a0eb231a8dc2700f1223a5514d56e3d45} 
+\index{JWT.Algorithms.RSAlgorithmFactory@{JWT.Algorithms.RSAlgorithmFactory}!RSAlgorithmFactory@{RSAlgorithmFactory}}
+\index{RSAlgorithmFactory@{RSAlgorithmFactory}!JWT.Algorithms.RSAlgorithmFactory@{JWT.Algorithms.RSAlgorithmFactory}}
+\doxysubsubsection{\texorpdfstring{RSAlgorithmFactory()}{RSAlgorithmFactory()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily JWT.\+Algorithms.\+RSAlgorithm\+Factory.\+RSAlgorithm\+Factory (\begin{DoxyParamCaption}\item[{Func$<$ X509\+Certificate2 $>$}]{cert\+Factory }\end{DoxyParamCaption})}
+
+
+
+Creates an instance of the RSAlgorithm\+Factory class using the provided X509\+Certificate2. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em cert\+Factory} & Func that returns X509\+Certificate2 which will be used to instantiate RS256\+Algorithm\\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_j_w_t_1_1_algorithms_1_1_r_s_algorithm_factory_a7b211a05b990e0a1a7a9cc1c8d3e2e2a}\label{class_j_w_t_1_1_algorithms_1_1_r_s_algorithm_factory_a7b211a05b990e0a1a7a9cc1c8d3e2e2a} 
+\index{JWT.Algorithms.RSAlgorithmFactory@{JWT.Algorithms.RSAlgorithmFactory}!RSAlgorithmFactory@{RSAlgorithmFactory}}
+\index{RSAlgorithmFactory@{RSAlgorithmFactory}!JWT.Algorithms.RSAlgorithmFactory@{JWT.Algorithms.RSAlgorithmFactory}}
+\doxysubsubsection{\texorpdfstring{RSAlgorithmFactory()}{RSAlgorithmFactory()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily JWT.\+Algorithms.\+RSAlgorithm\+Factory.\+RSAlgorithm\+Factory (\begin{DoxyParamCaption}\item[{RSA}]{public\+Key }\end{DoxyParamCaption})}
+
+
+
+Creates an instance of RSAlgorithm\+Factory using the provided public key only. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em public\+Key} & The public key for verifying the data.\\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_j_w_t_1_1_algorithms_1_1_r_s_algorithm_factory_ad66f2ce16402440933cfb9135ad0dab9}\label{class_j_w_t_1_1_algorithms_1_1_r_s_algorithm_factory_ad66f2ce16402440933cfb9135ad0dab9} 
+\index{JWT.Algorithms.RSAlgorithmFactory@{JWT.Algorithms.RSAlgorithmFactory}!Create@{Create}}
+\index{Create@{Create}!JWT.Algorithms.RSAlgorithmFactory@{JWT.Algorithms.RSAlgorithmFactory}}
+\doxysubsubsection{\texorpdfstring{Create()}{Create()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_j_w_t_1_1_algorithms_1_1_r_s_algorithm_factory}{RSAlgorithm\+Factory}}(RSA public\+Key, RSA private\+Key) override \mbox{\hyperlink{interface_j_w_t_1_1_algorithms_1_1_i_jwt_algorithm}{IJwt\+Algorithm}} JWT.\+Algorithms.\+RSAlgorithm\+Factory.\+Create (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespace_j_w_t_1_1_algorithms_a01c3b16fc1ceb98f077a59f749d39198}{Jwt\+Algorithm\+Name}}}]{algorithm }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+
+
+Creates an instance of RSAlgorithm\+Factory using the provided pair of public and private keys. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em public\+Key} & The public key for verifying the data.\\
+\hline
+{\em private\+Key} & The private key for signing the data.\\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{class_j_w_t_1_1_algorithms_1_1_jwt_algorithm_factory_a279bf517a16e3ab26b339a961ef33c0a}{JWT.\+Algorithms.\+Jwt\+Algorithm\+Factory}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/adenf/\+Rider\+Projects/\+Openlabs.\+Mgcxm/\+Openlabs.\+Mgcxm/\+JWT/\+Algorithms/\mbox{\hyperlink{_r_s_algorithm_factory_8cs}{RSAlgorithm\+Factory.\+cs}}\end{DoxyCompactItemize}

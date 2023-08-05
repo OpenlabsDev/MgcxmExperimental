@@ -1,0 +1,38 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.7" xml:lang="en-US">
+  <compounddef id="_socket_connection_handler_attribute_8cs" kind="file" language="C#">
+    <compoundname>SocketConnectionHandlerAttribute.cs</compoundname>
+    <innerclass refid="class_openlabs_1_1_mgcxm_1_1_net_1_1_socket_connection_handler_attribute" prot="public">Openlabs::Mgcxm::Net::SocketConnectionHandlerAttribute</innerclass>
+    <innernamespace refid="namespace_openlabs">Openlabs</innernamespace>
+    <innernamespace refid="namespace_openlabs_1_1_mgcxm">Openlabs::Mgcxm</innernamespace>
+    <innernamespace refid="namespace_openlabs_1_1_mgcxm_1_1_net">Openlabs::Mgcxm::Net</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">//<sp/>Copr.<sp/>(c)<sp/>Nexus<sp/>2023.<sp/>All<sp/>rights<sp/>reserved.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="keyword">using<sp/></highlight><highlight class="normal"><ref refid="namespace_openlabs_1_1_mgcxm_1_1_internal" kindref="compound">Openlabs.Mgcxm.Internal</ref>;</highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="namespace_openlabs_1_1_mgcxm_1_1_net" kindref="compound">Openlabs.Mgcxm.Net</ref>;</highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal">[AttributeUsage(AttributeTargets.Method)]</highlight></codeline>
+<codeline lineno="11" refid="class_openlabs_1_1_mgcxm_1_1_net_1_1_socket_connection_handler_attribute" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="class_openlabs_1_1_mgcxm_1_1_net_1_1_socket_connection_handler_attribute" kindref="compound">SocketConnectionHandlerAttribute</ref><sp/>:<sp/>Attribute</highlight></codeline>
+<codeline lineno="12"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="19" refid="class_openlabs_1_1_mgcxm_1_1_net_1_1_socket_connection_handler_attribute_1ae160f7e01f8bc94213b5424c097e3861" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="class_openlabs_1_1_mgcxm_1_1_net_1_1_socket_connection_handler_attribute_1ae160f7e01f8bc94213b5424c097e3861" kindref="member">SocketConnectionHandlerAttribute</ref>(Type<sp/>type)</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(type<sp/>==<sp/></highlight><highlight class="keyword">null</highlight><highlight class="normal">)<sp/></highlight><highlight class="keywordflow">throw</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/>ArgumentNullException(nameof(type));</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(!type.InheritsOrImplements(typeof(<ref refid="class_openlabs_1_1_mgcxm_1_1_net_1_1_mgcxm_socket_connection_handler" kindref="compound">MgcxmSocketConnectionHandler</ref>)))</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">throw</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/>InvalidOperationException(</highlight><highlight class="stringliteral">&quot;Cannot<sp/>use<sp/>a<sp/>non<sp/>MgcxmSocketConnectionHandler<sp/>as<sp/>a<sp/>connection<sp/>handler.&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_openlabs_1_1_mgcxm_1_1_net_1_1_socket_connection_handler_attribute_1acfc959bae5971b4572d320baa5ae9188" kindref="member">HandlerType</ref><sp/>=<sp/>type;</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight></codeline>
+<codeline lineno="32" refid="class_openlabs_1_1_mgcxm_1_1_net_1_1_socket_connection_handler_attribute_1acfc959bae5971b4572d320baa5ae9188" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/>Type<sp/><ref refid="class_openlabs_1_1_mgcxm_1_1_net_1_1_socket_connection_handler_attribute_1acfc959bae5971b4572d320baa5ae9188" kindref="member">HandlerType</ref><sp/>{<sp/></highlight><highlight class="keyword">get</highlight><highlight class="normal">;<sp/></highlight><highlight class="keyword">private</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">set</highlight><highlight class="normal">;<sp/>}</highlight></codeline>
+<codeline lineno="33"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="C:/Users/adenf/RiderProjects/Openlabs.Mgcxm/Openlabs.Mgcxm/Net/Attributes/SocketConnectionHandlerAttribute.cs"/>
+  </compounddef>
+</doxygen>

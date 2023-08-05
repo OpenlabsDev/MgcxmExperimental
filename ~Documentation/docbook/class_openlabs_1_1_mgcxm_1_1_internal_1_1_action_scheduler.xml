@@ -1,0 +1,34 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_class_openlabs_1_1_mgcxm_1_1_internal_1_1_action_scheduler" xml:lang="en-US">
+<title>Openlabs.Mgcxm.Internal.ActionScheduler Class Reference</title>
+<indexterm><primary>Openlabs.Mgcxm.Internal.ActionScheduler</primary></indexterm>
+<simplesect>
+    <title>Public Member Functions    </title>
+        <itemizedlist>
+            <listitem><para>async Task <link linkend="_class_openlabs_1_1_mgcxm_1_1_internal_1_1_action_scheduler_1acd60022f6b03b72c6ceb601815e38373">Enqueue</link> (string name, Delegate action, params object[] args)</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Static Public Member Functions    </title>
+        <itemizedlist>
+            <listitem><para>static <link linkend="_class_openlabs_1_1_mgcxm_1_1_internal_1_1_action_scheduler">ActionScheduler</link> <link linkend="_class_openlabs_1_1_mgcxm_1_1_internal_1_1_action_scheduler_1a862abea9259685b6c31577e4b057ff09">Create</link> (string name)</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Member Function Documentation</title>
+<anchor xml:id="_class_openlabs_1_1_mgcxm_1_1_internal_1_1_action_scheduler_1a862abea9259685b6c31577e4b057ff09"/><section>
+    <title>Create()</title>
+<indexterm><primary>Create</primary><secondary>Openlabs.Mgcxm.Internal.ActionScheduler</secondary></indexterm>
+<indexterm><primary>Openlabs.Mgcxm.Internal.ActionScheduler</primary><secondary>Create</secondary></indexterm>
+<para><computeroutput>static <link linkend="_class_openlabs_1_1_mgcxm_1_1_internal_1_1_action_scheduler">ActionScheduler</link> Openlabs.Mgcxm.Internal.ActionScheduler.Create (string name)<computeroutput>[static]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_class_openlabs_1_1_mgcxm_1_1_internal_1_1_action_scheduler_1acd60022f6b03b72c6ceb601815e38373"/><section>
+    <title>Enqueue()</title>
+<indexterm><primary>Enqueue</primary><secondary>Openlabs.Mgcxm.Internal.ActionScheduler</secondary></indexterm>
+<indexterm><primary>Openlabs.Mgcxm.Internal.ActionScheduler</primary><secondary>Enqueue</secondary></indexterm>
+<para><computeroutput>async Task Openlabs.Mgcxm.Internal.ActionScheduler.Enqueue (string name, Delegate action, params object[] args)</computeroutput></para></section>
+<para>
+The documentation for this class was generated from the following file:</para>
+C:/Users/adenf/RiderProjects/Openlabs.Mgcxm/Openlabs.Mgcxm/Internal/<link linkend="__action_scheduler_8cs">ActionScheduler.cs</link></section>
+</section>

@@ -1,0 +1,64 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_interface_j_w_t_1_1_i_base64_url_encoder" xml:lang="en-US">
+<title>JWT.IBase64UrlEncoder Interface Reference</title>
+<indexterm><primary>JWT.IBase64UrlEncoder</primary></indexterm>
+<para>
+
+<para>Represents a base64 encoder/decoder. </para>
+ 
+</para>
+Inheritance diagram for JWT.IBase64UrlEncoder:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="interface_j_w_t_1_1_i_base64_url_encoder__inherit__graph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+<simplesect>
+    <title>Public Member Functions    </title>
+        <itemizedlist>
+            <listitem><para>string <link linkend="_interface_j_w_t_1_1_i_base64_url_encoder_1a0e1266c26222092a10082d1bb0c86e61">Encode</link> (byte[] input)</para>
+
+<para>Encodes the byte array to a base64 string. </para>
+</listitem>
+            <listitem><para>byte[] <link linkend="_interface_j_w_t_1_1_i_base64_url_encoder_1a70852ef851d7288fdba837a1248d3183">Decode</link> (string input)</para>
+
+<para>Decodes the base64 string to a byte array. </para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Detailed Description</title>
+
+<para>Represents a base64 encoder/decoder. </para>
+</section>
+<section>
+<title>Member Function Documentation</title>
+<anchor xml:id="_interface_j_w_t_1_1_i_base64_url_encoder_1a70852ef851d7288fdba837a1248d3183"/><section>
+    <title>Decode()</title>
+<indexterm><primary>Decode</primary><secondary>JWT.IBase64UrlEncoder</secondary></indexterm>
+<indexterm><primary>JWT.IBase64UrlEncoder</primary><secondary>Decode</secondary></indexterm>
+<para><computeroutput>byte[] JWT.IBase64UrlEncoder.Decode (string input)</computeroutput></para><para>
+
+<para>Decodes the base64 string to a byte array. </para>
+</para>
+<para>
+Implemented in <link linkend="_class_j_w_t_1_1_jwt_base64_url_encoder_1a5d3a0011b96a5716ffc44a40b49da24f">JWT.JwtBase64UrlEncoder</link>.</para>
+</section>
+<anchor xml:id="_interface_j_w_t_1_1_i_base64_url_encoder_1a0e1266c26222092a10082d1bb0c86e61"/><section>
+    <title>Encode()</title>
+<indexterm><primary>Encode</primary><secondary>JWT.IBase64UrlEncoder</secondary></indexterm>
+<indexterm><primary>JWT.IBase64UrlEncoder</primary><secondary>Encode</secondary></indexterm>
+<para><computeroutput>string JWT.IBase64UrlEncoder.Encode (byte[] input)</computeroutput></para><para>
+
+<para>Encodes the byte array to a base64 string. </para>
+</para>
+<para>
+Implemented in <link linkend="_class_j_w_t_1_1_jwt_base64_url_encoder_1a06cd88d4af2e4762ea12dd89a90fad86">JWT.JwtBase64UrlEncoder</link>.</para>
+</section>
+<para>
+The documentation for this interface was generated from the following file:</para>
+C:/Users/adenf/RiderProjects/Openlabs.Mgcxm/Openlabs.Mgcxm/JWT/<link linkend="__i_base64_url_encoder_8cs">IBase64UrlEncoder.cs</link></section>
+</section>

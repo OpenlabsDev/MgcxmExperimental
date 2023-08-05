@@ -1,0 +1,17 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.7" xml:lang="en-US">
+  <compounddef id="namespace_openlabs_1_1_mgcxm" kind="namespace" language="C#">
+    <compoundname>Openlabs::Mgcxm</compoundname>
+    <innernamespace refid="namespace_openlabs_1_1_mgcxm_1_1_assets">Openlabs::Mgcxm::Assets</innernamespace>
+    <innernamespace refid="namespace_openlabs_1_1_mgcxm_1_1_common">Openlabs::Mgcxm::Common</innernamespace>
+    <innernamespace refid="namespace_openlabs_1_1_mgcxm_1_1_internal">Openlabs::Mgcxm::Internal</innernamespace>
+    <innernamespace refid="namespace_openlabs_1_1_mgcxm_1_1_net">Openlabs::Mgcxm::Net</innernamespace>
+    <innernamespace refid="namespace_openlabs_1_1_mgcxm_1_1_startup">Openlabs::Mgcxm::Startup</innernamespace>
+    <innernamespace refid="namespace_openlabs_1_1_mgcxm_1_1_tests">Openlabs::Mgcxm::Tests</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/Users/adenf/RiderProjects/Openlabs.Mgcxm/Openlabs.Mgcxm.Tests/Assets/Responses/AvatarJsonFileAsset.cs" line="5" column="1"/>
+  </compounddef>
+</doxygen>

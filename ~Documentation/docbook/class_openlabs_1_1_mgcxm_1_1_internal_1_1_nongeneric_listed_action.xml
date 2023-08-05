@@ -1,0 +1,96 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_class_openlabs_1_1_mgcxm_1_1_internal_1_1_nongeneric_listed_action" xml:lang="en-US">
+<title>Openlabs.Mgcxm.Internal.NongenericListedAction Class Reference</title>
+<indexterm><primary>Openlabs.Mgcxm.Internal.NongenericListedAction</primary></indexterm>
+Inheritance diagram for Openlabs.Mgcxm.Internal.NongenericListedAction:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="class_openlabs_1_1_mgcxm_1_1_internal_1_1_nongeneric_listed_action__inherit__graph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+Collaboration diagram for Openlabs.Mgcxm.Internal.NongenericListedAction:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="class_openlabs_1_1_mgcxm_1_1_internal_1_1_nongeneric_listed_action__coll__graph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+<simplesect>
+    <title>Public Member Functions    </title>
+        <itemizedlist>
+            <listitem><para>void <link linkend="_class_openlabs_1_1_mgcxm_1_1_internal_1_1_nongeneric_listed_action_1aff88ff79cb365fb4041a5f1a1d3186af">AddAction</link> (Action action)</para>
+</listitem>
+            <listitem><para>void <link linkend="_class_openlabs_1_1_mgcxm_1_1_internal_1_1_nongeneric_listed_action_1a85fc162b0cafb22b1c7e717f448a519c">RemoveAction</link> (Action action)</para>
+</listitem>
+            <listitem><para>void <link linkend="_class_openlabs_1_1_mgcxm_1_1_internal_1_1_nongeneric_listed_action_1a923ac7aa22cd12f3007879bf05489fed">InitializeCapacity</link> (int cap)</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+        <itemizedlist>
+            <listitem><para>void <link linkend="_interface_openlabs_1_1_mgcxm_1_1_internal_1_1_i_nongeneric_listed_action_1a63db1d34062d3871ce7222352f8e305e">AddAction</link> (Action action)</para>
+</listitem>
+            <listitem><para>void <link linkend="_interface_openlabs_1_1_mgcxm_1_1_internal_1_1_i_nongeneric_listed_action_1a81329ff46703eff0d0cb9a0d035d533e">RemoveAction</link> (Action action)</para>
+</listitem>
+        </itemizedlist>
+<simplesect>
+    <title>Properties    </title>
+        <itemizedlist>
+            <listitem><para>List&lt; Action &gt; <link linkend="_class_openlabs_1_1_mgcxm_1_1_internal_1_1_nongeneric_listed_action_1adf42773fd4d8f87d59bf77727c19debf">ActionList</link><computeroutput> [get]</computeroutput>
+</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+Properties inherited from <link linkend="_interface_openlabs_1_1_mgcxm_1_1_internal_1_1_i_nongeneric_listed_action">Openlabs.Mgcxm.Internal.INongenericListedAction</link>        <itemizedlist>
+            <listitem><para>List&lt; Action &gt; <link linkend="_interface_openlabs_1_1_mgcxm_1_1_internal_1_1_i_nongeneric_listed_action_1abd2b7c649be4ad22136b05081c84d694">ActionList</link><computeroutput> [get]</computeroutput>
+</para>
+</listitem>
+        </itemizedlist>
+<section>
+<title>Member Function Documentation</title>
+<anchor xml:id="_class_openlabs_1_1_mgcxm_1_1_internal_1_1_nongeneric_listed_action_1aff88ff79cb365fb4041a5f1a1d3186af"/><section>
+    <title>AddAction()</title>
+<indexterm><primary>AddAction</primary><secondary>Openlabs.Mgcxm.Internal.NongenericListedAction</secondary></indexterm>
+<indexterm><primary>Openlabs.Mgcxm.Internal.NongenericListedAction</primary><secondary>AddAction</secondary></indexterm>
+<para><computeroutput>void Openlabs.Mgcxm.Internal.NongenericListedAction.AddAction (Action action)</computeroutput></para><para>
+Implements <link linkend="_interface_openlabs_1_1_mgcxm_1_1_internal_1_1_i_nongeneric_listed_action_1a63db1d34062d3871ce7222352f8e305e">Openlabs.Mgcxm.Internal.INongenericListedAction</link>.</para>
+</section>
+<anchor xml:id="_class_openlabs_1_1_mgcxm_1_1_internal_1_1_nongeneric_listed_action_1a923ac7aa22cd12f3007879bf05489fed"/><section>
+    <title>InitializeCapacity()</title>
+<indexterm><primary>InitializeCapacity</primary><secondary>Openlabs.Mgcxm.Internal.NongenericListedAction</secondary></indexterm>
+<indexterm><primary>Openlabs.Mgcxm.Internal.NongenericListedAction</primary><secondary>InitializeCapacity</secondary></indexterm>
+<para><computeroutput>void Openlabs.Mgcxm.Internal.NongenericListedAction.InitializeCapacity (int cap)</computeroutput></para>Here is the caller graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="class_openlabs_1_1_mgcxm_1_1_internal_1_1_nongeneric_listed_action_a923ac7aa22cd12f3007879bf05489fed_icgraph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+</section>
+<anchor xml:id="_class_openlabs_1_1_mgcxm_1_1_internal_1_1_nongeneric_listed_action_1a85fc162b0cafb22b1c7e717f448a519c"/><section>
+    <title>RemoveAction()</title>
+<indexterm><primary>RemoveAction</primary><secondary>Openlabs.Mgcxm.Internal.NongenericListedAction</secondary></indexterm>
+<indexterm><primary>Openlabs.Mgcxm.Internal.NongenericListedAction</primary><secondary>RemoveAction</secondary></indexterm>
+<para><computeroutput>void Openlabs.Mgcxm.Internal.NongenericListedAction.RemoveAction (Action action)</computeroutput></para><para>
+Implements <link linkend="_interface_openlabs_1_1_mgcxm_1_1_internal_1_1_i_nongeneric_listed_action_1a81329ff46703eff0d0cb9a0d035d533e">Openlabs.Mgcxm.Internal.INongenericListedAction</link>.</para>
+</section>
+</section>
+<section>
+<title>Property Documentation</title>
+<anchor xml:id="_class_openlabs_1_1_mgcxm_1_1_internal_1_1_nongeneric_listed_action_1adf42773fd4d8f87d59bf77727c19debf"/><section>
+    <title>ActionList</title>
+<indexterm><primary>ActionList</primary><secondary>Openlabs.Mgcxm.Internal.NongenericListedAction</secondary></indexterm>
+<indexterm><primary>Openlabs.Mgcxm.Internal.NongenericListedAction</primary><secondary>ActionList</secondary></indexterm>
+<para><computeroutput>List&lt;Action&gt; Openlabs.Mgcxm.Internal.NongenericListedAction.ActionList<computeroutput>[get]</computeroutput></computeroutput></para><para>
+Implements <link linkend="_interface_openlabs_1_1_mgcxm_1_1_internal_1_1_i_nongeneric_listed_action_1abd2b7c649be4ad22136b05081c84d694">Openlabs.Mgcxm.Internal.INongenericListedAction</link>.</para>
+</section>
+<para>
+The documentation for this class was generated from the following file:</para>
+C:/Users/adenf/RiderProjects/Openlabs.Mgcxm/Openlabs.Mgcxm/Internal/Events/<link linkend="__listed_01_action_01_parts_8cs">Listed Action Parts.cs</link></section>
+</section>

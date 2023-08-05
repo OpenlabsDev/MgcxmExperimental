@@ -1,0 +1,100 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_class_openlabs_1_1_mgcxm_1_1_net_1_1_socket_route_attribute" xml:lang="en-US">
+<title>Openlabs.Mgcxm.Net.SocketRouteAttribute Class Reference</title>
+<indexterm><primary>Openlabs.Mgcxm.Net.SocketRouteAttribute</primary></indexterm>
+<para>
+
+<para>Represents an attribute used to specify the route for a socket connection. </para>
+ 
+</para>
+Inheritance diagram for Openlabs.Mgcxm.Net.SocketRouteAttribute:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="class_openlabs_1_1_mgcxm_1_1_net_1_1_socket_route_attribute__inherit__graph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+Collaboration diagram for Openlabs.Mgcxm.Net.SocketRouteAttribute:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="class_openlabs_1_1_mgcxm_1_1_net_1_1_socket_route_attribute__coll__graph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+<simplesect>
+    <title>Public Member Functions    </title>
+        <itemizedlist>
+            <listitem><para><link linkend="_class_openlabs_1_1_mgcxm_1_1_net_1_1_socket_route_attribute_1a86e00289262930910ed4c1c990a587c4">SocketRouteAttribute</link> (string route)</para>
+
+<para>Initializes a new instance of the SocketRouteAttribute class with the specified route. </para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Properties    </title>
+        <itemizedlist>
+            <listitem><para>string <link linkend="_class_openlabs_1_1_mgcxm_1_1_net_1_1_socket_route_attribute_1a80faea7e998187dbea02b991458064d2">Route</link><computeroutput> [get]</computeroutput>
+</para>
+
+<para>Gets the route for the socket connection. </para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Detailed Description</title>
+
+<para>Represents an attribute used to specify the route for a socket connection. </para>
+</section>
+<section>
+<title>Constructor &amp; Destructor Documentation</title>
+<anchor xml:id="_class_openlabs_1_1_mgcxm_1_1_net_1_1_socket_route_attribute_1a86e00289262930910ed4c1c990a587c4"/><section>
+    <title>SocketRouteAttribute()</title>
+<indexterm><primary>SocketRouteAttribute</primary><secondary>Openlabs.Mgcxm.Net.SocketRouteAttribute</secondary></indexterm>
+<indexterm><primary>Openlabs.Mgcxm.Net.SocketRouteAttribute</primary><secondary>SocketRouteAttribute</secondary></indexterm>
+<para><computeroutput>Openlabs.Mgcxm.Net.SocketRouteAttribute.SocketRouteAttribute (string route)</computeroutput></para><para>
+
+<para>Initializes a new instance of the SocketRouteAttribute class with the specified route. </para>
+</para>
+
+<para>
+                <formalpara>
+                    <title>
+Parameters</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>route</entry><entry>
+<para>The route for the socket connection.</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                </para>
+</section>
+</section>
+<section>
+<title>Property Documentation</title>
+<anchor xml:id="_class_openlabs_1_1_mgcxm_1_1_net_1_1_socket_route_attribute_1a80faea7e998187dbea02b991458064d2"/><section>
+    <title>Route</title>
+<indexterm><primary>Route</primary><secondary>Openlabs.Mgcxm.Net.SocketRouteAttribute</secondary></indexterm>
+<indexterm><primary>Openlabs.Mgcxm.Net.SocketRouteAttribute</primary><secondary>Route</secondary></indexterm>
+<para><computeroutput>string Openlabs.Mgcxm.Net.SocketRouteAttribute.Route<computeroutput>[get]</computeroutput></computeroutput></para><para>
+
+<para>Gets the route for the socket connection. </para>
+</para>
+</section>
+<para>
+The documentation for this class was generated from the following file:</para>
+C:/Users/adenf/RiderProjects/Openlabs.Mgcxm/Openlabs.Mgcxm/Net/Attributes/<link linkend="__socket_route_attribute_8cs">SocketRouteAttribute.cs</link></section>
+</section>

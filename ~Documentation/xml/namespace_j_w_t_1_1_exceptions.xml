@@ -1,0 +1,15 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.7" xml:lang="en-US">
+  <compounddef id="namespace_j_w_t_1_1_exceptions" kind="namespace" language="C#">
+    <compoundname>JWT::Exceptions</compoundname>
+    <innerclass refid="class_j_w_t_1_1_exceptions_1_1_invalid_token_parts_exception" prot="public">JWT::Exceptions::InvalidTokenPartsException</innerclass>
+    <innerclass refid="class_j_w_t_1_1_exceptions_1_1_signature_verification_exception" prot="public">JWT::Exceptions::SignatureVerificationException</innerclass>
+    <innerclass refid="class_j_w_t_1_1_exceptions_1_1_token_expired_exception" prot="public">JWT::Exceptions::TokenExpiredException</innerclass>
+    <innerclass refid="class_j_w_t_1_1_exceptions_1_1_token_not_yet_valid_exception" prot="public">JWT::Exceptions::TokenNotYetValidException</innerclass>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/Users/adenf/RiderProjects/Openlabs.Mgcxm/Openlabs.Mgcxm/JWT/Exceptions/InvalidTokenPartsException.cs" line="3" column="1"/>
+  </compounddef>
+</doxygen>

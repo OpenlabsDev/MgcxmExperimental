@@ -1,0 +1,93 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.7" xml:lang="en-US">
+  <compounddef id="_bootstrap_8cs" kind="file" language="C#">
+    <compoundname>Bootstrap.cs</compoundname>
+    <innerclass refid="class_openlabs_1_1_mgcxm_1_1_startup_1_1_bootstrap" prot="public">Openlabs::Mgcxm::Startup::Bootstrap</innerclass>
+    <innerclass refid="class_openlabs_1_1_mgcxm_1_1_startup_1_1_mgcxm_initialization_exception" prot="public">Openlabs::Mgcxm::Startup::MgcxmInitializationException</innerclass>
+    <innerclass refid="class_openlabs_1_1_mgcxm_1_1_startup_1_1_bootstrap_options" prot="public">Openlabs::Mgcxm::Startup::BootstrapOptions</innerclass>
+    <innerclass refid="class_openlabs_1_1_mgcxm_1_1_startup_1_1_scaling_options" prot="public">Openlabs::Mgcxm::Startup::ScalingOptions</innerclass>
+    <innernamespace refid="namespace_openlabs">Openlabs</innernamespace>
+    <innernamespace refid="namespace_openlabs_1_1_mgcxm">Openlabs::Mgcxm</innernamespace>
+    <innernamespace refid="namespace_openlabs_1_1_mgcxm_1_1_startup">Openlabs::Mgcxm::Startup</innernamespace>
+      <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="_bootstrap_8cs_1a885d2472e770f94c2baca8bbbf0e1b9a" prot="public" static="no">
+        <type>Openlabs.Mgcxm.Common.Random</type>
+        <definition>using Random =  Openlabs.Mgcxm.Common.Random</definition>
+        <argsstring></argsstring>
+        <name>Random</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/adenf/RiderProjects/Openlabs.Mgcxm/Openlabs.Mgcxm/Startup/Bootstrap.cs" line="4" column="1" bodyfile="C:/Users/adenf/RiderProjects/Openlabs.Mgcxm/Openlabs.Mgcxm/Startup/Bootstrap.cs" bodystart="4" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">//<sp/>Copr.<sp/>(c)<sp/>Nexus<sp/>2023.<sp/>All<sp/>rights<sp/>reserved.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="keyword">using<sp/></highlight><highlight class="normal"><ref refid="namespace_openlabs_1_1_mgcxm_1_1_internal" kindref="compound">Openlabs.Mgcxm.Internal</ref>;</highlight></codeline>
+<codeline lineno="4" refid="_bootstrap_8cs_1a885d2472e770f94c2baca8bbbf0e1b9a" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">using<sp/></highlight><highlight class="normal"><ref refid="_open_api_endpoint_resolver_8cs_1a885d2472e770f94c2baca8bbbf0e1b9a" kindref="member">Random</ref><sp/>=<sp/><ref refid="namespace_openlabs" kindref="compound">Openlabs</ref>.<ref refid="namespace_openlabs_1_1_mgcxm" kindref="compound">Mgcxm</ref>.<ref refid="namespace_openlabs_1_1_mgcxm_1_1_common" kindref="compound">Common</ref>.<ref refid="class_openlabs_1_1_mgcxm_1_1_common_1_1_random" kindref="compound">Random</ref>;</highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight></codeline>
+<codeline lineno="6" refid="namespace_openlabs_1_1_mgcxm_1_1_startup" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="namespace_openlabs_1_1_mgcxm_1_1_startup" kindref="compound">Openlabs.Mgcxm.Startup</ref>;</highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="keyword">public</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal">Bootstrap</highlight></codeline>
+<codeline lineno="12"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">private</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">long</highlight><highlight class="normal"><sp/>RNG_SEED<sp/>=<sp/>0x12EC2279;</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">private</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>OnLogMessageMade(<ref refid="class_openlabs_1_1_mgcxm_1_1_internal_1_1_log_message" kindref="compound">LogMessage</ref><sp/>lMsg)</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Console.ForegroundColor<sp/>=<sp/>lMsg.color;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Console.WriteLine(lMsg.<ref refid="class_openlabs_1_1_mgcxm_1_1_internal_1_1_log_message_1adf254cc560d33c5ef16f29fd09ef59b7" kindref="member">message</ref>);</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Console.ForegroundColor<sp/>=<sp/>lMsg.previousColor;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/>async<sp/>Task<sp/><ref refid="_program_8cs_1ace3c6970f2d3660fa98d69ddb8bdd18b" kindref="member">LoadMgcxm</ref>(<ref refid="class_openlabs_1_1_mgcxm_1_1_startup_1_1_bootstrap_options" kindref="compound">BootstrapOptions</ref><sp/>options)</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>MgcxmConfiguration.Initialize(options);</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Logger.Initialize(OnLogMessageMade);</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>initialize<sp/>rng</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Logger.Info(</highlight><highlight class="keywordtype">string</highlight><highlight class="normal">.Format(</highlight><highlight class="stringliteral">&quot;Initializing<sp/>random<sp/>with<sp/>state<sp/>0x{0:x8}&quot;</highlight><highlight class="normal">,<sp/>RNG_SEED));</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="_open_api_endpoint_resolver_8cs_1a885d2472e770f94c2baca8bbbf0e1b9a" kindref="member">Random</ref>.Init(DateTime.Now.Ticks);</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"></highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>initialize<sp/>constants</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Logger.Info(</highlight><highlight class="keywordtype">string</highlight><highlight class="normal">.Format(</highlight><highlight class="stringliteral">&quot;Loading<sp/>MGCXM<sp/>into<sp/>current<sp/>AppDomain<sp/>&apos;{0}&apos;&quot;</highlight><highlight class="normal">,<sp/>AppDomain.CurrentDomain.FriendlyName));</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"></highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Constants.Initialize();</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="44"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"></highlight></codeline>
+<codeline lineno="49" refid="class_openlabs_1_1_mgcxm_1_1_startup_1_1_mgcxm_initialization_exception" refkind="compound"><highlight class="keyword">public</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="class_openlabs_1_1_mgcxm_1_1_startup_1_1_mgcxm_initialization_exception" kindref="compound">MgcxmInitializationException</ref><sp/>:<sp/>Exception</highlight></codeline>
+<codeline lineno="50"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="55" refid="class_openlabs_1_1_mgcxm_1_1_startup_1_1_mgcxm_initialization_exception_1a2ce0d1d08aa67d78ea261d2d624900df" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="class_openlabs_1_1_mgcxm_1_1_startup_1_1_mgcxm_initialization_exception_1a2ce0d1d08aa67d78ea261d2d624900df" kindref="member">MgcxmInitializationException</ref>(</highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>message)<sp/>:<sp/>base(message)<sp/>{<sp/>}</highlight></codeline>
+<codeline lineno="56"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"></highlight></codeline>
+<codeline lineno="61" refid="class_openlabs_1_1_mgcxm_1_1_startup_1_1_bootstrap_options" refkind="compound"><highlight class="keyword">public</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="class_openlabs_1_1_mgcxm_1_1_startup_1_1_bootstrap_options" kindref="compound">BootstrapOptions</ref></highlight></codeline>
+<codeline lineno="62"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="66" refid="class_openlabs_1_1_mgcxm_1_1_startup_1_1_bootstrap_options_1a438768c6bac1922d805bb2c8fb485e44" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="class_openlabs_1_1_mgcxm_1_1_startup_1_1_bootstrap_options_1a438768c6bac1922d805bb2c8fb485e44" kindref="member">useExperimentalOptions</ref>;</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"></highlight></codeline>
+<codeline lineno="71" refid="class_openlabs_1_1_mgcxm_1_1_startup_1_1_bootstrap_options_1a041df6b29a2170b5d9a7e688ec9dc6b9" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="namespace_openlabs_1_1_mgcxm_1_1_internal_1a25582aed8bd08a2f6803962cbe3d27fe" kindref="member">LogLevel</ref><sp/><ref refid="class_openlabs_1_1_mgcxm_1_1_startup_1_1_bootstrap_options_1a041df6b29a2170b5d9a7e688ec9dc6b9" kindref="member">minimumLogLevel</ref>;</highlight></codeline>
+<codeline lineno="72"><highlight class="normal"></highlight></codeline>
+<codeline lineno="76" refid="class_openlabs_1_1_mgcxm_1_1_startup_1_1_bootstrap_options_1a21135090c41f1d72fd847748f7276c16" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="class_openlabs_1_1_mgcxm_1_1_startup_1_1_scaling_options" kindref="compound">ScalingOptions</ref><sp/><ref refid="class_openlabs_1_1_mgcxm_1_1_startup_1_1_bootstrap_options_1a21135090c41f1d72fd847748f7276c16" kindref="member">scalingOptions</ref>;</highlight></codeline>
+<codeline lineno="77"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="78"><highlight class="normal"></highlight></codeline>
+<codeline lineno="82" refid="class_openlabs_1_1_mgcxm_1_1_startup_1_1_scaling_options" refkind="compound"><highlight class="keyword">public</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="class_openlabs_1_1_mgcxm_1_1_startup_1_1_scaling_options" kindref="compound">ScalingOptions</ref></highlight></codeline>
+<codeline lineno="83"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="87" refid="class_openlabs_1_1_mgcxm_1_1_startup_1_1_scaling_options_1a39f57a57cadb190c043154a20d56bcdb" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="class_openlabs_1_1_mgcxm_1_1_startup_1_1_scaling_options_1a39f57a57cadb190c043154a20d56bcdb" kindref="member">runProcessesInBackground</ref>;</highlight></codeline>
+<codeline lineno="88"><highlight class="normal"></highlight></codeline>
+<codeline lineno="92" refid="class_openlabs_1_1_mgcxm_1_1_startup_1_1_scaling_options_1a79ead2c38d2165f3c6ab3b62b6d99919" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="class_openlabs_1_1_mgcxm_1_1_startup_1_1_scaling_options_1a79ead2c38d2165f3c6ab3b62b6d99919" kindref="member">maxThreads</ref>;</highlight></codeline>
+<codeline lineno="93"><highlight class="normal"></highlight></codeline>
+<codeline lineno="97" refid="class_openlabs_1_1_mgcxm_1_1_startup_1_1_scaling_options_1a947cb5c35f46f439078a1462460e2824" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="class_openlabs_1_1_mgcxm_1_1_startup_1_1_scaling_options_1a947cb5c35f46f439078a1462460e2824" kindref="member">maxNodes</ref>;</highlight></codeline>
+<codeline lineno="98"><highlight class="normal"></highlight></codeline>
+<codeline lineno="102" refid="class_openlabs_1_1_mgcxm_1_1_startup_1_1_scaling_options_1a44f7d904d243e4ca9874678330fd82ed" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="class_openlabs_1_1_mgcxm_1_1_startup_1_1_scaling_options_1a44f7d904d243e4ca9874678330fd82ed" kindref="member">useRandomPrefixes</ref>;</highlight></codeline>
+<codeline lineno="103"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="C:/Users/adenf/RiderProjects/Openlabs.Mgcxm/Openlabs.Mgcxm/Startup/Bootstrap.cs"/>
+  </compounddef>
+</doxygen>

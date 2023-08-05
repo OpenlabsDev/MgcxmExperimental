@@ -1,0 +1,646 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_class_j_w_t_1_1_jwt_validator" xml:lang="en-US">
+<title>JWT.JwtValidator Class Reference</title>
+<indexterm><primary>JWT.JwtValidator</primary></indexterm>
+<para>
+
+<para>Jwt validator. </para>
+ 
+</para>
+Inheritance diagram for JWT.JwtValidator:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="class_j_w_t_1_1_jwt_validator__inherit__graph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+Collaboration diagram for JWT.JwtValidator:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="class_j_w_t_1_1_jwt_validator__coll__graph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+<simplesect>
+    <title>Public Member Functions    </title>
+        <itemizedlist>
+            <listitem><para><link linkend="_class_j_w_t_1_1_jwt_validator_1a0b251406739a3f8f0b5bfb7311be3bf7">JwtValidator</link> (<link linkend="_interface_j_w_t_1_1_i_json_serializer">IJsonSerializer</link> jsonSerializer, <link linkend="_interface_j_w_t_1_1_i_date_time_provider">IDateTimeProvider</link> dateTimeProvider)</para>
+
+<para>Creates an instance of JwtValidator </para>
+</listitem>
+            <listitem><para><link linkend="_class_j_w_t_1_1_jwt_validator_1a7c6951bf8bea525d0ce7360dfdfa3861">JwtValidator</link> (<link linkend="_interface_j_w_t_1_1_i_json_serializer">IJsonSerializer</link> jsonSerializer, <link linkend="_interface_j_w_t_1_1_i_date_time_provider">IDateTimeProvider</link> dateTimeProvider, <link linkend="_class_j_w_t_1_1_validation_parameters">ValidationParameters</link> valParams)</para>
+
+<para>Creates an instance of JwtValidator with time margin. </para>
+</listitem>
+            <listitem><para><link linkend="_class_j_w_t_1_1_jwt_validator_1a6b2c67683dfd55b5ff182814eca91560">JwtValidator</link> (<link linkend="_interface_j_w_t_1_1_i_json_serializer">IJsonSerializer</link> jsonSerializer, <link linkend="_interface_j_w_t_1_1_i_date_time_provider">IDateTimeProvider</link> dateTimeProvider, <link linkend="_class_j_w_t_1_1_validation_parameters">ValidationParameters</link> valParams, <link linkend="_interface_j_w_t_1_1_i_base64_url_encoder">IBase64UrlEncoder</link> urlEncoder)</para>
+
+<para>Creates an instance of JwtValidator with time margin. </para>
+</listitem>
+            <listitem><para>void <link linkend="_class_j_w_t_1_1_jwt_validator_1a40a34370eba0e6d1e71d9c585006e0c5">Validate</link> (string decodedPayload, string signature, params string[] decodedSignatures)</para>
+</listitem>
+            <listitem><para>void <link linkend="_class_j_w_t_1_1_jwt_validator_1af52b2455c4d608013cd077fc41dd3421">Validate</link> (string decodedPayload, <link linkend="_interface_j_w_t_1_1_algorithms_1_1_i_asymmetric_algorithm">IAsymmetricAlgorithm</link> alg, byte[] bytesToSign, byte[] decodedSignature)</para>
+</listitem>
+            <listitem><para>bool <link linkend="_class_j_w_t_1_1_jwt_validator_1a729b5ad4f3b551b967bf6f0b1d558b56">TryValidate</link> (string payloadJson, string signature, string decodedSignature, out Exception ex)</para>
+</listitem>
+            <listitem><para>bool <link linkend="_class_j_w_t_1_1_jwt_validator_1a4b76397cce0223e28bc1797b2827e7f4">TryValidate</link> (string payloadJson, string signature, string[] decodedSignature, out Exception ex)</para>
+</listitem>
+            <listitem><para>bool <link linkend="_class_j_w_t_1_1_jwt_validator_1a274e40b60c7065846b331227ab99a92f">TryValidate</link> (string payloadJson, <link linkend="_interface_j_w_t_1_1_algorithms_1_1_i_asymmetric_algorithm">IAsymmetricAlgorithm</link> alg, byte[] bytesToSign, byte[] decodedSignature, out Exception ex)</para>
+</listitem>
+            <listitem><para>Exception <link linkend="_class_j_w_t_1_1_jwt_validator_1aff404e7ee56295dffae8e61130efe70d">GetValidationException</link> (<link linkend="_class_j_w_t_1_1_jwt_parts">JwtParts</link> parts)</para>
+</listitem>
+            <listitem><para>Exception <link linkend="_class_j_w_t_1_1_jwt_validator_1a9637d8a7c56f0e14048cc2a8ec3ccb8f">GetValidationException</link> (byte[] bytes)</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+        <itemizedlist>
+            <listitem><para>void <link linkend="_interface_j_w_t_1_1_i_jwt_validator_1ac2a038110fce4e9543386421dc866497">Validate</link> (string decodedPayload, string signature, params string[] decodedSignatures)</para>
+
+<para>Given the <link linkend="_namespace_j_w_t">JWT</link>, verifies its signature correctness. </para>
+</listitem>
+            <listitem><para>void <link linkend="_interface_j_w_t_1_1_i_jwt_validator_1a3338c5c0f418836f9eaf1a84482ce5b9">Validate</link> (string decodedPayload, <link linkend="_interface_j_w_t_1_1_algorithms_1_1_i_asymmetric_algorithm">IAsymmetricAlgorithm</link> alg, byte[] bytesToSign, byte[] decodedSignature)</para>
+
+<para>Given the <link linkend="_namespace_j_w_t">JWT</link>, verifies its signature correctness. </para>
+</listitem>
+            <listitem><para>bool <link linkend="_interface_j_w_t_1_1_i_jwt_validator_1a00359e1aaa882dce7d2bc71794e3df6a">TryValidate</link> (string payloadJson, string signature, string decodedSignature, out Exception ex)</para>
+
+<para>Given the <link linkend="_namespace_j_w_t">JWT</link>, verifies its signature correctness without throwing an exception but returning it instead. </para>
+</listitem>
+            <listitem><para>bool <link linkend="_interface_j_w_t_1_1_i_jwt_validator_1a6be9333406c4dca495d0524a2a269d76">TryValidate</link> (string payloadJson, string signature, string[] decodedSignature, out Exception ex)</para>
+
+<para>Given the <link linkend="_namespace_j_w_t">JWT</link>, verifies its signature correctness without throwing an exception but returning it instead. </para>
+</listitem>
+            <listitem><para>bool <link linkend="_interface_j_w_t_1_1_i_jwt_validator_1ad83594c87fa12d650d63b096550f9bef">TryValidate</link> (string payloadJson, <link linkend="_interface_j_w_t_1_1_algorithms_1_1_i_asymmetric_algorithm">IAsymmetricAlgorithm</link> alg, byte[] bytesToSign, byte[] decodedSignature, out Exception ex)</para>
+
+<para>Given the <link linkend="_namespace_j_w_t">JWT</link>, verifies its signatures correctness without throwing an exception but returning it instead. </para>
+</listitem>
+        </itemizedlist>
+<section>
+<title>Detailed Description</title>
+
+<para>Jwt validator. </para>
+</section>
+<section>
+<title>Constructor &amp; Destructor Documentation</title>
+<anchor xml:id="_class_j_w_t_1_1_jwt_validator_1a0b251406739a3f8f0b5bfb7311be3bf7"/><section>
+    <title>JwtValidator()<computeroutput>[1/3]</computeroutput></title>
+<indexterm><primary>JwtValidator</primary><secondary>JWT.JwtValidator</secondary></indexterm>
+<indexterm><primary>JWT.JwtValidator</primary><secondary>JwtValidator</secondary></indexterm>
+<para><computeroutput>JWT.JwtValidator.JwtValidator (<link linkend="_interface_j_w_t_1_1_i_json_serializer">IJsonSerializer</link> jsonSerializer, <link linkend="_interface_j_w_t_1_1_i_date_time_provider">IDateTimeProvider</link> dateTimeProvider)</computeroutput></para><para>
+
+<para>Creates an instance of JwtValidator </para>
+</para>
+
+<para>
+                <formalpara>
+                    <title>
+Parameters</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>jsonSerializer</entry><entry>
+<para>The JSON serializer</para>
+</entry>
+                            </row>
+                            <row>
+<entry>dateTimeProvider</entry><entry>
+<para>The DateTime provider</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                </para>
+</section>
+<anchor xml:id="_class_j_w_t_1_1_jwt_validator_1a7c6951bf8bea525d0ce7360dfdfa3861"/><section>
+    <title>JwtValidator()<computeroutput>[2/3]</computeroutput></title>
+<indexterm><primary>JwtValidator</primary><secondary>JWT.JwtValidator</secondary></indexterm>
+<indexterm><primary>JWT.JwtValidator</primary><secondary>JwtValidator</secondary></indexterm>
+<para><computeroutput>JWT.JwtValidator.JwtValidator (<link linkend="_interface_j_w_t_1_1_i_json_serializer">IJsonSerializer</link> jsonSerializer, <link linkend="_interface_j_w_t_1_1_i_date_time_provider">IDateTimeProvider</link> dateTimeProvider, <link linkend="_class_j_w_t_1_1_validation_parameters">ValidationParameters</link> valParams)</computeroutput></para><para>
+
+<para>Creates an instance of JwtValidator with time margin. </para>
+</para>
+
+<para>
+                <formalpara>
+                    <title>
+Parameters</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>jsonSerializer</entry><entry>
+<para>The JSON serializer</para>
+</entry>
+                            </row>
+                            <row>
+<entry>dateTimeProvider</entry><entry>
+<para>The DateTime provider</para>
+</entry>
+                            </row>
+                            <row>
+<entry>valParams</entry><entry>
+<para>Validation parameters that are passed on to JwtValidator</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                </para>
+</section>
+<anchor xml:id="_class_j_w_t_1_1_jwt_validator_1a6b2c67683dfd55b5ff182814eca91560"/><section>
+    <title>JwtValidator()<computeroutput>[3/3]</computeroutput></title>
+<indexterm><primary>JwtValidator</primary><secondary>JWT.JwtValidator</secondary></indexterm>
+<indexterm><primary>JWT.JwtValidator</primary><secondary>JwtValidator</secondary></indexterm>
+<para><computeroutput>JWT.JwtValidator.JwtValidator (<link linkend="_interface_j_w_t_1_1_i_json_serializer">IJsonSerializer</link> jsonSerializer, <link linkend="_interface_j_w_t_1_1_i_date_time_provider">IDateTimeProvider</link> dateTimeProvider, <link linkend="_class_j_w_t_1_1_validation_parameters">ValidationParameters</link> valParams, <link linkend="_interface_j_w_t_1_1_i_base64_url_encoder">IBase64UrlEncoder</link> urlEncoder)</computeroutput></para><para>
+
+<para>Creates an instance of JwtValidator with time margin. </para>
+</para>
+
+<para>
+                <formalpara>
+                    <title>
+Parameters</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>jsonSerializer</entry><entry>
+<para>The JSON serializer</para>
+</entry>
+                            </row>
+                            <row>
+<entry>dateTimeProvider</entry><entry>
+<para>The DateTime provider</para>
+</entry>
+                            </row>
+                            <row>
+<entry>valParams</entry><entry>
+<para>Validation parameters that are passed on to JwtValidator</para>
+</entry>
+                            </row>
+                            <row>
+<entry>urlEncoder</entry><entry>
+<para>The base64 URL Encoder</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                </para>
+</section>
+</section>
+<section>
+<title>Member Function Documentation</title>
+<anchor xml:id="_class_j_w_t_1_1_jwt_validator_1a9637d8a7c56f0e14048cc2a8ec3ccb8f"/><section>
+    <title>GetValidationException()<computeroutput>[1/2]</computeroutput></title>
+<indexterm><primary>GetValidationException</primary><secondary>JWT.JwtValidator</secondary></indexterm>
+<indexterm><primary>JWT.JwtValidator</primary><secondary>GetValidationException</secondary></indexterm>
+<para><computeroutput>Exception JWT.JwtValidator.GetValidationException (byte[] bytes)</computeroutput></para>Here is the call graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="class_j_w_t_1_1_jwt_validator_a9637d8a7c56f0e14048cc2a8ec3ccb8f_cgraph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+</section>
+<anchor xml:id="_class_j_w_t_1_1_jwt_validator_1aff404e7ee56295dffae8e61130efe70d"/><section>
+    <title>GetValidationException()<computeroutput>[2/2]</computeroutput></title>
+<indexterm><primary>GetValidationException</primary><secondary>JWT.JwtValidator</secondary></indexterm>
+<indexterm><primary>JWT.JwtValidator</primary><secondary>GetValidationException</secondary></indexterm>
+<para><computeroutput>Exception JWT.JwtValidator.GetValidationException (<link linkend="_class_j_w_t_1_1_jwt_parts">JwtParts</link> parts)</computeroutput></para>Here is the call graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="class_j_w_t_1_1_jwt_validator_aff404e7ee56295dffae8e61130efe70d_cgraph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+Here is the caller graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="class_j_w_t_1_1_jwt_validator_aff404e7ee56295dffae8e61130efe70d_icgraph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+</section>
+<anchor xml:id="_class_j_w_t_1_1_jwt_validator_1a274e40b60c7065846b331227ab99a92f"/><section>
+    <title>TryValidate()<computeroutput>[1/3]</computeroutput></title>
+<indexterm><primary>TryValidate</primary><secondary>JWT.JwtValidator</secondary></indexterm>
+<indexterm><primary>JWT.JwtValidator</primary><secondary>TryValidate</secondary></indexterm>
+<para><computeroutput>bool JWT.JwtValidator.TryValidate (string payloadJson, <link linkend="_interface_j_w_t_1_1_algorithms_1_1_i_asymmetric_algorithm">IAsymmetricAlgorithm</link> alg, byte[] bytesToSign, byte[] decodedSignature, out Exception ex)</computeroutput></para>
+<para>
+<para>Given the <link linkend="_namespace_j_w_t">JWT</link>, verifies its signatures correctness without throwing an exception but returning it instead.</para>
+
+<para>
+                <formalpara>
+                    <title>
+Parameters</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>payloadJson</entry><entry>
+<para>&gt;An arbitrary payload (already serialized to JSON)</para>
+</entry>
+                            </row>
+                            <row>
+<entry>alg</entry><entry>
+<para>The asymmetric algorithm to validate with</para>
+</entry>
+                            </row>
+                            <row>
+<entry>bytesToSign</entry><entry>
+<para>The header and payload bytes to validate</para>
+</entry>
+                            </row>
+                            <row>
+<entry>decodedSignature</entry><entry>
+<para>The decodedSignatures to validate with</para>
+</entry>
+                            </row>
+                            <row>
+<entry>ex</entry><entry>
+<para>Validation exception, if any</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                <formalpara><title>Returns</title>
+
+<para>True if exception is <link linkend="_namespace_j_w_t">JWT</link> is valid and exception is null, otherwise false</para>
+</formalpara>
+</para>
+ 
+                <formalpara>
+                    <title>
+Exceptions</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>ArgumentException</entry><entry></entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                </para>
+<para>
+Implements <link linkend="_interface_j_w_t_1_1_i_jwt_validator_1ad83594c87fa12d650d63b096550f9bef">JWT.IJwtValidator</link>.</para>
+Here is the call graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="class_j_w_t_1_1_jwt_validator_a274e40b60c7065846b331227ab99a92f_cgraph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+</section>
+<anchor xml:id="_class_j_w_t_1_1_jwt_validator_1a729b5ad4f3b551b967bf6f0b1d558b56"/><section>
+    <title>TryValidate()<computeroutput>[2/3]</computeroutput></title>
+<indexterm><primary>TryValidate</primary><secondary>JWT.JwtValidator</secondary></indexterm>
+<indexterm><primary>JWT.JwtValidator</primary><secondary>TryValidate</secondary></indexterm>
+<para><computeroutput>bool JWT.JwtValidator.TryValidate (string payloadJson, string signature, string decodedSignature, out Exception ex)</computeroutput></para>
+<para>
+<para>Given the <link linkend="_namespace_j_w_t">JWT</link>, verifies its signature correctness without throwing an exception but returning it instead.</para>
+
+<para>
+                <formalpara>
+                    <title>
+Parameters</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>payloadJson</entry><entry>
+<para>&gt;An arbitrary payload (already serialized to JSON)</para>
+</entry>
+                            </row>
+                            <row>
+<entry>signature</entry><entry>
+<para>Decoded body</para>
+</entry>
+                            </row>
+                            <row>
+<entry>decodedSignature</entry><entry>
+<para>The signature to validate with</para>
+</entry>
+                            </row>
+                            <row>
+<entry>ex</entry><entry>
+<para>The resulting validation exception, if any</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                <formalpara><title>Returns</title>
+
+<para>Returns <computeroutput>true</computeroutput> if exception is <link linkend="_namespace_j_w_t">JWT</link> is valid and exception is null, otherwise false</para>
+</formalpara>
+</para>
+ 
+                <formalpara>
+                    <title>
+Exceptions</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>ArgumentException</entry><entry></entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                </para>
+<para>
+Implements <link linkend="_interface_j_w_t_1_1_i_jwt_validator_1a00359e1aaa882dce7d2bc71794e3df6a">JWT.IJwtValidator</link>.</para>
+Here is the call graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="class_j_w_t_1_1_jwt_validator_a729b5ad4f3b551b967bf6f0b1d558b56_cgraph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+</section>
+<anchor xml:id="_class_j_w_t_1_1_jwt_validator_1a4b76397cce0223e28bc1797b2827e7f4"/><section>
+    <title>TryValidate()<computeroutput>[3/3]</computeroutput></title>
+<indexterm><primary>TryValidate</primary><secondary>JWT.JwtValidator</secondary></indexterm>
+<indexterm><primary>JWT.JwtValidator</primary><secondary>TryValidate</secondary></indexterm>
+<para><computeroutput>bool JWT.JwtValidator.TryValidate (string payloadJson, string signature, string[] decodedSignature, out Exception ex)</computeroutput></para>
+<para>
+<para>Given the <link linkend="_namespace_j_w_t">JWT</link>, verifies its signature correctness without throwing an exception but returning it instead.</para>
+
+<para>
+                <formalpara>
+                    <title>
+Parameters</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>payloadJson</entry><entry>
+<para>&gt;An arbitrary payload (already serialized to JSON)</para>
+</entry>
+                            </row>
+                            <row>
+<entry>signature</entry><entry>
+<para>Decoded body</para>
+</entry>
+                            </row>
+                            <row>
+<entry>decodedSignature</entry><entry>
+<para>The signatures to validate with</para>
+</entry>
+                            </row>
+                            <row>
+<entry>ex</entry><entry>
+<para>The resulting validation exception, if any</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                <formalpara><title>Returns</title>
+
+<para>Returns <computeroutput>true</computeroutput> if exception is <link linkend="_namespace_j_w_t">JWT</link> is valid and exception is null, otherwise false</para>
+</formalpara>
+</para>
+ 
+                <formalpara>
+                    <title>
+Exceptions</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>ArgumentException</entry><entry></entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                </para>
+<para>
+Implements <link linkend="_interface_j_w_t_1_1_i_jwt_validator_1a6be9333406c4dca495d0524a2a269d76">JWT.IJwtValidator</link>.</para>
+Here is the call graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="class_j_w_t_1_1_jwt_validator_a4b76397cce0223e28bc1797b2827e7f4_cgraph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+</section>
+<anchor xml:id="_class_j_w_t_1_1_jwt_validator_1af52b2455c4d608013cd077fc41dd3421"/><section>
+    <title>Validate()<computeroutput>[1/2]</computeroutput></title>
+<indexterm><primary>Validate</primary><secondary>JWT.JwtValidator</secondary></indexterm>
+<indexterm><primary>JWT.JwtValidator</primary><secondary>Validate</secondary></indexterm>
+<para><computeroutput>void JWT.JwtValidator.Validate (string decodedPayload, <link linkend="_interface_j_w_t_1_1_algorithms_1_1_i_asymmetric_algorithm">IAsymmetricAlgorithm</link> alg, byte[] bytesToSign, byte[] decodedSignature)</computeroutput></para>
+<para>
+<para>Given the <link linkend="_namespace_j_w_t">JWT</link>, verifies its signature correctness.</para>
+
+<para>Used by the asymmetric algorithms only. </para>
+ 
+                <formalpara>
+                    <title>
+Exceptions</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>ArgumentException</entry><entry>
+<para>
+                <formalpara>
+                    <title>
+Exceptions</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>SignatureVerificationException</entry><entry></entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                </para>
+<para>
+Implements <link linkend="_interface_j_w_t_1_1_i_jwt_validator_1a3338c5c0f418836f9eaf1a84482ce5b9">JWT.IJwtValidator</link>.</para>
+Here is the call graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="class_j_w_t_1_1_jwt_validator_af52b2455c4d608013cd077fc41dd3421_cgraph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+</section>
+<anchor xml:id="_class_j_w_t_1_1_jwt_validator_1a40a34370eba0e6d1e71d9c585006e0c5"/><section>
+    <title>Validate()<computeroutput>[2/2]</computeroutput></title>
+<indexterm><primary>Validate</primary><secondary>JWT.JwtValidator</secondary></indexterm>
+<indexterm><primary>JWT.JwtValidator</primary><secondary>Validate</secondary></indexterm>
+<para><computeroutput>void JWT.JwtValidator.Validate (string decodedPayload, string signature, params string[] decodedSignatures)</computeroutput></para>
+<para>
+<para>Given the <link linkend="_namespace_j_w_t">JWT</link>, verifies its signature correctness.</para>
+
+<para>
+                <formalpara>
+                    <title>
+Parameters</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>decodedPayload</entry><entry>
+<para>&gt;An arbitrary payload (already serialized to JSON)</para>
+</entry>
+                            </row>
+                            <row>
+<entry>signature</entry><entry>
+<para>Decoded body</para>
+</entry>
+                            </row>
+                            <row>
+<entry>decodedSignatures</entry><entry>
+<para>The signatures to validate with</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                </para>
+ 
+                <formalpara>
+                    <title>
+Exceptions</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>ArgumentException</entry><entry>
+<para>
+                <formalpara>
+                    <title>
+Exceptions</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>SignatureVerificationException</entry><entry></entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                </para>
+<para>
+Implements <link linkend="_interface_j_w_t_1_1_i_jwt_validator_1ac2a038110fce4e9543386421dc866497">JWT.IJwtValidator</link>.</para>
+Here is the call graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="class_j_w_t_1_1_jwt_validator_a40a34370eba0e6d1e71d9c585006e0c5_cgraph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+</section>
+<para>
+The documentation for this class was generated from the following file:</para>
+C:/Users/adenf/RiderProjects/Openlabs.Mgcxm/Openlabs.Mgcxm/JWT/<link linkend="__jwt_validator_8cs">JwtValidator.cs</link></section>
+</section>
