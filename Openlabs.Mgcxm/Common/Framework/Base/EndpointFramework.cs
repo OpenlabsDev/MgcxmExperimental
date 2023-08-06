@@ -8,5 +8,4 @@ namespace Openlabs.Mgcxm.Common.Framework;
 public abstract class EndpointFramework<TEndpointUrl> : EndpointFrameworkBase where TEndpointUrl : EndpointUrl
 {
     public abstract EndpointStructure<TEndpointUrl> EndpointStructure { get; }
-    
 }
