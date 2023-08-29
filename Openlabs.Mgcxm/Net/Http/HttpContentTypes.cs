@@ -24,15 +24,15 @@ public enum HttpContentTypes
     BinaryData,
     [CommonMimeType("image", "bmp", "bmp")]
     WinOs2Bitmap,
-    [CommonMimeType("application", "x-bzip", "bz")]
+    [CommonMimeType("application", "bzip", "bz")]
     BzipArchive,
-    [CommonMimeType("application", "x-bzip2", "bz2")]
+    [CommonMimeType("application", "bzip2", "bz2")]
     Bzip2Archive,
-    [CommonMimeType("application", "x-cdf", "cda")]
+    [CommonMimeType("application", "cdf", "cda")]
     CdAudio,
-    [CommonMimeType("application", "x-csh", "csh")]
+    [CommonMimeType("application", "csh", "csh")]
     CshellScript,
-    [CommonMimeType("text", "x-css", "css")]
+    [CommonMimeType("text", "css", "css")]
     CssSheet,
     [CommonMimeType("application", "msword", "doc")]
     MsWordDocument,

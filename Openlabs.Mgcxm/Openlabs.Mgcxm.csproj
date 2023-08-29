@@ -3,7 +3,24 @@
     <PropertyGroup>
         <TargetFramework>net6.0</TargetFramework>
         <ImplicitUsings>enable</ImplicitUsings>
-        <Nullable>enable</Nullable>
+        <Nullable>disable</Nullable>
+        <IncludeSymbols>True</IncludeSymbols>
+        <SymbolPackageFormat>snupkg</SymbolPackageFormat>
+        <Description>A C# library to host HTTP and WS servers on the internet.</Description>
+        <Copyright>Openlabs</Copyright>
+        <Company>Openlabs</Company>
+        <Authors>Nexus</Authors>
+        <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
+        <Title>Mgcxm</Title>
+        <GenerateDocumentationFile>True</GenerateDocumentationFile>
+    </PropertyGroup>
+
+    <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+      <DebugType>full</DebugType>
+    </PropertyGroup>
+
+    <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
+      <DebugType>full</DebugType>
     </PropertyGroup>
 
     <ItemGroup>
@@ -13,6 +30,7 @@
 
     <ItemGroup>
       <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
+      <PackageReference Include="SixLabors.ImageSharp" Version="3.0.1" />
     </ItemGroup>
 
 </Project>

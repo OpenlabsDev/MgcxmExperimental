@@ -48,7 +48,7 @@ public static class SafeInvocation
             throw new InvalidOperationException($"Tried to parse {TYPE_FULL_NAME} 'exceptionToThrow' as {EXCEPTION_FULL_NAME}");
         
         try
-        { action.DynamicInvoke(args); }
+        { if (action != null) action.DynamicInvoke(args); }
         catch (Exception ex)
         {
             if (exceptionToThrow != null)

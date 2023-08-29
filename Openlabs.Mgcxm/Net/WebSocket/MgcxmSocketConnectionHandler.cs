@@ -16,6 +16,7 @@ public abstract class MgcxmSocketConnectionHandler
     internal void Internal_OnConnection(MgcxmSocket socket)
     {
         Socket = socket;
+        OnConnection(socket);
     }
 
     /// <summary>

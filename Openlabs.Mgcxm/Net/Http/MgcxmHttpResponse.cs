@@ -2,6 +2,7 @@
 
 using System.Net;
 using System.Text;
+using Newtonsoft.Json;
 using Openlabs.Mgcxm.Common.JsonMapping;
 using Openlabs.Mgcxm.Internal;
 using Openlabs.Mgcxm.Internal.SystemObjects;
@@ -14,6 +15,8 @@ namespace Openlabs.Mgcxm.Net;
 /// </summary>
 public sealed class MgcxmHttpResponse : IMgcxmHttpResponseModifiable, IMgcxmHttpResponseTransferable
 {
+    public bool FinishedBuilding { get; set; } = false;
+
     // Factory method to create a new instance of MgcxmHttpResponse.
     internal static MgcxmHttpResponse New(
         HttpStatusCodes statusCode,
@@ -30,6 +33,11 @@ public sealed class MgcxmHttpResponse : IMgcxmHttpResponseModifiable, IMgcxmHttp
             _responseData = response,
             _ownerId = owner
         };
+    }
+
+    public void Finish()
+    {
+        FinishedBuilding = true;
     }
 
     #region IMgcxmHttpResponseModifiable
@@ -71,7 +79,7 @@ public sealed class MgcxmHttpResponse : IMgcxmHttpResponseModifiable, IMgcxmHttp
     /// <inheritdoc/>
     public IMgcxmHttpResponseModifiable Content<T>(T data)
     {
-        return Content(HttpContentTypes.Json, data.ToJson());
+        return Content(HttpContentTypes.Json, JsonConvert.SerializeObject(data));
     }
 
     /// <inheritdoc/>
@@ -91,16 +99,21 @@ public sealed class MgcxmHttpResponse : IMgcxmHttpResponseModifiable, IMgcxmHttp
     /// <inheritdoc/>
     public async Task Transfer(HttpListenerResponse response)
     {
-        response.StatusCode = (int)_statusCode;
-        foreach (var headerKvp in _headers)
-            response.Headers.Set(headerKvp.Key, headerKvp.Value);
+        try
+        {
+            response.StatusCode = (int)_statusCode;
+            foreach (var headerKvp in _headers)
+                if (!string.IsNullOrEmpty(headerKvp.Key))
+                    response.Headers.Set(headerKvp.Key, headerKvp.Value ?? "");
 
-        response.ContentType = _contentType;
-        response.ContentLength64 = _responseData.Length;
+            response.ContentType = _contentType;
+            response.ContentLength64 = _responseData.Length;
 
-        var stream = response.OutputStream;
-        await stream.WriteAsync(_responseData, 0, _responseData.Length);
-        stream.Close();
+            var stream = response.OutputStream;
+            await stream.WriteAsync(_responseData, 0, _responseData.Length);
+            stream.Close();
+        }
+        catch { }
     }
 
     #endregion
@@ -192,6 +205,11 @@ public interface IMgcxmHttpResponseModifiable
     /// Sets the content of the response from a file on disk.
     /// </summary>
     IMgcxmHttpResponseModifiable File(string path);
+
+    /// <summary>
+    /// Tell the client to finish building the response.
+    /// </summary>
+    void Finish();
 }
 
 /// <summary>

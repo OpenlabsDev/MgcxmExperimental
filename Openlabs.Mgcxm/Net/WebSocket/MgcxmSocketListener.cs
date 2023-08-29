@@ -1,9 +1,11 @@
 // Copr. (c) Nexus 2023. All rights reserved.
 
+using System;
 using System.Net;
 using System.Net.Sockets;
 using System.Net.WebSockets;
 using System.Reflection;
+using System.Security.Cryptography.X509Certificates;
 using System.Transactions;
 using Openlabs.Mgcxm.Internal;
 using Openlabs.Mgcxm.Internal.SystemObjects;
@@ -22,21 +24,21 @@ namespace Openlabs.Mgcxm.Net;
 /// <summary>
 /// Represents a socket listener for handling WebSocket and HTTP requests.
 /// </summary>
-public class MgcxmSocketListener : IMgcxmSystemObject
+public class MgcxmSocketListener : IMgcxmSystemObject, IStartableServer
 {
     private MgcxmHttpListener _listener;
     private List<MgcxmSocketRoute> _routes = new();
     private PollingReceiver _pollingReceiver = new();
-    private Thread _listenThread;
     private Dictionary<MgcxmString, SocketThread> _socketThreads = new();
 
     /// <summary>
     /// Initializes a new instance of the MgcxmSocketListener class with the specified IP address to host on.
     /// </summary>
     /// <param name="addressToHostOn">The IP address to host the socket listener on.</param>
-    public MgcxmSocketListener(IpAddress addressToHostOn)
+    /// <param name="certificate">The SSL certificate to use.</param>
+    public MgcxmSocketListener(IpAddress addressToHostOn, X509Certificate2 certificate = null)
     {
-        _listener = new MgcxmHttpListener(addressToHostOn);
+        _listener = new MgcxmHttpListener(addressToHostOn, certificate);
         _pollingReceiver.OnPollReceived.AddAction((pollRequest) => { });
 
         AllocatedId = GetHashCode();
@@ -108,7 +110,8 @@ public class MgcxmSocketListener : IMgcxmSystemObject
             string routeUrl = context.Request.RawUrl.Contains("?") 
                 ? context.Request.RawUrl.Split("?")[0] 
                 : context.Request.RawUrl;
-            
+            MgcxmHttpListener.FormatUrl(ref routeUrl);
+
             // accept ws request
             if (context != null &&
                 IsValidRoute(routeUrl, out var route) && 
@@ -116,8 +119,8 @@ public class MgcxmSocketListener : IMgcxmSystemObject
             {
                 var socketContext = await context.AcceptWebSocketAsync(null);
             
-                Logger.Info($"||==----------- Ws Request -----------==||");
-                Logger.Info($"Server Id = 0x{AllocatedId.Id:x8}");
+                Logger.Info($"--------------- Ws Request ---------------");
+                Logger.Info($"Server Id = 0x{AllocatedId.Id:x8} ({this.GetType().Name})");
                 Logger.Info($"Requested Url = {routeUrl}");
 
                 (new Thread(async () =>
@@ -147,70 +150,11 @@ public class MgcxmSocketListener : IMgcxmSystemObject
                 string query = "";
                 string url = httpRequest.Url.PathAndQuery;
 
-                Uri baseAddress = new Uri($"{httpRequest.Url.Scheme}://{httpRequest.Url.Host}:{httpRequest.Url.Port}");
-                HttpMethods method = HttpMethods.UNKNOWN;
-                Dictionary<string, string> requestHeaders = new Dictionary<string, string>();
-                Dictionary<string, string> queryData = new Dictionary<string, string>();
-                Dictionary<string, string> formData = new Dictionary<string, string>();
-                List<byte> bodyData = new List<byte>();
-
-                Dictionary<MgcxmString, MgcxmString> responseHeaders = new Dictionary<MgcxmString, MgcxmString>();
-
-                bool canParseMethod = Enum.TryParse(typeof(HttpMethods), httpRequest.HttpMethod, out object? methodObj);
-                if (canParseMethod && methodObj != null)
-                    method = (HttpMethods)methodObj;
-
-                for (int i = 0; i < httpRequest.Headers.Count; i++)
-                    requestHeaders.Add(
-                        httpRequest.Headers.GetKey(i) ?? "Unknown",
-                        httpRequest.Headers.GetValues(i)?[0] ?? "Unknown");
-
-                if (url.Contains("?"))
-                {
-                    var urlParts = url.Split("?");
-
-                    url = WebUtility.UrlDecode(urlParts[0]);
-                    query = urlParts[1] ?? "";
-
-                    foreach (var queryPart in query.Split("&"))
-                    {
-                        var kvp = queryPart.Split("=");
-                        if (kvp.Length > 1)
-                            queryData.Add(kvp[0], kvp[1]);
-                    }
-                }
-
-                int ibyte;
-                while ((ibyte = httpRequest.InputStream.ReadByte()) != -1)
-                    bodyData.Add((byte)ibyte);
-
-                for (int i = 0; i < httpResponse.Headers.Count; i++)
-                    responseHeaders.Add(
-                        httpResponse.Headers.GetKey(i),
-                        httpResponse.Headers.GetValues(i)?[0] ?? "Unknown");
-
-                // construct data
-                var requestData = MgcxmHttpRequest.New(
-                    method,
-                    baseAddress,
-                    url,
-                    HttpContentTypeHelper.ResolveValue(httpRequest.ContentType),
-                    bodyData.ToArray(),
-                    formData,
-                    requestHeaders,
-                    queryData,
-                    AllocatedId);
-
-                var responseData = MgcxmHttpResponse.New(
-                    (HttpStatusCodes)httpResponse.StatusCode,
-                    "",
-                    responseHeaders,
-                    Array.Empty<byte>(),
-                    AllocatedId);
+                MgcxmHttpListener.CreateWebRequestData(AllocatedId, ref url, ref query, httpRequest, httpResponse, out MgcxmHttpRequest requestData, out MgcxmHttpResponse responseData);
 
                 // log request
-                Logger.Info($"||==----------- Ws Http Request -----------==||");
-                Logger.Info($"Server Id = 0x{AllocatedId.Id:x8}");
+                Logger.Info($"--------------- Ws Http Request ---------------");
+                Logger.Info($"Server Id = 0x{AllocatedId.Id:x8} ({this.GetType().Name})");
                 Logger.Info($"Requested Url = {requestData.Uri}");
                 Logger.Info($"Http Method = {requestData.HttpMethod}");
                 if (requestData.HttpMethod == HttpMethods.POST || requestData.HttpMethod == HttpMethods.PUT)
@@ -264,6 +208,9 @@ public class MgcxmSocketListener : IMgcxmSystemObject
     /// Gets the underlying MgcxmHttpListener used by the MgcxmSocketListener.
     /// </summary>
     public MgcxmHttpListener Listener => _listener;
+
+    public X509Certificate2 Certificate => Listener.Certificate;
+    public IpAddress Address => Listener.Address;
 
     private class SocketThread
     {

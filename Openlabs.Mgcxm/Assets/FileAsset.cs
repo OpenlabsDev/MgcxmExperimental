@@ -17,7 +17,7 @@ public class FileAsset : ObjectAsset
     /// </summary>
     /// <param name="path">The path to check.</param>
     /// <returns>True if the path is local, otherwise false.</returns>
-    private bool IsPathLocal(string path) => !System.IO.Path.IsPathRooted(path);
+    private bool IsPathLocal(string path) => !System.IO.Path.IsPathFullyQualified(path);
 
     /// <summary>
     /// Loads the file asset using the provided arguments.
@@ -25,6 +25,8 @@ public class FileAsset : ObjectAsset
     /// <param name="arguments">The arguments required for loading the file asset. The first argument should be the file path.</param>
     public override async Task Load(object[] arguments)
     {
+        if (arguments.Length == 0) return;
+
         // if the path is local, add "assets\" to the start
         var pathArg = (string)arguments[0];
         Directory.CreateDirectory(Constants.WorkingDirectory + "\\assets"); // init our assets path

@@ -29,6 +29,7 @@ public class OpenApiFramework : EndpointFramework<OpenApiUrl>
         MgcxmHttpEndpoint endpoint = EndpointResolver.ResolveUrl(mgcxmRequest.Uri, mgcxmRequest);
         endpoint.OnEndpointRequested(mgcxmRequest, mgcxmResponse);
 
+        await TaskEx.WaitUntil(() => mgcxmResponse.FinishedBuilding);
         await mgcxmResponse.Transfer(listenerResponse);
     }
 

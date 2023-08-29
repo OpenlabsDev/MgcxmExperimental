@@ -9,10 +9,26 @@ namespace Openlabs.Mgcxm.Common.Framework;
 
 public class OpenApiEndpointResolver : EndpointResolver
 {
+    const bool AUTO_INITIALIZE = true;
+
     public OpenApiEndpointResolver(MgcxmHttpListener listener, OpenApiFramework framework) : base(listener, framework)
     {
         _allocatedId = Random.Range(900000, 10000000);
         MgcxmObjectManager.Register(_allocatedId, this);
+
+        if (AUTO_INITIALIZE)
+        {
+            foreach (var nestedType in listener.GetType().GetNestedTypes())
+            {
+                if ((nestedType.BaseType != null && nestedType.BaseType.GUID == typeof(EndpointSubpartController).GUID) ||
+                    nestedType.InheritsOrImplements(typeof(EndpointSubpartController)))
+                {
+                    Logger.Debug("Automatically adding " + nestedType.Name + " to subpart list");
+                    AddSubpartController((EndpointSubpartController)Activator.CreateInstance(nestedType));
+                }
+            }
+            ResolveAll();
+        }
     }
     ~OpenApiEndpointResolver() => MgcxmObjectManager.Deregister(_allocatedId);
 
@@ -50,21 +66,31 @@ public class OpenApiEndpointResolver : EndpointResolver
         foreach (var subpartController in _endpointSubpartControllers)
         {
             var type = subpartController.GetType();
+            var subpartAttr = type.GetCustomAttribute<EndpointSubpartAttribute>();
+
+            if (subpartAttr == null)
+                throw new Exception("Cannot resolve subpart because it does not have a EndpointSubpartAttribute attached.");
+
             Logger.Trace($"Resolving subpart '{type.FullName}'");
             
-            AttributeResolver.ResolveAllMethod<HttpEndpointAttribute>(
+            AttributeResolver.ResolveAllMethod<EndpointSubpartRouteAttribute>(
                 type,
-                typeof(HttpEndpointAttribute),
+                typeof(EndpointSubpartRouteAttribute),
                 (method, attr) =>
                 {
-                    if (subpartController.AllEndpoints.Any(x => x.Url == attr.Url))
+                    if (!attr.Route.StartsWith("/"))
+                        attr.Route = "/" + attr.Route;
+
+                    OpenApiUrl url = EndpointUrl.FromString<OpenApiUrl>(string.Format("/api/{0}{1}", subpartAttr.Controller, attr.Route));
+
+                    if (subpartController.AllEndpoints.Any(x => x.Url == url.ToString()))
                     {
-                        Logger.Error($"Cannot resolve subpart - there is already a endpoint with the url '{attr.Url}'");
+                        Logger.Error($"Cannot resolve subpart - there is already a endpoint with the url '{url.ToString()}'");
                         return; // cannot add endpoints with same url
                     }
                     
 
-                    OpenApiEndpointStructure!.AddEndpoint(EndpointUrl.FromString<OpenApiUrl>(attr.Url), attr.HttpMethod,
+                    OpenApiEndpointStructure!.AddEndpoint(url, attr.HttpMethod,
                         (req, res) =>
                         {
                             var parameters = method.GetParameters();
@@ -82,7 +108,7 @@ public class OpenApiEndpointResolver : EndpointResolver
     public override void AddSubpartController(EndpointSubpartController subpartController)
     {
         _endpointSubpartControllers.Add(subpartController);
-        
+
         subpartController.NotifyUpdate(this);
         OnSubpartUpdated!.InvokeSafe(subpartController);
     }

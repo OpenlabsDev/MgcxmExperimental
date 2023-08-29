@@ -60,8 +60,8 @@ public static class MgcxmObjectManager
             _objects.Add(id, obj!);
             
         }
-        else
-            throw new InvalidOperationException(string.Format(ALLOCATE_OBJECT_ERROR_MESSAGE, (string)id));
+        //else
+        //    throw new InvalidOperationException(string.Format(ALLOCATE_OBJECT_ERROR_MESSAGE, (string)id));
     }
     
     /// <summary>
@@ -76,8 +76,8 @@ public static class MgcxmObjectManager
             Logger.Trace($"Removing object from registry. Id = 0x{id.Id:x8}");
             _objects.Remove(id);
         }
-        else
-            throw new InvalidOperationException(string.Format(DEALLOCATE_OBJECT_ERROR_MESSAGE, (string)id));
+        //else
+        //    throw new InvalidOperationException(string.Format(DEALLOCATE_OBJECT_ERROR_MESSAGE, (string)id));
     }
 
     /// <summary>

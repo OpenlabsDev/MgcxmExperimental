@@ -1,5 +1,6 @@
 // Copr. (c) Nexus 2023. All rights reserved.
 
+using Newtonsoft.Json;
 using Openlabs.Mgcxm.Assets;
 using Openlabs.Mgcxm.Common.JsonMapping;
 
@@ -27,6 +28,6 @@ public class DTOJsonFileAsset<TDtoType> : JsonFileAsset
     /// <param name="dtoType">The DTO object to write.</param>
     public virtual void WriteDto(TDtoType dtoType)
     {
-        WriteString(Json.ToJson(dtoType));
+        WriteString(JsonConvert.SerializeObject(dtoType));
     }
 }

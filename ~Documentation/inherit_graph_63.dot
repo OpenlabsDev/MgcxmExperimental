@@ -1,9 +1,0 @@
-digraph "Graphical Class Hierarchy"
-{
- // LATEX_PDF_SIZE
-  bgcolor="transparent";
-  edge [fontname=Helvetica,fontsize=10,labelfontname=Helvetica,labelfontsize=10];
-  node [fontname=Helvetica,fontsize=10,shape=box,height=0.2,width=0.4];
-  rankdir="LR";
-  Node0 [id="Node000000",label="Openlabs.Mgcxm.Tests.Test\lWsServer.ClientConnectAckMessage",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$class_openlabs_1_1_mgcxm_1_1_tests_1_1_test_ws_server_1_1_client_connect_ack_message.html",tooltip=" "];
-}

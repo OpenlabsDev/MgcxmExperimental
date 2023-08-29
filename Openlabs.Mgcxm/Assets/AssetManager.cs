@@ -48,6 +48,7 @@ public static class AssetManager
         {
             T obj = (T)(ObjectAsset)Activator.CreateInstance(typeof(T))!;
             await obj.Load(arguments);
+            LogSink.Trace($"Added '{typeof(T).Name}' to memory with {arguments.Length} argument(s)");
 
             _allLoadedAssets.Add(obj);
 

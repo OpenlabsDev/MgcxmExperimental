@@ -1,7 +1,9 @@
 // Copr. (c) Nexus 2023. All rights reserved.
 
+using System;
 using System.Net;
 using System.Reflection;
+using System.Security.Cryptography.X509Certificates;
 using System.Text;
 using Openlabs.Mgcxm.Common.Framework;
 using Openlabs.Mgcxm.Internal;
@@ -30,18 +32,24 @@ public static class AddressUtilities
 /// <summary>
 /// Represents an HTTP listener for MgcxmSocketListener.
 /// </summary>
-public class MgcxmHttpListener
+public class MgcxmHttpListener : IStartableServer
 {
+    public ActionEvent<MgcxmHttpRequest, MgcxmHttpResponse> OnWebRequest { get; private set; } = new(10);
+
     /// <summary>
     /// Initializes a new instance of the MgcxmHttpListener class.
     /// </summary>
     /// <param name="addressToHostOn">The IP address to host the listener on.</param>
-    public MgcxmHttpListener(IpAddress addressToHostOn)
+    /// <param name="certificate">The SSL certificate to use.</param>
+    public MgcxmHttpListener(IpAddress addressToHostOn, X509Certificate2 certificate = null)
     {
+        Certificate = certificate;
+        Address = addressToHostOn;
+
         // Initialize the HttpListener with the provided IP address and port.
         _listener = new HttpListener();
         _listener.Prefixes.Add(
-            $"http://{AddressUtilities.FormatIpAddress(addressToHostOn.Origin)}:{addressToHostOn.Port}/");
+            $"http{(certificate != null ? "s" : string.Empty)}://{AddressUtilities.FormatIpAddress(addressToHostOn.Origin)}:{addressToHostOn.Port}/");
 
         // Generate an allocated ID for the listener.
         _allocatedId = GetHashCode();
@@ -120,14 +128,12 @@ public class MgcxmHttpListener
         _endpoints.Add(new MgcxmHttpEndpoint(FAVICON_ID, "/favicon.ico", Array.Empty<MgcxmDynamicIdentifier>(), HttpMethods.GET,
             (request, response) =>
             {
-                response.Status(HttpStatusCodes.OK).Content(HttpContentTypes.BinaryData, Array.Empty<byte>());
+                response.Status(HttpStatusCodes.OK).Content(HttpContentTypes.BinaryData, Array.Empty<byte>()).Finish();
             }));
     }
 
     private async Task StartListening()
     {
-        this.PrintDebugInfo();
-
         _listener.Start();
         _listenToRequests = true;
 
@@ -142,89 +148,14 @@ public class MgcxmHttpListener
             string query = "";
             string url = httpRequest.Url!.PathAndQuery;
 
-            Uri baseAddress = new Uri($"{httpRequest.Url.Scheme}://{httpRequest.Url.Host}:{httpRequest.Url.Port}");
-            HttpMethods method = HttpMethods.UNKNOWN;
-            Dictionary<string, string> requestHeaders = new Dictionary<string, string>();
-            Dictionary<string, string> queryData = new Dictionary<string, string>();
-            Dictionary<string, string> formData = new Dictionary<string, string>();
-            List<byte> bodyData = new List<byte>();
-
-            Dictionary<MgcxmString, MgcxmString> responseHeaders = new Dictionary<MgcxmString, MgcxmString>();
-
-            // build can parse flag and method
-            bool canParseMethod = Enum.TryParse(typeof(HttpMethods), httpRequest.HttpMethod, out object? methodObj);
-            if (canParseMethod && methodObj != null)
-                method = (HttpMethods)methodObj;
-
-            // build headers
-            for (int i = 0; i < httpRequest.Headers.Count; i++)
-                requestHeaders.Add(
-                    httpRequest.Headers.GetKey(i) ?? "Unknown",
-                    httpRequest.Headers.GetValues(i)?[0] ?? "Unknown");
-
-            // build query
-            if (url.Contains("?"))
-            {
-                var urlParts = url.Split("?");
-
-                url = WebUtility.UrlDecode(urlParts[0]);
-                query = urlParts[1] ?? "";
-
-                foreach (var queryPart in query.Split("&"))
-                {
-                    var kvp = queryPart.Split("=");
-                    if (kvp.Length > 1)
-                        queryData.Add(kvp[0], kvp[1]);
-                }
-            }
-
-            // build content type
-            var contentType = HttpContentTypeHelper.ResolveValue(httpRequest.ContentType!);
-
-            // build body
-            int ibyte;
-            while ((ibyte = httpRequest.InputStream.ReadByte()) != -1)
-                bodyData.Add((byte)ibyte);
-
-            if (contentType == HttpContentTypes.UrlencodedForm)
-            {
-                foreach (var formPart in Encoding.UTF8.GetString(bodyData.ToArray()).Split("&"))
-                {
-                    var kvp = formPart.Split("=");
-                    if (kvp.Length > 1)
-                        formData.Add(kvp[0], kvp[1]);
-                }
-            }
-
-            // format url
-            if (url.EndsWith("/"))
-                url = url.Remove(url.Length - 1, 1);
-
-            // construct data
-            var requestData = MgcxmHttpRequest.New(
-                method,
-                baseAddress,
-                url,
-                contentType,
-                bodyData.ToArray(),
-                formData,
-                requestHeaders,
-                queryData,
-                _allocatedId);
-
-            var responseData = MgcxmHttpResponse.New(
-                (HttpStatusCodes)httpResponse.StatusCode,
-                "",
-                responseHeaders,
-                Array.Empty<byte>(),
-                _allocatedId);
+            CreateWebRequestData(_allocatedId, ref url, ref query, httpRequest, httpResponse, out MgcxmHttpRequest requestData, out MgcxmHttpResponse responseData);
 
             //Logger.Info($"=========== Ws Request ===========");
             //Logger.Info($"==================================");
 
             // log request
-            Logger.Info($"||==----------- Http Request -----------==||");
-            Logger.Info($"Server Id = 0x{_allocatedId.Id:x8}");
+            Logger.Info($"--------------- Http Request ---------------");
+            Logger.Info($"Server Id = 0x{_allocatedId.Id:x8} ({this.GetType().Name})");
             Logger.Info($"Requested Url = {requestData.Uri}");
             Logger.Info($"Http Method = {requestData.HttpMethod}");
             if (requestData.HttpMethod == HttpMethods.POST || requestData.HttpMethod == HttpMethods.PUT)
@@ -246,13 +177,15 @@ public class MgcxmHttpListener
             responseData.Header("Connection", "keep-alive");
 
             // write to response
-            if (_framework == null)
+            if (_framework == null && _endpoints.Count > 1)
             {
-                var endpoint = _endpoints.Find(x =>
-                    x.Url == requestData.Uri && x.RequiredMethod == Enum.Parse<HttpMethods>(httpRequest.HttpMethod));
+                Logger.Trace(string.Format("Switched to default handling. Framework = {0}, Endpoints = {1}", _framework == null ? "null" : "not null", _endpoints.Count));
+                var endpoint = _endpoints.Find(x => x.Url == requestData.Uri && x.RequiredMethod == Enum.Parse<HttpMethods>(httpRequest.HttpMethod));
                 if (endpoint != null)
                 {
                     endpoint.OnEndpointRequested(requestData, responseData);
+
+                    await TaskEx.WaitUntil(() => responseData.FinishedBuilding);
                     await responseData.Transfer(httpResponse);
                 }
                 else
@@ -266,6 +199,8 @@ public class MgcxmHttpListener
                             {
                                 // Logger.Trace($"0x{vEndpoint.EndpointId.Id:x8} meets dynamic criterion");
                                 vEndpoint.OnEndpointRequested(requestData, responseData);
+
+                                await TaskEx.WaitUntil(() => responseData.FinishedBuilding);
                                 await responseData.Transfer(httpResponse);
                             }
                             else
@@ -281,8 +216,11 @@ public class MgcxmHttpListener
                     }
                 }
             }
-            else
+            else if (_framework != null && _framework.Endpoints.Count > 0)
             {
+                Logger.Trace(string.Format("Switched to framework handling. Framework = {0}, Endpoints = {1}",
+                    _framework == null ? "null" : "not null", 
+                    _framework != null ? _framework.Endpoints.Count : 0));
                 try
                 {
                     await _framework.ResolveRequest(httpRequest, httpResponse, requestData, responseData);
@@ -292,9 +230,116 @@ public class MgcxmHttpListener
                     Logger.Exception("Cannot resolve Framework endpoint", exception);
                 }
             }
+            else
+            {
+                // THIS IS A LEGACY OPTION!
+                // THIS MAY NOT ALWAYS WORK
+
+                Logger.Trace("Switched to legacy handling");
+
+                this.OnWebRequest.Invoke(requestData, responseData);
+                await TaskEx.WaitUntil(() => responseData.FinishedBuilding);
+                await responseData.Transfer(httpResponse);
+            }
         }
 
         _listener.Stop();
+    }
+
+    public static void CreateWebRequestData(MgcxmId allocatedId, ref string url, ref string query, HttpListenerRequest httpRequest, HttpListenerResponse httpResponse, out MgcxmHttpRequest requestData, out MgcxmHttpResponse responseData)
+    {
+        // trim any extra / from the start
+        url = url.TrimStart('/');
+        url = string.Format("/{0}", url);
+
+        Uri baseAddress = new Uri($"{httpRequest.Url.Scheme}://{httpRequest.Url.Host}:{httpRequest.Url.Port}");
+        HttpMethods method = HttpMethods.UNKNOWN;
+        Dictionary<string, string> requestHeaders = new Dictionary<string, string>();
+        Dictionary<string, string> queryData = new Dictionary<string, string>();
+        Dictionary<string, string> formData = new Dictionary<string, string>();
+        List<byte> bodyData = new List<byte>();
+
+        Dictionary<MgcxmString, MgcxmString> responseHeaders = new Dictionary<MgcxmString, MgcxmString>();
+
+        // build can parse flag and method
+        bool canParseMethod = Enum.TryParse(typeof(HttpMethods), httpRequest.HttpMethod, out object? methodObj);
+        if (canParseMethod && methodObj != null)
+            method = (HttpMethods)methodObj;
+
+        // build headers
+        for (int i = 0; i < httpRequest.Headers.Count; i++)
+            requestHeaders.Add(
+                httpRequest.Headers.GetKey(i) ?? "Unknown",
+                httpRequest.Headers.GetValues(i)?[0] ?? "Unknown");
+
+        // build query
+        Logger.Trace("current url " + url);
+        if (url.Contains("?"))
+        {
+            var urlParts = url.Split("?");
+
+            url = WebUtility.UrlDecode(urlParts[0]);
+            query = urlParts[1] ?? "";
+
+            foreach (var queryPart in query.Split("&"))
+            {
+                var kvp = queryPart.Split("=");
+                queryData.Add(kvp[0], kvp.Length > 1 ? kvp[1]! : "");
+            }
+        }
+
+        // build content type
+        var contentType = HttpContentTypeHelper.ResolveValue(httpRequest.ContentType!);
+
+        // build body
+        int ibyte;
+        while ((ibyte = httpRequest.InputStream.ReadByte()) != -1)
+            bodyData.Add((byte)ibyte);
+
+        if (contentType == HttpContentTypes.UrlencodedForm)
+        {
+            foreach (var formPart in Encoding.UTF8.GetString(bodyData.ToArray()).Split("&"))
+            {
+                var kvp = formPart.Split("=");
+                if (kvp.Length > 1)
+                    formData.Add(kvp[0], kvp[1]);
+            }
+        }
+
+        Logger.Trace("trimmed url " + url);
+
+        // format url
+        FormatUrl(ref url);
+
+        Logger.Trace("formatted url " + url);
+
+        // construct data
+        requestData = MgcxmHttpRequest.New(
+            method,
+            baseAddress,
+            url,
+            contentType,
+            bodyData.ToArray(),
+            formData,
+            requestHeaders,
+            queryData,
+            allocatedId);
+
+        responseData = MgcxmHttpResponse.New(
+            (HttpStatusCodes)httpResponse.StatusCode,
+            "",
+            responseHeaders,
+            Array.Empty<byte>(),
+            allocatedId);
+    }
+
+    public static void FormatUrl(ref string url)
+    {
+        if (url.StartsWith("//"))
+            url = url.Replace("//", "/");
+
+        if (url.Length > 1 && url.EndsWith("/"))
+            url = url.Remove(url.Length - 1, 1);
     }
 
     /// <summary>
@@ -391,6 +436,9 @@ public class MgcxmHttpListener
     /// Gets the current framework associated with the listener.
     /// </summary>
     public EndpointFrameworkBase Framework => _framework;
+
+    public X509Certificate2 Certificate { get; private set; }
+    public IpAddress Address { get; private set; }
 
     private MgcxmId _allocatedId;
     private bool _listenToRequests;
