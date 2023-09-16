@@ -1,10 +1,13 @@
 // Copr. (c) Nexus 2023. All rights reserved.
 
 using System;
+using System.Diagnostics;
 using System.Net;
 using System.Reflection;
 using System.Security.Cryptography.X509Certificates;
 using System.Text;
+using System.Xml.Serialization;
+using Openlabs.Mgcxm.Common;
 using Openlabs.Mgcxm.Common.Framework;
 using Openlabs.Mgcxm.Internal;
 using Openlabs.Mgcxm.Internal.SystemObjects;
@@ -34,22 +37,27 @@ public static class AddressUtilities
 /// </summary>
 public class MgcxmHttpListener : IStartableServer
 {
-    public ActionEvent<MgcxmHttpRequest, MgcxmHttpResponse> OnWebRequest { get; private set; } = new(10);
+    private string _host;
+    public Action<MgcxmHttpRequest, MgcxmHttpResponse> OnWebRequest;
 
     /// <summary>
     /// Initializes a new instance of the MgcxmHttpListener class.
     /// </summary>
     /// <param name="addressToHostOn">The IP address to host the listener on.</param>
     /// <param name="certificate">The SSL certificate to use.</param>
-    public MgcxmHttpListener(IpAddress addressToHostOn, X509Certificate2 certificate = null)
+    public MgcxmHttpListener(IpAddress addressToHostOn, string host = "", string postfix = "", X509Certificate2 certificate = null)
     {
+        GCWrapper.SuppressFinalize(this);
+        GCWrapper.SuppressFinalize(_allocatedId);
+
+        _host = host;
         Certificate = certificate;
         Address = addressToHostOn;
 
         // Initialize the HttpListener with the provided IP address and port.
         _listener = new HttpListener();
         _listener.Prefixes.Add(
-            $"http{(certificate != null ? "s" : string.Empty)}://{AddressUtilities.FormatIpAddress(addressToHostOn.Origin)}:{addressToHostOn.Port}/");
+            $"http{(certificate != null ? "s" : string.Empty)}://{AddressUtilities.FormatIpAddress(addressToHostOn.Origin)}:{addressToHostOn.Port}/" + postfix);
 
         // Generate an allocated ID for the listener.
         _allocatedId = GetHashCode();
@@ -108,6 +116,7 @@ public class MgcxmHttpListener : IStartableServer
                 Logger.Trace(string.Format("Added '0x{0:x8}' to '0x{1:x8}'", attr.Url.GetHashCode(),
                     _allocatedId.Id));
             });
+        if (_endpoints != null) GCWrapper.SuppressFinalize(_endpoints);
     }
 
     /// <summary>
@@ -144,103 +153,168 @@ public class MgcxmHttpListener : IStartableServer
             var httpRequest = httpContext.Request;
             var httpResponse = httpContext.Response;
 
-            // build needed data
-            string query = "";
-            string url = httpRequest.Url!.PathAndQuery;
-
-            CreateWebRequestData(_allocatedId, ref url, ref query, httpRequest, httpResponse, out MgcxmHttpRequest requestData, out MgcxmHttpResponse responseData);
-
-            //Logger.Info($"=========== Ws Request ===========");
-            //Logger.Info($"==================================");
-
-            // log request
-            Logger.Info($"--------------- Http Request ---------------");
-            Logger.Info($"Server Id = 0x{_allocatedId.Id:x8} ({this.GetType().Name})");
-            Logger.Info($"Requested Url = {requestData.Uri}");
-            Logger.Info($"Http Method = {requestData.HttpMethod}");
-            if (requestData.HttpMethod == HttpMethods.POST || requestData.HttpMethod == HttpMethods.PUT)
+#pragma warning disable
+            Task.Run(async () =>
             {
-                Logger.Info($"Content Type = {requestData.ContentType}");
-                Logger.Info($"Content Length = {requestData.RawBodyData.Length}");
-                Logger.Info($"Content = {requestData.Body.Truncate(50, "...")}");
-            }
+                if (httpRequest.Url.Host != _host)
+                    return;
 
-            // add required headers
-            responseData.Header("X-Powered-By", "Mgcxm.Net");
-            responseData.Header("Vary", "Accept-Encoding");
-            responseData.Header("Request-Context", $"appId=cid-v1:{Guid.NewGuid().ToString()}");
-            responseData.Header("Pragma", "no-cache");
-            responseData.Header("Cache-Control", "no-cache");
-            responseData.Header("Expires", "-1");
+                // build needed data
+                string query = "";
+                string url = httpRequest.Url!.PathAndQuery;
 
-            httpResponse.KeepAlive = true;
-            responseData.Header("Connection", "keep-alive");
+                CreateWebRequestData(_allocatedId, ref url, ref query, httpRequest, httpResponse, out MgcxmHttpRequest requestData, out MgcxmHttpResponse responseData);
+                var requestId = Uuid.Create();
 
-            // write to response
-            if (_framework == null && _endpoints.Count > 1)
-            {
-                Logger.Trace(string.Format("Switched to default handling. Framework = {0}, Endpoints = {1}", _framework == null ? "null" : "not null", _endpoints.Count));
-                var endpoint = _endpoints.Find(x => x.Url == requestData.Uri && x.RequiredMethod == Enum.Parse<HttpMethods>(httpRequest.HttpMethod));
-                if (endpoint != null)
+                try
                 {
-                    endpoint.OnEndpointRequested(requestData, responseData);
 
-                    await TaskEx.WaitUntil(() => responseData.FinishedBuilding);
-                    await responseData.Transfer(httpResponse);
-                }
-                else
-                {
-                    // try using the Matches method
-                    foreach (var vEndpoint in _endpoints)
+                    //Logger.Info($"=========== Ws Request ===========");
+                    //Logger.Info($"==================================");
+
+                    // log request
+                    Logger.Info($"--------------- Http Request ---------------");
+                    Logger.Info($"Server Id = 0x{_allocatedId.Id:x8} ({this.GetType().Name})");
+                    Logger.Info($"Requested Url = {requestData.Uri}");
+                    Logger.Info($"Http Method = {requestData.HttpMethod}");
+                    if (requestData.HttpMethod == HttpMethods.POST || requestData.HttpMethod == HttpMethods.PUT)
                     {
+                        Logger.Info($"Content Type = {requestData.ContentType}");
+                        Logger.Info($"Content Length = {requestData.RawBodyData.Length}");
+                        Logger.Info($"Content = {requestData.Body.Truncate(50, "...")}");
+                    }
+
+                    // add required headers
+                    responseData.Header("X-Powered-By", "Mgcxm.Net");
+                    responseData.Header("Vary", "Accept-Encoding");
+                    responseData.Header("Request-Context", $"appId=cid-v1:{Guid.NewGuid().ToString()}");
+                    responseData.Header("Pragma", "no-cache");
+                    responseData.Header("Cache-Control", "no-cache");
+                    responseData.Header("Expires", "-1");
+                    responseData.Header("Connection", "keep-alive");
+
+
+                    bool foundEndpointDebounce = false;
+
+                    // write to response
+                    if (_framework == null && _endpoints.Count > 1)
+                    {
+                        Logger.Trace(string.Format("Switched to default handling. Framework = {0}, Endpoints = {1}", _framework == null ? "null" : "not null", _endpoints.Count));
+                        var endpoint = _endpoints.Find(x => x.Url == requestData.Uri && x.RequiredMethod == Enum.Parse<HttpMethods>(httpRequest.HttpMethod));
+                        if (endpoint != null)
+                        {
+                            foundEndpointDebounce = true;
+                            endpoint.OnEndpointRequested(requestData, responseData);
+
+                            await TaskEx.WaitUntil(() => responseData.FinishedBuilding);
+                            await responseData.Transfer(httpResponse);
+                        }
+                        else
+                        {
+                            // try using the Matches method
+                            foreach (var vEndpoint in _endpoints)
+                            {
+                                try
+                                {
+                                    if (MgcxmHttpEndpoint.Matches(requestData.Uri, vEndpoint, requestData))
+                                    {
+                                        foundEndpointDebounce = true;
+                                        // Logger.Trace($"0x{vEndpoint.EndpointId.Id:x8} meets dynamic criterion");
+                                        vEndpoint.OnEndpointRequested(requestData, responseData);
+
+                                        var sw = Stopwatch.StartNew();
+                                        await TaskEx.WaitUntil(() => responseData.FinishedBuilding, 25, 5500);
+                                        if (sw.ElapsedMilliseconds > 5000)
+                                        {
+                                            responseData.Status(HttpStatusCodes.BadGateway)
+                                                        .Content(HttpContentTypes.PlainText, "Task ex failed to wait")
+                                                        .Finish();
+                                            await responseData.Transfer(httpResponse);
+                                        }
+                                        else
+                                            await responseData.Transfer(httpResponse);
+                                    }
+                                    else
+                                    {
+                                        // Logger.Trace($"0x{vEndpoint.EndpointId.Id:x8} does not meet dynamic criterion");
+                                    }
+                                }
+                                catch (Exception exception)
+                                {
+                                    // Logger.Trace($"0x{vEndpoint.EndpointId.Id:x8} does not meet dynamic criterion");
+                                    Logger.Exception("Cannot parse Dynamic Url", exception);
+                                }
+                            }
+                        }
+                    }
+                    else if (_framework != null && _framework.Endpoints.Count > 0)
+                    {
+                        Logger.Trace(string.Format("Switched to framework handling. Framework = {0}, Endpoints = {1}",
+                            _framework == null ? "null" : "not null",
+                            _framework != null ? _framework.Endpoints.Count : 0));
                         try
                         {
-                            if (MgcxmHttpEndpoint.Matches(requestData.Uri, vEndpoint, requestData))
-                            {
-                                // Logger.Trace($"0x{vEndpoint.EndpointId.Id:x8} meets dynamic criterion");
-                                vEndpoint.OnEndpointRequested(requestData, responseData);
-
-                                await TaskEx.WaitUntil(() => responseData.FinishedBuilding);
-                                await responseData.Transfer(httpResponse);
-                            }
-                            else
-                            {
-                                // Logger.Trace($"0x{vEndpoint.EndpointId.Id:x8} does not meet dynamic criterion");
-                            }
+                            await _framework.ResolveRequest(httpRequest, httpResponse, requestData, responseData);
                         }
                         catch (Exception exception)
                         {
-                            // Logger.Trace($"0x{vEndpoint.EndpointId.Id:x8} does not meet dynamic criterion");
-                            Logger.Exception("Cannot parse Dynamic Url", exception);
+                            Logger.Exception("Cannot resolve Framework endpoint", exception);
                         }
                     }
-                }
-            }
-            else if (_framework != null && _framework.Endpoints.Count > 0)
-            {
-                Logger.Trace(string.Format("Switched to framework handling. Framework = {0}, Endpoints = {1}",
-                    _framework == null ? "null" : "not null", 
-                    _framework != null ? _framework.Endpoints.Count : 0));
-                try
-                {
-                    await _framework.ResolveRequest(httpRequest, httpResponse, requestData, responseData);
-                }
-                catch (Exception exception)
-                {
-                    Logger.Exception("Cannot resolve Framework endpoint", exception);
-                }
-            }
-            else
-            {
-                // THIS IS A LEGACY OPTION!
-                // THIS MAY NOT ALWAYS WORK
+                    else
+                    {
+                        // THIS IS A LEGACY OPTION!
+                        // THIS MAY NOT ALWAYS WORK
 
-                Logger.Trace("Switched to legacy handling");
+                        Logger.Trace("Switched to legacy handling");
 
-                this.OnWebRequest.Invoke(requestData, responseData);
-                await TaskEx.WaitUntil(() => responseData.FinishedBuilding);
-                await responseData.Transfer(httpResponse);
-            }
+                        this.OnWebRequest.Invoke(requestData, responseData);
+
+                        var sw = Stopwatch.StartNew();
+                        await TaskEx.WaitUntil(() => responseData.FinishedBuilding, 25, 5500);
+                        if (sw.ElapsedMilliseconds > 5000)
+                        {
+                            responseData.Status(HttpStatusCodes.BadGateway)
+                                        .Content(HttpContentTypes.PlainText, "Task ex failed to wait")
+                                        .Finish();
+                            await responseData.Transfer(httpResponse);
+                        }
+                        else
+                            await responseData.Transfer(httpResponse);
+                    }
+
+                    if (!foundEndpointDebounce)
+                    {
+                        responseData.Status(HttpStatusCodes.NotFound)
+                                    .Content(HttpContentTypes.PlainText, "The URL was not found on this server.")
+                                    .Finish();
+
+                        await responseData.Transfer(httpResponse);
+                        foundEndpointDebounce = true;
+                    }
+                }
+                catch (Exception ex)
+                {
+                    string[] html = new string[]
+                    {
+                        "<!DOCTYPE html>",
+                        "<html>",
+                        "   <body>",
+                        "       <h1>Internal Server Error</h1>",
+                        $"       <h3>An error occurred while processing your request. (Request ID: {requestId.ToString()})</h3>",
+                        "       <hr>",
+                        $"       <strong>{ex.ToString()}</strong>",
+                        "   </body>",
+                        "</html>"
+                    };
+                    responseData.Status(HttpStatusCodes.InternalServerError)
+                                .Content(HttpContentTypes.HtmlFile, string.Join("\n", html))
+                                .Finish();
+
+                    await responseData.Transfer(httpResponse);
+                }
+            });
+#pragma warning enable
         }
 
         _listener.Stop();
@@ -259,7 +333,7 @@ public class MgcxmHttpListener : IStartableServer
         Dictionary<string, string> formData = new Dictionary<string, string>();
         List<byte> bodyData = new List<byte>();
 
-        Dictionary<MgcxmString, MgcxmString> responseHeaders = new Dictionary<MgcxmString, MgcxmString>();
+        Dictionary<string, string> responseHeaders = new Dictionary<string, string>();
 
         // build can parse flag and method
         bool canParseMethod = Enum.TryParse(typeof(HttpMethods), httpRequest.HttpMethod, out object? methodObj);
@@ -289,7 +363,7 @@ public class MgcxmHttpListener : IStartableServer
         }
 
         // build content type
-        var contentType = HttpContentTypeHelper.ResolveValue(httpRequest.ContentType!);
+        var contentType = HttpContentTypeHelper.ResolveValueFromString(httpRequest.ContentType!);
 
         // build body
         int ibyte;
@@ -371,6 +445,7 @@ public class MgcxmHttpListener : IStartableServer
             await listentask(_listener);
         });
         _listenThread.Start();
+        GCWrapper.SuppressFinalize(_listenThread);
     }
 
     /// <summary>
@@ -392,6 +467,7 @@ public class MgcxmHttpListener : IStartableServer
     {
         _framework = endpointFramework;
         Logger.Trace($"Set current framework pointing 0x{_framework.AllocatedId.Id:x8}");
+        GCWrapper.SuppressFinalize(_framework);
     }
 
     /// <summary>

@@ -9,6 +9,7 @@ public static class Constants
         CurrentScheduler = ActionScheduler.Create("Main Scheduler");
     }
 
+    public static bool CleanupItems => false;
     public static int ThreadId => Environment.CurrentManagedThreadId;
     public static string WorkingDirectory => Environment.CurrentDirectory;
     public static ActionScheduler CurrentScheduler { get; private set; } = null!;

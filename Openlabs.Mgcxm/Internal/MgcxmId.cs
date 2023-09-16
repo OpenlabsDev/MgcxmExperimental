@@ -71,6 +71,8 @@ public static class MgcxmObjectManager
     /// <exception cref="InvalidOperationException">Throws if the object ID given does not exist in the registry.</exception>
     public static void Deregister(MgcxmId id)
     {
+        if (!Constants.CleanupItems) return;
+
         if (_objects.ContainsKey(id))
         {
             Logger.Trace($"Removing object from registry. Id = 0x{id.Id:x8}");

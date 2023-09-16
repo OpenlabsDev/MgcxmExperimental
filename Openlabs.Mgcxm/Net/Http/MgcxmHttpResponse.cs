@@ -21,7 +21,7 @@ public sealed class MgcxmHttpResponse : IMgcxmHttpResponseModifiable, IMgcxmHttp
     internal static MgcxmHttpResponse New(
         HttpStatusCodes statusCode,
         string errorMessage,
-        Dictionary<MgcxmString, MgcxmString> headers,
+        Dictionary<string, string> headers,
         byte[] response,
         MgcxmId owner)
     {
@@ -65,7 +65,7 @@ public sealed class MgcxmHttpResponse : IMgcxmHttpResponseModifiable, IMgcxmHttp
     /// <inheritdoc/>
     public IMgcxmHttpResponseModifiable Content(HttpContentTypes contentType, byte[] data)
     {
-        _contentType = HttpContentTypeHelper.ResolveValue(contentType);
+        _contentType = HttpContentTypeHelper.ResolveValueFromEnum(contentType);
         _responseData = data;
         return this;
     }
@@ -146,7 +146,7 @@ public sealed class MgcxmHttpResponse : IMgcxmHttpResponseModifiable, IMgcxmHttp
     /// <summary>
     /// Gets the headers of the response.
     /// </summary>
-    public Dictionary<MgcxmString, MgcxmString> Headers => _headers;
+    public Dictionary<string, string> Headers => _headers;
 
     /// <summary>
     /// Gets the response data as a byte array.
@@ -161,7 +161,7 @@ public sealed class MgcxmHttpResponse : IMgcxmHttpResponseModifiable, IMgcxmHttp
     private HttpStatusCodes _statusCode;
     private string _errorMessage;
     private string _contentType;
-    private Dictionary<MgcxmString, MgcxmString> _headers;
+    private Dictionary<string, string> _headers;
     private byte[] _responseData;
     private MgcxmId _ownerId;
 }

@@ -14,12 +14,36 @@ using Random = Openlabs.Mgcxm.Common.Random;
 
 namespace Openlabs.Mgcxm.Net;
 
-/*public class MgcxmSocketListenerInherited : MgcxmHttpListener
+[Obsolete("Do not use. This was a test that has been scrapped.", error: true)]
+/// <summary>
+/// Represents a socket listener for handling WebSocket and HTTP requests.
+/// </summary>
+/// <remarks>
+/// This class uses the <see cref="MgcxmHttpListener"/> as a base class.
+/// <para>There are supposed to be bugs, because this is a test class.</para>
+/// </remarks>
+internal class MgcxmSocketListenerInherited : MgcxmHttpListener
 {
     public MgcxmSocketListenerInherited(IpAddress addressToHostOn) : base(addressToHostOn)
     {
     }
-}*/
+
+    public void Start()
+    {
+        base.StartInternal(ListenToRequests);
+    }
+
+    private async Task ListenToRequests(HttpListener listener)
+    {
+        listener.Start();
+
+        while (base.ListenToRequests)
+        {
+        }
+
+        listener.Stop();
+    }
+}
 
 /// <summary>
 /// Represents a socket listener for handling WebSocket and HTTP requests.
@@ -36,9 +60,15 @@ public class MgcxmSocketListener : IMgcxmSystemObject, IStartableServer
     /// </summary>
     /// <param name="addressToHostOn">The IP address to host the socket listener on.</param>
     /// <param name="certificate">The SSL certificate to use.</param>
-    public MgcxmSocketListener(IpAddress addressToHostOn, X509Certificate2 certificate = null)
+    public MgcxmSocketListener(IpAddress addressToHostOn, string host = "", string postfix = "", X509Certificate2 certificate = null)
     {
-        _listener = new MgcxmHttpListener(addressToHostOn, certificate);
+        GCWrapper.SuppressFinalize(this);
+        GCWrapper.SuppressFinalize(_routes);
+        GCWrapper.SuppressFinalize(AllocatedId);
+        GCWrapper.SuppressFinalize(_pollingReceiver);
+        GCWrapper.SuppressFinalize(_socketThreads);
+
+        _listener = new MgcxmHttpListener(addressToHostOn, host, postfix, certificate);
         _pollingReceiver.OnPollReceived.AddAction((pollRequest) => { });
 
         AllocatedId = GetHashCode();
@@ -246,22 +276,27 @@ public class MgcxmSocketListener : IMgcxmSystemObject, IStartableServer
             if (_connectionHandler != null) _connectionHandler.Internal_OnConnection(socket);
             while (keepListening)
             {
-                _webSocket = _socket.GetRawWebSocket();
-
-                byte[] buffer = new byte[16 * 16 * 4 * 2 * 2];
-                var messageResult = await _webSocket.ReceiveAsync(buffer, CancellationToken.None);
-
-                if ((closeStatus = messageResult.CloseStatus) != null)
-                    keepListening = false; // clear execution path
-                else
+                try
                 {
-                    byte[] data = new byte[messageResult.Count];
-                    for (int i = 0; i < messageResult.Count; i++)
-                        data[i] = buffer[i];
-                    if (_connectionHandler != null) _connectionHandler.OnMessage(data);
+                    _webSocket = _socket.GetRawWebSocket();
+
+                    byte[] buffer = new byte[16 * 16 * 4 * 2 * 2];
+                    var messageResult = await _webSocket.ReceiveAsync(buffer, CancellationToken.None);
+
+                    if ((closeStatus = messageResult.CloseStatus) != null)
+                        keepListening = false; // clear execution path
+                    else
+                    {
+                        byte[] data = new byte[messageResult.Count];
+                        for (int i = 0; i < messageResult.Count; i++)
+                            data[i] = buffer[i];
+                        if (_connectionHandler != null) _connectionHandler.OnMessage(data);
+                    }
                 }
+                catch { }
             }
             if (_connectionHandler != null) _connectionHandler.OnDisconnection(closeStatus);
+            _pollingReceiver.OnPollReceived.RemoveAction(OnPollRequest);
         }
 
         private MgcxmSocketConnectionHandler _connectionHandler;

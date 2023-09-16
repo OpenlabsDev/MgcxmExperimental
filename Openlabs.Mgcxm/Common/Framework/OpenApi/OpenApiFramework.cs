@@ -1,5 +1,6 @@
 // Copr. (c) Nexus 2023. All rights reserved.
 
+using System.Diagnostics;
 using System.Net;
 
 using Openlabs.Mgcxm.Internal;
@@ -29,8 +30,17 @@ public class OpenApiFramework : EndpointFramework<OpenApiUrl>
         MgcxmHttpEndpoint endpoint = EndpointResolver.ResolveUrl(mgcxmRequest.Uri, mgcxmRequest);
         endpoint.OnEndpointRequested(mgcxmRequest, mgcxmResponse);
 
-        await TaskEx.WaitUntil(() => mgcxmResponse.FinishedBuilding);
-        await mgcxmResponse.Transfer(listenerResponse);
+        var sw = Stopwatch.StartNew();
+        await TaskEx.WaitUntil(() => mgcxmResponse.FinishedBuilding, 25, 5500);
+        if (sw.ElapsedMilliseconds > 5000)
+        {
+            mgcxmResponse.Status(HttpStatusCodes.BadGateway)
+                        .Content(HttpContentTypes.PlainText, "Task ex failed to wait")
+                        .Finish();
+            await mgcxmResponse.Transfer(listenerResponse);
+        }
+        else
+            await mgcxmResponse.Transfer(listenerResponse);
     }
 
     public override void AddEndpoint(EndpointUrl url, HttpMethods method, OnEndpointRequested requestedHandler, MgcxmHttpListener listener)

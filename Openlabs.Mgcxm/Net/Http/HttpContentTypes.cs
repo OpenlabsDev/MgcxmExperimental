@@ -108,7 +108,37 @@ public static class HttpContentTypeHelper
     /// </summary>
     /// <param name="contentType">The <see cref="HttpContentTypes"/> value.</param>
     /// <returns>The resolved MIME type.</returns>
-    public static string ResolveValue(HttpContentTypes contentType)
+    public static string ResolveValueFromExtension(string extension)
+    {
+        try
+        {
+            var type = typeof(HttpContentTypes);
+            var values = type.GetMembers();
+            
+            foreach (var enumValueMemberInfo in values)
+            {
+                CommonMimeTypeAttribute mimeTypeAttribute;
+                if ((mimeTypeAttribute = enumValueMemberInfo.GetCustomAttribute<CommonMimeTypeAttribute>()) == null)
+                    throw new InvalidDataException("A common mime type is not attached to this enum.");
+
+                if (mimeTypeAttribute.Identifiers.Contains(extension))
+                    return mimeTypeAttribute.MimeType;
+            }
+
+            throw new Exception("Cannot get mime type from extension. No extension was found.");
+        }
+        catch
+        {
+            return ResolveValueFromEnum(HttpContentTypes.Invalid);
+        }
+    }
+
+    /// <summary>
+    /// Resolves the MIME type associated with the specified <see cref="HttpContentTypes"/>.
+    /// </summary>
+    /// <param name="contentType">The <see cref="HttpContentTypes"/> value.</param>
+    /// <returns>The resolved MIME type.</returns>
+    public static string ResolveValueFromEnum(HttpContentTypes contentType)
     {
         try
         {
@@ -124,7 +154,7 @@ public static class HttpContentTypeHelper
         }
         catch
         {
-            return ResolveValue(HttpContentTypes.Invalid);
+            return ResolveValueFromEnum(HttpContentTypes.Invalid);
         }
     }
 
@@ -133,7 +163,7 @@ public static class HttpContentTypeHelper
     /// </summary>
     /// <param name="contentType">The MIME type to resolve.</param>
     /// <returns>The <see cref="HttpContentTypes"/> value.</returns>
-    public static HttpContentTypes ResolveValue(string contentType)
+    public static HttpContentTypes ResolveValueFromString(string contentType)
     {
         var type = typeof(HttpContentTypes);
         var values = type.GetMembers();

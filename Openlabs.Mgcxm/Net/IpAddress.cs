@@ -9,9 +9,7 @@ namespace Openlabs.Mgcxm.Net;
 /// </summary>
 public class IpAddress : IIpAddress
 {
-    /// <summary>
-    /// The actual System object IP address.
-    /// </summary>
+    /// <inheritdoc/>
     public IPAddress ActualIpAddress => IPAddress.Parse(ToString());
 
     /// <summary>
@@ -25,6 +23,10 @@ public class IpAddress : IIpAddress
         _port = port;
     }
 
+    /// <summary>
+    /// Creates an <see cref="IpAddress"/> from a System.Net.<see cref="IPAddress"/>
+    /// </summary>
+    /// <param name="ip">The IP to use.</param>
     public static implicit operator IpAddress(IPAddress ip)
     {
         string ipString = ip.ToString();
@@ -36,7 +38,11 @@ public class IpAddress : IIpAddress
 
         return new IpAddress(parts[0], port);
     }
-    
+
+    /// <summary>
+    /// Creates an <see cref="IpAddress"/> from a <see cref="string"/>
+    /// </summary>
+    /// <param name="ipString">The string to create the IP from.</param>
     public static implicit operator IpAddress(string ipString)
     {
         string[] parts = ipString.Split(":");
@@ -48,9 +54,16 @@ public class IpAddress : IIpAddress
         return new IpAddress(parts[0], port);
     }
 
+    /// <summary>
+    /// Creates an System.Net.<see cref="IPAddress"/> from a <see cref="IpAddress"/>
+    /// </summary>
+    /// <param name="ip">The IP to use.</param>
     public static implicit operator IPAddress(IpAddress ip)
         => ip.ActualIpAddress;
     
+    /// <summary>
+    /// Creates a well-formed IP address.
+    /// </summary>
     public override string ToString()
     {
         string formedIp = _origin;
@@ -60,14 +73,10 @@ public class IpAddress : IIpAddress
         return formedIp;
     }
 
-    /// <summary>
-    /// The host of the IP address. (localhost / 1.1.1.1)
-    /// </summary>
+    /// <inheritdoc/>
     public string Origin => _origin;
 
-    /// <summary>
-    /// The port of the IP address. (80 / 443)
-    /// </summary>
+    /// <inheritdoc/>
     public ushort Port => _port;
 
     private string _origin;
