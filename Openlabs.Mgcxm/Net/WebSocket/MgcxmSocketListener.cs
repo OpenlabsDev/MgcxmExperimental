@@ -142,6 +142,26 @@ public class MgcxmSocketListener : IMgcxmSystemObject, IStartableServer
                 : context.Request.RawUrl;
             MgcxmHttpListener.FormatUrl(ref routeUrl);
 
+            var httpRequest = context.Request;
+            var httpResponse = context.Response;
+
+            // build needed data
+            string query = "";
+            string url = httpRequest.Url.PathAndQuery;
+
+            MgcxmHttpListener.CreateWebRequestData(AllocatedId, ref url, ref query, httpRequest, httpResponse, out MgcxmHttpRequest requestData, out MgcxmHttpResponse responseData);
+
+            // add required headers
+            responseData.Header("X-Powered-By", "Mgcxm.Net");
+            responseData.Header("Vary", "Accept-Encoding");
+            responseData.Header("Request-Context", $"appId=cid-v1:{Guid.NewGuid().ToString()}");
+            responseData.Header("Pragma", "no-cache");
+            responseData.Header("Cache-Control", "no-cache");
+            responseData.Header("Expires", "-1");
+
+            httpResponse.KeepAlive = true;
+            responseData.Header("Connection", "keep-alive");
+
             // accept ws request
             if (context != null &&
                 IsValidRoute(routeUrl, out var route) && 
@@ -163,7 +183,7 @@ public class MgcxmSocketListener : IMgcxmSystemObject, IStartableServer
                         _socketThreads.Add(socketId_str, new SocketThread(_pollingReceiver));
                     
                     _pollingReceiver.SendPoll(this, status => { });
-                    await _socketThreads[socketId_str].Start(socket, route);
+                    await _socketThreads[socketId_str].Start(socket, route, requestData);
                     
                     // once its done, remove the socket
                     if (_socketThreads.ContainsKey(socketId_str)) _socketThreads.Remove(socketId_str);
@@ -173,14 +193,6 @@ public class MgcxmSocketListener : IMgcxmSystemObject, IStartableServer
             // accept any non-ws requests
             if (context != null && !context.Request.IsWebSocketRequest)
             {
-                var httpRequest = context.Request;
-                var httpResponse = context.Response;
-                
-                // build needed data
-                string query = "";
-                string url = httpRequest.Url.PathAndQuery;
-
-                MgcxmHttpListener.CreateWebRequestData(AllocatedId, ref url, ref query, httpRequest, httpResponse, out MgcxmHttpRequest requestData, out MgcxmHttpResponse responseData);
 
                 // log request
                 Logger.Info($"--------------- Ws Http Request ---------------");
@@ -194,17 +206,6 @@ public class MgcxmSocketListener : IMgcxmSystemObject, IStartableServer
                     Logger.Info($"Content = {requestData.Body.Truncate(15, "...")}");
                 }
 
-                // add required headers
-                responseData.Header("X-Powered-By", "Mgcxm.Net");
-                responseData.Header("Vary", "Accept-Encoding");
-                responseData.Header("Request-Context", $"appId=cid-v1:{Guid.NewGuid().ToString()}");
-                responseData.Header("Pragma", "no-cache");
-                responseData.Header("Cache-Control", "no-cache");
-                responseData.Header("Expires", "-1");
-            
-                httpResponse.KeepAlive = true;
-                responseData.Header("Connection", "keep-alive");
-                
                 OnWebRequest(requestData, responseData);
                 await responseData.Transfer(httpResponse);
             }
@@ -262,7 +263,7 @@ public class MgcxmSocketListener : IMgcxmSystemObject, IStartableServer
             }
         }
 
-        public async Task Start(MgcxmSocket socket, MgcxmSocketRoute route)
+        public async Task Start(MgcxmSocket socket, MgcxmSocketRoute route, MgcxmHttpRequest negotiateUpgradeRequest)
         {
             _route = route ?? throw new ArgumentNullException(nameof(route));
             _socket = socket ?? throw new ArgumentNullException(nameof(socket));
@@ -273,6 +274,8 @@ public class MgcxmSocketListener : IMgcxmSystemObject, IStartableServer
 
             WebSocketCloseStatus? closeStatus = null;
             bool keepListening = true;
+
+            if (!_connectionHandler.NegotiateUpgrade(negotiateUpgradeRequest)) return;
             if (_connectionHandler != null) _connectionHandler.Internal_OnConnection(socket);
             while (keepListening)
             {

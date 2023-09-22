@@ -19,6 +19,8 @@ public abstract class MgcxmSocketConnectionHandler
         OnConnection(socket);
     }
 
+    public virtual bool NegotiateUpgrade(MgcxmHttpRequest request) => true;
+
     /// <summary>
     /// Invoked when a WebSocket connection is established.
     /// </summary>
