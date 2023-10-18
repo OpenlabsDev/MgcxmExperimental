@@ -24,8 +24,7 @@
     </PropertyGroup>
 
     <ItemGroup>
-      <Folder Include="Common\GUI" />
-      <Folder Include="Internal\CustomVariables" />
+      <Folder Include="___ PLEASE READ\" />
     </ItemGroup>
 
     <ItemGroup>

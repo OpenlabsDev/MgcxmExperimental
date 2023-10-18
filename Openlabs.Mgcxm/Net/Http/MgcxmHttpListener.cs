@@ -44,8 +44,10 @@ public class MgcxmHttpListener : IStartableServer
     /// Initializes a new instance of the MgcxmHttpListener class.
     /// </summary>
     /// <param name="addressToHostOn">The IP address to host the listener on.</param>
+    /// <param name="host">The host to use for the server. Default value is localhost</param>
+    /// <param name="postfix">The path to use on the server. Default value is /</param>
     /// <param name="certificate">The SSL certificate to use.</param>
-    public MgcxmHttpListener(IpAddress addressToHostOn, string host = "", string postfix = "", X509Certificate2 certificate = null)
+    public MgcxmHttpListener(IpAddress addressToHostOn, string host = "localhost", string postfix = "/", X509Certificate2 certificate = null)
     {
         GCWrapper.SuppressFinalize(this);
         GCWrapper.SuppressFinalize(_allocatedId);
@@ -54,10 +56,13 @@ public class MgcxmHttpListener : IStartableServer
         Certificate = certificate;
         Address = addressToHostOn;
 
+        string scheme = "http"; // default scheme is http
+        if (certificate != null) scheme += "s";
+
         // Initialize the HttpListener with the provided IP address and port.
         _listener = new HttpListener();
         _listener.Prefixes.Add(
-            $"http{(certificate != null ? "s" : string.Empty)}://{AddressUtilities.FormatIpAddress(addressToHostOn.Origin)}:{addressToHostOn.Port}/" + postfix);
+            $"{scheme}://{AddressUtilities.FormatIpAddress(addressToHostOn.Origin)}:{addressToHostOn.Port}{postfix}");
 
         // Generate an allocated ID for the listener.
         _allocatedId = GetHashCode();
@@ -156,9 +161,6 @@ public class MgcxmHttpListener : IStartableServer
 #pragma warning disable
             Task.Run(async () =>
             {
-                if (httpRequest.Url.Host != _host)
-                    return;
-
                 // build needed data
                 string query = "";
                 string url = httpRequest.Url!.PathAndQuery;
@@ -193,13 +195,21 @@ public class MgcxmHttpListener : IStartableServer
                     responseData.Header("Expires", "-1");
                     responseData.Header("Connection", "keep-alive");
 
+                    if (httpRequest.Url.Host != _host)
+                    {
+                        responseData.Status(0)
+                                    .Content(HttpContentTypes.HtmlFile, "<h1>Invalid host</h1>")
+                                    .Finish();
+                        await responseData.Transfer(httpResponse);
+                        return;
+                    }
 
                     bool foundEndpointDebounce = false;
 
                     // write to response
                     if (_framework == null && _endpoints.Count > 1)
                     {
-                        Logger.Trace(string.Format("Switched to default handling. Framework = {0}, Endpoints = {1}", _framework == null ? "null" : "not null", _endpoints.Count));
+                        Logger.Trace("Using default handling");
                         var endpoint = _endpoints.Find(x => x.Url == requestData.Uri && x.RequiredMethod == Enum.Parse<HttpMethods>(httpRequest.HttpMethod));
                         if (endpoint != null)
                         {
@@ -249,7 +259,7 @@ public class MgcxmHttpListener : IStartableServer
                     }
                     else if (_framework != null && _framework.Endpoints.Count > 0)
                     {
-                        Logger.Trace(string.Format("Switched to framework handling. Framework = {0}, Endpoints = {1}",
+                        Logger.Trace(string.Format("Using framework handling. Framework = {0}, Endpoints = {1}",
                             _framework == null ? "null" : "not null",
                             _framework != null ? _framework.Endpoints.Count : 0));
                         try
@@ -266,7 +276,14 @@ public class MgcxmHttpListener : IStartableServer
                         // THIS IS A LEGACY OPTION!
                         // THIS MAY NOT ALWAYS WORK
 
-                        Logger.Trace("Switched to legacy handling");
+                        // ==========================================================================
+                        // 6:00 PM (10/18/2023)
+                        // Author: nexus
+                        //
+                        // this option is known to break every so often, please dont
+                        // use it lol
+                        // ==========================================================================
+                        Logger.Trace("Using legacy request handling: OnWebRequest()");
 
                         this.OnWebRequest.Invoke(requestData, responseData);
 
@@ -530,6 +547,7 @@ public class MgcxmHttpListener : IStartableServer
 /// <param name="listener">The HttpListener instance to listen for requests.</param>
 public delegate Task AsyncListenTask(HttpListener listener);
 
+#region DEBUG
 /// <summary>
 /// Represents a debug info handler for MgcxmHttpListener.
 /// </summary>
@@ -551,3 +569,4 @@ public sealed class MgcxmHttpListenerDebugInfo : DebugInfoHandler
         Logger.Trace($"Framework = 0x{(tgt.Framework != null ? tgt.Framework.AllocatedId.Id : 0):x8}");
     }
 }
+#endregion
