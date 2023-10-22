@@ -1,5 +1,4 @@
 // Copr. (c) Nexus 2023. All rights reserved.
-#define LOG_HTTP_REQUESTS
 
 using System;
 using System.Diagnostics;
@@ -311,14 +310,16 @@ public class MgcxmHttpListener : IStartableServer
                         foundEndpointDebounce = true;
                     }
 
-#if LOG_HTTP_REQUESTS
-                    File.AppendAllText("httpLog.log", string.Format("---------- HTTP Request ----------\nUrl: {0}\nMethod: {1}\nContent-Type: {2}\nPost Data: {3}\nResponse: {3}\n",
-                        requestData.Uri,
-                        requestData.HttpMethod,
-                        requestData.ContentType,
-                        requestData.Body,
-                        Encoding.UTF8.GetString(responseData.ResponseData)));
-#endif
+                    if (MgcxmConfiguration.HasBootstrapConfiguration && MgcxmConfiguration.CurrentBootstrapConfiguration.logRequests)
+                    {
+                        File.AppendAllText("httpLog.log", string.Format("---------- HTTP Request ----------\nUrl: {0}\nMethod: {1}\nContent-Type: {2}\nPost Data: {3}\nResponse: {3}\n",
+                            requestData.Uri,
+                            requestData.HttpMethod,
+                            requestData.ContentType,
+                            requestData.Body,
+                            Encoding.UTF8.GetString(responseData.ResponseData)));
+                    }
+
                 }
                 catch (Exception ex)
                 {
