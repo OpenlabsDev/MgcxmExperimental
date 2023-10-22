@@ -38,16 +38,16 @@ public static class Logger
         string dateStr = string.Format("{0:u}", dateTime).Split(" ")[1].Replace("Z", "");
         string levelStr = level.ToString()
             .PadRight(5, ' ');
-        string processId = string.Format("proc@{0}", Process.GetCurrentProcess().Id);
         
         string sinkName = (sink != null ? sink.SinkName : "   ").PadRight(6, ' ');
+        if (sink == null) sinkName = "Main".PadRight(6, ' ');
         
         string ansiMessageStr = string.Format("[{0}] ", dateStr.Pastel("#33ed1f"));
-        ansiMessageStr += string.Format("[{0} / {1}] ", sinkName.Pastel(ConsoleColor.Magenta), processId.Pastel(ConsoleColor.Magenta));
+        ansiMessageStr += string.Format("[{0}] ", sinkName.Pastel("#3e89e6"));
         ansiMessageStr += string.Format("[{0}] {1}", levelStr.Pastel(currentColor), message.Pastel(currentColor));
         
         string nonansiMessageStr = string.Format("[{0}] ", dateStr);
-        nonansiMessageStr += string.Format("[{0} / {1}] ", sinkName, processId);
+        nonansiMessageStr += string.Format("[{0}] ", sinkName);
         nonansiMessageStr += string.Format("[{0}] {1}", levelStr, message);
         _logMessages.Add(nonansiMessageStr);
         

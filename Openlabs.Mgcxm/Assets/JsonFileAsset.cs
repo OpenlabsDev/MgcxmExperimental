@@ -19,16 +19,24 @@ public class JsonFileAsset : FileAsset
     /// <exception cref="InvalidOperationException">Thrown when the system fails to deserialize the contents into the specified type.</exception>
     public T ReadObject<T>()
     {
-        AssetManager.LogSink.Debug("Reading JsonFileAsset({0}) as '{1}' type", Guid, typeof(T).Name);
-        string contents = base.ReadString();
-        AssetManager.LogSink.Debug(contents);
+        try
+        {
+            AssetManager.LogSink.Debug("Reading JsonFileAsset({0}) as '{1}' type", Guid, typeof(T).Name);
+            string contents = base.ReadString();
+            AssetManager.LogSink.Debug(contents);
 
-        T deserializedJson = contents.FromJson<T>()
-                             ?? throw new InvalidOperationException("Cannot read as JSON. The system was not able to deserialize the contents.");
+            var deserializedJson = JsonConvert.DeserializeObject<T>(contents)
+                                 ?? throw new InvalidOperationException("Cannot read as JSON. The system was not able to deserialize the contents.");
 
-        if (deserializedJson == null)
-            AssetManager.LogSink.Warning("The JSON produced by JsonFileAsset({0}) is null! Was this supposed to happen?", Guid);
+            if (deserializedJson == null)
+                AssetManager.LogSink.Warning("The JSON produced by JsonFileAsset({0}) is null! Was this supposed to happen?", Guid);
 
-        return deserializedJson!;
+            return deserializedJson!;
+        }
+        catch (Exception ex)
+        {
+            Logger.Exception("Failed to deserialize DTO", ex);
+            throw new InvalidOperationException("Cannot read as JSON. The system was not able to deserialize the contents.");
+        }
     }
 }

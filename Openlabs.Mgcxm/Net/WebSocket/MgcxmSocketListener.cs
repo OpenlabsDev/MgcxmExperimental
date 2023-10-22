@@ -60,7 +60,7 @@ public class MgcxmSocketListener : IMgcxmSystemObject, IStartableServer
     /// </summary>
     /// <param name="addressToHostOn">The IP address to host the socket listener on.</param>
     /// <param name="certificate">The SSL certificate to use.</param>
-    public MgcxmSocketListener(IpAddress addressToHostOn, string host = "", string postfix = "", X509Certificate2 certificate = null)
+    public MgcxmSocketListener(IpAddress addressToHostOn, string host = "localhost", string postfix = "/", X509Certificate2 certificate = null)
     {
         GCWrapper.SuppressFinalize(this);
         GCWrapper.SuppressFinalize(_routes);

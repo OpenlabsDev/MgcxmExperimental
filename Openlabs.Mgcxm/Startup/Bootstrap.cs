@@ -66,6 +66,11 @@ public class BootstrapOptions
     public bool useExperimentalOptions;
 
     /// <summary>
+    /// Gets or sets a value indicating whether to log requests to a file named httpLog.log
+    /// </summary>
+    public bool logRequests;
+
+    /// <summary>
     /// Gets or sets the minimum log level for logging messages.
     /// </summary>
     public LogLevel minimumLogLevel;
