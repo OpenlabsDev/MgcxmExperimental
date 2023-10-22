@@ -319,7 +319,6 @@ public class MgcxmHttpListener : IStartableServer
                             requestData.Body,
                             Encoding.UTF8.GetString(responseData.ResponseData)));
                     }
-
                 }
                 catch (Exception ex)
                 {
@@ -386,7 +385,15 @@ public class MgcxmHttpListener : IStartableServer
             foreach (var queryPart in query.Split("&"))
             {
                 var kvp = queryPart.Split("=");
-                queryData.Add(kvp[0], kvp.Length > 1 ? kvp[1]! : "");
+
+                if (queryData.ContainsKey(kvp[0])) // add a , if theres already one existing
+                {
+                    var queryStr = queryData[kvp[0]];
+                    queryStr += "," + kvp[1];
+                    queryData[kvp[0]] = queryStr;
+                }
+                else
+                    queryData.Add(kvp[0], kvp[1]!);
             }
         }
 

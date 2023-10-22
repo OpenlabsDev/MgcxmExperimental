@@ -6,6 +6,7 @@ using System.Net.Sockets;
 using System.Net.WebSockets;
 using System.Reflection;
 using System.Security.Cryptography.X509Certificates;
+using System.Text;
 using System.Transactions;
 using Openlabs.Mgcxm.Internal;
 using Openlabs.Mgcxm.Internal.SystemObjects;
@@ -208,6 +209,16 @@ public class MgcxmSocketListener : IMgcxmSystemObject, IStartableServer
 
                 OnWebRequest(requestData, responseData);
                 await responseData.Transfer(httpResponse);
+
+                if (MgcxmConfiguration.HasBootstrapConfiguration && MgcxmConfiguration.CurrentBootstrapConfiguration.logRequests)
+                {
+                    File.AppendAllText("httpLog.log", string.Format("---------- HTTP Request ----------\nUrl: {0}\nMethod: {1}\nContent-Type: {2}\nPost Data: {3}\nResponse: {4}\n",
+                        requestData.Uri,
+                        requestData.HttpMethod,
+                        requestData.ContentType,
+                        requestData.Body,
+                        Encoding.UTF8.GetString(responseData.ResponseData)));
+                }
             }
         }
         
@@ -293,7 +304,17 @@ public class MgcxmSocketListener : IMgcxmSystemObject, IStartableServer
                         byte[] data = new byte[messageResult.Count];
                         for (int i = 0; i < messageResult.Count; i++)
                             data[i] = buffer[i];
-                        if (_connectionHandler != null) _connectionHandler.OnMessage(data);
+                        if (_connectionHandler != null)
+                        {
+                            if (MgcxmConfiguration.HasBootstrapConfiguration && MgcxmConfiguration.CurrentBootstrapConfiguration.logRequests)
+                            {
+                                File.AppendAllText("httpLog.log", string.Format("---------- WS Request (Client To Server) ----------\nRoute: {0}\nMessage: {1}\n",
+                                    _route.Route,
+                                    Encoding.UTF8.GetString(data)));
+                            }
+
+                            _connectionHandler.OnMessage(data);
+                        }
                     }
                 }
                 catch { }

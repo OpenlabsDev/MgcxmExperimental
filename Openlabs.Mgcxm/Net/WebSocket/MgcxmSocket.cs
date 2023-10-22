@@ -39,6 +39,13 @@ public sealed class MgcxmSocket : IMgcxmSystemObject
     /// <returns>A Task representing the asynchronous operation.</returns>
     public async Task SendMessage(byte[] data)
     {
+        if (MgcxmConfiguration.HasBootstrapConfiguration && MgcxmConfiguration.CurrentBootstrapConfiguration.logRequests)
+        {
+            File.AppendAllText("httpLog.log", string.Format("---------- WS Request (Server To Client) ----------\nRoute: {0}\nMessage: {1}\n",
+                _context.RequestUri.AbsolutePath,
+                Encoding.UTF8.GetString(data)));
+        }
+
         await _context.WebSocket.SendAsync(
             data,
             WebSocketMessageType.Text,
