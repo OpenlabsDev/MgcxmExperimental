@@ -144,12 +144,12 @@ public class MgcxmHttpListener : IStartableServer
     /// <summary>
     /// Runs before response data is given
     /// </summary>
-    public virtual void DoPreprocess() { }
+    public virtual async Task DoPreprocess() { }
 
     /// <summary>
     /// Runs after response data is given
     /// </summary>
-    public virtual void DoPostprocess() { }
+    public virtual async Task DoPostprocess() { }
     #endregion
 
     private async Task StartListening()
@@ -202,7 +202,7 @@ public class MgcxmHttpListener : IStartableServer
                     Response.Header("Expires", "-1");
                     Response.Header("Connection", "keep-alive");
 
-                    DoPreprocess();
+                    await DoPreprocess();
 
                     if (httpRequest.Url.Host != _host)
                     {
@@ -351,7 +351,10 @@ public class MgcxmHttpListener : IStartableServer
                 }
             });
 
-            DoPostprocess();
+            await DoPostprocess();
+
+            Request = null;
+            Response = null;
 #pragma warning enable
         }
 
