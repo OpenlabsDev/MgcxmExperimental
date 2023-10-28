@@ -197,7 +197,7 @@ public class MgcxmHttpListener : IStartableServer
 
                     if (httpRequest.Url.Host != _host)
                     {
-                        responseData.Status(0)
+                        responseData.Status(HttpStatusCodes.BadGateway)
                                     .Content(HttpContentTypes.HtmlFile, "<h1>Invalid host</h1>")
                                     .Finish();
                         await responseData.Transfer(httpResponse);

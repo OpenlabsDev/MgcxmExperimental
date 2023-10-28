@@ -1,6 +1,7 @@
 // Copr. (c) Nexus 2023. All rights reserved.
 
 using System;
+using System.Diagnostics;
 using System.Net;
 using System.Net.Sockets;
 using System.Net.WebSockets;
@@ -53,8 +54,7 @@ public class MgcxmSocketListener : IMgcxmSystemObject, IStartableServer
 {
     private MgcxmHttpListener _listener;
     private List<MgcxmSocketRoute> _routes = new();
-    private PollingReceiver _pollingReceiver = new();
-    private Dictionary<MgcxmString, SocketThread> _socketThreads = new();
+    private Dictionary<string, SocketThread> _socketThreads = new();
 
     /// <summary>
     /// Initializes a new instance of the MgcxmSocketListener class with the specified IP address to host on.
@@ -66,11 +66,9 @@ public class MgcxmSocketListener : IMgcxmSystemObject, IStartableServer
         GCWrapper.SuppressFinalize(this);
         GCWrapper.SuppressFinalize(_routes);
         GCWrapper.SuppressFinalize(AllocatedId);
-        GCWrapper.SuppressFinalize(_pollingReceiver);
         GCWrapper.SuppressFinalize(_socketThreads);
 
         _listener = new MgcxmHttpListener(addressToHostOn, host, postfix, certificate);
-        _pollingReceiver.OnPollReceived.AddAction((pollRequest) => { });
 
         AllocatedId = GetHashCode();
         MgcxmObjectManager.Register(AllocatedId, this); // register object
@@ -79,7 +77,7 @@ public class MgcxmSocketListener : IMgcxmSystemObject, IStartableServer
             typeof(SocketRouteAttribute),
             (method, attr) =>
             {
-                _routes.Add(new MgcxmSocketRoute(AllocatedId, attr.Route, false,
+                _routes.Add(new MgcxmSocketRoute(AllocatedId, attr.Route.TrimEnd('/'), false,
                     (socket) =>
                     {
                         var parameters = method.GetParameters();
@@ -121,7 +119,7 @@ public class MgcxmSocketListener : IMgcxmSystemObject, IStartableServer
         
         foreach (var route in _routes)
         {
-            if (route.Route == routeUrl)
+            if (route.Route == routeUrl.TrimEnd('/'))
             {
                 foundRoute = route;
                 return true;
@@ -138,10 +136,6 @@ public class MgcxmSocketListener : IMgcxmSystemObject, IStartableServer
         while (_listener.ListenToRequests)
         {
             var context = await listener.GetContextAsync();
-            string routeUrl = context.Request.RawUrl.Contains("?") 
-                ? context.Request.RawUrl.Split("?")[0] 
-                : context.Request.RawUrl;
-            MgcxmHttpListener.FormatUrl(ref routeUrl);
 
             var httpRequest = context.Request;
             var httpResponse = context.Response;
@@ -163,38 +157,51 @@ public class MgcxmSocketListener : IMgcxmSystemObject, IStartableServer
             httpResponse.KeepAlive = true;
             responseData.Header("Connection", "keep-alive");
 
+            var validRoute = IsValidRoute(requestData.Uri, out var route);
+            if (validRoute) Logger.Trace("Valid route found: " + requestData.Uri);
+            if (context.Request.IsWebSocketRequest)
+                Logger.Trace("Is websocket request");
+
             // accept ws request
             if (context != null &&
-                IsValidRoute(routeUrl, out var route) && 
+                validRoute &&
                 context.Request.IsWebSocketRequest)
             {
                 var socketContext = await context.AcceptWebSocketAsync(null);
-            
+
                 Logger.Info($"--------------- Ws Request ---------------");
                 Logger.Info($"Server Id = 0x{AllocatedId.Id:x8} ({this.GetType().Name})");
-                Logger.Info($"Requested Url = {routeUrl}");
+                Logger.Info($"Requested Url = {requestData.Uri}");
 
-                (new Thread(async () =>
+                await Task.Run(async () =>
                 {
                     var socket = MgcxmSocket.Create(socketContext);
                     string socketId = socket.GetSocketId();
-                    MgcxmString socketId_str = socketId;
-                    
-                    if (!_socketThreads.ContainsKey(socketId_str)) 
-                        _socketThreads.Add(socketId_str, new SocketThread(_pollingReceiver));
-                    
-                    _pollingReceiver.SendPoll(this, status => { });
-                    await _socketThreads[socketId_str].Start(socket, route, requestData);
-                    
-                    // once its done, remove the socket
-                    if (_socketThreads.ContainsKey(socketId_str)) _socketThreads.Remove(socketId_str);
-                })).Start();
+                    route.OnSocketUpgraded(socket);
+
+                    try
+                    {
+                        SocketThread socketThread = null;
+                        if (!_socketThreads.ContainsKey(socketId))
+                            _socketThreads.Add(socketId, socketThread = new SocketThread());
+                        else socketThread = _socketThreads[socketId];
+
+                        await socketThread.Start(socket, route, requestData);
+
+                        // once its done, remove the socket
+                        _socketThreads.Remove(socketId);
+                    }
+                    catch (Exception ex)
+                    {
+                        Logger.Exception("Failed to serve WS request", ex);
+                        if (_socketThreads.ContainsKey(socketId))
+                            _socketThreads.Remove(socketId);
+                    }
+                });
             }
-
             // accept any non-ws requests
-            if (context != null && !context.Request.IsWebSocketRequest)
+            else if (context != null && !context.Request.IsWebSocketRequest)
             {
-
                 // log request
                 Logger.Info($"--------------- Ws Http Request ---------------");
                 Logger.Info($"Server Id = 0x{AllocatedId.Id:x8} ({this.GetType().Name})");
@@ -207,7 +214,7 @@ public class MgcxmSocketListener : IMgcxmSystemObject, IStartableServer
                     Logger.Info($"Content = {requestData.Body.Truncate(15, "...")}");
                 }
 
-                OnWebRequest(requestData, responseData);
+                await OnWebRequest(requestData, responseData);
                 await responseData.Transfer(httpResponse);
 
                 if (MgcxmConfiguration.HasBootstrapConfiguration && MgcxmConfiguration.CurrentBootstrapConfiguration.logRequests)
@@ -220,6 +227,8 @@ public class MgcxmSocketListener : IMgcxmSystemObject, IStartableServer
                         Encoding.UTF8.GetString(responseData.ResponseData)));
                 }
             }
+            else
+                Logger.Error("Failed to accept websocket request. Context = " + (context != null ? string.Format("0x{0:x2}", context.GetHashCode()) : "null"));
         }
         
         listener.Stop();
@@ -230,7 +239,10 @@ public class MgcxmSocketListener : IMgcxmSystemObject, IStartableServer
     /// </summary>
     /// <param name="request">The HTTP request data.</param>
     /// <param name="response">The HTTP response data.</param>
-    public virtual void OnWebRequest(MgcxmHttpRequest request, MgcxmHttpResponse response) { }
+    public virtual async Task OnWebRequest(MgcxmHttpRequest request, MgcxmHttpResponse response) 
+    {
+        response.Status(HttpStatusCodes.NotFound).Finish();
+    }
 
     #region IMgcxmSystemObject
 
@@ -256,22 +268,8 @@ public class MgcxmSocketListener : IMgcxmSystemObject, IStartableServer
 
     private class SocketThread
     {
-        public SocketThread(PollingReceiver receiver)
+        public SocketThread()
         {
-            _pollingReceiver = receiver;
-            _pollingReceiver.OnPollReceived.AddAction(OnPollRequest);
-        }
-
-        private void OnPollRequest(PollRequest request)
-        {
-            if (request == null) throw new ArgumentNullException(nameof(request));
-            
-            if (_socket == null) request.Accept(-1);
-            else
-            {
-                var socket = _socket.GetRawWebSocket();
-                request.Accept((int)socket.State);
-            }
         }
 
         public async Task Start(MgcxmSocket socket, MgcxmSocketRoute route, MgcxmHttpRequest negotiateUpgradeRequest)
@@ -285,17 +283,42 @@ public class MgcxmSocketListener : IMgcxmSystemObject, IStartableServer
 
             WebSocketCloseStatus? closeStatus = null;
             bool keepListening = true;
+            Stopwatch sw = new Stopwatch();
 
-            if (!_connectionHandler.NegotiateUpgrade(negotiateUpgradeRequest)) return;
+            if (!_connectionHandler.NegotiateUpgrade(negotiateUpgradeRequest))
+            {
+                Logger.Error("Websocket failed authentication.");
+                return;
+            }
+
             if (_connectionHandler != null) _connectionHandler.Internal_OnConnection(socket);
             while (keepListening)
             {
                 try
                 {
-                    _webSocket = _socket.GetRawWebSocket();
+                    if (!keepListening) // clear execution path for late update of keepListening
+                        return;
 
+                    _webSocket = _socket.GetRawWebSocket();
                     byte[] buffer = new byte[16 * 16 * 4 * 2 * 2];
+
+                    if (_webSocket.State == WebSocketState.Closed ||
+                        _webSocket.State == WebSocketState.CloseSent ||
+                        _webSocket.State == WebSocketState.CloseReceived ||
+                        _webSocket.State == WebSocketState.Aborted)
+                    {
+                        keepListening = false;
+                        Logger.Trace("Tried receiving a message when the state was Closed. This is never supposed to happen.");
+                        return;
+                    }
+
+                    Logger.Trace(string.Format("Receiving message (starting stopwatch, id = {0}, current state = {1})", _socket.GetSocketId(), _webSocket.State));
+
+                    sw.Restart();
                     var messageResult = await _webSocket.ReceiveAsync(buffer, CancellationToken.None);
+                    sw.Stop();
+
+                    Logger.Trace(string.Format("Received message ({0} byte(s), {1} ms to receive)", messageResult.Count, sw.ElapsedMilliseconds));
 
                     if ((closeStatus = messageResult.CloseStatus) != null)
                         keepListening = false; // clear execution path
@@ -304,29 +327,29 @@ public class MgcxmSocketListener : IMgcxmSystemObject, IStartableServer
                         byte[] data = new byte[messageResult.Count];
                         for (int i = 0; i < messageResult.Count; i++)
                             data[i] = buffer[i];
-                        if (_connectionHandler != null)
-                        {
-                            if (MgcxmConfiguration.HasBootstrapConfiguration && MgcxmConfiguration.CurrentBootstrapConfiguration.logRequests)
-                            {
-                                File.AppendAllText("httpLog.log", string.Format("---------- WS Request (Client To Server) ----------\nRoute: {0}\nMessage: {1}\n",
-                                    _route.Route,
-                                    Encoding.UTF8.GetString(data)));
-                            }
 
-                            _connectionHandler.OnMessage(data);
+                        if (MgcxmConfiguration.HasBootstrapConfiguration && MgcxmConfiguration.CurrentBootstrapConfiguration.logRequests)
+                        {
+                            File.AppendAllText("httpLog.log", string.Format("---------- WS Request (Client To Server) ----------\nRoute: {0}\nMessage: {1}\n",
+                                _route.Route,
+                                Encoding.UTF8.GetString(data)));
                         }
+
+                        if (_connectionHandler != null)
+                            _connectionHandler.OnMessage(data);
                     }
                 }
-                catch { }
+                catch (Exception ex)
+                {
+                    Logger.Exception("Failed to receive WS data", ex);
+                }
             }
             if (_connectionHandler != null) _connectionHandler.OnDisconnection(closeStatus);
-            _pollingReceiver.OnPollReceived.RemoveAction(OnPollRequest);
         }
 
         private MgcxmSocketConnectionHandler _connectionHandler;
         private MgcxmSocketRoute _route;
         private MgcxmSocket _socket;
         private WebSocket _webSocket;
-        private PollingReceiver _pollingReceiver;
     }
 }
