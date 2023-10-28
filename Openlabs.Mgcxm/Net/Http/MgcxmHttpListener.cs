@@ -202,6 +202,8 @@ public class MgcxmHttpListener : IStartableServer
                     Response.Header("Expires", "-1");
                     Response.Header("Connection", "keep-alive");
 
+                    DoPreprocess();
+
                     if (httpRequest.Url.Host != _host)
                     {
                         Response.Status(HttpStatusCodes.BadGateway)
@@ -348,6 +350,8 @@ public class MgcxmHttpListener : IStartableServer
                     await Response.Transfer(httpResponse);
                 }
             });
+
+            DoPostprocess();
 #pragma warning enable
         }
 
