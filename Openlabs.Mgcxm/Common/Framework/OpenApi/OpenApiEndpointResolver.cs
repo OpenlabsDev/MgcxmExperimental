@@ -13,6 +13,7 @@ public class OpenApiEndpointResolver : EndpointResolver
 
     public OpenApiEndpointResolver(MgcxmHttpListener listener, OpenApiFramework framework) : base(listener, framework)
     {
+        _listener = listener;
         _allocatedId = Random.Range(900000, 10000000);
         MgcxmObjectManager.Register(_allocatedId, this);
 
@@ -89,17 +90,13 @@ public class OpenApiEndpointResolver : EndpointResolver
                         return; // cannot add endpoints with same url
                     }
                     
-
                     OpenApiEndpointStructure!.AddEndpoint(url, attr.HttpMethod,
-                        (req, res) =>
+                        () =>
                         {
-                            var parameters = method.GetParameters();
-                            bool isInvalidSig = parameters.Count() != 2 ||
-                                                (parameters[0].ParameterType != typeof(MgcxmHttpRequest) &&
-                                                 parameters[1].ParameterType != typeof(MgcxmHttpResponse));
+                            subpartController.Request = _listener.Request;
+                            subpartController.Response = _listener.Response;
 
-                            if (isInvalidSig) return; // cannot add endpoints with invalid signatures
-                            method.Invoke(subpartController, new object[] { req, res });
+                            method.Invoke(subpartController, Array.Empty<object>());
                         }, HttpListener);
                 });
         }
@@ -121,4 +118,5 @@ public class OpenApiEndpointResolver : EndpointResolver
 
     private readonly MgcxmId _allocatedId;
     private readonly List<EndpointSubpartController> _endpointSubpartControllers = new();
+    private MgcxmHttpListener _listener;
 }

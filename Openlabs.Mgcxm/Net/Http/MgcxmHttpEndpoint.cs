@@ -154,4 +154,4 @@ public class MgcxmDynamicIdentifier
 /// </summary>
 /// <param name="request">The MgcxmHttpRequest object representing the incoming request.</param>
 /// <param name="response">The MgcxmHttpResponse object used to construct the response.</param>
-public delegate void OnEndpointRequested(MgcxmHttpRequest request, MgcxmHttpResponse response);
+public delegate void OnEndpointRequested();

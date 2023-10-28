@@ -44,4 +44,14 @@ public abstract class EndpointSubpartController
     public event Action OnSubpartUpdated;
 
     private List<MgcxmHttpEndpoint> _allEndpoints = new List<MgcxmHttpEndpoint>();
+
+    /// <summary>
+    /// HTTP request
+    /// </summary>
+    public MgcxmHttpRequest Request { get; internal set; }
+
+    /// <summary>
+    /// HTTP response
+    /// </summary>
+    public MgcxmHttpResponse Response { get; internal set; }
 }

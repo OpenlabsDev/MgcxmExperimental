@@ -1,6 +1,7 @@
 // Copr. (c) Nexus 2023. All rights reserved.
 
 using System.Text;
+using Openlabs.Mgcxm.Common;
 using Openlabs.Mgcxm.Internal;
 using Openlabs.Mgcxm.Internal.SystemObjects;
 using Random = Openlabs.Mgcxm.Common.Random;
@@ -35,7 +36,8 @@ public sealed class MgcxmHttpRequest
             _form = form,
             _headers = headers,
             _query = query,
-            _ownerId = owner
+            _ownerId = owner,
+            _requestId = Uuid.Create()
         };
     }
 
@@ -89,6 +91,11 @@ public sealed class MgcxmHttpRequest
     /// </summary>
     public MgcxmId OwnerId => _ownerId;
 
+    /// <summary>
+    /// Gets the unique ID of the request.
+    /// </summary>
+    public Uuid Id => _requestId;
+
     private HttpMethods _httpMethod;
     private Uri _baseAddress = null!;
     private string _uri = null!;
@@ -98,4 +105,5 @@ public sealed class MgcxmHttpRequest
     private Dictionary<string, string> _headers = null!;
     private Dictionary<string, string> _query = null!;
     private MgcxmId _ownerId;
+    private Uuid _requestId;
 }
