@@ -1,5 +1,6 @@
 // Copr. (c) Nexus 2023. All rights reserved.
 
+using System.Net;
 using System.Text;
 using Openlabs.Mgcxm.Common;
 using Openlabs.Mgcxm.Internal;
@@ -14,6 +15,12 @@ namespace Openlabs.Mgcxm.Net;
 /// </summary>
 public sealed class MgcxmHttpRequest
 {
+    static string[] NON_TRANSFERABLE_METHODS = new string[]
+    {
+        "GET", "HEAD",
+        "OPTIONS", "TRACE"
+    };
+
     // Factory method to create a new instance of MgcxmHttpRequest.
     internal static MgcxmHttpRequest New(
         HttpMethods method,
@@ -39,6 +46,43 @@ public sealed class MgcxmHttpRequest
             _ownerId = owner,
             _requestId = Uuid.Create()
         };
+    }
+
+    internal static MgcxmHttpRequest CreateFromHttpListenerRequest(HttpListenerRequest httpListenerRequest)
+    {
+        var postData = GetPostDataFromHttpListenerRequest(httpListenerRequest);
+        var formData = GetEncodedFormDataHttpListenerRequest(postData);
+    } 
+
+    internal static byte[] GetPostDataFromHttpListenerRequest(HttpListenerRequest httpListenerRequest)
+    {
+        if (NON_TRANSFERABLE_METHODS.Contains(httpListenerRequest.HttpMethod))
+            return Array.Empty<byte>(); // we are using a methof that doesnt
+                                        // transfer post data
+
+        byte[] bodyData = new byte[httpListenerRequest.InputStream.Length];
+
+        int nextByte; // just loop through every byte
+        while ((nextByte = httpListenerRequest.InputStream.ReadByte()) != -1)
+            bodyData[httpListenerRequest.InputStream.Position] = (byte)nextByte;
+
+        return bodyData;
+    }
+
+    internal static Dictionary<string, string> GetEncodedFormDataHttpListenerRequest(byte[] postData)
+    {
+        if (postData.Length == 0) return new Dictionary<string, string>;
+
+        var str = Encoding.UTF8.GetString(postData);
+        var dict = new Dictionary<string, string>();
+
+        foreach (var key in str.Split("&"))
+        {
+            var values = key.Split("=");
+            dict.Add(values[0], values[1]);
+        }
+
+        return dict;
     }
 
     /// <summary>

@@ -71,6 +71,11 @@ public class BootstrapOptions
     public bool logRequests;
 
     /// <summary>
+    /// Gets or sets a value indicating whether to block suspicious/unwanted hosts
+    /// </summary>
+    public bool blockSuspiciousHosts;
+
+    /// <summary>
     /// Gets or sets the minimum log level for logging messages.
     /// </summary>
     public LogLevel minimumLogLevel;

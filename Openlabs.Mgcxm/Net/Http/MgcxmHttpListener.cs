@@ -144,232 +144,76 @@ public class MgcxmHttpListener : IStartableServer
     /// <summary>
     /// Runs before response data is given
     /// </summary>
-    public virtual async Task DoPreprocess() { }
+    public virtual void DoPreprocess() { }
 
     /// <summary>
     /// Runs after response data is given
     /// </summary>
-    public virtual async Task DoPostprocess() { }
+    public virtual void DoPostprocess() { }
     #endregion
 
-    private async Task StartListening()
+    private void ModifyContextProperties(MgcxmHttpRequest request, MgcxmHttpResponse response)
+    {
+        lock (Request ?? new object())
+            lock (Response ?? new object())
+            {
+                Request = request;
+                Response = response;
+            }
+
+        WaitForContextPropertiesClear();
+    }
+
+    private void WaitForContextPropertiesClear()
+    {
+        while (Response != null && Response.FinishedBuilding)
+            Thread.Sleep(25);
+
+        while (Request != null && Response != null)
+            Thread.Sleep(25);
+    }
+
+    private void StartListening()
     {
         _listener.Start();
         _listenToRequests = true;
 
         while (_listenToRequests)
         {
-            var httpContext = await _listener.GetContextAsync();
+            // TODO: do non async
 
-            var httpRequest = httpContext.Request;
-            var httpResponse = httpContext.Response;
-
-#pragma warning disable
-            Task.Run(async () =>
+            try
             {
-                // build needed data
-                string query = "";
-                string url = httpRequest.Url!.PathAndQuery;
+                var httpContext = _listener.GetContext();
+                var httpRequest = httpContext.Request;
+                var httpResponse = httpContext.Response;
 
-                CreateWebRequestData(_allocatedId, ref url, ref query, httpRequest, httpResponse, out MgcxmHttpRequest requestData, out MgcxmHttpResponse responseData);
-                Request = requestData;
-                Response = responseData;
+                WaitForContextPropertiesClear(); // first wait
+                CreateWebRequestData(_allocatedId,
+                    httpRequest, httpResponse,
+                    out var mgcxmRequest,
+                    out var mgcxmResponse); // create core objects
 
-                try
-                {
 
-                    //Logger.Info($"=========== Ws Request ===========");
-                    //Logger.Info($"==================================");
-
-                    // log request
-                    Logger.Info($"--------------- Http Request ---------------");
-                    Logger.Info($"Server Id = 0x{_allocatedId.Id:x8} ({this.GetType().Name})");
-                    Logger.Info($"Requested Url = {Request.Uri}");
-                    Logger.Info($"Http Method = {Request.HttpMethod}");
-                    if (Request.HttpMethod == HttpMethods.POST || Request.HttpMethod == HttpMethods.PUT)
-                    {
-                        Logger.Info($"Content Type = {Request.ContentType}");
-                        Logger.Info($"Content Length = {Request.RawBodyData.Length}");
-                        Logger.Info($"Content = {Request.Body.Truncate(50, "...")}");
-                    }
-
-                    // add required headers
-                    Response.Header("X-Powered-By", "Mgcxm.Net");
-                    Response.Header("Vary", "Accept-Encoding");
-                    Response.Header("Request-Context", $"appId=cid-v1:{Guid.NewGuid().ToString()}");
-                    Response.Header("Pragma", "no-cache");
-                    Response.Header("Cache-Control", "no-cache");
-                    Response.Header("Expires", "-1");
-                    Response.Header("Connection", "keep-alive");
-
-                    await DoPreprocess();
-
-                    if (httpRequest.Url.Host != _host)
-                    {
-                        Response.Status(HttpStatusCodes.BadGateway)
-                                    .Content(HttpContentTypes.HtmlFile, "<h1>Invalid host</h1>")
-                                    .Finish();
-                        await Response.Transfer(httpResponse);
-                        return;
-                    }
-
-                    bool foundEndpointDebounce = false;
-
-                    // write to response
-                    if (_framework == null && _endpoints.Count > 1)
-                    {
-                        Logger.Trace("Using default handling");
-                        var endpoint = _endpoints.Find(x => x.Url == Request.Uri && x.RequiredMethod == Enum.Parse<HttpMethods>(httpRequest.HttpMethod));
-                        if (endpoint != null)
-                        {
-                            foundEndpointDebounce = true;
-                            endpoint.OnEndpointRequested();
-
-                            await TaskEx.WaitUntil(() => Response.FinishedBuilding);
-                            await Response.Transfer(httpResponse);
-                        }
-                        else
-                        {
-                            // try using the Matches method
-                            foreach (var vEndpoint in _endpoints)
-                            {
-                                try
-                                {
-                                    if (MgcxmHttpEndpoint.Matches(Request.Uri, vEndpoint, Request))
-                                    {
-                                        foundEndpointDebounce = true;
-                                        // Logger.Trace($"0x{vEndpoint.EndpointId.Id:x8} meets dynamic criterion");
-                                        vEndpoint.OnEndpointRequested();
-
-                                        var sw = Stopwatch.StartNew();
-                                        await TaskEx.WaitUntil(() => Response.FinishedBuilding, 25, 5500);
-                                        if (sw.ElapsedMilliseconds > 5000)
-                                        {
-                                            Response.Status(HttpStatusCodes.BadGateway)
-                                                        .Content(HttpContentTypes.PlainText, "Task ex failed to wait")
-                                                        .Finish();
-                                            await Response.Transfer(httpResponse);
-                                        }
-                                        else
-                                            await Response.Transfer(httpResponse);
-                                    }
-                                    else
-                                    {
-                                        // Logger.Trace($"0x{vEndpoint.EndpointId.Id:x8} does not meet dynamic criterion");
-                                    }
-                                }
-                                catch (Exception exception)
-                                {
-                                    // Logger.Trace($"0x{vEndpoint.EndpointId.Id:x8} does not meet dynamic criterion");
-                                    Logger.Exception("Cannot parse Dynamic Url", exception);
-                                }
-                            }
-                        }
-                    }
-                    else if (_framework != null && _framework.Endpoints.Count > 0)
-                    {
-                        Logger.Trace(string.Format("Using framework handling. Framework = {0}, Endpoints = {1}",
-                            _framework == null ? "null" : "not null",
-                            _framework != null ? _framework.Endpoints.Count : 0));
-                        try
-                        {
-                            await _framework.ResolveRequest(httpRequest, httpResponse, Request, Response);
-                        }
-                        catch (Exception exception)
-                        {
-                            Logger.Exception("Cannot resolve Framework endpoint", exception);
-                        }
-                    }
-                    else
-                    {
-                        // THIS IS A LEGACY OPTION!
-                        // THIS MAY NOT ALWAYS WORK
-
-                        // ==========================================================================
-                        // 6:00 PM (10/18/2023)
-                        // Author: nexus
-                        //
-                        // this option is known to break every so often, please dont
-                        // use it lol
-                        // ==========================================================================
-                        Logger.Trace("Using legacy request handling: OnWebRequest()");
-
-                        this.OnWebRequest.Invoke();
-
-                        var sw = Stopwatch.StartNew();
-                        await TaskEx.WaitUntil(() => Response.FinishedBuilding, 25, 5500);
-                        if (sw.ElapsedMilliseconds > 5000)
-                        {
-                            Response.Status(HttpStatusCodes.BadGateway)
-                                        .Content(HttpContentTypes.PlainText, "Task ex failed to wait")
-                                        .Finish();
-                            await Response.Transfer(httpResponse);
-                        }
-                        else
-                            await Response.Transfer(httpResponse);
-                    }
-
-                    if (!foundEndpointDebounce)
-                    {
-                        Response.Status(HttpStatusCodes.NotFound)
-                                    .Content(HttpContentTypes.PlainText, "The URL was not found on this server.")
-                                    .Finish();
-
-                        await Response.Transfer(httpResponse);
-                        foundEndpointDebounce = true;
-                    }
-
-                    if (MgcxmConfiguration.HasBootstrapConfiguration && MgcxmConfiguration.CurrentBootstrapConfiguration.logRequests)
-                    {
-                        File.AppendAllText("httpLog.log", string.Format("---------- HTTP Request ----------\nUrl: {0}\nMethod: {1}\nContent-Type: {2}\nPost Data: {3}\nResponse: {4}\n",
-                            Request.Uri,
-                            Request.HttpMethod,
-                            Request.ContentType,
-                            Request.Body,
-                            Encoding.UTF8.GetString(Response.ResponseData)));
-                    }
-                }
-                catch (Exception ex)
-                {
-                    string[] html = new string[]
-                    {
-                        "<!DOCTYPE html>",
-                        "<html>",
-                        "   <body>",
-                        "       <h1>Internal Server Error</h1>",
-                        $"       <h3>An error occurred while processing your request. (Request ID: {Request.Id.ToString()})</h3>",
-                        "       <hr>",
-                        $"       <strong>{ex.ToString()}</strong>",
-                        "   </body>",
-                        "</html>"
-                    };
-                    Response.Status(HttpStatusCodes.InternalServerError)
-                                .Content(HttpContentTypes.HtmlFile, string.Join("\n", html))
-                                .Finish();
-
-                    await Response.Transfer(httpResponse);
-                }
-            });
-
-            await DoPostprocess();
-
-            Request = null;
-            Response = null;
-#pragma warning enable
+            }
+            catch (Exception ex)
+            {
+                Logger.Exception("Failed to serve request", ex);
+            }
         }
 
         _listener.Stop();
     }
 
-    public static void CreateWebRequestData(
+    internal static void CreateWebRequestData(
         MgcxmId allocatedId, // the allocated Id of the listener
-        ref string url, // the request url
-        ref string query, // the request query
         HttpListenerRequest httpRequest, // http request
         HttpListenerResponse httpResponse, // http response
         out MgcxmHttpRequest requestData, 
         out MgcxmHttpResponse responseData)
     {
+        var url = httpRequest.Url!.PathAndQuery;
+
         // trim any extra / from the start
         url = url.TrimStart('/');
         url = string.Format("/{0}", url);
@@ -401,7 +245,7 @@ public class MgcxmHttpListener : IStartableServer
             var urlParts = url.Split("?");
 
             url = WebUtility.UrlDecode(urlParts[0]);
-            query = urlParts[1] ?? "";
+            var query = urlParts[1] ?? "";
 
             foreach (var queryPart in query.Split("&"))
             {
@@ -426,6 +270,7 @@ public class MgcxmHttpListener : IStartableServer
         while ((ibyte = httpRequest.InputStream.ReadByte()) != -1)
             bodyData.Add((byte)ibyte);
 
+        // build form data
         if (contentType == HttpContentTypes.UrlencodedForm)
         {
             foreach (var formPart in Encoding.UTF8.GetString(bodyData.ToArray()).Split("&"))
@@ -436,12 +281,8 @@ public class MgcxmHttpListener : IStartableServer
             }
         }
 
-        Logger.Trace("trimmed url " + url);
-
         // format url
         FormatUrl(ref url);
-
-        Logger.Trace("formatted url " + url);
 
         // construct data
         requestData = MgcxmHttpRequest.New(
@@ -482,7 +323,7 @@ public class MgcxmHttpListener : IStartableServer
         _listenThread = new Thread(async () =>
         {
             Logger.Debug($"Changed listen flag on 0x{_allocatedId.Id:x8}");
-            await StartListening();
+            StartListening();
         });
         _listenThread.Start();
     }
@@ -491,14 +332,14 @@ public class MgcxmHttpListener : IStartableServer
     /// Starts the HTTP listener internally with a specified listen task.
     /// </summary>
     /// <param name="listentask">The listen task to start the listener.</param>
-    internal void StartInternal(AsyncListenTask listentask)
+    internal void StartInternal(ListenTask listenTask)
     {
         _listenToRequests = true;
 
         _listenThread = new Thread(async () =>
         {
             Logger.Debug($"Changed listen flag on 0x{_allocatedId.Id:x8}");
-            await listentask(_listener);
+            listenTask(_listener);
         });
         _listenThread.Start();
         GCWrapper.SuppressFinalize(_listenThread);
@@ -594,7 +435,7 @@ public class MgcxmHttpListener : IStartableServer
 /// Delegate representing an asynchronous listen task for the HTTP listener.
 /// </summary>
 /// <param name="listener">The HttpListener instance to listen for requests.</param>
-public delegate Task AsyncListenTask(HttpListener listener);
+public delegate void ListenTask(HttpListener listener);
 
 #region DEBUG
 /// <summary>
