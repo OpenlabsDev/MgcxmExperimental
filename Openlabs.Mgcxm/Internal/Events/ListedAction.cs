@@ -6,46 +6,45 @@ using System.Threading.Tasks;
 
 namespace Openlabs.Mgcxm.Internal
 {
-    public interface IListedAction
+    internal interface IListedAction
     {
     }
-
-    public interface INongenericListedAction : IListedAction
+    internal interface INongenericListedAction : IListedAction
     {
         void AddAction(Action action);
         void RemoveAction(Action action);
 
         List<Action> ActionList { get; }
     }
-    public interface IGenericListedAction<T> : IListedAction
+    internal interface IGenericListedAction<T> : IListedAction
     {
         void AddAction(Action<T> action);
         void RemoveAction(Action<T> action);
 
         List<Action<T>> ActionList { get; }
     }
-    public interface IGenericListedAction<T, T1> : IListedAction
+    internal interface IGenericListedAction<T, T1> : IListedAction
     {
         void AddAction(Action<T, T1> action);
         void RemoveAction(Action<T, T1> action);
 
         List<Action<T, T1>> ActionList { get; }
     }
-    public interface IGenericListedAction<T, T1, T2> : IListedAction
+    internal interface IGenericListedAction<T, T1, T2> : IListedAction
     {
         void AddAction(Action<T, T1, T2> action);
         void RemoveAction(Action<T, T1, T2> action);
 
         List<Action<T, T1, T2>> ActionList { get; }
     }
-    public interface IGenericListedAction<T, T1, T2, T3> : IListedAction
+    internal interface IGenericListedAction<T, T1, T2, T3> : IListedAction
     {
         void AddAction(Action<T, T1, T2, T3> action);
         void RemoveAction(Action<T, T1, T2, T3> action);
 
         List<Action<T, T1, T2, T3>> ActionList { get; }
     }
-    public interface IGenericListedAction<T, T1, T2, T3, T4> : IListedAction
+    internal interface IGenericListedAction<T, T1, T2, T3, T4> : IListedAction
     {
         void AddAction(Action<T, T1, T2, T3, T4> action);
         void RemoveAction(Action<T, T1, T2, T3, T4> action);
@@ -222,7 +221,7 @@ namespace Openlabs.Mgcxm.Internal
         private List<Action<T, T1, T2, T3, T4>> _actionList;
     }
 
-    public class ActionEventConnectorException :
+    internal class ActionEventConnectorException :
         Exception
     {
         public ActionEventConnectorException(ConnectorAggregateType type, IListedAction caller)

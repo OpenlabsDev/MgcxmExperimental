@@ -30,7 +30,7 @@ public sealed class ActionScheduler
     {
         QueuedTask task = new QueuedTask(name, action, args, _allocatedId);
         // _queuedTasks.Enqueue(task);
-        Task.Factory.StartNew(async () =>
+        await Task.Factory.StartNew(async () =>
         {
             Logger.Trace($"Created '{name} - 0x{task.TaskId.Id:x8}' latching '{_name} - 0x{_allocatedId.Id:x8}'");
             

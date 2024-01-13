@@ -36,6 +36,15 @@ public static class AssetManager
     }
 
     /// <summary>
+    /// Synchronously loads and initializes an object asset of type <typeparamref name="T"/>.
+    /// </summary>
+    /// <typeparam name="T">The type of the object asset to load.</typeparam>
+    /// <param name="arguments">The arguments required for asset initialization.</param>
+    /// <returns>The loaded object asset or null if there was an error during loading.</returns>
+
+    public static T LoadSync<T>(params object[] arguments)
+        where T : ObjectAsset => Load<T>(arguments).Result;
+    /// <summary>
     /// Asynchronously loads and initializes an object asset of type <typeparamref name="T"/>.
     /// </summary>
     /// <typeparam name="T">The type of the object asset to load.</typeparam>

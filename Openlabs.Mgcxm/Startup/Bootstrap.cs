@@ -13,24 +13,17 @@ public static class Bootstrap
     private static long RNG_SEED = 0x12EC2279;
 
     /// <summary>
-    /// Event handler for logging messages to the console.
-    /// </summary>
-    /// <param name="lMsg">The log message to be displayed.</param>
-    private static void OnLogMessageMade(LogMessage lMsg)
-    {
-        // Console.ForegroundColor = lMsg.color;
-        Console.WriteLine(lMsg.message);
-        // Console.ForegroundColor = lMsg.previousColor;
-    }
-
-    /// <summary>
     /// Loads and initializes the Mgcxm application with the specified options.
     /// </summary>
     /// <param name="options">The bootstrap options to configure Mgcxm.</param>
     public static async Task LoadMgcxm(BootstrapOptions options)
     {
         MgcxmConfiguration.Initialize(options);
-        Logger.Initialize(OnLogMessageMade);
+
+        Task.Factory.StartNew(() =>
+        {
+            BootstrapInitializer.Initialize();
+        }).ConfigureAwait(false);
 
         // initialize rng
         Logger.Info(string.Format("Initializing random with state 0x{0:x8}", RNG_SEED));
@@ -69,6 +62,16 @@ public class BootstrapOptions
     /// Gets or sets a value indicating whether to log requests to a file named httpLog.log
     /// </summary>
     public bool logRequests;
+
+    /// <summary>
+    /// Gets or sets a value indicating whether to block weird hosts
+    /// </summary>
+    public bool blockWeirdHosts;
+
+    /// <summary>
+    /// Gets or sets a value indicating whether to use a GUI.
+    /// </summary>
+    public bool useGui;
 
     /// <summary>
     /// Gets or sets the minimum log level for logging messages.

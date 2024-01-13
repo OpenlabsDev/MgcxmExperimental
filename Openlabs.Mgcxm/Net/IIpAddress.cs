@@ -20,4 +20,14 @@ public interface IIpAddress
     /// The port of the IP address. (80 / 443)
     /// </summary>
     ushort Port { get; }
+
+    /// <summary>
+    /// Returns if the IP address is IPv4 (14.193.195.140)
+    /// </summary>
+    bool IsIPV4 { get; }
+
+    /// <summary>
+    /// Returns if the IP address is IPv6 (FE80:CD00 / FE80:CD00:0000:0CDE:1257:0000:211E:729C)
+    /// </summary>
+    bool IsIPV6 { get; }
 }

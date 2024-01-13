@@ -56,6 +56,8 @@ public class MgcxmSocketListener : IMgcxmSystemObject, IStartableServer
     private List<MgcxmSocketRoute> _routes = new();
     private Dictionary<string, SocketThread> _socketThreads = new();
 
+    public static int ServerCount { get; private set; }
+
     /// <summary>
     /// Initializes a new instance of the MgcxmSocketListener class with the specified IP address to host on.
     /// </summary>
@@ -63,6 +65,8 @@ public class MgcxmSocketListener : IMgcxmSystemObject, IStartableServer
     /// <param name="certificate">The SSL certificate to use.</param>
     public MgcxmSocketListener(IpAddress addressToHostOn, string host = "localhost", string postfix = "/", X509Certificate2 certificate = null)
     {
+        ServerCount++;
+
         GCWrapper.SuppressFinalize(this);
         GCWrapper.SuppressFinalize(_routes);
         GCWrapper.SuppressFinalize(AllocatedId);
@@ -95,7 +99,11 @@ public class MgcxmSocketListener : IMgcxmSystemObject, IStartableServer
     /// <summary>
     /// Finalizer (destructor) for the MgcxmSocketListener class.
     /// </summary>
-    ~MgcxmSocketListener() => Trash();
+    ~MgcxmSocketListener()
+    {
+        ServerCount--;
+        Trash();
+    }
 
     /// <summary>
     /// Starts the socket listener.
@@ -173,8 +181,11 @@ public class MgcxmSocketListener : IMgcxmSystemObject, IStartableServer
                 Logger.Info($"Server Id = 0x{AllocatedId.Id:x8} ({this.GetType().Name})");
                 Logger.Info($"Requested Url = {requestData.Uri}");
 
-                await Task.Run(async () =>
+#pragma warning disable CS4014 // Because this call is not awaited, execution of the current method continues before the call is completed
+                Task.Factory.StartNew(async () =>
                 {
+                    Events.OnWsRequestMade.Invoke(this, route);
+
                     var socket = MgcxmSocket.Create(socketContext);
                     string socketId = socket.GetSocketId();
                     route.OnSocketUpgraded(socket);
@@ -197,7 +208,8 @@ public class MgcxmSocketListener : IMgcxmSystemObject, IStartableServer
                         if (_socketThreads.ContainsKey(socketId))
                             _socketThreads.Remove(socketId);
                     }
-                });
+                }, TaskCreationOptions.LongRunning);
+#pragma warning restore CS4014 // Because this call is not awaited, execution of the current method continues before the call is completed
             }
             // accept any non-ws requests
             else if (context != null && !context.Request.IsWebSocketRequest)

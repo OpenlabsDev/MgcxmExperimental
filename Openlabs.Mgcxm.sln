@@ -1,8 +1,11 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Openlabs.Mgcxm", "Openlabs.Mgcxm\Openlabs.Mgcxm.csproj", "{20B1BB41-6AC3-496E-B3D3-C4E6D57FD06D}"
+# Visual Studio Version 17
+VisualStudioVersion = 17.6.33829.357
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Openlabs.Mgcxm", "Openlabs.Mgcxm\Openlabs.Mgcxm.csproj", "{20B1BB41-6AC3-496E-B3D3-C4E6D57FD06D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Openlabs.Mgcxm.Tests", "Openlabs.Mgcxm.Tests\Openlabs.Mgcxm.Tests.csproj", "{2FB68B4A-61CE-433F-902A-23E831954E6C}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mgcxm.Test", "Mgcxm.Test\Mgcxm.Test.csproj", "{1920A2AD-9952-4F80-94C4-10A73B715FFA}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -14,9 +17,15 @@ Global
 		{20B1BB41-6AC3-496E-B3D3-C4E6D57FD06D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{20B1BB41-6AC3-496E-B3D3-C4E6D57FD06D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{20B1BB41-6AC3-496E-B3D3-C4E6D57FD06D}.Release|Any CPU.Build.0 = Release|Any CPU
-		{2FB68B4A-61CE-433F-902A-23E831954E6C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{2FB68B4A-61CE-433F-902A-23E831954E6C}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{2FB68B4A-61CE-433F-902A-23E831954E6C}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{2FB68B4A-61CE-433F-902A-23E831954E6C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1920A2AD-9952-4F80-94C4-10A73B715FFA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1920A2AD-9952-4F80-94C4-10A73B715FFA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1920A2AD-9952-4F80-94C4-10A73B715FFA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1920A2AD-9952-4F80-94C4-10A73B715FFA}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {E00EFE10-562C-457E-9E5C-598FC9C10387}
 	EndGlobalSection
 EndGlobal

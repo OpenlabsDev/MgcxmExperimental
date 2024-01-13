@@ -1,72 +1,60 @@
-// Copr. (c) Nexus 2023. All rights reserved.
+using Openlabs.Mgcxm.Net;
 
 using System.Net;
 
-namespace Openlabs.Mgcxm.Net;
-
 /// <summary>
-/// Defines a <c>Internet Protocol Address (IP Address)</c>, which is read-only.
+/// Defines a read-only Internet Protocol Address (IP Address).
 /// </summary>
 public class IpAddress : IIpAddress
 {
+    private readonly IPAddress _actualIpAddress;
+    private readonly ushort _port;
+
     /// <inheritdoc/>
-    public IPAddress ActualIpAddress => IPAddress.Parse(ToString());
+    public IPAddress ActualIpAddress => _actualIpAddress;
 
     /// <summary>
     /// Creates a new instance of an <see cref="IpAddress"/>.
     /// </summary>
-    /// <param name="origin">The origin. (e.g. 1.1.1.1)</param>
-    /// <param name="port">The port. (e.g. 20001)</param>
+    /// <param name="origin">The origin. (e.g., 1.1.1.1 or 2001:0db8:85a3:0000:0000:8a2e:0370:7334)</param>
+    /// <param name="port">The port. (e.g., 20001)</param>
     public IpAddress(string origin, ushort port = 0)
     {
-        _origin = origin;
         _port = port;
+
+        if (IPAddress.TryParse(origin, out var ipAddress))
+        {
+            _actualIpAddress = ipAddress;
+
+            IsIPV4 = ipAddress.AddressFamily == System.Net.Sockets.AddressFamily.InterNetwork;
+            IsIPV6 = ipAddress.AddressFamily == System.Net.Sockets.AddressFamily.InterNetworkV6;
+        }
+        else
+            throw new ArgumentException("Invalid IP address format.", nameof(origin));
     }
 
     /// <summary>
     /// Creates an <see cref="IpAddress"/> from a System.Net.<see cref="IPAddress"/>
     /// </summary>
-    /// <param name="ip">The IP to use.</param>
     public static implicit operator IpAddress(IPAddress ip)
     {
-        string ipString = ip.ToString();
-        string[] parts = ipString.Split(":");
-
-        ushort port = 0;
-        if (parts.Length > 1)
-            port = ushort.Parse(parts[1]);
-
-        return new IpAddress(parts[0], port);
+        return new IpAddress(ip.ToString());
     }
 
     /// <summary>
     /// Creates an <see cref="IpAddress"/> from a <see cref="string"/>
     /// </summary>
-    /// <param name="ipString">The string to create the IP from.</param>
     public static implicit operator IpAddress(string ipString)
     {
-        string[] parts = ipString.Split(":");
-
-        ushort port = 0;
-        if (parts.Length > 1)
-            port = ushort.Parse(parts[1]);
-
-        return new IpAddress(parts[0], port);
+        return new IpAddress(ipString);
     }
 
-    /// <summary>
-    /// Creates an System.Net.<see cref="IPAddress"/> from a <see cref="IpAddress"/>
-    /// </summary>
-    /// <param name="ip">The IP to use.</param>
-    public static implicit operator IPAddress(IpAddress ip)
-        => ip.ActualIpAddress;
-    
     /// <summary>
     /// Creates a well-formed IP address.
     /// </summary>
     public override string ToString()
     {
-        string formedIp = _origin;
+        string formedIp = _actualIpAddress.ToString();
         if (_port > 0)
             formedIp += $":{_port}";
 
@@ -74,11 +62,14 @@ public class IpAddress : IIpAddress
     }
 
     /// <inheritdoc/>
-    public string Origin => _origin;
+    public string Origin => _actualIpAddress.ToString();
 
     /// <inheritdoc/>
     public ushort Port => _port;
 
-    private string _origin;
-    private ushort _port;
+    /// <inheritdoc/>
+    public bool IsIPV4 { get; }
+
+    /// <inheritdoc/>
+    public bool IsIPV6 { get; }
 }

@@ -88,6 +88,8 @@ public sealed class MgcxmHttpResponse : IMgcxmHttpResponseModifiable, IMgcxmHttp
         if (!System.IO.File.Exists(path))
             throw new FileNotFoundException("The specified file was not found.", path);
 
+        var extension = Path.GetExtension(path).Replace(".", "");
+        _contentType = HttpContentTypeHelper.ResolveValueFromExtension(extension);
         _responseData = System.IO.File.ReadAllBytes(path);
         return this;
     }

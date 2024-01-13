@@ -7,6 +7,8 @@ using System.Reflection;
 using System.Security.Cryptography.X509Certificates;
 using System.Text;
 using System.Xml.Serialization;
+
+
 using Openlabs.Mgcxm.Common;
 using Openlabs.Mgcxm.Common.Framework;
 using Openlabs.Mgcxm.Internal;
@@ -40,6 +42,8 @@ public class MgcxmHttpListener : IStartableServer
     private string _host;
     public Action<MgcxmHttpRequest, MgcxmHttpResponse> OnWebRequest;
 
+    public static int ServerCount { get; private set; }
+
     /// <summary>
     /// Initializes a new instance of the MgcxmHttpListener class.
     /// </summary>
@@ -49,6 +53,8 @@ public class MgcxmHttpListener : IStartableServer
     /// <param name="certificate">The SSL certificate to use.</param>
     public MgcxmHttpListener(IpAddress addressToHostOn, string host = "localhost", string postfix = "/", X509Certificate2 certificate = null)
     {
+        ServerCount++;
+
         GCWrapper.SuppressFinalize(this);
         GCWrapper.SuppressFinalize(_allocatedId);
 
@@ -127,7 +133,12 @@ public class MgcxmHttpListener : IStartableServer
     /// <summary>
     /// Finalizes an instance of the MgcxmHttpListener class.
     /// </summary>
-    ~MgcxmHttpListener() => MgcxmObjectManager.Deregister(_allocatedId);
+    ~MgcxmHttpListener()
+    {
+        ServerCount--; 
+        MgcxmObjectManager.Deregister(_allocatedId);
+    }
+
 
     /// <summary>
     /// Initializes core endpoints, e.g., /favicon.ico and other systems.
@@ -195,7 +206,7 @@ public class MgcxmHttpListener : IStartableServer
                     responseData.Header("Expires", "-1");
                     responseData.Header("Connection", "keep-alive");
 
-                    if (httpRequest.Url.Host != _host)
+                    if (MgcxmConfiguration.HasBootstrapConfiguration && MgcxmConfiguration.CurrentBootstrapConfiguration.blockWeirdHosts && httpRequest.Url.Host != _host)
                     {
                         responseData.Status(HttpStatusCodes.BadGateway)
                                     .Content(HttpContentTypes.HtmlFile, "<h1>Invalid host</h1>")
@@ -205,11 +216,12 @@ public class MgcxmHttpListener : IStartableServer
                     }
 
                     bool foundEndpointDebounce = false;
+                    Events.OnHttpRequestMade.Invoke(this, requestData);
 
                     // write to response
                     if (_framework == null && _endpoints.Count > 1)
                     {
-                        Logger.Trace("Using default handling");
+                        // Logger.Trace("Using default handling");
                         var endpoint = _endpoints.Find(x => x.Url == requestData.Uri && x.RequiredMethod == Enum.Parse<HttpMethods>(httpRequest.HttpMethod));
                         if (endpoint != null)
                         {
@@ -259,9 +271,9 @@ public class MgcxmHttpListener : IStartableServer
                     }
                     else if (_framework != null && _framework.Endpoints.Count > 0)
                     {
-                        Logger.Trace(string.Format("Using framework handling. Framework = {0}, Endpoints = {1}",
-                            _framework == null ? "null" : "not null",
-                            _framework != null ? _framework.Endpoints.Count : 0));
+                        // Logger.Trace(string.Format("Using framework handling. Framework = {0}, Endpoints = {1}",
+                        // _framework == null ? "null" : "not null",
+                        // _framework != null ? _framework.Endpoints.Count : 0));
                         try
                         {
                             await _framework.ResolveRequest(httpRequest, httpResponse, requestData, responseData);
@@ -283,7 +295,7 @@ public class MgcxmHttpListener : IStartableServer
                         // this option is known to break every so often, please dont
                         // use it lol
                         // ==========================================================================
-                        Logger.Trace("Using legacy request handling: OnWebRequest()");
+                        // Logger.Trace("Using legacy request handling: OnWebRequest()");
 
                         this.OnWebRequest.Invoke(requestData, responseData);
 

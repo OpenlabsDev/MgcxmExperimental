@@ -24,7 +24,7 @@ public static class Logger
             $"{message}: ({exception.GetType().GetSafeName()}): {exception.Message}\n {exception.StackTrace}", 
             sink);
 
-    public static void Initialize(Action<LogMessage>? onMessageMade) { OnLogged += onMessageMade.InvokeSafe; }
+    public static void Initialize(Action<LogMessage>? onMessageMade) { OnLogged = onMessageMade.InvokeSafe; }
     
     private static void PrintMessage(LogLevel level, string message, LoggerSink? sink = null)
     {
@@ -57,6 +57,7 @@ public static class Logger
             previousColor = previousColor,
             color = currentColor,
             message = ansiMessageStr,
+            nonAnsiMessage = nonansiMessageStr,
             sink = sink
         });
     }
@@ -66,7 +67,21 @@ public static class Logger
         File.WriteAllLines($"{fileName}.txt", _logMessages);
     }
 
+    public static string ReadNew()
+    {
+        if (_logMessages.Count > _newReadIndex) return null;
+        var result = _logMessages[_newReadIndex];
+
+        if (_readLogMessages.Contains(result)) return null;
+        _readLogMessages.Add(result);
+
+        _newReadIndex++;
+        return result;
+    }
+
     private static List<string> _logMessages = new List<string>();
+    private static List<string> _readLogMessages = new List<string>();
+    private static int _newReadIndex;
 
     public static event Action<LogMessage> OnLogged = (_ => { });
 
@@ -87,6 +102,7 @@ public class LogMessage
     public ConsoleColor previousColor;
     public ConsoleColor color;
     public string message;
+    public string nonAnsiMessage;
     public LoggerSink? sink;
 }
 
