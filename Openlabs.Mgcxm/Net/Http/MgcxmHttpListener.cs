@@ -29,7 +29,18 @@ public static class AddressUtilities
     /// <returns>The formatted IP address.</returns>
     public static string FormatIpAddress(string addr)
     {
-        if (addr == "localhost") return "+";
+        if (addr.Contains("+"))
+            return addr.Replace("+", "0.0.0.0");
+        if (addr.Contains("localhost")) 
+            return addr.Replace("localhost", "127.0.0.1");
+        return addr;
+    }
+    public static string LclFormatIpAddress(string addr)
+    {
+        if (addr.Contains("0.0.0.0"))
+            return addr.Replace("0.0.0.0", "+");
+        if (addr.Contains("127.0.0.1"))
+            return addr.Replace("127.0.0.1", "localhost");
         return addr;
     }
 }
@@ -66,9 +77,11 @@ public class MgcxmHttpListener : IStartableServer
         if (certificate != null) scheme += "s";
 
         // Initialize the HttpListener with the provided IP address and port.
+        var prefix = $"{scheme}://{AddressUtilities.LclFormatIpAddress(addressToHostOn.Origin)}:{addressToHostOn.Port}{postfix}";
+        Logger.Trace(prefix);
+
         _listener = new HttpListener();
-        _listener.Prefixes.Add(
-            $"{scheme}://{AddressUtilities.FormatIpAddress(addressToHostOn.Origin)}:{addressToHostOn.Port}{postfix}");
+        _listener.Prefixes.Add(prefix);
 
         // Generate an allocated ID for the listener.
         _allocatedId = GetHashCode();
@@ -159,204 +172,218 @@ public class MgcxmHttpListener : IStartableServer
 
     private async Task StartListening()
     {
-        _listener.Start();
-        _listenToRequests = true;
+        try
+        {
+            _listener.Start();
+            _listenToRequests = true;
+        }
+        catch { }
 
         while (_listenToRequests)
         {
-            var httpContext = await _listener.GetContextAsync();
+            try
+            {
+                var httpContext = await _listener.GetContextAsync();
 
-            var httpRequest = httpContext.Request;
-            var httpResponse = httpContext.Response;
+                var httpRequest = httpContext.Request;
+                var httpResponse = httpContext.Response;
 
 #pragma warning disable
-            Task.Run(async () =>
-            {
-                // build needed data
-                string query = "";
-                string url = httpRequest.Url!.PathAndQuery;
-
-                CreateWebRequestData(_allocatedId, ref url, ref query, httpRequest, httpResponse, out MgcxmHttpRequest requestData, out MgcxmHttpResponse responseData);
-                var requestId = Uuid.Create();
-
-                try
+                Task.Run(async () =>
                 {
-
-                    //Logger.Info($"=========== Ws Request ===========");
-                    //Logger.Info($"==================================");
-
-                    // log request
-                    Logger.Info($"--------------- Http Request ---------------");
-                    Logger.Info($"Server Id = 0x{_allocatedId.Id:x8} ({this.GetType().Name})");
-                    Logger.Info($"Requested Url = {requestData.Uri}");
-                    Logger.Info($"Http Method = {requestData.HttpMethod}");
-                    if (requestData.HttpMethod == HttpMethods.POST || requestData.HttpMethod == HttpMethods.PUT)
-                    {
-                        Logger.Info($"Content Type = {requestData.ContentType}");
-                        Logger.Info($"Content Length = {requestData.RawBodyData.Length}");
-                        Logger.Info($"Content = {requestData.Body.Truncate(50, "...")}");
-                    }
-
-                    // add required headers
-                    responseData.Header("X-Powered-By", "Mgcxm.Net");
-                    responseData.Header("Vary", "Accept-Encoding");
-                    responseData.Header("Request-Context", $"appId=cid-v1:{Guid.NewGuid().ToString()}");
-                    responseData.Header("Pragma", "no-cache");
-                    responseData.Header("Cache-Control", "no-cache");
-                    responseData.Header("Expires", "-1");
-                    responseData.Header("Connection", "keep-alive");
-
-                    if (MgcxmConfiguration.HasBootstrapConfiguration && MgcxmConfiguration.CurrentBootstrapConfiguration.blockWeirdHosts && httpRequest.Url.Host != _host)
-                    {
-                        responseData.Status(HttpStatusCodes.BadGateway)
-                                    .Content(HttpContentTypes.HtmlFile, "<h1>Invalid host</h1>")
-                                    .Finish();
-                        await responseData.Transfer(httpResponse);
+                    if (!_listenToRequests)
                         return;
-                    }
 
-                    bool foundEndpointDebounce = false;
-                    Events.OnHttpRequestMade.Invoke(this, requestData);
+                    // build needed data
+                    string query = "";
+                    string url = httpRequest.Url!.PathAndQuery;
 
-                    // write to response
-                    if (_framework == null && _endpoints.Count > 1)
+                    CreateWebRequestData(_allocatedId, ref url, ref query, httpRequest, httpResponse, out MgcxmHttpRequest requestData, out MgcxmHttpResponse responseData);
+                    var requestId = Uuid.Create();
+
+                    try
                     {
-                        // Logger.Trace("Using default handling");
-                        var endpoint = _endpoints.Find(x => x.Url == requestData.Uri && x.RequiredMethod == Enum.Parse<HttpMethods>(httpRequest.HttpMethod));
-                        if (endpoint != null)
-                        {
-                            foundEndpointDebounce = true;
-                            endpoint.OnEndpointRequested(requestData, responseData);
 
-                            await TaskEx.WaitUntil(() => responseData.FinishedBuilding);
-                            await responseData.Transfer(httpResponse);
+                        //Logger.Info($"=========== Ws Request ===========");
+                        //Logger.Info($"==================================");
+
+                        // log request
+                        Logger.Info($"--------------- Http Request ---------------");
+                        Logger.Info($"Server Id = 0x{_allocatedId.Id:x8} ({this.GetType().Name})");
+                        Logger.Info($"Requested Url = {requestData.Uri}");
+                        Logger.Info($"Http Method = {requestData.HttpMethod}");
+                        if (requestData.HttpMethod == HttpMethods.POST || requestData.HttpMethod == HttpMethods.PUT)
+                        {
+                            Logger.Info($"Content Type = {requestData.ContentType}");
+                            Logger.Info($"Content Length = {requestData.RawBodyData.Length}");
+                            Logger.Info($"Content = {requestData.Body.Truncate(50, "...")}");
                         }
-                        else
-                        {
-                            // try using the Matches method
-                            foreach (var vEndpoint in _endpoints)
-                            {
-                                try
-                                {
-                                    if (MgcxmHttpEndpoint.Matches(requestData.Uri, vEndpoint, requestData))
-                                    {
-                                        foundEndpointDebounce = true;
-                                        // Logger.Trace($"0x{vEndpoint.EndpointId.Id:x8} meets dynamic criterion");
-                                        vEndpoint.OnEndpointRequested(requestData, responseData);
 
-                                        var sw = Stopwatch.StartNew();
-                                        await TaskEx.WaitUntil(() => responseData.FinishedBuilding, 25, 5500);
-                                        if (sw.ElapsedMilliseconds > 5000)
+                        // add required headers
+                        responseData.Header("X-Powered-By", "Mgcxm.Net");
+                        responseData.Header("Vary", "Accept-Encoding");
+                        responseData.Header("Request-Context", $"appId=cid-v1:{Guid.NewGuid().ToString()}");
+                        responseData.Header("Pragma", "no-cache");
+                        responseData.Header("Cache-Control", "no-cache");
+                        responseData.Header("Expires", "-1");
+                        responseData.Header("Connection", "keep-alive");
+
+                        if (MgcxmConfiguration.HasBootstrapConfiguration && MgcxmConfiguration.CurrentBootstrapConfiguration.blockWeirdHosts && httpRequest.Url.Host != _host)
+                        {
+                            responseData.Status(HttpStatusCodes.BadGateway)
+                                        .Content(HttpContentTypes.HtmlFile, "<h1>Invalid host</h1>")
+                                        .Finish();
+                            await responseData.Transfer(httpResponse);
+                            return;
+                        }
+
+                        bool foundEndpointDebounce = false;
+                        Events.OnHttpRequestMade.Invoke(this, requestData);
+
+                        // write to response
+                        if (_framework == null && _endpoints.Count > 1)
+                        {
+                            // Logger.Trace("Using default handling");
+                            var endpoint = _endpoints.Find(x => x.Url == requestData.Uri && x.RequiredMethod == Enum.Parse<HttpMethods>(httpRequest.HttpMethod));
+                            if (endpoint != null)
+                            {
+                                foundEndpointDebounce = true;
+                                endpoint.OnEndpointRequested(requestData, responseData);
+
+                                await TaskEx.WaitUntil(() => responseData.FinishedBuilding);
+                                await responseData.Transfer(httpResponse);
+                            }
+                            else
+                            {
+                                // try using the Matches method
+                                foreach (var vEndpoint in _endpoints)
+                                {
+                                    try
+                                    {
+                                        if (MgcxmHttpEndpoint.Matches(requestData.Uri, vEndpoint, requestData))
                                         {
-                                            responseData.Status(HttpStatusCodes.BadGateway)
-                                                        .Content(HttpContentTypes.PlainText, "Task ex failed to wait")
-                                                        .Finish();
-                                            await responseData.Transfer(httpResponse);
+                                            foundEndpointDebounce = true;
+                                            // Logger.Trace($"0x{vEndpoint.EndpointId.Id:x8} meets dynamic criterion");
+                                            vEndpoint.OnEndpointRequested(requestData, responseData);
+
+                                            var sw = Stopwatch.StartNew();
+                                            await TaskEx.WaitUntil(() => responseData.FinishedBuilding, 25, 5500);
+                                            if (sw.ElapsedMilliseconds > 5000)
+                                            {
+                                                responseData.Status(HttpStatusCodes.BadGateway)
+                                                            .Content(HttpContentTypes.PlainText, "Task ex failed to wait")
+                                                            .Finish();
+                                                await responseData.Transfer(httpResponse);
+                                            }
+                                            else
+                                                await responseData.Transfer(httpResponse);
                                         }
                                         else
-                                            await responseData.Transfer(httpResponse);
+                                        {
+                                            // Logger.Trace($"0x{vEndpoint.EndpointId.Id:x8} does not meet dynamic criterion");
+                                        }
                                     }
-                                    else
+                                    catch (Exception exception)
                                     {
                                         // Logger.Trace($"0x{vEndpoint.EndpointId.Id:x8} does not meet dynamic criterion");
+                                        Logger.Exception("Cannot parse Dynamic Url", exception);
                                     }
-                                }
-                                catch (Exception exception)
-                                {
-                                    // Logger.Trace($"0x{vEndpoint.EndpointId.Id:x8} does not meet dynamic criterion");
-                                    Logger.Exception("Cannot parse Dynamic Url", exception);
                                 }
                             }
                         }
-                    }
-                    else if (_framework != null && _framework.Endpoints.Count > 0)
-                    {
-                        // Logger.Trace(string.Format("Using framework handling. Framework = {0}, Endpoints = {1}",
-                        // _framework == null ? "null" : "not null",
-                        // _framework != null ? _framework.Endpoints.Count : 0));
-                        try
+                        else if (_framework != null && _framework.Endpoints.Count > 0)
                         {
-                            await _framework.ResolveRequest(httpRequest, httpResponse, requestData, responseData);
-                        }
-                        catch (Exception exception)
-                        {
-                            Logger.Exception("Cannot resolve Framework endpoint", exception);
-                        }
-                    }
-                    else
-                    {
-                        // THIS IS A LEGACY OPTION!
-                        // THIS MAY NOT ALWAYS WORK
-
-                        // ==========================================================================
-                        // 6:00 PM (10/18/2023)
-                        // Author: nexus
-                        //
-                        // this option is known to break every so often, please dont
-                        // use it lol
-                        // ==========================================================================
-                        // Logger.Trace("Using legacy request handling: OnWebRequest()");
-
-                        this.OnWebRequest.Invoke(requestData, responseData);
-
-                        var sw = Stopwatch.StartNew();
-                        await TaskEx.WaitUntil(() => responseData.FinishedBuilding, 25, 5500);
-                        if (sw.ElapsedMilliseconds > 5000)
-                        {
-                            responseData.Status(HttpStatusCodes.BadGateway)
-                                        .Content(HttpContentTypes.PlainText, "Task ex failed to wait")
-                                        .Finish();
-                            await responseData.Transfer(httpResponse);
+                            // Logger.Trace(string.Format("Using framework handling. Framework = {0}, Endpoints = {1}",
+                            // _framework == null ? "null" : "not null",
+                            // _framework != null ? _framework.Endpoints.Count : 0));
+                            try
+                            {
+                                await _framework.ResolveRequest(httpRequest, httpResponse, requestData, responseData);
+                            }
+                            catch (Exception exception)
+                            {
+                                Logger.Exception("Cannot resolve Framework endpoint", exception);
+                            }
                         }
                         else
-                            await responseData.Transfer(httpResponse);
-                    }
+                        {
+                            // THIS IS A LEGACY OPTION!
+                            // THIS MAY NOT ALWAYS WORK
 
-                    if (!foundEndpointDebounce)
+                            // ==========================================================================
+                            // 6:00 PM (10/18/2023)
+                            // Author: nexus
+                            //
+                            // this option is known to break every so often, please dont
+                            // use it lol
+                            // ==========================================================================
+                            // Logger.Trace("Using legacy request handling: OnWebRequest()");
+
+                            this.OnWebRequest.Invoke(requestData, responseData);
+
+                            var sw = Stopwatch.StartNew();
+                            await TaskEx.WaitUntil(() => responseData.FinishedBuilding, 25, 5500);
+                            if (sw.ElapsedMilliseconds > 5000)
+                            {
+                                responseData.Status(HttpStatusCodes.BadGateway)
+                                            .Content(HttpContentTypes.PlainText, "Task ex failed to wait")
+                                            .Finish();
+                                await responseData.Transfer(httpResponse);
+                            }
+                            else
+                                await responseData.Transfer(httpResponse);
+                        }
+
+                        if (!foundEndpointDebounce)
+                        {
+                            responseData.Status(HttpStatusCodes.NotFound)
+                                        .Content(HttpContentTypes.PlainText, "The URL was not found on this server.")
+                                        .Finish();
+
+                            await responseData.Transfer(httpResponse);
+                            foundEndpointDebounce = true;
+                        }
+
+                        if (MgcxmConfiguration.HasBootstrapConfiguration && MgcxmConfiguration.CurrentBootstrapConfiguration.logRequests)
+                        {
+                            File.AppendAllText("httpLog.log", string.Format("---------- HTTP Request ----------\nUrl: {0}\nMethod: {1}\nContent-Type: {2}\nPost Data: {3}\nResponse: {4}\n",
+                                requestData.Uri,
+                                requestData.HttpMethod,
+                                requestData.ContentType,
+                                requestData.Body,
+                                Encoding.UTF8.GetString(responseData.ResponseData)));
+                        }
+                    }
+                    catch (Exception ex)
                     {
-                        responseData.Status(HttpStatusCodes.NotFound)
-                                    .Content(HttpContentTypes.PlainText, "The URL was not found on this server.")
+                        string[] html = new string[]
+                        {
+                            "<!DOCTYPE html>",
+                            "<html>",
+                            "   <body>",
+                            "       <h1>Internal Server Error</h1>",
+                            $"       <h3>An error occurred while processing your request. (Request ID: {requestId.ToString()})</h3>",
+                            "       <hr>",
+                            $"       <strong>{ex.ToString()}</strong>",
+                            "   </body>",
+                            "</html>"
+                        };
+                        responseData.Status(HttpStatusCodes.InternalServerError)
+                                    .Content(HttpContentTypes.HtmlFile, string.Join("\n", html))
                                     .Finish();
 
                         await responseData.Transfer(httpResponse);
-                        foundEndpointDebounce = true;
                     }
-
-                    if (MgcxmConfiguration.HasBootstrapConfiguration && MgcxmConfiguration.CurrentBootstrapConfiguration.logRequests)
-                    {
-                        File.AppendAllText("httpLog.log", string.Format("---------- HTTP Request ----------\nUrl: {0}\nMethod: {1}\nContent-Type: {2}\nPost Data: {3}\nResponse: {4}\n",
-                            requestData.Uri,
-                            requestData.HttpMethod,
-                            requestData.ContentType,
-                            requestData.Body,
-                            Encoding.UTF8.GetString(responseData.ResponseData)));
-                    }
-                }
-                catch (Exception ex)
-                {
-                    string[] html = new string[]
-                    {
-                        "<!DOCTYPE html>",
-                        "<html>",
-                        "   <body>",
-                        "       <h1>Internal Server Error</h1>",
-                        $"       <h3>An error occurred while processing your request. (Request ID: {requestId.ToString()})</h3>",
-                        "       <hr>",
-                        $"       <strong>{ex.ToString()}</strong>",
-                        "   </body>",
-                        "</html>"
-                    };
-                    responseData.Status(HttpStatusCodes.InternalServerError)
-                                .Content(HttpContentTypes.HtmlFile, string.Join("\n", html))
-                                .Finish();
-
-                    await responseData.Transfer(httpResponse);
-                }
-            });
+                });
 #pragma warning enable
+            }
+            catch { }
         }
 
-        _listener.Stop();
+        try
+        {
+            _listener.Stop();
+        } catch { }
     }
 
     public static void CreateWebRequestData(MgcxmId allocatedId, ref string url, ref string query, HttpListenerRequest httpRequest, HttpListenerResponse httpResponse, out MgcxmHttpRequest requestData, out MgcxmHttpResponse responseData)
@@ -492,7 +519,6 @@ public class MgcxmHttpListener : IStartableServer
             await listentask(_listener);
         });
         _listenThread.Start();
-        GCWrapper.SuppressFinalize(_listenThread);
     }
 
     /// <summary>
@@ -502,6 +528,12 @@ public class MgcxmHttpListener : IStartableServer
     {
         _listenToRequests = false;
         _listenThread = null!;
+
+        try
+        {
+            _listener.Stop();
+        }
+        catch { }
     }
 
     /// <summary>

@@ -1,3 +1,4 @@
+using Openlabs.Mgcxm.Internal;
 using Openlabs.Mgcxm.Net;
 
 using System.Net;
@@ -21,8 +22,21 @@ public class IpAddress : IIpAddress
     public IpAddress(string origin, ushort port = 0)
     {
         _port = port;
+        var originFormatted = AddressUtilities.FormatIpAddress(origin);
 
-        if (IPAddress.TryParse(origin, out var ipAddress))
+        if (_port == 0 && originFormatted.Contains(":"))
+        {
+            var originSegments = originFormatted.Split(':');
+
+            var originSeg1 = originSegments[0]; // hostname
+            var originSeg2 = originSegments[1]; // port
+
+            originFormatted = originSeg1;
+            _port = ushort.Parse(originSeg2);
+        }
+
+        Logger.Debug("trying to parse: " + originFormatted + ", export = " + _port);
+        if (IPAddress.TryParse(originFormatted, out var ipAddress))
         {
             _actualIpAddress = ipAddress;
 
