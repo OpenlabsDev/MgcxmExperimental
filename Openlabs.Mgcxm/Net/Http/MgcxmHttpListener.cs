@@ -160,7 +160,7 @@ public class MgcxmHttpListener : IStartableServer
     {
         const long FAVICON_ID = 2441798;
 
-        Logger.Debug($"Creating identifier 0x{FAVICON_ID:x8} pointing 0x{_allocatedId.Id:x8}");
+        Logger.Debug("Creating identifier {FavIconId} pointing {AllocatedId}", $"0x{FAVICON_ID:x8}", $"0x{_allocatedId.Id:x8}");
 
         // Create /favicon.ico page uri pointing to 0x00254246
         _endpoints.Add(new MgcxmHttpEndpoint(FAVICON_ID, "/favicon.ico", Array.Empty<MgcxmDynamicIdentifier>(), HttpMethods.GET,
@@ -209,14 +209,14 @@ public class MgcxmHttpListener : IStartableServer
 
                         // log request
                         Logger.Info($"--------------- Http Request ---------------");
-                        Logger.Info($"Server Id = 0x{_allocatedId.Id:x8} ({this.GetType().Name})");
-                        Logger.Info($"Requested Url = {requestData.Uri}");
-                        Logger.Info($"Http Method = {requestData.HttpMethod}");
+                        Logger.Info("Server Id = {ServerId} ({TypeName})", $"0x{AllocatedId.Id:x8}", this.GetType().Name);
+                        Logger.Info("Requested Url = {Uri}", requestData.Uri);
+                        Logger.Info("Http Method = {HttpMethod}", requestData.HttpMethod);
                         if (requestData.HttpMethod == HttpMethods.POST || requestData.HttpMethod == HttpMethods.PUT)
                         {
-                            Logger.Info($"Content Type = {requestData.ContentType}");
-                            Logger.Info($"Content Length = {requestData.RawBodyData.Length}");
-                            Logger.Info($"Content = {requestData.Body.Truncate(50, "...")}");
+                            Logger.Info("Content Type = {ContentType}", requestData.ContentType);
+                            Logger.Info("Content Length = {ContentLength}", requestData.RawBodyData.Length);
+                            Logger.Info("Content = {Content}", requestData.Body.Truncate(50, "..."));
                         }
 
                         // add required headers
@@ -413,7 +413,7 @@ public class MgcxmHttpListener : IStartableServer
                 httpRequest.Headers.GetValues(i)?[0] ?? "Unknown");
 
         // build query
-        Logger.Trace("current url " + url);
+        Logger.Trace("current url {Url}", url);
         if (url.Contains("?"))
         {
             var urlParts = url.Split("?");
@@ -454,12 +454,12 @@ public class MgcxmHttpListener : IStartableServer
             }
         }
 
-        Logger.Trace("trimmed url " + url);
+        Logger.Trace("trimmed url {Url}", url);
 
         // format url
         FormatUrl(ref url);
 
-        Logger.Trace("formatted url " + url);
+        Logger.Trace("formatted url {Url}", url);
 
         // construct data
         requestData = MgcxmHttpRequest.New(
@@ -499,7 +499,7 @@ public class MgcxmHttpListener : IStartableServer
 
         _listenThread = new Thread(async () =>
         {
-            Logger.Debug($"Changed listen flag on 0x{_allocatedId.Id:x8}");
+            Logger.Debug("Changed listen flag on {AllocatedId}", $"0x{_allocatedId.Id:x8}");
             await StartListening();
         });
         _listenThread.Start();
@@ -515,7 +515,7 @@ public class MgcxmHttpListener : IStartableServer
 
         _listenThread = new Thread(async () =>
         {
-            Logger.Debug($"Changed listen flag on 0x{_allocatedId.Id:x8}");
+            Logger.Debug("Changed listen flag on {AllocatedId}", $"0x{_allocatedId.Id:x8}");
             await listentask(_listener);
         });
         _listenThread.Start();

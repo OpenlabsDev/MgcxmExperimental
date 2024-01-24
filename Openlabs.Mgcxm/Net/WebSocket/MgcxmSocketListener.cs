@@ -93,8 +93,7 @@ public class MgcxmSocketListener : IMgcxmSystemObject, IStartableServer
                         method.Invoke(this, new object[] { socket });
                     }, method));
 
-                Logger.Trace(string.Format("Added '0x{0:x8}' to '0x{1:x8}'", attr.Route.GetHashCode(),
-                    AllocatedId.Id));
+                Logger.Trace("Added '{HashCode}' to '{AllocatedId}'", $"0x{attr.Route.GetHashCode():x8}", $"0x{AllocatedId.Id:x8}");
             });
     }
 
@@ -178,7 +177,7 @@ public class MgcxmSocketListener : IMgcxmSystemObject, IStartableServer
                 responseData.Header("Connection", "keep-alive");
 
                 var validRoute = IsValidRoute(requestData.Uri, out var route);
-                if (validRoute) Logger.Trace("Valid route found: " + requestData.Uri);
+                if (validRoute) Logger.Trace("Valid route found: {Uri}", requestData.Uri);
                 if (context.Request.IsWebSocketRequest)
                     Logger.Trace("Is websocket request");
 
@@ -190,8 +189,8 @@ public class MgcxmSocketListener : IMgcxmSystemObject, IStartableServer
                     var socketContext = await context.AcceptWebSocketAsync(null);
 
                     Logger.Info($"--------------- Ws Request ---------------");
-                    Logger.Info($"Server Id = 0x{AllocatedId.Id:x8} ({this.GetType().Name})");
-                    Logger.Info($"Requested Url = {requestData.Uri}");
+                    Logger.Info("Server Id = {ServerId} ({TypeName})", $"0x{AllocatedId.Id:x8}", this.GetType().Name);
+                    Logger.Info("Requested Url = {Uri}", requestData.Uri);
 
 #pragma warning disable CS4014 // Because this call is not awaited, execution of the current method continues before the call is completed
                     Task.Factory.StartNew(async () =>
@@ -228,14 +227,14 @@ public class MgcxmSocketListener : IMgcxmSystemObject, IStartableServer
                 {
                     // log request
                     Logger.Info($"--------------- Ws Http Request ---------------");
-                    Logger.Info($"Server Id = 0x{AllocatedId.Id:x8} ({this.GetType().Name})");
-                    Logger.Info($"Requested Url = {requestData.Uri}");
-                    Logger.Info($"Http Method = {requestData.HttpMethod}");
+                    Logger.Info("Server Id = {ServerId} ({TypeName})", $"0x{AllocatedId.Id:x8}", this.GetType().Name);
+                    Logger.Info("Requested Url = {Uri}", requestData.Uri);
+                    Logger.Info("Http Method = {HttpMethod}", requestData.HttpMethod);
                     if (requestData.HttpMethod == HttpMethods.POST || requestData.HttpMethod == HttpMethods.PUT)
                     {
-                        Logger.Info($"Content Type = {requestData.ContentType}");
-                        Logger.Info($"Content Length = {requestData.RawBodyData.Length}");
-                        Logger.Info($"Content = {requestData.Body.Truncate(15, "...")}");
+                        Logger.Info("Content Type = {ContentType}", requestData.ContentType);
+                        Logger.Info("Content Length = {ContentLength}", requestData.RawBodyData.Length);
+                        Logger.Info("Content = {Content}", requestData.Body.Truncate(15, "..."));
                     }
 
                     await OnWebRequest(requestData, responseData);
@@ -252,7 +251,8 @@ public class MgcxmSocketListener : IMgcxmSystemObject, IStartableServer
                     }
                 }
                 else
-                    Logger.Error("Failed to accept websocket request. Context = " + (context != null ? string.Format("0x{0:x2}", context.GetHashCode()) : "null"));
+                    Logger.Error("Failed to accept websocket request. Context = {Context}", 
+                        (context != null ? string.Format("0x{0:x2}", context.GetHashCode()) : "null"));
             }
             catch { }
         }
@@ -342,13 +342,13 @@ public class MgcxmSocketListener : IMgcxmSystemObject, IStartableServer
                         return;
                     }
 
-                    Logger.Trace(string.Format("Receiving message (starting stopwatch, id = {0}, current state = {1})", _socket.GetSocketId(), _webSocket.State));
+                    Logger.Trace("Receiving message (starting stopwatch, id = {SocketId}, current state = {StateName})", _socket.GetSocketId(), _webSocket.State);
 
                     sw.Restart();
                     var messageResult = await _webSocket.ReceiveAsync(buffer, CancellationToken.None);
                     sw.Stop();
 
-                    Logger.Trace(string.Format("Received message ({0} byte(s), {1} ms to receive)", messageResult.Count, sw.ElapsedMilliseconds));
+                    Logger.Trace("Received message ({Count} byte(s), {ElapsedMilliseconds} ms to receive)", messageResult.Count, sw.ElapsedMilliseconds);
 
                     if ((closeStatus = messageResult.CloseStatus) != null)
                         keepListening = false; // clear execution path

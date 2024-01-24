@@ -1,6 +1,7 @@
 // Copr. (c) Nexus 2023. All rights reserved.
 
 using Openlabs.Mgcxm.Internal;
+using Serilog.Events;
 using Random = Openlabs.Mgcxm.Common.Random;
 
 namespace Openlabs.Mgcxm.Startup;
@@ -19,18 +20,19 @@ public static class Bootstrap
     public static async Task LoadMgcxm(BootstrapOptions options)
     {
         MgcxmConfiguration.Initialize(options);
+        Logger.Initialize();
 
-        Task.Factory.StartNew(() =>
+        _ = Task.Factory.StartNew(() =>
         {
             BootstrapInitializer.Initialize();
         }).ConfigureAwait(false);
 
         // initialize rng
-        Logger.Info(string.Format("Initializing random with state 0x{0:x8}", RNG_SEED));
+        Logger.Info("Initializing random with state {RandomSeed}", string.Format("0x{0:x8}", RNG_SEED));
         Random.Init(DateTime.Now.Ticks);
 
         // initialize constants
-        Logger.Info(string.Format("Loading MGCXM into current AppDomain '{0}'", AppDomain.CurrentDomain.FriendlyName));
+        Logger.Info("Loading MGCXM into current AppDomain '{DomainName}'", AppDomain.CurrentDomain.FriendlyName);
 
         Constants.Initialize();
     }
@@ -76,7 +78,7 @@ public class BootstrapOptions
     /// <summary>
     /// Gets or sets the minimum log level for logging messages.
     /// </summary>
-    public LogLevel minimumLogLevel;
+    public LogEventLevel minimumLogLevel;
 
     /// <summary>
     /// Gets or sets the scaling options for Mgcxm.

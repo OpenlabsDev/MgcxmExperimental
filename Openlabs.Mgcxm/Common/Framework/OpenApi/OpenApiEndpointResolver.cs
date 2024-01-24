@@ -23,7 +23,7 @@ public class OpenApiEndpointResolver : EndpointResolver
                 if ((nestedType.BaseType != null && nestedType.BaseType.GUID == typeof(EndpointSubpartController).GUID) ||
                     nestedType.InheritsOrImplements(typeof(EndpointSubpartController)))
                 {
-                    Logger.Debug("Automatically adding " + nestedType.Name + " to subpart list");
+                    Logger.Debug("Automatically adding {NestedTypeName} to subpart list", nestedType.Name);
                     AddSubpartController((EndpointSubpartController)Activator.CreateInstance(nestedType));
                 }
             }
@@ -45,14 +45,14 @@ public class OpenApiEndpointResolver : EndpointResolver
 
         foreach (var vEndpoint in OpenApiEndpointStructure.Endpoints)
         {
-            Logger.Trace("Resolving " + vEndpoint.Key.ToString());
+            Logger.Trace("Resolving {EndpointKey}", vEndpoint.Key.ToString());
             
             // resolve the endpoint
             bool isMatched = MgcxmHttpEndpoint.Matches(url, vEndpoint.Value, request);
             if (isMatched)
             {
                 Logger.Trace("Url matching succeeded.");
-                Logger.Trace($"Endpoint = {vEndpoint.Key.ToString()}, Url = {url}");
+                Logger.Trace("Endpoint = {EndpointKey}, Url = {EndpointUrl}", vEndpoint.Key.ToString(), url);
                 return vEndpoint.Value;
             }
         }
@@ -71,7 +71,7 @@ public class OpenApiEndpointResolver : EndpointResolver
             if (subpartAttr == null)
                 throw new Exception("Cannot resolve subpart because it does not have a EndpointSubpartAttribute attached.");
 
-            Logger.Trace($"Resolving subpart '{type.FullName}'");
+            Logger.Trace("Resolving subpart '{TypeFullName}'", type.FullName);
             
             AttributeResolver.ResolveAllMethod<EndpointSubpartRouteAttribute>(
                 type,
@@ -85,7 +85,7 @@ public class OpenApiEndpointResolver : EndpointResolver
 
                     if (subpartController.AllEndpoints.Any(x => x.Url == url.ToString()))
                     {
-                        Logger.Error($"Cannot resolve subpart - there is already a endpoint with the url '{url.ToString()}'");
+                        Logger.Error("Cannot resolve subpart - there is already a endpoint with the url '{Url}'", url.ToString());
                         return; // cannot add endpoints with same url
                     }
                     

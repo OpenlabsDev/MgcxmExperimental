@@ -56,7 +56,7 @@ public static class MgcxmObjectManager
     {
         if (!_objects.ContainsKey(id))
         {
-            Logger.Trace($"Adding object of type '{typeof(T).GetSafeName()}' to registry. Id = 0x{id.Id:x8}");
+            Logger.Trace("Retrieving object of type '{TypeSafeName}' from registry. Id = {AllocatedId}", typeof(T).GetSafeName(), $"0x{id.Id:x8}");
             _objects.Add(id, obj!);
             
         }
@@ -75,7 +75,7 @@ public static class MgcxmObjectManager
 
         if (_objects.ContainsKey(id))
         {
-            Logger.Trace($"Removing object from registry. Id = 0x{id.Id:x8}");
+            Logger.Trace("Removing object from registry. Id = {AllocatedId}", $"0x{id.Id:x8}");
             _objects.Remove(id);
         }
         //else
@@ -98,7 +98,7 @@ public static class MgcxmObjectManager
         if (!(obj is T))
             throw new InvalidCastException(string.Format(RETRIEVE_OBJECT_ERROR_MESSAGE, obj.GetType().Name, nameof(T)));
 
-        Logger.Trace($"Retrieving object of type '{typeof(T).GetSafeName()}' from registry. Id = 0x{id.Id:x8}");
+        Logger.Trace("Retrieving object of type '{TypeSafeName}' from registry. Id = {AllocatedId}", typeof(T).GetSafeName(), $"0x{id.Id:x8}");
         return (T)obj ?? throw new NullReferenceException("Tried to retrieve a null object.");
     }
 

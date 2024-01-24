@@ -1,18 +1,21 @@
-﻿using Openlabs.Mgcxm.Startup;
+﻿using Openlabs.Mgcxm.Internal;
+using Openlabs.Mgcxm.Startup;
 
 namespace Mgcxm.Test
 {
     public static class Program
     {
+        static LoggerSink s = new LoggerSink("s");
+
         public static async Task Main(string[] args)
         {
             await Bootstrap.LoadMgcxm(new BootstrapOptions
             {
                 logRequests = true,
                 blockWeirdHosts = false,
-                minimumLogLevel = Openlabs.Mgcxm.Internal.LogLevel.INFO,
+                minimumLogLevel = Serilog.Events.LogEventLevel.Debug,
                 useExperimentalOptions = true,
-                useGui = true,
+                useGui = false,
                 scalingOptions = new ScalingOptions
                 {
                     maxNodes = 10,
@@ -21,6 +24,8 @@ namespace Mgcxm.Test
                     runProcessesInBackground = true,
                 }
             });
+            Logger.Error("Testing {Test}", "idk");
+            s.Error("Testing {Test}", "idk");
 
             new HttpServerTest().Start();
 

@@ -32,8 +32,10 @@ public sealed class ActionScheduler
         // _queuedTasks.Enqueue(task);
         await Task.Factory.StartNew(async () =>
         {
-            Logger.Trace($"Created '{name} - 0x{task.TaskId.Id:x8}' latching '{_name} - 0x{_allocatedId.Id:x8}'");
-            
+            Logger.Trace("Created '{Name} - {TaskIdAddress}' latching '{SchedulerName} - {SchedulerAddress}'",
+                name, $"0x{task.TaskId.Id:x8}",
+                _name, $"0x{_allocatedId.Id:x8}");
+
             try
             {
                 task.Delegate.DynamicInvoke(task.Arguments);
@@ -89,7 +91,9 @@ public sealed class ActionScheduler
 
             var scheduler = MgcxmObjectManager.Retrieve<ActionScheduler>(schedulerId);
             
-            Logger.Trace($"Created '{name} - 0x{_taskId.Id:x8}' latching '{scheduler._name} - 0x{scheduler._allocatedId.Id:x8}'");
+            Logger.Trace("Created '{Name} - {TaskIdAddress}' latching '{SchedulerName} - {SchedulerAddress}'", 
+                name, $"0x{_taskId.Id:x8}",
+                scheduler._name,  $"0x{scheduler._allocatedId.Id:x8}");
             MgcxmObjectManager.Register(_taskId, this);
             schedulerId.Latch(_taskId, this);
         }

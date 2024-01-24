@@ -35,7 +35,7 @@ public class IpAddress : IIpAddress
             _port = ushort.Parse(originSeg2);
         }
 
-        Logger.Debug("trying to parse: " + originFormatted + ", export = " + _port);
+        Logger.Debug("trying to parse: {Origin}, export = {Port}", originFormatted, _port);
         if (IPAddress.TryParse(originFormatted, out var ipAddress))
         {
             _actualIpAddress = ipAddress;

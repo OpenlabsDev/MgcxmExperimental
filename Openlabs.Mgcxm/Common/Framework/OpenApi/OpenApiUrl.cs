@@ -52,7 +52,7 @@ public class OpenApiUrl : EndpointUrl
         }
         catch (Exception exception)
         {
-            Logger.Error($"Failed to parse OpenApiUrl: ({exception.GetType().GetSafeName()}): {exception}");
+            Logger.Exception("Failed to parse OpenApiUrl", exception);
         }
     }
 

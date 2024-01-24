@@ -12,17 +12,6 @@ namespace Openlabs.Mgcxm.Startup
 {
     internal static class BootstrapInitializer
     {
-        /// <summary>
-        /// Event handler for logging messages to the console.
-        /// </summary>
-        /// <param name="lMsg">The log message to be displayed.</param>
-        private static void OnLogMessageMade(LogMessage lMsg)
-        {
-            // Console.ForegroundColor = lMsg.color;
-            Console.WriteLine(lMsg.message);
-            // Console.ForegroundColor = lMsg.previousColor;
-        }
-
         public static void Initialize()
         {
             if (MgcxmConfiguration.CurrentBootstrapConfiguration.useGui)
@@ -33,8 +22,6 @@ namespace Openlabs.Mgcxm.Startup
                 Application.Run<MgcxmOverviewGui>();
                 return;
             }
-
-            Logger.Initialize(OnLogMessageMade);
         }
     }
 }

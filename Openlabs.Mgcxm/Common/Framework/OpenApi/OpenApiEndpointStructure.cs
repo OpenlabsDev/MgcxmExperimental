@@ -23,7 +23,7 @@ public class OpenApiEndpointStructure : EndpointStructure<OpenApiUrl>
         foreach (var vEndpoint in Endpoints)
         {
             // resolve the endpoint
-            Logger.Trace($"Endpoint = {vEndpoint.Key.ToString()}, Url = {url}");
+            Logger.Trace("Endpoint = {EndpointKey}, Url = {EndpointUrl}", vEndpoint.Key.ToString(), url);
             bool isMatched = MgcxmHttpEndpoint.Matches(vEndpoint.Key.ToString(), vEndpoint.Value, request);
             if (isMatched) return vEndpoint.Value;
         }

@@ -3,152 +3,148 @@
 using System.Diagnostics;
 using System.Runtime.CompilerServices;
 using Openlabs.Mgcxm.Common;
+using Serilog;
+using Serilog.Events;
+using Serilog.Sinks.SystemConsole.Themes;
 
 namespace Openlabs.Mgcxm.Internal;
+
+internal static class LoggerFormatting
+{
+    internal const int MAX_SINK_CHARS = 8;
+    internal const string MESSAGE_TEMPLATE = "[{Timestamp:yyyy-MM-dd HH:mm:ss}] [{Level:u5}({ThreadId}:{ThreadName})] [{SinkName}] {Message:lj}{NewLine}{Exception}";
+}
 
 /// <summary>
 /// Static class to log messages.
 /// </summary>
 public static class Logger
 {
-    public static void Trace(string message, LoggerSink sink = null) => PrintMessage(LogLevel.TRACE, message, sink);
-    public static void Debug(string message, LoggerSink sink = null) => PrintMessage(LogLevel.DEBUG, message, sink);
-    public static void Info(string message, LoggerSink sink = null) => PrintMessage(LogLevel.INFO, message, sink);
-    public static void Warning(string message, LoggerSink sink = null) => PrintMessage(LogLevel.WARNING, message, sink);
-    public static void Error(string message, LoggerSink sink = null) => PrintMessage(LogLevel.ERROR, message, sink);
-    public static void Fatal(string message, LoggerSink sink = null) => PrintMessage(LogLevel.FATAL, message, sink);
+    static LoggerConfiguration? _loggerConfig = null;
+    static ILogger? _loggerImpl = null;
 
-    public static void Exception(string message, Exception exception, LoggerSink sink = null) 
+    [Obsolete("This method is no longer used, and has no output.")]
+    public static void Trace(string message, params object[] arguments) { }
+
+    public static void Debug(string message, params object[] arguments) => PrintMessage(LogEventLevel.Debug, message, arguments);
+    public static void Info(string message, params object[] arguments) => PrintMessage(LogEventLevel.Information, message, arguments);
+    public static void Warning(string message, params object[] arguments) => PrintMessage(LogEventLevel.Warning, message, arguments);
+    public static void Error(string message, params object[] arguments) => PrintMessage(LogEventLevel.Error, message, arguments);
+    public static void Fatal(string message, params object[] arguments) => PrintMessage(LogEventLevel.Fatal, message, arguments);
+
+    public static void Exception(string message, Exception exception) 
         => PrintMessage(
-            LogLevel.FATAL, 
-            $"{message}: ({exception.GetType().GetSafeName()}): {exception.Message}\n {exception.StackTrace}", 
-            sink);
+            LogEventLevel.Fatal, 
+            $"{message}: ({exception.GetType().GetSafeName()}): {exception.Message}\n {exception.StackTrace}", new object[0]);
 
-    public static void Initialize(Action<LogMessage>? onMessageMade) { OnLogged = onMessageMade.InvokeSafe; }
-    
-    private static void PrintMessage(LogLevel level, string message, LoggerSink? sink = null)
+    public static void Initialize()
     {
-        if (level < MgcxmConfiguration.CurrentBootstrapConfiguration.minimumLogLevel)
-            return;
-
-        var dateTime = DateTime.Now;
-        var previousColor = Console.ForegroundColor;
-        var currentColor = _messageColors[level];
-        
-        string dateStr = string.Format("{0:u}", dateTime).Split(" ")[1].Replace("Z", "");
-        string levelStr = level.ToString()
-            .PadRight(5, ' ');
-        
-        string sinkName = (sink != null ? sink.SinkName : "   ").PadRight(6, ' ');
-        if (sink == null) sinkName = "Main".PadRight(6, ' ');
-        
-        string ansiMessageStr = string.Format("[{0}] ", dateStr.Pastel("#33ed1f"));
-        ansiMessageStr += string.Format("[{0}] ", sinkName.Pastel("#3e89e6"));
-        ansiMessageStr += string.Format("[{0}] {1}", levelStr.Pastel(currentColor), message.Pastel(currentColor));
-        
-        string nonansiMessageStr = string.Format("[{0}] ", dateStr);
-        nonansiMessageStr += string.Format("[{0}] ", sinkName);
-        nonansiMessageStr += string.Format("[{0}] {1}", levelStr, message);
-        _logMessages.Add(nonansiMessageStr);
-        
-        OnLogged.InvokeSafe(new LogMessage()
+        if (_loggerConfig == null && _loggerImpl == null)
         {
-            time = dateTime,
-            previousColor = previousColor,
-            color = currentColor,
-            message = ansiMessageStr,
-            nonAnsiMessage = nonansiMessageStr,
-            sink = sink
-        });
+            _loggerConfig = new LoggerConfiguration()
+                                .WriteTo.Console(theme: AnsiConsoleTheme.Literate, outputTemplate: LoggerFormatting.MESSAGE_TEMPLATE)
+                                .Enrich.WithProperty("ThreadId", Thread.CurrentThread.ManagedThreadId)
+                                .Enrich.WithProperty("ThreadName", Thread.CurrentThread.Name ?? "None")
+                                .Enrich.WithProperty("SinkName", "Main Log"
+                                                                    .PadLeft(LoggerFormatting.MAX_SINK_CHARS, ' ')
+                                                                    .Truncate(LoggerFormatting.MAX_SINK_CHARS))
+                                .MinimumLevel.Debug();
+
+            _loggerImpl = _loggerConfig.CreateLogger();
+        }
     }
-
-    public static void SaveLog(string fileName)
+    
+    private static void PrintMessage(LogEventLevel eventLevel, string message, object[] args)
     {
-        File.WriteAllLines($"{fileName}.txt", _logMessages);
+        if (_loggerConfig == null && _loggerImpl == null) return;
+
+        switch (eventLevel)
+        {
+            case LogEventLevel.Debug:
+                _loggerImpl.Debug(message, args); break;
+            case LogEventLevel.Information:
+                _loggerImpl.Information(message, args); break;
+            case LogEventLevel.Warning:
+                _loggerImpl.Warning(message, args); break;
+            case LogEventLevel.Error:
+                _loggerImpl.Error(message, args); break;
+            case LogEventLevel.Fatal:
+                _loggerImpl.Fatal(message, args); break;
+
+            default: break;
+        }
     }
-
-    public static string ReadNew()
-    {
-        if (_logMessages.Count > _newReadIndex) return null;
-        var result = _logMessages[_newReadIndex];
-
-        if (_readLogMessages.Contains(result)) return null;
-        _readLogMessages.Add(result);
-
-        _newReadIndex++;
-        return result;
-    }
-
-    private static List<string> _logMessages = new List<string>();
-    private static List<string> _readLogMessages = new List<string>();
-    private static int _newReadIndex;
-
-    public static event Action<LogMessage> OnLogged = (_ => { });
-
-    private static Dictionary<LogLevel, ConsoleColor> _messageColors = new()
-    {
-        [LogLevel.DEBUG] = ConsoleColor.Cyan,
-        [LogLevel.TRACE] = ConsoleColor.DarkGray,
-        [LogLevel.INFO] = ConsoleColor.White,
-        [LogLevel.WARNING] = ConsoleColor.Yellow,
-        [LogLevel.ERROR] = ConsoleColor.Red,
-        [LogLevel.FATAL] = ConsoleColor.DarkRed
-    };
-}
-
-public class LogMessage
-{
-    public DateTime time;
-    public ConsoleColor previousColor;
-    public ConsoleColor color;
-    public string message;
-    public string nonAnsiMessage;
-    public LoggerSink? sink;
-}
-
-/// <summary>
-/// An enumeration of all the possible log level types.
-/// </summary>
-public enum LogLevel
-{
-    TRACE,
-    DEBUG,
-    INFO,
-    WARNING,
-    ERROR,
-    FATAL
 }
 
 public class LoggerSink
 {
+    LoggerConfiguration? _loggerConfig = null;
+    ILogger? _loggerImpl = null;
+
     public LoggerSink(string sinkName)
     {
-        if (sinkName.Length > 6)
-            throw new ArgumentException("Cannot have a sink name more than 6 characters.", nameof(sinkName));
+        if (sinkName.Length > LoggerFormatting.MAX_SINK_CHARS)
+            throw new ArgumentException(
+                string.Format("Cannot have a sink name more than {0} characters.", LoggerFormatting.MAX_SINK_CHARS), 
+                nameof(sinkName));
         _sinkName = sinkName;
+
+        Initialize();
     }
-    
-    public void Trace(string message, params object[] args)
-        => Logger.Trace((args.Length > 0 ? string.Format(message, args) : message), this);
-    
-    public void Debug(string message, params object[] args)
-        => Logger.Debug((args.Length > 0 ? string.Format(message, args) : message), this);
-    
-    public void Info(string message, params object[] args)
-        => Logger.Info((args.Length > 0 ? string.Format(message, args) : message), this);
 
-    public void Warning(string message, params object[] args)
-        => Logger.Warning((args.Length > 0 ? string.Format(message, args) : message), this);
+    private void Initialize()
+    {
+        if (_loggerConfig == null && _loggerImpl == null)
+        {
+            _loggerConfig = new LoggerConfiguration()
+                                .WriteTo.Console(theme: AnsiConsoleTheme.Literate, outputTemplate: LoggerFormatting.MESSAGE_TEMPLATE)
+                                .Enrich.WithProperty("ThreadId", Thread.CurrentThread.ManagedThreadId)
+                                .Enrich.WithProperty("ThreadName", Thread.CurrentThread.Name ?? "None")
+                                .Enrich.WithProperty("SinkName", _sinkName
+                                                                    .PadLeft(LoggerFormatting.MAX_SINK_CHARS, ' ')
+                                                                    .Truncate(LoggerFormatting.MAX_SINK_CHARS))
+                                .MinimumLevel.Debug();
 
-    public void Error(string message, params object[] args)
-        => Logger.Error((args.Length > 0 ? string.Format(message, args) : message), this);
-    
-    public void Fatal(string message, params object[] args)
-        => Logger.Fatal((args.Length > 0 ? string.Format(message, args) : message), this);
-    
-    public void Exception(string message, Exception ex)
-        => Logger.Exception(message, ex, this);
-    
+            _loggerImpl = _loggerConfig.CreateLogger();
+        }
+    }
+
+
+    [Obsolete("This method is no longer used, and has no output.")]
+    public void Trace(string message, params object[] arguments) { }
+
+    public void Debug(string message, params object[] arguments) => PrintMessage(LogEventLevel.Debug, message, arguments);
+    public void Info(string message, params object[] arguments) => PrintMessage(LogEventLevel.Information, message, arguments);
+    public void Warning(string message, params object[] arguments) => PrintMessage(LogEventLevel.Warning, message, arguments);
+    public void Error(string message, params object[] arguments) => PrintMessage(LogEventLevel.Error, message, arguments);
+    public void Fatal(string message, params object[] arguments) => PrintMessage(LogEventLevel.Fatal, message, arguments);
+
+    public void Exception(string message, Exception exception)
+        => PrintMessage(
+            LogEventLevel.Fatal,
+            $"{message}: ({exception.GetType().GetSafeName()}): {exception.Message}\n {exception.StackTrace}", new object[0]);
+
+    private void PrintMessage(LogEventLevel eventLevel, string message, object[] args)
+    {
+        if (_loggerConfig == null && _loggerImpl == null) return;
+
+        switch (eventLevel)
+        {
+            case LogEventLevel.Debug:
+                _loggerImpl.Debug(message, args); break;
+            case LogEventLevel.Information:
+                _loggerImpl.Information(message, args); break;
+            case LogEventLevel.Warning:
+                _loggerImpl.Warning(message, args); break;
+            case LogEventLevel.Error:
+                _loggerImpl.Error(message, args); break;
+            case LogEventLevel.Fatal:
+                _loggerImpl.Fatal(message, args); break;
+
+            default: break;
+        }
+    }
+
     public string SinkName => _sinkName;
     private string _sinkName;
 }

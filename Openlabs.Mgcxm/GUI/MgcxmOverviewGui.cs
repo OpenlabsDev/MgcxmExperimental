@@ -32,12 +32,6 @@ namespace Openlabs.Mgcxm.GUI
             }
         }
 
-        private void OnLogMessageMade(LogMessage lMsg)
-        {
-            _internalLogText.Text = string.Format("{0}\n", lMsg.nonAnsiMessage) + _internalLogText.Text;
-            UpdateDisplays();
-        }
-
         private void UpdateDisplays()
         {
             Application.MainLoop.Invoke(() =>
@@ -54,7 +48,11 @@ namespace Openlabs.Mgcxm.GUI
 
         protected override void InitialDraw()
         {
-            Logger.Initialize(OnLogMessageMade);
+            AppDomain.CurrentDomain.FirstChanceException += (s, e) =>
+            {
+                _internalLogText.Text = string.Format("{0}\n", e.Exception) + _internalLogText.Text;
+                UpdateDisplays();
+            };
             Task.Factory.StartNew(RapidUpdate, TaskCreationOptions.LongRunning);
 
             Console.Title = string.Format("{0} (Mgcxm Application)", Constants.ApplicationName);
