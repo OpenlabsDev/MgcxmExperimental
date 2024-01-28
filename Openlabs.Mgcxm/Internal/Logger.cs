@@ -4,6 +4,7 @@ using System.Diagnostics;
 using System.Runtime.CompilerServices;
 using Openlabs.Mgcxm.Common;
 using Serilog;
+using Serilog.Core;
 using Serilog.Events;
 using Serilog.Sinks.SystemConsole.Themes;
 
@@ -15,6 +16,24 @@ internal static class LoggerFormatting
     internal const string MESSAGE_TEMPLATE = "[{Timestamp:yyyy-MM-dd HH:mm:ss}] [{Level:u5}({ThreadId}:{ThreadName})] [{SinkName}] {Message:lj}{NewLine}{Exception}";
 }
 
+public class ThreadNameAndIdEnricher : ILogEventEnricher
+{
+    public void Enrich(LogEvent logEvent, ILogEventPropertyFactory propertyFactory)
+    {
+        var threadId = propertyFactory
+            .CreateProperty(
+                "ThreadId",
+                Thread.CurrentThread.ManagedThreadId);
+        var threadName = propertyFactory
+            .CreateProperty(
+                "ThreadName",
+                Thread.CurrentThread.Name);
+
+        logEvent.AddOrUpdateProperty(threadId);
+        logEvent.AddOrUpdateProperty(threadName);
+    }
+}
+
 /// <summary>
 /// Static class to log messages.
 /// </summary>
@@ -22,6 +41,8 @@ public static class Logger
 {
     static LoggerConfiguration? _loggerConfig = null;
     static ILogger? _loggerImpl = null;
+
+
 
     [Obsolete("This method is no longer used, and has no output.")]
     public static void Trace(string message, params object[] arguments) { }
@@ -43,12 +64,11 @@ public static class Logger
         {
             _loggerConfig = new LoggerConfiguration()
                                 .WriteTo.Console(theme: AnsiConsoleTheme.Literate, outputTemplate: LoggerFormatting.MESSAGE_TEMPLATE)
-                                .Enrich.WithProperty("ThreadId", Thread.CurrentThread.ManagedThreadId)
-                                .Enrich.WithProperty("ThreadName", Thread.CurrentThread.Name ?? "None")
+                                .Enrich.With(new ThreadNameAndIdEnricher())
                                 .Enrich.WithProperty("SinkName", "Main Log"
                                                                     .PadLeft(LoggerFormatting.MAX_SINK_CHARS, ' ')
                                                                     .Truncate(LoggerFormatting.MAX_SINK_CHARS))
-                                .MinimumLevel.Debug();
+                                .MinimumLevel.Is(MgcxmConfiguration.CurrentBootstrapConfiguration.minimumLogLevel);
 
             _loggerImpl = _loggerConfig.CreateLogger();
         }
@@ -98,8 +118,7 @@ public class LoggerSink
         {
             _loggerConfig = new LoggerConfiguration()
                                 .WriteTo.Console(theme: AnsiConsoleTheme.Literate, outputTemplate: LoggerFormatting.MESSAGE_TEMPLATE)
-                                .Enrich.WithProperty("ThreadId", Thread.CurrentThread.ManagedThreadId)
-                                .Enrich.WithProperty("ThreadName", Thread.CurrentThread.Name ?? "None")
+                                .Enrich.With(new ThreadNameAndIdEnricher())
                                 .Enrich.WithProperty("SinkName", _sinkName
                                                                     .PadLeft(LoggerFormatting.MAX_SINK_CHARS, ' ')
                                                                     .Truncate(LoggerFormatting.MAX_SINK_CHARS))
