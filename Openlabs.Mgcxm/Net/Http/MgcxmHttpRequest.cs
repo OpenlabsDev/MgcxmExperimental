@@ -1,5 +1,6 @@
 // Copr. (c) Nexus 2023. All rights reserved.
 
+using System.ComponentModel;
 using System.Text;
 using Openlabs.Mgcxm.Internal;
 using Openlabs.Mgcxm.Internal.SystemObjects;
@@ -37,6 +38,99 @@ public sealed class MgcxmHttpRequest
             _query = query,
             _ownerId = owner
         };
+    }
+
+    /// <summary>
+    /// Gets the specified segment from the URI path.
+    /// </summary>
+    /// <param name="segmentIndex">The index of the segment to retrieve (0-based).</param>
+    /// <returns>
+    /// The value of the specified URI segment if it exists; otherwise, an empty string.
+    /// </returns>
+    public string GetUrlSegment(int segmentIndex)
+    {
+        var urlSegments = _uri.Split("/");
+
+        if (urlSegments.Length > segmentIndex) 
+            return string.Empty;
+        return urlSegments[segmentIndex] ?? string.Empty;
+    }
+
+    /// <summary>
+    /// Gets the specified segment from the URI path.
+    /// </summary>
+    /// <param name="segmentIndex">The index of the segment to retrieve (0-based).</param>
+    /// <returns>
+    /// The value of the specified URI segment if it exists; otherwise, an empty string.
+    /// </returns>
+    public T GetUrlSegment<T>(int segmentIndex)
+    {
+        var urlSegments = _uri.Split("/");
+        var typeConverter = TypeDescriptor.GetConverter(typeof(T));
+
+        if (typeConverter == null || urlSegments.Length > segmentIndex)
+            return default;
+        return (T)typeConverter.ConvertFromString(urlSegments[segmentIndex]);
+    }
+
+    /// <summary>
+    /// Gets the value of a specific header from the request.
+    /// </summary>
+    /// <param name="headerName">The name of the header.</param>
+    /// <returns>The value of the header, or an empty string if the header is not present.</returns>
+    public string GetHeader(string headerName)
+    {
+        if (_headers.TryGetValue(headerName, out var value))
+        {
+            return value ?? string.Empty;
+        }
+        return string.Empty;
+    }
+
+    /// <summary>
+    /// Gets the value of a specific query parameter from the request.
+    /// </summary>
+    /// <param name="parameterName">The name of the query parameter.</param>
+    /// <returns>The value of the query parameter, or an empty string if the parameter is not present.</returns>
+    public string GetQueryParameter(string parameterName)
+    {
+        if (_query.TryGetValue(parameterName, out var value))
+        {
+            return value ?? string.Empty;
+        }
+        return string.Empty;
+    }
+
+    /// <summary>
+    /// Gets a formatted string representing the request headers.
+    /// </summary>
+    /// <returns>A formatted string with key-value pairs of headers.</returns>
+    public string GetHeadersAsString()
+    {
+        StringBuilder headersString = new StringBuilder();
+
+        foreach (var header in _headers)
+        {
+            headersString.AppendLine($"{header.Key}: {header.Value}");
+        }
+
+        return headersString.ToString();
+    }
+
+    /// <summary>
+    /// Gets a formatted string representing the request query parameters.
+    /// </summary>
+    /// <returns>A formatted string with key-value pairs of query parameters.</returns>
+    public string GetQueryParametersAsString()
+    {
+        StringBuilder queryParametersString = new StringBuilder();
+
+        foreach (var queryParam in _query)
+        {
+            queryParametersString.AppendLine($"{queryParam.Key}: {queryParam.Value}");
+        }
+
+        return queryParametersString.ToString();
     }
 
     /// <summary>

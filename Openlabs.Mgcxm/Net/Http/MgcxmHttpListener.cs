@@ -12,6 +12,7 @@ using System.Xml.Serialization;
 using Openlabs.Mgcxm.Common;
 using Openlabs.Mgcxm.Common.Framework;
 using Openlabs.Mgcxm.Internal;
+
 using Openlabs.Mgcxm.Internal.SystemObjects;
 using Openlabs.Mgcxm.Net.Extensions;
 
@@ -319,7 +320,8 @@ public class MgcxmHttpListener : IStartableServer
                             // ==========================================================================
                             // Logger.Trace("Using legacy request handling: OnWebRequest()");
 
-                            this.OnWebRequest.Invoke(requestData, responseData);
+                            // i never used SafeInvocation on this for some reason
+                            SafeInvocation.InvokeSafeExplicit(this.OnWebRequest, new object[] { requestData, responseData });
 
                             var sw = Stopwatch.StartNew();
                             await TaskEx.WaitUntil(() => responseData.FinishedBuilding, 25, 5500);
