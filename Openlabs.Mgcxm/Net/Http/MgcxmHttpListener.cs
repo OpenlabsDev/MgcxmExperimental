@@ -15,6 +15,7 @@ using Openlabs.Mgcxm.Internal;
 
 using Openlabs.Mgcxm.Internal.SystemObjects;
 using Openlabs.Mgcxm.Net.Extensions;
+using Openlabs.Mgcxm.Net.Http.Middleware;
 
 namespace Openlabs.Mgcxm.Net;
 
@@ -88,6 +89,7 @@ public class MgcxmHttpListener : IStartableServer
         _allocatedId = GetHashCode();
 
         _endpoints = new List<MgcxmHttpEndpoint>();
+        _middlewares = new List<MgcxmHttpMiddleware>();
 
         // Create core endpoints, e.g., /favicon.ico.
         InitializeCore();
@@ -153,6 +155,10 @@ public class MgcxmHttpListener : IStartableServer
         MgcxmObjectManager.Deregister(_allocatedId);
     }
 
+    public void UseStaticFiles()
+    {
+
+    }
 
     /// <summary>
     /// Initializes core endpoints, e.g., /favicon.ico and other systems.
@@ -169,6 +175,21 @@ public class MgcxmHttpListener : IStartableServer
             {
                 response.Status(HttpStatusCodes.OK).Content(HttpContentTypes.BinaryData, Array.Empty<byte>()).Finish();
             }));
+    }
+
+    private async Task<MiddlewareResult> CallAllMiddlewares(MgcxmHttpRequest request, MgcxmHttpResponse response)
+    {
+        MiddlewareResult middlewareResult = MiddlewareResult.PROCEED;
+
+        foreach (var middleware in _middlewares)
+        {
+            if (middlewareResult == MiddlewareResult.ERROR || middlewareResult == MiddlewareResult.DONT_PROCEED)
+                break;
+
+            middlewareResult = middleware.OnRequestMade(request, response);
+        }
+
+        return middlewareResult;
     }
 
     private async Task StartListening()
@@ -232,7 +253,7 @@ public class MgcxmHttpListener : IStartableServer
                         if (MgcxmConfiguration.HasBootstrapConfiguration && MgcxmConfiguration.CurrentBootstrapConfiguration.blockWeirdHosts && httpRequest.Url.Host != _host)
                         {
                             responseData.Status(HttpStatusCodes.BadGateway)
-                                        .Content(HttpContentTypes.HtmlFile, "<h1>Invalid host</h1>")
+                                        .Content(HttpContentTypes.HtmlFile, "<h3>Invalid host</h3>")
                                         .Finish();
                             await responseData.Transfer(httpResponse);
                             return;
@@ -240,6 +261,20 @@ public class MgcxmHttpListener : IStartableServer
 
                         bool foundEndpointDebounce = false;
                         Events.OnHttpRequestMade.Invoke(this, requestData);
+
+                        var mwResult = await CallAllMiddlewares(requestData, responseData);
+                        if (mwResult == MiddlewareResult.DONT_PROCEED || mwResult == MiddlewareResult.ERROR)
+                        {
+                            if (!responseData.FinishedBuilding)
+                            {
+                                responseData.Status(HttpStatusCodes.BadGateway)
+                                            .Content(HttpContentTypes.HtmlFile, $"<h3>Middleware processing failed: {mwResult.ToString()}</h3>")
+                                            .Finish();
+                            }
+
+                            await responseData.Transfer(httpResponse);
+                            return;
+                        }
 
                         // write to response
                         if (_framework == null && _endpoints.Count > 1)
@@ -552,6 +587,33 @@ public class MgcxmHttpListener : IStartableServer
     }
 
     /// <summary>
+    /// Adds a middleware of the specified type to the HTTP listener.
+    /// </summary>
+    /// <typeparam name="TMiddleware">The type of the middleware to add.</typeparam>
+    /// <seealso cref="MgcxmHttpMiddleware"/>
+    public void AddMiddleware<TMiddleware>() where TMiddleware : MgcxmHttpMiddleware
+    {
+        if (_middlewares.Any(x => x.GetType() == typeof(TMiddleware)))
+            return;
+
+        _middlewares.Add(Activator.CreateInstance<TMiddleware>());
+    }
+
+    /// <summary>
+    /// Removes a middleware of the specified type from the HTTP listener.
+    /// </summary>
+    /// <typeparam name="TMiddleware">The type of the middleware to remove.</typeparam>
+    /// <seealso cref="MgcxmHttpMiddleware"/>
+    public void RemoveMiddleware<TMiddleware>() where TMiddleware : MgcxmHttpMiddleware
+    {
+        if (!_middlewares.Any(x => x.GetType() == typeof(TMiddleware)))
+            return;
+
+        _middlewares.RemoveAll(x => x.GetType() == typeof(TMiddleware));
+    }
+
+
+    /// <summary>
     /// Adds an endpoint to the framework.
     /// </summary>
     /// <remarks>This method does nothing if you haven't used SetFramework();</remarks>
@@ -601,6 +663,7 @@ public class MgcxmHttpListener : IStartableServer
     private bool _listenToRequests;
     private HttpListener _listener;
     private List<MgcxmHttpEndpoint> _endpoints;
+    private List<MgcxmHttpMiddleware> _middlewares;
     private EndpointFrameworkBase _framework;
     private Thread _listenThread;
 }
